@@ -124,38 +124,37 @@
             }, [currentPage, isAnimating]);
 
             useEffect(() => {
-                const CACHE_KEY = `book-images-${BOOK_CONFIG.title}`;
                 const loadImages = async () => {
-                    // Try localStorage cache first
-                    try {
-                        const cached = JSON.parse(localStorage.getItem(CACHE_KEY));
-                        if (cached && Object.keys(cached).length === BOOK_CONFIG.pages.length) {
-                            setImages(cached);
-                            return;
-                        }
-                    } catch(e) {}
-
-                    // Generate ALL images in parallel
-                    const promises = BOOK_CONFIG.pages.map(async (page, i) => {
-                        const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`;
-                        const payload = { instances: { prompt: page.prompt }, parameters: { sampleCount: 1 } };
+                    // Try static pre-generated images first (instant!)
+                    const staticLoads = BOOK_CONFIG.pages.map(async (_, i) => {
+                        const filename = `images/page-${String(i).padStart(2, '0')}.png`;
                         try {
-                            const response = await fetch(url, { method: 'POST', body: JSON.stringify(payload) });
+                            const res = await fetch(filename, { method: 'HEAD' });
+                            if (res.ok) {
+                                setImages(prev => ({ ...prev, [i]: filename }));
+                                return true;
+                            }
+                        } catch(e) {}
+                        return false;
+                    });
+                    const results = await Promise.all(staticLoads);
+
+                    // For any missing static images, generate via API
+                    const missing = results.map((ok, i) => ok ? null : i).filter(i => i !== null);
+                    if (missing.length === 0) return;
+
+                    const apiLoads = missing.map(async (i) => {
+                        const page = BOOK_CONFIG.pages[i];
+                        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp-image-generation:generateContent?key=${apiKey}`;
+                        try {
+                            const response = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ contents: [{ parts: [{ text: `Generate a high quality image: ${page.prompt}` }] }], generationConfig: { responseModalities: ['IMAGE', 'TEXT'] } }) });
                             const data = await response.json();
-                            if (data.predictions?.[0]) {
-                                const img = `data:image/png;base64,${data.predictions[0].bytesBase64Encoded}`;
-                                setImages(prev => ({ ...prev, [i]: img }));
-                                return [i, img];
+                            if (data.candidates?.[0]?.content?.parts?.find(p => p.inlineData)) {
+                                setImages(prev => ({ ...prev, [i]: (() => { const img = data.candidates[0].content.parts.find(p => p.inlineData); return `data:image/png;base64,${img.inlineData.data}`; })() }));
                             }
                         } catch (e) { console.error(`Image ${i} failed`, e); }
-                        return null;
                     });
-
-                    const results = await Promise.all(promises);
-                    // Cache all images to localStorage
-                    const allImages = {};
-                    results.forEach(r => { if (r) allImages[r[0]] = r[1]; });
-                    try { localStorage.setItem(CACHE_KEY, JSON.stringify(allImages)); } catch(e) {}
+                    await Promise.all(apiLoads);
                 };
                 loadImages();
             }, []);
