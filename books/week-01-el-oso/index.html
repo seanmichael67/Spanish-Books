@@ -266,7 +266,7 @@
                 if (!data) return <div className="w-full h-full bg-white border border-gray-100" />;
                 const titleCount = data.title.split(/\s+/).length;
                 return (
-                    <div className={`relative flex flex-col items-center justify-between bg-white ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-3 md:p-10 shadow-inner border-l-4 border-gray-100 overflow-hidden'}`}>
+                    <div className={`relative flex flex-col items-center justify-between bg-white ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-2 md:p-10 shadow-inner border-l-4 border-gray-100 overflow-hidden'}`}>
                         <div className="text-center w-full flex-shrink-0">
                             <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-2 leading-tight">
                                 {isPrint ? data.title : <HighlightedText text={data.title} start={0} />}
@@ -335,12 +335,12 @@
                             </button>
                         </div>
                     </header>
-                    <main className="flex-1 flex flex-col items-center justify-center p-4 md:py-6 overflow-hidden">
+                    <main className="flex-1 flex flex-col items-center justify-center p-0 md:p-4 md:py-6 overflow-hidden">
                         {viewMode === 'preview' ? (
                             <div className="w-full max-w-full md:max-w-5xl flex flex-col items-center gap-2 md:gap-8 h-full max-h-[calc(100vh-80px)] md:max-h-[calc(100vh-160px)]">
                                 <div className="flex items-center gap-0 md:gap-8 w-full justify-center flex-1 min-h-0 relative">
                                     <button onClick={() => nav(currentPage - 1, 'prev')} disabled={currentPage === 0 || isAnimating} className="p-2 md:p-4 bg-white/80 md:bg-white rounded-full shadow-lg disabled:opacity-20 transition hover:scale-110 active:scale-90 flex-shrink-0 absolute left-1 md:relative md:left-auto z-10"><Icons.ChevronLeft size={24} /></button>
-                                    <div className="perspective-2000 w-full h-full max-w-full md:max-w-3xl bg-white shadow-2xl rounded-2xl overflow-hidden relative border border-slate-200 flex flex-col">
+                                    <div className="perspective-2000 w-full h-full max-w-full md:max-w-3xl bg-white shadow-none md:shadow-2xl rounded-none md:rounded-2xl overflow-hidden relative border-0 md:border md:border-slate-200 flex flex-col">
                                         <div className={`w-full h-full transform-style-3d ${isAnimating ? (direction === 'next' ? 'page-flip-next' : 'page-flip-prev') : ''}`}>
                                             <PageUI idx={currentPage} />
                                         </div>
@@ -361,8 +361,8 @@
                             </div>
                         )}
                     </main>
-                    {/* Upsell Section */}
-                    <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border-t border-indigo-100 px-4 md:px-8 py-6 md:py-10">
+                    {/* Upsell Section - hidden on mobile unless last page */}
+                    <div className={`bg-gradient-to-r from-indigo-50 to-purple-50 border-t border-indigo-100 px-4 md:px-8 py-6 md:py-10 ${currentPage < BOOK_CONFIG.pages.length - 1 ? "hidden md:block" : ""}`}>
                       <div className="max-w-4xl mx-auto">
                         <h3 className="text-lg md:text-2xl font-bold text-center text-gray-800 mb-6">¿Te gustó este libro? ¡Hay más!</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
@@ -394,7 +394,7 @@
                         </div>
                       </div>
                     </div>
-                    <footer className="py-4 text-center flex-shrink-0">
+                    <footer className="py-4 text-center flex-shrink-0 hidden md:block">
                       <a href="https://www.beibeiamigos.com" target="_blank" className="text-slate-400 text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] hover:text-indigo-500 transition">&copy; 2025 Beibei Amigos Language Preschool — Visit Our School →copy; 2026 Beibei Amigos Language Preschool — Spanish Immersion · Mandarin Preschool · Bilingual Books — Visit Our School →</a>
                     </footer>
                 </div>
