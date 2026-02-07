@@ -22,7 +22,16 @@ app.get('/', (req, res) => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beibei Amigos - Spanish Books</title>
+  <title>Free Spanish Books for Preschoolers | Beibei Amigos - Learn Spanish Reading</title>
+  <meta name="description" content="52 free interactive Spanish reading books for preschoolers ages 2-5. Audio pronunciation, word highlighting, and beautiful photos. New book every week! By Beibei Amigos Language Preschool.">
+  <meta name="keywords" content="free Spanish books kids, learn Spanish preschool, bilingual children books, Spanish reading preschoolers, interactive Spanish books, Beibei Amigos, Spanish vocabulary kids, bilingual education Phoenix">
+  <meta property="og:title" content="Free Spanish Books for Preschoolers | Beibei Amigos">
+  <meta property="og:description" content="52 free interactive Spanish books with audio! Your child learns to read Spanish through play. New book every week.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spanish-books.onrender.com/">
+  <meta property="og:image" content="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://spanish-books.onrender.com/">
   <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -88,6 +97,18 @@ app.get('/', (req, res) => {
         <div class="title">El Pez</div>
         <div class="subtitle">The Fish</div>
       </a>
+    </div>
+    <!-- Upsell Banner -->
+    <div style="max-width:900px; margin:40px auto 0; background:white; border-radius:20px; padding:32px; box-shadow:0 10px 30px rgba(0,0,0,0.1); text-align:center;">
+      <h2 style="font-size:1.6rem; margin-bottom:8px; color:#333;">👩‍🏫 Want Your Child to SPEAK Spanish?</h2>
+      <p style="color:#666; margin-bottom:20px; font-size:0.95rem;">Meet <strong>Sofia</strong> — our AI Spanish teacher who talks, listens, and plays with your child in real-time!</p>
+      <a href="https://tutti-sophia.onrender.com/sofia-fullscreen.html" target="_blank" style="display:inline-block; background:linear-gradient(135deg,#667eea,#764ba2); color:white; padding:14px 32px; border-radius:12px; font-weight:800; font-size:1rem; text-decoration:none; box-shadow:0 4px 15px rgba(102,126,234,0.4);">Try Sofia Free →</a>
+    </div>
+
+    <!-- School CTA -->
+    <div style="max-width:900px; margin:24px auto; text-align:center; padding:20px;">
+      <p style="color:rgba(255,255,255,0.8); font-size:0.85rem;">Made with ❤️ by <a href="https://www.beibeiamigos.com" target="_blank" style="color:white; font-weight:700;">Beibei Amigos Language Preschool</a> — Trilingual immersion in Phoenix, AZ</p>
+      <p style="color:rgba(255,255,255,0.6); font-size:0.75rem; margin-top:8px;">🏫 Now enrolling! Mandarin • Spanish • English | Ages 2-6</p>
     </div>
   </div>
 </body>
