@@ -292,6 +292,9 @@
                                 <p className="text-xl md:text-3xl font-bold text-gray-700">
                                     {isPrint ? data.footer : <HighlightedText text={data.footer} start={titleCount} />}
                                 </p>
+                                {!isPrint && idx === BOOK_CONFIG.pages.length - 1 && (
+                                    <a href="/" className="mt-2 inline-block px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold text-sm hover:bg-indigo-700 transition shadow-lg hover:scale-105 active:scale-95">📚 More Books</a>
+                                )}
                                 {!isPrint && (
                                     <button onClick={() => readPage(false)} className={`p-2 md:p-3 rounded-full shadow-lg transition flex-shrink-0 ${isReading ? 'bg-blue-100 text-blue-400' : 'bg-blue-600 text-white hover:scale-105 active:scale-95'}`}>
                                         <Icons.Volume size={18} />
