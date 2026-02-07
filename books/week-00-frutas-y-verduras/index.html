@@ -238,7 +238,8 @@
                 if (!fromAuto) stopReading();
                 setDirection(dir); setIsAnimating(true);
                 setTimeout(() => { setCurrentPage(idx); setIsAnimating(false);
-                    if (fromAuto) { setTimeout(() => readPage(true, idx), 500); }
+                    // Auto-read page on any navigation
+                    setTimeout(() => readPage(fromAuto, idx), 500);
                 }, 600);
             };
 
