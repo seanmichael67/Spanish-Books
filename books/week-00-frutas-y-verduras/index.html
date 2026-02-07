@@ -187,7 +187,15 @@
                 setIsReading(true);
                 if (auto) setIsAutoAdvancing(true);
                 const url = await prefetchAudio(idx);
-                if (!url) { setIsReading(false); return; }
+                if (!url) {
+                    setIsReading(false);
+                    // Still auto-advance even if audio fails
+                    if (auto || isAutoAdvancing) {
+                        if (idx < BOOK_CONFIG.pages.length - 1) { setTimeout(() => nav(idx + 1, 'next', true), 2000); }
+                        else { setIsAutoAdvancing(false); }
+                    }
+                    return;
+                }
                 const audio = new Audio(url);
                 audio.volume = 0.8;
                 audioRef.current = audio;

@@ -3,10 +3,14 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3002;
 
-// Inject API key server-side so it's not in the repo
+// Inject API keys server-side so they're not in the repo
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
 
-// Serve config.js dynamically (keeps key out of repo)
+// Serve config.js dynamically from any path depth (keeps key out of repo)
+app.get('*/config.js', (req, res) => {
+  res.type('application/javascript');
+  res.send(`const GEMINI_API_KEY = "${GEMINI_API_KEY}";`);
+});
 app.get('/config.js', (req, res) => {
   res.type('application/javascript');
   res.send(`const GEMINI_API_KEY = "${GEMINI_API_KEY}";`);
