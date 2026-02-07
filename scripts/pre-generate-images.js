@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const API_KEY = process.env.GEMINI_API_KEY || require('../config.js').replace(/.*"([^"]+)".*/, '$1');
+const OPENAI_KEY = process.env.OPENAI_API_KEY || '';
 
 async function generateImages(bookDir) {
   // Read index.html and extract BOOK_CONFIG
@@ -32,19 +32,14 @@ async function generateImages(bookDir) {
     }
 
     try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp-image-generation:generateContent?key=${API_KEY}`;
-      const res = await fetch(url, {
+      const res = await fetch('https://api.openai.com/v1/images/generations', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: `Generate a high quality image: ${prompt}` }] }],
-          generationConfig: { responseModalities: ["IMAGE", "TEXT"] }
-        })
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${OPENAI_KEY}` },
+        body: JSON.stringify({ model: 'dall-e-3', prompt, n: 1, size: '1024x1024', response_format: 'b64_json' })
       });
       const data = await res.json();
-      const imagePart = data.candidates?.[0]?.content?.parts?.find(p => p.inlineData);
-      if (imagePart) {
-        const buffer = Buffer.from(imagePart.inlineData.data, 'base64');
+      if (data.data?.[0]?.b64_json) {
+        const buffer = Buffer.from(data.data[0].b64_json, 'base64');
         fs.writeFileSync(filepath, buffer);
         console.log(`  ✅ ${filename} (${(buffer.length / 1024).toFixed(0)}KB)`);
       } else {
