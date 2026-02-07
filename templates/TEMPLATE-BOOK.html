@@ -84,19 +84,38 @@
             const fetchPromisesRef = useRef({});
 
             useEffect(() => {
+                const CACHE_KEY = `book-images-${BOOK_CONFIG.title}`;
                 const loadImages = async () => {
-                    for (let i = 0; i < BOOK_CONFIG.pages.length; i++) {
-                        const page = BOOK_CONFIG.pages[i];
+                    // Try localStorage cache first
+                    try {
+                        const cached = JSON.parse(localStorage.getItem(CACHE_KEY));
+                        if (cached && Object.keys(cached).length === BOOK_CONFIG.pages.length) {
+                            setImages(cached);
+                            return;
+                        }
+                    } catch(e) {}
+
+                    // Generate ALL images in parallel
+                    const promises = BOOK_CONFIG.pages.map(async (page, i) => {
                         const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`;
                         const payload = { instances: { prompt: page.prompt }, parameters: { sampleCount: 1 } };
                         try {
                             const response = await fetch(url, { method: 'POST', body: JSON.stringify(payload) });
                             const data = await response.json();
                             if (data.predictions?.[0]) {
-                                setImages(prev => ({ ...prev, [i]: `data:image/png;base64,${data.predictions[0].bytesBase64Encoded}` }));
+                                const img = `data:image/png;base64,${data.predictions[0].bytesBase64Encoded}`;
+                                setImages(prev => ({ ...prev, [i]: img }));
+                                return [i, img];
                             }
-                        } catch (e) { console.error("Image generation failed", e); }
-                    }
+                        } catch (e) { console.error(`Image ${i} failed`, e); }
+                        return null;
+                    });
+
+                    const results = await Promise.all(promises);
+                    // Cache all images to localStorage
+                    const allImages = {};
+                    results.forEach(r => { if (r) allImages[r[0]] = r[1]; });
+                    try { localStorage.setItem(CACHE_KEY, JSON.stringify(allImages)); } catch(e) {}
                 };
                 loadImages();
             }, []);
