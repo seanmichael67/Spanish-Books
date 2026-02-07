@@ -107,8 +107,8 @@ app.get('/', (req, res) => {
 
     <!-- School CTA -->
     <div style="max-width:900px; margin:24px auto; text-align:center; padding:20px;">
-      <p style="color:rgba(255,255,255,0.8); font-size:0.85rem;">Made with ❤️ by <a href="https://www.beibeiamigos.com" target="_blank" style="color:white; font-weight:700;">Beibei Amigos Language Preschool</a> — Trilingual immersion in Phoenix, AZ</p>
-      <p style="color:rgba(255,255,255,0.6); font-size:0.75rem; margin-top:8px;">🏫 Now enrolling! Mandarin • Spanish • English | Ages 2-6</p>
+      <p style="color:rgba(255,255,255,0.8); font-size:0.85rem;">Made with ❤️ by <a href="https://www.beibeiamigos.com" target="_blank" style="color:white; font-weight:700;">Beibei Amigos Language Preschool</a> — Spanish Immersion · Mandarin Preschool · Bilingual Books — Phoenix, AZ</p>
+      <p style="color:rgba(255,255,255,0.6); font-size:0.75rem; margin-top:8px;">🏫 Now Enrolling for 2026! Spanish Immersion • Mandarin • English | Ages 2-6</p>
     </div>
   </div>
 </body>
