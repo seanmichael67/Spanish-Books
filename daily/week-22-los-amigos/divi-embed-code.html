@@ -1,0 +1,85 @@
+<!-- 
+  WORDPRESS DIVI EMBED CODE
+  Book: Los Amigos (Friends) - Week 22
+  
+  INSTRUCTIONS:
+  1. Create a new page in WordPress: "Los Amigos - Free Spanish Book"
+  2. Add a Divi Code Module
+  3. Copy-paste this entire code block
+  4. Save and publish
+  
+  MAKE SURE TO:
+  - Upload the book folder to: /wp-content/books/week-22-los-amigos/
+  - Update the iframe src path below if needed
+  - Test on mobile and desktop
+-->
+
+<div class="beibei-book-embed-wrapper">
+  <div class="beibei-book-embed">
+    <iframe 
+      src="/books/week-22-los-amigos/book-standalone.html"
+      width="100%"
+      height="700px"
+      frameborder="0"
+      loading="lazy"
+      title="Los Amigos - Spanish Friends Book for Preschool"
+      allow="autoplay"
+      style="border: none; display: block;">
+    </iframe>
+  </div>
+  
+  <!-- Optional: Add a download link below the book -->
+  <div class="book-actions" style="text-align: center; padding: 20px; background: #f8f9fa; border-radius: 0 0 12px 12px;">
+    <p style="font-size: 1.1rem; color: #666; margin-bottom: 15px;">
+      📱 <strong>Want this book on your device?</strong>
+    </p>
+    <a href="/books/week-22-los-amigos/book-standalone.html" 
+       target="_blank"
+       style="display: inline-block; padding: 12px 28px; background: #4CAF50; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; transition: background 0.3s;">
+      Open in New Tab
+    </a>
+  </div>
+</div>
+
+<style>
+  .beibei-book-embed-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  .beibei-book-embed {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    background: white;
+  }
+  
+  .beibei-book-embed iframe {
+    display: block;
+  }
+  
+  .book-actions a:hover {
+    background: #45a049 !important;
+    transform: translateY(-2px);
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .beibei-book-embed iframe {
+      height: 600px;
+    }
+    
+    .beibei-book-embed-wrapper {
+      margin: 20px auto;
+    }
+  }
+</style>
+
+<!-- 
+  ALTERNATIVE: Direct Embed (No iFrame)
+  If you prefer to embed the book directly without an iframe,
+  copy the entire content of book-standalone.html into a Code Module instead.
+  
+  Pros: Faster loading, better SEO
+  Cons: May conflict with theme CSS/JS
+-->

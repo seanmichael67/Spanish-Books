@@ -1,0 +1,132 @@
+AI IMAGE GENERATION PROMPTS
+Book: Los Amigos (Friends) - Week 22
+Target: Preschool ages 2-5
+
+STYLE GUIDELINES (use for all images):
+- Cartoon style, bright and cheerful
+- Simple, clean backgrounds
+- Diverse children representation
+- Age-appropriate (preschool)
+- Friendly, warm colors
+- High contrast for visibility
+- No scary or sad elements
+- G-rated content
+
+IMAGE DIMENSIONS: 800x600px or 1024x1024px
+FORMAT: WebP (with JPG fallback)
+FILE SIZE: <100KB each
+
+---
+
+PAGE 1: COVER
+Prompt: "Two happy diverse preschool children holding hands and smiling, bright sunny background with soft clouds, cartoon illustration style, cheerful friendship theme, colorful clothing, simple clean design, suitable for ages 2-5, warm and inviting atmosphere, book cover quality"
+
+Filename: page-01-cover.webp
+Alt text: "Los Amigos book cover - two preschool children holding hands"
+
+---
+
+PAGE 2: AMIGO (friend)
+Prompt: "Two smiling preschool children (one boy wearing blue, one girl wearing pink) waving hello to each other, diverse ethnicities, colorful clothing, playground background with simple equipment, cartoon illustration style, bright and cheerful, positive body language, suitable for preschoolers ages 2-5, clean simple design"
+
+Filename: page-02-amigo.webp
+Alt text: "Two preschool friends waving hello"
+
+---
+
+PAGE 3: JUGAR (to play)
+Prompt: "Three diverse preschool children playing with colorful building blocks together on a play mat, laughing and having fun, indoor classroom setting with soft lighting, cartoon illustration style, bright primary colors (red, blue, yellow blocks), happy expressions, cooperative play, suitable for ages 2-5, clean simple background"
+
+Filename: page-03-jugar.webp
+Alt text: "Preschool children playing with blocks together"
+
+---
+
+PAGE 4: COMPARTIR (to share)
+Prompt: "Two preschool children sharing a bright red toy car, both reaching for it gently with smiles, one child offering it to the other, diverse representation, indoor setting with soft pastel background, cartoon illustration style, positive interaction showing kindness, suitable for ages 2-5, warm friendly atmosphere, clean simple design"
+
+Filename: page-04-compartir.webp
+Alt text: "Preschool children sharing a toy car"
+
+---
+
+PAGE 5: AYUDAR (to help)
+Prompt: "One preschool child helping another child tie their shoelace, both smiling, outdoor playground setting with green grass and blue sky, cartoon illustration style, bright cheerful colors, helpful gesture showing kindness, suitable for preschoolers ages 2-5, clean simple design, positive body language"
+
+Filename: page-05-ayudar.webp
+Alt text: "One preschool child helping another tie shoes"
+
+---
+
+PAGE 6: REÍR (to laugh)
+Prompt: "Three diverse preschool children laughing together with big open smiles, holding their bellies, joyful expressions, colorful background with sparkles and small stars, cartoon illustration style, bright happy colors, natural laughter pose, suitable for ages 2-5, clean simple design, infectious joy"
+
+Filename: page-06-reir.webp
+Alt text: "Preschool children laughing together"
+
+---
+
+PAGE 7: ABRAZAR (to hug)
+Prompt: "Two preschool children giving each other a warm friendly hug, big smiles on their faces, small floating hearts around them (pink and red), soft pastel background (light blue and lavender), cartoon illustration style, loving and gentle embrace, suitable for ages 2-5, clean simple design, warm affectionate atmosphere"
+
+Filename: page-07-abrazar.webp
+Alt text: "Two preschool children hugging"
+
+---
+
+PAGE 8: GENTIL (kind, gentle)
+Prompt: "A preschool child gently petting a small white bunny rabbit while another child watches with a happy smile, soft colors, peaceful garden setting with flowers, cartoon illustration style, gentle and caring gesture, suitable for ages 2-5, clean simple design, warm nurturing atmosphere, both children showing kindness"
+
+Filename: page-08-gentil.webp
+Alt text: "Preschool child gently petting a bunny"
+
+---
+
+PAGE 9: TODOS (everyone)
+Prompt: "Group of five diverse preschool children holding hands in a circle, all smiling and happy, rainbow arcing in the background, bright sunny day, cartoon illustration style, celebration of friendship, colorful clothing representing diversity, suitable for ages 2-5, clean simple design, inclusive and joyful atmosphere"
+
+Filename: page-09-todos.webp
+Alt text: "Group of preschool children holding hands in a circle"
+
+---
+
+PAGE 10: FIN (The End)
+Prompt: "The word 'FIN' in large colorful bubble letters (rainbow gradient), small silhouettes of happy children around the edges, confetti and celebration elements (stars, hearts, sparkles), white or light background, cartoon illustration style, celebration theme, suitable for preschoolers ages 2-5, clean simple design, festive ending page"
+
+Filename: page-10-end.webp
+Alt text: "The End - colorful celebration"
+
+---
+
+GENERATION NOTES:
+
+Tools you can use:
+1. DALL-E 3 (OpenAI) - Best quality, most consistent style
+2. Midjourney - Great for cartoon styles
+3. Stable Diffusion - Free, requires more prompt engineering
+4. Canva AI - Simple, good for basic illustrations
+
+Recommended: DALL-E 3 for consistency
+
+Post-processing:
+- Convert to WebP format (use cwebp or online converter)
+- Compress to <100KB (use TinyPNG or similar)
+- Verify all images load in book-standalone.html
+- Check mobile display (images should be clear at small sizes)
+
+Safety check:
+- No text in images (avoid AI text errors)
+- Age-appropriate content only
+- Positive, friendly expressions
+- Diverse representation
+- No brand logos or copyrighted characters
+
+---
+
+ALTERNATIVE: If AI generation is not available immediately:
+- Use placeholder SVG images (already in book-standalone.html)
+- Find royalty-free images on Unsplash, Pexels, or Pixabay
+- Commission illustrations from Fiverr ($5-20 per image)
+- Use Canva free templates and customize
+
+The book works with placeholder images until you generate/add real ones!
