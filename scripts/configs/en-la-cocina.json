@@ -1,0 +1,14 @@
+{"slug":"week-14-en-la-cocina","title":"En la Cocina","subtitle":"In the Kitchen","theme":"comida","week":14,"emoji":"👨‍🍳",
+"meta_desc":"Learn kitchen vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish food book, kitchen Spanish, bilingual children books",
+"pages":[
+{"title":"En la Cocina","footer":"Aprendiendo juntos","prompt":"A bright cheerful kitchen with colorful utensils, fruits on counter, and pots on stove, professional interior photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La cuchara es grande.","footer":"The spoon is big.","prompt":"A large wooden cooking spoon next to a colorful pot, kitchen setting, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El plato es redondo.","footer":"The plate is round.","prompt":"A stack of colorful round ceramic plates on a kitchen counter, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La olla es caliente.","footer":"The pot is hot.","prompt":"A pot on the stove with steam rising, warm kitchen setting, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El tenedor tiene puntas.","footer":"The fork has points.","prompt":"A shiny fork on a colorful napkin next to a plate, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El vaso tiene agua.","footer":"The glass has water.","prompt":"A clear glass of water on a kitchen table, bright and clean kitchen background, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡En la cocina!","footer":"In the kitchen!","prompt":"A cheerful kitchen scene with all utensils and fresh ingredients laid out, bright and inviting, professional interior photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"cocina","en":"kitchen","emoji":"🍳"},{"es":"cuchara","en":"spoon","emoji":"🥄"},{"es":"plato","en":"plate","emoji":"🍽️"},{"es":"olla","en":"pot","emoji":"🫕"},{"es":"tenedor","en":"fork","emoji":"🍴"},{"es":"vaso","en":"glass","emoji":"🥃"}],
+"badge":{"emoji":"👨‍🍳","name":"Chef de la Cocina","nameEn":"Kitchen Chef"}}

@@ -1,0 +1,14 @@
+{"slug":"week-10-el-almuerzo","title":"El Almuerzo","subtitle":"Lunch","theme":"comida","week":10,"emoji":"🥪",
+"meta_desc":"Learn lunch vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish food book, lunch Spanish, bilingual children books",
+"pages":[
+{"title":"El Almuerzo","footer":"Aprendiendo juntos","prompt":"A colorful lunch spread on a table with sandwich, soup, salad, and juice, bright daylight, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El sándwich es grande.","footer":"The sandwich is big.","prompt":"A large colorful sandwich with lettuce tomato cheese on a plate, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La sopa es caliente.","footer":"The soup is hot.","prompt":"A bowl of warm vegetable soup with steam rising, colorful vegetables visible, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La ensalada es verde.","footer":"The salad is green.","prompt":"A fresh vibrant green salad with tomatoes and carrots in a bowl, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El arroz es blanco.","footer":"The rice is white.","prompt":"A plate of fluffy white rice with colorful vegetables on the side, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pollo es sabroso.","footer":"The chicken is tasty.","prompt":"Grilled chicken pieces on a colorful plate with vegetables, appetizing presentation, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El almuerzo!","footer":"Lunch!","prompt":"A beautiful complete lunch spread seen from above on a table, colorful and appetizing, professional food photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"almuerzo","en":"lunch","emoji":"🍽️"},{"es":"sándwich","en":"sandwich","emoji":"🥪"},{"es":"sopa","en":"soup","emoji":"🍜"},{"es":"ensalada","en":"salad","emoji":"🥗"},{"es":"arroz","en":"rice","emoji":"🍚"},{"es":"pollo","en":"chicken","emoji":"🍗"}],
+"badge":{"emoji":"🥪","name":"Chef del Almuerzo","nameEn":"Lunch Chef"}}

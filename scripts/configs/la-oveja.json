@@ -1,0 +1,28 @@
+{
+  "slug": "week-08-la-oveja",
+  "title": "La Oveja",
+  "subtitle": "The Sheep",
+  "theme": "animales",
+  "week": 8,
+  "emoji": "🐑",
+  "meta_desc": "Learn sheep vocabulary in Spanish (oveja, lana, suave, rebaño) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish animals book, la oveja Spanish, bilingual children books",
+  "pages": [
+    {"title": "La Oveja", "footer": "Aprendiendo juntos", "prompt": "A cute realistic fluffy white sheep standing in a green meadow, woolly coat, professional farm photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "La oveja tiene lana.", "footer": "The sheep has wool.", "prompt": "A close-up of a realistic fluffy sheep showing thick white wool texture, beautiful and soft, professional farm photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "La oveja es suave.", "footer": "The sheep is soft.", "prompt": "A realistic fluffy lamb being gently touched, showing incredibly soft wool, gentle expression, professional farm photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "La oveja dice bee.", "footer": "The sheep says baa.", "prompt": "A realistic sheep with mouth open as if bleating, funny endearing expression, green pasture background, professional farm photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "La oveja come pasto.", "footer": "The sheep eats grass.", "prompt": "A realistic sheep grazing peacefully in a lush green field, head down eating, professional farm photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "La oveja está en el rebaño.", "footer": "The sheep is in the flock.", "prompt": "A flock of realistic fluffy white sheep in a beautiful green hillside meadow, one sheep looking at camera, professional farm photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "¡La oveja!", "footer": "The sheep!", "prompt": "A friendly realistic fluffy sheep looking directly at camera with sweet gentle eyes, soft bokeh meadow background, professional farm photography, landscape orientation, wide 16:9 format, high resolution."}
+  ],
+  "vocab": [
+    {"es": "oveja", "en": "sheep", "emoji": "🐑"},
+    {"es": "lana", "en": "wool", "emoji": "🧶"},
+    {"es": "suave", "en": "soft", "emoji": "🧸"},
+    {"es": "bee", "en": "baa", "emoji": "🔊"},
+    {"es": "pasto", "en": "grass", "emoji": "🌾"},
+    {"es": "rebaño", "en": "flock", "emoji": "🐑"}
+  ],
+  "badge": {"emoji": "🐑", "name": "Exploradora de Ovejas", "nameEn": "Sheep Explorer"}
+}

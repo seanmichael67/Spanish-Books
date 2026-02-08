@@ -1,0 +1,14 @@
+{"slug":"week-15-la-merienda","title":"La Merienda","subtitle":"Snack Time","theme":"comida","week":15,"emoji":"🍿",
+"meta_desc":"Learn snack vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish food book, snacks Spanish, bilingual children books",
+"pages":[
+{"title":"La Merienda","footer":"Aprendiendo juntos","prompt":"A fun snack time spread with crackers, cheese, fruit, and popcorn on a table, cheerful setting, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Las palomitas son saladas.","footer":"The popcorn is salty.","prompt":"A big bowl of fresh popcorn overflowing, fun movie snack setting, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La manzana es roja.","footer":"The apple is red.","prompt":"A shiny red apple on a plate, fresh and crisp, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El queso es amarillo.","footer":"The cheese is yellow.","prompt":"Slices of yellow cheese on a cutting board with crackers, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Las uvas son moradas.","footer":"The grapes are purple.","prompt":"A bunch of beautiful purple grapes on a plate, fresh and plump, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La zanahoria es anaranjada.","footer":"The carrot is orange.","prompt":"Fresh orange carrot sticks arranged on a plate with dip, healthy snack, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La merienda!","footer":"Snack time!","prompt":"A colorful after-school snack spread with fruits, crackers, cheese, and juice, professional food photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"merienda","en":"snack","emoji":"🍿"},{"es":"palomitas","en":"popcorn","emoji":"🍿"},{"es":"manzana","en":"apple","emoji":"🍎"},{"es":"queso","en":"cheese","emoji":"🧀"},{"es":"uvas","en":"grapes","emoji":"🍇"},{"es":"zanahoria","en":"carrot","emoji":"🥕"}],
+"badge":{"emoji":"🍿","name":"Explorador de Meriendas","nameEn":"Snack Explorer"}}

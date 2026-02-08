@@ -1,0 +1,14 @@
+{"slug":"week-09-el-desayuno","title":"El Desayuno","subtitle":"Breakfast","theme":"comida","week":9,"emoji":"🥞",
+"meta_desc":"Learn breakfast vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish food book, breakfast Spanish, bilingual children books",
+"pages":[
+{"title":"El Desayuno","footer":"Aprendiendo juntos","prompt":"A beautiful breakfast table with pancakes, fruit, juice, and eggs, warm morning light through window, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Los huevos son amarillos.","footer":"The eggs are yellow.","prompt":"Sunny side up eggs on a colorful plate, bright yellow yolks, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pan es delicioso.","footer":"The bread is delicious.","prompt":"Fresh golden toast with butter on a cute breakfast plate, steam rising, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La leche es blanca.","footer":"The milk is white.","prompt":"A glass of fresh white milk next to colorful cereal bowl, morning kitchen scene, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La fruta es dulce.","footer":"The fruit is sweet.","prompt":"A colorful bowl of fresh sliced fruits - strawberries, bananas, blueberries on a breakfast table, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El jugo es de naranja.","footer":"The juice is orange.","prompt":"A tall glass of fresh orange juice with orange slices, bright and refreshing, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El desayuno!","footer":"Breakfast!","prompt":"A complete beautiful breakfast spread seen from above, pancakes eggs fruit juice toast, professional food photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"desayuno","en":"breakfast","emoji":"🍳"},{"es":"huevos","en":"eggs","emoji":"🥚"},{"es":"pan","en":"bread","emoji":"🍞"},{"es":"leche","en":"milk","emoji":"🥛"},{"es":"fruta","en":"fruit","emoji":"🍓"},{"es":"jugo","en":"juice","emoji":"🧃"}],
+"badge":{"emoji":"🥞","name":"Chef del Desayuno","nameEn":"Breakfast Chef"}}

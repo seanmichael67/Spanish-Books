@@ -1,0 +1,28 @@
+{
+  "slug": "week-07-el-pato",
+  "title": "El Pato",
+  "subtitle": "The Duck",
+  "theme": "animales",
+  "week": 7,
+  "emoji": "🦆",
+  "meta_desc": "Learn duck vocabulary in Spanish (pato, nada, plumas, lago) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish animals book, el pato Spanish, bilingual children books",
+  "pages": [
+    {"title": "El Pato", "footer": "Aprendiendo juntos", "prompt": "A cute realistic yellow and brown duck standing by a pond, beautiful feathers, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "El pato nada.", "footer": "The duck swims.", "prompt": "A realistic duck swimming gracefully on a calm blue pond, reflections in water, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "El pato tiene plumas.", "footer": "The duck has feathers.", "prompt": "A close-up of a realistic duck showing beautiful iridescent green and brown feathers, detailed texture, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "El pato dice cuac.", "footer": "The duck says quack.", "prompt": "A realistic duck with beak open as if quacking, funny expression, pond background, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "El pato come pan.", "footer": "The duck eats bread.", "prompt": "A realistic duck nibbling on bread near a pond edge, peaceful scene, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "El pato está en el lago.", "footer": "The duck is in the lake.", "prompt": "A realistic duck floating on a beautiful lake with trees reflected in the water, serene setting, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+    {"title": "¡El pato!", "footer": "The duck!", "prompt": "A friendly realistic duck looking directly at camera with bright eyes, soft bokeh lake background, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."}
+  ],
+  "vocab": [
+    {"es": "pato", "en": "duck", "emoji": "🦆"},
+    {"es": "nada", "en": "swims", "emoji": "🏊"},
+    {"es": "plumas", "en": "feathers", "emoji": "🪶"},
+    {"es": "cuac", "en": "quack", "emoji": "🔊"},
+    {"es": "pan", "en": "bread", "emoji": "🍞"},
+    {"es": "lago", "en": "lake", "emoji": "🏞️"}
+  ],
+  "badge": {"emoji": "🦆", "name": "Explorador de Patos", "nameEn": "Duck Explorer"}
+}

@@ -1,0 +1,14 @@
+{"slug":"week-12-las-bebidas","title":"Las Bebidas","subtitle":"Drinks","theme":"comida","week":12,"emoji":"🥤",
+"meta_desc":"Learn drink vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish food book, drinks Spanish, bilingual children books",
+"pages":[
+{"title":"Las Bebidas","footer":"Aprendiendo juntos","prompt":"A colorful array of different drinks on a table - juice, milk, water, smoothie, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El agua es clara.","footer":"Water is clear.","prompt":"A crystal clear glass of water with a lemon slice, refreshing, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El jugo es de manzana.","footer":"The juice is apple.","prompt":"A glass of golden apple juice next to fresh red apples, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La leche es nutritiva.","footer":"Milk is nutritious.","prompt":"A tall glass of white milk with a fun striped straw, cheerful setting, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El batido es rosa.","footer":"The smoothie is pink.","prompt":"A pink strawberry smoothie in a clear glass with a straw and fresh strawberries, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El chocolate es caliente.","footer":"The chocolate is hot.","prompt":"A mug of hot chocolate with marshmallows on top, cozy warm setting, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡Las bebidas!","footer":"Drinks!","prompt":"Multiple colorful drinks arranged beautifully - juices, milk, smoothie, water, professional food photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"agua","en":"water","emoji":"💧"},{"es":"jugo","en":"juice","emoji":"🧃"},{"es":"leche","en":"milk","emoji":"🥛"},{"es":"batido","en":"smoothie","emoji":"🥤"},{"es":"chocolate","en":"chocolate","emoji":"☕"},{"es":"bebida","en":"drink","emoji":"🥤"}],
+"badge":{"emoji":"🥤","name":"Explorador de Bebidas","nameEn":"Drinks Explorer"}}

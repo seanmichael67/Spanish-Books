@@ -28,6 +28,15 @@ const BOOKS = [
   { slug: 'week-04-el-conejo', emoji: '🐰', week: 4, title: 'El Conejo', subtitle: 'The Rabbit', theme: 'animales', ready: true },
   { slug: 'week-05-el-caballo', emoji: '🐴', week: 5, title: 'El Caballo', subtitle: 'The Horse', theme: 'animales', ready: true },
   { slug: 'week-06-la-vaca', emoji: '🐄', week: 6, title: 'La Vaca', subtitle: 'The Cow', theme: 'animales', ready: true },
+  { slug: 'week-07-el-pato', emoji: '🦆', week: 7, title: 'El Pato', subtitle: 'The Duck', theme: 'animales', ready: true },
+  { slug: 'week-08-la-oveja', emoji: '🐑', week: 8, title: 'La Oveja', subtitle: 'The Sheep', theme: 'animales', ready: true },
+  { slug: 'week-09-el-desayuno', emoji: '🥞', week: 9, title: 'El Desayuno', subtitle: 'Breakfast', theme: 'comida', ready: true },
+  { slug: 'week-10-el-almuerzo', emoji: '🥪', week: 10, title: 'El Almuerzo', subtitle: 'Lunch', theme: 'comida', ready: true },
+  { slug: 'week-11-la-cena', emoji: '🍝', week: 11, title: 'La Cena', subtitle: 'Dinner', theme: 'comida', ready: true },
+  { slug: 'week-12-las-bebidas', emoji: '🥤', week: 12, title: 'Las Bebidas', subtitle: 'Drinks', theme: 'comida', ready: true },
+  { slug: 'week-13-los-postres', emoji: '🍰', week: 13, title: 'Los Postres', subtitle: 'Desserts', theme: 'comida', ready: true },
+  { slug: 'week-14-en-la-cocina', emoji: '👨‍🍳', week: 14, title: 'En la Cocina', subtitle: 'In the Kitchen', theme: 'comida', ready: true },
+  { slug: 'week-15-la-merienda', emoji: '🍿', week: 15, title: 'La Merienda', subtitle: 'Snack Time', theme: 'comida', ready: true },
 ];
 
 const THEMES = [

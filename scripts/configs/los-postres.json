@@ -1,0 +1,14 @@
+{"slug":"week-13-los-postres","title":"Los Postres","subtitle":"Desserts","theme":"comida","week":13,"emoji":"🍰",
+"meta_desc":"Learn dessert vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish food book, desserts Spanish, bilingual children books",
+"pages":[
+{"title":"Los Postres","footer":"Aprendiendo juntos","prompt":"A beautiful dessert table with cake, cookies, ice cream, and fruit, colorful and festive, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pastel es dulce.","footer":"The cake is sweet.","prompt":"A beautiful decorated birthday cake with colorful frosting and sprinkles, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El helado es frío.","footer":"The ice cream is cold.","prompt":"Colorful scoops of ice cream in a waffle cone - chocolate, strawberry, vanilla, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La galleta es redonda.","footer":"The cookie is round.","prompt":"Fresh baked chocolate chip cookies on a plate, golden brown and delicious, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La gelatina es roja.","footer":"The jello is red.","prompt":"A jiggly red jello dessert on a cute plate, fun and colorful, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El chocolate es rico.","footer":"Chocolate is yummy.","prompt":"Pieces of chocolate and chocolate truffles on a plate, rich and tempting, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡Los postres!","footer":"Desserts!","prompt":"An amazing dessert spread with cake, ice cream, cookies, and fruit, celebration setting, professional food photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"pastel","en":"cake","emoji":"🎂"},{"es":"helado","en":"ice cream","emoji":"🍦"},{"es":"galleta","en":"cookie","emoji":"🍪"},{"es":"gelatina","en":"jello","emoji":"🍮"},{"es":"chocolate","en":"chocolate","emoji":"🍫"},{"es":"dulce","en":"sweet","emoji":"🍬"}],
+"badge":{"emoji":"🍰","name":"Explorador de Postres","nameEn":"Dessert Explorer"}}

@@ -1,0 +1,14 @@
+{"slug":"week-11-la-cena","title":"La Cena","subtitle":"Dinner","theme":"comida","week":11,"emoji":"🍝",
+"meta_desc":"Learn dinner vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish food book, dinner Spanish, bilingual children books",
+"pages":[
+{"title":"La Cena","footer":"Aprendiendo juntos","prompt":"A warm family dinner table with pasta, salad, bread, and candles, cozy evening lighting, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La pasta es larga.","footer":"The pasta is long.","prompt":"A plate of spaghetti with red tomato sauce, twirled on a fork, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pescado es fresco.","footer":"The fish is fresh.","prompt":"A beautifully plated fresh fish fillet with lemon and herbs, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Las verduras son coloridas.","footer":"The vegetables are colorful.","prompt":"A plate of colorful roasted vegetables - peppers, broccoli, carrots, zucchini, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La pizza es redonda.","footer":"The pizza is round.","prompt":"A round pizza with cheese and colorful toppings on a wooden board, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El agua es importante.","footer":"Water is important.","prompt":"A clear glass of water with ice on a dinner table, refreshing and clean, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La cena!","footer":"Dinner!","prompt":"A beautiful family dinner table set with multiple dishes, warm cozy evening atmosphere, professional food photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"cena","en":"dinner","emoji":"🌙"},{"es":"pasta","en":"pasta","emoji":"🍝"},{"es":"pescado","en":"fish","emoji":"🐟"},{"es":"verduras","en":"vegetables","emoji":"🥦"},{"es":"pizza","en":"pizza","emoji":"🍕"},{"es":"agua","en":"water","emoji":"💧"}],
+"badge":{"emoji":"🍝","name":"Chef de la Cena","nameEn":"Dinner Chef"}}
