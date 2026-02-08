@@ -94,7 +94,7 @@ app.get('/', (req, res) => {
     .theme-btn:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
     .theme-btn.active { background: white; color: #5b4a9e; border-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
     .theme-emoji { font-size: 1.1rem; }
-    @media (max-width: 600px) { .theme-btn { padding: 6px 12px; font-size: 0.75rem; } .theme-label { display: none; } .theme-emoji { font-size: 1.3rem; } }
+    @media (max-width: 600px) { .theme-btn { padding: 6px 12px; font-size: 0.7rem; } .theme-emoji { font-size: 1rem; } }
 
     /* Book grid */
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
