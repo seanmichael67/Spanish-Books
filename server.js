@@ -134,9 +134,9 @@ app.get('/', (req, res) => {
 
     <!-- Upsell Banner -->
     <div style="max-width:900px; margin:40px auto 0; background:white; border-radius:20px; padding:32px; box-shadow:0 10px 30px rgba(0,0,0,0.1); text-align:center;">
-      <h2 style="font-size:1.6rem; margin-bottom:8px; color:#333;">👩‍🏫 Want Your Child to SPEAK Spanish?</h2>
-      <p style="color:#666; margin-bottom:20px; font-size:0.95rem;">Meet <strong>Sofia</strong> — our AI Spanish teacher who talks, listens, and plays with your child in real-time!</p>
-      <a href="https://tutti-sophia.onrender.com/sofia-fullscreen.html" target="_blank" style="display:inline-block; background:linear-gradient(135deg,#667eea,#764ba2); color:white; padding:14px 32px; border-radius:12px; font-weight:800; font-size:1rem; text-decoration:none; box-shadow:0 4px 15px rgba(102,126,234,0.4);">Try Sofia Free →</a>
+      <h2 style="font-size:2.2rem; margin-bottom:12px; color:#333;">👩‍🏫 Meet Sofia — Your Child's AI Spanish Teacher!</h2>
+      <p style="color:#666; margin-bottom:24px; font-size:1.2rem;">Sofia talks, listens, and plays with your child in real-time — making Spanish fun and natural!</p>
+      <a href="https://tutti-sophia.onrender.com/sofia-fullscreen.html" target="_blank" style="display:inline-block; background:linear-gradient(135deg,#667eea,#764ba2); color:white; padding:16px 40px; border-radius:12px; font-weight:800; font-size:1.2rem; text-decoration:none; box-shadow:0 4px 15px rgba(102,126,234,0.4);">Try Sofia Free →</a>
     </div>
 
     <!-- School CTA -->
