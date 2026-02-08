@@ -320,6 +320,9 @@
 
                 // Vocabulary review page
                 if (data.type === 'vocab') {
+                    const [activeWord, setActiveWord] = React.useState(-1);
+                    const [isAutoPlaying, setIsAutoPlaying] = React.useState(false);
+
                     const speakWord = async (word) => {
                         try {
                             const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`, {
@@ -331,23 +334,38 @@
                             const pcm = Uint8Array.from(atob(inlineData.data), c => c.charCodeAt(0));
                             const sampleRate = parseInt(inlineData.mimeType.split('rate=')[1]) || 24000;
                             const audio = new Audio(URL.createObjectURL(pcmToWav(pcm, sampleRate)));
-                            audio.play();
+                            return new Promise(resolve => { audio.onended = resolve; audio.play(); });
                         } catch(e) { console.error('TTS failed', e); }
                     };
+
+                    const autoPlayAll = async () => {
+                        if (isAutoPlaying) return;
+                        setIsAutoPlaying(true);
+                        for (let i = 0; i < data.words.length; i++) {
+                            setActiveWord(i);
+                            await speakWord(data.words[i].es);
+                            await new Promise(r => setTimeout(r, 500));
+                        }
+                        setActiveWord(-1);
+                        setIsAutoPlaying(false);
+                    };
+
+                    React.useEffect(() => { autoPlayAll(); }, []);
+
                     return (
                         <div className={`relative flex flex-col items-center justify-between bg-white ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-3 md:p-8 shadow-inner border-l-4 border-gray-100 overflow-auto'}`}>
                             <div className="text-center w-full flex-shrink-0 mb-2 md:mb-4">
-                                <h2 className="text-2xl md:text-4xl font-bold text-gray-800">📝 {data.title}</h2>
-                                <p className="text-sm md:text-lg text-gray-500 mt-1">{data.footer}</p>
-                                <p className="text-xs text-indigo-400 mt-1">👆 Tap a word to hear it!</p>
+                                <h2 className="text-3xl md:text-5xl font-bold text-gray-800">📝 {data.title}</h2>
+                                <p className="text-base md:text-xl text-gray-500 mt-1">{data.footer}</p>
+                                <p className="text-sm text-indigo-400 mt-1">👆 Tap a word to hear it!</p>
                             </div>
                             <div className="flex-1 w-full grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 content-start">
                                 {data.words.map((w, i) => (
-                                    <div key={i} onClick={() => speakWord(w.es)} className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-3 md:p-4 text-center border-2 border-indigo-100 hover:border-indigo-300 transition hover:scale-105 active:scale-95 cursor-pointer select-none">
-                                        <div className="text-2xl md:text-3xl mb-1">{w.emoji}</div>
-                                        <div className="text-base md:text-xl font-black text-indigo-700">{w.es}</div>
-                                        <div className="text-xs md:text-sm text-gray-500">{w.en}</div>
-                                        <div className="text-[10px] text-indigo-300 mt-1">🔊</div>
+                                    <div key={i} onClick={() => speakWord(w.es).then(() => setActiveWord(-1)) || setActiveWord(i)} className={`rounded-xl p-3 md:p-5 text-center border-2 transition-all duration-300 cursor-pointer select-none ${activeWord === i ? 'bg-gradient-to-br from-yellow-100 to-amber-100 border-amber-400 scale-110 shadow-lg ring-2 ring-amber-300' : 'bg-gradient-to-br from-indigo-50 to-purple-50 border-indigo-100 hover:border-indigo-300 hover:scale-105 active:scale-95'}`}>
+                                        <div className="text-3xl md:text-4xl mb-1">{w.emoji}</div>
+                                        <div className={`text-lg md:text-2xl font-black ${activeWord === i ? 'text-amber-700' : 'text-indigo-700'}`}>{w.es}</div>
+                                        <div className="text-sm md:text-base text-gray-500">{w.en}</div>
+                                        <div className="text-xs text-indigo-300 mt-1">🔊</div>
                                     </div>
                                 ))}
                             </div>
