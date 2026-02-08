@@ -26,7 +26,6 @@ const BOOKS = [
 ];
 
 const THEMES = [
-  { id: 'todos', emoji: '📚', label: 'Todos', labelEn: 'All' },
   { id: 'animales', emoji: '🐻', label: 'Animales', labelEn: 'Animals' },
   { id: 'comida', emoji: '🍎', label: 'Comida', labelEn: 'Food' },
   { id: 'colores', emoji: '🌈', label: 'Colores y Formas', labelEn: 'Colors & Shapes' },
@@ -38,6 +37,7 @@ const THEMES = [
   { id: 'cuerpo', emoji: '🫀', label: 'Mi Cuerpo', labelEn: 'My Body' },
   { id: 'transporte', emoji: '🚗', label: 'Transporte', labelEn: 'Transportation' },
   { id: 'estaciones', emoji: '☀️', label: 'Estaciones y Clima', labelEn: 'Seasons & Weather' },
+  { id: 'todos', emoji: '📚', label: 'Todos', labelEn: 'All' },
 ];
 
 // Book index page
@@ -54,7 +54,7 @@ app.get('/', (req, res) => {
   }).join('\n      ');
 
   const themeBtns = THEMES.map(t =>
-    '<button class="theme-btn' + (t.id === 'todos' ? ' active' : '') + '" data-filter="' + t.id + '">' +
+    '<button class="theme-btn' + (t.id === 'animales' ? ' active' : '') + '" data-filter="' + t.id + '">' +
     '<span class="theme-emoji">' + t.emoji + '</span>' +
     '<span class="theme-label">' + t.labelEn + '</span>' +
     '</button>'
@@ -147,24 +147,28 @@ app.get('/', (req, res) => {
   </div>
 
   <script>
+    function filterBooks(filter) {
+      const cards = document.querySelectorAll('#bookGrid .card');
+      let visible = 0;
+      cards.forEach(card => {
+        if (filter === 'todos' || card.dataset.theme === filter) {
+          card.classList.remove('hidden');
+          visible++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+      document.getElementById('noBooks').style.display = visible === 0 ? 'block' : 'none';
+    }
     document.querySelectorAll('.theme-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        const cards = document.querySelectorAll('#bookGrid .card');
-        let visible = 0;
-        cards.forEach(card => {
-          if (filter === 'todos' || card.dataset.theme === filter) {
-            card.classList.remove('hidden');
-            visible++;
-          } else {
-            card.classList.add('hidden');
-          }
-        });
-        document.getElementById('noBooks').style.display = visible === 0 ? 'block' : 'none';
+        filterBooks(btn.dataset.filter);
       });
     });
+    // Default filter on load
+    filterBooks('animales');
   </script>
 </body>
 </html>`);
