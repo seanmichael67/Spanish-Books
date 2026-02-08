@@ -19,18 +19,59 @@ app.get('/config.js', (req, res) => {
 // Serve static files
 app.use(express.static(path.join(__dirname)));
 
+// Book data with themes
+const BOOKS = [
+  { slug: 'week-00-frutas-y-verduras', emoji: '🍎', week: 0, title: 'Mis Frutas y Verduras', subtitle: 'Fruits & Vegetables', theme: 'comida', ready: true },
+  { slug: 'week-01-el-oso', emoji: '🐻', week: 1, title: 'El Oso', subtitle: 'The Bear', theme: 'animales', ready: true },
+];
+
+const THEMES = [
+  { id: 'todos', emoji: '📚', label: 'Todos', labelEn: 'All' },
+  { id: 'animales', emoji: '🐻', label: 'Animales', labelEn: 'Animals' },
+  { id: 'comida', emoji: '🍎', label: 'Comida', labelEn: 'Food' },
+  { id: 'colores', emoji: '🌈', label: 'Colores y Formas', labelEn: 'Colors & Shapes' },
+  { id: 'familia', emoji: '👨‍👩‍👧', label: 'Familia y Amigos', labelEn: 'Family & Friends' },
+  { id: 'naturaleza', emoji: '🌿', label: 'Naturaleza', labelEn: 'Nature' },
+  { id: 'numeros', emoji: '🔢', label: 'Números y Letras', labelEn: 'Numbers & Letters' },
+  { id: 'musica', emoji: '🎵', label: 'Música y Juegos', labelEn: 'Music & Games' },
+  { id: 'mi-mundo', emoji: '🏠', label: 'Mi Mundo', labelEn: 'My World' },
+  { id: 'cuerpo', emoji: '🫀', label: 'Mi Cuerpo', labelEn: 'My Body' },
+  { id: 'transporte', emoji: '🚗', label: 'Transporte', labelEn: 'Transportation' },
+  { id: 'estaciones', emoji: '☀️', label: 'Estaciones y Clima', labelEn: 'Seasons & Weather' },
+];
+
 // Book index page
 app.get('/', (req, res) => {
+  const bookCards = BOOKS.map(b => {
+    const cls = b.ready ? 'card' : 'card coming-soon';
+    const href = b.ready ? '/books/' + b.slug + '/' : '#';
+    return '<a href="' + href + '" class="' + cls + '" data-theme="' + b.theme + '">' +
+      '<div class="emoji">' + b.emoji + '</div>' +
+      '<div class="week">Semana ' + b.week + '</div>' +
+      '<div class="title">' + b.title + '</div>' +
+      '<div class="subtitle">' + b.subtitle + '</div>' +
+      '</a>';
+  }).join('\n      ');
+
+  const themeBtns = THEMES.map(t =>
+    '<button class="theme-btn' + (t.id === 'todos' ? ' active' : '') + '" data-filter="' + t.id + '">' +
+    '<span class="theme-emoji">' + t.emoji + '</span>' +
+    '<span class="theme-label">' + t.label + '</span>' +
+    '</button>'
+  ).join('\n        ');
+
+  const bookCount = BOOKS.filter(b => b.ready).length;
+
   res.send(`<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Free Spanish Books for Preschoolers | Beibei Amigos - Learn Spanish Reading</title>
-  <meta name="description" content="52 free interactive Spanish reading books for preschoolers ages 2-5. Audio pronunciation, word highlighting, and beautiful photos. New book every week! By Beibei Amigos Language Preschool.">
+  <meta name="description" content="Free interactive Spanish reading books for preschoolers ages 2-5. Audio pronunciation, word highlighting, and beautiful photos. New books every week! By Beibei Amigos Language Preschool.">
   <meta name="keywords" content="free Spanish books kids, learn Spanish preschool, bilingual children books, Spanish reading preschoolers, interactive Spanish books, Beibei Amigos, Spanish vocabulary kids, bilingual education Phoenix">
   <meta property="og:title" content="Free Spanish Books for Preschoolers | Beibei Amigos">
-  <meta property="og:description" content="52 free interactive Spanish books with audio! Your child learns to read Spanish through play. New book every week.">
+  <meta property="og:description" content="Free interactive Spanish books with audio! Your child learns to read Spanish through play. New books every week.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://spanish-books.onrender.com/">
   <meta property="og:image" content="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png">
@@ -40,21 +81,36 @@ app.get('/', (req, res) => {
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Sour Gummy', cursive; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 40px 20px; }
-    .container { max-width: 900px; margin: 0 auto; }
-    .header { text-align: center; color: white; margin-bottom: 40px; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .header { text-align: center; color: white; margin-bottom: 32px; }
     .header img { width: 80px; height: 80px; border-radius: 50%; background: white; padding: 8px; margin-bottom: 16px; }
     .header h1 { font-size: 2.5rem; margin-bottom: 8px; }
     .header p { font-size: 1.1rem; opacity: 0.9; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
-    .card { background: white; border-radius: 20px; padding: 32px 24px; text-align: center; text-decoration: none; color: #333;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: transform 0.2s, box-shadow 0.2s; }
+    .header .count { font-size: 0.85rem; opacity: 0.7; margin-top: 4px; }
+
+    /* Theme filter */
+    .themes { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 32px; padding: 0 10px; }
+    .theme-btn { background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); color: white; padding: 8px 16px; border-radius: 50px; cursor: pointer; font-family: inherit; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; gap: 6px; transition: all 0.2s; }
+    .theme-btn:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
+    .theme-btn.active { background: white; color: #5b4a9e; border-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+    .theme-emoji { font-size: 1.1rem; }
+    @media (max-width: 600px) { .theme-btn { padding: 6px 12px; font-size: 0.75rem; } .theme-label { display: none; } .theme-emoji { font-size: 1.3rem; } }
+
+    /* Book grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    .card { background: white; border-radius: 20px; padding: 28px 20px; text-align: center; text-decoration: none; color: #333;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s; }
     .card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.2); }
-    .card .emoji { font-size: 3rem; margin-bottom: 12px; }
-    .card .week { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 8px; }
-    .card .title { font-size: 1.4rem; font-weight: 800; margin-bottom: 4px; }
-    .card .subtitle { font-size: 0.85rem; color: #777; }
-    .coming-soon { opacity: 0.5; pointer-events: none; }
-    .coming-soon .title::after { content: ' 🔒'; }
+    .card .emoji { font-size: 3rem; margin-bottom: 10px; }
+    .card .week { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 6px; }
+    .card .title { font-size: 1.3rem; font-weight: 800; margin-bottom: 4px; }
+    .card .subtitle { font-size: 0.8rem; color: #777; }
+    .card .theme-tag { font-size: 0.65rem; color: #5b4a9e; background: #ede9fe; padding: 2px 10px; border-radius: 20px; display: inline-block; margin-top: 8px; font-weight: 600; }
+    .card.coming-soon { opacity: 0.5; pointer-events: none; }
+    .card.coming-soon .title::after { content: ' 🔒'; }
+    .card.hidden { display: none; }
+
+    .no-books { text-align: center; color: rgba(255,255,255,0.7); padding: 60px 20px; font-size: 1.2rem; display: none; }
   </style>
 </head>
 <body>
@@ -63,45 +119,19 @@ app.get('/', (req, res) => {
       <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png" alt="Beibei Amigos">
       <h1>📚 Mis Libros en Español</h1>
       <p>Beibei Amigos Language Preschool • Lectura Temprana</p>
+      <p class="count">${bookCount} libros disponibles • ¡Nuevos cada semana!</p>
     </div>
-    <div class="grid">
-      <a href="/books/week-00-frutas-y-verduras/" class="card">
-        <div class="emoji">🍎</div>
-        <div class="week">Semana 0</div>
-        <div class="title">Mis Frutas y Verduras</div>
-        <div class="subtitle">Fruits & Vegetables</div>
-      </a>
-      <a href="/books/week-01-el-oso/" class="card">
-        <div class="emoji">🐻</div>
-        <div class="week">Semana 1</div>
-        <div class="title">El Oso</div>
-        <div class="subtitle">The Bear</div>
-      </a>
-      <a href="#" class="card coming-soon">
-        <div class="emoji">🐶</div>
-        <div class="week">Semana 2</div>
-        <div class="title">El Perro</div>
-        <div class="subtitle">The Dog</div>
-      </a>
-      <a href="#" class="card coming-soon">
-        <div class="emoji">🐱</div>
-        <div class="week">Semana 3</div>
-        <div class="title">El Gato</div>
-        <div class="subtitle">The Cat</div>
-      </a>
-      <a href="#" class="card coming-soon">
-        <div class="emoji">🐦</div>
-        <div class="week">Semana 4</div>
-        <div class="title">El Pájaro</div>
-        <div class="subtitle">The Bird</div>
-      </a>
-      <a href="#" class="card coming-soon">
-        <div class="emoji">🐟</div>
-        <div class="week">Semana 5</div>
-        <div class="title">El Pez</div>
-        <div class="subtitle">The Fish</div>
-      </a>
+
+    <div class="themes">
+      ${themeBtns}
     </div>
+
+    <div class="grid" id="bookGrid">
+      ${bookCards}
+    </div>
+
+    <div class="no-books" id="noBooks">🔍 No hay libros en este tema todavía.<br>¡Pronto habrá más!</div>
+
     <!-- Upsell Banner -->
     <div style="max-width:900px; margin:40px auto 0; background:white; border-radius:20px; padding:32px; box-shadow:0 10px 30px rgba(0,0,0,0.1); text-align:center;">
       <h2 style="font-size:1.6rem; margin-bottom:8px; color:#333;">👩‍🏫 Want Your Child to SPEAK Spanish?</h2>
@@ -115,6 +145,27 @@ app.get('/', (req, res) => {
       <p style="color:rgba(255,255,255,0.6); font-size:0.75rem; margin-top:8px;">🏫 Now Enrolling for 2026! Spanish Immersion • Mandarin • English | Ages 2-6</p>
     </div>
   </div>
+
+  <script>
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        const cards = document.querySelectorAll('#bookGrid .card');
+        let visible = 0;
+        cards.forEach(card => {
+          if (filter === 'todos' || card.dataset.theme === filter) {
+            card.classList.remove('hidden');
+            visible++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+        document.getElementById('noBooks').style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>`);
 });
