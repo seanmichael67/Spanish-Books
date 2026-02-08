@@ -61,7 +61,15 @@
                 { title: "El oso camina.", footer: "The bear walks.", prompt: "A realistic brown bear walking along a forest path, mid-stride, peaceful setting, professional wildlife photography, natural lighting, high resolution." },
                 { title: "El oso está en el bosque.", footer: "The bear is in the forest.", prompt: "A realistic brown bear sitting peacefully among tall green pine trees in a beautiful forest, professional wildlife photography, natural lighting, high resolution." },
                 { title: "¡El oso!", footer: "The bear!", prompt: "A friendly realistic brown bear looking directly at camera with a gentle expression, soft bokeh forest background, professional wildlife photography, warm natural lighting, high resolution." },
-                { title: "¡Buen trabajo!", footer: "¡Aprendiste sobre el oso!", prompt: "A happy golden star wearing a small crown, surrounded by cute bear paw prints, isolated on pure white background, studio lighting." }
+                { title: "Mis Palabras", footer: "My Words", type: "vocab", words: [
+                    { es: "oso", en: "bear", emoji: "🐻" },
+                    { es: "grande", en: "big", emoji: "💪" },
+                    { es: "café", en: "brown", emoji: "🟤" },
+                    { es: "fuerte", en: "strong", emoji: "🏋️" },
+                    { es: "camina", en: "walks", emoji: "🚶" },
+                    { es: "bosque", en: "forest", emoji: "🌲" },
+                ]},
+                { title: "¡Ganaste tu insignia!", footer: "You earned your badge!", type: "badge", badgeEmoji: "🐻", badgeName: "Explorador de Osos", badgeNameEn: "Bear Explorer" }
             ]
         };
 
@@ -143,7 +151,7 @@
                     const missing = results.map((ok, i) => ok ? null : i).filter(i => i !== null);
                     if (missing.length === 0) return;
 
-                    const apiLoads = missing.map(async (i) => {
+                    const apiLoads = missing.filter(i => BOOK_CONFIG.pages[i].prompt).map(async (i) => {
                         const page = BOOK_CONFIG.pages[i];
                         const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp-image-generation:generateContent?key=${apiKey}`;
                         try {
@@ -265,6 +273,57 @@
                 const data = BOOK_CONFIG.pages[idx];
                 if (!data) return <div className="w-full h-full bg-white border border-gray-100" />;
                 const titleCount = data.title.split(/\s+/).length;
+
+                // Vocabulary review page
+                if (data.type === 'vocab') {
+                    return (
+                        <div className={`relative flex flex-col items-center justify-between bg-white ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-3 md:p-8 shadow-inner border-l-4 border-gray-100 overflow-auto'}`}>
+                            <div className="text-center w-full flex-shrink-0 mb-2 md:mb-4">
+                                <h2 className="text-2xl md:text-4xl font-bold text-gray-800">📝 {data.title}</h2>
+                                <p className="text-sm md:text-lg text-gray-500 mt-1">{data.footer}</p>
+                            </div>
+                            <div className="flex-1 w-full grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 content-start">
+                                {data.words.map((w, i) => (
+                                    <div key={i} className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-3 md:p-4 text-center border-2 border-indigo-100 hover:border-indigo-300 transition hover:scale-105 cursor-default">
+                                        <div className="text-2xl md:text-3xl mb-1">{w.emoji}</div>
+                                        <div className="text-base md:text-xl font-black text-indigo-700">{w.es}</div>
+                                        <div className="text-xs md:text-sm text-gray-500">{w.en}</div>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="pt-2 md:pt-4 border-t border-gray-100 flex justify-between text-[8px] md:text-[10px] uppercase font-bold text-gray-300 w-full mt-2">
+                                <span>Lectura Temprana</span><span>Página {idx + 1}</span>
+                            </div>
+                        </div>
+                    );
+                }
+
+                // Badge page
+                if (data.type === 'badge') {
+                    return (
+                        <div className={`relative flex flex-col items-center justify-center bg-gradient-to-br from-yellow-50 via-white to-amber-50 ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-3 md:p-8 shadow-inner border-l-4 border-yellow-200 overflow-hidden'}`}>
+                            <div className="text-center space-y-3 md:space-y-5">
+                                <div className="text-4xl md:text-6xl animate-bounce">🏆</div>
+                                <h2 className="text-2xl md:text-4xl font-black text-gray-800">{data.title}</h2>
+                                <p className="text-sm md:text-lg text-gray-500">{data.footer}</p>
+                                <div className="relative inline-block">
+                                    <div className="w-28 h-28 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-yellow-300 via-amber-400 to-orange-400 flex items-center justify-center shadow-2xl border-4 border-yellow-200 mx-auto">
+                                        <span className="text-5xl md:text-7xl">{data.badgeEmoji}</span>
+                                    </div>
+                                    <div className="absolute -top-2 -right-2 text-2xl md:text-3xl">⭐</div>
+                                </div>
+                                <div>
+                                    <p className="text-lg md:text-2xl font-black text-amber-700 mt-2">{data.badgeName}</p>
+                                    <p className="text-xs md:text-sm text-gray-500">{data.badgeNameEn}</p>
+                                </div>
+                                <p className="text-xs md:text-sm text-indigo-500 font-bold mt-2">🎯 ¡Colecciona insignias para desbloquear premios!</p>
+                                <p className="text-[10px] md:text-xs text-gray-400">Collect badges to unlock prizes!</p>
+                                <a href="/" className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold text-sm hover:bg-indigo-700 transition shadow-lg hover:scale-105 active:scale-95 mt-2">📚 More Books</a>
+                            </div>
+                        </div>
+                    );
+                }
+
                 return (
                     <div className={`relative flex flex-col items-center justify-between bg-white ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-2 md:p-10 shadow-inner border-l-4 border-gray-100 overflow-hidden'}`}>
                         <div className="text-center w-full flex-shrink-0">
@@ -293,9 +352,6 @@
                                 <p className="text-xl md:text-3xl font-bold text-gray-700">
                                     {isPrint ? data.footer : <HighlightedText text={data.footer} start={titleCount} />}
                                 </p>
-                                {!isPrint && idx === BOOK_CONFIG.pages.length - 1 && (
-                                    <a href="/" className="mt-2 inline-block px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold text-sm hover:bg-indigo-700 transition shadow-lg hover:scale-105 active:scale-95">📚 More Books</a>
-                                )}
                                 {!isPrint && (
                                     <button onClick={() => readPage(false)} className={`p-2 md:p-3 rounded-full shadow-lg transition flex-shrink-0 ${isReading ? 'bg-blue-100 text-blue-400' : 'bg-blue-600 text-white hover:scale-105 active:scale-95'}`}>
                                         <Icons.Volume size={18} />
