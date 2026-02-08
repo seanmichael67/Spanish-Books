@@ -23,6 +23,11 @@ app.use(express.static(path.join(__dirname)));
 const BOOKS = [
   { slug: 'week-00-frutas-y-verduras', emoji: '🍎', week: 0, title: 'Mis Frutas y Verduras', subtitle: 'Fruits & Vegetables', theme: 'comida', ready: true },
   { slug: 'week-01-el-oso', emoji: '🐻', week: 1, title: 'El Oso', subtitle: 'The Bear', theme: 'animales', ready: true },
+  { slug: 'week-02-el-gato', emoji: '🐱', week: 2, title: 'El Gato', subtitle: 'The Cat', theme: 'animales', ready: true },
+  { slug: 'week-03-el-perro', emoji: '🐶', week: 3, title: 'El Perro', subtitle: 'The Dog', theme: 'animales', ready: true },
+  { slug: 'week-04-el-conejo', emoji: '🐰', week: 4, title: 'El Conejo', subtitle: 'The Rabbit', theme: 'animales', ready: true },
+  { slug: 'week-05-el-caballo', emoji: '🐴', week: 5, title: 'El Caballo', subtitle: 'The Horse', theme: 'animales', ready: true },
+  { slug: 'week-06-la-vaca', emoji: '🐄', week: 6, title: 'La Vaca', subtitle: 'The Cow', theme: 'animales', ready: true },
 ];
 
 const THEMES = [

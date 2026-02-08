@@ -1,0 +1,28 @@
+{
+  "slug": "week-04-el-conejo",
+  "title": "El Conejo",
+  "subtitle": "The Rabbit",
+  "theme": "animales",
+  "week": 4,
+  "emoji": "🐰",
+  "meta_desc": "Learn rabbit vocabulary in Spanish (conejo, salta, orejas, zanahoria) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish animals book, el conejo Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {"title": "El Conejo", "footer": "Aprendiendo juntos", "prompt": "A cute realistic white and brown bunny rabbit sitting in a meadow with wildflowers, soft fur, professional wildlife photography, natural lighting, high resolution."},
+    {"title": "El conejo salta.", "footer": "The rabbit jumps.", "prompt": "A realistic bunny rabbit mid-hop in a green meadow, action shot showing jumping motion, professional wildlife photography, bright natural lighting, high resolution."},
+    {"title": "El conejo tiene orejas largas.", "footer": "The rabbit has long ears.", "prompt": "A close-up of a realistic rabbit with beautiful long upright ears, detailed fur texture, soft meadow background, professional wildlife photography, high resolution."},
+    {"title": "El conejo come zanahoria.", "footer": "The rabbit eats carrot.", "prompt": "A realistic bunny rabbit holding and nibbling a fresh orange carrot, adorable expression, professional wildlife photography, natural lighting, high resolution."},
+    {"title": "El conejo es blanco.", "footer": "The rabbit is white.", "prompt": "A beautiful realistic fluffy white rabbit sitting on green grass, bright eyes, pristine white fur, professional wildlife photography, soft lighting, high resolution."},
+    {"title": "El conejo está en el jardín.", "footer": "The rabbit is in the garden.", "prompt": "A realistic rabbit sitting in a beautiful garden among flowers and vegetables, peaceful setting, professional wildlife photography, golden hour lighting, high resolution."},
+    {"title": "¡El conejo!", "footer": "The rabbit!", "prompt": "A friendly realistic bunny rabbit looking directly at camera with big round eyes, twitching nose, soft bokeh flower background, professional wildlife photography, high resolution."}
+  ],
+  "vocab": [
+    {"es": "conejo", "en": "rabbit", "emoji": "🐰"},
+    {"es": "salta", "en": "jumps", "emoji": "🦘"},
+    {"es": "orejas", "en": "ears", "emoji": "👂"},
+    {"es": "zanahoria", "en": "carrot", "emoji": "🥕"},
+    {"es": "blanco", "en": "white", "emoji": "⬜"},
+    {"es": "jardín", "en": "garden", "emoji": "🌻"}
+  ],
+  "badge": {"emoji": "🐰", "name": "Explorador de Conejos", "nameEn": "Rabbit Explorer"}
+}

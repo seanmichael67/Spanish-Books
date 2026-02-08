@@ -1,0 +1,28 @@
+{
+  "slug": "week-03-el-perro",
+  "title": "El Perro",
+  "subtitle": "The Dog",
+  "theme": "animales",
+  "week": 3,
+  "emoji": "🐶",
+  "meta_desc": "Learn dog vocabulary in Spanish (perro, amigo, corre, cola) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish animals book, el perro Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {"title": "El Perro", "footer": "Aprendiendo juntos", "prompt": "A friendly realistic golden retriever sitting in a sunny park, tongue out, happy expression, professional pet photography, natural lighting, high resolution."},
+    {"title": "El perro es amigo.", "footer": "The dog is a friend.", "prompt": "A realistic golden retriever gently nuzzling a child's hand, showing friendship and trust, professional pet photography, warm sunlight, high resolution."},
+    {"title": "El perro corre.", "footer": "The dog runs.", "prompt": "A realistic golden retriever running joyfully through a green field, ears flapping, action shot, professional pet photography, bright natural lighting, high resolution."},
+    {"title": "El perro tiene cola.", "footer": "The dog has a tail.", "prompt": "A realistic golden retriever from behind, wagging its fluffy tail happily, in a park setting, professional pet photography, natural lighting, high resolution."},
+    {"title": "El perro ladra.", "footer": "The dog barks.", "prompt": "A realistic golden retriever with mouth open mid-bark, alert expression, professional pet photography, outdoor setting, natural lighting, high resolution."},
+    {"title": "El perro está en el parque.", "footer": "The dog is in the park.", "prompt": "A realistic golden retriever sitting happily in a beautiful green park with trees and flowers, professional pet photography, golden hour lighting, high resolution."},
+    {"title": "¡El perro!", "footer": "The dog!", "prompt": "A friendly realistic golden retriever looking directly at camera with warm brown eyes and a happy smile, soft bokeh background, professional pet photography, high resolution."}
+  ],
+  "vocab": [
+    {"es": "perro", "en": "dog", "emoji": "🐶"},
+    {"es": "amigo", "en": "friend", "emoji": "🤝"},
+    {"es": "corre", "en": "runs", "emoji": "🏃"},
+    {"es": "cola", "en": "tail", "emoji": "🐕"},
+    {"es": "ladra", "en": "barks", "emoji": "🔊"},
+    {"es": "parque", "en": "park", "emoji": "🌳"}
+  ],
+  "badge": {"emoji": "🐶", "name": "Explorador de Perros", "nameEn": "Dog Explorer"}
+}

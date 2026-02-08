@@ -1,0 +1,28 @@
+{
+  "slug": "week-05-el-caballo",
+  "title": "El Caballo",
+  "subtitle": "The Horse",
+  "theme": "animales",
+  "week": 5,
+  "emoji": "🐴",
+  "meta_desc": "Learn horse vocabulary in Spanish (caballo, rápido, fuerte, crin) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish animals book, el caballo Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {"title": "El Caballo", "footer": "Aprendiendo juntos", "prompt": "A majestic realistic brown horse standing in a green pasture, mane flowing gently, professional equine photography, golden hour lighting, high resolution."},
+    {"title": "El caballo es rápido.", "footer": "The horse is fast.", "prompt": "A realistic brown horse galloping across a field, mane and tail streaming in the wind, action shot, professional equine photography, dynamic lighting, high resolution."},
+    {"title": "El caballo es fuerte.", "footer": "The horse is strong.", "prompt": "A powerful realistic brown horse with muscular build standing proudly in a meadow, showing strength, professional equine photography, natural lighting, high resolution."},
+    {"title": "El caballo tiene crin.", "footer": "The horse has a mane.", "prompt": "A close-up of a realistic horse's beautiful flowing mane blowing in the breeze, detailed hair texture, professional equine photography, backlit golden lighting, high resolution."},
+    {"title": "El caballo come pasto.", "footer": "The horse eats grass.", "prompt": "A realistic brown horse peacefully grazing in a lush green field, head down eating grass, professional equine photography, soft natural lighting, high resolution."},
+    {"title": "El caballo está en la granja.", "footer": "The horse is on the farm.", "prompt": "A realistic brown horse standing by a rustic wooden fence on a beautiful farm, red barn in background, professional equine photography, warm lighting, high resolution."},
+    {"title": "¡El caballo!", "footer": "The horse!", "prompt": "A friendly realistic brown horse looking directly at camera with kind dark eyes, soft muzzle, beautiful bokeh pasture background, professional equine photography, high resolution."}
+  ],
+  "vocab": [
+    {"es": "caballo", "en": "horse", "emoji": "🐴"},
+    {"es": "rápido", "en": "fast", "emoji": "💨"},
+    {"es": "fuerte", "en": "strong", "emoji": "💪"},
+    {"es": "crin", "en": "mane", "emoji": "🦁"},
+    {"es": "pasto", "en": "grass", "emoji": "🌾"},
+    {"es": "granja", "en": "farm", "emoji": "🏡"}
+  ],
+  "badge": {"emoji": "🐴", "name": "Explorador de Caballos", "nameEn": "Horse Explorer"}
+}
