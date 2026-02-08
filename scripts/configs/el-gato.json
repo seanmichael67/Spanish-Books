@@ -8,21 +8,77 @@
   "meta_desc": "Learn cat vocabulary in Spanish (gato, pequeño, suave, bigotes) with audio pronunciation and word highlighting. Ages 2-5.",
   "keywords": "learn Spanish preschool, Spanish animals book, el gato Spanish, bilingual children books, Spanish vocabulary kids",
   "pages": [
-    {"title": "El Gato", "footer": "Aprendiendo juntos", "prompt": "A cute realistic tabby cat sitting gracefully on a windowsill, warm sunlight streaming in, soft fur details, professional pet photography, high resolution."},
-    {"title": "El gato es pequeño.", "footer": "The cat is small.", "prompt": "A small realistic tabby kitten sitting next to a large ball of yarn, showing its tiny size, professional pet photography, soft natural lighting, high resolution."},
-    {"title": "El gato es suave.", "footer": "The cat is soft.", "prompt": "A close-up of a fluffy realistic cat with soft fur being gently petted, beautiful detail of fur texture, professional pet photography, warm lighting, high resolution."},
-    {"title": "El gato tiene bigotes.", "footer": "The cat has whiskers.", "prompt": "A close-up portrait of a beautiful realistic cat face showing long prominent whiskers, bright green eyes, professional pet photography, studio lighting, high resolution."},
-    {"title": "El gato juega.", "footer": "The cat plays.", "prompt": "A playful realistic tabby cat batting at a toy mouse on a carpet, mid-play, energetic pose, professional pet photography, natural lighting, high resolution."},
-    {"title": "El gato duerme.", "footer": "The cat sleeps.", "prompt": "A peaceful realistic cat curled up sleeping on a cozy blanket, eyes closed, serene expression, professional pet photography, soft warm lighting, high resolution."},
-    {"title": "¡El gato!", "footer": "The cat!", "prompt": "A friendly realistic tabby cat looking directly at camera with bright curious eyes, soft bokeh background, professional pet photography, warm natural lighting, high resolution."}
+    {
+      "title": "El Gato",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A cute realistic tabby cat sitting gracefully on a windowsill, warm sunlight streaming in, soft fur details, professional pet photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El gato es pequeño.",
+      "footer": "The cat is small.",
+      "prompt": "A small realistic tabby kitten sitting next to a large ball of yarn, showing its tiny size, professional pet photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El gato es suave.",
+      "footer": "The cat is soft.",
+      "prompt": "A close-up of a fluffy realistic cat with soft fur being gently petted, beautiful detail of fur texture, professional pet photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El gato tiene bigotes.",
+      "footer": "The cat has whiskers.",
+      "prompt": "A close-up portrait of a beautiful realistic cat face showing long prominent whiskers, bright green eyes, professional pet photography, studio lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El gato juega.",
+      "footer": "The cat plays.",
+      "prompt": "A playful realistic tabby cat batting at a toy mouse on a carpet, mid-play, energetic pose, professional pet photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El gato duerme.",
+      "footer": "The cat sleeps.",
+      "prompt": "A peaceful realistic cat curled up sleeping on a cozy blanket, eyes closed, serene expression, professional pet photography, soft warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El gato!",
+      "footer": "The cat!",
+      "prompt": "A friendly realistic tabby cat looking directly at camera with bright curious eyes, soft bokeh background, professional pet photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
   ],
   "vocab": [
-    {"es": "gato", "en": "cat", "emoji": "🐱"},
-    {"es": "pequeño", "en": "small", "emoji": "🤏"},
-    {"es": "suave", "en": "soft", "emoji": "🧸"},
-    {"es": "bigotes", "en": "whiskers", "emoji": "😺"},
-    {"es": "juega", "en": "plays", "emoji": "🧶"},
-    {"es": "duerme", "en": "sleeps", "emoji": "😴"}
+    {
+      "es": "gato",
+      "en": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "es": "pequeño",
+      "en": "small",
+      "emoji": "🤏"
+    },
+    {
+      "es": "suave",
+      "en": "soft",
+      "emoji": "🧸"
+    },
+    {
+      "es": "bigotes",
+      "en": "whiskers",
+      "emoji": "😺"
+    },
+    {
+      "es": "juega",
+      "en": "plays",
+      "emoji": "🧶"
+    },
+    {
+      "es": "duerme",
+      "en": "sleeps",
+      "emoji": "😴"
+    }
   ],
-  "badge": {"emoji": "🐱", "name": "Explorador de Gatos", "nameEn": "Cat Explorer"}
+  "badge": {
+    "emoji": "🐱",
+    "name": "Explorador de Gatos",
+    "nameEn": "Cat Explorer"
+  }
 }

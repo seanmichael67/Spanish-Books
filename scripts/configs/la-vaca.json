@@ -8,21 +8,77 @@
   "meta_desc": "Learn cow vocabulary in Spanish (vaca, leche, grande, mancha) with audio pronunciation and word highlighting. Ages 2-5.",
   "keywords": "learn Spanish preschool, Spanish animals book, la vaca Spanish, bilingual children books, Spanish vocabulary kids",
   "pages": [
-    {"title": "La Vaca", "footer": "Aprendiendo juntos", "prompt": "A friendly realistic black and white dairy cow standing in a green pasture with blue sky, professional farm photography, natural lighting, high resolution."},
-    {"title": "La vaca da leche.", "footer": "The cow gives milk.", "prompt": "A realistic dairy cow in a barn with a bucket of fresh white milk nearby, farm setting, professional agriculture photography, warm lighting, high resolution."},
-    {"title": "La vaca es grande.", "footer": "The cow is big.", "prompt": "A large realistic dairy cow standing tall in a field, showing its impressive size, professional farm photography, natural lighting, high resolution."},
-    {"title": "La vaca tiene manchas.", "footer": "The cow has spots.", "prompt": "A close-up of a realistic black and white spotted cow showing its distinctive pattern, beautiful holstein markings, professional farm photography, natural lighting, high resolution."},
-    {"title": "La vaca dice mu.", "footer": "The cow says moo.", "prompt": "A realistic cow with mouth open as if mooing, humorous and endearing expression, green pasture background, professional farm photography, natural lighting, high resolution."},
-    {"title": "La vaca está en el campo.", "footer": "The cow is in the field.", "prompt": "A realistic dairy cow grazing peacefully in a beautiful open countryside field with rolling green hills, professional farm photography, golden hour lighting, high resolution."},
-    {"title": "¡La vaca!", "footer": "The cow!", "prompt": "A friendly realistic dairy cow looking directly at camera with big gentle brown eyes, soft bokeh farm background, professional farm photography, warm natural lighting, high resolution."}
+    {
+      "title": "La Vaca",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A friendly realistic black and white dairy cow standing in a green pasture with blue sky, professional farm photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La vaca da leche.",
+      "footer": "The cow gives milk.",
+      "prompt": "A realistic dairy cow in a barn with a bucket of fresh white milk nearby, farm setting, professional agriculture photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La vaca es grande.",
+      "footer": "The cow is big.",
+      "prompt": "A large realistic dairy cow standing tall in a field, showing its impressive size, professional farm photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La vaca tiene manchas.",
+      "footer": "The cow has spots.",
+      "prompt": "A close-up of a realistic black and white spotted cow showing its distinctive pattern, beautiful holstein markings, professional farm photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La vaca dice mu.",
+      "footer": "The cow says moo.",
+      "prompt": "A realistic cow with mouth open as if mooing, humorous and endearing expression, green pasture background, professional farm photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La vaca está en el campo.",
+      "footer": "The cow is in the field.",
+      "prompt": "A realistic dairy cow grazing peacefully in a beautiful open countryside field with rolling green hills, professional farm photography, golden hour lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡La vaca!",
+      "footer": "The cow!",
+      "prompt": "A friendly realistic dairy cow looking directly at camera with big gentle brown eyes, soft bokeh farm background, professional farm photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
   ],
   "vocab": [
-    {"es": "vaca", "en": "cow", "emoji": "🐄"},
-    {"es": "leche", "en": "milk", "emoji": "🥛"},
-    {"es": "grande", "en": "big", "emoji": "💪"},
-    {"es": "manchas", "en": "spots", "emoji": "⚫"},
-    {"es": "mu", "en": "moo", "emoji": "🔊"},
-    {"es": "campo", "en": "field", "emoji": "🌾"}
+    {
+      "es": "vaca",
+      "en": "cow",
+      "emoji": "🐄"
+    },
+    {
+      "es": "leche",
+      "en": "milk",
+      "emoji": "🥛"
+    },
+    {
+      "es": "grande",
+      "en": "big",
+      "emoji": "💪"
+    },
+    {
+      "es": "manchas",
+      "en": "spots",
+      "emoji": "⚫"
+    },
+    {
+      "es": "mu",
+      "en": "moo",
+      "emoji": "🔊"
+    },
+    {
+      "es": "campo",
+      "en": "field",
+      "emoji": "🌾"
+    }
   ],
-  "badge": {"emoji": "🐄", "name": "Exploradora de Vacas", "nameEn": "Cow Explorer"}
+  "badge": {
+    "emoji": "🐄",
+    "name": "Exploradora de Vacas",
+    "nameEn": "Cow Explorer"
+  }
 }
