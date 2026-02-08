@@ -325,13 +325,9 @@
                                 <button onClick={() => setViewMode('preview')} className={`px-4 md:px-6 py-2.5 md:py-3 rounded-xl text-sm md:text-base font-bold transition ${viewMode === 'preview' ? 'bg-white shadow-sm text-blue-600' : 'text-slate-400'}`}>Book</button>
                                 <button onClick={() => setViewMode('print')} className={`px-4 md:px-6 py-2.5 md:py-3 rounded-xl text-sm md:text-base font-bold transition ${viewMode === 'print' ? 'bg-white shadow-sm text-blue-600' : 'text-slate-400'}`}>Print</button>
                             </div>
-                            <button onClick={() => readPage(true)} className={`flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3 rounded-xl text-sm md:text-base font-bold transition shadow-md ${isAutoAdvancing ? "bg-red-500 text-white" : "bg-indigo-600 text-white hover:bg-indigo-700"}`}>
-                                {isAutoAdvancing ? <Icons.Stop size={12} /> : <Icons.Play size={12} />}
-                                <span className="hidden sm:inline">{isAutoAdvancing ? "Stop" : "Read All"}</span>
-                            </button>
-                            <button onClick={handleDownloadPdf} disabled={generatingPdf} className="flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3 bg-emerald-600 text-white rounded-xl text-sm md:text-base font-bold hover:bg-emerald-700 transition shadow-md disabled:opacity-50">
+                            <button onClick={handleDownloadPdf} disabled={generatingPdf} className="flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3 bg-emerald-600 text-white rounded-xl text-sm md:text-base font-bold hover:bg-emerald-700 transition shadow-md disabled:opacity-50 hidden md:flex">
                                 {generatingPdf ? <Icons.Loader size={12} /> : <Icons.Download size={12} />}
-                                <span className="hidden sm:inline">{generatingPdf ? "Generating..." : "Download PDF"}</span>
+                                <span>{generatingPdf ? "Generating..." : "Download PDF"}</span>
                             </button>
                         </div>
                     </header>
@@ -344,6 +340,11 @@
                                         <div className={`w-full h-full transform-style-3d ${isAnimating ? (direction === 'next' ? 'page-flip-next' : 'page-flip-prev') : ''}`}>
                                             <PageUI idx={currentPage} />
                                         </div>
+                                        {/* Big Read to Me button - overlaid on book */}
+                                        <button onClick={() => readPage(true)} className={`absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3 px-8 md:px-10 py-4 md:py-5 rounded-2xl text-lg md:text-xl font-black transition shadow-2xl ${isAutoAdvancing ? "bg-red-500 text-white hover:bg-red-600 animate-pulse" : "bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 active:scale-95"}`}>
+                                            {isAutoAdvancing ? <Icons.Stop size={24} /> : <Icons.Play size={24} />}
+                                            {isAutoAdvancing ? "Stop" : "📖 Read to Me"}
+                                        </button>
                                     </div>
                                     <button onClick={() => nav(currentPage + 1, 'next')} disabled={currentPage === BOOK_CONFIG.pages.length - 1 || isAnimating} className="p-2 md:p-4 bg-white/80 md:bg-white rounded-full shadow-lg disabled:opacity-20 transition hover:scale-110 active:scale-90 flex-shrink-0 absolute right-1 md:relative md:right-auto z-10"><Icons.ChevronRight size={24} /></button>
                                 </div>
