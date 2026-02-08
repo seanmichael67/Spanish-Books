@@ -341,7 +341,7 @@
                                             <PageUI idx={currentPage} />
                                         </div>
                                         {/* Big Read to Me button - overlaid on book */}
-                                        <button onClick={() => readPage(true)} className={`absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3 px-8 md:px-10 py-4 md:py-5 rounded-2xl text-lg md:text-xl font-black transition shadow-2xl ${isAutoAdvancing ? "bg-red-500 text-white hover:bg-red-600 animate-pulse" : "bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 active:scale-95"}`}>
+                                        <button onClick={() => readPage(true)} className={`absolute top-2 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3 px-8 md:px-10 py-4 md:py-5 rounded-2xl text-lg md:text-xl font-black transition shadow-2xl ${isAutoAdvancing ? "bg-red-500 text-white hover:bg-red-600 animate-pulse" : "bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 active:scale-95"}`}>
                                             {isAutoAdvancing ? <Icons.Stop size={24} /> : <Icons.Play size={24} />}
                                             {isAutoAdvancing ? "Stop" : "📖 Read to Me"}
                                         </button>
