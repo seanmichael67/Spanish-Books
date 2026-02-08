@@ -76,16 +76,87 @@ page to practice pronunciation!
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Book",
-  "name": "Mis Frutas y Verduras - Free Spanish Book for Preschoolers",
-  "description": "Interactive bilingual picture book teaching Spanish fruit and vegetable vocabulary to preschoolers ages 2-5 with audio pronunciation and word highlighting.",
-  "author": {"@id": "https://beibeiamigos.com/#school"},
-  "publisher": {"@id": "https://beibeiamigos.com/#school"},
-  "url": "https://spanish-books.onrender.com/books/week-00-frutas-y-verduras/",
-  "inLanguage": ["es", "en"],
-  "audience": {"@type": "EducationalAudience", "educationalRole": "student", "suggestedMinAge": 2, "suggestedMaxAge": 5},
-  "genre": ["Children's Education", "Language Learning", "Bilingual Books"],
-  "isAccessibleForFree": true,
-  "keywords": "free Spanish books preschool, learn Spanish fruits vegetables kids, bilingual children books, Spanish vocabulary food"
+  "@graph": [
+    {
+      "@type": "Preschool",
+      "@id": "https://beibeiamigos.com/#school",
+      "name": "Beibei Amigos Language Preschool",
+      "image": "https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png",
+      "url": "https://beibeiamigos.com",
+      "telephone": "+16029964990",
+      "priceRange": "$$",
+      "description": "Top-rated Trilingual (Spanish, Mandarin, English) and Montessori preschool in North Phoenix 85024. Serving families in Desert Ridge, Anthem, Norterra, and Moon Valley with Spanish Immersion and Quality First certified care.",
+      "founder": {
+        "@type": "Person",
+        "name": "Sean Michael Diana",
+        "honorificSuffix": "M.Ed.",
+        "jobTitle": ["Founder & Director", "University Professor"],
+        "worksFor": {"@type": "CollegeOrUniversity", "name": "Grand Canyon University"},
+        "description": "An education expert with a Masters in Education (M.Ed.) and current University Professor at GCU."
+      },
+      "slogan": "The only Trilingual Montessori Preschool in North Phoenix.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "751 E. Union Hills Dr",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "postalCode": "85024",
+        "addressCountry": "US"
+      },
+      "geo": {"@type": "GeoCoordinates", "latitude": "33.655", "longitude": "-112.065"},
+      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00"}],
+      "knowsLanguage": [
+        {"@type": "Language", "name": "English", "alternateName": "en"},
+        {"@type": "Language", "name": "Spanish", "alternateName": "es"},
+        {"@type": "Language", "name": "Mandarin Chinese", "alternateName": "zh"}
+      ],
+      "hasCredential": {"@type": "EducationalOccupationalCredential", "name": "Quality First Star Rating", "credentialCategory": "Quality Plus"},
+      "areaServed": [
+        {"@type": "PostalCode", "postalCode": "85083", "name": "Stetson Hills"},
+        {"@type": "PostalCode", "postalCode": "85050", "name": "Desert Ridge (Core)"},
+        {"@type": "PostalCode", "postalCode": "85085", "name": "Norterra / North Gateway"},
+        {"@type": "PostalCode", "postalCode": "85086", "name": "Anthem"},
+        {"@type": "PostalCode", "postalCode": "85028", "name": "Shadow Mountain"},
+        {"@type": "PostalCode", "postalCode": "85310", "name": "Arrowhead Foothills"},
+        {"@type": "PostalCode", "postalCode": "85308", "name": "Arrowhead Ranch"},
+        {"@type": "PostalCode", "postalCode": "85024", "name": "Desert Ridge (North)"},
+        {"@type": "PostalCode", "postalCode": "85306", "name": "North Glendale"},
+        {"@type": "PostalCode", "postalCode": "85020", "name": "Sunnyslope (Pointe)"},
+        {"@type": "PostalCode", "postalCode": "85054", "name": "City North"},
+        {"@type": "PostalCode", "postalCode": "85032", "name": "Paradise Valley Village"},
+        {"@type": "PostalCode", "postalCode": "85029", "name": "West Moon Valley"},
+        {"@type": "PostalCode", "postalCode": "85022", "name": "Moon Valley (South)"},
+        {"@type": "PostalCode", "postalCode": "85027", "name": "Deer Valley"},
+        {"@type": "PostalCode", "postalCode": "85023", "name": "Moon Valley (Central)"},
+        {"@type": "PostalCode", "postalCode": "85051", "name": "North Mountain"},
+        {"@type": "PostalCode", "postalCode": "85053", "name": "North Phoenix"},
+        {"@type": "PostalCode", "postalCode": "85021", "name": "North Central Phoenix"},
+        {"@type": "City", "name": "Phoenix"},
+        {"@type": "City", "name": "Scottsdale"},
+        {"@type": "City", "name": "Cave Creek"},
+        {"@type": "City", "name": "Glendale"},
+        {"@type": "City", "name": "Anthem"}
+      ],
+      "sameAs": [
+        "https://www.facebook.com/BeibeiAmigosLanguageMontessori/",
+        "https://www.instagram.com/bebeiamigos_languagepreschool/",
+        "https://www.youtube.com/@beibeiamigosmontessorilang6695",
+        "https://g.page/r/CWBJbgYgiI-wEBE/review"
+      ]
+    },
+    {
+      "@type": "Book",
+      "name": "Mis Frutas y Verduras - Free Spanish Book for Preschoolers",
+      "description": "Interactive bilingual picture book teaching Spanish fruit and vegetable vocabulary to preschoolers ages 2-5 with audio pronunciation and word highlighting.",
+      "author": {"@id": "https://beibeiamigos.com/#school"},
+      "publisher": {"@id": "https://beibeiamigos.com/#school"},
+      "url": "https://spanish-books.onrender.com/books/week-00-frutas-y-verduras/",
+      "inLanguage": ["es", "en"],
+      "audience": {"@type": "EducationalAudience", "educationalRole": "student", "suggestedMinAge": 2, "suggestedMaxAge": 5},
+      "genre": ["Children's Education", "Language Learning", "Bilingual Books"],
+      "isAccessibleForFree": true,
+      "keywords": "free Spanish books preschool, learn Spanish fruits vegetables kids, bilingual children books, Spanish vocabulary food"
+    }
+  ]
 }
 </script>
