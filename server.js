@@ -90,11 +90,11 @@ app.get('/', (req, res) => {
 
     /* Theme filter */
     .themes { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 32px; padding: 0 10px; }
-    .theme-btn { background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); color: white; padding: 8px 16px; border-radius: 50px; cursor: pointer; font-family: inherit; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; gap: 6px; transition: all 0.2s; }
+    .theme-btn { background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); color: white; padding: 10px 20px; border-radius: 50px; cursor: pointer; font-family: inherit; font-size: 1.1rem; font-weight: 700; display: flex; align-items: center; gap: 8px; transition: all 0.2s; }
     .theme-btn:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
     .theme-btn.active { background: white; color: #5b4a9e; border-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
     .theme-emoji { font-size: 1.1rem; }
-    @media (max-width: 600px) { .theme-btn { padding: 6px 12px; font-size: 0.7rem; } .theme-emoji { font-size: 1rem; } }
+    @media (max-width: 600px) { .theme-btn { padding: 8px 14px; font-size: 0.9rem; } .theme-emoji { font-size: 1.2rem; } }
 
     /* Book grid */
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
