@@ -27,9 +27,15 @@ const BOOKS = [
 
 const THEMES = [
   { id: 'animales', emoji: '🐻', label: 'Animales', labelEn: 'Animals' },
+  { id: 'mariposas', emoji: '🦋', label: 'Mariposas e Insectos', labelEn: 'Butterflies & Bugs' },
+  { id: 'oceano', emoji: '🐙', label: 'Criaturas del Océano', labelEn: 'Ocean Creatures' },
+  { id: 'plantas', emoji: '🌸', label: 'Plantas y Flores', labelEn: 'Plants & Flowers' },
+  { id: 'nutricion', emoji: '🥗', label: 'Nutrición', labelEn: 'Nutrition' },
   { id: 'comida', emoji: '🍎', label: 'Comida', labelEn: 'Food' },
+  { id: 'agua', emoji: '💧', label: 'El Agua', labelEn: 'Water' },
   { id: 'colores', emoji: '🌈', label: 'Colores y Formas', labelEn: 'Colors & Shapes' },
-  { id: 'familia', emoji: '👨‍👩‍👧', label: 'Familia y Amigos', labelEn: 'Family & Friends' },
+  { id: 'familia', emoji: '👨‍👩‍👧', label: 'Mi Familia', labelEn: 'Family' },
+  { id: 'amigos', emoji: '🤝', label: 'Mis Amigos', labelEn: 'Friends' },
   { id: 'naturaleza', emoji: '🌿', label: 'Naturaleza', labelEn: 'Nature' },
   { id: 'numeros', emoji: '🔢', label: 'Números y Letras', labelEn: 'Numbers & Letters' },
   { id: 'musica', emoji: '🎵', label: 'Música y Juegos', labelEn: 'Music & Games' },
