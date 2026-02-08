@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
   const themeBtns = THEMES.map(t =>
     '<button class="theme-btn' + (t.id === 'todos' ? ' active' : '') + '" data-filter="' + t.id + '">' +
     '<span class="theme-emoji">' + t.emoji + '</span>' +
-    '<span class="theme-label">' + t.label + '</span>' +
+    '<span class="theme-label">' + t.labelEn + '</span>' +
     '</button>'
   ).join('\n        ');
 
