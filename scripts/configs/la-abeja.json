@@ -1,0 +1,14 @@
+{"slug":"week-17-la-abeja","title":"La Abeja","subtitle":"The Bee","theme":"mariposas","week":17,"emoji":"🐝",
+"meta_desc":"Learn bee vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish insects book, bee Spanish, bilingual children books",
+"pages":[
+{"title":"La Abeja","footer":"Aprendiendo juntos","prompt":"A cute realistic honeybee on a bright yellow sunflower, fuzzy body visible, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La abeja hace miel.","footer":"The bee makes honey.","prompt":"Realistic honeycomb dripping with golden honey, bees working on comb, professional food photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La abeja tiene rayas.","footer":"The bee has stripes.","prompt":"Close-up of a realistic honeybee showing black and yellow stripes, fuzzy body, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La abeja zumba.","footer":"The bee buzzes.","prompt":"A realistic bee in flight with motion blur on wings, approaching a flower, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La abeja visita flores.","footer":"The bee visits flowers.","prompt":"A realistic bee pollinating a field of colorful wildflowers, pollen on legs, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La abeja vive en la colmena.","footer":"The bee lives in the hive.","prompt":"A realistic beehive with bees entering and leaving, warm sunny day, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La abeja!","footer":"The bee!","prompt":"A friendly realistic bee on a daisy looking at camera, fuzzy and cute, soft bokeh garden background, professional macro photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"abeja","en":"bee","emoji":"🐝"},{"es":"miel","en":"honey","emoji":"🍯"},{"es":"rayas","en":"stripes","emoji":"〰️"},{"es":"zumba","en":"buzzes","emoji":"🔊"},{"es":"flores","en":"flowers","emoji":"🌸"},{"es":"colmena","en":"hive","emoji":"🏠"}],
+"badge":{"emoji":"🐝","name":"Explorador de Abejas","nameEn":"Bee Explorer"}}

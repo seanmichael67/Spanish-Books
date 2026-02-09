@@ -1,0 +1,14 @@
+{"slug":"week-28-la-ballena","title":"La Ballena","subtitle":"The Whale","theme":"oceano","week":28,"emoji":"🐋",
+"meta_desc":"Learn whale vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, ocean animals Spanish, bilingual children books",
+"pages":[
+{"title":"La Ballena","footer":"Aprendiendo juntos","prompt":"A majestic realistic humpback whale swimming in deep blue ocean, enormous and graceful, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La ballena es enorme.","footer":"The whale is enormous.","prompt":"A huge realistic whale swimming with small fish nearby showing incredible scale, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La ballena salta del agua.","footer":"The whale jumps from the water.","prompt":"A spectacular realistic humpback whale breaching out of the ocean, massive splash, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La ballena tiene cola.","footer":"The whale has a tail.","prompt":"A realistic whale tail (fluke) rising above the ocean surface, water dripping, sunset background, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La ballena canta.","footer":"The whale sings.","prompt":"A realistic whale in deep blue ocean with visible sound waves emanating, peaceful deep water, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La ballena nada con su bebé.","footer":"The whale swims with her baby.","prompt":"A realistic mother whale swimming alongside her small calf in clear blue water, tender moment, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La ballena!","footer":"The whale!","prompt":"A majestic realistic whale swimming toward camera in crystal clear water, enormous and gentle, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"ballena","en":"whale","emoji":"🐋"},{"es":"enorme","en":"enormous","emoji":"🏔️"},{"es":"salta","en":"jumps","emoji":"🦘"},{"es":"cola","en":"tail","emoji":"🐕"},{"es":"canta","en":"sings","emoji":"🎵"},{"es":"bebé","en":"baby","emoji":"👶"}],
+"badge":{"emoji":"🐋","name":"Explorador de Ballenas","nameEn":"Whale Explorer"}}

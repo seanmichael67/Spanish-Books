@@ -37,6 +37,21 @@ const BOOKS = [
   { slug: 'week-13-los-postres', emoji: '🍰', week: 13, title: 'Los Postres', subtitle: 'Desserts', theme: 'comida', ready: true },
   { slug: 'week-14-en-la-cocina', emoji: '👨‍🍳', week: 14, title: 'En la Cocina', subtitle: 'In the Kitchen', theme: 'comida', ready: true },
   { slug: 'week-15-la-merienda', emoji: '🍿', week: 15, title: 'La Merienda', subtitle: 'Snack Time', theme: 'comida', ready: true },
+  { slug: 'week-16-la-mariposa', emoji: '🦋', week: 16, title: 'La Mariposa', subtitle: 'The Butterfly', theme: 'mariposas', ready: true },
+  { slug: 'week-17-la-abeja', emoji: '🐝', week: 17, title: 'La Abeja', subtitle: 'The Bee', theme: 'mariposas', ready: true },
+  { slug: 'week-18-la-catarina', emoji: '🐞', week: 18, title: 'La Catarina', subtitle: 'The Ladybug', theme: 'mariposas', ready: true },
+  { slug: 'week-19-la-hormiga', emoji: '🐜', week: 19, title: 'La Hormiga', subtitle: 'The Ant', theme: 'mariposas', ready: true },
+  { slug: 'week-20-el-grillo', emoji: '🦗', week: 20, title: 'El Grillo', subtitle: 'The Cricket', theme: 'mariposas', ready: true },
+  { slug: 'week-21-la-libelula', emoji: '🪰', week: 21, title: 'La Libélula', subtitle: 'The Dragonfly', theme: 'mariposas', ready: true },
+  { slug: 'week-22-la-oruga', emoji: '🐛', week: 22, title: 'La Oruga', subtitle: 'The Caterpillar', theme: 'mariposas', ready: true },
+  { slug: 'week-23-el-escarabajo', emoji: '🪲', week: 23, title: 'El Escarabajo', subtitle: 'The Beetle', theme: 'mariposas', ready: true },
+  { slug: 'week-24-el-pulpo', emoji: '🐙', week: 24, title: 'El Pulpo', subtitle: 'The Octopus', theme: 'oceano', ready: true },
+  { slug: 'week-25-la-tortuga-marina', emoji: '🐢', week: 25, title: 'La Tortuga Marina', subtitle: 'The Sea Turtle', theme: 'oceano', ready: true },
+  { slug: 'week-26-el-delfin', emoji: '🐬', week: 26, title: 'El Delfín', subtitle: 'The Dolphin', theme: 'oceano', ready: true },
+  { slug: 'week-27-el-pez-payaso', emoji: '🐠', week: 27, title: 'El Pez Payaso', subtitle: 'The Clownfish', theme: 'oceano', ready: true },
+  { slug: 'week-28-la-ballena', emoji: '🐋', week: 28, title: 'La Ballena', subtitle: 'The Whale', theme: 'oceano', ready: true },
+  { slug: 'week-29-el-caballito-de-mar', emoji: '🦑', week: 29, title: 'El Caballito de Mar', subtitle: 'The Seahorse', theme: 'oceano', ready: true },
+  { slug: 'week-30-la-estrella-de-mar', emoji: '⭐', week: 30, title: 'La Estrella de Mar', subtitle: 'The Starfish', theme: 'oceano', ready: true },
 ];
 
 const THEMES = [

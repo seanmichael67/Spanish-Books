@@ -1,0 +1,14 @@
+{"slug":"week-20-el-grillo","title":"El Grillo","subtitle":"The Cricket","theme":"mariposas","week":20,"emoji":"🦗",
+"meta_desc":"Learn cricket vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish insects book, cricket Spanish, bilingual children books",
+"pages":[
+{"title":"El Grillo","footer":"Aprendiendo juntos","prompt":"A realistic green cricket sitting on a leaf in a meadow, detailed legs and antennae, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El grillo canta.","footer":"The cricket sings.","prompt":"A realistic cricket with wings raised making chirping sound at night, moonlit grass, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El grillo salta.","footer":"The cricket jumps.","prompt":"A realistic cricket mid-jump leaping from one leaf to another, action shot, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El grillo es verde.","footer":"The cricket is green.","prompt":"A bright green realistic cricket on a green leaf, camouflaged perfectly, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El grillo tiene antenas.","footer":"The cricket has antennae.","prompt":"Close-up of a realistic cricket showing its long thin antennae, detailed head, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El grillo canta de noche.","footer":"The cricket sings at night.","prompt":"A moonlit meadow scene with a realistic cricket on a blade of grass, starry sky, peaceful nighttime, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El grillo!","footer":"The cricket!","prompt":"A friendly realistic green cricket on a flower petal looking at camera, cute expression, soft bokeh background, professional macro photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"grillo","en":"cricket","emoji":"🦗"},{"es":"canta","en":"sings","emoji":"🎵"},{"es":"salta","en":"jumps","emoji":"🦘"},{"es":"verde","en":"green","emoji":"🟢"},{"es":"antenas","en":"antennae","emoji":"📡"},{"es":"noche","en":"night","emoji":"🌙"}],
+"badge":{"emoji":"🦗","name":"Explorador de Grillos","nameEn":"Cricket Explorer"}}

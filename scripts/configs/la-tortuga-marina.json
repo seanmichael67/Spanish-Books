@@ -1,0 +1,14 @@
+{"slug":"week-25-la-tortuga-marina","title":"La Tortuga Marina","subtitle":"The Sea Turtle","theme":"oceano","week":25,"emoji":"🐢",
+"meta_desc":"Learn sea turtle vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, ocean animals Spanish, bilingual children books",
+"pages":[
+{"title":"La Tortuga Marina","footer":"Aprendiendo juntos","prompt":"A beautiful realistic sea turtle swimming gracefully in clear turquoise water, sunlight filtering through, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La tortuga nada despacio.","footer":"The turtle swims slowly.","prompt":"A realistic green sea turtle gliding slowly through calm ocean water, peaceful movement, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La tortuga tiene caparazón.","footer":"The turtle has a shell.","prompt":"Close-up of a realistic sea turtle showing its beautiful patterned shell, detailed markings, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La tortuga come algas.","footer":"The turtle eats seaweed.","prompt":"A realistic sea turtle eating green seaweed on the ocean floor, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La tortuga es grande.","footer":"The turtle is big.","prompt":"A large realistic sea turtle swimming with a small fish nearby showing scale, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La tortuga va a la playa.","footer":"The turtle goes to the beach.","prompt":"A realistic sea turtle crawling on a sandy tropical beach toward the ocean, sunset background, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La tortuga marina!","footer":"The sea turtle!","prompt":"A friendly realistic sea turtle swimming toward camera in crystal clear water, gentle expression, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"tortuga","en":"turtle","emoji":"🐢"},{"es":"despacio","en":"slowly","emoji":"🐌"},{"es":"caparazón","en":"shell","emoji":"🛡️"},{"es":"algas","en":"seaweed","emoji":"🌿"},{"es":"grande","en":"big","emoji":"💪"},{"es":"playa","en":"beach","emoji":"🏖️"}],
+"badge":{"emoji":"🐢","name":"Explorador de Tortugas","nameEn":"Sea Turtle Explorer"}}

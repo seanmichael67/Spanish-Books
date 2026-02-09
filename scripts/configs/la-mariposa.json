@@ -1,0 +1,14 @@
+{"slug":"week-16-la-mariposa","title":"La Mariposa","subtitle":"The Butterfly","theme":"mariposas","week":16,"emoji":"🦋",
+"meta_desc":"Learn butterfly vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish insects book, butterfly Spanish, bilingual children books",
+"pages":[
+{"title":"La Mariposa","footer":"Aprendiendo juntos","prompt":"A beautiful realistic monarch butterfly resting on a colorful flower, wings spread open showing orange and black pattern, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La mariposa vuela.","footer":"The butterfly flies.","prompt":"A realistic butterfly in flight among wildflowers, wings spread gracefully, blue sky background, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La mariposa tiene alas.","footer":"The butterfly has wings.","prompt":"Close-up of a realistic butterfly showing detailed colorful wing patterns, iridescent scales visible, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La mariposa es colorida.","footer":"The butterfly is colorful.","prompt":"Multiple colorful realistic butterflies on a flower bush, blue purple orange yellow butterflies, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La mariposa bebe néctar.","footer":"The butterfly drinks nectar.","prompt":"A realistic butterfly with its proboscis extended drinking nectar from a bright flower, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La mariposa está en el jardín.","footer":"The butterfly is in the garden.","prompt":"A beautiful realistic butterfly in a sunny flower garden with roses and daisies, peaceful setting, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La mariposa!","footer":"The butterfly!","prompt":"A stunning realistic butterfly facing camera with wings fully spread, vibrant colors, soft bokeh flower background, professional nature photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"mariposa","en":"butterfly","emoji":"🦋"},{"es":"vuela","en":"flies","emoji":"🕊️"},{"es":"alas","en":"wings","emoji":"🪽"},{"es":"colorida","en":"colorful","emoji":"🌈"},{"es":"néctar","en":"nectar","emoji":"🌺"},{"es":"jardín","en":"garden","emoji":"🌻"}],
+"badge":{"emoji":"🦋","name":"Explorador de Mariposas","nameEn":"Butterfly Explorer"}}

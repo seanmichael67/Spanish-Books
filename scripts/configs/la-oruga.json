@@ -1,0 +1,14 @@
+{"slug":"week-22-la-oruga","title":"La Oruga","subtitle":"The Caterpillar","theme":"mariposas","week":22,"emoji":"🐛",
+"meta_desc":"Learn caterpillar vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish insects book, caterpillar Spanish, bilingual children books",
+"pages":[
+{"title":"La Oruga","footer":"Aprendiendo juntos","prompt":"A cute realistic green caterpillar on a leaf, plump and colorful, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La oruga come hojas.","footer":"The caterpillar eats leaves.","prompt":"A realistic caterpillar munching on a green leaf with bite marks visible, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La oruga es larga.","footer":"The caterpillar is long.","prompt":"A long realistic caterpillar stretching across a branch, showing its full length and segments, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La oruga tiene muchas patas.","footer":"The caterpillar has many legs.","prompt":"Close-up of a realistic caterpillar showing its many tiny legs gripping a stem, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La oruga hace un capullo.","footer":"The caterpillar makes a cocoon.","prompt":"A realistic chrysalis hanging from a branch, green and golden, transformation stage, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La oruga se convierte en mariposa.","footer":"The caterpillar becomes a butterfly.","prompt":"A realistic butterfly emerging from its chrysalis, wings still unfolding, miracle of metamorphosis, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La oruga!","footer":"The caterpillar!","prompt":"A cute realistic colorful caterpillar on a flower looking at camera, friendly appearance, soft bokeh background, professional macro photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"oruga","en":"caterpillar","emoji":"🐛"},{"es":"hojas","en":"leaves","emoji":"🍃"},{"es":"larga","en":"long","emoji":"📏"},{"es":"patas","en":"legs","emoji":"🦵"},{"es":"capullo","en":"cocoon","emoji":"🫘"},{"es":"mariposa","en":"butterfly","emoji":"🦋"}],
+"badge":{"emoji":"🐛","name":"Explorador de Orugas","nameEn":"Caterpillar Explorer"}}

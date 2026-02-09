@@ -1,0 +1,14 @@
+{"slug":"week-23-el-escarabajo","title":"El Escarabajo","subtitle":"The Beetle","theme":"mariposas","week":23,"emoji":"🪲",
+"meta_desc":"Learn beetle vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish insects book, beetle Spanish, bilingual children books",
+"pages":[
+{"title":"El Escarabajo","footer":"Aprendiendo juntos","prompt":"A realistic shiny green beetle on a log, metallic shell gleaming, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El escarabajo tiene caparazón.","footer":"The beetle has a shell.","prompt":"Close-up of a realistic beetle showing its hard protective shell, shiny and detailed, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El escarabajo es fuerte.","footer":"The beetle is strong.","prompt":"A realistic beetle pushing a small stick, showing strength for its size, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El escarabajo brilla.","footer":"The beetle shines.","prompt":"A stunning realistic iridescent beetle with metallic green and gold shell catching sunlight, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El escarabajo camina despacio.","footer":"The beetle walks slowly.","prompt":"A realistic beetle slowly walking across a mossy surface, deliberate steps, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El escarabajo vive en el bosque.","footer":"The beetle lives in the forest.","prompt":"A realistic beetle on forest floor among fallen leaves and moss, natural woodland setting, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El escarabajo!","footer":"The beetle!","prompt":"A shiny realistic beetle on a leaf looking at camera, metallic shell reflecting light, soft bokeh forest background, professional macro photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"escarabajo","en":"beetle","emoji":"🪲"},{"es":"caparazón","en":"shell","emoji":"🛡️"},{"es":"fuerte","en":"strong","emoji":"💪"},{"es":"brilla","en":"shines","emoji":"✨"},{"es":"despacio","en":"slowly","emoji":"🐢"},{"es":"bosque","en":"forest","emoji":"🌲"}],
+"badge":{"emoji":"🪲","name":"Explorador de Escarabajos","nameEn":"Beetle Explorer"}}

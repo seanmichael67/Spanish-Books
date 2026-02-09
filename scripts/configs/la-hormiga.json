@@ -1,0 +1,14 @@
+{"slug":"week-19-la-hormiga","title":"La Hormiga","subtitle":"The Ant","theme":"mariposas","week":19,"emoji":"🐜",
+"meta_desc":"Learn ant vocabulary in Spanish with audio pronunciation. Ages 2-5.",
+"keywords":"learn Spanish preschool, Spanish insects book, ant Spanish, bilingual children books",
+"pages":[
+{"title":"La Hormiga","footer":"Aprendiendo juntos","prompt":"A realistic ant carrying a leaf piece on the ground, strong and determined, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La hormiga es fuerte.","footer":"The ant is strong.","prompt":"A realistic ant carrying a large crumb bigger than itself, showing incredible strength, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La hormiga trabaja.","footer":"The ant works.","prompt":"A line of realistic ants working together carrying food back to their nest, teamwork, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La hormiga es pequeña.","footer":"The ant is small.","prompt":"A tiny realistic ant next to a blade of grass showing scale, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La hormiga vive bajo tierra.","footer":"The ant lives underground.","prompt":"Cross-section view of ant tunnels underground with realistic ants inside chambers, educational illustration, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Las hormigas van en fila.","footer":"The ants walk in a line.","prompt":"A perfect line of realistic ants marching along a branch, orderly procession, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La hormiga!","footer":"The ant!","prompt":"A cute realistic ant standing on a leaf looking at camera, detailed antennae and legs, soft bokeh background, professional macro photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"hormiga","en":"ant","emoji":"🐜"},{"es":"fuerte","en":"strong","emoji":"💪"},{"es":"trabaja","en":"works","emoji":"⚒️"},{"es":"pequeña","en":"small","emoji":"🤏"},{"es":"tierra","en":"earth","emoji":"🌍"},{"es":"fila","en":"line","emoji":"➡️"}],
+"badge":{"emoji":"🐜","name":"Explorador de Hormigas","nameEn":"Ant Explorer"}}

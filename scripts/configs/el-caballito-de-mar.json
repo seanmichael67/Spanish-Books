@@ -1,0 +1,14 @@
+{"slug":"week-29-el-caballito-de-mar","title":"El Caballito de Mar","subtitle":"The Seahorse","theme":"oceano","week":29,"emoji":"🦑",
+"meta_desc":"Learn seahorse vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, ocean animals Spanish, bilingual children books",
+"pages":[
+{"title":"El Caballito de Mar","footer":"Aprendiendo juntos","prompt":"A beautiful realistic seahorse floating among seaweed, delicate and colorful, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El caballito de mar es pequeño.","footer":"The seahorse is small.","prompt":"A tiny realistic seahorse next to coral showing how small it is, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El caballito nada parado.","footer":"The seahorse swims upright.","prompt":"A realistic seahorse swimming vertically upright through clear water, unique posture, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El caballito tiene cola curva.","footer":"The seahorse has a curvy tail.","prompt":"Close-up of a realistic seahorse with its tail curled around a piece of coral, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El caballito cambia de color.","footer":"The seahorse changes color.","prompt":"A realistic colorful seahorse displaying bright yellow and orange colors among coral, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El caballito vive en el coral.","footer":"The seahorse lives in the coral.","prompt":"A realistic seahorse hiding among colorful coral and sea plants, camouflaged habitat, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El caballito de mar!","footer":"The seahorse!","prompt":"A cute realistic seahorse floating and looking at camera, delicate features, colorful reef background, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"caballito","en":"seahorse","emoji":"🐴"},{"es":"pequeño","en":"small","emoji":"🤏"},{"es":"parado","en":"upright","emoji":"⬆️"},{"es":"cola","en":"tail","emoji":"🌀"},{"es":"curva","en":"curvy","emoji":"〰️"},{"es":"coral","en":"coral","emoji":"🪸"}],
+"badge":{"emoji":"🐴","name":"Explorador de Caballitos","nameEn":"Seahorse Explorer"}}

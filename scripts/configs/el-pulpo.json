@@ -1,0 +1,14 @@
+{"slug":"week-24-el-pulpo","title":"El Pulpo","subtitle":"The Octopus","theme":"oceano","week":24,"emoji":"🐙",
+"meta_desc":"Learn octopus vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, ocean animals Spanish, bilingual children books",
+"pages":[
+{"title":"El Pulpo","footer":"Aprendiendo juntos","prompt":"A beautiful realistic octopus swimming in clear blue ocean water, tentacles flowing gracefully, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pulpo tiene ocho brazos.","footer":"The octopus has eight arms.","prompt":"A realistic octopus with all eight tentacles spread out on the ocean floor, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pulpo cambia de color.","footer":"The octopus changes color.","prompt":"A realistic octopus showing color-changing ability, half red half blue, on coral reef, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pulpo nada.","footer":"The octopus swims.","prompt":"A realistic octopus swimming through blue ocean water using jet propulsion, tentacles trailing, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pulpo es inteligente.","footer":"The octopus is smart.","prompt":"A realistic octopus exploring a colorful coral reef, curious expression, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pulpo vive en el mar.","footer":"The octopus lives in the sea.","prompt":"A realistic octopus in its den on a beautiful coral reef, tropical fish swimming nearby, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El pulpo!","footer":"The octopus!","prompt":"A friendly realistic octopus looking at camera with large expressive eyes, colorful coral background, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"pulpo","en":"octopus","emoji":"🐙"},{"es":"ocho","en":"eight","emoji":"8️⃣"},{"es":"brazos","en":"arms","emoji":"💪"},{"es":"color","en":"color","emoji":"🎨"},{"es":"nada","en":"swims","emoji":"🏊"},{"es":"mar","en":"sea","emoji":"🌊"}],
+"badge":{"emoji":"🐙","name":"Explorador del Pulpo","nameEn":"Octopus Explorer"}}

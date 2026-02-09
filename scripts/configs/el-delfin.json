@@ -1,0 +1,14 @@
+{"slug":"week-26-el-delfin","title":"El Delfín","subtitle":"The Dolphin","theme":"oceano","week":26,"emoji":"🐬",
+"meta_desc":"Learn dolphin vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, ocean animals Spanish, bilingual children books",
+"pages":[
+{"title":"El Delfín","footer":"Aprendiendo juntos","prompt":"A beautiful realistic dolphin jumping out of blue ocean water, splash and sunlight, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El delfín salta.","footer":"The dolphin jumps.","prompt":"A realistic dolphin leaping high out of the water with a perfect arc, ocean spray, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El delfín es amigable.","footer":"The dolphin is friendly.","prompt":"A realistic dolphin with a playful smile swimming close to the surface, warm tropical waters, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El delfín nada rápido.","footer":"The dolphin swims fast.","prompt":"A realistic dolphin swimming fast through blue water, streamlined body, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El delfín hace sonidos.","footer":"The dolphin makes sounds.","prompt":"A realistic dolphin with mouth open showing teeth, underwater communication, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Los delfines juegan juntos.","footer":"The dolphins play together.","prompt":"A pod of realistic dolphins swimming and playing together in clear blue ocean, joyful scene, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El delfín!","footer":"The dolphin!","prompt":"A friendly realistic dolphin looking at camera with a playful expression, clear blue water background, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"delfín","en":"dolphin","emoji":"🐬"},{"es":"salta","en":"jumps","emoji":"🦘"},{"es":"amigable","en":"friendly","emoji":"😊"},{"es":"rápido","en":"fast","emoji":"💨"},{"es":"sonidos","en":"sounds","emoji":"🔊"},{"es":"juntos","en":"together","emoji":"🤝"}],
+"badge":{"emoji":"🐬","name":"Explorador de Delfines","nameEn":"Dolphin Explorer"}}

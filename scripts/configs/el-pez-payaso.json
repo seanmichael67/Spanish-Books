@@ -1,0 +1,14 @@
+{"slug":"week-27-el-pez-payaso","title":"El Pez Payaso","subtitle":"The Clownfish","theme":"oceano","week":27,"emoji":"🐠",
+"meta_desc":"Learn clownfish vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, ocean animals Spanish, bilingual children books",
+"pages":[
+{"title":"El Pez Payaso","footer":"Aprendiendo juntos","prompt":"A beautiful realistic orange and white clownfish among sea anemone tentacles, vibrant colors, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pez payaso es anaranjado.","footer":"The clownfish is orange.","prompt":"A bright realistic orange clownfish with white stripes swimming, vivid colors, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pez payaso tiene rayas.","footer":"The clownfish has stripes.","prompt":"Close-up of a realistic clownfish showing its distinctive white stripes on orange body, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pez payaso vive en la anémona.","footer":"The clownfish lives in the anemone.","prompt":"A realistic clownfish nestled safely among purple sea anemone tentacles, symbiotic home, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pez payaso es pequeño.","footer":"The clownfish is small.","prompt":"A tiny realistic clownfish next to a large sea anemone showing scale, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El pez payaso nada en el coral.","footer":"The clownfish swims in the coral.","prompt":"A realistic clownfish swimming through a vibrant colorful coral reef, tropical fish in background, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El pez payaso!","footer":"The clownfish!","prompt":"A cute realistic clownfish peeking out from anemone looking at camera, friendly expression, professional underwater photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"pez","en":"fish","emoji":"🐠"},{"es":"payaso","en":"clown","emoji":"🤡"},{"es":"anaranjado","en":"orange","emoji":"🟠"},{"es":"rayas","en":"stripes","emoji":"〰️"},{"es":"anémona","en":"anemone","emoji":"🪸"},{"es":"coral","en":"coral","emoji":"🪸"}],
+"badge":{"emoji":"🐠","name":"Explorador de Peces","nameEn":"Clownfish Explorer"}}
