@@ -243,7 +243,7 @@
                 for (let attempt = 0; attempt < 3; attempt++) {
                     url = await prefetchAudio(idx);
                     if (url) break;
-                    await new Promise(r => setTimeout(r, 3000)); // wait 3s before retry
+                    await new Promise(r => setTimeout(r, 5000)); // wait 5s before retry
                 }
                 if (!url) {
                     setIsReading(false);
@@ -290,8 +290,8 @@
                 if (!fromAuto) stopReading();
                 setDirection(dir); setIsAnimating(true);
                 setTimeout(() => { setCurrentPage(idx); setIsAnimating(false);
-                    // Auto-read page on any navigation
-                    setTimeout(() => readPage(fromAuto, idx), 500);
+                    // Auto-read page on any navigation (skip vocab/badge - they have own audio)
+                    const pg = BOOK_CONFIG.pages[idx]; if (pg && !pg.type) setTimeout(() => readPage(fromAuto, idx), 500);
                 }, 600);
             };
 
