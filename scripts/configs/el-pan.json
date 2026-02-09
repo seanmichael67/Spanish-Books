@@ -1,0 +1,84 @@
+{
+  "slug": "week-46-el-pan",
+  "title": "El Pan",
+  "subtitle": "The Bread",
+  "theme": "nutricion",
+  "week": 46,
+  "emoji": "🍞",
+  "meta_desc": "Learn nutrition vocabulary in Spanish (pan, suave, caliente, energía) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish nutrition book, el pan Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Pan",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A fresh loaf of bread on a wooden cutting board, golden crust visible, professional food photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El pan es suave.",
+      "footer": "The bread is soft.",
+      "prompt": "Sliced bread showing its soft fluffy interior, professional food photography, soft lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El pan es caliente.",
+      "footer": "The bread is warm.",
+      "prompt": "Freshly baked bread with steam rising from it, warm golden color, professional food photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El pan me da energía.",
+      "footer": "Bread gives me energy.",
+      "prompt": "Slices of whole wheat bread arranged neatly, professional food photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El pan se hace con harina.",
+      "footer": "Bread is made with flour.",
+      "prompt": "Bread dough with wheat stalks and flour nearby, baking scene, professional food photography, rustic lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Me gusta el pan.",
+      "footer": "I like bread.",
+      "prompt": "A variety of breads arranged beautifully - baguette, rolls, sliced bread, professional food photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El pan!",
+      "footer": "The bread!",
+      "prompt": "A perfect golden loaf of bread with a crispy crust, professional food photography, dramatic lighting with soft shadows, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "pan",
+      "en": "bread",
+      "emoji": "🍞"
+    },
+    {
+      "es": "suave",
+      "en": "soft",
+      "emoji": "🤗"
+    },
+    {
+      "es": "caliente",
+      "en": "warm",
+      "emoji": "♨️"
+    },
+    {
+      "es": "energía",
+      "en": "energy",
+      "emoji": "⚡"
+    },
+    {
+      "es": "harina",
+      "en": "flour",
+      "emoji": "🌾"
+    },
+    {
+      "es": "me gusta",
+      "en": "I like",
+      "emoji": "❤️"
+    }
+  ],
+  "badge": {
+    "emoji": "🍞",
+    "name": "Explorador de Pan",
+    "nameEn": "Bread Explorer"
+  }
+}

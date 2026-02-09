@@ -1,0 +1,84 @@
+{
+  "slug": "week-44-el-huevo",
+  "title": "El Huevo",
+  "subtitle": "The Egg",
+  "theme": "nutricion",
+  "week": 44,
+  "emoji": "🥚",
+  "meta_desc": "Learn nutrition vocabulary in Spanish (huevo, blanco, proteína, delicioso) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish nutrition book, el huevo Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Huevo",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A perfect white egg in a simple egg cup on a wooden table, professional food photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El huevo es blanco.",
+      "footer": "The egg is white.",
+      "prompt": "Several white eggs arranged on a white background with subtle shadows, professional food photography, clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El huevo es oval.",
+      "footer": "The egg is oval.",
+      "prompt": "A single egg showing its oval shape from the side, professional food photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El huevo tiene proteína.",
+      "footer": "The egg has protein.",
+      "prompt": "A cracked egg showing yolk and white, nutritious appearance, professional food photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Los huevos vienen de gallinas.",
+      "footer": "Eggs come from chickens.",
+      "prompt": "Fresh eggs in a nest with a friendly chicken nearby, farm setting, professional photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El huevo es delicioso.",
+      "footer": "The egg is delicious.",
+      "prompt": "A beautifully cooked sunny-side-up egg on a plate, appetizing appearance, professional food photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El huevo!",
+      "footer": "The egg!",
+      "prompt": "A basket of fresh brown and white eggs, professional food photography, rustic lighting with soft shadows, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "huevo",
+      "en": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "es": "blanco",
+      "en": "white",
+      "emoji": "⚪"
+    },
+    {
+      "es": "oval",
+      "en": "oval",
+      "emoji": "🥚"
+    },
+    {
+      "es": "proteína",
+      "en": "protein",
+      "emoji": "💪"
+    },
+    {
+      "es": "gallinas",
+      "en": "chickens",
+      "emoji": "🐔"
+    },
+    {
+      "es": "delicioso",
+      "en": "delicious",
+      "emoji": "😋"
+    }
+  ],
+  "badge": {
+    "emoji": "🥚",
+    "name": "Explorador de Huevos",
+    "nameEn": "Egg Explorer"
+  }
+}

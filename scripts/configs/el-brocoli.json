@@ -1,0 +1,84 @@
+{
+  "slug": "week-43-el-brocoli",
+  "title": "El Brócoli",
+  "subtitle": "The Broccoli",
+  "theme": "nutricion",
+  "week": 43,
+  "emoji": "🥦",
+  "meta_desc": "Learn nutrition vocabulary in Spanish (brócoli, verde, fuerte, sano) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish nutrition book, el brócoli Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Brócoli",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A fresh head of green broccoli on a wooden table, showing its tree-like florets, professional food photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El brócoli es verde.",
+      "footer": "The broccoli is green.",
+      "prompt": "Bright green broccoli against a clean background, vibrant color, professional food photography, even lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El brócoli parece un árbol.",
+      "footer": "The broccoli looks like a tree.",
+      "prompt": "A broccoli floret standing upright like a miniature tree, creative angle, professional food photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El brócoli me hace fuerte.",
+      "footer": "Broccoli makes me strong.",
+      "prompt": "Fresh broccoli with a flexed muscle emoji nearby, professional food photography, bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El brócoli es sano.",
+      "footer": "Broccoli is healthy.",
+      "prompt": "Broccoli surrounded by other healthy green vegetables, professional food photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Puedo comer brócoli.",
+      "footer": "I can eat broccoli.",
+      "prompt": "Steamed broccoli on a colorful plate looking appetizing, professional food photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El brócoli!",
+      "footer": "The broccoli!",
+      "prompt": "A perfect head of broccoli with water droplets on its florets, professional food photography, dramatic lighting with soft shadows, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "brócoli",
+      "en": "broccoli",
+      "emoji": "🥦"
+    },
+    {
+      "es": "verde",
+      "en": "green",
+      "emoji": "💚"
+    },
+    {
+      "es": "árbol",
+      "en": "tree",
+      "emoji": "🌳"
+    },
+    {
+      "es": "fuerte",
+      "en": "strong",
+      "emoji": "💪"
+    },
+    {
+      "es": "sano",
+      "en": "healthy",
+      "emoji": "✨"
+    },
+    {
+      "es": "comer",
+      "en": "to eat",
+      "emoji": "🍽️"
+    }
+  ],
+  "badge": {
+    "emoji": "🥦",
+    "name": "Explorador de Brócoli",
+    "nameEn": "Broccoli Explorer"
+  }
+}

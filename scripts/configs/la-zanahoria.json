@@ -1,0 +1,84 @@
+{
+  "slug": "week-42-la-zanahoria",
+  "title": "La Zanahoria",
+  "subtitle": "The Carrot",
+  "theme": "nutricion",
+  "week": 42,
+  "emoji": "🥕",
+  "meta_desc": "Learn nutrition vocabulary in Spanish (zanahoria, naranja, crujiente, nutritiva) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish nutrition book, la zanahoria Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Zanahoria",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A fresh orange carrot with green leafy top on a wooden cutting board, professional food photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La zanahoria es naranja.",
+      "footer": "The carrot is orange.",
+      "prompt": "Several bright orange carrots arranged on a white background, showing their vibrant color, professional food photography, clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La zanahoria es crujiente.",
+      "footer": "The carrot is crunchy.",
+      "prompt": "A carrot being snapped in half showing its crisp texture, water droplets visible, professional food photography, dramatic lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La zanahoria es nutritiva.",
+      "footer": "The carrot is nutritious.",
+      "prompt": "Fresh carrots arranged with other vegetables in a healthy display, professional food photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La zanahoria crece bajo tierra.",
+      "footer": "The carrot grows underground.",
+      "prompt": "Carrots growing in soil with their green tops visible above ground, garden setting, professional nature photography, sunny lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Los conejos comen zanahorias.",
+      "footer": "Rabbits eat carrots.",
+      "prompt": "A cute rabbit next to fresh carrots in a garden, professional wildlife photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡La zanahoria!",
+      "footer": "The carrot!",
+      "prompt": "A perfect orange carrot with fresh green leaves, water droplets on its surface, professional food photography, dramatic lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "zanahoria",
+      "en": "carrot",
+      "emoji": "🥕"
+    },
+    {
+      "es": "naranja",
+      "en": "orange",
+      "emoji": "🟠"
+    },
+    {
+      "es": "crujiente",
+      "en": "crunchy",
+      "emoji": "💥"
+    },
+    {
+      "es": "nutritiva",
+      "en": "nutritious",
+      "emoji": "💪"
+    },
+    {
+      "es": "tierra",
+      "en": "ground",
+      "emoji": "🌍"
+    },
+    {
+      "es": "conejos",
+      "en": "rabbits",
+      "emoji": "🐰"
+    }
+  ],
+  "badge": {
+    "emoji": "🥕",
+    "name": "Explorador de Zanahorias",
+    "nameEn": "Carrot Explorer"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "week-47-el-yogur",
+  "title": "El Yogur",
+  "subtitle": "The Yogurt",
+  "theme": "nutricion",
+  "week": 47,
+  "emoji": "🥣",
+  "meta_desc": "Learn nutrition vocabulary in Spanish (yogur, cremoso, fresco, probióticos) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish nutrition book, el yogur Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Yogur",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A bowl of creamy white yogurt with a spoon on a clean table, professional food photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El yogur es cremoso.",
+      "footer": "The yogurt is creamy.",
+      "prompt": "Thick creamy yogurt in a glass bowl showing its smooth texture, professional food photography, clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El yogur es fresco.",
+      "footer": "The yogurt is fresh.",
+      "prompt": "A bowl of fresh yogurt with condensation droplets around it, professional food photography, cool natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El yogur es bueno para mi.",
+      "footer": "Yogurt is good for me.",
+      "prompt": "Yogurt in a colorful bowl with fresh berries on top, healthy appearance, professional food photography, bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El yogur tiene probióticos.",
+      "footer": "Yogurt has probiotics.",
+      "prompt": "A container of yogurt with happy bacteria illustrations around it, educational style, professional food photography, cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Puedo comer yogur con frutas.",
+      "footer": "I can eat yogurt with fruit.",
+      "prompt": "Yogurt parfait with colorful layers of fruit and granola, appetizing appearance, professional food photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El yogur!",
+      "footer": "The yogurt!",
+      "prompt": "A beautifully arranged yogurt bowl with berries, honey drizzle, and mint leaves, professional food photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "yogur",
+      "en": "yogurt",
+      "emoji": "🥣"
+    },
+    {
+      "es": "cremoso",
+      "en": "creamy",
+      "emoji": "🍦"
+    },
+    {
+      "es": "fresco",
+      "en": "fresh",
+      "emoji": "✨"
+    },
+    {
+      "es": "bueno",
+      "en": "good",
+      "emoji": "👍"
+    },
+    {
+      "es": "probióticos",
+      "en": "probiotics",
+      "emoji": "🦠"
+    },
+    {
+      "es": "frutas",
+      "en": "fruits",
+      "emoji": "🍓"
+    }
+  ],
+  "badge": {
+    "emoji": "🥣",
+    "name": "Explorador de Yogur",
+    "nameEn": "Yogurt Explorer"
+  }
+}

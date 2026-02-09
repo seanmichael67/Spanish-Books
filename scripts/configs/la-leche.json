@@ -1,0 +1,84 @@
+{
+  "slug": "week-45-la-leche",
+  "title": "La Leche",
+  "subtitle": "The Milk",
+  "theme": "nutricion",
+  "week": 45,
+  "emoji": "🥛",
+  "meta_desc": "Learn nutrition vocabulary in Spanish (leche, blanca, fría, calcio) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish nutrition book, la leche Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Leche",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A glass of fresh white milk on a clean table, beautiful lighting showing its creamy color, professional food photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La leche es blanca.",
+      "footer": "The milk is white.",
+      "prompt": "A tall glass filled with pure white milk against a light background, professional food photography, clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La leche es fría.",
+      "footer": "The milk is cold.",
+      "prompt": "A glass of cold milk with condensation droplets on the outside, ice crystals visible, professional food photography, cool lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La leche tiene calcio.",
+      "footer": "Milk has calcium.",
+      "prompt": "A glass of milk next to images suggesting strong bones, professional food photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La leche viene de vacas.",
+      "footer": "Milk comes from cows.",
+      "prompt": "A friendly dairy cow in a green pasture with milk containers nearby, professional farm photography, natural sunny lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Bebo la leche.",
+      "footer": "I drink the milk.",
+      "prompt": "A child's hand holding a glass of milk ready to drink, professional photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡La leche!",
+      "footer": "The milk!",
+      "prompt": "A bottle and glass of fresh milk with a milk mustache drawn playfully, professional food photography, cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "leche",
+      "en": "milk",
+      "emoji": "🥛"
+    },
+    {
+      "es": "blanca",
+      "en": "white",
+      "emoji": "⚪"
+    },
+    {
+      "es": "fría",
+      "en": "cold",
+      "emoji": "❄️"
+    },
+    {
+      "es": "calcio",
+      "en": "calcium",
+      "emoji": "🦴"
+    },
+    {
+      "es": "vacas",
+      "en": "cows",
+      "emoji": "🐄"
+    },
+    {
+      "es": "bebo",
+      "en": "I drink",
+      "emoji": "🥤"
+    }
+  ],
+  "badge": {
+    "emoji": "🥛",
+    "name": "Explorador de Leche",
+    "nameEn": "Milk Explorer"
+  }
+}

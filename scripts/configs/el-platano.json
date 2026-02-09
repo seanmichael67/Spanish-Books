@@ -1,0 +1,84 @@
+{
+  "slug": "week-41-el-platano",
+  "title": "El Plátano",
+  "subtitle": "The Banana",
+  "theme": "nutricion",
+  "week": 41,
+  "emoji": "🍌",
+  "meta_desc": "Learn nutrition vocabulary in Spanish (plátano, amarillo, largo, rico) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish nutrition book, el plátano Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Plátano",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A perfect yellow banana on a clean white surface, beautiful lighting showing its smooth peel, professional food photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El plátano es amarillo.",
+      "footer": "The banana is yellow.",
+      "prompt": "A bright yellow banana against a sunny yellow background, vibrant colors, professional food photography, even lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El plátano es largo.",
+      "footer": "The banana is long.",
+      "prompt": "A banana lying horizontally showing its full length next to a ruler, professional food photography, clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El plátano es rico.",
+      "footer": "The banana is delicious.",
+      "prompt": "A peeled banana showing its creamy white fruit, looking appetizing, professional food photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El plátano tiene cáscara.",
+      "footer": "The banana has a peel.",
+      "prompt": "A banana partially peeled showing both the yellow peel and white fruit inside, professional food photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Me gusta el plátano.",
+      "footer": "I like the banana.",
+      "prompt": "A smiling child holding a banana, happy expression, professional portrait photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El plátano!",
+      "footer": "The banana!",
+      "prompt": "A bunch of ripe yellow bananas on a wooden table, professional food photography, warm lighting with soft shadows, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "plátano",
+      "en": "banana",
+      "emoji": "🍌"
+    },
+    {
+      "es": "amarillo",
+      "en": "yellow",
+      "emoji": "💛"
+    },
+    {
+      "es": "largo",
+      "en": "long",
+      "emoji": "📏"
+    },
+    {
+      "es": "rico",
+      "en": "delicious",
+      "emoji": "😋"
+    },
+    {
+      "es": "cáscara",
+      "en": "peel",
+      "emoji": "🍌"
+    },
+    {
+      "es": "me gusta",
+      "en": "I like",
+      "emoji": "❤️"
+    }
+  ],
+  "badge": {
+    "emoji": "🍌",
+    "name": "Explorador de Plátanos",
+    "nameEn": "Banana Explorer"
+  }
+}

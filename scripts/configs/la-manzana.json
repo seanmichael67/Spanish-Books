@@ -1,0 +1,84 @@
+{
+  "slug": "week-40-la-manzana",
+  "title": "La Manzana",
+  "subtitle": "The Apple",
+  "theme": "nutricion",
+  "week": 40,
+  "emoji": "🍎",
+  "meta_desc": "Learn nutrition vocabulary in Spanish (manzana, roja, dulce, saludable) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish nutrition book, la manzana Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Manzana",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A beautiful fresh red apple sitting on a wooden table, perfect lighting showing its glossy skin, professional food photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La manzana es roja.",
+      "footer": "The apple is red.",
+      "prompt": "A vibrant red apple against a white background, showing its bright color, professional food photography, clean natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La manzana es dulce.",
+      "footer": "The apple is sweet.",
+      "prompt": "A cut apple showing its juicy white flesh with a bite taken out, honey drizzled nearby, professional food photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La manzana es saludable.",
+      "footer": "The apple is healthy.",
+      "prompt": "A fresh red apple with a happy face drawn on it, surrounded by other healthy foods, professional food photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La manzana crece en árboles.",
+      "footer": "The apple grows on trees.",
+      "prompt": "Red apples hanging on a tree branch with green leaves, orchard background, professional nature photography, sunny lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Como la manzana.",
+      "footer": "I eat the apple.",
+      "prompt": "A child's hand holding a fresh red apple ready to take a bite, professional photography, natural warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡La manzana!",
+      "footer": "The apple!",
+      "prompt": "A perfect red apple with a green leaf, water droplets on its surface, professional food photography, dramatic lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "manzana",
+      "en": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "es": "roja",
+      "en": "red",
+      "emoji": "🔴"
+    },
+    {
+      "es": "dulce",
+      "en": "sweet",
+      "emoji": "🍯"
+    },
+    {
+      "es": "saludable",
+      "en": "healthy",
+      "emoji": "💪"
+    },
+    {
+      "es": "árboles",
+      "en": "trees",
+      "emoji": "🌳"
+    },
+    {
+      "es": "como",
+      "en": "I eat",
+      "emoji": "😋"
+    }
+  ],
+  "badge": {
+    "emoji": "🍎",
+    "name": "Explorador de Manzanas",
+    "nameEn": "Apple Explorer"
+  }
+}
