@@ -65,7 +65,7 @@ app.get('/', (req, res) => {
   const bookCards = BOOKS.map(b => {
     const cls = b.ready ? 'card' : 'card coming-soon';
     const href = b.ready ? '/books/' + b.slug + '/' : '#';
-    return '<a href="' + href + '" class="' + cls + '" data-theme="' + b.theme + '">' +
+    return '<a href="' + href + '" target="_top" class="' + cls + '" data-theme="' + b.theme + '">' +
       '<div class="emoji">' + b.emoji + '</div>' +
       '<div class="week">Semana ' + b.week + '</div>' +
       '<div class="title">' + b.title + '</div>' +
