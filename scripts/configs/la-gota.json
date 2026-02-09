@@ -1,0 +1,84 @@
+{
+  "slug": "week-48-la-gota",
+  "title": "La Gota",
+  "subtitle": "The Drop",
+  "theme": "agua",
+  "week": 48,
+  "emoji": "💧",
+  "meta_desc": "Learn water vocabulary in Spanish (gota, agua, líquida, pequeña) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish water book, la gota Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Gota",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A single perfect water droplet close-up, reflecting light beautifully, macro photography, crystal clear, professional photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La gota es pequeña.",
+      "footer": "The drop is small.",
+      "prompt": "A tiny water droplet on a leaf, showing its small size, macro photography, natural outdoor lighting, professional nature photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La gota es líquida.",
+      "footer": "The drop is liquid.",
+      "prompt": "A water droplet about to fall, showing its liquid nature and movement, macro photography, professional photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La gota brilla.",
+      "footer": "The drop shines.",
+      "prompt": "A sparkling water droplet catching sunlight, brilliant reflections, macro photography, professional photography with beautiful bokeh, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La gota cae.",
+      "footer": "The drop falls.",
+      "prompt": "Water droplets falling through the air in sequence, motion captured, professional high-speed photography, dramatic lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Muchas gotas hacen lluvia.",
+      "footer": "Many drops make rain.",
+      "prompt": "Multiple water droplets falling like rain, beautiful patterns, professional photography, natural outdoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡La gota!",
+      "footer": "The drop!",
+      "prompt": "A perfect crystal clear water droplet on a surface, stunning detail and reflections, macro photography, professional lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "gota",
+      "en": "drop",
+      "emoji": "💧"
+    },
+    {
+      "es": "pequeña",
+      "en": "small",
+      "emoji": "🤏"
+    },
+    {
+      "es": "líquida",
+      "en": "liquid",
+      "emoji": "💦"
+    },
+    {
+      "es": "brilla",
+      "en": "shines",
+      "emoji": "✨"
+    },
+    {
+      "es": "cae",
+      "en": "falls",
+      "emoji": "⬇️"
+    },
+    {
+      "es": "lluvia",
+      "en": "rain",
+      "emoji": "🌧️"
+    }
+  ],
+  "badge": {
+    "emoji": "💧",
+    "name": "Explorador de Gotas",
+    "nameEn": "Drop Explorer"
+  }
+}

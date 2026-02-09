@@ -1,0 +1,84 @@
+{
+  "slug": "week-51-la-lluvia",
+  "title": "La Lluvia",
+  "subtitle": "The Rain",
+  "theme": "agua",
+  "week": 51,
+  "emoji": "🌧️",
+  "meta_desc": "Learn water vocabulary in Spanish (lluvia, gotas, moja, nubes) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish water book, la lluvia Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Lluvia",
+      "footer": "Aprendiendo juntos",
+      "prompt": "Rain falling gently with soft focus, water droplets visible in the air, peaceful rain scene, professional nature photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La lluvia cae del cielo.",
+      "footer": "Rain falls from the sky.",
+      "prompt": "Raindrops falling from dark clouds above, dramatic sky, professional weather photography, natural moody lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La lluvia moja todo.",
+      "footer": "Rain wets everything.",
+      "prompt": "Rain falling on leaves and grass making them wet and shiny, water droplets everywhere, professional nature photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La lluvia viene de las nubes.",
+      "footer": "Rain comes from clouds.",
+      "prompt": "Dark rain clouds in the sky with rain falling beneath them, dramatic weather scene, professional sky photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Uso paraguas en la lluvia.",
+      "footer": "I use an umbrella in the rain.",
+      "prompt": "A colorful umbrella protecting from rain, raindrops visible around it, professional photography, natural rainy day lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La lluvia ayuda a las plantas.",
+      "footer": "Rain helps plants.",
+      "prompt": "Plants and flowers being watered by gentle rain, healthy green growth, professional nature photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡La lluvia!",
+      "footer": "The rain!",
+      "prompt": "Beautiful rain falling with bokeh effect, water droplets sparkling, artistic rain photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "lluvia",
+      "en": "rain",
+      "emoji": "🌧️"
+    },
+    {
+      "es": "cielo",
+      "en": "sky",
+      "emoji": "☁️"
+    },
+    {
+      "es": "moja",
+      "en": "wets",
+      "emoji": "💦"
+    },
+    {
+      "es": "nubes",
+      "en": "clouds",
+      "emoji": "☁️"
+    },
+    {
+      "es": "paraguas",
+      "en": "umbrella",
+      "emoji": "☂️"
+    },
+    {
+      "es": "plantas",
+      "en": "plants",
+      "emoji": "🌱"
+    }
+  ],
+  "badge": {
+    "emoji": "🌧️",
+    "name": "Explorador de Lluvia",
+    "nameEn": "Rain Explorer"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "week-53-la-nieve",
+  "title": "La Nieve",
+  "subtitle": "The Snow",
+  "theme": "agua",
+  "week": 53,
+  "emoji": "❄️",
+  "meta_desc": "Learn water vocabulary in Spanish (nieve, blanca, suave, fría) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish water book, la nieve Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Nieve",
+      "footer": "Aprendiendo juntos",
+      "prompt": "Fresh white snow covering a peaceful winter landscape, soft snow texture, professional winter photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La nieve es blanca.",
+      "footer": "Snow is white.",
+      "prompt": "Pure white snow covering everything, pristine winter scene, professional winter photography, bright daylight, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La nieve es suave.",
+      "footer": "Snow is soft.",
+      "prompt": "Soft fluffy snow with gentle texture visible, untouched powder snow, professional macro winter photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La nieve es fría.",
+      "footer": "Snow is cold.",
+      "prompt": "Snow-covered scene with icicles, cold winter atmosphere, professional winter photography, cool lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Los copos de nieve caen.",
+      "footer": "Snowflakes fall.",
+      "prompt": "Individual snowflakes falling through the air, detailed snowflake patterns visible, professional macro photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Puedo hacer un muñeco de nieve.",
+      "footer": "I can make a snowman.",
+      "prompt": "A friendly snowman with carrot nose and stick arms in a snowy yard, cheerful winter scene, professional photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡La nieve!",
+      "footer": "The snow!",
+      "prompt": "Beautiful winter wonderland covered in sparkling white snow, trees dusted with snow, professional winter landscape photography, magical lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "nieve",
+      "en": "snow",
+      "emoji": "❄️"
+    },
+    {
+      "es": "blanca",
+      "en": "white",
+      "emoji": "⚪"
+    },
+    {
+      "es": "suave",
+      "en": "soft",
+      "emoji": "🤗"
+    },
+    {
+      "es": "fría",
+      "en": "cold",
+      "emoji": "🥶"
+    },
+    {
+      "es": "copos",
+      "en": "flakes",
+      "emoji": "❄️"
+    },
+    {
+      "es": "muñeco",
+      "en": "snowman",
+      "emoji": "⛄"
+    }
+  ],
+  "badge": {
+    "emoji": "❄️",
+    "name": "Explorador de Nieve",
+    "nameEn": "Snow Explorer"
+  }
+}

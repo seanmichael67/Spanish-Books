@@ -1,0 +1,84 @@
+{
+  "slug": "week-50-el-lago",
+  "title": "El Lago",
+  "subtitle": "The Lake",
+  "theme": "agua",
+  "week": 50,
+  "emoji": "🏔️",
+  "meta_desc": "Learn water vocabulary in Spanish (lago, tranquilo, grande, azul) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish water book, el lago Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Lago",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A serene mountain lake with reflection of trees and sky, calm water surface, professional landscape photography, beautiful natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El lago es tranquilo.",
+      "footer": "The lake is calm.",
+      "prompt": "A perfectly still lake surface reflecting clouds like a mirror, peaceful scene, professional landscape photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El lago es grande.",
+      "footer": "The lake is big.",
+      "prompt": "An expansive lake view showing its vast size, wide perspective, professional aerial photography, clear day lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El lago es azul.",
+      "footer": "The lake is blue.",
+      "prompt": "A stunning blue lake with mountains in background, vibrant blue water, professional landscape photography, bright sunny lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Los patos nadan en el lago.",
+      "footer": "Ducks swim in the lake.",
+      "prompt": "Ducks swimming peacefully on a calm lake, beautiful reflections, professional wildlife photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Puedo pescar en el lago.",
+      "footer": "I can fish in the lake.",
+      "prompt": "A fishing scene at a peaceful lake, someone holding a fishing rod, professional photography, golden hour lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El lago!",
+      "footer": "The lake!",
+      "prompt": "A breathtaking lake panorama at sunset, stunning colors reflected in water, professional landscape photography, golden hour lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "lago",
+      "en": "lake",
+      "emoji": "🏔️"
+    },
+    {
+      "es": "tranquilo",
+      "en": "calm",
+      "emoji": "😌"
+    },
+    {
+      "es": "grande",
+      "en": "big",
+      "emoji": "📏"
+    },
+    {
+      "es": "azul",
+      "en": "blue",
+      "emoji": "💙"
+    },
+    {
+      "es": "patos",
+      "en": "ducks",
+      "emoji": "🦆"
+    },
+    {
+      "es": "pescar",
+      "en": "to fish",
+      "emoji": "🎣"
+    }
+  ],
+  "badge": {
+    "emoji": "🏔️",
+    "name": "Explorador de Lagos",
+    "nameEn": "Lake Explorer"
+  }
+}

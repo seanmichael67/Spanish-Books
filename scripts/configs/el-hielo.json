@@ -1,0 +1,84 @@
+{
+  "slug": "week-52-el-hielo",
+  "title": "El Hielo",
+  "subtitle": "The Ice",
+  "theme": "agua",
+  "week": 52,
+  "emoji": "🧊",
+  "meta_desc": "Learn water vocabulary in Spanish (hielo, frío, duro, congelado) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish water book, el hielo Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Hielo",
+      "footer": "Aprendiendo juntos",
+      "prompt": "Clear ice cubes in a glass, transparent and crystalline, professional food photography, bright clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El hielo es frío.",
+      "footer": "Ice is cold.",
+      "prompt": "Ice cubes with frost and cold mist around them, icy cold appearance, professional photography, cool lighting with blue tones, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El hielo es duro.",
+      "footer": "Ice is hard.",
+      "prompt": "Solid ice blocks showing their hard texture and structure, professional photography, clear lighting showing details, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El hielo es agua congelada.",
+      "footer": "Ice is frozen water.",
+      "prompt": "Ice forming on water surface, transition from water to ice visible, professional nature photography, cool natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El hielo se derrite.",
+      "footer": "Ice melts.",
+      "prompt": "An ice cube melting with water puddle forming around it, melting process visible, professional photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El hielo flota en el agua.",
+      "footer": "Ice floats in water.",
+      "prompt": "Ice cubes floating in a glass of water, clear view of floating ice, professional food photography, clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El hielo!",
+      "footer": "The ice!",
+      "prompt": "Beautiful crystal clear ice formation with reflections and sparkles, professional close-up photography, dramatic lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "hielo",
+      "en": "ice",
+      "emoji": "🧊"
+    },
+    {
+      "es": "frío",
+      "en": "cold",
+      "emoji": "❄️"
+    },
+    {
+      "es": "duro",
+      "en": "hard",
+      "emoji": "💪"
+    },
+    {
+      "es": "congelado",
+      "en": "frozen",
+      "emoji": "🥶"
+    },
+    {
+      "es": "derrite",
+      "en": "melts",
+      "emoji": "💧"
+    },
+    {
+      "es": "flota",
+      "en": "floats",
+      "emoji": "⬆️"
+    }
+  ],
+  "badge": {
+    "emoji": "🧊",
+    "name": "Explorador de Hielo",
+    "nameEn": "Ice Explorer"
+  }
+}

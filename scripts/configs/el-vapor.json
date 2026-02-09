@@ -1,0 +1,84 @@
+{
+  "slug": "week-54-el-vapor",
+  "title": "El Vapor",
+  "subtitle": "The Steam",
+  "theme": "agua",
+  "week": 54,
+  "emoji": "💨",
+  "meta_desc": "Learn water vocabulary in Spanish (vapor, caliente, sube, invisible) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish water book, el vapor Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Vapor",
+      "footer": "Aprendiendo juntos",
+      "prompt": "Steam rising from a hot cup of tea or coffee, visible vapor wisps, professional food photography, soft natural lighting with window light, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El vapor es caliente.",
+      "footer": "Steam is hot.",
+      "prompt": "Hot steam rising from boiling water, heat waves visible, professional photography, dramatic lighting showing warmth, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El vapor sube.",
+      "footer": "Steam rises.",
+      "prompt": "Steam rising upward from a pot, upward movement visible, professional photography, soft backlighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El vapor es agua gaseosa.",
+      "footer": "Steam is water vapor.",
+      "prompt": "Steam clouds showing the gaseous state of water, ethereal appearance, professional photography, soft diffused lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El vapor se convierte en agua.",
+      "footer": "Steam turns into water.",
+      "prompt": "Condensation forming as steam cools on a glass surface, water droplets forming from vapor, professional macro photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Veo vapor cuando hace frío.",
+      "footer": "I see steam when it's cold.",
+      "prompt": "Breath visible as steam in cold air, winter scene with vapor from breathing, professional photography, cold natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El vapor!",
+      "footer": "The steam!",
+      "prompt": "Beautiful artistic steam wisps rising dramatically, elegant vapor patterns, professional photography with backlight, dramatic lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "vapor",
+      "en": "steam",
+      "emoji": "💨"
+    },
+    {
+      "es": "caliente",
+      "en": "hot",
+      "emoji": "🔥"
+    },
+    {
+      "es": "sube",
+      "en": "rises",
+      "emoji": "⬆️"
+    },
+    {
+      "es": "gaseosa",
+      "en": "gaseous",
+      "emoji": "☁️"
+    },
+    {
+      "es": "convierte",
+      "en": "converts",
+      "emoji": "🔄"
+    },
+    {
+      "es": "frío",
+      "en": "cold",
+      "emoji": "🥶"
+    }
+  ],
+  "badge": {
+    "emoji": "💨",
+    "name": "Explorador de Vapor",
+    "nameEn": "Steam Explorer"
+  }
+}

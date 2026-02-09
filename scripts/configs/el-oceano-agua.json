@@ -1,0 +1,84 @@
+{
+  "slug": "week-55-el-oceano-agua",
+  "title": "El Océano",
+  "subtitle": "The Ocean",
+  "theme": "agua",
+  "week": 55,
+  "emoji": "🌊",
+  "meta_desc": "Learn water vocabulary in Spanish (océano, salado, profundo, grande) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish water book, el océano Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Océano",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A vast blue ocean view with waves, expansive sea horizon, professional seascape photography, beautiful natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El océano es grande.",
+      "footer": "The ocean is big.",
+      "prompt": "An aerial view of the endless ocean showing its vastness, expansive blue water, professional aerial photography, clear day lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El océano es profundo.",
+      "footer": "The ocean is deep.",
+      "prompt": "Ocean water showing depth with darker blue colors in deep areas, mysterious depths, professional underwater photography perspective, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El océano es salado.",
+      "footer": "The ocean is salty.",
+      "prompt": "Ocean waves with white sea foam and spray, salty sea atmosphere, professional coastal photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El océano tiene olas.",
+      "footer": "The ocean has waves.",
+      "prompt": "Beautiful ocean waves rolling toward shore, dynamic wave action, professional surf photography, natural sunny lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Muchos animales viven en el océano.",
+      "footer": "Many animals live in the ocean.",
+      "prompt": "Marine life including dolphins or fish in ocean waters, vibrant ocean ecosystem, professional underwater photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El océano!",
+      "footer": "The ocean!",
+      "prompt": "A stunning ocean sunset scene with colorful sky reflected in water, peaceful waves, professional seascape photography, golden hour lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "océano",
+      "en": "ocean",
+      "emoji": "🌊"
+    },
+    {
+      "es": "grande",
+      "en": "big",
+      "emoji": "📏"
+    },
+    {
+      "es": "profundo",
+      "en": "deep",
+      "emoji": "⬇️"
+    },
+    {
+      "es": "salado",
+      "en": "salty",
+      "emoji": "🧂"
+    },
+    {
+      "es": "olas",
+      "en": "waves",
+      "emoji": "🌊"
+    },
+    {
+      "es": "animales",
+      "en": "animals",
+      "emoji": "🐠"
+    }
+  ],
+  "badge": {
+    "emoji": "🌊",
+    "name": "Explorador de Océano",
+    "nameEn": "Ocean Explorer"
+  }
+}

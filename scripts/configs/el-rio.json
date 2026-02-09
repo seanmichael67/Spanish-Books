@@ -1,0 +1,84 @@
+{
+  "slug": "week-49-el-rio",
+  "title": "El Río",
+  "subtitle": "The River",
+  "theme": "agua",
+  "week": 49,
+  "emoji": "🏞️",
+  "meta_desc": "Learn water vocabulary in Spanish (río, fluye, fresco, largo) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish preschool, Spanish water book, el río Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Río",
+      "footer": "Aprendiendo juntos",
+      "prompt": "A beautiful flowing river through a peaceful landscape, clear water, scenic view, professional nature photography, sunny day lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El río fluye.",
+      "footer": "The river flows.",
+      "prompt": "A river flowing smoothly over rocks, showing water movement, long exposure effect, professional nature photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El río es largo.",
+      "footer": "The river is long.",
+      "prompt": "An aerial view of a long winding river through a valley, vast landscape, professional drone photography, beautiful natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El río es fresco.",
+      "footer": "The river is fresh.",
+      "prompt": "Crystal clear river water with visible stones beneath, refreshing appearance, professional nature photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Los peces viven en el río.",
+      "footer": "Fish live in the river.",
+      "prompt": "Fish swimming in clear river water, underwater and above water view, professional wildlife photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El río va al mar.",
+      "footer": "The river goes to the sea.",
+      "prompt": "A river meeting the ocean, confluence of waters, aerial view, professional nature photography, beautiful lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡El río!",
+      "footer": "The river!",
+      "prompt": "A stunning river scene with trees along the banks, peaceful water, professional landscape photography, golden hour lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "río",
+      "en": "river",
+      "emoji": "🏞️"
+    },
+    {
+      "es": "fluye",
+      "en": "flows",
+      "emoji": "🌊"
+    },
+    {
+      "es": "largo",
+      "en": "long",
+      "emoji": "📏"
+    },
+    {
+      "es": "fresco",
+      "en": "fresh",
+      "emoji": "✨"
+    },
+    {
+      "es": "peces",
+      "en": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "es": "mar",
+      "en": "sea",
+      "emoji": "🌊"
+    }
+  ],
+  "badge": {
+    "emoji": "🏞️",
+    "name": "Explorador de Ríos",
+    "nameEn": "River Explorer"
+  }
+}
