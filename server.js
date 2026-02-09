@@ -52,6 +52,14 @@ const BOOKS = [
   { slug: 'week-28-la-ballena', emoji: '🐋', week: 28, title: 'La Ballena', subtitle: 'The Whale', theme: 'oceano', ready: true },
   { slug: 'week-29-el-caballito-de-mar', emoji: '🦑', week: 29, title: 'El Caballito de Mar', subtitle: 'The Seahorse', theme: 'oceano', ready: true },
   { slug: 'week-30-la-estrella-de-mar', emoji: '⭐', week: 30, title: 'La Estrella de Mar', subtitle: 'The Starfish', theme: 'oceano', ready: true },
+  { slug: 'week-31-la-rosa', emoji: '🌹', week: 31, title: 'La Rosa', subtitle: 'The Rose', theme: 'plantas', ready: true },
+  { slug: 'week-32-el-girasol', emoji: '🌻', week: 32, title: 'El Girasol', subtitle: 'The Sunflower', theme: 'plantas', ready: true },
+  { slug: 'week-33-el-arbol', emoji: '🌳', week: 33, title: 'El Árbol', subtitle: 'The Tree', theme: 'plantas', ready: true },
+  { slug: 'week-34-el-cactus', emoji: '🌵', week: 34, title: 'El Cactus', subtitle: 'The Cactus', theme: 'plantas', ready: true },
+  { slug: 'week-35-la-semilla', emoji: '🌱', week: 35, title: 'La Semilla', subtitle: 'The Seed', theme: 'plantas', ready: true },
+  { slug: 'week-36-la-margarita', emoji: '🌼', week: 36, title: 'La Margarita', subtitle: 'The Daisy', theme: 'plantas', ready: true },
+  { slug: 'week-37-el-tulipan', emoji: '🌷', week: 37, title: 'El Tulipán', subtitle: 'The Tulip', theme: 'plantas', ready: true },
+  { slug: 'week-38-el-hongo', emoji: '🍄', week: 38, title: 'El Hongo', subtitle: 'The Mushroom', theme: 'plantas', ready: true },
 ];
 
 const THEMES = [

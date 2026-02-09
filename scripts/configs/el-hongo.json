@@ -1,0 +1,14 @@
+{"slug":"week-38-el-hongo","title":"El Hongo","subtitle":"The Mushroom","theme":"plantas","week":38,"emoji":"🍄",
+"meta_desc":"Learn mushroom vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, plants nature Spanish, bilingual children books",
+"pages":[
+{"title":"El Hongo","footer":"Aprendiendo juntos","prompt":"A cute realistic red mushroom with white spots growing in a forest, fairy tale appearance, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El hongo crece en el bosque.","footer":"The mushroom grows in the forest.","prompt":"Realistic mushrooms growing on a mossy forest floor among fallen leaves, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El hongo tiene sombrero.","footer":"The mushroom has a cap.","prompt":"Close-up of a realistic mushroom showing its round cap clearly, beautiful shape, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El hongo es pequeño.","footer":"The mushroom is small.","prompt":"Tiny realistic mushrooms growing in a cluster on a fallen log, showing how small they are, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Los hongos son de muchas formas.","footer":"Mushrooms are many shapes.","prompt":"Various realistic mushrooms of different shapes and sizes growing together, diversity of forms, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El hongo crece después de la lluvia.","footer":"The mushroom grows after rain.","prompt":"Realistic mushrooms covered in raindrops growing in wet soil after a rain, fresh and dewy, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El hongo!","footer":"The mushroom!","prompt":"A cute realistic red and white spotted mushroom on mossy ground, fairy tale look, soft bokeh forest background, professional nature photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"hongo","en":"mushroom","emoji":"🍄"},{"es":"bosque","en":"forest","emoji":"🌲"},{"es":"sombrero","en":"cap","emoji":"🎩"},{"es":"pequeño","en":"small","emoji":"🤏"},{"es":"formas","en":"shapes","emoji":"🔷"},{"es":"lluvia","en":"rain","emoji":"🌧️"}],
+"badge":{"emoji":"🍄","name":"Explorador de Hongos","nameEn":"Mushroom Explorer"}}

@@ -1,0 +1,14 @@
+{"slug":"week-36-la-margarita","title":"La Margarita","subtitle":"The Daisy","theme":"plantas","week":36,"emoji":"🌼",
+"meta_desc":"Learn daisy vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, plants flowers Spanish, bilingual children books",
+"pages":[
+{"title":"La Margarita","footer":"Aprendiendo juntos","prompt":"A cheerful realistic white daisy with yellow center in a meadow, bright and happy, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La margarita es blanca.","footer":"The daisy is white.","prompt":"A beautiful realistic white daisy with pristine petals, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La margarita tiene centro amarillo.","footer":"The daisy has a yellow center.","prompt":"Close-up of a realistic daisy showing its bright yellow center disc, pollen visible, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La margarita crece en el prado.","footer":"The daisy grows in the meadow.","prompt":"A field of realistic white daisies in a sunny green meadow, cheerful scene, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La abeja visita la margarita.","footer":"The bee visits the daisy.","prompt":"A realistic bee landing on a white daisy to collect pollen, nature interaction, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Las margaritas son alegres.","footer":"Daisies are cheerful.","prompt":"A bouquet of realistic colorful daisies in various colors, happy and vibrant, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La margarita!","footer":"The daisy!","prompt":"A perfect realistic white daisy facing camera, soft bokeh meadow background, morning light, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"margarita","en":"daisy","emoji":"🌼"},{"es":"blanca","en":"white","emoji":"⬜"},{"es":"centro","en":"center","emoji":"🎯"},{"es":"amarillo","en":"yellow","emoji":"💛"},{"es":"prado","en":"meadow","emoji":"🌾"},{"es":"alegre","en":"cheerful","emoji":"😊"}],
+"badge":{"emoji":"🌼","name":"Explorador de Margaritas","nameEn":"Daisy Explorer"}}

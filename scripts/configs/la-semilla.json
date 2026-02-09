@@ -1,0 +1,14 @@
+{"slug":"week-35-la-semilla","title":"La Semilla","subtitle":"The Seed","theme":"plantas","week":35,"emoji":"🌱",
+"meta_desc":"Learn seed and plant growth vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, plants growing Spanish, bilingual children books",
+"pages":[
+{"title":"La Semilla","footer":"Aprendiendo juntos","prompt":"A child's hand holding tiny seeds over soil in a garden pot, ready to plant, professional photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La semilla es pequeña.","footer":"The seed is small.","prompt":"Tiny realistic seeds on a wooden table, showing how small they are, professional macro photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La semilla necesita agua.","footer":"The seed needs water.","prompt":"A watering can pouring water on soil where seeds are planted, garden setting, professional photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La semilla necesita sol.","footer":"The seed needs sun.","prompt":"Bright sunlight shining on a garden with small seedlings emerging from soil, warm light, professional photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La semilla crece.","footer":"The seed grows.","prompt":"A sequence showing realistic plant growth stages from seed to sprout to small plant, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La semilla se convierte en planta.","footer":"The seed becomes a plant.","prompt":"A beautiful realistic young plant growing strong from rich soil, green leaves reaching up, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La semilla!","footer":"The seed!","prompt":"A tiny realistic seedling just sprouting from soil with first two leaves, miracle of growth, soft morning light, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"semilla","en":"seed","emoji":"🌰"},{"es":"pequeña","en":"small","emoji":"🤏"},{"es":"agua","en":"water","emoji":"💧"},{"es":"sol","en":"sun","emoji":"☀️"},{"es":"crece","en":"grows","emoji":"📈"},{"es":"planta","en":"plant","emoji":"🌿"}],
+"badge":{"emoji":"🌱","name":"Explorador de Semillas","nameEn":"Seed Explorer"}}

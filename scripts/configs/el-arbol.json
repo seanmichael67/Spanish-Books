@@ -1,0 +1,14 @@
+{"slug":"week-33-el-arbol","title":"El Árbol","subtitle":"The Tree","theme":"plantas","week":33,"emoji":"🌳",
+"meta_desc":"Learn tree vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, plants trees Spanish, bilingual children books",
+"pages":[
+{"title":"El Árbol","footer":"Aprendiendo juntos","prompt":"A majestic realistic large oak tree in a green meadow, full canopy of leaves, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El árbol es grande.","footer":"The tree is big.","prompt":"A massive realistic ancient tree with thick trunk and wide spreading branches, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El árbol tiene hojas.","footer":"The tree has leaves.","prompt":"Close-up of realistic green tree leaves with sunlight filtering through, beautiful detail, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El árbol tiene raíces.","footer":"The tree has roots.","prompt":"A realistic tree showing its roots spreading out at the base, strong and deep, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El árbol da sombra.","footer":"The tree gives shade.","prompt":"A realistic large tree providing cool shade on a sunny day, dappled light on grass beneath, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Los pájaros viven en el árbol.","footer":"Birds live in the tree.","prompt":"Realistic birds nesting in a green leafy tree, nest with baby birds visible, professional wildlife photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El árbol!","footer":"The tree!","prompt":"A beautiful realistic tree in golden autumn colors, warm light, professional nature photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"árbol","en":"tree","emoji":"🌳"},{"es":"grande","en":"big","emoji":"💪"},{"es":"hojas","en":"leaves","emoji":"🍃"},{"es":"raíces","en":"roots","emoji":"🌱"},{"es":"sombra","en":"shade","emoji":"⛱️"},{"es":"pájaros","en":"birds","emoji":"🐦"}],
+"badge":{"emoji":"🌳","name":"Explorador de Árboles","nameEn":"Tree Explorer"}}

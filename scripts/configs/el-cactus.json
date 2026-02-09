@@ -1,0 +1,14 @@
+{"slug":"week-34-el-cactus","title":"El Cactus","subtitle":"The Cactus","theme":"plantas","week":34,"emoji":"🌵",
+"meta_desc":"Learn cactus vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, plants desert Spanish, bilingual children books",
+"pages":[
+{"title":"El Cactus","footer":"Aprendiendo juntos","prompt":"A tall realistic saguaro cactus in the Arizona desert, blue sky and mountains, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El cactus tiene espinas.","footer":"The cactus has spines.","prompt":"Close-up of a realistic cactus showing sharp spines clearly, detailed texture, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El cactus guarda agua.","footer":"The cactus stores water.","prompt":"A thick realistic cactus in the desert showing its plump water-storing body, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El cactus tiene flores.","footer":"The cactus has flowers.","prompt":"A realistic cactus blooming with beautiful bright pink and yellow flowers, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El cactus vive en el desierto.","footer":"The cactus lives in the desert.","prompt":"Realistic desert landscape with multiple cacti, sandy terrain, mountains in distance, Arizona desert, professional landscape photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El cactus es fuerte.","footer":"The cactus is strong.","prompt":"A tall realistic saguaro cactus standing strong in harsh desert sun, resilient and powerful, professional nature photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El cactus!","footer":"The cactus!","prompt":"A beautiful realistic cactus with blooming flowers at sunset in the Arizona desert, golden light, professional nature photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"cactus","en":"cactus","emoji":"🌵"},{"es":"espinas","en":"spines","emoji":"📌"},{"es":"agua","en":"water","emoji":"💧"},{"es":"flores","en":"flowers","emoji":"🌺"},{"es":"desierto","en":"desert","emoji":"🏜️"},{"es":"fuerte","en":"strong","emoji":"💪"}],
+"badge":{"emoji":"🌵","name":"Explorador de Cactus","nameEn":"Cactus Explorer"}}

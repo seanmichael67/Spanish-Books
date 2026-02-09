@@ -1,0 +1,14 @@
+{"slug":"week-32-el-girasol","title":"El Girasol","subtitle":"The Sunflower","theme":"plantas","week":32,"emoji":"🌻",
+"meta_desc":"Learn sunflower vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, plants flowers Spanish, bilingual children books",
+"pages":[
+{"title":"El Girasol","footer":"Aprendiendo juntos","prompt":"A tall realistic sunflower against a blue sky, bright yellow petals, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El girasol es amarillo.","footer":"The sunflower is yellow.","prompt":"A bright realistic yellow sunflower in full bloom, vibrant golden petals, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El girasol es alto.","footer":"The sunflower is tall.","prompt":"A very tall realistic sunflower towering over a garden fence, showing impressive height, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El girasol mira al sol.","footer":"The sunflower looks at the sun.","prompt":"A realistic sunflower facing toward the bright sun, golden light, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"El girasol tiene semillas.","footer":"The sunflower has seeds.","prompt":"Close-up of a realistic sunflower center showing the spiral pattern of seeds, intricate detail, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"Los girasoles están en el campo.","footer":"The sunflowers are in the field.","prompt":"A beautiful realistic field of sunflowers stretching to the horizon, golden yellow sea, professional landscape photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡El girasol!","footer":"The sunflower!","prompt":"A cheerful realistic sunflower facing camera, bright yellow petals against blue sky, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"girasol","en":"sunflower","emoji":"🌻"},{"es":"amarillo","en":"yellow","emoji":"💛"},{"es":"alto","en":"tall","emoji":"📏"},{"es":"sol","en":"sun","emoji":"☀️"},{"es":"semillas","en":"seeds","emoji":"🌰"},{"es":"campo","en":"field","emoji":"🌾"}],
+"badge":{"emoji":"🌻","name":"Explorador de Girasoles","nameEn":"Sunflower Explorer"}}

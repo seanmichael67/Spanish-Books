@@ -1,0 +1,14 @@
+{"slug":"week-31-la-rosa","title":"La Rosa","subtitle":"The Rose","theme":"plantas","week":31,"emoji":"🌹",
+"meta_desc":"Learn rose vocabulary in Spanish with audio. Ages 2-5.",
+"keywords":"learn Spanish preschool, plants flowers Spanish, bilingual children books",
+"pages":[
+{"title":"La Rosa","footer":"Aprendiendo juntos","prompt":"A beautiful realistic red rose in full bloom in a garden, morning dew on petals, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La rosa es roja.","footer":"The rose is red.","prompt":"A stunning realistic deep red rose close-up, velvety petals, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La rosa huele bien.","footer":"The rose smells good.","prompt":"A realistic rose garden with multiple blooming roses, warm sunlight, inviting scent scene, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La rosa tiene pétalos.","footer":"The rose has petals.","prompt":"Close-up of a realistic rose showing delicate layered petals, beautiful texture, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La rosa tiene espinas.","footer":"The rose has thorns.","prompt":"A realistic rose stem showing sharp thorns clearly, green stem with red rose on top, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"La rosa crece en el jardín.","footer":"The rose grows in the garden.","prompt":"A realistic rose bush in a beautiful garden with multiple colorful roses blooming, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."},
+{"title":"¡La rosa!","footer":"The rose!","prompt":"A perfect realistic red rose facing camera, dewdrops on petals, soft bokeh garden background, professional botanical photography, landscape orientation, wide 16:9 format, high resolution."}
+],
+"vocab":[{"es":"rosa","en":"rose","emoji":"🌹"},{"es":"roja","en":"red","emoji":"🔴"},{"es":"huele","en":"smells","emoji":"👃"},{"es":"pétalos","en":"petals","emoji":"🌸"},{"es":"espinas","en":"thorns","emoji":"🌵"},{"es":"crece","en":"grows","emoji":"🌱"}],
+"badge":{"emoji":"🌹","name":"Explorador de Rosas","nameEn":"Rose Explorer"}}
