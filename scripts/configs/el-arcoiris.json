@@ -1,0 +1,84 @@
+{
+  "slug": "week-63-el-arcoiris",
+  "title": "El Arcoíris",
+  "subtitle": "The Rainbow",
+  "theme": "colores",
+  "week": 63,
+  "emoji": "🌈",
+  "meta_desc": "Learn about rainbows in Spanish (arcoíris, colores, cielo, hermoso) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish colors, el arcoíris Spanish, rainbow in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Arcoíris",
+      "footer": "Aprendiendo colores",
+      "prompt": "A beautiful vibrant rainbow arcing across a blue sky after rain, perfect spectrum of colors, professional sky photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El arcoíris tiene muchos colores.",
+      "footer": "The rainbow has many colors.",
+      "prompt": "A clear bright rainbow showing all seven colors distinctly in the sky, professional weather photography, dramatic lighting after storm, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El arcoíris está en el cielo.",
+      "footer": "The rainbow is in the sky.",
+      "prompt": "A magnificent rainbow stretching across the sky over a green meadow, peaceful pastoral scene, professional landscape photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Rojo, naranja, amarillo.",
+      "footer": "Red, orange, yellow.",
+      "prompt": "Close-up detail of a rainbow showing the warm colors - red, orange, and yellow bands clearly, professional nature photography, vibrant colors, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Verde, azul, morado.",
+      "footer": "Green, blue, purple.",
+      "prompt": "Close-up detail of a rainbow showing the cool colors - green, blue, and purple bands clearly, professional nature photography, rich colors, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El arcoíris es hermoso.",
+      "footer": "The rainbow is beautiful.",
+      "prompt": "A stunning double rainbow over a waterfall creating a magical scene, breathtaking natural wonder, professional landscape photography, perfect lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Me encanta el arcoíris!",
+      "footer": "I love the rainbow!",
+      "prompt": "A perfect rainbow over a sunlit field with wildflowers, joyful and colorful scene, professional nature photography, golden hour lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "arcoíris",
+      "en": "rainbow",
+      "emoji": "🌈"
+    },
+    {
+      "es": "colores",
+      "en": "colors",
+      "emoji": "🎨"
+    },
+    {
+      "es": "cielo",
+      "en": "sky",
+      "emoji": "☁️"
+    },
+    {
+      "es": "hermoso",
+      "en": "beautiful",
+      "emoji": "✨"
+    },
+    {
+      "es": "rojo",
+      "en": "red",
+      "emoji": "🔴"
+    },
+    {
+      "es": "azul",
+      "en": "blue",
+      "emoji": "🔵"
+    }
+  ],
+  "badge": {
+    "emoji": "🌈",
+    "name": "Explorador del Arcoíris",
+    "nameEn": "Rainbow Explorer"
+  }
+}

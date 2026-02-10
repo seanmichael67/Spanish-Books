@@ -1,0 +1,84 @@
+{
+  "slug": "week-59-el-verde",
+  "title": "El Verde",
+  "subtitle": "The Color Green",
+  "theme": "colores",
+  "week": 59,
+  "emoji": "🟢",
+  "meta_desc": "Learn the color green in Spanish (verde, árbol, hierba, rana) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish colors, el verde Spanish, green in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Verde",
+      "footer": "Aprendiendo colores",
+      "prompt": "A fresh green color splash on white background, vibrant gradient from light mint to deep forest green, abstract art style, professional photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El árbol es verde.",
+      "footer": "The tree is green.",
+      "prompt": "A beautiful green tree with lush foliage against blue sky, healthy vibrant leaves, professional nature photography, sunny outdoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La hierba es verde.",
+      "footer": "The grass is green.",
+      "prompt": "Fresh green grass in a meadow with morning dew drops, lush and vibrant, professional nature photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La rana es verde.",
+      "footer": "The frog is green.",
+      "prompt": "A cute green tree frog sitting on a leaf, bright emerald skin, professional wildlife photography, natural outdoor setting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La manzana verde.",
+      "footer": "The green apple.",
+      "prompt": "A crisp green Granny Smith apple on a white surface, shiny and fresh, professional food photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Las hojas verdes.",
+      "footer": "The green leaves.",
+      "prompt": "Beautiful bright green leaves on a branch with sunlight filtering through, fresh and vibrant, professional botanical photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Me gusta el verde!",
+      "footer": "I like green!",
+      "prompt": "A collage of green objects - tree, frog, apple, and leaves arranged artistically on white background, professional still life photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "verde",
+      "en": "green",
+      "emoji": "🟢"
+    },
+    {
+      "es": "árbol",
+      "en": "tree",
+      "emoji": "🌳"
+    },
+    {
+      "es": "hierba",
+      "en": "grass",
+      "emoji": "🌱"
+    },
+    {
+      "es": "rana",
+      "en": "frog",
+      "emoji": "🐸"
+    },
+    {
+      "es": "manzana",
+      "en": "apple",
+      "emoji": "🍏"
+    },
+    {
+      "es": "hojas",
+      "en": "leaves",
+      "emoji": "🍃"
+    }
+  ],
+  "badge": {
+    "emoji": "🟢",
+    "name": "Explorador del Verde",
+    "nameEn": "Green Explorer"
+  }
+}

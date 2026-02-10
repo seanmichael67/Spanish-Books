@@ -1,0 +1,84 @@
+{
+  "slug": "week-61-el-cuadrado",
+  "title": "El Cuadrado",
+  "subtitle": "The Square",
+  "theme": "colores",
+  "week": 61,
+  "emoji": "🟦",
+  "meta_desc": "Learn about squares in Spanish (cuadrado, ventana, caja, libro) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish shapes, el cuadrado Spanish, square in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Cuadrado",
+      "footer": "Aprendiendo formas",
+      "prompt": "A perfect square shape in bright colors on white background, simple and clear geometric form with equal sides, professional graphic design, clean composition, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El cuadrado tiene cuatro lados.",
+      "footer": "The square has four sides.",
+      "prompt": "A colorful square with visible four equal sides marked clearly, educational geometric illustration, professional graphic design, bright colors, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La ventana es un cuadrado.",
+      "footer": "The window is a square.",
+      "prompt": "A beautiful square window with wooden frame on a colorful wall, clear blue sky visible through it, professional architectural photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La caja es un cuadrado.",
+      "footer": "The box is a square.",
+      "prompt": "A colorful square gift box with ribbon on white background, perfect square proportions, professional product photography, bright studio lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El libro es un cuadrado.",
+      "footer": "The book is a square.",
+      "prompt": "A colorful children's book with square shape laying flat on white surface, bright cover design, professional product photography, clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La almohada es un cuadrado.",
+      "footer": "The pillow is a square.",
+      "prompt": "A soft square decorative pillow on a cozy setting, plush and colorful, professional home decor photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Veo cuadrados!",
+      "footer": "I see squares!",
+      "prompt": "Multiple square objects - window, box, book, and pillow arranged creatively on white background, professional still life photography, bright clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "cuadrado",
+      "en": "square",
+      "emoji": "🟦"
+    },
+    {
+      "es": "lados",
+      "en": "sides",
+      "emoji": "📐"
+    },
+    {
+      "es": "ventana",
+      "en": "window",
+      "emoji": "🪟"
+    },
+    {
+      "es": "caja",
+      "en": "box",
+      "emoji": "📦"
+    },
+    {
+      "es": "libro",
+      "en": "book",
+      "emoji": "📚"
+    },
+    {
+      "es": "almohada",
+      "en": "pillow",
+      "emoji": "🛏️"
+    }
+  ],
+  "badge": {
+    "emoji": "🟦",
+    "name": "Explorador de Cuadrados",
+    "nameEn": "Square Explorer"
+  }
+}

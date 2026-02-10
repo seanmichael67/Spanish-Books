@@ -1,0 +1,84 @@
+{
+  "slug": "week-62-el-triangulo",
+  "title": "El Triángulo",
+  "subtitle": "The Triangle",
+  "theme": "colores",
+  "week": 62,
+  "emoji": "🔺",
+  "meta_desc": "Learn about triangles in Spanish (triángulo, montaña, techo, vela) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish shapes, el triángulo Spanish, triangle in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Triángulo",
+      "footer": "Aprendiendo formas",
+      "prompt": "A perfect triangle shape in bright colors on white background, simple and clear geometric form with three sides, professional graphic design, clean composition, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El triángulo tiene tres lados.",
+      "footer": "The triangle has three sides.",
+      "prompt": "A colorful triangle with visible three equal sides marked clearly, educational geometric illustration, professional graphic design, bright colors, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La montaña es un triángulo.",
+      "footer": "The mountain is a triangle.",
+      "prompt": "A beautiful mountain with triangular peak against blue sky, snow-capped summit, professional landscape photography, clear bright day, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El techo es un triángulo.",
+      "footer": "The roof is a triangle.",
+      "prompt": "A colorful house with clear triangular roof against blue sky, charming cottage style, professional architectural photography, sunny lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La vela es un triángulo.",
+      "footer": "The sail is a triangle.",
+      "prompt": "A sailboat with white triangular sail on blue water, beautiful sailing scene, professional maritime photography, bright sunny day, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La rebanada de sandía.",
+      "footer": "The watermelon slice.",
+      "prompt": "A fresh watermelon slice in triangular shape on white background, juicy red interior with black seeds, professional food photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Veo triángulos!",
+      "footer": "I see triangles!",
+      "prompt": "Multiple triangular objects - mountain, roof, sail, and watermelon slice arranged creatively on white background, professional still life photography, bright clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "triángulo",
+      "en": "triangle",
+      "emoji": "🔺"
+    },
+    {
+      "es": "tres",
+      "en": "three",
+      "emoji": "3️⃣"
+    },
+    {
+      "es": "montaña",
+      "en": "mountain",
+      "emoji": "⛰️"
+    },
+    {
+      "es": "techo",
+      "en": "roof",
+      "emoji": "🏠"
+    },
+    {
+      "es": "vela",
+      "en": "sail",
+      "emoji": "⛵"
+    },
+    {
+      "es": "sandía",
+      "en": "watermelon",
+      "emoji": "🍉"
+    }
+  ],
+  "badge": {
+    "emoji": "🔺",
+    "name": "Explorador de Triángulos",
+    "nameEn": "Triangle Explorer"
+  }
+}

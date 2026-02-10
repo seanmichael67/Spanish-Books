@@ -77,6 +77,14 @@ const BOOKS = [
   { slug: 'week-36-la-margarita', emoji: '🌼', week: 36, title: 'La Margarita', subtitle: 'The Daisy', theme: 'plantas', ready: true },
   { slug: 'week-37-el-tulipan', emoji: '🌷', week: 37, title: 'El Tulipán', subtitle: 'The Tulip', theme: 'plantas', ready: true },
   { slug: 'week-38-el-hongo', emoji: '🍄', week: 38, title: 'El Hongo', subtitle: 'The Mushroom', theme: 'plantas', ready: true },
+  { slug: 'week-56-el-rojo', emoji: '🔴', week: 56, title: 'El Rojo', subtitle: 'The Color Red', theme: 'colores', ready: true },
+  { slug: 'week-57-el-azul', emoji: '🔵', week: 57, title: 'El Azul', subtitle: 'The Color Blue', theme: 'colores', ready: true },
+  { slug: 'week-58-el-amarillo', emoji: '🟡', week: 58, title: 'El Amarillo', subtitle: 'The Color Yellow', theme: 'colores', ready: true },
+  { slug: 'week-59-el-verde', emoji: '🟢', week: 59, title: 'El Verde', subtitle: 'The Color Green', theme: 'colores', ready: true },
+  { slug: 'week-60-el-circulo', emoji: '⭕', week: 60, title: 'El Círculo', subtitle: 'The Circle', theme: 'colores', ready: true },
+  { slug: 'week-61-el-cuadrado', emoji: '🟦', week: 61, title: 'El Cuadrado', subtitle: 'The Square', theme: 'colores', ready: true },
+  { slug: 'week-62-el-triangulo', emoji: '🔺', week: 62, title: 'El Triángulo', subtitle: 'The Triangle', theme: 'colores', ready: true },
+  { slug: 'week-63-el-arcoiris', emoji: '🌈', week: 63, title: 'El Arcoíris', subtitle: 'The Rainbow', theme: 'colores', ready: true },
 ];
 
 const THEMES = [

@@ -1,0 +1,84 @@
+{
+  "slug": "week-58-el-amarillo",
+  "title": "El Amarillo",
+  "subtitle": "The Color Yellow",
+  "theme": "colores",
+  "week": 58,
+  "emoji": "🟡",
+  "meta_desc": "Learn the color yellow in Spanish (amarillo, sol, limón, estrella) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish colors, el amarillo Spanish, yellow in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Amarillo",
+      "footer": "Aprendiendo colores",
+      "prompt": "A bright yellow color splash on white background, vibrant gradient from light lemon to golden yellow, abstract art style, professional photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El sol es amarillo.",
+      "footer": "The sun is yellow.",
+      "prompt": "A bright yellow sun shining in a clear blue sky, warm and cheerful, professional sky photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El limón es amarillo.",
+      "footer": "The lemon is yellow.",
+      "prompt": "A fresh yellow lemon cut in half on a white surface, juicy and vibrant, professional food photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La estrella es amarilla.",
+      "footer": "The star is yellow.",
+      "prompt": "A beautiful golden yellow star decoration hanging against a soft background, glowing and magical, professional photography, warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El pollito amarillo.",
+      "footer": "The yellow chick.",
+      "prompt": "An adorable fluffy yellow baby chick standing on grass, soft downy feathers, professional wildlife photography, natural outdoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El girasol amarillo.",
+      "footer": "The yellow sunflower.",
+      "prompt": "A magnificent yellow sunflower in full bloom against blue sky, bright petals and dark center, professional floral photography, sunny lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Me gusta el amarillo!",
+      "footer": "I like yellow!",
+      "prompt": "A collage of yellow objects - sun, lemon, star, and sunflower arranged beautifully on white background, professional still life photography, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "amarillo",
+      "en": "yellow",
+      "emoji": "🟡"
+    },
+    {
+      "es": "sol",
+      "en": "sun",
+      "emoji": "☀️"
+    },
+    {
+      "es": "limón",
+      "en": "lemon",
+      "emoji": "🍋"
+    },
+    {
+      "es": "estrella",
+      "en": "star",
+      "emoji": "⭐"
+    },
+    {
+      "es": "pollito",
+      "en": "chick",
+      "emoji": "🐤"
+    },
+    {
+      "es": "girasol",
+      "en": "sunflower",
+      "emoji": "🌻"
+    }
+  ],
+  "badge": {
+    "emoji": "🟡",
+    "name": "Explorador del Amarillo",
+    "nameEn": "Yellow Explorer"
+  }
+}

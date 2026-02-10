@@ -1,0 +1,84 @@
+{
+  "slug": "week-60-el-circulo",
+  "title": "El Círculo",
+  "subtitle": "The Circle",
+  "theme": "colores",
+  "week": 60,
+  "emoji": "⭕",
+  "meta_desc": "Learn about circles in Spanish (círculo, redondo, pelota, rueda) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish shapes, el círculo Spanish, circle in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Círculo",
+      "footer": "Aprendiendo formas",
+      "prompt": "A perfect circle shape in bright colors on white background, simple and clear geometric form, professional graphic design, clean composition, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El círculo es redondo.",
+      "footer": "The circle is round.",
+      "prompt": "A collection of colorful circular objects of different sizes arranged artistically on white background, professional still life photography, bright even lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La pelota es un círculo.",
+      "footer": "The ball is a circle.",
+      "prompt": "A colorful round ball on a clean surface, perfect sphere shape, professional toy photography, bright studio lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La rueda es un círculo.",
+      "footer": "The wheel is a circle.",
+      "prompt": "A toy car wheel close-up showing the circular shape, clean and colorful, professional product photography, bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El reloj es un círculo.",
+      "footer": "The clock is a circle.",
+      "prompt": "A round wall clock with clear numbers on white background, classic circular design, professional product photography, clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La pizza es un círculo.",
+      "footer": "The pizza is a circle.",
+      "prompt": "A delicious round pizza with colorful toppings on a wooden board, perfect circular shape, professional food photography, appetizing lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Veo círculos!",
+      "footer": "I see circles!",
+      "prompt": "Multiple circular objects - ball, wheel, clock, and plate arranged creatively on white background, professional still life photography, bright clean lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "círculo",
+      "en": "circle",
+      "emoji": "⭕"
+    },
+    {
+      "es": "redondo",
+      "en": "round",
+      "emoji": "🔵"
+    },
+    {
+      "es": "pelota",
+      "en": "ball",
+      "emoji": "⚽"
+    },
+    {
+      "es": "rueda",
+      "en": "wheel",
+      "emoji": "⚙️"
+    },
+    {
+      "es": "reloj",
+      "en": "clock",
+      "emoji": "🕐"
+    },
+    {
+      "es": "pizza",
+      "en": "pizza",
+      "emoji": "🍕"
+    }
+  ],
+  "badge": {
+    "emoji": "⭕",
+    "name": "Explorador de Círculos",
+    "nameEn": "Circle Explorer"
+  }
+}

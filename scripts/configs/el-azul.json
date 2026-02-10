@@ -1,0 +1,84 @@
+{
+  "slug": "week-57-el-azul",
+  "title": "El Azul",
+  "subtitle": "The Color Blue",
+  "theme": "colores",
+  "week": 57,
+  "emoji": "🔵",
+  "meta_desc": "Learn the color blue in Spanish (azul, cielo, océano, pájaro) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish colors, el azul Spanish, blue in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Azul",
+      "footer": "Aprendiendo colores",
+      "prompt": "A beautiful blue color splash on white background, gradient from light sky blue to deep ocean blue, abstract art style, professional photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El cielo es azul.",
+      "footer": "The sky is blue.",
+      "prompt": "A clear bright blue sky with a few white clouds, peaceful and serene, professional sky photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El océano es azul.",
+      "footer": "The ocean is blue.",
+      "prompt": "Beautiful blue ocean water with gentle waves, crystal clear and inviting, professional seascape photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El pájaro azul.",
+      "footer": "The blue bird.",
+      "prompt": "A beautiful blue bird perched on a branch, vibrant feathers catching sunlight, professional bird photography, natural setting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La pelota azul.",
+      "footer": "The blue ball.",
+      "prompt": "A bright blue bouncy ball on grass, shiny and colorful, professional toy photography, sunny outdoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Las flores azules.",
+      "footer": "The blue flowers.",
+      "prompt": "Beautiful blue hydrangea flowers in full bloom, lush petals with morning dew, professional floral photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Me gusta el azul!",
+      "footer": "I like blue!",
+      "prompt": "A collage of blue objects - sky, ball, flower, and butterfly arranged artistically on white background, professional still life photography, bright even lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "azul",
+      "en": "blue",
+      "emoji": "🔵"
+    },
+    {
+      "es": "cielo",
+      "en": "sky",
+      "emoji": "☁️"
+    },
+    {
+      "es": "océano",
+      "en": "ocean",
+      "emoji": "🌊"
+    },
+    {
+      "es": "pájaro",
+      "en": "bird",
+      "emoji": "🐦"
+    },
+    {
+      "es": "pelota",
+      "en": "ball",
+      "emoji": "⚽"
+    },
+    {
+      "es": "flores",
+      "en": "flowers",
+      "emoji": "💐"
+    }
+  ],
+  "badge": {
+    "emoji": "🔵",
+    "name": "Explorador del Azul",
+    "nameEn": "Blue Explorer"
+  }
+}

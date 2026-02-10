@@ -1,0 +1,84 @@
+{
+  "slug": "week-56-el-rojo",
+  "title": "El Rojo",
+  "subtitle": "The Color Red",
+  "theme": "colores",
+  "week": 56,
+  "emoji": "🔴",
+  "meta_desc": "Learn the color red in Spanish (rojo, manzana, corazón, fuego) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish colors, el rojo Spanish, red in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Rojo",
+      "footer": "Aprendiendo colores",
+      "prompt": "A vibrant red color splash on white background, beautiful gradient from bright red to deep crimson, abstract art style, professional photography, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "La manzana es roja.",
+      "footer": "The apple is red.",
+      "prompt": "A bright red apple on a white surface, fresh and shiny with a green leaf, professional food photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El corazón es rojo.",
+      "footer": "The heart is red.",
+      "prompt": "A beautiful red heart shape made of rose petals on white background, romantic and artistic, professional photography, soft lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El fuego es rojo.",
+      "footer": "The fire is red.",
+      "prompt": "Beautiful red flames dancing in a fireplace, warm glowing fire, safe and cozy setting, professional photography, dramatic lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Las flores rojas.",
+      "footer": "The red flowers.",
+      "prompt": "A bouquet of vibrant red roses in full bloom, beautiful petals with morning dew, professional floral photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El camión rojo.",
+      "footer": "The red truck.",
+      "prompt": "A shiny red toy fire truck on a wooden table, detailed and colorful, professional toy photography, bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Me gusta el rojo!",
+      "footer": "I like red!",
+      "prompt": "A collage of red objects - apple, heart, flower, and toy arranged beautifully on white background, professional still life photography, bright even lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "rojo",
+      "en": "red",
+      "emoji": "🔴"
+    },
+    {
+      "es": "manzana",
+      "en": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "es": "corazón",
+      "en": "heart",
+      "emoji": "❤️"
+    },
+    {
+      "es": "fuego",
+      "en": "fire",
+      "emoji": "🔥"
+    },
+    {
+      "es": "flores",
+      "en": "flowers",
+      "emoji": "🌹"
+    },
+    {
+      "es": "camión",
+      "en": "truck",
+      "emoji": "🚒"
+    }
+  ],
+  "badge": {
+    "emoji": "🔴",
+    "name": "Explorador del Rojo",
+    "nameEn": "Red Explorer"
+  }
+}
