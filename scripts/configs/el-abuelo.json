@@ -1,0 +1,84 @@
+{
+  "slug": "week-69-el-abuelo",
+  "title": "El Abuelo",
+  "subtitle": "Grandfather",
+  "theme": "familia",
+  "week": 69,
+  "emoji": "👴",
+  "meta_desc": "Learn about grandfather in Spanish (abuelo, enseña, jardín, fuerte) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish family, el abuelo Spanish, grandfather in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Abuelo",
+      "footer": "Aprendiendo sobre la familia",
+      "prompt": "A kind smiling grandfather with gentle expression, diverse ethnicity, wearing comfortable clothing, professional portrait photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi abuelo enseña.",
+      "footer": "My grandfather teaches.",
+      "prompt": "A grandfather teaching his grandchild something interesting, showing and explaining, patient and kind, professional family photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Abuelo trabaja en el jardín.",
+      "footer": "Grandfather works in the garden.",
+      "prompt": "A grandfather gardening with his grandchild helping, planting flowers together, outdoor activity, professional lifestyle photography, sunny outdoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Abuelo es fuerte.",
+      "footer": "Grandfather is strong.",
+      "prompt": "A grandfather lifting or carrying his grandchild playfully, showing strength despite age, joyful moment, professional family photography, outdoor natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Abuelo me hace reír.",
+      "footer": "Grandfather makes me laugh.",
+      "prompt": "A grandfather making his grandchild laugh with jokes or funny faces, both happy, professional family photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Abuelo es mi héroe.",
+      "footer": "Grandfather is my hero.",
+      "prompt": "A grandfather and grandchild together, child looking up admiringly, strong bond, professional family photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Amo a mi abuelo!",
+      "footer": "I love my grandfather!",
+      "prompt": "A happy grandfather and grandchild together, both smiling warmly at camera, loving relationship, professional family portrait, cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "abuelo",
+      "en": "grandfather",
+      "emoji": "👴"
+    },
+    {
+      "es": "enseña",
+      "en": "teaches",
+      "emoji": "👨‍🏫"
+    },
+    {
+      "es": "jardín",
+      "en": "garden",
+      "emoji": "🌻"
+    },
+    {
+      "es": "fuerte",
+      "en": "strong",
+      "emoji": "💪"
+    },
+    {
+      "es": "reír",
+      "en": "laugh",
+      "emoji": "😄"
+    },
+    {
+      "es": "héroe",
+      "en": "hero",
+      "emoji": "🦸"
+    }
+  ],
+  "badge": {
+    "emoji": "👴",
+    "name": "Explorador de Abuelo",
+    "nameEn": "Grandfather Explorer"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "week-70-el-bebe",
+  "title": "El Bebé",
+  "subtitle": "The Baby",
+  "theme": "familia",
+  "week": 70,
+  "emoji": "👶",
+  "meta_desc": "Learn about baby in Spanish (bebé, pequeño, duerme, sonríe) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish family, el bebé Spanish, baby in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Bebé",
+      "footer": "Aprendiendo sobre la familia",
+      "prompt": "An adorable smiling baby, diverse ethnicity, wearing cute baby clothes, happy and alert, professional baby photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El bebé es pequeño.",
+      "footer": "The baby is small.",
+      "prompt": "A tiny baby sleeping peacefully in parent's arms, showing small size, tender moment, professional baby photography, soft gentle lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El bebé duerme.",
+      "footer": "The baby sleeps.",
+      "prompt": "A peaceful sleeping baby in a cozy crib or bassinet, serene and calm, professional baby photography, soft diffused lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El bebé sonríe.",
+      "footer": "The baby smiles.",
+      "prompt": "A happy smiling baby with bright eyes looking at camera, joyful expression, professional baby photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El bebé juega.",
+      "footer": "The baby plays.",
+      "prompt": "A baby playing with colorful soft toys on a play mat, curious and engaged, professional baby photography, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "El bebé es tierno.",
+      "footer": "The baby is sweet.",
+      "prompt": "A cute baby with an endearing expression, innocent and precious, professional baby photography, soft warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Amo al bebé!",
+      "footer": "I love the baby!",
+      "prompt": "An older sibling gently holding or sitting next to baby, showing love and care, professional family photography, natural warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "bebé",
+      "en": "baby",
+      "emoji": "👶"
+    },
+    {
+      "es": "pequeño",
+      "en": "small",
+      "emoji": "🤏"
+    },
+    {
+      "es": "duerme",
+      "en": "sleeps",
+      "emoji": "😴"
+    },
+    {
+      "es": "sonríe",
+      "en": "smiles",
+      "emoji": "😊"
+    },
+    {
+      "es": "juega",
+      "en": "plays",
+      "emoji": "🧸"
+    },
+    {
+      "es": "tierno",
+      "en": "sweet",
+      "emoji": "💕"
+    }
+  ],
+  "badge": {
+    "emoji": "👶",
+    "name": "Explorador de Bebé",
+    "nameEn": "Baby Explorer"
+  }
+}

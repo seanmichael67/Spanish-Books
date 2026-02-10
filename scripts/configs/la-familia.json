@@ -1,0 +1,84 @@
+{
+  "slug": "week-71-la-familia",
+  "title": "La Familia",
+  "subtitle": "The Family",
+  "theme": "familia",
+  "week": 71,
+  "emoji": "👨‍👩‍👧‍👦",
+  "meta_desc": "Learn about family in Spanish (familia, juntos, amor, casa) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish family, la familia Spanish, family in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Familia",
+      "footer": "Aprendiendo sobre la familia",
+      "prompt": "A happy diverse family portrait with parents and children smiling together, warm and loving, professional family photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi familia es grande.",
+      "footer": "My family is big.",
+      "prompt": "An extended family gathering with multiple generations together, grandparents, parents, and children, joyful reunion, professional family photography, natural outdoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Comemos juntos.",
+      "footer": "We eat together.",
+      "prompt": "A family gathered around a dinner table sharing a meal together, happy conversation, professional lifestyle photography, warm indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Jugamos juntos.",
+      "footer": "We play together.",
+      "prompt": "A family playing board games or activities together in living room, engaged and happy, professional lifestyle photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Nos cuidamos.",
+      "footer": "We take care of each other.",
+      "prompt": "Family members helping and caring for each other, showing love and support, professional family photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi familia me ama.",
+      "footer": "My family loves me.",
+      "prompt": "A child surrounded by loving family members, all showing affection, group hug, professional family photography, soft warm lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Amo a mi familia!",
+      "footer": "I love my family!",
+      "prompt": "A joyful family portrait with everyone smiling at camera, diverse and happy, strong family bond, professional family photography, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "familia",
+      "en": "family",
+      "emoji": "👨‍👩‍👧‍👦"
+    },
+    {
+      "es": "grande",
+      "en": "big",
+      "emoji": "📏"
+    },
+    {
+      "es": "juntos",
+      "en": "together",
+      "emoji": "🤝"
+    },
+    {
+      "es": "comemos",
+      "en": "we eat",
+      "emoji": "🍽️"
+    },
+    {
+      "es": "jugamos",
+      "en": "we play",
+      "emoji": "🎮"
+    },
+    {
+      "es": "amor",
+      "en": "love",
+      "emoji": "❤️"
+    }
+  ],
+  "badge": {
+    "emoji": "👨‍👩‍👧‍👦",
+    "name": "Explorador de Familia",
+    "nameEn": "Family Explorer"
+  }
+}

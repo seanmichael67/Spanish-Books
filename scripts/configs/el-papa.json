@@ -1,0 +1,84 @@
+{
+  "slug": "week-65-el-papa",
+  "title": "El Papá",
+  "subtitle": "Dad",
+  "theme": "familia",
+  "week": 65,
+  "emoji": "👨",
+  "meta_desc": "Learn about dad in Spanish (papá, fuerte, juega, protege) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish family, el papá Spanish, dad in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Papá",
+      "footer": "Aprendiendo sobre la familia",
+      "prompt": "A kind smiling father, diverse ethnicity, wearing casual clothing, friendly and approachable, professional portrait photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi papá es fuerte.",
+      "footer": "My dad is strong.",
+      "prompt": "A father lifting his child playfully in the air, both laughing, showing strength and joy, professional family photography, outdoor natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Papá juega conmigo.",
+      "footer": "Dad plays with me.",
+      "prompt": "A father playing with toys on the floor with his child, building blocks together, engaged and happy, professional lifestyle photography, warm indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Papá trabaja.",
+      "footer": "Dad works.",
+      "prompt": "A father working at a home office while child draws nearby, balancing work and family, professional lifestyle photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Papá me protege.",
+      "footer": "Dad protects me.",
+      "prompt": "A father holding his child's hand while walking together outdoors, protective and caring, professional family photography, sunny outdoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Papá me hace reír.",
+      "footer": "Dad makes me laugh.",
+      "prompt": "A father making funny faces while child laughs joyfully, playful and fun moment, professional family photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Amo a mi papá!",
+      "footer": "I love my dad!",
+      "prompt": "A happy father and child together, both smiling warmly at camera, strong bond, professional family portrait, cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "papá",
+      "en": "dad",
+      "emoji": "👨"
+    },
+    {
+      "es": "fuerte",
+      "en": "strong",
+      "emoji": "💪"
+    },
+    {
+      "es": "juega",
+      "en": "plays",
+      "emoji": "🎮"
+    },
+    {
+      "es": "trabaja",
+      "en": "works",
+      "emoji": "💼"
+    },
+    {
+      "es": "protege",
+      "en": "protects",
+      "emoji": "🛡️"
+    },
+    {
+      "es": "reír",
+      "en": "laugh",
+      "emoji": "😄"
+    }
+  ],
+  "badge": {
+    "emoji": "👨",
+    "name": "Explorador de Papá",
+    "nameEn": "Dad Explorer"
+  }
+}

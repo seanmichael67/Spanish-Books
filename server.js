@@ -85,6 +85,14 @@ const BOOKS = [
   { slug: 'week-61-el-cuadrado', emoji: '🟦', week: 61, title: 'El Cuadrado', subtitle: 'The Square', theme: 'colores', ready: true },
   { slug: 'week-62-el-triangulo', emoji: '🔺', week: 62, title: 'El Triángulo', subtitle: 'The Triangle', theme: 'colores', ready: true },
   { slug: 'week-63-el-arcoiris', emoji: '🌈', week: 63, title: 'El Arcoíris', subtitle: 'The Rainbow', theme: 'colores', ready: true },
+  { slug: 'week-64-la-mama', emoji: '👩', week: 64, title: 'La Mamá', subtitle: 'Mom', theme: 'familia', ready: true },
+  { slug: 'week-65-el-papa', emoji: '👨', week: 65, title: 'El Papá', subtitle: 'Dad', theme: 'familia', ready: true },
+  { slug: 'week-66-la-hermana', emoji: '👧', week: 66, title: 'La Hermana', subtitle: 'Sister', theme: 'familia', ready: true },
+  { slug: 'week-67-el-hermano', emoji: '👦', week: 67, title: 'El Hermano', subtitle: 'Brother', theme: 'familia', ready: true },
+  { slug: 'week-68-la-abuela', emoji: '👵', week: 68, title: 'La Abuela', subtitle: 'Grandmother', theme: 'familia', ready: true },
+  { slug: 'week-69-el-abuelo', emoji: '👴', week: 69, title: 'El Abuelo', subtitle: 'Grandfather', theme: 'familia', ready: true },
+  { slug: 'week-70-el-bebe', emoji: '👶', week: 70, title: 'El Bebé', subtitle: 'The Baby', theme: 'familia', ready: true },
+  { slug: 'week-71-la-familia', emoji: '👨‍👩‍👧‍👦', week: 71, title: 'La Familia', subtitle: 'The Family', theme: 'familia', ready: true },
 ];
 
 const THEMES = [

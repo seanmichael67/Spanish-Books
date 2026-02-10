@@ -1,0 +1,84 @@
+{
+  "slug": "week-67-el-hermano",
+  "title": "El Hermano",
+  "subtitle": "Brother",
+  "theme": "familia",
+  "week": 67,
+  "emoji": "👦",
+  "meta_desc": "Learn about brother in Spanish (hermano, juega, corre, amigo) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish family, el hermano Spanish, brother in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Hermano",
+      "footer": "Aprendiendo sobre la familia",
+      "prompt": "A young boy with cheerful smile, diverse ethnicity, wearing casual play clothes, professional portrait photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi hermano juega conmigo.",
+      "footer": "My brother plays with me.",
+      "prompt": "Two young brothers playing with toy cars on the floor together, having fun, professional family photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi hermano corre rápido.",
+      "footer": "My brother runs fast.",
+      "prompt": "Two siblings running together in a park or backyard, active and energetic, professional family photography, outdoor sunny lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Hermano es valiente.",
+      "footer": "Brother is brave.",
+      "prompt": "A brave young boy climbing playground equipment with sibling watching supportively, showing courage, professional family photography, outdoor natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Hermano construye.",
+      "footer": "Brother builds.",
+      "prompt": "Two siblings building with blocks or LEGO together, creative and focused, professional lifestyle photography, warm indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Hermano es mi amigo.",
+      "footer": "Brother is my friend.",
+      "prompt": "Two brothers with arms around each other, smiling warmly, showing brotherhood, professional family photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Quiero a mi hermano!",
+      "footer": "I love my brother!",
+      "prompt": "Two siblings giving each other a high five or hug, happy and playful, professional family portrait, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "hermano",
+      "en": "brother",
+      "emoji": "👦"
+    },
+    {
+      "es": "juega",
+      "en": "plays",
+      "emoji": "🎮"
+    },
+    {
+      "es": "corre",
+      "en": "runs",
+      "emoji": "🏃"
+    },
+    {
+      "es": "valiente",
+      "en": "brave",
+      "emoji": "🦸"
+    },
+    {
+      "es": "construye",
+      "en": "builds",
+      "emoji": "🔨"
+    },
+    {
+      "es": "amigo",
+      "en": "friend",
+      "emoji": "🤝"
+    }
+  ],
+  "badge": {
+    "emoji": "👦",
+    "name": "Explorador de Hermano",
+    "nameEn": "Brother Explorer"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "week-64-la-mama",
+  "title": "La Mamá",
+  "subtitle": "Mom",
+  "theme": "familia",
+  "week": 64,
+  "emoji": "👩",
+  "meta_desc": "Learn about mom in Spanish (mamá, amorosa, cuida, abrazo) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish family, la mamá Spanish, mom in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Mamá",
+      "footer": "Aprendiendo sobre la familia",
+      "prompt": "A warm loving mother smiling gently, diverse ethnicity, wearing casual comfortable clothing, professional portrait photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi mamá es amorosa.",
+      "footer": "My mom is loving.",
+      "prompt": "A mother gently hugging her young child with love, both smiling warmly, tender moment, professional family photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mamá me cuida.",
+      "footer": "Mom takes care of me.",
+      "prompt": "A mother caring for her child, helping with daily activities, nurturing scene, professional lifestyle photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mamá cocina.",
+      "footer": "Mom cooks.",
+      "prompt": "A mother cooking in a bright kitchen, preparing a healthy meal, happy and engaged, professional lifestyle photography, natural kitchen lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mamá lee conmigo.",
+      "footer": "Mom reads with me.",
+      "prompt": "A mother and child reading a colorful book together on a cozy couch, bonding moment, professional family photography, warm indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Los abrazos de mamá.",
+      "footer": "Mom's hugs.",
+      "prompt": "A mother embracing her child in a warm hug, loving and safe moment, close connection, professional family photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Amo a mi mamá!",
+      "footer": "I love my mom!",
+      "prompt": "A happy mother and child together, both smiling at camera, joyful and loving, professional family portrait, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "mamá",
+      "en": "mom",
+      "emoji": "👩"
+    },
+    {
+      "es": "amorosa",
+      "en": "loving",
+      "emoji": "❤️"
+    },
+    {
+      "es": "cuida",
+      "en": "takes care",
+      "emoji": "🤗"
+    },
+    {
+      "es": "cocina",
+      "en": "cooks",
+      "emoji": "🍳"
+    },
+    {
+      "es": "lee",
+      "en": "reads",
+      "emoji": "📖"
+    },
+    {
+      "es": "abrazo",
+      "en": "hug",
+      "emoji": "🫂"
+    }
+  ],
+  "badge": {
+    "emoji": "👩",
+    "name": "Explorador de Mamá",
+    "nameEn": "Mom Explorer"
+  }
+}

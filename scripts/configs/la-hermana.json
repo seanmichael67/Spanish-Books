@@ -1,0 +1,84 @@
+{
+  "slug": "week-66-la-hermana",
+  "title": "La Hermana",
+  "subtitle": "Sister",
+  "theme": "familia",
+  "week": 66,
+  "emoji": "👧",
+  "meta_desc": "Learn about sister in Spanish (hermana, comparte, juega, amiga) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish family, la hermana Spanish, sister in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Hermana",
+      "footer": "Aprendiendo sobre la familia",
+      "prompt": "A young girl with friendly smile, diverse ethnicity, wearing colorful casual clothes, professional portrait photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi hermana juega conmigo.",
+      "footer": "My sister plays with me.",
+      "prompt": "Two young siblings playing together with toys happily, building blocks, engaged and smiling, professional family photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi hermana comparte.",
+      "footer": "My sister shares.",
+      "prompt": "Two siblings sharing toys or snacks together, showing kindness, warm friendly interaction, professional lifestyle photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Hermana me ayuda.",
+      "footer": "Sister helps me.",
+      "prompt": "An older sister helping younger sibling with a puzzle or activity, caring moment, professional family photography, warm indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Hermana es divertida.",
+      "footer": "Sister is fun.",
+      "prompt": "Two sisters laughing and playing together in a playroom, joyful and energetic, professional family photography, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Hermana es mi amiga.",
+      "footer": "Sister is my friend.",
+      "prompt": "Two siblings sitting close together smiling, showing friendship and bond, professional family photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Quiero a mi hermana!",
+      "footer": "I love my sister!",
+      "prompt": "Two siblings hugging each other affectionately, happy and loving, professional family portrait, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "hermana",
+      "en": "sister",
+      "emoji": "👧"
+    },
+    {
+      "es": "juega",
+      "en": "plays",
+      "emoji": "🎮"
+    },
+    {
+      "es": "comparte",
+      "en": "shares",
+      "emoji": "🤝"
+    },
+    {
+      "es": "ayuda",
+      "en": "helps",
+      "emoji": "🙏"
+    },
+    {
+      "es": "divertida",
+      "en": "fun",
+      "emoji": "🎉"
+    },
+    {
+      "es": "amiga",
+      "en": "friend",
+      "emoji": "💕"
+    }
+  ],
+  "badge": {
+    "emoji": "👧",
+    "name": "Explorador de Hermana",
+    "nameEn": "Sister Explorer"
+  }
+}

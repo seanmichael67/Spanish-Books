@@ -1,0 +1,84 @@
+{
+  "slug": "week-68-la-abuela",
+  "title": "La Abuela",
+  "subtitle": "Grandmother",
+  "theme": "familia",
+  "week": 68,
+  "emoji": "👵",
+  "meta_desc": "Learn about grandmother in Spanish (abuela, sabia, cuenta, galletas) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish family, la abuela Spanish, grandmother in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Abuela",
+      "footer": "Aprendiendo sobre la familia",
+      "prompt": "A warm smiling grandmother with kind eyes, diverse ethnicity, wearing comfortable clothing, professional portrait photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi abuela es sabia.",
+      "footer": "My grandmother is wise.",
+      "prompt": "A grandmother talking with her grandchild, sharing wisdom, gentle conversation, professional family photography, warm indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Abuela cuenta historias.",
+      "footer": "Grandmother tells stories.",
+      "prompt": "A grandmother reading or telling a story to her grandchild, both engaged and happy, cozy setting, professional family photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Abuela cocina galletas.",
+      "footer": "Grandmother bakes cookies.",
+      "prompt": "A grandmother baking cookies with her grandchild in a bright kitchen, fun activity together, professional lifestyle photography, warm kitchen lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Abuela me abraza.",
+      "footer": "Grandmother hugs me.",
+      "prompt": "A grandmother giving her grandchild a warm loving hug, tender moment, professional family photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Abuela es cariñosa.",
+      "footer": "Grandmother is caring.",
+      "prompt": "A grandmother and grandchild sitting together on a couch, showing affection and care, professional family photography, warm indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Amo a mi abuela!",
+      "footer": "I love my grandmother!",
+      "prompt": "A happy grandmother and grandchild together, both smiling warmly at camera, loving bond, professional family portrait, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "abuela",
+      "en": "grandmother",
+      "emoji": "👵"
+    },
+    {
+      "es": "sabia",
+      "en": "wise",
+      "emoji": "🧠"
+    },
+    {
+      "es": "historias",
+      "en": "stories",
+      "emoji": "📖"
+    },
+    {
+      "es": "galletas",
+      "en": "cookies",
+      "emoji": "🍪"
+    },
+    {
+      "es": "abraza",
+      "en": "hugs",
+      "emoji": "🤗"
+    },
+    {
+      "es": "cariñosa",
+      "en": "caring",
+      "emoji": "💝"
+    }
+  ],
+  "badge": {
+    "emoji": "👵",
+    "name": "Explorador de Abuela",
+    "nameEn": "Grandmother Explorer"
+  }
+}
