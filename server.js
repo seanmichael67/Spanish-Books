@@ -152,7 +152,8 @@ const THEMES = [
 app.get('/', (req, res) => {
   const bookCards = BOOKS.map(b => {
     const cls = b.ready ? 'card' : 'card coming-soon';
-    const href = b.ready ? '/books/' + b.slug + '/' : '#';
+    const bookSlug = b.slug.replace(/^week-\d+-/, '');
+    const href = b.ready ? 'https://www.beibeiamigos.com/spanish-books/' + bookSlug + '/' : '#';
     return '<a href="' + href + '" target="_top" class="' + cls + '" data-theme="' + b.theme + '">' +
       '<div class="emoji">' + b.emoji + '</div>' +
       '<div class="week">Semana ' + b.week + '</div>' +

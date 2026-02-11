@@ -1,0 +1,562 @@
+[
+  {
+    "file": "week-00-frutas-y-verduras.html",
+    "title": "\ud83c\udf4e Mis Frutas y Verduras \u2014 Fruits & Vegetables",
+    "slug": "frutas-y-verduras",
+    "url": "https://www.beibeiamigos.com/spanish-books/frutas-y-verduras/",
+    "status": "ok"
+  },
+  {
+    "file": "week-01-el-oso.html",
+    "title": "\ud83d\udc3b El Oso \u2014 The Bear",
+    "slug": "el-oso",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-oso/",
+    "status": "ok"
+  },
+  {
+    "file": "week-02-el-gato.html",
+    "title": "\ud83d\udc31 El Gato \u2014 The Cat",
+    "slug": "el-gato",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-gato/",
+    "status": "ok"
+  },
+  {
+    "file": "week-03-el-perro.html",
+    "title": "\ud83d\udc36 El Perro \u2014 The Dog",
+    "slug": "el-perro",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-perro/",
+    "status": "ok"
+  },
+  {
+    "file": "week-04-el-conejo.html",
+    "title": "\ud83d\udc30 El Conejo \u2014 The Rabbit",
+    "slug": "el-conejo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-conejo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-05-el-caballo.html",
+    "title": "\ud83d\udc34 El Caballo \u2014 The Horse",
+    "slug": "el-caballo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-caballo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-06-la-vaca.html",
+    "title": "\ud83d\udc04 La Vaca \u2014 The Cow",
+    "slug": "la-vaca",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-vaca/",
+    "status": "ok"
+  },
+  {
+    "file": "week-07-el-pato.html",
+    "title": "\ud83e\udd86 El Pato \u2014 The Duck",
+    "slug": "el-pato",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-pato/",
+    "status": "ok"
+  },
+  {
+    "file": "week-08-la-oveja.html",
+    "title": "\ud83d\udc11 La Oveja \u2014 The Sheep",
+    "slug": "la-oveja",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-oveja/",
+    "status": "ok"
+  },
+  {
+    "file": "week-09-el-desayuno.html",
+    "title": "\ud83e\udd5e El Desayuno \u2014 Breakfast",
+    "slug": "el-desayuno",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-desayuno/",
+    "status": "ok"
+  },
+  {
+    "file": "week-10-el-almuerzo.html",
+    "title": "\ud83e\udd6a El Almuerzo \u2014 Lunch",
+    "slug": "el-almuerzo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-almuerzo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-11-la-cena.html",
+    "title": "\ud83c\udf5d La Cena \u2014 Dinner",
+    "slug": "la-cena",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-cena/",
+    "status": "ok"
+  },
+  {
+    "file": "week-12-las-bebidas.html",
+    "title": "\ud83e\udd64 Las Bebidas \u2014 Drinks",
+    "slug": "las-bebidas",
+    "url": "https://www.beibeiamigos.com/spanish-books/las-bebidas/",
+    "status": "ok"
+  },
+  {
+    "file": "week-13-los-postres.html",
+    "title": "\ud83c\udf70 Los Postres \u2014 Desserts",
+    "slug": "los-postres",
+    "url": "https://www.beibeiamigos.com/spanish-books/los-postres/",
+    "status": "ok"
+  },
+  {
+    "file": "week-14-en-la-cocina.html",
+    "title": "\ud83d\udc68\u200d\ud83c\udf73 En la Cocina \u2014 In the Kitchen",
+    "slug": "en-la-cocina",
+    "url": "https://www.beibeiamigos.com/spanish-books/en-la-cocina/",
+    "status": "ok"
+  },
+  {
+    "file": "week-15-la-merienda.html",
+    "title": "\ud83c\udf7f La Merienda \u2014 Snack Time",
+    "slug": "la-merienda",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-merienda/",
+    "status": "ok"
+  },
+  {
+    "file": "week-16-la-mariposa.html",
+    "title": "\ud83e\udd8b La Mariposa \u2014 The Butterfly",
+    "slug": "la-mariposa",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-mariposa/",
+    "status": "ok"
+  },
+  {
+    "file": "week-17-la-abeja.html",
+    "title": "\ud83d\udc1d La Abeja \u2014 The Bee",
+    "slug": "la-abeja",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-abeja/",
+    "status": "ok"
+  },
+  {
+    "file": "week-18-la-catarina.html",
+    "title": "\ud83d\udc1e La Catarina \u2014 The Ladybug",
+    "slug": "la-catarina",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-catarina/",
+    "status": "ok"
+  },
+  {
+    "file": "week-19-la-hormiga.html",
+    "title": "\ud83d\udc1c La Hormiga \u2014 The Ant",
+    "slug": "la-hormiga",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-hormiga/",
+    "status": "ok"
+  },
+  {
+    "file": "week-20-el-grillo.html",
+    "title": "\ud83e\udd97 El Grillo \u2014 The Cricket",
+    "slug": "el-grillo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-grillo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-21-la-libelula.html",
+    "title": "\ud83e\udeb0 La Lib\u00e9lula \u2014 The Dragonfly",
+    "slug": "la-libelula",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-libelula/",
+    "status": "ok"
+  },
+  {
+    "file": "week-22-la-oruga.html",
+    "title": "\ud83d\udc1b La Oruga \u2014 The Caterpillar",
+    "slug": "la-oruga",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-oruga/",
+    "status": "ok"
+  },
+  {
+    "file": "week-23-el-escarabajo.html",
+    "title": "\ud83e\udeb2 El Escarabajo \u2014 The Beetle",
+    "slug": "el-escarabajo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-escarabajo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-24-el-pulpo.html",
+    "title": "\ud83d\udc19 El Pulpo \u2014 The Octopus",
+    "slug": "el-pulpo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-pulpo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-25-la-tortuga-marina.html",
+    "title": "\ud83d\udc22 La Tortuga Marina \u2014 The Sea Turtle",
+    "slug": "la-tortuga-marina",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-tortuga-marina/",
+    "status": "ok"
+  },
+  {
+    "file": "week-26-el-delfin.html",
+    "title": "\ud83d\udc2c El Delf\u00edn \u2014 The Dolphin",
+    "slug": "el-delfin",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-delfin/",
+    "status": "ok"
+  },
+  {
+    "file": "week-27-el-pez-payaso.html",
+    "title": "\ud83d\udc20 El Pez Payaso \u2014 The Clownfish",
+    "slug": "el-pez-payaso",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-pez-payaso/",
+    "status": "ok"
+  },
+  {
+    "file": "week-28-la-ballena.html",
+    "title": "\ud83d\udc0b La Ballena \u2014 The Whale",
+    "slug": "la-ballena",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-ballena/",
+    "status": "ok"
+  },
+  {
+    "file": "week-29-el-caballito-de-mar.html",
+    "title": "\ud83e\udd91 El Caballito de Mar \u2014 The Seahorse",
+    "slug": "el-caballito-de-mar",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-caballito-de-mar/",
+    "status": "ok"
+  },
+  {
+    "file": "week-30-la-estrella-de-mar.html",
+    "title": "\u2b50 La Estrella de Mar \u2014 The Starfish",
+    "slug": "la-estrella-de-mar",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-estrella-de-mar/",
+    "status": "ok"
+  },
+  {
+    "file": "week-31-la-rosa.html",
+    "title": "\ud83c\udf39 La Rosa \u2014 The Rose",
+    "slug": "la-rosa",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-rosa/",
+    "status": "ok"
+  },
+  {
+    "file": "week-32-el-girasol.html",
+    "title": "\ud83c\udf3b El Girasol \u2014 The Sunflower",
+    "slug": "el-girasol",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-girasol/",
+    "status": "ok"
+  },
+  {
+    "file": "week-33-el-arbol.html",
+    "title": "\ud83c\udf33 El \u00c1rbol \u2014 The Tree",
+    "slug": "el-arbol",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-arbol/",
+    "status": "ok"
+  },
+  {
+    "file": "week-34-el-cactus.html",
+    "title": "\ud83c\udf35 El Cactus \u2014 The Cactus",
+    "slug": "el-cactus",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-cactus/",
+    "status": "ok"
+  },
+  {
+    "file": "week-35-la-semilla.html",
+    "title": "\ud83c\udf31 La Semilla \u2014 The Seed",
+    "slug": "la-semilla",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-semilla/",
+    "status": "ok"
+  },
+  {
+    "file": "week-36-la-margarita.html",
+    "title": "\ud83c\udf3c La Margarita \u2014 The Daisy",
+    "slug": "la-margarita",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-margarita/",
+    "status": "ok"
+  },
+  {
+    "file": "week-37-el-tulipan.html",
+    "title": "\ud83c\udf37 El Tulip\u00e1n \u2014 The Tulip",
+    "slug": "el-tulipan",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-tulipan/",
+    "status": "ok"
+  },
+  {
+    "file": "week-38-el-hongo.html",
+    "title": "\ud83c\udf44 El Hongo \u2014 The Mushroom",
+    "slug": "el-hongo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-hongo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-39-la-medusa.html",
+    "title": "\ud83e\udebc La Medusa \u2014 The Jellyfish",
+    "slug": "la-medusa",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-medusa/",
+    "status": "ok"
+  },
+  {
+    "file": "week-40-la-manzana.html",
+    "title": "\ud83c\udf4e La Manzana \u2014 The Apple",
+    "slug": "la-manzana",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-manzana/",
+    "status": "ok"
+  },
+  {
+    "file": "week-41-el-platano.html",
+    "title": "\ud83c\udf4c El Pl\u00e1tano \u2014 The Banana",
+    "slug": "el-platano",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-platano/",
+    "status": "ok"
+  },
+  {
+    "file": "week-42-la-zanahoria.html",
+    "title": "\ud83e\udd55 La Zanahoria \u2014 The Carrot",
+    "slug": "la-zanahoria",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-zanahoria/",
+    "status": "ok"
+  },
+  {
+    "file": "week-43-el-brocoli.html",
+    "title": "\ud83e\udd66 El Br\u00f3coli \u2014 The Broccoli",
+    "slug": "el-brocoli",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-brocoli/",
+    "status": "ok"
+  },
+  {
+    "file": "week-44-el-huevo.html",
+    "title": "\ud83e\udd5a El Huevo \u2014 The Egg",
+    "slug": "el-huevo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-huevo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-45-la-leche.html",
+    "title": "\ud83e\udd5b La Leche \u2014 The Milk",
+    "slug": "la-leche",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-leche/",
+    "status": "ok"
+  },
+  {
+    "file": "week-46-el-pan.html",
+    "title": "\ud83c\udf5e El Pan \u2014 The Bread",
+    "slug": "el-pan",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-pan/",
+    "status": "ok"
+  },
+  {
+    "file": "week-47-el-yogur.html",
+    "title": "\ud83e\udd63 El Yogur \u2014 The Yogurt",
+    "slug": "el-yogur",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-yogur/",
+    "status": "ok"
+  },
+  {
+    "file": "week-48-la-gota.html",
+    "title": "\ud83d\udca7 La Gota \u2014 The Drop",
+    "slug": "la-gota",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-gota/",
+    "status": "ok"
+  },
+  {
+    "file": "week-49-el-rio.html",
+    "title": "\ud83c\udfde\ufe0f El R\u00edo \u2014 The River",
+    "slug": "el-rio",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-rio/",
+    "status": "ok"
+  },
+  {
+    "file": "week-50-el-lago.html",
+    "title": "\ud83c\udfd4\ufe0f El Lago \u2014 The Lake",
+    "slug": "el-lago",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-lago/",
+    "status": "ok"
+  },
+  {
+    "file": "week-51-la-lluvia.html",
+    "title": "\ud83c\udf27\ufe0f La Lluvia \u2014 The Rain",
+    "slug": "la-lluvia",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-lluvia/",
+    "status": "ok"
+  },
+  {
+    "file": "week-52-el-hielo.html",
+    "title": "\ud83e\uddca El Hielo \u2014 The Ice",
+    "slug": "el-hielo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-hielo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-53-la-nieve.html",
+    "title": "\u2744\ufe0f La Nieve \u2014 The Snow",
+    "slug": "la-nieve",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-nieve/",
+    "status": "ok"
+  },
+  {
+    "file": "week-54-el-vapor.html",
+    "title": "\ud83d\udca8 El Vapor \u2014 The Steam",
+    "slug": "el-vapor",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-vapor/",
+    "status": "ok"
+  },
+  {
+    "file": "week-55-el-oceano-agua.html",
+    "title": "\ud83c\udf0a El Oc\u00e9ano \u2014 The Ocean",
+    "slug": "el-oceano-agua",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-oceano-agua/",
+    "status": "ok"
+  },
+  {
+    "file": "week-56-el-rojo.html",
+    "title": "\ud83d\udd34 El Rojo \u2014 The Color Red",
+    "slug": "el-rojo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-rojo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-57-el-azul.html",
+    "title": "\ud83d\udd35 El Azul \u2014 The Color Blue",
+    "slug": "el-azul",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-azul/",
+    "status": "ok"
+  },
+  {
+    "file": "week-58-el-amarillo.html",
+    "title": "\ud83d\udfe1 El Amarillo \u2014 The Color Yellow",
+    "slug": "el-amarillo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-amarillo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-59-el-verde.html",
+    "title": "\ud83d\udfe2 El Verde \u2014 The Color Green",
+    "slug": "el-verde",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-verde/",
+    "status": "ok"
+  },
+  {
+    "file": "week-60-el-circulo.html",
+    "title": "\u2b55 El C\u00edrculo \u2014 The Circle",
+    "slug": "el-circulo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-circulo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-61-el-cuadrado.html",
+    "title": "\ud83d\udfe6 El Cuadrado \u2014 The Square",
+    "slug": "el-cuadrado",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-cuadrado/",
+    "status": "ok"
+  },
+  {
+    "file": "week-62-el-triangulo.html",
+    "title": "\ud83d\udd3a El Tri\u00e1ngulo \u2014 The Triangle",
+    "slug": "el-triangulo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-triangulo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-63-el-arcoiris.html",
+    "title": "\ud83c\udf08 El Arco\u00edris \u2014 The Rainbow",
+    "slug": "el-arcoiris",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-arcoiris/",
+    "status": "ok"
+  },
+  {
+    "file": "week-64-la-mama.html",
+    "title": "\ud83d\udc69 La Mam\u00e1 \u2014 Mom",
+    "slug": "la-mama",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-mama/",
+    "status": "ok"
+  },
+  {
+    "file": "week-65-el-papa.html",
+    "title": "\ud83d\udc68 El Pap\u00e1 \u2014 Dad",
+    "slug": "el-papa",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-papa/",
+    "status": "ok"
+  },
+  {
+    "file": "week-66-la-hermana.html",
+    "title": "\ud83d\udc67 La Hermana \u2014 Sister",
+    "slug": "la-hermana",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-hermana/",
+    "status": "ok"
+  },
+  {
+    "file": "week-67-el-hermano.html",
+    "title": "\ud83d\udc66 El Hermano \u2014 Brother",
+    "slug": "el-hermano",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-hermano/",
+    "status": "ok"
+  },
+  {
+    "file": "week-68-la-abuela.html",
+    "title": "\ud83d\udc75 La Abuela \u2014 Grandmother",
+    "slug": "la-abuela",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-abuela/",
+    "status": "ok"
+  },
+  {
+    "file": "week-69-el-abuelo.html",
+    "title": "\ud83d\udc74 El Abuelo \u2014 Grandfather",
+    "slug": "el-abuelo",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-abuelo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-70-el-bebe.html",
+    "title": "\ud83d\udc76 El Beb\u00e9 \u2014 The Baby",
+    "slug": "el-bebe",
+    "url": "https://www.beibeiamigos.com/spanish-books/el-bebe/",
+    "status": "ok"
+  },
+  {
+    "file": "week-71-la-familia.html",
+    "title": "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66 La Familia \u2014 The Family",
+    "slug": "la-familia",
+    "url": "https://www.beibeiamigos.com/spanish-books/la-familia/",
+    "status": "ok"
+  },
+  {
+    "file": "week-72-mi-amigo.html",
+    "title": "\ud83d\udc6b Mi Amigo \u2014 My Friend",
+    "slug": "mi-amigo",
+    "url": "https://www.beibeiamigos.com/spanish-books/mi-amigo/",
+    "status": "ok"
+  },
+  {
+    "file": "week-73-jugamos.html",
+    "title": "\ud83c\udfae Jugamos \u2014 We Play",
+    "slug": "jugamos",
+    "url": "https://www.beibeiamigos.com/spanish-books/jugamos/",
+    "status": "ok"
+  },
+  {
+    "file": "week-74-compartir.html",
+    "title": "\ud83e\udd1d Compartir \u2014 Sharing",
+    "slug": "compartir",
+    "url": "https://www.beibeiamigos.com/spanish-books/compartir/",
+    "status": "ok"
+  },
+  {
+    "file": "week-75-ayudar.html",
+    "title": "\ud83d\ude4f Ayudar \u2014 Helping",
+    "slug": "ayudar",
+    "url": "https://www.beibeiamigos.com/spanish-books/ayudar/",
+    "status": "ok"
+  },
+  {
+    "file": "week-76-escuchar.html",
+    "title": "\ud83d\udc42 Escuchar \u2014 Listening",
+    "slug": "escuchar",
+    "url": "https://www.beibeiamigos.com/spanish-books/escuchar/",
+    "status": "ok"
+  },
+  {
+    "file": "week-77-reir.html",
+    "title": "\ud83d\ude04 Re\u00edr \u2014 Laughing",
+    "slug": "reir",
+    "url": "https://www.beibeiamigos.com/spanish-books/reir/",
+    "status": "ok"
+  },
+  {
+    "file": "week-78-perdonar.html",
+    "title": "\ud83d\udc95 Perdonar \u2014 Forgiving",
+    "slug": "perdonar",
+    "url": "https://www.beibeiamigos.com/spanish-books/perdonar/",
+    "status": "ok"
+  },
+  {
+    "file": "week-79-juntos.html",
+    "title": "\ud83e\udd17 Juntos \u2014 Together",
+    "slug": "juntos",
+    "url": "https://www.beibeiamigos.com/spanish-books/juntos/",
+    "status": "ok"
+  }
+]
