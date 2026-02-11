@@ -1,0 +1,60 @@
+{
+  "slug": "week-112-las-manos",
+  "title": "Las Manos",
+  "subtitle": "The Hands",
+  "theme": "cuerpo",
+  "week": 112,
+  "emoji": "🖐️",
+  "meta_desc": "Learn about hands in Spanish (manos, dedos, tocar, aplaudir) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish body parts, las manos Spanish, hands in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Las Manos",
+      "footer": "Aprendiendo sobre mi cuerpo",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy toddler looking at their open hands with wonder and curiosity."
+    },
+    {
+      "title": "Tengo dos manos.",
+      "footer": "I have two hands.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A smiling child holding up both hands showing all ten fingers."
+    },
+    {
+      "title": "Mis manos pueden tocar.",
+      "footer": "My hands can touch.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child gently touching a soft fluffy bunny with their hands."
+    },
+    {
+      "title": "Mis manos pueden aplaudir.",
+      "footer": "My hands can clap.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A joyful child clapping their hands together with musical notes around them."
+    },
+    {
+      "title": "Mis manos pueden pintar.",
+      "footer": "My hands can paint.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child finger painting on a large paper with colorful handprints."
+    },
+    {
+      "title": "Mis manos pueden abrazar.",
+      "footer": "My hands can hug.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child giving a warm hug to a teddy bear with their little hands."
+    },
+    {
+      "title": "¡Amo mis manos!",
+      "footer": "I love my hands!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child waving both hands cheerfully at the viewer."
+    }
+  ],
+  "vocab": [
+    { "es": "manos", "en": "hands", "emoji": "🖐️" },
+    { "es": "dedos", "en": "fingers", "emoji": "☝️" },
+    { "es": "tocar", "en": "to touch", "emoji": "👆" },
+    { "es": "aplaudir", "en": "to clap", "emoji": "👏" },
+    { "es": "pintar", "en": "to paint", "emoji": "🎨" },
+    { "es": "abrazar", "en": "to hug", "emoji": "🤗" }
+  ],
+  "badge": {
+    "emoji": "🖐️",
+    "name": "Campeón de Manos",
+    "nameEn": "Hands Champion"
+  }
+}

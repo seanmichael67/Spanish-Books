@@ -1,0 +1,84 @@
+{
+  "slug": "week-92-el-cinco",
+  "title": "El Cinco",
+  "subtitle": "The Number Five",
+  "theme": "numeros",
+  "week": 92,
+  "emoji": "5️⃣",
+  "meta_desc": "Learn the number five in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el cinco Spanish, number five Spanish kids",
+  "pages": [
+    {
+      "title": "El Cinco",
+      "footer": "The Number Five",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a large friendly number 5 with five colorful stars around it."
+    },
+    {
+      "title": "Cinco es un número.",
+      "footer": "Five is a number.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a big colorful number 5 made of building blocks."
+    },
+    {
+      "title": "Cinco dedos en mi mano.",
+      "footer": "Five fingers on my hand.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child's hand showing five spread fingers, each a different color."
+    },
+    {
+      "title": "Cinco manzanas rojas.",
+      "footer": "Five red apples.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, five shiny red apples arranged in a row on a table."
+    },
+    {
+      "title": "Cinco patitos nadan.",
+      "footer": "Five little ducks swim.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, five cute yellow ducklings swimming in a row on a pond."
+    },
+    {
+      "title": "Cinco amigos juegan.",
+      "footer": "Five friends play.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, five diverse children playing together in a circle in a park."
+    },
+    {
+      "title": "¡Dame cinco!",
+      "footer": "High five!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, two children giving each other a high five with big smiles."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "cinco",
+      "en": "five",
+      "emoji": "5️⃣"
+    },
+    {
+      "es": "dedos",
+      "en": "fingers",
+      "emoji": "🖐️"
+    },
+    {
+      "es": "manzanas",
+      "en": "apples",
+      "emoji": "🍎"
+    },
+    {
+      "es": "patitos",
+      "en": "ducklings",
+      "emoji": "🐥"
+    },
+    {
+      "es": "amigos",
+      "en": "friends",
+      "emoji": "👫"
+    },
+    {
+      "es": "juegan",
+      "en": "play",
+      "emoji": "⚽"
+    }
+  ],
+  "badge": {
+    "emoji": "5️⃣",
+    "name": "Maestro del Cinco",
+    "nameEn": "Master of Five"
+  }
+}

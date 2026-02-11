@@ -1,0 +1,60 @@
+{
+  "slug": "week-123-el-tren",
+  "title": "El Tren",
+  "subtitle": "The Train",
+  "theme": "transporte",
+  "week": 123,
+  "emoji": "🚂",
+  "meta_desc": "Learn about trains in Spanish (tren, vagones, vías, estación) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish transportation, el tren Spanish, train in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Tren",
+      "footer": "Aprendiendo sobre el transporte",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A colorful steam train chugging along tracks through green hills."
+    },
+    {
+      "title": "El tren es largo.",
+      "footer": "The train is long.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A long train with many colorful wagons stretching across the landscape."
+    },
+    {
+      "title": "El tren tiene vagones.",
+      "footer": "The train has wagons.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A train with different colored wagons, red blue green yellow."
+    },
+    {
+      "title": "El tren va por las vías.",
+      "footer": "The train goes on the tracks.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A train rolling on railroad tracks through a peaceful countryside."
+    },
+    {
+      "title": "¡Chú chú! dice el tren.",
+      "footer": "Choo choo! says the train.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A steam train puffing smoke clouds with choo choo sound effect."
+    },
+    {
+      "title": "El tren llega a la estación.",
+      "footer": "The train arrives at the station.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A train arriving at a quaint colorful train station with people waiting."
+    },
+    {
+      "title": "¡Me gusta el tren!",
+      "footer": "I like the train!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child waving at a passing train from beside the tracks."
+    }
+  ],
+  "vocab": [
+    { "es": "tren", "en": "train", "emoji": "🚂" },
+    { "es": "vagones", "en": "wagons", "emoji": "🚃" },
+    { "es": "vías", "en": "tracks", "emoji": "🛤️" },
+    { "es": "estación", "en": "station", "emoji": "🏛️" },
+    { "es": "largo", "en": "long", "emoji": "📏" },
+    { "es": "humo", "en": "smoke", "emoji": "💨" }
+  ],
+  "badge": {
+    "emoji": "🚂",
+    "name": "Maquinista Estrella",
+    "nameEn": "Star Engineer"
+  }
+}

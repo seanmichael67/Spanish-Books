@@ -1,0 +1,84 @@
+{
+  "slug": "week-89-el-dos",
+  "title": "El Dos",
+  "subtitle": "The Number Two",
+  "theme": "numeros",
+  "week": 89,
+  "emoji": "2️⃣",
+  "meta_desc": "Learn the number two in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el dos Spanish, number two Spanish kids",
+  "pages": [
+    {
+      "title": "El Dos",
+      "footer": "The Number Two",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a large friendly number 2 with two cute kittens next to it."
+    },
+    {
+      "title": "Dos es un número.",
+      "footer": "Two is a number.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a big colorful number 2 made of building blocks."
+    },
+    {
+      "title": "Tengo dos manos.",
+      "footer": "I have two hands.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child showing two open hands, counting fingers."
+    },
+    {
+      "title": "Veo dos pájaros.",
+      "footer": "I see two birds.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, two cute colorful birds sitting together on a branch."
+    },
+    {
+      "title": "Dos ojos tengo.",
+      "footer": "I have two eyes.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a friendly child's face with two big bright eyes, pointing at them."
+    },
+    {
+      "title": "Dos pies para caminar.",
+      "footer": "Two feet to walk.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, two small feet in colorful shoes walking on a path."
+    },
+    {
+      "title": "¡El dos es divertido!",
+      "footer": "Two is fun!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, two children playing together, number 2 in the background."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "dos",
+      "en": "two",
+      "emoji": "2️⃣"
+    },
+    {
+      "es": "manos",
+      "en": "hands",
+      "emoji": "🙌"
+    },
+    {
+      "es": "pájaros",
+      "en": "birds",
+      "emoji": "🐦"
+    },
+    {
+      "es": "ojos",
+      "en": "eyes",
+      "emoji": "👀"
+    },
+    {
+      "es": "pies",
+      "en": "feet",
+      "emoji": "🦶"
+    },
+    {
+      "es": "caminar",
+      "en": "walk",
+      "emoji": "🚶"
+    }
+  ],
+  "badge": {
+    "emoji": "2️⃣",
+    "name": "Maestro del Dos",
+    "nameEn": "Master of Two"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "week-115-la-boca",
+  "title": "La Boca",
+  "subtitle": "The Mouth",
+  "theme": "cuerpo",
+  "week": 115,
+  "emoji": "👄",
+  "meta_desc": "Learn about the mouth in Spanish (boca, hablar, comer, sonreír) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish body parts, la boca Spanish, mouth in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Boca",
+      "footer": "Aprendiendo sobre mi cuerpo",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child with a big smile showing their mouth."
+    },
+    {
+      "title": "Mi boca puede hablar.",
+      "footer": "My mouth can talk.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child talking to a friendly parrot, speech bubbles around them."
+    },
+    {
+      "title": "Mi boca puede comer.",
+      "footer": "My mouth can eat.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child happily eating a slice of watermelon."
+    },
+    {
+      "title": "Mi boca puede cantar.",
+      "footer": "My mouth can sing.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child singing with musical notes floating around, holding a microphone."
+    },
+    {
+      "title": "Mi boca puede sonreír.",
+      "footer": "My mouth can smile.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child with a beautiful big smile, happy and cheerful."
+    },
+    {
+      "title": "Mi boca puede soplar.",
+      "footer": "My mouth can blow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child blowing on a dandelion, seeds floating in the wind."
+    },
+    {
+      "title": "¡Amo mi boca!",
+      "footer": "I love my mouth!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child blowing bubbles with their mouth, colorful bubbles floating."
+    }
+  ],
+  "vocab": [
+    { "es": "boca", "en": "mouth", "emoji": "👄" },
+    { "es": "hablar", "en": "to talk", "emoji": "🗣️" },
+    { "es": "comer", "en": "to eat", "emoji": "🍽️" },
+    { "es": "cantar", "en": "to sing", "emoji": "🎵" },
+    { "es": "sonreír", "en": "to smile", "emoji": "😊" },
+    { "es": "soplar", "en": "to blow", "emoji": "💨" }
+  ],
+  "badge": {
+    "emoji": "👄",
+    "name": "Campeón de la Boca",
+    "nameEn": "Mouth Champion"
+  }
+}

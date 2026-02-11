@@ -1,0 +1,60 @@
+{
+  "slug": "week-135-el-clima",
+  "title": "El Clima",
+  "subtitle": "The Weather",
+  "theme": "estaciones",
+  "week": 135,
+  "emoji": "🌤️",
+  "meta_desc": "Learn about weather in Spanish (clima, soleado, nublado, lluvioso) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish weather, el clima Spanish, weather in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Clima",
+      "footer": "Aprendiendo sobre el clima",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child looking out a window at different weather types shown in panels."
+    },
+    {
+      "title": "Hoy está soleado.",
+      "footer": "Today it is sunny.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A bright sunny day with a smiling sun and a child playing outside."
+    },
+    {
+      "title": "Hoy está nublado.",
+      "footer": "Today it is cloudy.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A cloudy day with soft gray clouds covering the sky, child looking up."
+    },
+    {
+      "title": "Hoy llueve.",
+      "footer": "Today it rains.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A rainy day with a child in rain boots and umbrella, puddles."
+    },
+    {
+      "title": "Hoy nieva.",
+      "footer": "Today it snows.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A snowy day with snowflakes falling, child catching them on tongue."
+    },
+    {
+      "title": "¿Qué clima hace hoy?",
+      "footer": "What is the weather today?",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child looking at a weather chart with sun rain cloud snow icons."
+    },
+    {
+      "title": "¡Me gusta el clima!",
+      "footer": "I like the weather!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child outdoors enjoying different weather elements, sun and rainbow."
+    }
+  ],
+  "vocab": [
+    { "es": "clima", "en": "weather", "emoji": "🌤️" },
+    { "es": "soleado", "en": "sunny", "emoji": "☀️" },
+    { "es": "nublado", "en": "cloudy", "emoji": "☁️" },
+    { "es": "lluvioso", "en": "rainy", "emoji": "🌧️" },
+    { "es": "nevado", "en": "snowy", "emoji": "❄️" },
+    { "es": "caliente", "en": "hot", "emoji": "🌡️" }
+  ],
+  "badge": {
+    "emoji": "🌤️",
+    "name": "Meteorólogo Estrella",
+    "nameEn": "Star Meteorologist"
+  }
+}

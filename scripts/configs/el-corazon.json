@@ -1,0 +1,60 @@
+{
+  "slug": "week-118-el-corazon",
+  "title": "El Corazón",
+  "subtitle": "The Heart",
+  "theme": "cuerpo",
+  "week": 118,
+  "emoji": "❤️",
+  "meta_desc": "Learn about the heart in Spanish (corazón, latir, amor, sentir) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish body parts, el corazón Spanish, heart in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Corazón",
+      "footer": "Aprendiendo sobre mi cuerpo",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child placing both hands on their chest feeling their heartbeat."
+    },
+    {
+      "title": "Mi corazón late.",
+      "footer": "My heart beats.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child listening to their heartbeat with a toy stethoscope, hearts floating."
+    },
+    {
+      "title": "Mi corazón siente amor.",
+      "footer": "My heart feels love.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child hugging a puppy with hearts floating around them."
+    },
+    {
+      "title": "Mi corazón está feliz.",
+      "footer": "My heart is happy.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A joyful child jumping with arms open, colorful hearts everywhere."
+    },
+    {
+      "title": "Mi corazón es fuerte.",
+      "footer": "My heart is strong.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child running and playing energetically in a sunny park."
+    },
+    {
+      "title": "Mi corazón quiere.",
+      "footer": "My heart loves.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child giving a valentine heart card to a friend."
+    },
+    {
+      "title": "¡Amo mi corazón!",
+      "footer": "I love my heart!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child with a big red heart shape around them, smiling warmly."
+    }
+  ],
+  "vocab": [
+    { "es": "corazón", "en": "heart", "emoji": "❤️" },
+    { "es": "latir", "en": "to beat", "emoji": "💓" },
+    { "es": "amor", "en": "love", "emoji": "💕" },
+    { "es": "feliz", "en": "happy", "emoji": "😊" },
+    { "es": "fuerte", "en": "strong", "emoji": "💪" },
+    { "es": "sentir", "en": "to feel", "emoji": "🫶" }
+  ],
+  "badge": {
+    "emoji": "❤️",
+    "name": "Campeón del Corazón",
+    "nameEn": "Heart Champion"
+  }
+}

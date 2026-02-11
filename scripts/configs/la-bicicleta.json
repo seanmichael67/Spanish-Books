@@ -1,0 +1,60 @@
+{
+  "slug": "week-124-la-bicicleta",
+  "title": "La Bicicleta",
+  "subtitle": "The Bicycle",
+  "theme": "transporte",
+  "week": 124,
+  "emoji": "🚲",
+  "meta_desc": "Learn about bicycles in Spanish (bicicleta, pedales, casco, pasear) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish transportation, la bicicleta Spanish, bicycle in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Bicicleta",
+      "footer": "Aprendiendo sobre el transporte",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A cute colorful bicycle with a basket of flowers on a path."
+    },
+    {
+      "title": "La bicicleta tiene pedales.",
+      "footer": "The bicycle has pedals.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child pedaling a bicycle, feet on the pedals, in a park."
+    },
+    {
+      "title": "Me pongo el casco.",
+      "footer": "I put on my helmet.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child putting on a colorful bicycle helmet, safety first."
+    },
+    {
+      "title": "Pedaleo rápido.",
+      "footer": "I pedal fast.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child riding a bicycle fast down a gentle hill, wind in hair."
+    },
+    {
+      "title": "Paseo en bicicleta.",
+      "footer": "I ride my bicycle.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child riding a bicycle on a path through a beautiful park with trees."
+    },
+    {
+      "title": "La bicicleta tiene timbre.",
+      "footer": "The bicycle has a bell.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child ringing a bicycle bell, ring ring sound effect shown."
+    },
+    {
+      "title": "¡Me gusta la bicicleta!",
+      "footer": "I like the bicycle!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child standing next to their bicycle giving thumbs up."
+    }
+  ],
+  "vocab": [
+    { "es": "bicicleta", "en": "bicycle", "emoji": "🚲" },
+    { "es": "pedales", "en": "pedals", "emoji": "🦶" },
+    { "es": "casco", "en": "helmet", "emoji": "⛑️" },
+    { "es": "ruedas", "en": "wheels", "emoji": "🛞" },
+    { "es": "timbre", "en": "bell", "emoji": "🔔" },
+    { "es": "pasear", "en": "to ride", "emoji": "🌳" }
+  ],
+  "badge": {
+    "emoji": "🚲",
+    "name": "Ciclista Estrella",
+    "nameEn": "Star Cyclist"
+  }
+}

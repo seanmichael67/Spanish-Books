@@ -1,0 +1,84 @@
+{
+  "slug": "week-94-el-abecedario",
+  "title": "El Abecedario",
+  "subtitle": "The Alphabet",
+  "theme": "numeros",
+  "week": 94,
+  "emoji": "📖",
+  "meta_desc": "Learn the alphabet in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el abecedario Spanish, alphabet Spanish kids",
+  "pages": [
+    {
+      "title": "El Abecedario",
+      "footer": "The Alphabet",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a beautiful alphabet chart with all letters in rainbow colors on a wall."
+    },
+    {
+      "title": "A, B, C, D, E.",
+      "footer": "A, B, C, D, E.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, five big colorful letters A B C D E with cute animals for each."
+    },
+    {
+      "title": "F, G, H, I, J.",
+      "footer": "F, G, H, I, J.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, five big colorful letters F G H I J with fun objects for each."
+    },
+    {
+      "title": "K, L, M, N, Ñ.",
+      "footer": "K, L, M, N, Ñ.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, five big colorful letters K L M N Ñ with items for each."
+    },
+    {
+      "title": "O, P, Q, R, S.",
+      "footer": "O, P, Q, R, S.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, five big colorful letters O P Q R S with pictures for each."
+    },
+    {
+      "title": "Cantamos el abecedario.",
+      "footer": "We sing the alphabet.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children singing together with musical notes and letters floating around."
+    },
+    {
+      "title": "¡Yo sé el abecedario!",
+      "footer": "I know the alphabet!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a proud child with a complete alphabet poster behind them, celebrating."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "abecedario",
+      "en": "alphabet",
+      "emoji": "📖"
+    },
+    {
+      "es": "cantar",
+      "en": "sing",
+      "emoji": "🎤"
+    },
+    {
+      "es": "letras",
+      "en": "letters",
+      "emoji": "🔤"
+    },
+    {
+      "es": "aprender",
+      "en": "learn",
+      "emoji": "📚"
+    },
+    {
+      "es": "eñe",
+      "en": "ñ letter",
+      "emoji": "🇪🇸"
+    },
+    {
+      "es": "vocal",
+      "en": "vowel",
+      "emoji": "🅰️"
+    }
+  ],
+  "badge": {
+    "emoji": "📖",
+    "name": "Rey del Abecedario",
+    "nameEn": "Alphabet King"
+  }
+}

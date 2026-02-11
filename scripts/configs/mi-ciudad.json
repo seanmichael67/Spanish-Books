@@ -1,0 +1,84 @@
+{
+  "slug": "week-111-mi-ciudad",
+  "title": "Mi Ciudad",
+  "subtitle": "My City",
+  "theme": "mi-mundo",
+  "week": 111,
+  "emoji": "🏙️",
+  "meta_desc": "Learn about the city in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, mi ciudad Spanish, city Spanish kids",
+  "pages": [
+    {
+      "title": "Mi Ciudad",
+      "footer": "My City",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a friendly colorful city with buildings, trees, and people walking."
+    },
+    {
+      "title": "La ciudad tiene edificios.",
+      "footer": "The city has buildings.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, tall colorful buildings in a city with blue sky above."
+    },
+    {
+      "title": "Hay carros y autobuses.",
+      "footer": "There are cars and buses.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful cars and a bus on a city street with a crosswalk."
+    },
+    {
+      "title": "La gente camina.",
+      "footer": "People walk.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, friendly people walking on a city sidewalk with shops and trees."
+    },
+    {
+      "title": "Hay un parque en la ciudad.",
+      "footer": "There is a park in the city.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a green park in the middle of a city with children playing."
+    },
+    {
+      "title": "Las luces brillan de noche.",
+      "footer": "The lights shine at night.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a city at night with warm glowing lights from windows and street lamps."
+    },
+    {
+      "title": "¡Mi ciudad es hermosa!",
+      "footer": "My city is beautiful!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a panoramic view of a beautiful colorful city at sunset."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "ciudad",
+      "en": "city",
+      "emoji": "🏙️"
+    },
+    {
+      "es": "edificios",
+      "en": "buildings",
+      "emoji": "🏢"
+    },
+    {
+      "es": "carros",
+      "en": "cars",
+      "emoji": "🚗"
+    },
+    {
+      "es": "gente",
+      "en": "people",
+      "emoji": "👥"
+    },
+    {
+      "es": "parque",
+      "en": "park",
+      "emoji": "🌳"
+    },
+    {
+      "es": "luces",
+      "en": "lights",
+      "emoji": "💡"
+    }
+  ],
+  "badge": {
+    "emoji": "🏙️",
+    "name": "Explorador Urbano",
+    "nameEn": "Urban Explorer"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "week-106-mi-parque",
+  "title": "Mi Parque",
+  "subtitle": "My Park",
+  "theme": "mi-mundo",
+  "week": 106,
+  "emoji": "🛝",
+  "meta_desc": "Learn about the park in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, mi parque Spanish, park Spanish kids",
+  "pages": [
+    {
+      "title": "Mi Parque",
+      "footer": "My Park",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a beautiful park with green trees, playground, and children playing."
+    },
+    {
+      "title": "Voy al parque.",
+      "footer": "I go to the park.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child skipping happily toward a park entrance with trees."
+    },
+    {
+      "title": "Hay un columpio.",
+      "footer": "There is a swing.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a colorful swing set with a child swinging high in the air."
+    },
+    {
+      "title": "Hay una resbaladilla.",
+      "footer": "There is a slide.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child sliding down a colorful slide with a big smile."
+    },
+    {
+      "title": "Corro en el pasto.",
+      "footer": "I run on the grass.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child running freely on green grass in the park with butterflies."
+    },
+    {
+      "title": "Veo las flores.",
+      "footer": "I see the flowers.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child bending down to smell colorful flowers in the park."
+    },
+    {
+      "title": "¡El parque es genial!",
+      "footer": "The park is great!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children playing together in a sunny park with a rainbow."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "parque",
+      "en": "park",
+      "emoji": "🛝"
+    },
+    {
+      "es": "columpio",
+      "en": "swing",
+      "emoji": "🎠"
+    },
+    {
+      "es": "resbaladilla",
+      "en": "slide",
+      "emoji": "🛝"
+    },
+    {
+      "es": "pasto",
+      "en": "grass",
+      "emoji": "🌿"
+    },
+    {
+      "es": "corro",
+      "en": "I run",
+      "emoji": "🏃"
+    },
+    {
+      "es": "flores",
+      "en": "flowers",
+      "emoji": "🌺"
+    }
+  ],
+  "badge": {
+    "emoji": "🛝",
+    "name": "Rey del Parque",
+    "nameEn": "Park King"
+  }
+}

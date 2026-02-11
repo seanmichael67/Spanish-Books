@@ -1,0 +1,84 @@
+{
+  "slug": "week-102-la-musica",
+  "title": "La Música",
+  "subtitle": "Music",
+  "theme": "musica",
+  "week": 102,
+  "emoji": "🎵",
+  "meta_desc": "Learn about music in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, la música Spanish, music Spanish kids",
+  "pages": [
+    {
+      "title": "La Música",
+      "footer": "Music",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful musical notes and instruments floating in a magical scene."
+    },
+    {
+      "title": "La música es alegre.",
+      "footer": "Music is happy.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, smiling children surrounded by floating colorful musical notes."
+    },
+    {
+      "title": "La música nos une.",
+      "footer": "Music brings us together.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, diverse children playing different instruments together in a circle."
+    },
+    {
+      "title": "Hay muchos instrumentos.",
+      "footer": "There are many instruments.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, various colorful instruments: guitar, drum, piano, flute arranged together."
+    },
+    {
+      "title": "La música está en todos lados.",
+      "footer": "Music is everywhere.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, musical notes flowing through nature: birds, wind, water, all making music."
+    },
+    {
+      "title": "Yo hago música.",
+      "footer": "I make music.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child happily playing with various simple instruments, maracas and tambourine."
+    },
+    {
+      "title": "¡Viva la música!",
+      "footer": "Long live music!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a joyful celebration with children dancing and playing instruments, confetti."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "música",
+      "en": "music",
+      "emoji": "🎵"
+    },
+    {
+      "es": "alegre",
+      "en": "happy",
+      "emoji": "😊"
+    },
+    {
+      "es": "instrumentos",
+      "en": "instruments",
+      "emoji": "🎺"
+    },
+    {
+      "es": "escuchar",
+      "en": "listen",
+      "emoji": "👂"
+    },
+    {
+      "es": "cantar",
+      "en": "sing",
+      "emoji": "🎤"
+    },
+    {
+      "es": "bailar",
+      "en": "dance",
+      "emoji": "💃"
+    }
+  ],
+  "badge": {
+    "emoji": "🎵",
+    "name": "Músico Estrella",
+    "nameEn": "Star Musician"
+  }
+}

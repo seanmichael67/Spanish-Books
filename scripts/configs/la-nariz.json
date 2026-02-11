@@ -1,0 +1,60 @@
+{
+  "slug": "week-116-la-nariz",
+  "title": "La Nariz",
+  "subtitle": "The Nose",
+  "theme": "cuerpo",
+  "week": 116,
+  "emoji": "👃",
+  "meta_desc": "Learn about the nose in Spanish (nariz, oler, respirar, estornudar) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish body parts, la nariz Spanish, nose in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Nariz",
+      "footer": "Aprendiendo sobre mi cuerpo",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A cute child touching their nose playfully."
+    },
+    {
+      "title": "Mi nariz puede oler.",
+      "footer": "My nose can smell.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child smelling a beautiful red rose in a garden."
+    },
+    {
+      "title": "Huelo las flores.",
+      "footer": "I smell the flowers.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child leaning into a field of colorful flowers, breathing in deeply."
+    },
+    {
+      "title": "Huelo la comida.",
+      "footer": "I smell the food.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child in the kitchen smelling freshly baked cookies with steam."
+    },
+    {
+      "title": "Mi nariz puede respirar.",
+      "footer": "My nose can breathe.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child outdoors taking a deep breath of fresh mountain air."
+    },
+    {
+      "title": "¡Achú! Estornudo.",
+      "footer": "Achoo! I sneeze.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A cute child about to sneeze with a funny expression, covering nose."
+    },
+    {
+      "title": "¡Amo mi nariz!",
+      "footer": "I love my nose!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child touching their nose with their finger, smiling."
+    }
+  ],
+  "vocab": [
+    { "es": "nariz", "en": "nose", "emoji": "👃" },
+    { "es": "oler", "en": "to smell", "emoji": "🌸" },
+    { "es": "flores", "en": "flowers", "emoji": "💐" },
+    { "es": "respirar", "en": "to breathe", "emoji": "🌬️" },
+    { "es": "estornudar", "en": "to sneeze", "emoji": "🤧" },
+    { "es": "comida", "en": "food", "emoji": "🍪" }
+  ],
+  "badge": {
+    "emoji": "👃",
+    "name": "Explorador de Nariz",
+    "nameEn": "Nose Explorer"
+  }
+}

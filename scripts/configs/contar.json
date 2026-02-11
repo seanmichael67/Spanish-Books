@@ -1,0 +1,84 @@
+{
+  "slug": "week-95-contar",
+  "title": "Contar",
+  "subtitle": "Counting",
+  "theme": "numeros",
+  "week": 95,
+  "emoji": "🔢",
+  "meta_desc": "Learn to count in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, contar Spanish, counting Spanish kids",
+  "pages": [
+    {
+      "title": "Contar",
+      "footer": "Counting",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, numbers 1 through 5 in big colorful style with corresponding objects."
+    },
+    {
+      "title": "Uno, dos, tres.",
+      "footer": "One, two, three.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, numbers 1 2 3 with one apple, two oranges, three bananas."
+    },
+    {
+      "title": "Cuatro, cinco.",
+      "footer": "Four, five.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, numbers 4 5 with four flowers and five butterflies."
+    },
+    {
+      "title": "Cuento mis juguetes.",
+      "footer": "I count my toys.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child counting colorful toys arranged in a line, pointing at each."
+    },
+    {
+      "title": "Cuento las estrellas.",
+      "footer": "I count the stars.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child pointing at five numbered stars in the sky."
+    },
+    {
+      "title": "Cuento los dedos.",
+      "footer": "I count my fingers.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, small hands with fingers extended, numbers floating above each finger."
+    },
+    {
+      "title": "¡Yo sé contar!",
+      "footer": "I know how to count!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy child surrounded by numbers 1 through 5 floating around."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "contar",
+      "en": "count",
+      "emoji": "🔢"
+    },
+    {
+      "es": "juguetes",
+      "en": "toys",
+      "emoji": "🧸"
+    },
+    {
+      "es": "dedos",
+      "en": "fingers",
+      "emoji": "🖐️"
+    },
+    {
+      "es": "cuántos",
+      "en": "how many",
+      "emoji": "❓"
+    },
+    {
+      "es": "más",
+      "en": "more",
+      "emoji": "➕"
+    },
+    {
+      "es": "menos",
+      "en": "less",
+      "emoji": "➖"
+    }
+  ],
+  "badge": {
+    "emoji": "🔢",
+    "name": "Contador Estrella",
+    "nameEn": "Star Counter"
+  }
+}

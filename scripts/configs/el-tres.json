@@ -1,0 +1,84 @@
+{
+  "slug": "week-90-el-tres",
+  "title": "El Tres",
+  "subtitle": "The Number Three",
+  "theme": "numeros",
+  "week": 90,
+  "emoji": "3️⃣",
+  "meta_desc": "Learn the number three in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el tres Spanish, number three Spanish kids",
+  "pages": [
+    {
+      "title": "El Tres",
+      "footer": "The Number Three",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a large friendly number 3 with three colorful balloons."
+    },
+    {
+      "title": "Tres es un número.",
+      "footer": "Three is a number.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a big colorful number 3 made of flowers."
+    },
+    {
+      "title": "Tres globos en el aire.",
+      "footer": "Three balloons in the air.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, three bright colorful balloons floating in a blue sky."
+    },
+    {
+      "title": "Tres colores bonitos.",
+      "footer": "Three pretty colors.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, three paint splashes in red, blue, and yellow."
+    },
+    {
+      "title": "Tres gatitos juegan.",
+      "footer": "Three kittens play.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, three adorable kittens playing with a ball of yarn."
+    },
+    {
+      "title": "Tres flores crecen.",
+      "footer": "Three flowers grow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, three beautiful flowers growing in a garden, each a different color."
+    },
+    {
+      "title": "¡Me gusta el tres!",
+      "footer": "I like three!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child holding three fingers up with a big smile."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "tres",
+      "en": "three",
+      "emoji": "3️⃣"
+    },
+    {
+      "es": "globos",
+      "en": "balloons",
+      "emoji": "🎈"
+    },
+    {
+      "es": "colores",
+      "en": "colors",
+      "emoji": "🎨"
+    },
+    {
+      "es": "gatitos",
+      "en": "kittens",
+      "emoji": "🐱"
+    },
+    {
+      "es": "flores",
+      "en": "flowers",
+      "emoji": "🌸"
+    },
+    {
+      "es": "crecen",
+      "en": "grow",
+      "emoji": "🌱"
+    }
+  ],
+  "badge": {
+    "emoji": "3️⃣",
+    "name": "Maestro del Tres",
+    "nameEn": "Master of Three"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "week-134-el-viento",
+  "title": "El Viento",
+  "subtitle": "The Wind",
+  "theme": "estaciones",
+  "week": 134,
+  "emoji": "💨",
+  "meta_desc": "Learn about wind in Spanish (viento, soplar, cometa, hojas) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish weather, el viento Spanish, wind in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Viento",
+      "footer": "Aprendiendo sobre el clima",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Wind blowing through trees with leaves swirling in the air."
+    },
+    {
+      "title": "El viento sopla.",
+      "footer": "The wind blows.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Swirling wind visible through bending grass and floating dandelion seeds."
+    },
+    {
+      "title": "El viento mueve las hojas.",
+      "footer": "The wind moves the leaves.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Colorful leaves being blown by the wind across a park."
+    },
+    {
+      "title": "Vuelo mi cometa.",
+      "footer": "I fly my kite.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child flying a colorful kite high in the windy sky."
+    },
+    {
+      "title": "El viento es fresco.",
+      "footer": "The wind is cool.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child with hair blowing in a refreshing breeze on a hill."
+    },
+    {
+      "title": "El viento hace sonidos.",
+      "footer": "The wind makes sounds.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Wind chimes tinkling in the breeze, musical notes floating."
+    },
+    {
+      "title": "¡Me gusta el viento!",
+      "footer": "I like the wind!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child spinning with arms out in a gentle wind, scarf flying."
+    }
+  ],
+  "vocab": [
+    { "es": "viento", "en": "wind", "emoji": "💨" },
+    { "es": "soplar", "en": "to blow", "emoji": "🌬️" },
+    { "es": "cometa", "en": "kite", "emoji": "🪁" },
+    { "es": "hojas", "en": "leaves", "emoji": "🍃" },
+    { "es": "fresco", "en": "cool", "emoji": "🌡️" },
+    { "es": "sonidos", "en": "sounds", "emoji": "🎶" }
+  ],
+  "badge": {
+    "emoji": "💨",
+    "name": "Amigo del Viento",
+    "nameEn": "Wind Friend"
+  }
+}

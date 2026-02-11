@@ -1,0 +1,60 @@
+{
+  "slug": "week-119-el-cuerpo",
+  "title": "El Cuerpo",
+  "subtitle": "The Body",
+  "theme": "cuerpo",
+  "week": 119,
+  "emoji": "🧍",
+  "meta_desc": "Learn about the body in Spanish (cuerpo, cabeza, brazos, piernas) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish body parts, el cuerpo Spanish, body in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Cuerpo",
+      "footer": "Aprendiendo sobre mi cuerpo",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child standing with arms out showing their whole body."
+    },
+    {
+      "title": "Esta es mi cabeza.",
+      "footer": "This is my head.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child touching the top of their head with both hands, smiling."
+    },
+    {
+      "title": "Estos son mis brazos.",
+      "footer": "These are my arms.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child stretching both arms wide open like an airplane."
+    },
+    {
+      "title": "Estas son mis piernas.",
+      "footer": "These are my legs.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child kicking a soccer ball with their legs in a park."
+    },
+    {
+      "title": "Esta es mi barriga.",
+      "footer": "This is my tummy.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child patting their tummy after eating, happy expression."
+    },
+    {
+      "title": "Mi cuerpo puede moverse.",
+      "footer": "My body can move.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child doing fun stretches and yoga poses in a colorful room."
+    },
+    {
+      "title": "¡Amo mi cuerpo!",
+      "footer": "I love my body!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child jumping with joy, celebrating their body with confetti."
+    }
+  ],
+  "vocab": [
+    { "es": "cuerpo", "en": "body", "emoji": "🧍" },
+    { "es": "cabeza", "en": "head", "emoji": "🗣️" },
+    { "es": "brazos", "en": "arms", "emoji": "💪" },
+    { "es": "piernas", "en": "legs", "emoji": "🦵" },
+    { "es": "barriga", "en": "tummy", "emoji": "😋" },
+    { "es": "moverse", "en": "to move", "emoji": "🏃" }
+  ],
+  "badge": {
+    "emoji": "🧍",
+    "name": "Explorador del Cuerpo",
+    "nameEn": "Body Explorer"
+  }
+}

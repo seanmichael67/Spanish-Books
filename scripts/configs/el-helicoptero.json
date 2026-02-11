@@ -1,0 +1,60 @@
+{
+  "slug": "week-127-el-helicoptero",
+  "title": "El Helicóptero",
+  "subtitle": "The Helicopter",
+  "theme": "transporte",
+  "week": 127,
+  "emoji": "🚁",
+  "meta_desc": "Learn about helicopters in Spanish (helicóptero, hélice, volar, rescate) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish transportation, el helicóptero Spanish, helicopter in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Helicóptero",
+      "footer": "Aprendiendo sobre el transporte",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A friendly red helicopter flying over a green valley."
+    },
+    {
+      "title": "El helicóptero vuela.",
+      "footer": "The helicopter flies.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A helicopter flying through blue sky with its blades spinning."
+    },
+    {
+      "title": "Tiene una hélice grande.",
+      "footer": "It has a big propeller.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A helicopter showing its big spinning rotor blades on top."
+    },
+    {
+      "title": "El helicóptero sube y baja.",
+      "footer": "The helicopter goes up and down.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A helicopter going up with arrows, showing vertical movement."
+    },
+    {
+      "title": "El helicóptero ayuda.",
+      "footer": "The helicopter helps.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A rescue helicopter helping people, friendly and heroic scene."
+    },
+    {
+      "title": "Hace mucho ruido.",
+      "footer": "It makes a lot of noise.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child covering ears playfully as a helicopter flies overhead, sound waves shown."
+    },
+    {
+      "title": "¡Me gusta el helicóptero!",
+      "footer": "I like the helicopter!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child playing with a toy helicopter in a garden."
+    }
+  ],
+  "vocab": [
+    { "es": "helicóptero", "en": "helicopter", "emoji": "🚁" },
+    { "es": "hélice", "en": "propeller", "emoji": "🌀" },
+    { "es": "volar", "en": "to fly", "emoji": "🕊️" },
+    { "es": "rescate", "en": "rescue", "emoji": "🆘" },
+    { "es": "ruido", "en": "noise", "emoji": "🔊" },
+    { "es": "arriba", "en": "up", "emoji": "⬆️" }
+  ],
+  "badge": {
+    "emoji": "🚁",
+    "name": "Piloto de Helicóptero",
+    "nameEn": "Helicopter Pilot"
+  }
+}

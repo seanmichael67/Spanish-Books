@@ -1,0 +1,84 @@
+{
+  "slug": "week-98-cantar",
+  "title": "Cantar",
+  "subtitle": "Singing",
+  "theme": "musica",
+  "week": 98,
+  "emoji": "🎤",
+  "meta_desc": "Learn about singing in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, cantar Spanish, singing Spanish kids",
+  "pages": [
+    {
+      "title": "Cantar",
+      "footer": "Singing",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child singing joyfully with musical notes floating around them."
+    },
+    {
+      "title": "Yo canto una canción.",
+      "footer": "I sing a song.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child holding a microphone singing with colorful notes."
+    },
+    {
+      "title": "Cantamos juntos.",
+      "footer": "We sing together.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a group of children singing together in a circle, happy faces."
+    },
+    {
+      "title": "La canción es alegre.",
+      "footer": "The song is happy.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, musical notes in bright colors dancing around a happy sun."
+    },
+    {
+      "title": "Canto en la mañana.",
+      "footer": "I sing in the morning.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child singing by a window with morning sunshine coming in."
+    },
+    {
+      "title": "Los pájaros cantan.",
+      "footer": "The birds sing.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful birds on a branch singing with musical notes."
+    },
+    {
+      "title": "¡Cantar es divertido!",
+      "footer": "Singing is fun!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children on a stage singing and dancing with confetti falling."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "cantar",
+      "en": "sing",
+      "emoji": "🎤"
+    },
+    {
+      "es": "canción",
+      "en": "song",
+      "emoji": "🎵"
+    },
+    {
+      "es": "juntos",
+      "en": "together",
+      "emoji": "👥"
+    },
+    {
+      "es": "alegre",
+      "en": "happy",
+      "emoji": "😊"
+    },
+    {
+      "es": "mañana",
+      "en": "morning",
+      "emoji": "🌅"
+    },
+    {
+      "es": "voz",
+      "en": "voice",
+      "emoji": "🗣️"
+    }
+  ],
+  "badge": {
+    "emoji": "🎤",
+    "name": "Cantante Estrella",
+    "nameEn": "Star Singer"
+  }
+}

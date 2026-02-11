@@ -1,0 +1,84 @@
+{
+  "slug": "week-91-el-cuatro",
+  "title": "El Cuatro",
+  "subtitle": "The Number Four",
+  "theme": "numeros",
+  "week": 91,
+  "emoji": "4️⃣",
+  "meta_desc": "Learn the number four in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el cuatro Spanish, number four Spanish kids",
+  "pages": [
+    {
+      "title": "El Cuatro",
+      "footer": "The Number Four",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a large friendly number 4 with four cute puppies around it."
+    },
+    {
+      "title": "Cuatro es un número.",
+      "footer": "Four is a number.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a big colorful number 4 made of stars."
+    },
+    {
+      "title": "Cuatro patas tiene el perro.",
+      "footer": "The dog has four legs.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a cute puppy standing showing four legs, each leg highlighted."
+    },
+    {
+      "title": "Cuatro ruedas tiene el carro.",
+      "footer": "The car has four wheels.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a cute colorful toy car showing four round wheels."
+    },
+    {
+      "title": "Cuatro estaciones del año.",
+      "footer": "Four seasons of the year.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, four quadrants showing spring, summer, fall, winter scenes."
+    },
+    {
+      "title": "Cuatro esquinas tiene.",
+      "footer": "It has four corners.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a colorful square with four highlighted corners, playful design."
+    },
+    {
+      "title": "¡Cuatro es genial!",
+      "footer": "Four is great!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child holding four fingers up proudly with four stars around."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "cuatro",
+      "en": "four",
+      "emoji": "4️⃣"
+    },
+    {
+      "es": "patas",
+      "en": "legs",
+      "emoji": "🐾"
+    },
+    {
+      "es": "ruedas",
+      "en": "wheels",
+      "emoji": "🛞"
+    },
+    {
+      "es": "estaciones",
+      "en": "seasons",
+      "emoji": "🍂"
+    },
+    {
+      "es": "esquinas",
+      "en": "corners",
+      "emoji": "🔷"
+    },
+    {
+      "es": "carro",
+      "en": "car",
+      "emoji": "🚗"
+    }
+  ],
+  "badge": {
+    "emoji": "4️⃣",
+    "name": "Maestro del Cuatro",
+    "nameEn": "Master of Four"
+  }
+}

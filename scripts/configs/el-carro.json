@@ -1,0 +1,60 @@
+{
+  "slug": "week-120-el-carro",
+  "title": "El Carro",
+  "subtitle": "The Car",
+  "theme": "transporte",
+  "week": 120,
+  "emoji": "🚗",
+  "meta_desc": "Learn about cars in Spanish (carro, ruedas, manejar, rápido) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish transportation, el carro Spanish, car in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Carro",
+      "footer": "Aprendiendo sobre el transporte",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A cute red car on a sunny road with trees."
+    },
+    {
+      "title": "El carro tiene ruedas.",
+      "footer": "The car has wheels.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A friendly cartoon-style car showing four round wheels on a road."
+    },
+    {
+      "title": "El carro es rápido.",
+      "footer": "The car is fast.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A red car driving fast on a highway with speed lines and happy faces."
+    },
+    {
+      "title": "Papá maneja el carro.",
+      "footer": "Dad drives the car.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A father driving a car with a child in the back seat, both smiling."
+    },
+    {
+      "title": "Vamos de paseo.",
+      "footer": "We go for a ride.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A family in a car driving through a beautiful countryside with mountains."
+    },
+    {
+      "title": "El carro tiene luces.",
+      "footer": "The car has lights.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A car with bright headlights on at dusk, friendly glowing lights."
+    },
+    {
+      "title": "¡Me gusta el carro!",
+      "footer": "I like the car!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child waving from the window of a colorful car."
+    }
+  ],
+  "vocab": [
+    { "es": "carro", "en": "car", "emoji": "🚗" },
+    { "es": "ruedas", "en": "wheels", "emoji": "🛞" },
+    { "es": "rápido", "en": "fast", "emoji": "💨" },
+    { "es": "manejar", "en": "to drive", "emoji": "🏎️" },
+    { "es": "luces", "en": "lights", "emoji": "💡" },
+    { "es": "paseo", "en": "ride", "emoji": "🛣️" }
+  ],
+  "badge": {
+    "emoji": "🚗",
+    "name": "Explorador de Carros",
+    "nameEn": "Car Explorer"
+  }
+}

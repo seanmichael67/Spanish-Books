@@ -1,0 +1,60 @@
+{
+  "slug": "week-121-el-autobus",
+  "title": "El Autobús",
+  "subtitle": "The Bus",
+  "theme": "transporte",
+  "week": 121,
+  "emoji": "🚌",
+  "meta_desc": "Learn about buses in Spanish (autobús, grande, pasajeros, parada) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish transportation, el autobús Spanish, bus in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Autobús",
+      "footer": "Aprendiendo sobre el transporte",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A big friendly yellow school bus on a sunny street."
+    },
+    {
+      "title": "El autobús es grande.",
+      "footer": "The bus is big.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A large yellow bus next to a small car showing the size difference."
+    },
+    {
+      "title": "El autobús tiene asientos.",
+      "footer": "The bus has seats.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Inside of a colorful bus with rows of seats and windows."
+    },
+    {
+      "title": "Los niños suben al autobús.",
+      "footer": "The children get on the bus.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Happy children climbing onto a school bus, waving."
+    },
+    {
+      "title": "El autobús va a la escuela.",
+      "footer": "The bus goes to school.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A school bus driving toward a cheerful school building."
+    },
+    {
+      "title": "El autobús para.",
+      "footer": "The bus stops.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A bus stopped at a bus stop sign, doors open."
+    },
+    {
+      "title": "¡Me gusta el autobús!",
+      "footer": "I like the bus!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Happy children looking out the bus windows waving goodbye."
+    }
+  ],
+  "vocab": [
+    { "es": "autobús", "en": "bus", "emoji": "🚌" },
+    { "es": "grande", "en": "big", "emoji": "📏" },
+    { "es": "asientos", "en": "seats", "emoji": "💺" },
+    { "es": "escuela", "en": "school", "emoji": "🏫" },
+    { "es": "parada", "en": "stop", "emoji": "🛑" },
+    { "es": "niños", "en": "children", "emoji": "👧" }
+  ],
+  "badge": {
+    "emoji": "🚌",
+    "name": "Campeón del Autobús",
+    "nameEn": "Bus Champion"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "week-96-la-guitarra",
+  "title": "La Guitarra",
+  "subtitle": "The Guitar",
+  "theme": "musica",
+  "week": 96,
+  "emoji": "🎸",
+  "meta_desc": "Learn about the guitar in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, la guitarra Spanish, guitar Spanish kids",
+  "pages": [
+    {
+      "title": "La Guitarra",
+      "footer": "The Guitar",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a beautiful acoustic guitar leaning against a chair in a cozy room."
+    },
+    {
+      "title": "La guitarra tiene cuerdas.",
+      "footer": "The guitar has strings.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, close-up of guitar strings vibrating with musical notes floating."
+    },
+    {
+      "title": "Yo toco la guitarra.",
+      "footer": "I play the guitar.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child happily strumming a small colorful guitar."
+    },
+    {
+      "title": "La guitarra suena bonito.",
+      "footer": "The guitar sounds pretty.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, musical notes flowing from a guitar, colorful and magical."
+    },
+    {
+      "title": "Canto con la guitarra.",
+      "footer": "I sing with the guitar.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child singing while someone plays guitar in a garden."
+    },
+    {
+      "title": "La guitarra es de madera.",
+      "footer": "The guitar is made of wood.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a warm wooden guitar with beautiful wood grain, close-up."
+    },
+    {
+      "title": "¡Me encanta la guitarra!",
+      "footer": "I love the guitar!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child hugging a small guitar with musical notes and hearts around."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "guitarra",
+      "en": "guitar",
+      "emoji": "🎸"
+    },
+    {
+      "es": "cuerdas",
+      "en": "strings",
+      "emoji": "🎵"
+    },
+    {
+      "es": "toco",
+      "en": "I play",
+      "emoji": "🎶"
+    },
+    {
+      "es": "suena",
+      "en": "sounds",
+      "emoji": "🔊"
+    },
+    {
+      "es": "canto",
+      "en": "I sing",
+      "emoji": "🎤"
+    },
+    {
+      "es": "madera",
+      "en": "wood",
+      "emoji": "🪵"
+    }
+  ],
+  "badge": {
+    "emoji": "🎸",
+    "name": "Guitarrista Estrella",
+    "nameEn": "Star Guitarist"
+  }
+}

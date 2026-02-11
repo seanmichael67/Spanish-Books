@@ -1,0 +1,60 @@
+{
+  "slug": "week-133-el-trueno",
+  "title": "El Trueno",
+  "subtitle": "Thunder",
+  "theme": "estaciones",
+  "week": 133,
+  "emoji": "⛈️",
+  "meta_desc": "Learn about thunder in Spanish (trueno, relámpago, tormenta, lluvia) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish weather, el trueno Spanish, thunder in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Trueno",
+      "footer": "Aprendiendo sobre el clima",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Dark clouds with a gentle lightning flash, not scary but dramatic."
+    },
+    {
+      "title": "Las nubes son oscuras.",
+      "footer": "The clouds are dark.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Big dark gray clouds gathering in the sky over a small town."
+    },
+    {
+      "title": "¡Boom! dice el trueno.",
+      "footer": "Boom! says the thunder.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child indoors looking out window at a thunderstorm, boom text visible."
+    },
+    {
+      "title": "Veo el relámpago.",
+      "footer": "I see the lightning.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A zigzag lightning bolt in the sky, bright and dramatic but not scary."
+    },
+    {
+      "title": "Llueve mucho.",
+      "footer": "It rains a lot.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Heavy rain falling outside while a cozy child watches from inside."
+    },
+    {
+      "title": "Estoy seguro adentro.",
+      "footer": "I am safe inside.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child cuddled with a blanket and teddy bear inside during a storm."
+    },
+    {
+      "title": "La tormenta ya pasó.",
+      "footer": "The storm has passed.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Sun coming out after a storm, puddles on ground, rainbow appearing."
+    }
+  ],
+  "vocab": [
+    { "es": "trueno", "en": "thunder", "emoji": "⛈️" },
+    { "es": "relámpago", "en": "lightning", "emoji": "⚡" },
+    { "es": "tormenta", "en": "storm", "emoji": "🌩️" },
+    { "es": "nubes", "en": "clouds", "emoji": "☁️" },
+    { "es": "lluvia", "en": "rain", "emoji": "🌧️" },
+    { "es": "seguro", "en": "safe", "emoji": "🏠" }
+  ],
+  "badge": {
+    "emoji": "⛈️",
+    "name": "Valiente de Tormentas",
+    "nameEn": "Storm Brave"
+  }
+}

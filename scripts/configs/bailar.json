@@ -1,0 +1,84 @@
+{
+  "slug": "week-99-bailar",
+  "title": "Bailar",
+  "subtitle": "Dancing",
+  "theme": "musica",
+  "week": 99,
+  "emoji": "💃",
+  "meta_desc": "Learn about dancing in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, bailar Spanish, dancing Spanish kids",
+  "pages": [
+    {
+      "title": "Bailar",
+      "footer": "Dancing",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child dancing joyfully with colorful ribbons swirling around."
+    },
+    {
+      "title": "Yo bailo.",
+      "footer": "I dance.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy child spinning and dancing in a field of flowers."
+    },
+    {
+      "title": "Bailamos juntos.",
+      "footer": "We dance together.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children dancing in a circle holding hands in a park."
+    },
+    {
+      "title": "Muevo mis manos.",
+      "footer": "I move my hands.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child waving hands gracefully while dancing, ribbons in hands."
+    },
+    {
+      "title": "Muevo mis pies.",
+      "footer": "I move my feet.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful dancing shoes tapping on a dance floor with sparkles."
+    },
+    {
+      "title": "La música me hace bailar.",
+      "footer": "Music makes me dance.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child dancing next to a radio with musical notes flowing out."
+    },
+    {
+      "title": "¡Bailar es divertido!",
+      "footer": "Dancing is fun!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children at a dance party with disco lights and confetti."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "bailar",
+      "en": "dance",
+      "emoji": "💃"
+    },
+    {
+      "es": "manos",
+      "en": "hands",
+      "emoji": "🙌"
+    },
+    {
+      "es": "pies",
+      "en": "feet",
+      "emoji": "🦶"
+    },
+    {
+      "es": "música",
+      "en": "music",
+      "emoji": "🎵"
+    },
+    {
+      "es": "mover",
+      "en": "move",
+      "emoji": "🏃"
+    },
+    {
+      "es": "juntos",
+      "en": "together",
+      "emoji": "👥"
+    }
+  ],
+  "badge": {
+    "emoji": "💃",
+    "name": "Bailarín Estrella",
+    "nameEn": "Star Dancer"
+  }
+}

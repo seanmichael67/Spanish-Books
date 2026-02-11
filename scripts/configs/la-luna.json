@@ -1,0 +1,84 @@
+{
+  "slug": "week-81-la-luna",
+  "title": "La Luna",
+  "subtitle": "The Moon",
+  "theme": "naturaleza",
+  "week": 81,
+  "emoji": "🌙",
+  "meta_desc": "Learn about the moon in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, la luna Spanish, moon Spanish kids",
+  "pages": [
+    {
+      "title": "La Luna",
+      "footer": "The Moon",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a beautiful full moon in a starry night sky over a quiet village."
+    },
+    {
+      "title": "La luna es redonda.",
+      "footer": "The moon is round.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a big round moon glowing softly in a dark blue sky."
+    },
+    {
+      "title": "La luna brilla de noche.",
+      "footer": "The moon shines at night.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, moonlight shining over a peaceful lake at night with reflections."
+    },
+    {
+      "title": "La luna es blanca.",
+      "footer": "The moon is white.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a white moon glowing against deep blue sky with gentle clouds."
+    },
+    {
+      "title": "Los animales ven la luna.",
+      "footer": "The animals see the moon.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, cute animals like owls and rabbits looking up at the moon in a forest."
+    },
+    {
+      "title": "La luna nos cuida.",
+      "footer": "The moon watches over us.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child sleeping peacefully in bed with moonlight coming through the window."
+    },
+    {
+      "title": "¡Buenas noches, luna!",
+      "footer": "Good night, moon!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child in pajamas waving at a friendly moon from their window."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "luna",
+      "en": "moon",
+      "emoji": "🌙"
+    },
+    {
+      "es": "redonda",
+      "en": "round",
+      "emoji": "⭕"
+    },
+    {
+      "es": "noche",
+      "en": "night",
+      "emoji": "🌃"
+    },
+    {
+      "es": "blanca",
+      "en": "white",
+      "emoji": "⬜"
+    },
+    {
+      "es": "brilla",
+      "en": "shines",
+      "emoji": "✨"
+    },
+    {
+      "es": "estrellas",
+      "en": "stars",
+      "emoji": "⭐"
+    }
+  ],
+  "badge": {
+    "emoji": "🌙",
+    "name": "Explorador Nocturno",
+    "nameEn": "Night Explorer"
+  }
+}

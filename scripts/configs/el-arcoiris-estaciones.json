@@ -1,0 +1,60 @@
+{
+  "slug": "week-132-el-arcoiris",
+  "title": "El Arcoíris",
+  "subtitle": "The Rainbow",
+  "theme": "estaciones",
+  "week": 132,
+  "emoji": "🌈",
+  "meta_desc": "Learn about rainbows in Spanish (arcoíris, colores, lluvia, sol) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish weather, el arcoíris Spanish, rainbow in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Arcoíris",
+      "footer": "Aprendiendo sobre el clima",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A beautiful rainbow arching across the sky after rain."
+    },
+    {
+      "title": "Después de la lluvia.",
+      "footer": "After the rain.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Rain clouds clearing to reveal sunshine and the start of a rainbow."
+    },
+    {
+      "title": "El arcoíris tiene colores.",
+      "footer": "The rainbow has colors.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A vivid rainbow with all seven colors stretching across a green meadow."
+    },
+    {
+      "title": "Rojo, naranja, amarillo.",
+      "footer": "Red, orange, yellow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Close-up of rainbow bands showing red, orange, and yellow colors vividly."
+    },
+    {
+      "title": "Verde, azul, morado.",
+      "footer": "Green, blue, purple.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Close-up of rainbow bands showing green, blue, and purple colors vividly."
+    },
+    {
+      "title": "El arcoíris es hermoso.",
+      "footer": "The rainbow is beautiful.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child gazing up at a stunning rainbow in awe, flowers below."
+    },
+    {
+      "title": "¡Me gusta el arcoíris!",
+      "footer": "I like the rainbow!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child painting a rainbow with finger paints, colorful and joyful."
+    }
+  ],
+  "vocab": [
+    { "es": "arcoíris", "en": "rainbow", "emoji": "🌈" },
+    { "es": "colores", "en": "colors", "emoji": "🎨" },
+    { "es": "lluvia", "en": "rain", "emoji": "🌧️" },
+    { "es": "sol", "en": "sun", "emoji": "☀️" },
+    { "es": "hermoso", "en": "beautiful", "emoji": "😍" },
+    { "es": "cielo", "en": "sky", "emoji": "🌤️" }
+  ],
+  "badge": {
+    "emoji": "🌈",
+    "name": "Explorador del Arcoíris",
+    "nameEn": "Rainbow Explorer"
+  }
+}

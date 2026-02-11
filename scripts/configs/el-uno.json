@@ -1,0 +1,84 @@
+{
+  "slug": "week-88-el-uno",
+  "title": "El Uno",
+  "subtitle": "The Number One",
+  "theme": "numeros",
+  "week": 88,
+  "emoji": "1️⃣",
+  "meta_desc": "Learn the number one in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el uno Spanish, number one Spanish kids",
+  "pages": [
+    {
+      "title": "El Uno",
+      "footer": "The Number One",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a large friendly number 1 surrounded by one apple, one star, one flower."
+    },
+    {
+      "title": "Uno es un número.",
+      "footer": "One is a number.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a big colorful number 1 standing proudly on a hill."
+    },
+    {
+      "title": "Tengo una manzana.",
+      "footer": "I have one apple.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, one big shiny red apple on a table, clearly just one."
+    },
+    {
+      "title": "Veo una estrella.",
+      "footer": "I see one star.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, one bright star shining alone in a twilight sky."
+    },
+    {
+      "title": "Una mariposa vuela.",
+      "footer": "One butterfly flies.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, one beautiful colorful butterfly flying over a flower garden."
+    },
+    {
+      "title": "Un sol en el cielo.",
+      "footer": "One sun in the sky.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, one happy sun in a bright blue sky over a meadow."
+    },
+    {
+      "title": "¡El uno es especial!",
+      "footer": "One is special!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child holding up one finger proudly, number 1 in the background."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "uno",
+      "en": "one",
+      "emoji": "1️⃣"
+    },
+    {
+      "es": "manzana",
+      "en": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "es": "estrella",
+      "en": "star",
+      "emoji": "⭐"
+    },
+    {
+      "es": "mariposa",
+      "en": "butterfly",
+      "emoji": "🦋"
+    },
+    {
+      "es": "sol",
+      "en": "sun",
+      "emoji": "☀️"
+    },
+    {
+      "es": "número",
+      "en": "number",
+      "emoji": "🔢"
+    }
+  ],
+  "badge": {
+    "emoji": "1️⃣",
+    "name": "Maestro del Uno",
+    "nameEn": "Master of One"
+  }
+}

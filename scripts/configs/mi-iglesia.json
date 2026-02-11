@@ -1,0 +1,84 @@
+{
+  "slug": "week-110-mi-iglesia",
+  "title": "Mi Iglesia",
+  "subtitle": "My Church",
+  "theme": "mi-mundo",
+  "week": 110,
+  "emoji": "⛪",
+  "meta_desc": "Learn about the church in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, mi iglesia Spanish, church Spanish kids",
+  "pages": [
+    {
+      "title": "Mi Iglesia",
+      "footer": "My Church",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a pretty church building with a bell tower, stained glass, and garden."
+    },
+    {
+      "title": "Vamos a la iglesia.",
+      "footer": "We go to church.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a family walking together toward a welcoming church on a sunny day."
+    },
+    {
+      "title": "La iglesia es grande.",
+      "footer": "The church is big.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a large friendly church building with tall doors and a cross on top."
+    },
+    {
+      "title": "Cantamos canciones.",
+      "footer": "We sing songs.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, people singing together in a church with musical notes floating."
+    },
+    {
+      "title": "Escuchamos historias.",
+      "footer": "We listen to stories.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children sitting and listening to a story being told in church."
+    },
+    {
+      "title": "Somos amables.",
+      "footer": "We are kind.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children sharing and being kind to each other outside a church."
+    },
+    {
+      "title": "¡Me gusta mi iglesia!",
+      "footer": "I like my church!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child waving happily in front of a pretty church with a garden."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "iglesia",
+      "en": "church",
+      "emoji": "⛪"
+    },
+    {
+      "es": "cantamos",
+      "en": "we sing",
+      "emoji": "🎶"
+    },
+    {
+      "es": "historias",
+      "en": "stories",
+      "emoji": "📖"
+    },
+    {
+      "es": "amables",
+      "en": "kind",
+      "emoji": "💕"
+    },
+    {
+      "es": "familia",
+      "en": "family",
+      "emoji": "👨‍👩‍👧"
+    },
+    {
+      "es": "campana",
+      "en": "bell",
+      "emoji": "🔔"
+    }
+  ],
+  "badge": {
+    "emoji": "⛪",
+    "name": "Corazón Bondadoso",
+    "nameEn": "Kind Heart"
+  }
+}

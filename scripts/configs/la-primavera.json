@@ -1,0 +1,60 @@
+{
+  "slug": "week-128-la-primavera",
+  "title": "La Primavera",
+  "subtitle": "Spring",
+  "theme": "estaciones",
+  "week": 128,
+  "emoji": "🌸",
+  "meta_desc": "Learn about spring in Spanish (primavera, flores, mariposas, lluvia) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish seasons, la primavera Spanish, spring in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "La Primavera",
+      "footer": "Aprendiendo sobre las estaciones",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A beautiful spring scene with cherry blossoms, green grass, and butterflies."
+    },
+    {
+      "title": "Las flores crecen.",
+      "footer": "The flowers grow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Colorful flowers sprouting from the ground in a spring garden."
+    },
+    {
+      "title": "Las mariposas vuelan.",
+      "footer": "The butterflies fly.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Colorful butterflies flying among spring flowers in a meadow."
+    },
+    {
+      "title": "Los pájaros cantan.",
+      "footer": "The birds sing.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Birds singing on tree branches with musical notes, spring blossoms."
+    },
+    {
+      "title": "Llueve en primavera.",
+      "footer": "It rains in spring.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child with a colorful umbrella in gentle spring rain, flowers growing."
+    },
+    {
+      "title": "Todo es verde.",
+      "footer": "Everything is green.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A lush green landscape with trees, grass, and a child playing."
+    },
+    {
+      "title": "¡Me gusta la primavera!",
+      "footer": "I like spring!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child in a spring garden surrounded by flowers and butterflies."
+    }
+  ],
+  "vocab": [
+    { "es": "primavera", "en": "spring", "emoji": "🌸" },
+    { "es": "flores", "en": "flowers", "emoji": "🌺" },
+    { "es": "mariposas", "en": "butterflies", "emoji": "🦋" },
+    { "es": "pájaros", "en": "birds", "emoji": "🐦" },
+    { "es": "lluvia", "en": "rain", "emoji": "🌧️" },
+    { "es": "verde", "en": "green", "emoji": "🟢" }
+  ],
+  "badge": {
+    "emoji": "🌸",
+    "name": "Explorador de Primavera",
+    "nameEn": "Spring Explorer"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "week-97-el-tambor",
+  "title": "El Tambor",
+  "subtitle": "The Drum",
+  "theme": "musica",
+  "week": 97,
+  "emoji": "🥁",
+  "meta_desc": "Learn about the drum in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el tambor Spanish, drum Spanish kids",
+  "pages": [
+    {
+      "title": "El Tambor",
+      "footer": "The Drum",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a bright colorful drum with drumsticks on top, fun and inviting."
+    },
+    {
+      "title": "El tambor hace ruido.",
+      "footer": "The drum makes noise.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a drum being hit with sound waves and musical notes radiating out."
+    },
+    {
+      "title": "Yo golpeo el tambor.",
+      "footer": "I hit the drum.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child happily hitting a colorful drum with drumsticks."
+    },
+    {
+      "title": "Pum, pum, pum.",
+      "footer": "Boom, boom, boom.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, big colorful letters PUM PUM PUM bouncing off a drum."
+    },
+    {
+      "title": "El tambor tiene ritmo.",
+      "footer": "The drum has rhythm.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children marching in a parade with drums, happy and rhythmic."
+    },
+    {
+      "title": "El tambor es redondo.",
+      "footer": "The drum is round.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a round drum seen from above showing its circular shape."
+    },
+    {
+      "title": "¡Me gusta el tambor!",
+      "footer": "I like the drum!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child with a big smile playing drums with confetti around."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "tambor",
+      "en": "drum",
+      "emoji": "🥁"
+    },
+    {
+      "es": "ruido",
+      "en": "noise",
+      "emoji": "🔊"
+    },
+    {
+      "es": "golpeo",
+      "en": "I hit",
+      "emoji": "💥"
+    },
+    {
+      "es": "ritmo",
+      "en": "rhythm",
+      "emoji": "🎶"
+    },
+    {
+      "es": "redondo",
+      "en": "round",
+      "emoji": "⭕"
+    },
+    {
+      "es": "fuerte",
+      "en": "loud",
+      "emoji": "📢"
+    }
+  ],
+  "badge": {
+    "emoji": "🥁",
+    "name": "Tamborilero Feliz",
+    "nameEn": "Happy Drummer"
+  }
+}

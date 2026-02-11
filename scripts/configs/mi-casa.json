@@ -1,0 +1,84 @@
+{
+  "slug": "week-104-mi-casa",
+  "title": "Mi Casa",
+  "subtitle": "My House",
+  "theme": "mi-mundo",
+  "week": 104,
+  "emoji": "🏠",
+  "meta_desc": "Learn about the house in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, mi casa Spanish, house Spanish kids",
+  "pages": [
+    {
+      "title": "Mi Casa",
+      "footer": "My House",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a cozy colorful house with a red roof, garden, and welcoming front door."
+    },
+    {
+      "title": "Mi casa es bonita.",
+      "footer": "My house is pretty.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a charming house with flowers in the windows and a white fence."
+    },
+    {
+      "title": "Tiene una puerta.",
+      "footer": "It has a door.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a friendly colorful front door of a house with a welcome mat."
+    },
+    {
+      "title": "Tiene ventanas.",
+      "footer": "It has windows.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, cute windows with curtains and flower boxes on a house wall."
+    },
+    {
+      "title": "Mi cuarto es aquí.",
+      "footer": "My room is here.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a cozy child's bedroom with colorful toys, bed, and a nightlight."
+    },
+    {
+      "title": "La cocina huele rico.",
+      "footer": "The kitchen smells good.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a warm kitchen with someone cooking, steam rising from a pot."
+    },
+    {
+      "title": "¡Me gusta mi casa!",
+      "footer": "I like my house!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy family standing in front of their cozy house, waving."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "casa",
+      "en": "house",
+      "emoji": "🏠"
+    },
+    {
+      "es": "puerta",
+      "en": "door",
+      "emoji": "🚪"
+    },
+    {
+      "es": "ventana",
+      "en": "window",
+      "emoji": "🪟"
+    },
+    {
+      "es": "cuarto",
+      "en": "room",
+      "emoji": "🛏️"
+    },
+    {
+      "es": "cocina",
+      "en": "kitchen",
+      "emoji": "🍳"
+    },
+    {
+      "es": "bonita",
+      "en": "pretty",
+      "emoji": "🌸"
+    }
+  ],
+  "badge": {
+    "emoji": "🏠",
+    "name": "Constructor de Casas",
+    "nameEn": "House Builder"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "week-117-las-orejas",
+  "title": "Las Orejas",
+  "subtitle": "The Ears",
+  "theme": "cuerpo",
+  "week": 117,
+  "emoji": "👂",
+  "meta_desc": "Learn about ears in Spanish (orejas, escuchar, música, sonidos) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish body parts, las orejas Spanish, ears in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Las Orejas",
+      "footer": "Aprendiendo sobre mi cuerpo",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child cupping their hand to their ear, listening carefully."
+    },
+    {
+      "title": "Tengo dos orejas.",
+      "footer": "I have two ears.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child pointing to both ears with a smile."
+    },
+    {
+      "title": "Mis orejas escuchan.",
+      "footer": "My ears listen.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child sitting quietly listening to birds singing in a tree."
+    },
+    {
+      "title": "Escucho la música.",
+      "footer": "I hear the music.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child listening to music with colorful musical notes floating around."
+    },
+    {
+      "title": "Escucho la lluvia.",
+      "footer": "I hear the rain.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child by a window listening to rain drops falling outside."
+    },
+    {
+      "title": "Escucho a mamá.",
+      "footer": "I hear mom.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child listening attentively to their mother reading a story."
+    },
+    {
+      "title": "¡Amo mis orejas!",
+      "footer": "I love my ears!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child with headphones listening to nature sounds outdoors."
+    }
+  ],
+  "vocab": [
+    { "es": "orejas", "en": "ears", "emoji": "👂" },
+    { "es": "escuchar", "en": "to listen", "emoji": "🎧" },
+    { "es": "música", "en": "music", "emoji": "🎵" },
+    { "es": "sonidos", "en": "sounds", "emoji": "🔊" },
+    { "es": "lluvia", "en": "rain", "emoji": "🌧️" },
+    { "es": "pájaros", "en": "birds", "emoji": "🐦" }
+  ],
+  "badge": {
+    "emoji": "👂",
+    "name": "Campeón de Orejas",
+    "nameEn": "Ears Champion"
+  }
+}

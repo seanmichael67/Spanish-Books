@@ -1,0 +1,84 @@
+{
+  "slug": "week-86-la-cascada",
+  "title": "La Cascada",
+  "subtitle": "The Waterfall",
+  "theme": "naturaleza",
+  "week": 86,
+  "emoji": "💧",
+  "meta_desc": "Learn about waterfalls in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, la cascada Spanish, waterfall Spanish kids",
+  "pages": [
+    {
+      "title": "La Cascada",
+      "footer": "The Waterfall",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a beautiful waterfall cascading down mossy rocks into a clear pool surrounded by lush greenery."
+    },
+    {
+      "title": "El agua cae.",
+      "footer": "The water falls.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, water flowing down rocks creating a gentle waterfall with mist."
+    },
+    {
+      "title": "La cascada hace ruido.",
+      "footer": "The waterfall makes noise.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a powerful waterfall splashing into rocks with spray and mist rising."
+    },
+    {
+      "title": "El agua es fría.",
+      "footer": "The water is cold.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, crystal clear cold water in a waterfall pool with small fish visible."
+    },
+    {
+      "title": "Hay un arcoíris.",
+      "footer": "There is a rainbow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a rainbow forming in the mist of a waterfall in a tropical forest."
+    },
+    {
+      "title": "Las plantas crecen.",
+      "footer": "Plants grow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, lush green ferns and flowers growing around a misty waterfall."
+    },
+    {
+      "title": "¡Qué linda cascada!",
+      "footer": "What a beautiful waterfall!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child marveling at a majestic waterfall in a green paradise."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "cascada",
+      "en": "waterfall",
+      "emoji": "💧"
+    },
+    {
+      "es": "agua",
+      "en": "water",
+      "emoji": "💦"
+    },
+    {
+      "es": "cae",
+      "en": "falls",
+      "emoji": "⬇️"
+    },
+    {
+      "es": "fría",
+      "en": "cold",
+      "emoji": "🥶"
+    },
+    {
+      "es": "arcoíris",
+      "en": "rainbow",
+      "emoji": "🌈"
+    },
+    {
+      "es": "plantas",
+      "en": "plants",
+      "emoji": "🌿"
+    }
+  ],
+  "badge": {
+    "emoji": "💧",
+    "name": "Explorador de Cascadas",
+    "nameEn": "Waterfall Explorer"
+  }
+}

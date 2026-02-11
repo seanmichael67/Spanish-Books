@@ -1,0 +1,84 @@
+{
+  "slug": "week-101-la-flauta",
+  "title": "La Flauta",
+  "subtitle": "The Flute",
+  "theme": "musica",
+  "week": 101,
+  "emoji": "🪈",
+  "meta_desc": "Learn about the flute in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, la flauta Spanish, flute Spanish kids",
+  "pages": [
+    {
+      "title": "La Flauta",
+      "footer": "The Flute",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a shiny silver flute on a velvet cloth with flowers around it."
+    },
+    {
+      "title": "La flauta es larga.",
+      "footer": "The flute is long.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a long silver flute being held horizontally by a child."
+    },
+    {
+      "title": "Yo soplo la flauta.",
+      "footer": "I blow the flute.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child gently blowing into a recorder flute with notes coming out."
+    },
+    {
+      "title": "La flauta suena suave.",
+      "footer": "The flute sounds soft.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, gentle pastel musical notes floating from a flute like butterflies."
+    },
+    {
+      "title": "Los pájaros escuchan.",
+      "footer": "The birds listen.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, birds perched on branches listening to a child playing flute in a garden."
+    },
+    {
+      "title": "Toco en el jardín.",
+      "footer": "I play in the garden.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child playing flute in a beautiful garden with flowers swaying."
+    },
+    {
+      "title": "¡La flauta es mágica!",
+      "footer": "The flute is magical!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child playing flute with magical sparkles and butterflies appearing."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "flauta",
+      "en": "flute",
+      "emoji": "🪈"
+    },
+    {
+      "es": "larga",
+      "en": "long",
+      "emoji": "📏"
+    },
+    {
+      "es": "soplo",
+      "en": "I blow",
+      "emoji": "💨"
+    },
+    {
+      "es": "suave",
+      "en": "soft",
+      "emoji": "🤫"
+    },
+    {
+      "es": "escuchan",
+      "en": "listen",
+      "emoji": "👂"
+    },
+    {
+      "es": "mágica",
+      "en": "magical",
+      "emoji": "✨"
+    }
+  ],
+  "badge": {
+    "emoji": "🪈",
+    "name": "Flautista Mágico",
+    "nameEn": "Magical Flutist"
+  }
+}

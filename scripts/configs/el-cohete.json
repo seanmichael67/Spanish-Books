@@ -1,0 +1,60 @@
+{
+  "slug": "week-126-el-cohete",
+  "title": "El Cohete",
+  "subtitle": "The Rocket",
+  "theme": "transporte",
+  "week": 126,
+  "emoji": "🚀",
+  "meta_desc": "Learn about rockets in Spanish (cohete, espacio, estrellas, luna) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish transportation, el cohete Spanish, rocket in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Cohete",
+      "footer": "Aprendiendo sobre el transporte",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A colorful rocket ship ready for launch on a launch pad."
+    },
+    {
+      "title": "El cohete va al espacio.",
+      "footer": "The rocket goes to space.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A rocket blasting off into space with fire and smoke below."
+    },
+    {
+      "title": "El cohete es muy rápido.",
+      "footer": "The rocket is very fast.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A rocket zooming through the stars leaving a trail of sparks."
+    },
+    {
+      "title": "Veo las estrellas.",
+      "footer": "I see the stars.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child astronaut in a rocket window looking at twinkling stars."
+    },
+    {
+      "title": "El cohete va a la luna.",
+      "footer": "The rocket goes to the moon.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A rocket approaching a smiling moon in a starry sky."
+    },
+    {
+      "title": "Tres, dos, uno... ¡despegue!",
+      "footer": "Three, two, one... liftoff!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A rocket launching with countdown numbers and excited children watching."
+    },
+    {
+      "title": "¡Me gusta el cohete!",
+      "footer": "I like the rocket!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child playing astronaut with a cardboard rocket ship."
+    }
+  ],
+  "vocab": [
+    { "es": "cohete", "en": "rocket", "emoji": "🚀" },
+    { "es": "espacio", "en": "space", "emoji": "🌌" },
+    { "es": "estrellas", "en": "stars", "emoji": "⭐" },
+    { "es": "luna", "en": "moon", "emoji": "🌙" },
+    { "es": "rápido", "en": "fast", "emoji": "💨" },
+    { "es": "despegue", "en": "liftoff", "emoji": "🔥" }
+  ],
+  "badge": {
+    "emoji": "🚀",
+    "name": "Astronauta Estrella",
+    "nameEn": "Star Astronaut"
+  }
+}

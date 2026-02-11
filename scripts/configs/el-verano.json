@@ -1,0 +1,60 @@
+{
+  "slug": "week-129-el-verano",
+  "title": "El Verano",
+  "subtitle": "Summer",
+  "theme": "estaciones",
+  "week": 129,
+  "emoji": "☀️",
+  "meta_desc": "Learn about summer in Spanish (verano, sol, playa, nadar) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish seasons, el verano Spanish, summer in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Verano",
+      "footer": "Aprendiendo sobre las estaciones",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A bright sunny summer day with a beach and blue ocean."
+    },
+    {
+      "title": "Hace mucho sol.",
+      "footer": "It is very sunny.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A big smiling sun shining over a summer landscape."
+    },
+    {
+      "title": "Vamos a la playa.",
+      "footer": "We go to the beach.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Children playing on a sandy beach with colorful towels and buckets."
+    },
+    {
+      "title": "Nadamos en el agua.",
+      "footer": "We swim in the water.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Happy children swimming in a pool with floaties and splashing."
+    },
+    {
+      "title": "Comemos helado.",
+      "footer": "We eat ice cream.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child happily eating a colorful ice cream cone on a summer day."
+    },
+    {
+      "title": "Hace mucho calor.",
+      "footer": "It is very hot.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child fanning themselves under a tree, sun shining bright."
+    },
+    {
+      "title": "¡Me gusta el verano!",
+      "footer": "I like summer!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child building a sandcastle at the beach with a big sun."
+    }
+  ],
+  "vocab": [
+    { "es": "verano", "en": "summer", "emoji": "☀️" },
+    { "es": "sol", "en": "sun", "emoji": "🌞" },
+    { "es": "playa", "en": "beach", "emoji": "🏖️" },
+    { "es": "nadar", "en": "to swim", "emoji": "🏊" },
+    { "es": "helado", "en": "ice cream", "emoji": "🍦" },
+    { "es": "calor", "en": "heat", "emoji": "🌡️" }
+  ],
+  "badge": {
+    "emoji": "☀️",
+    "name": "Campeón del Verano",
+    "nameEn": "Summer Champion"
+  }
+}

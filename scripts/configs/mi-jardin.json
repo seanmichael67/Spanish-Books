@@ -1,0 +1,84 @@
+{
+  "slug": "week-107-mi-jardin",
+  "title": "Mi Jardín",
+  "subtitle": "My Garden",
+  "theme": "mi-mundo",
+  "week": 107,
+  "emoji": "🌻",
+  "meta_desc": "Learn about the garden in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, mi jardín Spanish, garden Spanish kids",
+  "pages": [
+    {
+      "title": "Mi Jardín",
+      "footer": "My Garden",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a beautiful garden with colorful flowers, vegetables, and a small fence."
+    },
+    {
+      "title": "Yo siembro semillas.",
+      "footer": "I plant seeds.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child planting seeds in soil with small gardening tools."
+    },
+    {
+      "title": "Las plantas crecen.",
+      "footer": "The plants grow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, small green sprouts growing from the soil in a garden bed."
+    },
+    {
+      "title": "Riego las flores.",
+      "footer": "I water the flowers.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child watering flowers with a small watering can, water sparkling."
+    },
+    {
+      "title": "Las mariposas vienen.",
+      "footer": "The butterflies come.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful butterflies visiting flowers in a sunny garden."
+    },
+    {
+      "title": "Hay tomates rojos.",
+      "footer": "There are red tomatoes.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, ripe red tomatoes growing on a vine in a garden."
+    },
+    {
+      "title": "¡Mi jardín es hermoso!",
+      "footer": "My garden is beautiful!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child standing proudly in a blooming colorful garden."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "jardín",
+      "en": "garden",
+      "emoji": "🌻"
+    },
+    {
+      "es": "semillas",
+      "en": "seeds",
+      "emoji": "🌱"
+    },
+    {
+      "es": "plantas",
+      "en": "plants",
+      "emoji": "🌿"
+    },
+    {
+      "es": "riego",
+      "en": "I water",
+      "emoji": "💧"
+    },
+    {
+      "es": "mariposas",
+      "en": "butterflies",
+      "emoji": "🦋"
+    },
+    {
+      "es": "tomates",
+      "en": "tomatoes",
+      "emoji": "🍅"
+    }
+  ],
+  "badge": {
+    "emoji": "🌻",
+    "name": "Jardinero Feliz",
+    "nameEn": "Happy Gardener"
+  }
+}

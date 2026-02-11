@@ -1,0 +1,84 @@
+{
+  "slug": "week-87-el-volcan",
+  "title": "El Volcán",
+  "subtitle": "The Volcano",
+  "theme": "naturaleza",
+  "week": 87,
+  "emoji": "🌋",
+  "meta_desc": "Learn about volcanoes in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el volcán Spanish, volcano Spanish kids",
+  "pages": [
+    {
+      "title": "El Volcán",
+      "footer": "The Volcano",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a majestic volcano with a pointy top against a blue sky, friendly and not scary."
+    },
+    {
+      "title": "El volcán es grande.",
+      "footer": "The volcano is big.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a very large volcano towering over a small village, peaceful scene."
+    },
+    {
+      "title": "El volcán tiene humo.",
+      "footer": "The volcano has smoke.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, gentle white smoke puffs coming from the top of a green volcano."
+    },
+    {
+      "title": "La lava es roja.",
+      "footer": "The lava is red.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, gentle glowing orange-red lava flowing slowly down a volcano, not scary."
+    },
+    {
+      "title": "El volcán duerme.",
+      "footer": "The volcano sleeps.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a peaceful sleeping volcano covered in green grass and flowers."
+    },
+    {
+      "title": "Hay rocas aquí.",
+      "footer": "There are rocks here.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, interesting volcanic rocks of different shapes around a volcano base."
+    },
+    {
+      "title": "¡Qué fuerte el volcán!",
+      "footer": "How strong the volcano is!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a mighty but friendly-looking volcano with a rainbow over it."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "volcán",
+      "en": "volcano",
+      "emoji": "🌋"
+    },
+    {
+      "es": "grande",
+      "en": "big",
+      "emoji": "🔶"
+    },
+    {
+      "es": "humo",
+      "en": "smoke",
+      "emoji": "💨"
+    },
+    {
+      "es": "lava",
+      "en": "lava",
+      "emoji": "🔴"
+    },
+    {
+      "es": "rocas",
+      "en": "rocks",
+      "emoji": "🪨"
+    },
+    {
+      "es": "fuerte",
+      "en": "strong",
+      "emoji": "💪"
+    }
+  ],
+  "badge": {
+    "emoji": "🌋",
+    "name": "Científico del Volcán",
+    "nameEn": "Volcano Scientist"
+  }
+}

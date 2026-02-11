@@ -1,0 +1,60 @@
+{
+  "slug": "week-125-el-barco",
+  "title": "El Barco",
+  "subtitle": "The Boat",
+  "theme": "transporte",
+  "week": 125,
+  "emoji": "🚢",
+  "meta_desc": "Learn about boats in Spanish (barco, navegar, mar, olas) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish transportation, el barco Spanish, boat in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Barco",
+      "footer": "Aprendiendo sobre el transporte",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A cute sailboat on a calm blue sea with a sunny sky."
+    },
+    {
+      "title": "El barco navega.",
+      "footer": "The boat sails.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A sailboat gliding on gentle blue waves with wind in its sails."
+    },
+    {
+      "title": "El barco va por el mar.",
+      "footer": "The boat goes on the sea.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A colorful boat on a vast blue ocean with dolphins jumping nearby."
+    },
+    {
+      "title": "El barco tiene velas.",
+      "footer": "The boat has sails.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A boat with big white and colorful sails billowing in the wind."
+    },
+    {
+      "title": "Veo las olas.",
+      "footer": "I see the waves.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child on a boat looking at gentle blue waves splashing."
+    },
+    {
+      "title": "El barco llega al puerto.",
+      "footer": "The boat arrives at port.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A boat arriving at a cute harbor with a lighthouse."
+    },
+    {
+      "title": "¡Me gusta el barco!",
+      "footer": "I like the boat!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child playing with a toy boat in a pond."
+    }
+  ],
+  "vocab": [
+    { "es": "barco", "en": "boat", "emoji": "🚢" },
+    { "es": "navegar", "en": "to sail", "emoji": "⛵" },
+    { "es": "mar", "en": "sea", "emoji": "🌊" },
+    { "es": "olas", "en": "waves", "emoji": "🌊" },
+    { "es": "velas", "en": "sails", "emoji": "🏳️" },
+    { "es": "puerto", "en": "port", "emoji": "⚓" }
+  ],
+  "badge": {
+    "emoji": "🚢",
+    "name": "Capitán Estrella",
+    "nameEn": "Star Captain"
+  }
+}

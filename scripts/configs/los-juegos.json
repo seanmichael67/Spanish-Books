@@ -1,0 +1,84 @@
+{
+  "slug": "week-103-los-juegos",
+  "title": "Los Juegos",
+  "subtitle": "Games",
+  "theme": "musica",
+  "week": 103,
+  "emoji": "🎮",
+  "meta_desc": "Learn about games in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, los juegos Spanish, games Spanish kids",
+  "pages": [
+    {
+      "title": "Los Juegos",
+      "footer": "Games",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful board games, balls, and toys arranged on a playroom floor."
+    },
+    {
+      "title": "Me gusta jugar.",
+      "footer": "I like to play.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy child surrounded by various fun games and toys."
+    },
+    {
+      "title": "Jugamos a la pelota.",
+      "footer": "We play ball.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children kicking a colorful ball in a green field."
+    },
+    {
+      "title": "Jugamos a escondernos.",
+      "footer": "We play hide and seek.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child hiding behind a tree while another counts, in a park."
+    },
+    {
+      "title": "Los bloques son divertidos.",
+      "footer": "Blocks are fun.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child building a tall tower with colorful wooden blocks."
+    },
+    {
+      "title": "Jugamos con amigos.",
+      "footer": "We play with friends.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a group of children playing a board game together, laughing."
+    },
+    {
+      "title": "¡Jugar es lo mejor!",
+      "footer": "Playing is the best!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children celebrating and jumping with joy surrounded by games and toys."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "juegos",
+      "en": "games",
+      "emoji": "🎮"
+    },
+    {
+      "es": "jugar",
+      "en": "play",
+      "emoji": "⚽"
+    },
+    {
+      "es": "pelota",
+      "en": "ball",
+      "emoji": "🏐"
+    },
+    {
+      "es": "bloques",
+      "en": "blocks",
+      "emoji": "🧱"
+    },
+    {
+      "es": "amigos",
+      "en": "friends",
+      "emoji": "👫"
+    },
+    {
+      "es": "divertido",
+      "en": "fun",
+      "emoji": "🎉"
+    }
+  ],
+  "badge": {
+    "emoji": "🎮",
+    "name": "Campeón de Juegos",
+    "nameEn": "Game Champion"
+  }
+}

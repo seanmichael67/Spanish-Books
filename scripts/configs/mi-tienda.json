@@ -1,0 +1,84 @@
+{
+  "slug": "week-108-mi-tienda",
+  "title": "Mi Tienda",
+  "subtitle": "My Store",
+  "theme": "mi-mundo",
+  "week": 108,
+  "emoji": "🏪",
+  "meta_desc": "Learn about the store in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, mi tienda Spanish, store Spanish kids",
+  "pages": [
+    {
+      "title": "Mi Tienda",
+      "footer": "My Store",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a friendly neighborhood store with a colorful awning and fruits displayed."
+    },
+    {
+      "title": "Vamos a la tienda.",
+      "footer": "Let's go to the store.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a parent and child walking toward a cute neighborhood store."
+    },
+    {
+      "title": "Hay frutas frescas.",
+      "footer": "There are fresh fruits.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful fresh fruits arranged beautifully on store shelves."
+    },
+    {
+      "title": "Hay pan caliente.",
+      "footer": "There is warm bread.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a bakery section with warm golden bread loaves on display."
+    },
+    {
+      "title": "Yo escojo una manzana.",
+      "footer": "I choose an apple.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child reaching for a red apple from a fruit display in a store."
+    },
+    {
+      "title": "Pagamos en la caja.",
+      "footer": "We pay at the register.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a friendly cashier at a register with a child watching."
+    },
+    {
+      "title": "¡Me gusta la tienda!",
+      "footer": "I like the store!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy child leaving the store with a small grocery bag."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "tienda",
+      "en": "store",
+      "emoji": "🏪"
+    },
+    {
+      "es": "frutas",
+      "en": "fruits",
+      "emoji": "🍎"
+    },
+    {
+      "es": "pan",
+      "en": "bread",
+      "emoji": "🍞"
+    },
+    {
+      "es": "escojo",
+      "en": "I choose",
+      "emoji": "👆"
+    },
+    {
+      "es": "pagamos",
+      "en": "we pay",
+      "emoji": "💰"
+    },
+    {
+      "es": "bolsa",
+      "en": "bag",
+      "emoji": "🛍️"
+    }
+  ],
+  "badge": {
+    "emoji": "🏪",
+    "name": "Comprador Estrella",
+    "nameEn": "Star Shopper"
+  }
+}

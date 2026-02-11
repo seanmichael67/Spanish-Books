@@ -1,0 +1,84 @@
+{
+  "slug": "week-105-mi-escuela",
+  "title": "Mi Escuela",
+  "subtitle": "My School",
+  "theme": "mi-mundo",
+  "week": 105,
+  "emoji": "🏫",
+  "meta_desc": "Learn about school in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, mi escuela Spanish, school Spanish kids",
+  "pages": [
+    {
+      "title": "Mi Escuela",
+      "footer": "My School",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a cheerful school building with a playground and children arriving."
+    },
+    {
+      "title": "Voy a la escuela.",
+      "footer": "I go to school.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child walking to school with a backpack, waving to friends."
+    },
+    {
+      "title": "Mi maestra es amable.",
+      "footer": "My teacher is kind.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a kind teacher reading a book to children sitting in a circle."
+    },
+    {
+      "title": "Aprendo muchas cosas.",
+      "footer": "I learn many things.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child at a desk with books, crayons, and a globe, learning."
+    },
+    {
+      "title": "Juego en el recreo.",
+      "footer": "I play at recess.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children playing on a playground with slides and swings at recess."
+    },
+    {
+      "title": "Tengo muchos amigos.",
+      "footer": "I have many friends.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, diverse children smiling together in a classroom, friends."
+    },
+    {
+      "title": "¡Me gusta mi escuela!",
+      "footer": "I like my school!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy child at school entrance giving a thumbs up."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "escuela",
+      "en": "school",
+      "emoji": "🏫"
+    },
+    {
+      "es": "maestra",
+      "en": "teacher",
+      "emoji": "👩‍🏫"
+    },
+    {
+      "es": "aprendo",
+      "en": "I learn",
+      "emoji": "📚"
+    },
+    {
+      "es": "recreo",
+      "en": "recess",
+      "emoji": "⛹️"
+    },
+    {
+      "es": "amigos",
+      "en": "friends",
+      "emoji": "👫"
+    },
+    {
+      "es": "libros",
+      "en": "books",
+      "emoji": "📖"
+    }
+  ],
+  "badge": {
+    "emoji": "🏫",
+    "name": "Estudiante Estrella",
+    "nameEn": "Star Student"
+  }
+}

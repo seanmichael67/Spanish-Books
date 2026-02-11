@@ -1,0 +1,84 @@
+{
+  "slug": "week-82-las-estrellas",
+  "title": "Las Estrellas",
+  "subtitle": "The Stars",
+  "theme": "naturaleza",
+  "week": 82,
+  "emoji": "⭐",
+  "meta_desc": "Learn about stars in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, las estrellas Spanish, stars Spanish kids",
+  "pages": [
+    {
+      "title": "Las Estrellas",
+      "footer": "The Stars",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a magical night sky full of bright twinkling stars over a meadow."
+    },
+    {
+      "title": "Las estrellas brillan.",
+      "footer": "The stars shine.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, thousands of sparkling stars twinkling in a deep blue sky."
+    },
+    {
+      "title": "Las estrellas son muchas.",
+      "footer": "There are many stars.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a vast sky filled with countless stars, milky way visible, child looking up."
+    },
+    {
+      "title": "Una estrella fugaz.",
+      "footer": "A shooting star.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a bright shooting star streaking across a night sky over a hill."
+    },
+    {
+      "title": "Las estrellas hacen formas.",
+      "footer": "Stars make shapes.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, constellations connected by glowing lines in the sky, a bear shape visible."
+    },
+    {
+      "title": "Yo cuento estrellas.",
+      "footer": "I count stars.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child lying on grass pointing at stars and counting them."
+    },
+    {
+      "title": "¡Me gustan las estrellas!",
+      "footer": "I like the stars!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy child hugging a star-shaped pillow under a starry sky."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "estrellas",
+      "en": "stars",
+      "emoji": "⭐"
+    },
+    {
+      "es": "brillan",
+      "en": "shine",
+      "emoji": "✨"
+    },
+    {
+      "es": "muchas",
+      "en": "many",
+      "emoji": "🔢"
+    },
+    {
+      "es": "fugaz",
+      "en": "shooting",
+      "emoji": "💫"
+    },
+    {
+      "es": "formas",
+      "en": "shapes",
+      "emoji": "🔷"
+    },
+    {
+      "es": "cuento",
+      "en": "I count",
+      "emoji": "🔢"
+    }
+  ],
+  "badge": {
+    "emoji": "⭐",
+    "name": "Cazador de Estrellas",
+    "nameEn": "Star Hunter"
+  }
+}

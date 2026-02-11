@@ -1,0 +1,60 @@
+{
+  "slug": "week-114-los-ojos",
+  "title": "Los Ojos",
+  "subtitle": "The Eyes",
+  "theme": "cuerpo",
+  "week": 114,
+  "emoji": "👀",
+  "meta_desc": "Learn about eyes in Spanish (ojos, ver, mirar, colores) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish body parts, los ojos Spanish, eyes in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Los Ojos",
+      "footer": "Aprendiendo sobre mi cuerpo",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child with big bright curious eyes looking at the viewer."
+    },
+    {
+      "title": "Tengo dos ojos.",
+      "footer": "I have two eyes.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A smiling child pointing to their two eyes."
+    },
+    {
+      "title": "Mis ojos pueden ver.",
+      "footer": "My eyes can see.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child looking at a beautiful rainbow in the sky with wonder."
+    },
+    {
+      "title": "Veo los colores.",
+      "footer": "I see the colors.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child looking at colorful flowers in a garden, red yellow blue pink."
+    },
+    {
+      "title": "Veo las estrellas.",
+      "footer": "I see the stars.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child looking up at a starry night sky with wonder and amazement."
+    },
+    {
+      "title": "Mis ojos parpadean.",
+      "footer": "My eyes blink.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A cute child blinking with one eye closed and one open, playful expression."
+    },
+    {
+      "title": "¡Amo mis ojos!",
+      "footer": "I love my eyes!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child with sparkling eyes looking through a magnifying glass at a butterfly."
+    }
+  ],
+  "vocab": [
+    { "es": "ojos", "en": "eyes", "emoji": "👀" },
+    { "es": "ver", "en": "to see", "emoji": "👁️" },
+    { "es": "mirar", "en": "to look", "emoji": "🔍" },
+    { "es": "colores", "en": "colors", "emoji": "🌈" },
+    { "es": "estrellas", "en": "stars", "emoji": "⭐" },
+    { "es": "parpadear", "en": "to blink", "emoji": "😉" }
+  ],
+  "badge": {
+    "emoji": "👀",
+    "name": "Explorador de Ojos",
+    "nameEn": "Eyes Explorer"
+  }
+}

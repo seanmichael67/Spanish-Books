@@ -1,0 +1,84 @@
+{
+  "slug": "week-85-el-desierto",
+  "title": "El Desierto",
+  "subtitle": "The Desert",
+  "theme": "naturaleza",
+  "week": 85,
+  "emoji": "🏜️",
+  "meta_desc": "Learn about the desert in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el desierto Spanish, desert Spanish kids",
+  "pages": [
+    {
+      "title": "El Desierto",
+      "footer": "The Desert",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a vast beautiful desert with golden sand dunes under a bright blue sky."
+    },
+    {
+      "title": "El desierto es grande.",
+      "footer": "The desert is big.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, endless sand dunes stretching to the horizon under a big sky."
+    },
+    {
+      "title": "Hay cactus aquí.",
+      "footer": "There are cacti here.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, friendly-looking saguaro cacti standing tall in a sandy desert."
+    },
+    {
+      "title": "El sol calienta.",
+      "footer": "The sun heats up.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, bright sun beating down on desert sand with heat shimmer."
+    },
+    {
+      "title": "Un lagarto corre.",
+      "footer": "A lizard runs.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a cute colorful lizard running across desert sand near a rock."
+    },
+    {
+      "title": "La arena es suave.",
+      "footer": "The sand is soft.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, soft golden sand ripples in the desert with gentle wind patterns."
+    },
+    {
+      "title": "¡El desierto es bonito!",
+      "footer": "The desert is pretty!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a stunning desert sunset with orange and purple sky over sand dunes."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "desierto",
+      "en": "desert",
+      "emoji": "🏜️"
+    },
+    {
+      "es": "grande",
+      "en": "big",
+      "emoji": "🔶"
+    },
+    {
+      "es": "cactus",
+      "en": "cactus",
+      "emoji": "🌵"
+    },
+    {
+      "es": "sol",
+      "en": "sun",
+      "emoji": "☀️"
+    },
+    {
+      "es": "lagarto",
+      "en": "lizard",
+      "emoji": "🦎"
+    },
+    {
+      "es": "arena",
+      "en": "sand",
+      "emoji": "⏳"
+    }
+  ],
+  "badge": {
+    "emoji": "🏜️",
+    "name": "Aventurero del Desierto",
+    "nameEn": "Desert Adventurer"
+  }
+}

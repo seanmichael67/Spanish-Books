@@ -1,0 +1,60 @@
+{
+  "slug": "week-131-el-invierno",
+  "title": "El Invierno",
+  "subtitle": "Winter",
+  "theme": "estaciones",
+  "week": 131,
+  "emoji": "❄️",
+  "meta_desc": "Learn about winter in Spanish (invierno, nieve, frío, muñeco) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish seasons, el invierno Spanish, winter in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Invierno",
+      "footer": "Aprendiendo sobre las estaciones",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A beautiful winter scene with snow-covered trees and a cozy village."
+    },
+    {
+      "title": "Cae la nieve.",
+      "footer": "The snow falls.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Snowflakes gently falling from the sky over a snowy landscape."
+    },
+    {
+      "title": "Hace mucho frío.",
+      "footer": "It is very cold.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child bundled up in warm winter clothes, scarf and mittens."
+    },
+    {
+      "title": "Hago un muñeco de nieve.",
+      "footer": "I make a snowman.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child building a cheerful snowman with a carrot nose and hat."
+    },
+    {
+      "title": "Jugamos con la nieve.",
+      "footer": "We play with the snow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Children having a snowball fight in a snowy yard, laughing."
+    },
+    {
+      "title": "Tomo chocolate caliente.",
+      "footer": "I drink hot chocolate.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child sitting by a fireplace holding a mug of hot chocolate with marshmallows."
+    },
+    {
+      "title": "¡Me gusta el invierno!",
+      "footer": "I like winter!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child sledding down a snowy hill with a big smile."
+    }
+  ],
+  "vocab": [
+    { "es": "invierno", "en": "winter", "emoji": "❄️" },
+    { "es": "nieve", "en": "snow", "emoji": "☃️" },
+    { "es": "frío", "en": "cold", "emoji": "🥶" },
+    { "es": "muñeco", "en": "snowman", "emoji": "⛄" },
+    { "es": "guantes", "en": "gloves", "emoji": "🧤" },
+    { "es": "chocolate", "en": "chocolate", "emoji": "☕" }
+  ],
+  "badge": {
+    "emoji": "❄️",
+    "name": "Campeón del Invierno",
+    "nameEn": "Winter Champion"
+  }
+}

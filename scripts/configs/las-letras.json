@@ -1,0 +1,84 @@
+{
+  "slug": "week-93-las-letras",
+  "title": "Las Letras",
+  "subtitle": "The Letters",
+  "theme": "numeros",
+  "week": 93,
+  "emoji": "🔤",
+  "meta_desc": "Learn about letters in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, las letras Spanish, letters Spanish kids",
+  "pages": [
+    {
+      "title": "Las Letras",
+      "footer": "The Letters",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful alphabet letters floating playfully in the air, A B C prominent."
+    },
+    {
+      "title": "A es la primera.",
+      "footer": "A is the first.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a big colorful letter A with an apple (manzana) next to it."
+    },
+    {
+      "title": "B es de bebé.",
+      "footer": "B is for baby.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a big colorful letter B with a cute baby next to it."
+    },
+    {
+      "title": "C es de casa.",
+      "footer": "C is for house.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a big colorful letter C with a cute house next to it."
+    },
+    {
+      "title": "Las letras hacen palabras.",
+      "footer": "Letters make words.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, letters coming together to spell simple words like SOL and MAMA."
+    },
+    {
+      "title": "Yo aprendo las letras.",
+      "footer": "I learn the letters.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child happily writing letters on a colorful chalkboard."
+    },
+    {
+      "title": "¡Me gustan las letras!",
+      "footer": "I like letters!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child surrounded by floating colorful letters, reaching for them joyfully."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "letras",
+      "en": "letters",
+      "emoji": "🔤"
+    },
+    {
+      "es": "primera",
+      "en": "first",
+      "emoji": "1️⃣"
+    },
+    {
+      "es": "palabras",
+      "en": "words",
+      "emoji": "💬"
+    },
+    {
+      "es": "aprendo",
+      "en": "I learn",
+      "emoji": "📚"
+    },
+    {
+      "es": "escribo",
+      "en": "I write",
+      "emoji": "✏️"
+    },
+    {
+      "es": "leo",
+      "en": "I read",
+      "emoji": "📖"
+    }
+  ],
+  "badge": {
+    "emoji": "🔤",
+    "name": "Amigo de las Letras",
+    "nameEn": "Letter Friend"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "week-130-el-otono",
+  "title": "El Otoño",
+  "subtitle": "Autumn",
+  "theme": "estaciones",
+  "week": 130,
+  "emoji": "🍂",
+  "meta_desc": "Learn about autumn in Spanish (otoño, hojas, viento, calabaza) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish seasons, el otoño Spanish, autumn in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Otoño",
+      "footer": "Aprendiendo sobre las estaciones",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A beautiful autumn scene with orange red yellow leaves falling from trees."
+    },
+    {
+      "title": "Las hojas caen.",
+      "footer": "The leaves fall.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Colorful autumn leaves gently falling from trees, orange red gold."
+    },
+    {
+      "title": "Las hojas cambian de color.",
+      "footer": "The leaves change color.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A tree with leaves in different colors, green turning to orange and red."
+    },
+    {
+      "title": "Hace viento.",
+      "footer": "It is windy.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. Wind blowing leaves around while a child plays in the breeze."
+    },
+    {
+      "title": "Veo las calabazas.",
+      "footer": "I see the pumpkins.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child in a pumpkin patch with big orange pumpkins."
+    },
+    {
+      "title": "Me pongo mi suéter.",
+      "footer": "I put on my sweater.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child putting on a cozy sweater on a cool autumn day."
+    },
+    {
+      "title": "¡Me gusta el otoño!",
+      "footer": "I like autumn!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child jumping into a pile of colorful autumn leaves."
+    }
+  ],
+  "vocab": [
+    { "es": "otoño", "en": "autumn", "emoji": "🍂" },
+    { "es": "hojas", "en": "leaves", "emoji": "🍁" },
+    { "es": "viento", "en": "wind", "emoji": "💨" },
+    { "es": "calabaza", "en": "pumpkin", "emoji": "🎃" },
+    { "es": "suéter", "en": "sweater", "emoji": "🧥" },
+    { "es": "fresco", "en": "cool", "emoji": "🌡️" }
+  ],
+  "badge": {
+    "emoji": "🍂",
+    "name": "Explorador del Otoño",
+    "nameEn": "Autumn Explorer"
+  }
+}

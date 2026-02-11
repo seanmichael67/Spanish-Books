@@ -1,0 +1,84 @@
+{
+  "slug": "week-84-el-bosque",
+  "title": "El Bosque",
+  "subtitle": "The Forest",
+  "theme": "naturaleza",
+  "week": 84,
+  "emoji": "🌲",
+  "meta_desc": "Learn about the forest in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el bosque Spanish, forest Spanish kids",
+  "pages": [
+    {
+      "title": "El Bosque",
+      "footer": "The Forest",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a magical enchanted forest with tall green trees and sunlight filtering through leaves."
+    },
+    {
+      "title": "El bosque tiene árboles.",
+      "footer": "The forest has trees.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, many tall trees in a lush green forest with a winding path."
+    },
+    {
+      "title": "Hay flores en el bosque.",
+      "footer": "There are flowers in the forest.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful wildflowers growing on the forest floor among tree trunks."
+    },
+    {
+      "title": "Los pájaros cantan.",
+      "footer": "The birds sing.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, cute colorful birds singing on tree branches in a sunlit forest."
+    },
+    {
+      "title": "Una ardilla salta.",
+      "footer": "A squirrel jumps.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a cute fluffy squirrel jumping between tree branches in a forest."
+    },
+    {
+      "title": "El bosque es verde.",
+      "footer": "The forest is green.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a lush green forest with ferns, moss, and bright green leaves everywhere."
+    },
+    {
+      "title": "¡Me encanta el bosque!",
+      "footer": "I love the forest!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy child exploring a friendly forest with butterflies and sunshine."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "bosque",
+      "en": "forest",
+      "emoji": "🌲"
+    },
+    {
+      "es": "árboles",
+      "en": "trees",
+      "emoji": "🌳"
+    },
+    {
+      "es": "flores",
+      "en": "flowers",
+      "emoji": "🌸"
+    },
+    {
+      "es": "pájaros",
+      "en": "birds",
+      "emoji": "🐦"
+    },
+    {
+      "es": "ardilla",
+      "en": "squirrel",
+      "emoji": "🐿️"
+    },
+    {
+      "es": "verde",
+      "en": "green",
+      "emoji": "🟢"
+    }
+  ],
+  "badge": {
+    "emoji": "🌲",
+    "name": "Guardián del Bosque",
+    "nameEn": "Forest Guardian"
+  }
+}

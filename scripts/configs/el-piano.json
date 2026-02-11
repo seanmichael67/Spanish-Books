@@ -1,0 +1,84 @@
+{
+  "slug": "week-100-el-piano",
+  "title": "El Piano",
+  "subtitle": "The Piano",
+  "theme": "musica",
+  "week": 100,
+  "emoji": "🎹",
+  "meta_desc": "Learn about the piano in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el piano Spanish, piano Spanish kids",
+  "pages": [
+    {
+      "title": "El Piano",
+      "footer": "The Piano",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a beautiful grand piano in a sunlit room with flowers nearby."
+    },
+    {
+      "title": "El piano tiene teclas.",
+      "footer": "The piano has keys.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, close-up of black and white piano keys with gentle light."
+    },
+    {
+      "title": "Las teclas son blancas y negras.",
+      "footer": "The keys are white and black.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, alternating black and white piano keys with colorful notes floating."
+    },
+    {
+      "title": "Yo toco el piano.",
+      "footer": "I play the piano.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child sitting at a piano playing with small hands on keys."
+    },
+    {
+      "title": "El piano suena dulce.",
+      "footer": "The piano sounds sweet.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, musical notes flowing from a piano like a gentle river of colors."
+    },
+    {
+      "title": "Practico todos los días.",
+      "footer": "I practice every day.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child practicing piano with a happy expression, music book open."
+    },
+    {
+      "title": "¡Me encanta el piano!",
+      "footer": "I love the piano!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child taking a bow after playing piano with family clapping."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "piano",
+      "en": "piano",
+      "emoji": "🎹"
+    },
+    {
+      "es": "teclas",
+      "en": "keys",
+      "emoji": "⬜"
+    },
+    {
+      "es": "blancas",
+      "en": "white",
+      "emoji": "⬜"
+    },
+    {
+      "es": "negras",
+      "en": "black",
+      "emoji": "⬛"
+    },
+    {
+      "es": "toco",
+      "en": "I play",
+      "emoji": "🎶"
+    },
+    {
+      "es": "dulce",
+      "en": "sweet",
+      "emoji": "🍬"
+    }
+  ],
+  "badge": {
+    "emoji": "🎹",
+    "name": "Pianista Brillante",
+    "nameEn": "Brilliant Pianist"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "week-109-mi-biblioteca",
+  "title": "Mi Biblioteca",
+  "subtitle": "My Library",
+  "theme": "mi-mundo",
+  "week": 109,
+  "emoji": "📚",
+  "meta_desc": "Learn about the library in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, mi biblioteca Spanish, library Spanish kids",
+  "pages": [
+    {
+      "title": "Mi Biblioteca",
+      "footer": "My Library",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a cozy library with tall bookshelves and comfortable reading nooks."
+    },
+    {
+      "title": "Hay muchos libros.",
+      "footer": "There are many books.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, colorful books arranged on library shelves, all different sizes."
+    },
+    {
+      "title": "Yo leo un cuento.",
+      "footer": "I read a story.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child sitting in a cozy chair reading a picture book."
+    },
+    {
+      "title": "Los libros son mágicos.",
+      "footer": "Books are magical.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, an open book with magical scenes rising from its pages, sparkles."
+    },
+    {
+      "title": "Leo con mi mamá.",
+      "footer": "I read with my mom.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a mother and child reading together on a cozy library couch."
+    },
+    {
+      "title": "Escojo mi libro.",
+      "footer": "I choose my book.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child reaching for a book on a low library shelf."
+    },
+    {
+      "title": "¡Me encantan los libros!",
+      "footer": "I love books!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy child hugging a stack of colorful books in a library."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "biblioteca",
+      "en": "library",
+      "emoji": "📚"
+    },
+    {
+      "es": "libros",
+      "en": "books",
+      "emoji": "📖"
+    },
+    {
+      "es": "leo",
+      "en": "I read",
+      "emoji": "👀"
+    },
+    {
+      "es": "cuento",
+      "en": "story",
+      "emoji": "📕"
+    },
+    {
+      "es": "mágicos",
+      "en": "magical",
+      "emoji": "✨"
+    },
+    {
+      "es": "escojo",
+      "en": "I choose",
+      "emoji": "👆"
+    }
+  ],
+  "badge": {
+    "emoji": "📚",
+    "name": "Ratón de Biblioteca",
+    "nameEn": "Bookworm"
+  }
+}

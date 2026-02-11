@@ -29,10 +29,10 @@ def generate_images(config_path):
             'generationConfig': {'responseModalities': ['IMAGE', 'TEXT']}
         }).encode()
         
-        for attempt in range(3):
+        for attempt in range(10):
             try:
                 req = urllib.request.Request(url, data=payload, headers={'Content-Type': 'application/json'})
-                with urllib.request.urlopen(req, timeout=60) as resp:
+                with urllib.request.urlopen(req, timeout=120) as resp:
                     data = json.loads(resp.read())
                 
                 for part in data.get('candidates', [{}])[0].get('content', {}).get('parts', []):
@@ -44,12 +44,13 @@ def generate_images(config_path):
                         break
                 else:
                     print(f"  ⚠️  Page {i}: No image in response, attempt {attempt+1}")
-                    time.sleep(5)
+                    time.sleep(10)
                     continue
                 break
             except Exception as e:
-                print(f"  ❌ Page {i} attempt {attempt+1}: {e}")
-                time.sleep(10)
+                wait = min(30 + attempt * 15, 120)
+                print(f"  ❌ Page {i} attempt {attempt+1}: {e} (waiting {wait}s)")
+                time.sleep(wait)
     
     print(f"✅ Done: {slug}")
 

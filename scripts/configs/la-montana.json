@@ -1,0 +1,84 @@
+{
+  "slug": "week-83-la-montana",
+  "title": "La Montaña",
+  "subtitle": "The Mountain",
+  "theme": "naturaleza",
+  "week": 83,
+  "emoji": "🏔️",
+  "meta_desc": "Learn about mountains in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, la montaña Spanish, mountain Spanish kids",
+  "pages": [
+    {
+      "title": "La Montaña",
+      "footer": "The Mountain",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a majestic mountain with a snowy peak under a blue sky with fluffy clouds."
+    },
+    {
+      "title": "La montaña es alta.",
+      "footer": "The mountain is tall.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a very tall mountain reaching into the clouds, tiny trees at the base."
+    },
+    {
+      "title": "La montaña tiene nieve.",
+      "footer": "The mountain has snow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a snow-covered mountain peak sparkling in sunlight."
+    },
+    {
+      "title": "Hay árboles en la montaña.",
+      "footer": "There are trees on the mountain.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a mountain covered with green pine trees and wildflowers."
+    },
+    {
+      "title": "Los animales viven aquí.",
+      "footer": "Animals live here.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, cute mountain animals like deer and eagles on a mountainside."
+    },
+    {
+      "title": "Yo subo la montaña.",
+      "footer": "I climb the mountain.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child happily hiking up a mountain trail with a small backpack."
+    },
+    {
+      "title": "¡Qué linda montaña!",
+      "footer": "What a beautiful mountain!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child at the top of a mountain looking at a beautiful panoramic view."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "montaña",
+      "en": "mountain",
+      "emoji": "🏔️"
+    },
+    {
+      "es": "alta",
+      "en": "tall",
+      "emoji": "📏"
+    },
+    {
+      "es": "nieve",
+      "en": "snow",
+      "emoji": "❄️"
+    },
+    {
+      "es": "árboles",
+      "en": "trees",
+      "emoji": "🌲"
+    },
+    {
+      "es": "animales",
+      "en": "animals",
+      "emoji": "🦌"
+    },
+    {
+      "es": "subo",
+      "en": "I climb",
+      "emoji": "🧗"
+    }
+  ],
+  "badge": {
+    "emoji": "🏔️",
+    "name": "Escalador Valiente",
+    "nameEn": "Brave Climber"
+  }
+}

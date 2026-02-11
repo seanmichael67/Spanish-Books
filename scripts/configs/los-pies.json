@@ -1,0 +1,60 @@
+{
+  "slug": "week-113-los-pies",
+  "title": "Los Pies",
+  "subtitle": "The Feet",
+  "theme": "cuerpo",
+  "week": 113,
+  "emoji": "🦶",
+  "meta_desc": "Learn about feet in Spanish (pies, caminar, correr, saltar) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish body parts, los pies Spanish, feet in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Los Pies",
+      "footer": "Aprendiendo sobre mi cuerpo",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy toddler sitting on grass looking at their bare feet."
+    },
+    {
+      "title": "Tengo dos pies.",
+      "footer": "I have two feet.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child wiggling their two bare feet while sitting on a colorful mat."
+    },
+    {
+      "title": "Mis pies pueden caminar.",
+      "footer": "My feet can walk.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child walking happily along a garden path with flowers."
+    },
+    {
+      "title": "Mis pies pueden correr.",
+      "footer": "My feet can run.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child running joyfully through a meadow with butterflies."
+    },
+    {
+      "title": "Mis pies pueden saltar.",
+      "footer": "My feet can jump.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child jumping in puddles with rain boots, splashing water."
+    },
+    {
+      "title": "Mis pies pueden bailar.",
+      "footer": "My feet can dance.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child dancing with feet moving on a colorful dance floor with musical notes."
+    },
+    {
+      "title": "¡Amo mis pies!",
+      "footer": "I love my feet!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child stomping in autumn leaves with their feet."
+    }
+  ],
+  "vocab": [
+    { "es": "pies", "en": "feet", "emoji": "🦶" },
+    { "es": "caminar", "en": "to walk", "emoji": "🚶" },
+    { "es": "correr", "en": "to run", "emoji": "🏃" },
+    { "es": "saltar", "en": "to jump", "emoji": "⬆️" },
+    { "es": "bailar", "en": "to dance", "emoji": "💃" },
+    { "es": "zapatos", "en": "shoes", "emoji": "👟" }
+  ],
+  "badge": {
+    "emoji": "🦶",
+    "name": "Campeón de Pies",
+    "nameEn": "Feet Champion"
+  }
+}

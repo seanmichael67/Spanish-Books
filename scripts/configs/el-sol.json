@@ -1,0 +1,84 @@
+{
+  "slug": "week-80-el-sol",
+  "title": "El Sol",
+  "subtitle": "The Sun",
+  "theme": "naturaleza",
+  "week": 80,
+  "emoji": "☀️",
+  "meta_desc": "Learn about the sun in Spanish with audio pronunciation. Ages 2-5.",
+  "keywords": "learn Spanish preschool, el sol Spanish, sun Spanish kids, bilingual children books",
+  "pages": [
+    {
+      "title": "El Sol",
+      "footer": "The Sun",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a bright friendly sun rising over green hills with a small village below, morning light."
+    },
+    {
+      "title": "El sol brilla.",
+      "footer": "The sun shines.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a radiant sun shining brightly in a blue sky with fluffy clouds, rays of warm light."
+    },
+    {
+      "title": "El sol es amarillo.",
+      "footer": "The sun is yellow.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a happy yellow sun with gentle rays illuminating a field of sunflowers."
+    },
+    {
+      "title": "El sol da calor.",
+      "footer": "The sun gives warmth.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, children playing in a sunny park, feeling warm sunshine on their faces."
+    },
+    {
+      "title": "El sol sale temprano.",
+      "footer": "The sun rises early.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a beautiful sunrise over mountains with orange and pink sky, birds flying."
+    },
+    {
+      "title": "El sol se esconde.",
+      "footer": "The sun hides.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a sunset scene with the sun dipping below the horizon, purple and orange sky."
+    },
+    {
+      "title": "¡Gracias, sol!",
+      "footer": "Thank you, sun!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors, a child waving at a friendly smiling sun in a bright sky with a rainbow."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "sol",
+      "en": "sun",
+      "emoji": "☀️"
+    },
+    {
+      "es": "brilla",
+      "en": "shines",
+      "emoji": "✨"
+    },
+    {
+      "es": "amarillo",
+      "en": "yellow",
+      "emoji": "🟡"
+    },
+    {
+      "es": "calor",
+      "en": "warmth",
+      "emoji": "🔥"
+    },
+    {
+      "es": "temprano",
+      "en": "early",
+      "emoji": "🌅"
+    },
+    {
+      "es": "cielo",
+      "en": "sky",
+      "emoji": "🌤️"
+    }
+  ],
+  "badge": {
+    "emoji": "☀️",
+    "name": "Amigo del Sol",
+    "nameEn": "Friend of the Sun"
+  }
+}

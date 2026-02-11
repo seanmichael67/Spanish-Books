@@ -1,0 +1,60 @@
+{
+  "slug": "week-122-el-avion",
+  "title": "El Avión",
+  "subtitle": "The Airplane",
+  "theme": "transporte",
+  "week": 122,
+  "emoji": "✈️",
+  "meta_desc": "Learn about airplanes in Spanish (avión, volar, cielo, alas) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish transportation, el avión Spanish, airplane in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "El Avión",
+      "footer": "Aprendiendo sobre el transporte",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A friendly airplane flying through a blue sky with fluffy clouds."
+    },
+    {
+      "title": "El avión vuela.",
+      "footer": "The airplane flies.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. An airplane soaring high above the clouds in a bright sky."
+    },
+    {
+      "title": "El avión tiene alas.",
+      "footer": "The airplane has wings.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A cute airplane showing its big wide wings spread out."
+    },
+    {
+      "title": "El avión va muy alto.",
+      "footer": "The airplane goes very high.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. An airplane flying above mountains and tiny houses below."
+    },
+    {
+      "title": "Veo el avión en el cielo.",
+      "footer": "I see the airplane in the sky.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A child pointing up at an airplane leaving a white trail in the blue sky."
+    },
+    {
+      "title": "El avión aterriza.",
+      "footer": "The airplane lands.",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. An airplane landing on a runway at a small friendly airport."
+    },
+    {
+      "title": "¡Me gusta el avión!",
+      "footer": "I like the airplane!",
+      "prompt": "Warm, child-friendly watercolor illustration, landscape 16:9 format, soft pastel colors. A happy child playing with a toy airplane, imagining flying."
+    }
+  ],
+  "vocab": [
+    { "es": "avión", "en": "airplane", "emoji": "✈️" },
+    { "es": "volar", "en": "to fly", "emoji": "🕊️" },
+    { "es": "alas", "en": "wings", "emoji": "🪽" },
+    { "es": "cielo", "en": "sky", "emoji": "🌤️" },
+    { "es": "alto", "en": "high", "emoji": "⬆️" },
+    { "es": "nubes", "en": "clouds", "emoji": "☁️" }
+  ],
+  "badge": {
+    "emoji": "✈️",
+    "name": "Piloto Estrella",
+    "nameEn": "Star Pilot"
+  }
+}
