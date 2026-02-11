@@ -93,6 +93,14 @@ const BOOKS = [
   { slug: 'week-69-el-abuelo', emoji: '👴', week: 69, title: 'El Abuelo', subtitle: 'Grandfather', theme: 'familia', ready: true },
   { slug: 'week-70-el-bebe', emoji: '👶', week: 70, title: 'El Bebé', subtitle: 'The Baby', theme: 'familia', ready: true },
   { slug: 'week-71-la-familia', emoji: '👨‍👩‍👧‍👦', week: 71, title: 'La Familia', subtitle: 'The Family', theme: 'familia', ready: true },
+  { slug: 'week-72-mi-amigo', emoji: '👫', week: 72, title: 'Mi Amigo', subtitle: 'My Friend', theme: 'amigos', ready: true },
+  { slug: 'week-73-jugamos', emoji: '🎮', week: 73, title: 'Jugamos', subtitle: 'We Play', theme: 'amigos', ready: true },
+  { slug: 'week-74-compartir', emoji: '🤝', week: 74, title: 'Compartir', subtitle: 'Sharing', theme: 'amigos', ready: true },
+  { slug: 'week-75-ayudar', emoji: '🙏', week: 75, title: 'Ayudar', subtitle: 'Helping', theme: 'amigos', ready: true },
+  { slug: 'week-76-escuchar', emoji: '👂', week: 76, title: 'Escuchar', subtitle: 'Listening', theme: 'amigos', ready: true },
+  { slug: 'week-77-reir', emoji: '😄', week: 77, title: 'Reír', subtitle: 'Laughing', theme: 'amigos', ready: true },
+  { slug: 'week-78-perdonar', emoji: '💕', week: 78, title: 'Perdonar', subtitle: 'Forgiving', theme: 'amigos', ready: true },
+  { slug: 'week-79-juntos', emoji: '🤗', week: 79, title: 'Juntos', subtitle: 'Together', theme: 'amigos', ready: true },
 ];
 
 const THEMES = [
@@ -245,6 +253,15 @@ app.get('/', (req, res) => {
     });
     // Default filter on load
     filterBooks('animales');
+
+    // Tell parent iframe our height so it can auto-resize (no scrollbar)
+    function reportHeight() {
+      window.parent.postMessage({ type: 'resize', height: document.body.scrollHeight + 40 }, '*');
+    }
+    window.addEventListener('load', reportHeight);
+    new MutationObserver(reportHeight).observe(document.body, { childList: true, subtree: true });
+    // Also report after filter changes
+    document.querySelectorAll('.theme-btn').forEach(btn => btn.addEventListener('click', () => setTimeout(reportHeight, 100)));
   </script>
 </body>
 </html>`);

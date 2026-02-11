@@ -1,0 +1,84 @@
+{
+  "slug": "week-78-perdonar",
+  "title": "Perdonar",
+  "subtitle": "Forgiving",
+  "theme": "amigos",
+  "week": 78,
+  "emoji": "💕",
+  "meta_desc": "Learn about forgiving in Spanish (perdonar, disculpa, amigos, bondad) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish forgive, perdonar Spanish, forgive in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Perdonar",
+      "footer": "Aprendiendo sobre amistad",
+      "prompt": "Two children reconciling after a disagreement, one saying sorry and the other accepting, showing forgiveness, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Digo 'lo siento'.",
+      "footer": "I say 'I'm sorry'.",
+      "prompt": "A child apologizing to another child with sincere expression, showing remorse and kindness, professional children photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Acepto la disculpa.",
+      "footer": "I accept the apology.",
+      "prompt": "A child accepting an apology with a forgiving smile, showing understanding, professional children photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Perdonar es bondad.",
+      "footer": "Forgiving is kindness.",
+      "prompt": "Two children hugging after making up, showing forgiveness and kindness, professional children photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Todos cometemos errores.",
+      "footer": "Everyone makes mistakes.",
+      "prompt": "Children showing understanding when someone accidentally knocks over blocks, supportive and forgiving, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Seguimos siendo amigos.",
+      "footer": "We stay friends.",
+      "prompt": "Two children playing happily together again after resolving conflict, friendship restored, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Perdonar es importante!",
+      "footer": "Forgiving is important!",
+      "prompt": "Friends together again, smiling and happy after forgiving, strong renewed friendship, professional children photography, cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "perdonar",
+      "en": "to forgive",
+      "emoji": "💕"
+    },
+    {
+      "es": "lo siento",
+      "en": "I'm sorry",
+      "emoji": "😔"
+    },
+    {
+      "es": "disculpa",
+      "en": "apology",
+      "emoji": "🙏"
+    },
+    {
+      "es": "bondad",
+      "en": "kindness",
+      "emoji": "❤️"
+    },
+    {
+      "es": "errores",
+      "en": "mistakes",
+      "emoji": "🤷"
+    },
+    {
+      "es": "amigos",
+      "en": "friends",
+      "emoji": "👫"
+    }
+  ],
+  "badge": {
+    "emoji": "💕",
+    "name": "Explorador de Perdón",
+    "nameEn": "Forgiveness Explorer"
+  }
+}

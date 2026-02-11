@@ -1,0 +1,84 @@
+{
+  "slug": "week-73-jugamos",
+  "title": "Jugamos",
+  "subtitle": "We Play",
+  "theme": "amigos",
+  "week": 73,
+  "emoji": "🎮",
+  "meta_desc": "Learn about playing in Spanish (jugamos, pelota, parque, diversion) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish play, jugamos Spanish, play in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Jugamos",
+      "footer": "Aprendiendo sobre amistad",
+      "prompt": "Children playing happily together in a bright playroom, various toys around, joyful and engaged, professional children photography, natural bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Jugamos con la pelota.",
+      "footer": "We play with the ball.",
+      "prompt": "Children playing together with a colorful ball outdoors, passing and throwing, active and fun, professional children photography, sunny outdoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Jugamos en el parque.",
+      "footer": "We play in the park.",
+      "prompt": "Children playing on playground equipment together, swings and slides, outdoor fun, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Jugamos con bloques.",
+      "footer": "We play with blocks.",
+      "prompt": "Children building together with colorful blocks, focused and creative, cooperative play, professional children photography, indoor natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Jugamos a las escondidas.",
+      "footer": "We play hide and seek.",
+      "prompt": "Children playing hide and seek in a safe outdoor area, one hiding behind tree, playful and fun, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Jugamos juntos.",
+      "footer": "We play together.",
+      "prompt": "Group of diverse children playing together happily, various activities, showing cooperation and fun, professional children photography, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Jugar es divertido!",
+      "footer": "Playing is fun!",
+      "prompt": "Children jumping and playing with pure joy, big smiles and laughter, energetic and happy, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "jugamos",
+      "en": "we play",
+      "emoji": "🎮"
+    },
+    {
+      "es": "pelota",
+      "en": "ball",
+      "emoji": "⚽"
+    },
+    {
+      "es": "parque",
+      "en": "park",
+      "emoji": "🌳"
+    },
+    {
+      "es": "bloques",
+      "en": "blocks",
+      "emoji": "🧱"
+    },
+    {
+      "es": "escondidas",
+      "en": "hide and seek",
+      "emoji": "🙈"
+    },
+    {
+      "es": "divertido",
+      "en": "fun",
+      "emoji": "🎉"
+    }
+  ],
+  "badge": {
+    "emoji": "🎮",
+    "name": "Explorador de Juegos",
+    "nameEn": "Play Explorer"
+  }
+}

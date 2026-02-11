@@ -1,0 +1,84 @@
+{
+  "slug": "week-77-reir",
+  "title": "Reír",
+  "subtitle": "Laughing",
+  "theme": "amigos",
+  "week": 77,
+  "emoji": "😄",
+  "meta_desc": "Learn about laughing in Spanish (reír, alegría, chistes, sonrisa) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish laugh, reír Spanish, laugh in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Reír",
+      "footer": "Aprendiendo sobre amistad",
+      "prompt": "Children laughing joyfully together, genuine happy expressions, contagious laughter, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Reímos juntos.",
+      "footer": "We laugh together.",
+      "prompt": "A group of diverse children all laughing together at something funny, happy and united, professional children photography, cheerful bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Reír es alegría.",
+      "footer": "Laughing is joy.",
+      "prompt": "Children expressing pure joy through laughter, big genuine smiles, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Los chistes nos hacen reír.",
+      "footer": "Jokes make us laugh.",
+      "prompt": "One child telling a funny joke while others laugh, playful and fun moment, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Una sonrisa grande.",
+      "footer": "A big smile.",
+      "prompt": "A child with the biggest brightest smile showing happiness and joy, professional children photography, natural bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Reír con amigos.",
+      "footer": "Laughing with friends.",
+      "prompt": "Best friends laughing together over something silly, bonding through laughter, professional children photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Reír es divertido!",
+      "footer": "Laughing is fun!",
+      "prompt": "Children in fits of giggles, pure happiness and fun, professional children photography, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "reír",
+      "en": "to laugh",
+      "emoji": "😄"
+    },
+    {
+      "es": "alegría",
+      "en": "joy",
+      "emoji": "🌟"
+    },
+    {
+      "es": "chistes",
+      "en": "jokes",
+      "emoji": "🤪"
+    },
+    {
+      "es": "sonrisa",
+      "en": "smile",
+      "emoji": "😊"
+    },
+    {
+      "es": "juntos",
+      "en": "together",
+      "emoji": "🤝"
+    },
+    {
+      "es": "divertido",
+      "en": "fun",
+      "emoji": "🎉"
+    }
+  ],
+  "badge": {
+    "emoji": "😄",
+    "name": "Explorador de Risa",
+    "nameEn": "Laughter Explorer"
+  }
+}

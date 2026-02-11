@@ -1,0 +1,84 @@
+{
+  "slug": "week-74-compartir",
+  "title": "Compartir",
+  "subtitle": "Sharing",
+  "theme": "amigos",
+  "week": 74,
+  "emoji": "🤝",
+  "meta_desc": "Learn about sharing in Spanish (compartir, juguetes, amable, generoso) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish sharing, compartir Spanish, share in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Compartir",
+      "footer": "Aprendiendo sobre amistad",
+      "prompt": "Two children sharing toys happily, passing a toy between them, showing kindness and generosity, professional children photography, natural bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Comparto mis juguetes.",
+      "footer": "I share my toys.",
+      "prompt": "A child offering their favorite toy to another child with a smile, generous gesture, professional children photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Comparto mi merienda.",
+      "footer": "I share my snack.",
+      "prompt": "Children sharing healthy snacks together at a table, fruit and crackers, friendly and kind, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Compartir es ser amable.",
+      "footer": "Sharing is being kind.",
+      "prompt": "Two children happily sharing crayons while coloring together, showing kindness and cooperation, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Compartir hace felices.",
+      "footer": "Sharing makes us happy.",
+      "prompt": "Group of children all smiling while sharing and playing together, joyful atmosphere, professional children photography, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Compartir es importante.",
+      "footer": "Sharing is important.",
+      "prompt": "Children demonstrating good sharing behavior with books and toys, positive social interaction, professional children photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Me gusta compartir!",
+      "footer": "I like to share!",
+      "prompt": "A child with a big smile sharing their toys with friends, happy and generous, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "compartir",
+      "en": "to share",
+      "emoji": "🤝"
+    },
+    {
+      "es": "juguetes",
+      "en": "toys",
+      "emoji": "🧸"
+    },
+    {
+      "es": "merienda",
+      "en": "snack",
+      "emoji": "🍎"
+    },
+    {
+      "es": "amable",
+      "en": "kind",
+      "emoji": "💝"
+    },
+    {
+      "es": "felices",
+      "en": "happy",
+      "emoji": "😊"
+    },
+    {
+      "es": "importante",
+      "en": "important",
+      "emoji": "⭐"
+    }
+  ],
+  "badge": {
+    "emoji": "🤝",
+    "name": "Explorador de Compartir",
+    "nameEn": "Sharing Explorer"
+  }
+}

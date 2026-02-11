@@ -1,0 +1,84 @@
+{
+  "slug": "week-79-juntos",
+  "title": "Juntos",
+  "subtitle": "Together",
+  "theme": "amigos",
+  "week": 79,
+  "emoji": "🤗",
+  "meta_desc": "Learn about togetherness in Spanish (juntos, equipo, unidos, amistad) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish together, juntos Spanish, together in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Juntos",
+      "footer": "Aprendiendo sobre amistad",
+      "prompt": "A group of diverse children standing together with arms around each other, showing unity and friendship, professional children photography, natural bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Jugamos juntos.",
+      "footer": "We play together.",
+      "prompt": "Children playing cooperatively together with shared toys, happy and engaged, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Trabajamos juntos.",
+      "footer": "We work together.",
+      "prompt": "Children collaborating on a project together, teamwork and cooperation, professional children photography, bright indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Somos un equipo.",
+      "footer": "We are a team.",
+      "prompt": "Children working as a team to accomplish something together, coordinated and united, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Juntos somos más fuertes.",
+      "footer": "Together we are stronger.",
+      "prompt": "Children helping each other accomplish a difficult task, showing strength in unity, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Juntos somos felices.",
+      "footer": "Together we are happy.",
+      "prompt": "A happy group of children all smiling together, radiating joy and friendship, professional children photography, cheerful bright lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Amistad para siempre!",
+      "footer": "Friendship forever!",
+      "prompt": "Best friends in a group hug, showing strong lasting friendship bonds, professional children photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "juntos",
+      "en": "together",
+      "emoji": "🤗"
+    },
+    {
+      "es": "jugamos",
+      "en": "we play",
+      "emoji": "🎮"
+    },
+    {
+      "es": "equipo",
+      "en": "team",
+      "emoji": "👥"
+    },
+    {
+      "es": "fuertes",
+      "en": "strong",
+      "emoji": "💪"
+    },
+    {
+      "es": "felices",
+      "en": "happy",
+      "emoji": "😊"
+    },
+    {
+      "es": "amistad",
+      "en": "friendship",
+      "emoji": "💞"
+    }
+  ],
+  "badge": {
+    "emoji": "🤗",
+    "name": "Explorador de Juntos",
+    "nameEn": "Together Explorer"
+  }
+}

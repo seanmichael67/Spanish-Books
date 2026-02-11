@@ -1,0 +1,84 @@
+{
+  "slug": "week-75-ayudar",
+  "title": "Ayudar",
+  "subtitle": "Helping",
+  "theme": "amigos",
+  "week": 75,
+  "emoji": "🙏",
+  "meta_desc": "Learn about helping in Spanish (ayudar, amigo, cargar, limpiar) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish helping, ayudar Spanish, help in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Ayudar",
+      "footer": "Aprendiendo sobre amistad",
+      "prompt": "One child helping another child stand up after falling, showing kindness and support, professional children photography, natural outdoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Ayudo a mi amigo.",
+      "footer": "I help my friend.",
+      "prompt": "A child helping their friend complete a puzzle, working together cooperatively, professional children photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Ayudo a cargar.",
+      "footer": "I help to carry.",
+      "prompt": "Two children carrying books or toys together, teamwork and cooperation, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Ayudo a limpiar.",
+      "footer": "I help to clean up.",
+      "prompt": "Children working together to clean up toys and put them away, responsible and helpful, professional children photography, bright indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Ayudar es bueno.",
+      "footer": "Helping is good.",
+      "prompt": "A child helping another child with a task, showing positive helping behavior, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Ayudar hace amigos.",
+      "footer": "Helping makes friends.",
+      "prompt": "Two children becoming friends through helping each other, smiling and bonding, professional children photography, warm natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Me gusta ayudar!",
+      "footer": "I like to help!",
+      "prompt": "A child with a proud smile after helping someone, feeling good about helping, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "ayudar",
+      "en": "to help",
+      "emoji": "🙏"
+    },
+    {
+      "es": "amigo",
+      "en": "friend",
+      "emoji": "👫"
+    },
+    {
+      "es": "cargar",
+      "en": "to carry",
+      "emoji": "📦"
+    },
+    {
+      "es": "limpiar",
+      "en": "to clean",
+      "emoji": "🧹"
+    },
+    {
+      "es": "bueno",
+      "en": "good",
+      "emoji": "👍"
+    },
+    {
+      "es": "amigos",
+      "en": "friends",
+      "emoji": "🤝"
+    }
+  ],
+  "badge": {
+    "emoji": "🙏",
+    "name": "Explorador de Ayuda",
+    "nameEn": "Helping Explorer"
+  }
+}

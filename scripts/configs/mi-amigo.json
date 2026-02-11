@@ -1,0 +1,84 @@
+{
+  "slug": "week-72-mi-amigo",
+  "title": "Mi Amigo",
+  "subtitle": "My Friend",
+  "theme": "amigos",
+  "week": 72,
+  "emoji": "👫",
+  "meta_desc": "Learn about friends in Spanish (amigo, especial, divertido, feliz) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish friends, mi amigo Spanish, friend in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Mi Amigo",
+      "footer": "Aprendiendo sobre amistad",
+      "prompt": "Two young diverse children standing together smiling warmly, showing friendship, happy and friendly, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi amigo es especial.",
+      "footer": "My friend is special.",
+      "prompt": "Two children sitting together looking at each other happily, showing special bond, warm friendship moment, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi amigo es amable.",
+      "footer": "My friend is kind.",
+      "prompt": "One child helping another child with a kind gesture, showing kindness and care, professional children photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi amigo es divertido.",
+      "footer": "My friend is fun.",
+      "prompt": "Two children laughing and playing together joyfully, having fun, energetic and happy, professional children photography, bright cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi amigo me escucha.",
+      "footer": "My friend listens to me.",
+      "prompt": "Two children sitting together, one talking and one listening attentively, showing good friendship, professional children photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Mi amigo me hace feliz.",
+      "footer": "My friend makes me happy.",
+      "prompt": "Two children together with big genuine smiles, showing happiness and joy from friendship, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Me gusta mi amigo!",
+      "footer": "I like my friend!",
+      "prompt": "Two best friend children with arms around each other, both smiling at camera, showing strong friendship bond, professional children photography, cheerful lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "amigo",
+      "en": "friend",
+      "emoji": "👫"
+    },
+    {
+      "es": "especial",
+      "en": "special",
+      "emoji": "⭐"
+    },
+    {
+      "es": "amable",
+      "en": "kind",
+      "emoji": "💝"
+    },
+    {
+      "es": "divertido",
+      "en": "fun",
+      "emoji": "😄"
+    },
+    {
+      "es": "escucha",
+      "en": "listens",
+      "emoji": "👂"
+    },
+    {
+      "es": "feliz",
+      "en": "happy",
+      "emoji": "😊"
+    }
+  ],
+  "badge": {
+    "emoji": "👫",
+    "name": "Explorador de Amistad",
+    "nameEn": "Friendship Explorer"
+  }
+}

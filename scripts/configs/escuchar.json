@@ -1,0 +1,84 @@
+{
+  "slug": "week-76-escuchar",
+  "title": "Escuchar",
+  "subtitle": "Listening",
+  "theme": "amigos",
+  "week": 76,
+  "emoji": "👂",
+  "meta_desc": "Learn about listening in Spanish (escuchar, atención, respetar, turno) with audio pronunciation and word highlighting. Ages 2-5.",
+  "keywords": "learn Spanish listening, escuchar Spanish, listen in Spanish, bilingual children books, Spanish vocabulary kids",
+  "pages": [
+    {
+      "title": "Escuchar",
+      "footer": "Aprendiendo sobre amistad",
+      "prompt": "A child listening attentively to another child who is speaking, showing good listening skills, professional children photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Escucho a mi amigo.",
+      "footer": "I listen to my friend.",
+      "prompt": "Two children sitting together, one talking and one listening carefully with interest, professional children photography, soft natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Escucho con atención.",
+      "footer": "I listen carefully.",
+      "prompt": "A child listening intently during story time, focused and attentive, professional children photography, natural indoor lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Escuchar es respetar.",
+      "footer": "Listening is respecting.",
+      "prompt": "Children in a circle taking turns speaking while others listen respectfully, professional children photography, bright classroom lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Espero mi turno.",
+      "footer": "I wait my turn.",
+      "prompt": "A child waiting patiently for their turn to speak while friend talks, showing patience, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "Escuchar me ayuda aprender.",
+      "footer": "Listening helps me learn.",
+      "prompt": "A child learning something new by listening attentively, engaged and curious, professional children photography, bright natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    },
+    {
+      "title": "¡Soy buen oyente!",
+      "footer": "I am a good listener!",
+      "prompt": "A child with a proud expression showing good listening posture and attention, professional children photography, natural lighting, landscape orientation, wide 16:9 format, high resolution."
+    }
+  ],
+  "vocab": [
+    {
+      "es": "escuchar",
+      "en": "to listen",
+      "emoji": "👂"
+    },
+    {
+      "es": "atención",
+      "en": "attention",
+      "emoji": "👀"
+    },
+    {
+      "es": "respetar",
+      "en": "to respect",
+      "emoji": "🙏"
+    },
+    {
+      "es": "turno",
+      "en": "turn",
+      "emoji": "🔄"
+    },
+    {
+      "es": "esperar",
+      "en": "to wait",
+      "emoji": "⏱️"
+    },
+    {
+      "es": "aprender",
+      "en": "to learn",
+      "emoji": "📚"
+    }
+  ],
+  "badge": {
+    "emoji": "👂",
+    "name": "Explorador de Escuchar",
+    "nameEn": "Listening Explorer"
+  }
+}
