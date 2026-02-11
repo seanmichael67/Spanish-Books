@@ -101,6 +101,22 @@ const BOOKS = [
   { slug: 'week-77-reir', emoji: '😄', week: 77, title: 'Reír', subtitle: 'Laughing', theme: 'amigos', ready: true },
   { slug: 'week-78-perdonar', emoji: '💕', week: 78, title: 'Perdonar', subtitle: 'Forgiving', theme: 'amigos', ready: true },
   { slug: 'week-79-juntos', emoji: '🤗', week: 79, title: 'Juntos', subtitle: 'Together', theme: 'amigos', ready: true },
+  { slug: 'week-80-el-sol', emoji: '☀️', week: 80, title: 'El Sol', subtitle: 'The Sun', theme: 'naturaleza', ready: true },
+  { slug: 'week-81-la-luna', emoji: '🌙', week: 81, title: 'La Luna', subtitle: 'The Moon', theme: 'naturaleza', ready: true },
+  { slug: 'week-82-las-estrellas', emoji: '⭐', week: 82, title: 'Las Estrellas', subtitle: 'The Stars', theme: 'naturaleza', ready: true },
+  { slug: 'week-83-la-montana', emoji: '🏔️', week: 83, title: 'La Montaña', subtitle: 'The Mountain', theme: 'naturaleza', ready: true },
+  { slug: 'week-84-el-bosque', emoji: '🌲', week: 84, title: 'El Bosque', subtitle: 'The Forest', theme: 'naturaleza', ready: true },
+  { slug: 'week-85-el-desierto', emoji: '🏜️', week: 85, title: 'El Desierto', subtitle: 'The Desert', theme: 'naturaleza', ready: true },
+  { slug: 'week-86-la-cascada', emoji: '💧', week: 86, title: 'La Cascada', subtitle: 'The Waterfall', theme: 'naturaleza', ready: true },
+  { slug: 'week-87-el-volcan', emoji: '🌋', week: 87, title: 'El Volcán', subtitle: 'The Volcano', theme: 'naturaleza', ready: true },
+  { slug: 'week-112-las-manos', emoji: '🖐️', week: 112, title: 'Las Manos', subtitle: 'The Hands', theme: 'cuerpo', ready: true },
+  { slug: 'week-113-los-pies', emoji: '🦶', week: 113, title: 'Los Pies', subtitle: 'The Feet', theme: 'cuerpo', ready: true },
+  { slug: 'week-114-los-ojos', emoji: '👀', week: 114, title: 'Los Ojos', subtitle: 'The Eyes', theme: 'cuerpo', ready: true },
+  { slug: 'week-115-la-boca', emoji: '👄', week: 115, title: 'La Boca', subtitle: 'The Mouth', theme: 'cuerpo', ready: true },
+  { slug: 'week-116-la-nariz', emoji: '👃', week: 116, title: 'La Nariz', subtitle: 'The Nose', theme: 'cuerpo', ready: true },
+  { slug: 'week-117-las-orejas', emoji: '👂', week: 117, title: 'Las Orejas', subtitle: 'The Ears', theme: 'cuerpo', ready: true },
+  { slug: 'week-118-el-corazon', emoji: '❤️', week: 118, title: 'El Corazón', subtitle: 'The Heart', theme: 'cuerpo', ready: true },
+  { slug: 'week-119-el-cuerpo', emoji: '🧍', week: 119, title: 'El Cuerpo', subtitle: 'The Body', theme: 'cuerpo', ready: true },
 ];
 
 const THEMES = [
