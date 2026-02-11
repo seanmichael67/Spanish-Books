@@ -241,16 +241,9 @@ app.get('/', (req, res) => {
 
     <div class="no-books" id="noBooks">🔍 No hay libros en este tema todavía.<br>¡Pronto habrá más!</div>
 
-    <!-- Upsell Banner -->
-    <div style="max-width:900px; margin:40px auto 0; background:white; border-radius:20px; padding:32px; box-shadow:0 10px 30px rgba(0,0,0,0.1); text-align:center;">
-      <h2 style="font-size:2.2rem; margin-bottom:12px; color:#333;">👩‍🏫 Meet Sofia — Your Child's AI Spanish Teacher!</h2>
-      <p style="color:#666; margin-bottom:24px; font-size:1.2rem;">Sofia talks, listens, and plays with your child in real-time — making Spanish fun and natural!</p>
-      <a href="https://tutti-sophia.onrender.com/sofia-fullscreen.html" target="_blank" style="display:inline-block; background:linear-gradient(135deg,#667eea,#764ba2); color:white; padding:16px 40px; border-radius:12px; font-weight:800; font-size:1.2rem; text-decoration:none; box-shadow:0 4px 15px rgba(102,126,234,0.4);">Try Sofia Free →</a>
-    </div>
-
     <!-- School CTA -->
     <div style="max-width:900px; margin:24px auto; text-align:center; padding:20px;">
-      <p style="color:rgba(255,255,255,0.8); font-size:0.85rem;">Made with ❤️ by <a href="https://www.beibeiamigos.com" target="_blank" style="color:white; font-weight:700;">Beibei Amigos Language Preschool</a> — Spanish Immersion · Mandarin Preschool · Bilingual Books — Phoenix, AZ</p>
+      <p style="color:rgba(255,255,255,0.8); font-size:0.85rem;">Made with ❤️ by <a href="https://www.beibeiamigos.com" target="_top" style="color:white; font-weight:700;">Beibei Amigos Language Preschool</a> — Spanish Immersion · Mandarin Preschool · Bilingual Books — Phoenix, AZ</p>
       <p style="color:rgba(255,255,255,0.6); font-size:0.75rem; margin-top:8px;">🏫 Now Enrolling for 2026! Spanish Immersion • Mandarin • English | Ages 2-6</p>
     </div>
   </div>
