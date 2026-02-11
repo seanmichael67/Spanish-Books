@@ -117,6 +117,14 @@ const BOOKS = [
   { slug: 'week-117-las-orejas', emoji: '👂', week: 117, title: 'Las Orejas', subtitle: 'The Ears', theme: 'cuerpo', ready: true },
   { slug: 'week-118-el-corazon', emoji: '❤️', week: 118, title: 'El Corazón', subtitle: 'The Heart', theme: 'cuerpo', ready: true },
   { slug: 'week-119-el-cuerpo', emoji: '🧍', week: 119, title: 'El Cuerpo', subtitle: 'The Body', theme: 'cuerpo', ready: true },
+  { slug: 'week-88-el-uno', emoji: '1️⃣', week: 88, title: 'El Uno', subtitle: 'The Number One', theme: 'numeros', ready: true },
+  { slug: 'week-89-el-dos', emoji: '2️⃣', week: 89, title: 'El Dos', subtitle: 'The Number Two', theme: 'numeros', ready: true },
+  { slug: 'week-90-el-tres', emoji: '3️⃣', week: 90, title: 'El Tres', subtitle: 'The Number Three', theme: 'numeros', ready: true },
+  { slug: 'week-91-el-cuatro', emoji: '4️⃣', week: 91, title: 'El Cuatro', subtitle: 'The Number Four', theme: 'numeros', ready: true },
+  { slug: 'week-92-el-cinco', emoji: '5️⃣', week: 92, title: 'El Cinco', subtitle: 'The Number Five', theme: 'numeros', ready: true },
+  { slug: 'week-93-las-letras', emoji: '🔤', week: 93, title: 'Las Letras', subtitle: 'The Letters', theme: 'numeros', ready: true },
+  { slug: 'week-94-el-abecedario', emoji: '🅰️', week: 94, title: 'El Abecedario', subtitle: 'The Alphabet', theme: 'numeros', ready: true },
+  { slug: 'week-95-contar', emoji: '🔢', week: 95, title: 'Contar', subtitle: 'Counting', theme: 'numeros', ready: true },
 ];
 
 const THEMES = [
