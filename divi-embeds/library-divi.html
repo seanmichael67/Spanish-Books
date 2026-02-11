@@ -25,14 +25,20 @@ Each book features audio pronunciation, word highlighting, vocabulary review, an
 Browse by theme — animals, food, nature, and more!
 </p>
 
-<iframe id="booksFrame" src="https://spanish-books.onrender.com/" width="100%" style="border:none; max-width:1000px; min-height:800px;" allow="autoplay" loading="lazy" title="Free Spanish Books Library - Beibei Amigos"></iframe>
+<iframe id="booksFrame" src="https://spanish-books.onrender.com/" width="100%" style="border:none; max-width:1000px; overflow:hidden;" allow="autoplay" loading="lazy" title="Free Spanish Books Library - Beibei Amigos" scrolling="no"></iframe>
 
 <script>
-window.addEventListener('message', function(e) {
-  if (e.data && e.data.type === 'resize' && e.data.height) {
-    document.getElementById('booksFrame').style.height = e.data.height + 'px';
-  }
-});
+(function() {
+  var frame = document.getElementById('booksFrame');
+  // Listen for postMessage resize from iframe
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === 'resize' && e.data.height) {
+      frame.style.height = e.data.height + 'px';
+    }
+  });
+  // Fallback: set a reasonable default height based on screen
+  frame.style.height = (window.innerHeight * 2.5) + 'px';
+})();
 </script>
 
 <div class="cta">
