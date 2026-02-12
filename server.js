@@ -190,7 +190,7 @@ app.get('/', (req, res) => {
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Sour Gummy', cursive; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px 20px 10px; margin: 0; }
-    .container { max-width: 1000px; margin: 0 auto; }
+    .container { max-width: 1400px; margin: 0 auto; }
     .header { text-align: center; color: white; margin-bottom: 32px; }
     .header img { width: 80px; height: 80px; border-radius: 50%; background: white; padding: 8px; margin-bottom: 16px; }
     .header h1 { font-size: 2.5rem; margin-bottom: 8px; }
