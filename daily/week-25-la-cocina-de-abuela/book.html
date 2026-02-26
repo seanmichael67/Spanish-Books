@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cocina de Abuela - Libro Interactivo en Español</title>
+    <meta name="description" content="Un libro interactivo en español sobre hacer empanadas con abuela. Perfecto para niños de 2-5 años aprendiendo vocabulario de comida y cocina.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #FFF8DC 0%, #FFE4B5 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+        }
+        
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-image {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: 0 auto 30px;
+            display: block;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #FFE4B5 0%, #FFDAB9 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: #666;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .page-text {
+            font-size: 1.8em;
+            line-height: 1.6;
+            color: #333;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .vocabulary {
+            background: #FFF3CD;
+            border-left: 5px solid #FF8E53;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+        .vocabulary h3 {
+            color: #FF6B6B;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .vocabulary p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            background: #f8f9fa;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255,107,107,0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #FF6B6B;
+            border: 2px solid #FF6B6B;
+        }
+        
+        .btn-secondary:hover {
+            background: #FF6B6B;
+            color: white;
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .page-number {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .cta-section h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #44A08D;
+            padding: 15px 40px;
+            font-size: 1.3em;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8em; }
+            .page { padding: 20px; }
+            .page-text { font-size: 1.4em; }
+            .page-image { height: 300px; }
+            .controls { padding: 20px; }
+            button { padding: 12px 20px; font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="header">
+            <h1>🥟 La Cocina de Abuela 👵</h1>
+            <p>Un día especial haciendo empanadas</p>
+        </div>
+        
+        <!-- Page 1 -->
+        <div class="page active" data-page="1">
+            <div class="page-image">🏠 Ilustración: Una cocina acogedora con abuela sonriente con delantal</div>
+            <div class="page-text">
+                <p>Hoy voy a la casa de mi <strong>abuela</strong>.</p>
+                <p>¡Vamos a cocinar juntos en su <strong>cocina</strong>!</p>
+            </div>
+            <div class="vocabulary">
+                <h3>📖 Nuevas Palabras</h3>
+                <p><strong>La abuela</strong> (ah-BWEH-lah) = Grandma</p>
+                <p><strong>La cocina</strong> (koh-SEE-nah) = Kitchen</p>
+            </div>
+        </div>
+        
+        <!-- Page 2 -->
+        <div class="page" data-page="2">
+            <div class="page-image">🛒 Ilustración: Niño y abuela sacando ingredientes de la alacena</div>
+            <div class="page-text">
+                <p>"Vamos a hacer <strong>empanadas</strong>," dice abuela.</p>
+                <p>Necesitamos <strong>harina</strong> y <strong>carne</strong>.</p>
+            </div>
+            <div class="vocabulary">
+                <h3>📖 Nuevas Palabras</h3>
+                <p><strong>Las empanadas</strong> (em-pah-NAH-dahs) = Meat pies</p>
+                <p><strong>La harina</strong> (ah-REE-nah) = Flour</p>
+                <p><strong>La carne</strong> (KAR-neh) = Meat</p>
+            </div>
+        </div>
+        
+        <!-- Page 3 -->
+        <div class="page" data-page="3">
+            <div class="page-image">🥣 Ilustración: Manos mezclando masa en un tazón grande</div>
+            <div class="page-text">
+                <p>Abuela mezcla la harina con agua.</p>
+                <p>¡Ahora tenemos <strong>la masa</strong>!</p>
+                <p>¿Me ayudas a amasar?</p>
+            </div>
+            <div class="vocabulary">
+                <h3>📖 Nuevas Palabras</h3>
+                <p><strong>La masa</strong> (LAH MAH-sah) = Dough</p>
+                <p><strong>Amasar</strong> (ah-mah-SAR) = To knead</p>
+            </div>
+        </div>
+        
+        <!-- Page 4 -->
+        <div class="page" data-page="4">
+            <div class="page-image">🍳 Ilustración: Sartén con carne, cebollas y especias cocinándose</div>
+            <div class="page-text">
+                <p>Ahora preparamos <strong>el relleno</strong>.</p>
+                <p>Carne, cebolla, y especias... ¡Huele delicioso!</p>
+            </div>
+            <div class="vocabulary">
+                <h3>📖 Nuevas Palabras</h3>
+                <p><strong>El relleno</strong> (reh-YEH-noh) = Filling</p>
+                <p><strong>Delicioso</strong> (deh-lee-see-OH-soh) = Delicious</p>
+            </div>
+        </div>
+        
+        <!-- Page 5 -->
+        <div class="page" data-page="5">
+            <div class="page-image">👐 Ilustración: Niño y abuela doblando empanadas juntos en la mesa</div>
+            <div class="page-text">
+                <p>Ponemos el relleno en <strong>los círculos</strong> de masa.</p>
+                <p>Abuela me enseña a <strong>doblar</strong> las empanadas.</p>
+                <p>¡Es como hacer arte!</p>
+            </div>
+            <div class="vocabulary">
+                <h3>📖 Nuevas Palabras</h3>
+                <p><strong>Los círculos</strong> (SEER-koo-lohs) = Circles</p>
+                <p><strong>Doblar</strong> (doh-BLAR) = To fold</p>
+            </div>
+        </div>
+        
+        <!-- Page 6 -->
+        <div class="page" data-page="6">
+            <div class="page-image">🔥 Ilustración: Abuela poniendo empanadas doradas en el horno</div>
+            <div class="page-text">
+                <p>Las empanadas van a <strong>el horno</strong>.</p>
+                <p>"Esperamos 20 minutos," dice abuela.</p>
+                <p>¡Qué difícil es esperar!</p>
+            </div>
+            <div class="vocabulary">
+                <h3>📖 Nuevas Palabras</h3>
+                <p><strong>El horno</strong> (OR-noh) = Oven</p>
+                <p><strong>Esperar</strong> (es-peh-RAR) = To wait</p>
+            </div>
+        </div>
+        
+        <!-- Page 7 -->
+        <div class="page" data-page="7">
+            <div class="page-image">😋 Ilustración: Familia sentada comiendo empanadas doradas y sonriendo</div>
+            <div class="page-text">
+                <p>¡Por fin! Las empanadas están <strong>listas</strong>.</p>
+                <p>Están calientes y doradas.</p>
+                <p>"¡Delicioso!" dice toda la familia.</p>
+            </div>
+            <div class="vocabulary">
+                <h3>📖 Nuevas Palabras</h3>
+                <p><strong>Listas</strong> (LEES-tahs) = Ready</p>
+                <p><strong>Calientes</strong> (kah-lee-EN-tehs) = Hot</p>
+            </div>
+        </div>
+        
+        <!-- Page 8 -->
+        <div class="page" data-page="8">
+            <div class="page-image">❤️ Ilustración: Niño abrazando a abuela en la cocina, ambos felices</div>
+            <div class="page-text">
+                <p>"Gracias, abuela, por enseñarme."</p>
+                <p>"De nada, mi amor. Cocinar juntos es especial."</p>
+                <p>¡Me encanta la cocina de abuela!</p>
+            </div>
+            <div class="vocabulary">
+                <h3>📖 Repaso Final</h3>
+                <p>Aprendiste 12 palabras nuevas sobre comida y cocina:</p>
+                <p>abuela • cocina • empanadas • harina • carne • masa • relleno • delicioso • círculos • doblar • horno • listas</p>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn-secondary" id="prevBtn" onclick="changePage(-1)">⬅️ Anterior</button>
+            <span class="page-number">Página <span id="currentPage">1</span> de 8</span>
+            <button class="btn-primary" id="nextBtn" onclick="changePage(1)">Siguiente ➡️</button>
+            <button class="btn-primary" id="readBtn" onclick="readPage()">🔊 Leer en voz alta</button>
+        </div>
+        
+        <div class="cta-section">
+            <h3>🌟 ¿Te gustó este libro?</h3>
+            <p>Recibe un libro nuevo cada semana directamente en tu email</p>
+            <a href="https://www.beibeiamigos.com/contact" class="cta-button">📚 Suscríbete Gratis</a>
+            <p style="margin-top: 20px; font-size: 0.9em;">O visita Beibei Amigos para aprender más sobre nuestro programa de inmersión en español</p>
+        </div>
+    </div>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "La Cocina de Abuela",
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        },
+        "description": "Libro interactivo en español para niños de 2-5 años sobre hacer empanadas con abuela. Enseña vocabulario de comida y cocina.",
+        "inLanguage": "es",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "Preschool children ages 2-5"
+        },
+        "educationalLevel": "Preschool",
+        "learningResourceType": "Interactive Book",
+        "keywords": "spanish learning, preschool spanish, cooking vocabulary, food words spanish, interactive spanish book"
+    }
+    </script>
+    
+    <script>
+        let currentPage = 1;
+        const totalPages = 8;
+        
+        function showPage(pageNum) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.querySelector(`[data-page="${pageNum}"]`).classList.add('active');
+            document.getElementById('currentPage').textContent = pageNum;
+            
+            document.getElementById('prevBtn').disabled = pageNum === 1;
+            document.getElementById('nextBtn').disabled = pageNum === totalPages;
+            
+            // Track page views in GA4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_turn', {
+                    'book_title': 'La Cocina de Abuela',
+                    'page_number': pageNum
+                });
+            }
+        }
+        
+        function changePage(direction) {
+            currentPage += direction;
+            if (currentPage < 1) currentPage = 1;
+            if (currentPage > totalPages) currentPage = totalPages;
+            showPage(currentPage);
+        }
+        
+        function readPage() {
+            const pageText = document.querySelector('.page.active .page-text').innerText;
+            
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(pageText);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                window.speechSynthesis.speak(utterance);
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'read_aloud', {
+                        'book_title': 'La Cocina de Abuela',
+                        'page_number': currentPage
+                    });
+                }
+            } else {
+                alert('Tu navegador no soporta lectura en voz alta. Intenta con Chrome o Safari.');
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changePage(-1);
+            if (e.key === 'ArrowRight') changePage(1);
+            if (e.key === ' ') readPage();
+        });
+        
+        // Track book opens
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'book_open', {
+                'book_title': 'La Cocina de Abuela',
+                'book_week': 25
+            });
+        }
+        
+        // Initialize
+        showPage(1);
+    </script>
+</body>
+</html>

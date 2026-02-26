@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Lluvia y el Sol - Libro Interactivo en Español</title>
+    <meta name="description" content="Aprende sobre el clima en español con este libro interactivo gratuito para niños de 2-5 años. Lluvia, sol, arcoíris y más.">
+    <meta name="keywords" content="español para niños, libros en español, clima, lluvia, sol, preschool español, aprender español">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "La Lluvia y el Sol",
+        "description": "Un libro interactivo en español sobre el clima para niños de 2-5 años",
+        "inLanguage": "es",
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Children ages 2-5"
+        },
+        "educationalUse": "Language Learning",
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        }
+    }
+    </script>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .book-header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .book-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .book-header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            background: white;
+        }
+        
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-image {
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+            margin: 0 auto 30px;
+            display: block;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .page-text {
+            font-size: 1.8em;
+            line-height: 1.6;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .page-text strong {
+            color: #4facfe;
+            font-size: 1.2em;
+        }
+        
+        .pronunciation {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 40px;
+            background: #f8f9fa;
+            border-top: 2px solid #e9ecef;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .btn-prev {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .btn-next {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+        
+        .btn-audio {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+            padding: 15px 25px;
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .page-counter {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-btn {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-btn-primary {
+            background: white;
+            color: #667eea;
+        }
+        
+        .cta-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .book-header h1 {
+                font-size: 2em;
+            }
+            
+            .page {
+                padding: 20px;
+                min-height: 400px;
+            }
+            
+            .page-image {
+                height: 250px;
+            }
+            
+            .page-text {
+                font-size: 1.4em;
+            }
+            
+            .controls {
+                padding: 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-header">
+            <h1>🌧️☀️ La Lluvia y el Sol ☀️🌧️</h1>
+            <p class="subtitle">Un libro interactivo sobre el clima</p>
+        </div>
+        
+        <!-- Page 1 -->
+        <div class="page active" data-page="1">
+            <img src="images/page1.jpg" alt="Cielo azul con nubes" class="page-image">
+            <div class="page-text">
+                ¿Qué ves en el <strong>cielo</strong>?
+                <div class="pronunciation">(SYEH-loh) - sky</div>
+            </div>
+        </div>
+        
+        <!-- Page 2 -->
+        <div class="page" data-page="2">
+            <img src="images/page2.jpg" alt="Nubes grises" class="page-image">
+            <div class="page-text">
+                Veo <strong>nubes</strong> grises en el cielo.
+                <div class="pronunciation">(NOO-bes) - clouds</div>
+            </div>
+        </div>
+        
+        <!-- Page 3 -->
+        <div class="page" data-page="3">
+            <img src="images/page3.jpg" alt="Lluvia cayendo" class="page-image">
+            <div class="page-text">
+                ¡Mira! Está lloviendo. <strong>La lluvia</strong> cae del cielo.
+                <div class="pronunciation">(lah YOO-vee-ah) - the rain</div>
+            </div>
+        </div>
+        
+        <!-- Page 4 -->
+        <div class="page" data-page="4">
+            <img src="images/page4.jpg" alt="Niña con paraguas" class="page-image">
+            <div class="page-text">
+                Necesito mi <strong>paraguas</strong> cuando llueve.
+                <div class="pronunciation">(pah-rah-GWAS) - umbrella</div>
+            </div>
+        </div>
+        
+        <!-- Page 5 -->
+        <div class="page" data-page="5">
+            <img src="images/page5.jpg" alt="Charcos de agua" class="page-image">
+            <div class="page-text">
+                ¡Qué divertido! Hay <strong>charcos</strong> de agua.
+                <div class="pronunciation">(CHAR-kohs) - puddles</div>
+            </div>
+        </div>
+        
+        <!-- Page 6 -->
+        <div class="page" data-page="6">
+            <img src="images/page6.jpg" alt="Sol saliendo" class="page-image">
+            <div class="page-text">
+                La lluvia se detiene. ¡Sale <strong>el sol</strong>!
+                <div class="pronunciation">(el sohl) - the sun</div>
+            </div>
+        </div>
+        
+        <!-- Page 7 -->
+        <div class="page" data-page="7">
+            <img src="images/page7.jpg" alt="Arcoíris hermoso" class="page-image">
+            <div class="page-text">
+                ¡Mira qué bonito! Hay un <strong>arcoíris</strong> en el cielo.
+                <div class="pronunciation">(ar-koh-EE-rees) - rainbow</div>
+            </div>
+        </div>
+        
+        <!-- Page 8 -->
+        <div class="page" data-page="8">
+            <img src="images/page8.jpg" alt="Día soleado feliz" class="page-image">
+            <div class="page-text">
+                Después de la lluvia, el sol brilla. ¡Qué <strong>día</strong> tan hermoso!
+                <div class="pronunciation">(DEE-ah) - day</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn btn-prev" onclick="previousPage()">⬅️ Anterior</button>
+            <button class="btn btn-audio" onclick="readPage()">🔊 Escuchar</button>
+            <span class="page-counter"><span id="current-page">1</span> / 8</span>
+            <button class="btn btn-next" onclick="nextPage()">Siguiente ➡️</button>
+        </div>
+        
+        <div class="cta-section">
+            <h2>¿Te gustó este libro?</h2>
+            <p>En Beibei Amigos, enseñamos español y mandarín a niños de 2-5 años con amor y dedicación. Ofrecemos libros interactivos gratuitos cada semana y programas inmersivos de alta calidad.</p>
+            <div class="cta-buttons">
+                <a href="https://www.beibeiamigos.com/schedule-tour" class="cta-btn cta-btn-primary">📅 Agendar Tour</a>
+                <a href="https://www.beibeiamigos.com/reviews" class="cta-btn cta-btn-secondary">⭐ Dejar Reseña</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let currentPage = 1;
+        const totalPages = 8;
+        
+        function showPage(pageNum) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            const page = document.querySelector(`[data-page="${pageNum}"]`);
+            if (page) {
+                page.classList.add('active');
+                currentPage = pageNum;
+                document.getElementById('current-page').textContent = pageNum;
+                
+                // Update button states
+                document.querySelector('.btn-prev').disabled = (currentPage === 1);
+                document.querySelector('.btn-next').disabled = (currentPage === totalPages);
+                
+                // Track page view
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'page_view', {
+                        'page_title': 'La Lluvia y el Sol - Page ' + pageNum,
+                        'page_location': window.location.href + '#page' + pageNum
+                    });
+                }
+            }
+        }
+        
+        function nextPage() {
+            if (currentPage < totalPages) {
+                showPage(currentPage + 1);
+            }
+        }
+        
+        function previousPage() {
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+            }
+        }
+        
+        function readPage() {
+            const pageElement = document.querySelector('.page.active .page-text');
+            if (!pageElement) return;
+            
+            const text = pageElement.textContent.replace(/\(.*?\)/g, '').trim();
+            
+            // Try Web Speech API first
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                utterance.pitch = 1.1;
+                
+                // Try to find a Spanish voice
+                const voices = window.speechSynthesis.getVoices();
+                const spanishVoice = voices.find(voice => voice.lang.startsWith('es'));
+                if (spanishVoice) {
+                    utterance.voice = spanishVoice;
+                }
+                
+                window.speechSynthesis.speak(utterance);
+                
+                // Track audio play
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'audio_play', {
+                        'page_number': currentPage,
+                        'book_title': 'La Lluvia y el Sol'
+                    });
+                }
+            } else {
+                alert('Tu navegador no soporta audio automático. Por favor, lee el texto en voz alta.');
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') previousPage();
+            if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                readPage();
+            }
+        });
+        
+        // Load voices for Web Speech API
+        if ('speechSynthesis' in window) {
+            speechSynthesis.onvoiceschanged = () => {
+                speechSynthesis.getVoices();
+            };
+        }
+        
+        // Initialize
+        showPage(1);
+    </script>
+</body>
+</html>

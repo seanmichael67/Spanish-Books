@@ -1,0 +1,72 @@
+{
+  "week": 25,
+  "title": "La Cocina de Abuela",
+  "subtitle": "Un día especial haciendo empanadas",
+  "topic": "Food & Cooking",
+  "ageRange": "2-5 years",
+  "language": "Spanish",
+  "englishTranslation": "Grandma's Kitchen",
+  "pages": 8,
+  "newVocabulary": [
+    "abuela (grandma)",
+    "cocina (kitchen)",
+    "empanadas (meat pies)",
+    "harina (flour)",
+    "carne (meat)",
+    "masa (dough)",
+    "relleno (filling)",
+    "delicioso (delicious)",
+    "círculos (circles)",
+    "doblar (to fold)",
+    "horno (oven)",
+    "listas (ready)"
+  ],
+  "culturalElements": [
+    "Making empanadas with grandma",
+    "Multi-generational cooking traditions",
+    "Latin American cuisine",
+    "Family bonding through cooking"
+  ],
+  "learningObjectives": [
+    "Learn food and cooking vocabulary",
+    "Understand step-by-step processes",
+    "Practice listening to Spanish pronunciation",
+    "Build family vocabulary",
+    "Cultural appreciation"
+  ],
+  "seo": {
+    "metaTitle": "La Cocina de Abuela - Free Spanish Book for Preschoolers | Beibei Amigos",
+    "metaDescription": "Interactive Spanish book teaching food and cooking vocabulary through making empanadas with grandma. Perfect for ages 2-5. Read-aloud audio included. Free from Beibei Amigos.",
+    "keywords": [
+      "spanish food vocabulary",
+      "cooking words in spanish",
+      "preschool spanish book",
+      "empanadas story for kids",
+      "grandma cooking story spanish",
+      "learn spanish through cooking",
+      "interactive spanish book",
+      "free spanish books for kids",
+      "beibei amigos spanish books",
+      "bilingual cooking book"
+    ],
+    "targetSearchTerms": [
+      "spanish food words for kids",
+      "cooking vocabulary spanish preschool",
+      "empanadas story in spanish",
+      "free spanish books for toddlers",
+      "teach kids spanish through cooking"
+    ]
+  },
+  "educationalStandards": {
+    "vocabulary": "12 new words (food, cooking, family)",
+    "grammar": "Present tense, imperative (commands), simple sentences",
+    "culturalCompetency": "Latin American food traditions, family roles",
+    "cognitiveDevelopment": "Sequential thinking, following multi-step processes",
+    "socialEmotional": "Family relationships, helping, patience"
+  },
+  "generatedDate": "2026-02-25",
+  "author": "Luna 📚 - Beibei Amigos Book Generator",
+  "illustrationStyle": "Warm, colorful, child-friendly digital art",
+  "publicUrl": "https://spanish-books.onrender.com/week-25-la-cocina-de-abuela/",
+  "ctaGoal": "Email capture for weekly book delivery, tour scheduling"
+}

@@ -1,0 +1,59 @@
+# AI Image Generation Prompts - Week 24: La Lluvia y el Sol
+# For use with DALL-E 3, Midjourney, Stable Diffusion, or similar
+# Style: Warm watercolor, soft edges, child-friendly, preschool-appropriate
+
+## Page 1: Blue Sky with Clouds (el cielo)
+A beautiful bright blue sky with fluffy white clouds floating peacefully, warm inviting watercolor style for children's book, soft edges, cheerful atmosphere, simple composition perfect for preschoolers ages 2-5
+
+## Page 2: Gray Clouds (las nubes)
+Gray and dark clouds gathering in the sky getting ready to rain, child-friendly watercolor illustration style, not scary but showing weather change, soft gradients from white to gray clouds, gentle and educational, suitable for ages 2-5
+
+## Page 3: Rain Falling (la lluvia)
+Gentle rain falling from gray clouds with visible raindrops streaking down, watercolor children's book illustration style, peaceful and calming scene, soft blue and gray tones, drops clearly visible against lighter background, suitable for preschoolers ages 2-5
+
+## Page 4: Child with Umbrella (el paraguas)
+A happy young child age 3-4 holding a bright red umbrella in the rain wearing yellow rain boots, warm watercolor children's book illustration, child has a joyful expression, rain falling gently around them, diverse inclusive representation, suitable for ages 2-5
+
+## Page 5: Puddles of Water (los charcos)
+Cheerful puddles of water on the ground reflecting the sky with small ripples, bright playful watercolor children's book style, clear blue water puddles inviting and fun perfect for jumping, simple ground with grass around puddles, suitable for preschoolers ages 2-5
+
+## Page 6: Sun Coming Out (el sol)
+Beautiful golden sun emerging from behind gray clouds with rays of sunlight breaking through, warm watercolor children's book illustration, dramatic but gentle showing hope and brightness, yellow and orange sun with soft rays, suitable for ages 2-5
+
+## Page 7: Beautiful Rainbow (el arcoíris)
+A vibrant rainbow arcing across the sky after rain with blue sky and fading clouds, child-friendly watercolor illustration with clear bright colors, full rainbow spectrum red orange yellow green blue purple against beautiful sky, magical and educational, suitable for preschoolers ages 2-5
+
+## Page 8: Sunny Day (el día)
+A gorgeous sunny day with bright blue sky, happy sun with gentle rays, green grass and flowers, warm cheerful watercolor children's book illustration, everything looks fresh after rain, inviting and joyful scene, suitable for ages 2-5
+
+---
+
+# GENERATION TIPS:
+- Style: Always specify "watercolor children's book style" and "suitable for preschoolers ages 2-5"
+- Colors: Warm, bright, cheerful, soft edges (not harsh or scary)
+- Simplicity: Clean compositions, focus on main weather element
+- Consistency: Maintain watercolor aesthetic throughout all 8 pages
+- Emotions: Positive, educational, not frightening
+- Diversity: Include diverse representation when showing people
+- Safety: No scary storms, no dangerous weather situations
+
+# DIMENSIONS:
+- Size: 1024x1024 or 1024x768 (landscape)
+- Format: WebP (for web optimization) or PNG/JPG
+- Max file size: <100KB per image (compress after generation)
+
+# ALTERNATIVE FREE TOOLS:
+- Bing Image Creator (free DALL-E 3 access)
+- Leonardo.ai (free tier)
+- Playground AI (free generations)
+- Stable Diffusion (local/free)
+
+# NAMING CONVENTION:
+- page1.jpg (or .webp)
+- page2.jpg
+- page3.jpg
+- page4.jpg
+- page5.jpg
+- page6.jpg
+- page7.jpg
+- page8.jpg

@@ -1,0 +1,58 @@
+DALL-E 3 Image Prompts for "La Cocina de Abuela"
+Style: Warm, colorful, child-friendly illustration, consistent art style throughout
+Target audience: Preschool children ages 2-5
+Art direction: Soft rounded shapes, bright inviting colors, Hispanic cultural authenticity
+
+---
+
+PAGE 1: Abuela's Kitchen
+Prompt: "A warm, cozy kitchen with a smiling Hispanic grandmother wearing a colorful apron standing in the center. She has gray hair in a bun and open arms welcoming someone. The kitchen has wooden cabinets, colorful tiles, a window with sunlight streaming in, and cooking utensils hanging on the wall. Bright, cheerful, child-friendly illustration style with soft rounded shapes and warm orange/yellow tones."
+
+---
+
+PAGE 2: Gathering Ingredients
+Prompt: "A Hispanic child (age 4-5) and their grandmother standing by open kitchen cabinets and pantry, pulling out ingredients. On the counter you can see a bag of flour, raw meat on a plate, and other cooking ingredients. Both are smiling excitedly. Warm kitchen lighting, colorful Spanish tiles in background. Child-friendly illustration with bright, inviting colors and simple shapes."
+
+---
+
+PAGE 3: Making the Dough
+Prompt: "Close-up view of hands kneading dough in a large ceramic bowl. You can see both adult grandmother hands with wrinkles and small child hands working together on white flour dough. Flour dust in the air catches the light. Wooden kitchen table surface. Warm, tactile, inviting illustration style. Focus on the hands working together, showing teamwork and teaching."
+
+---
+
+PAGE 4: Cooking the Filling
+Prompt: "A pan on a stovetop filled with ground meat, diced onions, and colorful spices cooking together. Steam rising from the pan. Wooden spoon stirring. Warm golden-brown colors of the cooked filling. Kitchen counter with spice jars in the background. Close-up detailed view that makes the food look delicious and appetizing. Child-friendly bright illustration style."
+
+---
+
+PAGE 5: Folding Empanadas
+Prompt: "Overhead view of a wooden kitchen table with circles of dough laid out, and a Hispanic grandmother teaching a young child how to fold empanadas. Their hands are shown pinching the edges of empanadas to create the traditional pattern. Several finished empanadas are on a baking tray. Warm afternoon light. Both people smiling, focused on their work together. Colorful, detailed, child-friendly illustration."
+
+---
+
+PAGE 6: Baking in the Oven
+Prompt: "A grandmother opening a modern oven door with golden-brown empanadas visible inside on a baking tray. Warm orange glow from the oven light. Child standing beside her on tiptoes, peeking in excitedly. Kitchen background with timer on the counter. Steam/heat waves visible. Cozy, warm color palette with yellows and oranges. Child-friendly illustration style showing anticipation."
+
+---
+
+PAGE 7: Eating Together
+Prompt: "A Hispanic family of four sitting around a dining table eating golden empanadas together. Plates with empanadas cut open showing the meat filling. Everyone smiling, talking, enjoying the meal. Grandmother at the head of the table looking proud. Warm family dining scene with natural window light. Colorful table settings. Happy, celebratory atmosphere. Child-friendly warm illustration."
+
+---
+
+PAGE 8: Hugging Abuela
+Prompt: "A young Hispanic child giving their grandmother a big warm hug in the kitchen. Grandmother bending down, both smiling with eyes closed in a loving embrace. Kitchen background slightly blurred. Warm golden afternoon light streaming through window. Emotional, heartwarming moment. Soft, rounded illustration style emphasizing love and connection. Warm color palette of golds, oranges, and soft browns."
+
+---
+
+TECHNICAL SPECS:
+- Aspect ratio: 16:9 (landscape)
+- Resolution: 1792×1024 (DALL-E 3 HD)
+- Style: Consistent throughout all 8 images
+- Color palette: Warm (golds, oranges, browns, with pops of color)
+- Facial expressions: Always warm, happy, engaging
+- Cultural authenticity: Hispanic/Latin American family representation
+- Age-appropriate: Soft shapes, non-threatening, inviting
+
+GENERATION COMMAND:
+Use ~/Projects/preschool-books/generate-images.sh with these prompts
