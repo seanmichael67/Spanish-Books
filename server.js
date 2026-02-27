@@ -278,8 +278,18 @@ app.get('/', (req, res) => {
     }
     window.addEventListener('load', reportHeight);
     new MutationObserver(reportHeight).observe(document.body, { childList: true, subtree: true });
-    // Also report after filter changes
-    document.querySelectorAll('.theme-btn').forEach(btn => btn.addEventListener('click', () => setTimeout(reportHeight, 100)));
+    // Also report after filter changes + scroll to books
+    document.querySelectorAll('.theme-btn').forEach(btn => btn.addEventListener('click', () => {
+      setTimeout(reportHeight, 100);
+      // Scroll to book grid - works both standalone and in iframe
+      const grid = document.getElementById('bookGrid');
+      const gridTop = grid.getBoundingClientRect().top;
+      // If in iframe, tell parent to scroll; otherwise scroll directly
+      if (window.parent !== window) {
+        window.parent.postMessage({ type: 'scrollToBooks', offset: gridTop }, '*');
+      }
+      grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }));
   </script>
 </body>
 </html>`);
