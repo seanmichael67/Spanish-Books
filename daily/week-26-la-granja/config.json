@@ -1,0 +1,72 @@
+{
+  "week": 26,
+  "title": "La Granja de Don Pedro",
+  "subtitle": "Visitamos los animales de la granja",
+  "topic": "Farm Animals",
+  "ageRange": "2-5 years",
+  "language": "Spanish",
+  "englishTranslation": "Don Pedro's Farm",
+  "pages": 8,
+  "newVocabulary": [
+    "granja (farm)",
+    "vaca (cow)",
+    "cerdo (pig)",
+    "gallina (hen)",
+    "caballo (horse)",
+    "oveja (sheep)",
+    "pato (duck)",
+    "gallo (rooster)",
+    "pollito (chick)",
+    "granero (barn)",
+    "sonidos (sounds)",
+    "animales (animals)"
+  ],
+  "culturalElements": [
+    "Traditional family farm",
+    "Relationship with animals",
+    "Rural Spanish-speaking communities",
+    "Animal sounds in Spanish culture"
+  ],
+  "learningObjectives": [
+    "Learn farm animal vocabulary",
+    "Practice animal sounds in Spanish",
+    "Develop listening skills with audio",
+    "Build nature vocabulary",
+    "Encourage curiosity about animals"
+  ],
+  "seo": {
+    "metaTitle": "La Granja de Don Pedro - Free Spanish Farm Animals Book | Beibei Amigos",
+    "metaDescription": "Interactive Spanish book teaching farm animal names and sounds. Perfect for preschoolers ages 2-5. Read-aloud audio included. Learn animals in Spanish with Don Pedro! Free from Beibei Amigos.",
+    "keywords": [
+      "farm animals in spanish",
+      "spanish animal vocabulary",
+      "preschool spanish book",
+      "learn animals spanish kids",
+      "animal sounds in spanish",
+      "granja story for kids",
+      "interactive spanish book",
+      "free spanish books for kids",
+      "beibei amigos spanish books",
+      "bilingual farm book"
+    ],
+    "targetSearchTerms": [
+      "farm animals spanish for kids",
+      "how to say cow in spanish",
+      "spanish animal sounds preschool",
+      "free spanish books for toddlers",
+      "teach kids farm animals in spanish"
+    ]
+  },
+  "educationalStandards": {
+    "vocabulary": "12 new words (farm animals, farm vocabulary)",
+    "grammar": "Present tense, question words (¿Qué?, ¿Cómo?), simple sentences",
+    "culturalCompetency": "Farm life, animal care, rural traditions",
+    "cognitiveDevelopment": "Categorization (animals), sound recognition, observation",
+    "socialEmotional": "Kindness to animals, curiosity, wonder"
+  },
+  "generatedDate": "2026-02-26",
+  "author": "Luna 📚 - Beibei Amigos Book Generator",
+  "illustrationStyle": "Warm, colorful, child-friendly digital art with friendly farm animals",
+  "publicUrl": "https://spanish-books.onrender.com/week-26-la-granja/",
+  "ctaGoal": "Email capture for weekly book delivery, tour scheduling"
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Granja de Don Pedro - Free Spanish Book for Kids | Beibei Amigos</title>
+    <meta name="description" content="Interactive Spanish book teaching farm animal names and sounds. Perfect for preschoolers ages 2-5. Read-aloud audio included. Learn animals in Spanish with Don Pedro! Free from Beibei Amigos.">
+    <meta name="keywords" content="farm animals in spanish, spanish animal vocabulary, preschool spanish book, learn animals spanish kids, animal sounds in spanish, granja story for kids">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "La Granja de Don Pedro",
+      "alternateName": "Don Pedro's Farm",
+      "author": {
+        "@type": "Organization",
+        "name": "Beibei Amigos Language Preschool"
+      },
+      "inLanguage": "es",
+      "audience": {
+        "@type": "PeopleAudience",
+        "suggestedMinAge": 2,
+        "suggestedMaxAge": 5
+      },
+      "about": "Farm animals and their sounds in Spanish",
+      "educationalUse": "Language learning, vocabulary building",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Beibei Amigos",
+        "url": "https://www.beibeiamigos.com"
+      }
+    }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBVZTDGE3S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YBVZTDGE3S');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, sans-serif;
+            background: linear-gradient(135deg, #87CEEB 0%, #98D8C8 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 600px;
+            text-align: center;
+        }
+        
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            color: #2E7D32;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #FF6B35;
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+        
+        p {
+            font-size: 1.8em;
+            line-height: 1.6;
+            color: #333;
+            margin: 20px 0;
+        }
+        
+        .pronunciation {
+            font-size: 1.2em;
+            color: #666;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            margin: 30px auto;
+            background: linear-gradient(135deg, #FFE5B4 0%, #FFDAB9 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            border: 4px solid #2E7D32;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #F5F5F5;
+            border-top: 3px solid #2E7D32;
+        }
+        
+        button {
+            background: #FF6B35;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        button:hover {
+            background: #E55A2B;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .page-indicator {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .sound-effect {
+            font-size: 3em;
+            color: #FF6B35;
+            font-weight: bold;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .cta-section {
+            background: #FFF3E0;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 15px;
+            border: 3px dashed #FF6B35;
+        }
+        
+        .cta-button {
+            background: #2E7D32;
+            margin: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            background: #1B5E20;
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.8em; }
+            p { font-size: 1.3em; }
+            .image-placeholder { height: 250px; font-size: 3em; }
+            .controls { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Title -->
+        <div class="page active" id="page1">
+            <h1>La Granja de Don Pedro</h1>
+            <p class="pronunciation">(lah GRAHN-hah deh dohn PEH-droh)</p>
+            <div class="image-placeholder">🚜🌾</div>
+            <h2>¡Visitamos la granja!</h2>
+            <p>Hoy visitamos la granja de Don Pedro.</p>
+            <p>¡Vamos a conocer a los animales!</p>
+            <p class="pronunciation">Today we visit Don Pedro's farm. Let's meet the animals!</p>
+        </div>
+        
+        <!-- Page 2: Cow -->
+        <div class="page" id="page2">
+            <h2>La Vaca</h2>
+            <p class="pronunciation">(lah VAH-kah)</p>
+            <div class="image-placeholder">🐄</div>
+            <p>¿Qué ves?</p>
+            <p><strong>¡Veo una vaca!</strong></p>
+            <p>¿Qué dice la vaca?</p>
+            <p class="sound-effect">¡MUUUU!</p>
+            <p class="pronunciation">What do you see? I see a cow! What does the cow say? Moo!</p>
+        </div>
+        
+        <!-- Page 3: Pig -->
+        <div class="page" id="page3">
+            <h2>El Cerdo</h2>
+            <p class="pronunciation">(ehl SEHR-doh)</p>
+            <div class="image-placeholder">🐷</div>
+            <p>¿Qué ves?</p>
+            <p><strong>¡Veo un cerdo!</strong></p>
+            <p>¿Qué dice el cerdo?</p>
+            <p class="sound-effect">¡OINK OINK!</p>
+            <p class="pronunciation">What do you see? I see a pig! What does the pig say? Oink oink!</p>
+        </div>
+        
+        <!-- Page 4: Hen & Chicks -->
+        <div class="page" id="page4">
+            <h2>La Gallina y los Pollitos</h2>
+            <p class="pronunciation">(lah gah-YEE-nah ee lohs poh-YEE-tohs)</p>
+            <div class="image-placeholder">🐔🐤🐤</div>
+            <p>¿Qué ves?</p>
+            <p><strong>¡Veo una gallina y sus pollitos!</strong></p>
+            <p>¿Qué dicen?</p>
+            <p class="sound-effect">¡CLOC CLOC! ¡PÍO PÍO!</p>
+            <p class="pronunciation">I see a hen and her chicks! Cluck cluck! Peep peep!</p>
+        </div>
+        
+        <!-- Page 5: Horse -->
+        <div class="page" id="page5">
+            <h2>El Caballo</h2>
+            <p class="pronunciation">(ehl kah-BAH-yoh)</p>
+            <div class="image-placeholder">🐴</div>
+            <p>¿Qué ves?</p>
+            <p><strong>¡Veo un caballo!</strong></p>
+            <p>¿Qué dice el caballo?</p>
+            <p class="sound-effect">¡HIIII!</p>
+            <p class="pronunciation">What do you see? I see a horse! What does the horse say? Neigh!</p>
+        </div>
+        
+        <!-- Page 6: Sheep -->
+        <div class="page" id="page6">
+            <h2>La Oveja</h2>
+            <p class="pronunciation">(lah oh-VEH-hah)</p>
+            <div class="image-placeholder">🐑</div>
+            <p>¿Qué ves?</p>
+            <p><strong>¡Veo una oveja!</strong></p>
+            <p>¿Qué dice la oveja?</p>
+            <p class="sound-effect">¡BEEE!</p>
+            <p class="pronunciation">What do you see? I see a sheep! What does the sheep say? Baa!</p>
+        </div>
+        
+        <!-- Page 7: Duck -->
+        <div class="page" id="page7">
+            <h2>El Pato</h2>
+            <p class="pronunciation">(ehl PAH-toh)</p>
+            <div class="image-placeholder">🦆</div>
+            <p>¿Qué ves?</p>
+            <p><strong>¡Veo un pato!</strong></p>
+            <p>¿Qué dice el pato?</p>
+            <p class="sound-effect">¡CUAC CUAC!</p>
+            <p class="pronunciation">What do you see? I see a duck! What does the duck say? Quack quack!</p>
+        </div>
+        
+        <!-- Page 8: Ending -->
+        <div class="page" id="page8">
+            <h2>¡Adiós, Granja!</h2>
+            <div class="image-placeholder">🐄🐷🐔🐴🐑🦆</div>
+            <p><strong>¡Qué divertido!</strong></p>
+            <p>Vimos muchos animales en la granja de Don Pedro:</p>
+            <p>La vaca, el cerdo, la gallina, el caballo, la oveja y el pato.</p>
+            <p>¿Cuál es tu animal favorito?</p>
+            <p class="pronunciation">How fun! We saw many animals on Don Pedro's farm. Which is your favorite animal?</p>
+            
+            <div class="cta-section">
+                <h2 style="color: #2E7D32; font-size: 1.8em;">¿Te gustó este libro?</h2>
+                <p style="font-size: 1.3em;">¡Recibe un libro nuevo cada semana!</p>
+                <a href="https://www.beibeiamigos.com/spanish-books#subscribe" class="cta-button" style="color: white;">📧 Suscríbete Gratis</a>
+                <a href="https://www.beibeiamigos.com/tour" class="cta-button" style="color: white;">🏫 Visita Nuestra Escuela</a>
+                <p style="margin-top: 20px; font-size: 1.1em;">
+                    <a href="https://www.beibeiamigos.com" style="color: #2E7D32; text-decoration: none; font-weight: bold;">Beibei Amigos Language Preschool</a><br>
+                    Español • Mandarín • Inglés
+                </p>
+            </div>
+        </div>
+        
+        <!-- Navigation Controls -->
+        <div class="controls">
+            <button id="prevBtn" onclick="previousPage()">◀ Anterior</button>
+            <div class="page-indicator">
+                <span id="currentPage">1</span> / <span id="totalPages">8</span>
+            </div>
+            <button id="nextBtn" onclick="nextPage()">Siguiente ▶</button>
+            <button id="listenBtn" onclick="readAloud()">🔊 Escuchar</button>
+        </div>
+    </div>
+    
+    <script>
+        let currentPageNum = 1;
+        const totalPages = 8;
+        
+        // Web Speech API for read-aloud
+        const synth = window.speechSynthesis;
+        let utterance = null;
+        
+        function updatePage() {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show current page
+            document.getElementById('page' + currentPageNum).classList.add('active');
+            
+            // Update page indicator
+            document.getElementById('currentPage').textContent = currentPageNum;
+            
+            // Update button states
+            document.getElementById('prevBtn').disabled = (currentPageNum === 1);
+            document.getElementById('nextBtn').disabled = (currentPageNum === totalPages);
+            
+            // Stop any ongoing speech
+            synth.cancel();
+            
+            // Track page view in GA4
+            gtag('event', 'page_view', {
+                'page_title': 'La Granja de Don Pedro - Page ' + currentPageNum,
+                'page_location': window.location.href + '#page' + currentPageNum
+            });
+        }
+        
+        function nextPage() {
+            if (currentPageNum < totalPages) {
+                currentPageNum++;
+                updatePage();
+            }
+        }
+        
+        function previousPage() {
+            if (currentPageNum > 1) {
+                currentPageNum--;
+                updatePage();
+            }
+        }
+        
+        function readAloud() {
+            synth.cancel();
+            
+            const currentPage = document.getElementById('page' + currentPageNum);
+            const textElements = currentPage.querySelectorAll('h1, h2, p:not(.pronunciation):not(.cta-section p), .sound-effect');
+            
+            let textToRead = '';
+            textElements.forEach(el => {
+                if (!el.querySelector('.cta-button')) {
+                    textToRead += el.textContent + '. ';
+                }
+            });
+            
+            utterance = new SpeechSynthesisUtterance(textToRead);
+            utterance.lang = 'es-ES';
+            utterance.rate = 0.8;
+            utterance.pitch = 1.1;
+            
+            // Try to get a Spanish voice
+            const voices = synth.getVoices();
+            const spanishVoice = voices.find(voice => voice.lang.startsWith('es'));
+            if (spanishVoice) {
+                utterance.voice = spanishVoice;
+            }
+            
+            synth.speak(utterance);
+            
+            // Track audio usage in GA4
+            gtag('event', 'audio_play', {
+                'page_number': currentPageNum,
+                'book_title': 'La Granja de Don Pedro'
+            });
+        }
+        
+        // Load voices (needed for some browsers)
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = function() {
+                speechSynthesis.getVoices();
+            };
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') previousPage();
+            if (e.key === ' ') { e.preventDefault(); readAloud(); }
+        });
+        
+        // Initialize
+        updatePage();
+        
+        // Track book completion
+        window.addEventListener('beforeunload', function() {
+            if (currentPageNum === totalPages) {
+                gtag('event', 'book_completed', {
+                    'book_title': 'La Granja de Don Pedro'
+                });
+            }
+        });
+    </script>
+</body>
+</html>
