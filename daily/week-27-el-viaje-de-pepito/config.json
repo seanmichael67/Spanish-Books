@@ -1,0 +1,83 @@
+{
+  "week": 27,
+  "title": "El Viaje de Pepito",
+  "subtitle": "Pepito travels through town discovering vehicles",
+  "topic": "Transportation & Vehicles",
+  "ageRange": "2-5 years",
+  "language": "Spanish",
+  "englishTranslation": "Pepito's Journey",
+  "pages": 10,
+  "newVocabulary": [
+    "ciudad (town/city)",
+    "carro (car)",
+    "autobús (bus)",
+    "bicicleta (bicycle)",
+    "camión de bomberos (fire truck)",
+    "tren (train)",
+    "avión (airplane)",
+    "barco (boat/ship)",
+    "helicóptero (helicopter)",
+    "vehículos (vehicles)",
+    "viajar (to travel)",
+    "volar (to fly)",
+    "navegar (to sail)"
+  ],
+  "culturalElements": [
+    "Urban transportation in Spanish-speaking cities",
+    "Vehicle sounds in Spanish culture",
+    "Community helpers (firefighters)",
+    "Exploration and curiosity"
+  ],
+  "learningObjectives": [
+    "Learn transportation vocabulary in Spanish",
+    "Practice vehicle sounds and movement verbs",
+    "Develop observation skills",
+    "Build spatial vocabulary (above, near, in)",
+    "Encourage curiosity about the world",
+    "Introduce question formation (¿Cuál es tu favorito?)"
+  ],
+  "seo": {
+    "metaTitle": "El Viaje de Pepito - Free Spanish Transportation Book | Beibei Amigos",
+    "metaDescription": "Interactive Spanish book teaching vehicle names and transportation vocabulary. Perfect for preschoolers ages 2-5. Read-aloud audio included. Learn vehicles in Spanish with Pepito! Free from Beibei Amigos.",
+    "keywords": [
+      "vehicles in spanish",
+      "spanish transportation vocabulary",
+      "preschool spanish book",
+      "learn vehicles spanish kids",
+      "car in spanish",
+      "bus in spanish",
+      "train in spanish",
+      "interactive spanish book",
+      "free spanish books for kids",
+      "beibei amigos spanish books",
+      "bilingual transportation book"
+    ],
+    "targetSearchTerms": [
+      "how to say car in spanish",
+      "vehicles spanish for kids",
+      "transportation vocabulary spanish preschool",
+      "free spanish books for toddlers",
+      "teach kids vehicles in spanish",
+      "spanish words for transportation"
+    ]
+  },
+  "educationalStandards": {
+    "vocabulary": "13 new words (vehicles, movement verbs)",
+    "grammar": "Present tense, question words (¿Qué?, ¿Cuál?), descriptive adjectives (grande, rojo, azul)",
+    "culturalCompetency": "Urban life, transportation systems, community helpers",
+    "cognitiveDevelopment": "Categorization (vehicles), sound recognition, spatial awareness (above, near, in)",
+    "socialEmotional": "Curiosity, exploration, wonder, asking questions"
+  },
+  "generatedDate": "2026-02-27",
+  "author": "Luna 📚 - Beibei Amigos Book Generator",
+  "illustrationStyle": "Colorful, child-friendly emoji illustrations with vehicles in urban settings",
+  "publicUrl": "https://spanish-books.onrender.com/week-27-el-viaje-de-pepito/",
+  "ctaGoal": "Email capture for weekly book delivery, tour scheduling",
+  "parentNotes": [
+    "This book introduces vehicles through a journey narrative, making it engaging for young learners",
+    "Encourage your child to make the vehicle sounds in Spanish (brum-brum, chu-chu, etc.)",
+    "Ask your child which vehicle is their favorite and practice saying it in Spanish",
+    "Point out vehicles during car rides and practice naming them in Spanish",
+    "The question format at the end encourages interaction and opinion expression"
+  ]
+}

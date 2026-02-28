@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Viaje de Pepito - Free Spanish Transportation Book | Beibei Amigos</title>
+    <meta name="description" content="Interactive Spanish book teaching vehicle names and transportation vocabulary. Perfect for preschoolers ages 2-5. Read-aloud audio included. Learn vehicles in Spanish with Pepito! Free from Beibei Amigos.">
+    <meta name="keywords" content="vehicles in spanish, spanish transportation vocabulary, preschool spanish book, learn vehicles spanish kids, interactive spanish book, free spanish books for kids, beibei amigos spanish books, bilingual transportation book">
+    
+    <!-- Schema.org markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "El Viaje de Pepito",
+      "author": {
+        "@type": "Organization",
+        "name": "Beibei Amigos"
+      },
+      "inLanguage": "es",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "preschool"
+      },
+      "educationalUse": "Language learning",
+      "learningResourceType": "Interactive digital book",
+      "about": "Transportation and vehicle vocabulary in Spanish for preschool children",
+      "isAccessibleForFree": true
+    }
+    </script>
+    
+    <!-- GA4 Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXX', {
+        'page_title': 'El Viaje de Pepito - Week 27',
+        'page_location': window.location.href
+      });
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #42A5F5 0%, #1976D2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .illustration {
+            width: 100%;
+            height: 300px;
+            background: #E3F2FD;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            border: 3px solid #42A5F5;
+        }
+        
+        .text-content {
+            font-size: 1.5em;
+            line-height: 1.8;
+            color: #333;
+            text-align: center;
+        }
+        
+        .spanish-text {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #1976D2;
+            margin-bottom: 15px;
+        }
+        
+        .pronunciation {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        .vocabulary-highlight {
+            background: linear-gradient(120deg, #FFF59D 0%, #FFF176 100%);
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            background: #F5F5F5;
+            border-top: 3px solid #42A5F5;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #42A5F5 0%, #1976D2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(66, 165, 245, 0.4);
+        }
+        
+        button:disabled {
+            background: #CCCCCC;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .page-indicator {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+            padding: 20px;
+        }
+        
+        .audio-btn {
+            background: linear-gradient(135deg, #66BB6A 0%, #43A047 100%);
+            margin: 10px auto;
+            display: block;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #FFB74D 0%, #FF9800 100%);
+            padding: 30px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        
+        .cta-section h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        .cta-btn {
+            background: white;
+            color: #FF9800;
+            margin: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .spanish-text {
+                font-size: 1.4em;
+            }
+            
+            .text-content {
+                font-size: 1.2em;
+            }
+            
+            .illustration {
+                height: 200px;
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="header">
+            <h1>🚗 El Viaje de Pepito 🚌</h1>
+            <div class="subtitle">Pepito's Journey Through Town</div>
+            <div class="subtitle" style="font-size: 0.9em; margin-top: 10px;">Week 27 • Transportation Vocabulary</div>
+        </div>
+        
+        <!-- Page 1 -->
+        <div class="page active" data-page="1">
+            <div class="page-content">
+                <div class="illustration">🏠👦</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        ¡Hola! Soy <span class="vocabulary-highlight">Pepito</span>.
+                    </div>
+                    <div class="spanish-text">
+                        Hoy voy a viajar por mi <span class="vocabulary-highlight">ciudad</span>.
+                    </div>
+                    <p class="pronunciation">
+                        (Oh-la! Soy Peh-PEE-toh. Oy voy ah vee-ah-HAR por mee see-oo-DAHD)
+                    </p>
+                    <p>Hello! I'm Pepito. Today I'm going to travel through my town.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 2 -->
+        <div class="page" data-page="2">
+            <div class="page-content">
+                <div class="illustration">🚗💨</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        Primero, veo un <span class="vocabulary-highlight">carro</span> rojo.
+                    </div>
+                    <div class="spanish-text">
+                        ¡Brum, brum! dice el carro.
+                    </div>
+                    <p class="pronunciation">
+                        (Pree-MEH-roh, VEH-oh oon KAH-rroh ROH-hoh. Broom, broom! DEE-seh el KAH-rroh)
+                    </p>
+                    <p>First, I see a red car. Vroom, vroom! says the car.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 3 -->
+        <div class="page" data-page="3">
+            <div class="page-content">
+                <div class="illustration">🚌👨‍👩‍👧‍👦</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        Ahora veo un <span class="vocabulary-highlight">autobús</span> grande y amarillo.
+                    </div>
+                    <div class="spanish-text">
+                        ¡Muchas personas viajan en el autobús!
+                    </div>
+                    <p class="pronunciation">
+                        (Ah-OH-rah VEH-oh oon ow-toh-BOOS GRAHN-deh ee ah-mah-REE-yoh)
+                    </p>
+                    <p>Now I see a big yellow bus. Many people travel on the bus!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 4 -->
+        <div class="page" data-page="4">
+            <div class="page-content">
+                <div class="illustration">🚲🌳</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        En el parque, veo una <span class="vocabulary-highlight">bicicleta</span> azul.
+                    </div>
+                    <div class="spanish-text">
+                        ¡Ring, ring! suena la bicicleta.
+                    </div>
+                    <p class="pronunciation">
+                        (En el PAR-keh, VEH-oh OO-nah bee-see-KLEH-tah ah-SOOL)
+                    </p>
+                    <p>In the park, I see a blue bicycle. Ring, ring! sounds the bicycle.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 5 -->
+        <div class="page" data-page="5">
+            <div class="page-content">
+                <div class="illustration">🚒👨‍🚒</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        ¡Mira! Un <span class="vocabulary-highlight">camión de bomberos</span> pasa rápido.
+                    </div>
+                    <div class="spanish-text">
+                        ¡Uuuiii, uuuiii! hace la sirena.
+                    </div>
+                    <p class="pronunciation">
+                        (MEE-rah! Oon kah-mee-OWN deh bohm-BEH-rohs PAH-sah RAH-pee-doh)
+                    </p>
+                    <p>Look! A fire truck passes quickly. Wee-ooo, wee-ooo! goes the siren.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 6 -->
+        <div class="page" data-page="6">
+            <div class="page-content">
+                <div class="illustration">🚂🛤️</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        Cerca de las vías, veo un <span class="vocabulary-highlight">tren</span> largo.
+                    </div>
+                    <div class="spanish-text">
+                        ¡Chu-chu! dice el tren.
+                    </div>
+                    <p class="pronunciation">
+                        (SEHR-kah deh lahs VEE-ahs, VEH-oh oon trehn LAR-goh)
+                    </p>
+                    <p>Near the tracks, I see a long train. Choo-choo! says the train.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 7 -->
+        <div class="page" data-page="7">
+            <div class="page-content">
+                <div class="illustration">✈️☁️</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        ¡Arriba en el cielo! Veo un <span class="vocabulary-highlight">avión</span> blanco.
+                    </div>
+                    <div class="spanish-text">
+                        ¡El avión vuela muy alto!
+                    </div>
+                    <p class="pronunciation">
+                        (Ah-REE-bah en el see-EH-loh! VEH-oh oon ah-vee-OWN BLAHN-koh)
+                    </p>
+                    <p>Up in the sky! I see a white airplane. The airplane flies very high!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 8 -->
+        <div class="page" data-page="8">
+            <div class="page-content">
+                <div class="illustration">🚢🌊</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        En el puerto, veo un <span class="vocabulary-highlight">barco</span> grande.
+                    </div>
+                    <div class="spanish-text">
+                        ¡El barco navega en el agua!
+                    </div>
+                    <p class="pronunciation">
+                        (En el PWEHR-toh, VEH-oh oon BAR-koh GRAHN-deh)
+                    </p>
+                    <p>At the port, I see a big boat. The boat sails on the water!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 9 -->
+        <div class="page" data-page="9">
+            <div class="page-content">
+                <div class="illustration">🚁🏙️</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        ¡Qué sorpresa! Un <span class="vocabulary-highlight">helicóptero</span> vuela sobre la ciudad.
+                    </div>
+                    <div class="spanish-text">
+                        ¡Tap-tap-tap! hacen las hélices.
+                    </div>
+                    <p class="pronunciation">
+                        (Keh sohr-PREH-sah! Oon eh-lee-KOHP-teh-roh VWEH-lah SOH-breh lah see-oo-DAHD)
+                    </p>
+                    <p>What a surprise! A helicopter flies over the city. Tap-tap-tap! go the propellers.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 10 -->
+        <div class="page" data-page="10">
+            <div class="page-content">
+                <div class="illustration">🏠👦😊</div>
+                <div class="text-content">
+                    <div class="spanish-text">
+                        ¡Qué día tan divertido!
+                    </div>
+                    <div class="spanish-text">
+                        Vi muchos <span class="vocabulary-highlight">vehículos</span> diferentes.
+                    </div>
+                    <div class="spanish-text">
+                        ¿Cuál es tu favorito?
+                    </div>
+                    <p class="pronunciation">
+                        (Keh DEE-ah tahn dee-vehr-TEE-doh! Vee MOO-chohs veh-EE-koo-lohs dee-feh-REHN-tehs. Kwahl es too fah-voh-REE-toh?)
+                    </p>
+                    <p>What a fun day! I saw many different vehicles. Which is your favorite?</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-indicator">
+            <span id="current-page">1</span> / <span id="total-pages">10</span>
+        </div>
+        
+        <div class="controls">
+            <button id="prev-btn" onclick="previousPage()" disabled>⬅️ Anterior</button>
+            <button class="audio-btn" onclick="readPage()">🔊 Escuchar</button>
+            <button id="next-btn" onclick="nextPage()">Siguiente ➡️</button>
+        </div>
+        
+        <div class="cta-section">
+            <h3>¿Te gustó este libro? 📚</h3>
+            <p>Recibe un libro nuevo cada semana directamente en tu email</p>
+            <button class="cta-btn" onclick="trackCTA('email_signup')">✉️ Suscríbete Gratis</button>
+            <button class="cta-btn" onclick="trackCTA('schedule_tour')">🏫 Visita Beibei Amigos</button>
+        </div>
+    </div>
+    
+    <script>
+        let currentPage = 1;
+        const totalPages = 10;
+        
+        function showPage(pageNum) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            const targetPage = document.querySelector(`[data-page="${pageNum}"]`);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                currentPage = pageNum;
+                document.getElementById('current-page').textContent = currentPage;
+                
+                // Update button states
+                document.getElementById('prev-btn').disabled = currentPage === 1;
+                document.getElementById('next-btn').disabled = currentPage === totalPages;
+                
+                // Track page view
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'page_turn', {
+                        'event_category': 'Book Interaction',
+                        'event_label': `Page ${currentPage}`,
+                        'value': currentPage
+                    });
+                }
+            }
+        }
+        
+        function nextPage() {
+            if (currentPage < totalPages) {
+                showPage(currentPage + 1);
+            }
+        }
+        
+        function previousPage() {
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+            }
+        }
+        
+        function readPage() {
+            const currentPageEl = document.querySelector('.page.active');
+            const spanishTexts = currentPageEl.querySelectorAll('.spanish-text');
+            let fullText = '';
+            
+            spanishTexts.forEach(text => {
+                fullText += text.textContent + ' ';
+            });
+            
+            // Try Web Speech API first
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.9;
+                window.speechSynthesis.cancel(); // Cancel any ongoing speech
+                window.speechSynthesis.speak(utterance);
+                
+                // Track audio play
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'audio_play', {
+                        'event_category': 'Book Interaction',
+                        'event_label': `Page ${currentPage}`,
+                        'value': currentPage
+                    });
+                }
+            } else {
+                alert('Tu navegador no soporta audio automático. Por favor, lee el texto en voz alta.');
+            }
+        }
+        
+        function trackCTA(action) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'cta_click', {
+                    'event_category': 'Conversion',
+                    'event_label': action,
+                    'value': 1
+                });
+            }
+            
+            // Redirect based on action
+            if (action === 'email_signup') {
+                window.parent.location.href = 'https://www.beibeiamigos.com/contact/';
+            } else if (action === 'schedule_tour') {
+                window.parent.location.href = 'https://www.beibeiamigos.com/schedule-tour/';
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') previousPage();
+            if (e.key === ' ') {
+                e.preventDefault();
+                readPage();
+            }
+        });
+        
+        // Initialize
+        document.getElementById('total-pages').textContent = totalPages;
+        
+        // Track book load
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'book_load', {
+                'event_category': 'Book Interaction',
+                'event_label': 'El Viaje de Pepito - Week 27',
+                'value': 1
+            });
+        }
+    </script>
+</body>
+</html>
