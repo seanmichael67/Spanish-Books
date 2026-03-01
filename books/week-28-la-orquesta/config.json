@@ -1,0 +1,106 @@
+{
+  "week": 28,
+  "title": "La Orquesta de los Animales",
+  "englishTranslation": "The Animal Orchestra",
+  "topic": "Musical Instruments",
+  "ageRange": "2-5 years",
+  "language": "Spanish",
+  "pageCount": 9,
+  "dateCreated": "2026-02-28",
+  "author": "Beibei Amigos Language Preschool",
+  "newVocabulary": [
+    "orquesta (orchestra)",
+    "tocar (to play an instrument)",
+    "piano (piano)",
+    "guitarra (guitar)",
+    "tambor (drum)",
+    "trompeta (trumpet)",
+    "flauta (flute)",
+    "violín (violin)",
+    "música (music)",
+    "instrumento (instrument)"
+  ],
+  "grammar": [
+    "El/La + animal + toca + el/la + instrumento (repetitive pattern)",
+    "Gender agreement (el piano, la guitarra)",
+    "Present tense conjugation (tocar → toca)"
+  ],
+  "educationalObjectives": [
+    "Learn names of 6 musical instruments in Spanish",
+    "Understand the verb 'tocar' (to play)",
+    "Practice repetitive sentence patterns",
+    "Develop vocabulary about music and animals",
+    "Engage with audio pronunciation"
+  ],
+  "culturalNotes": [
+    "Music is central to Hispanic culture across all countries",
+    "Many Spanish-speaking children learn instruments from a young age",
+    "Classical guitar (guitarra clásica) has deep roots in Spanish culture"
+  ],
+  "seo": {
+    "metaTitle": "La Orquesta de los Animales - Free Spanish Book for Kids | Musical Instruments",
+    "metaDescription": "Interactive Spanish book teaching musical instruments to preschoolers. Learn piano, guitarra, tambor, trompeta, flauta, violín in Spanish. Free online book with audio for ages 2-5.",
+    "keywords": [
+      "spanish musical instruments for kids",
+      "learn instruments in spanish",
+      "spanish books for preschoolers",
+      "free spanish children's books",
+      "musical instruments in spanish",
+      "piano guitarra tambor spanish",
+      "bilingual music education",
+      "spanish for toddlers",
+      "interactive spanish books",
+      "preschool spanish vocabulary",
+      "la orquesta spanish",
+      "tocar instrument spanish",
+      "beibei amigos spanish books"
+    ],
+    "focusKeyphrases": [
+      "musical instruments in spanish for kids",
+      "spanish books about music",
+      "learn instruments spanish preschool"
+    ],
+    "relatedTopics": [
+      "spanish music vocabulary",
+      "bilingual music education",
+      "preschool spanish lessons",
+      "spanish animal vocabulary"
+    ]
+  },
+  "parentTips": [
+    "Act out playing each instrument as you read",
+    "Find videos of real instruments being played and watch together",
+    "Encourage your child to 'conduct' the animal orchestra",
+    "Make simple shakers or drums at home and play along",
+    "Sing the phrases to create a simple melody"
+  ],
+  "extensionActivities": [
+    "Draw your own animal musician",
+    "Visit a music store to see real instruments",
+    "Watch a children's orchestra performance online",
+    "Make a DIY drum with a pot and wooden spoon",
+    "Learn a simple song in Spanish together"
+  ],
+  "wordCount": {
+    "spanish": 156,
+    "english": 89,
+    "total": 245
+  },
+  "readingTime": "5-7 minutes",
+  "difficulty": "Beginner",
+  "repetitionLevel": "High (great for language acquisition)",
+  "interactiveFeatures": [
+    "Web Speech API text-to-speech",
+    "Click-to-hear pronunciation",
+    "Keyboard navigation",
+    "GA4 tracking integration",
+    "Responsive mobile design"
+  ],
+  "callsToAction": [
+    "Schedule a tour at Beibei Amigos",
+    "Leave a review",
+    "Subscribe for weekly books"
+  ],
+  "thumbnailEmoji": "🎵",
+  "colorScheme": "Purple gradient (music-themed)"
+}

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Orquesta de los Animales - Libro de Español para Niños</title>
+    <meta name="description" content="Un libro interactivo en español sobre animales que tocan instrumentos musicales. Aprende los nombres de instrumentos en español: piano, guitarra, tambor, trompeta, flauta, violín. Perfecto para niños de 2-5 años.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .page {
+            display: none;
+            padding: 60px 40px;
+            min-height: 600px;
+            position: relative;
+        }
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .page-content {
+            text-align: center;
+        }
+        .illustration {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin: 0 auto 30px;
+            background: #f0f0f0;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .illustration::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+        }
+        h1 {
+            color: #764ba2;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #667eea;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .spanish-text {
+            font-size: 2em;
+            color: #333;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .pronunciation {
+            font-size: 1.2em;
+            color: #666;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        .english-text {
+            font-size: 1.3em;
+            color: #888;
+            margin: 15px 0;
+        }
+        .vocabulary {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .vocabulary strong {
+            color: #856404;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-top: 2px solid #e9ecef;
+        }
+        .btn {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+        }
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .page-number {
+            color: #666;
+            font-size: 1.1em;
+        }
+        .audio-btn {
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 20px 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        .audio-btn:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        .cta-section h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .cta-btn {
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 768px) {
+            .page {
+                padding: 40px 20px;
+                min-height: 500px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            .spanish-text {
+                font-size: 1.5em;
+            }
+            .navigation {
+                padding: 15px 20px;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Cover -->
+        <div class="page active" id="page-1">
+            <div class="page-content">
+                <div class="illustration">🎵🎶</div>
+                <h1>La Orquesta de los Animales</h1>
+                <h2>The Animal Orchestra</h2>
+                <button class="audio-btn" onclick="speakText('La Orquesta de los Animales')">
+                    🔊 Escucha / Listen
+                </button>
+                <div class="vocabulary">
+                    <strong>Nueva palabra:</strong> orquesta (or-KES-tah) = orchestra
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2: Cat plays piano -->
+        <div class="page" id="page-2">
+            <div class="page-content">
+                <div class="illustration">🐱🎹</div>
+                <h2 class="spanish-text">El gato toca el piano.</h2>
+                <p class="pronunciation">(el GAH-toh TOH-kah el pee-AH-no)</p>
+                <p class="english-text">The cat plays the piano.</p>
+                <button class="audio-btn" onclick="speakText('El gato toca el piano')">
+                    🔊 Escucha / Listen
+                </button>
+                <div class="vocabulary">
+                    <strong>Nuevas palabras:</strong><br>
+                    • tocar (toh-KAR) = to play (an instrument)<br>
+                    • piano (pee-AH-no) = piano
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3: Dog plays guitar -->
+        <div class="page" id="page-3">
+            <div class="page-content">
+                <div class="illustration">🐶🎸</div>
+                <h2 class="spanish-text">El perro toca la guitarra.</h2>
+                <p class="pronunciation">(el PEH-rroh TOH-kah lah ghee-TAR-rah)</p>
+                <p class="english-text">The dog plays the guitar.</p>
+                <button class="audio-btn" onclick="speakText('El perro toca la guitarra')">
+                    🔊 Escucha / Listen
+                </button>
+                <div class="vocabulary">
+                    <strong>Nueva palabra:</strong> guitarra (ghee-TAR-rah) = guitar
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4: Rabbit plays drum -->
+        <div class="page" id="page-4">
+            <div class="page-content">
+                <div class="illustration">🐰🥁</div>
+                <h2 class="spanish-text">El conejo toca el tambor.</h2>
+                <p class="pronunciation">(el ko-NEH-ho TOH-kah el tahm-BOR)</p>
+                <p class="english-text">The rabbit plays the drum.</p>
+                <button class="audio-btn" onclick="speakText('El conejo toca el tambor')">
+                    🔊 Escucha / Listen
+                </button>
+                <div class="vocabulary">
+                    <strong>Nueva palabra:</strong> tambor (tahm-BOR) = drum
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5: Frog plays trumpet -->
+        <div class="page" id="page-5">
+            <div class="page-content">
+                <div class="illustration">🐸🎺</div>
+                <h2 class="spanish-text">La rana toca la trompeta.</h2>
+                <p class="pronunciation">(lah RAH-nah TOH-kah lah trom-PEH-tah)</p>
+                <p class="english-text">The frog plays the trumpet.</p>
+                <button class="audio-btn" onclick="speakText('La rana toca la trompeta')">
+                    🔊 Escucha / Listen
+                </button>
+                <div class="vocabulary">
+                    <strong>Nueva palabra:</strong> trompeta (trom-PEH-tah) = trumpet
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 6: Bird plays flute -->
+        <div class="page" id="page-6">
+            <div class="page-content">
+                <div class="illustration">🐦🎶</div>
+                <h2 class="spanish-text">El pájaro toca la flauta.</h2>
+                <p class="pronunciation">(el PAH-hah-roh TOH-kah lah FLAU-tah)</p>
+                <p class="english-text">The bird plays the flute.</p>
+                <button class="audio-btn" onclick="speakText('El pájaro toca la flauta')">
+                    🔊 Escucha / Listen
+                </button>
+                <div class="vocabulary">
+                    <strong>Nueva palabra:</strong> flauta (FLAU-tah) = flute
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 7: Elephant plays violin -->
+        <div class="page" id="page-7">
+            <div class="page-content">
+                <div class="illustration">🐘🎻</div>
+                <h2 class="spanish-text">El elefante toca el violín.</h2>
+                <p class="pronunciation">(el eh-leh-FAHN-teh TOH-kah el vee-oh-LEEN)</p>
+                <p class="english-text">The elephant plays the violin.</p>
+                <button class="audio-btn" onclick="speakText('El elefante toca el violín')">
+                    🔊 Escucha / Listen
+                </button>
+                <div class="vocabulary">
+                    <strong>Nueva palabra:</strong> violín (vee-oh-LEEN) = violin
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 8: Everyone plays together -->
+        <div class="page" id="page-8">
+            <div class="page-content">
+                <div class="illustration">🎵🎶🎼</div>
+                <h2 class="spanish-text">¡Todos tocan juntos!</h2>
+                <h2 class="spanish-text">¡Qué música bonita!</h2>
+                <p class="pronunciation">(TOH-dohs TOH-kahn HOON-tohs / keh MOO-see-kah bo-NEE-tah)</p>
+                <p class="english-text">Everyone plays together! What beautiful music!</p>
+                <button class="audio-btn" onclick="speakText('¡Todos tocan juntos! ¡Qué música bonita!')">
+                    🔊 Escucha / Listen
+                </button>
+                <div class="vocabulary">
+                    <strong>Nueva palabra:</strong> música (MOO-see-kah) = music
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 9: End page with CTAs -->
+        <div class="page" id="page-9">
+            <div class="page-content">
+                <h2>¡Felicidades! 🎉</h2>
+                <p class="spanish-text">You finished the book!</p>
+                
+                <div class="cta-section">
+                    <h3>¿Te gustó este libro?</h3>
+                    <p>Give your child the gift of bilingual education at Beibei Amigos Language Preschool!</p>
+                    <button class="cta-btn" onclick="window.open('https://www.beibeiamigos.com/schedule-tour', '_blank')">
+                        📅 Schedule a Tour
+                    </button>
+                    <button class="cta-btn" onclick="window.open('https://www.beibeiamigos.com/reviews', '_blank')">
+                        ⭐ Leave a Review
+                    </button>
+                </div>
+
+                <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+                    <h3 style="color: #667eea; margin-bottom: 15px;">📚 Get Weekly Books</h3>
+                    <p style="color: #666; margin-bottom: 15px;">
+                        Want a new Spanish book delivered to your inbox every week?
+                    </p>
+                    <button class="cta-btn" onclick="window.open('https://www.beibeiamigos.com/subscribe', '_blank')">
+                        ✉️ Subscribe Free
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <button class="btn btn-secondary" id="prevBtn" onclick="changePage(-1)">← Anterior</button>
+            <span class="page-number">Página <span id="currentPage">1</span> de 9</span>
+            <button class="btn btn-primary" id="nextBtn" onclick="changePage(1)">Siguiente →</button>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "La Orquesta de los Animales",
+        "description": "Un libro interactivo en español sobre animales que tocan instrumentos musicales. Aprende piano, guitarra, tambor, trompeta, flauta, violín.",
+        "inLanguage": "es",
+        "educationalLevel": "Preschool",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "student",
+            "audienceType": "Children ages 2-5"
+        },
+        "about": [
+            {
+                "@type": "Thing",
+                "name": "Musical Instruments"
+            },
+            {
+                "@type": "Thing",
+                "name": "Spanish Language Learning"
+            }
+        ],
+        "keywords": "spanish for kids, musical instruments in spanish, learn spanish, preschool spanish, bilingual education, piano guitarra tambor trompeta flauta violín",
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        }
+    }
+    </script>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 9;
+
+        function changePage(direction) {
+            const pages = document.querySelectorAll('.page');
+            pages[currentPage - 1].classList.remove('active');
+            
+            currentPage += direction;
+            
+            if (currentPage < 1) currentPage = 1;
+            if (currentPage > totalPages) currentPage = totalPages;
+            
+            pages[currentPage - 1].classList.add('active');
+            document.getElementById('currentPage').textContent = currentPage;
+            
+            updateButtons();
+
+            // Track page views in GA4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    'page_title': 'La Orquesta de los Animales - Page ' + currentPage,
+                    'page_location': window.location.href + '#page-' + currentPage
+                });
+            }
+        }
+
+        function updateButtons() {
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+        }
+
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                window.speechSynthesis.speak(utterance);
+
+                // Track audio plays in GA4
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'audio_play', {
+                        'text': text,
+                        'page': currentPage
+                    });
+                }
+            }
+        }
+
+        // Initialize
+        updateButtons();
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') changePage(-1);
+            if (e.key === 'ArrowRight') changePage(1);
+        });
+
+        // Track book completion
+        window.addEventListener('beforeunload', function() {
+            if (currentPage === totalPages && typeof gtag !== 'undefined') {
+                gtag('event', 'book_completed', {
+                    'book_title': 'La Orquesta de los Animales'
+                });
+            }
+        });
+    </script>
+</body>
+</html>
