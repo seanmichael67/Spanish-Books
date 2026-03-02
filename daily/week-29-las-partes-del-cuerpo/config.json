@@ -1,0 +1,152 @@
+{
+  "week": 29,
+  "title": "Mi Cuerpo Maravilloso",
+  "englishTranslation": "My Wonderful Body",
+  "topic": "Body Parts / Las Partes del Cuerpo",
+  "targetAge": "2-5 years",
+  "difficulty": "Beginner",
+  "pageCount": 10,
+  "createdDate": "2026-03-01",
+  "author": "Luna 📚 - Beibei Amigos",
+  "newVocabulary": [
+    {
+      "spanish": "los ojos",
+      "pronunciation": "lohs OH-hos",
+      "english": "eyes"
+    },
+    {
+      "spanish": "las orejas",
+      "pronunciation": "lahs oh-REH-hahs",
+      "english": "ears"
+    },
+    {
+      "spanish": "la nariz",
+      "pronunciation": "lah nah-REES",
+      "english": "nose"
+    },
+    {
+      "spanish": "la boca",
+      "pronunciation": "lah BOH-kah",
+      "english": "mouth"
+    },
+    {
+      "spanish": "las manos",
+      "pronunciation": "lahs MAH-nohs",
+      "english": "hands"
+    },
+    {
+      "spanish": "los pies",
+      "pronunciation": "lohs pee-EHS",
+      "english": "feet"
+    },
+    {
+      "spanish": "el corazón",
+      "pronunciation": "ehl koh-rah-SOHN",
+      "english": "heart"
+    },
+    {
+      "spanish": "el cuerpo",
+      "pronunciation": "ehl KWER-poh",
+      "english": "body"
+    },
+    {
+      "spanish": "ver",
+      "pronunciation": "behr",
+      "english": "to see"
+    },
+    {
+      "spanish": "oír",
+      "pronunciation": "oh-EER",
+      "english": "to hear"
+    },
+    {
+      "spanish": "oler",
+      "pronunciation": "oh-LEHR",
+      "english": "to smell"
+    },
+    {
+      "spanish": "comer",
+      "pronunciation": "koh-MEHR",
+      "english": "to eat"
+    },
+    {
+      "spanish": "tocar",
+      "pronunciation": "toh-KAHR",
+      "english": "to touch"
+    },
+    {
+      "spanish": "correr",
+      "pronunciation": "koh-REHR",
+      "english": "to run"
+    },
+    {
+      "spanish": "amar",
+      "pronunciation": "ah-MAHR",
+      "english": "to love"
+    }
+  ],
+  "grammarPatterns": [
+    "Con mi/mis [body part], yo puedo [verb]",
+    "Repetitive sentence structure for easy learning"
+  ],
+  "educationalGoals": [
+    "Learn body parts in Spanish",
+    "Understand sensory experiences (sight, sound, smell, taste, touch)",
+    "Build verb vocabulary (action words)",
+    "Develop body awareness and appreciation",
+    "Practice repetitive sentence patterns"
+  ],
+  "culturalElements": [
+    "Universal human experience across cultures",
+    "Family love and connection",
+    "Self-acceptance and confidence"
+  ],
+  "interactiveElements": [
+    "Audio playback with Web Speech API",
+    "Page-by-page navigation",
+    "Pronunciation guides for parents",
+    "Vocabulary review on final page",
+    "Keyboard navigation support"
+  ],
+  "seo": {
+    "metaTitle": "Mi Cuerpo Maravilloso - Libro Interactivo en Español para Niños",
+    "metaDescription": "Aprende las partes del cuerpo en español con este libro interactivo gratis para niños de 2-5 años. Incluye audio, pronunciación y vocabulario. ¡Perfecto para preescolar!",
+    "keywords": [
+      "partes del cuerpo en español",
+      "body parts in Spanish for kids",
+      "Spanish vocabulary for preschoolers",
+      "libro interactivo español",
+      "aprender español niños",
+      "Spanish learning book",
+      "free Spanish books for children",
+      "body parts vocabulary Spanish",
+      "enseñar español a niños",
+      "Spanish immersion preschool Phoenix",
+      "Beibei Amigos books",
+      "bilingual children's books"
+    ],
+    "targetKeywords": [
+      "body parts in Spanish",
+      "partes del cuerpo español",
+      "Spanish vocabulary for kids",
+      "interactive Spanish book"
+    ]
+  },
+  "marketingNotes": {
+    "funnel": "SEO → Free book → CTA (tour, contact, newsletter)",
+    "uniqueValue": "Interactive audio, pronunciation guides, culturally authentic",
+    "parentAppeal": "Teaches important vocabulary + body positivity",
+    "childAppeal": "Colorful illustrations, simple repetitive patterns, relatable activities"
+  },
+  "technicalNotes": {
+    "standalone": true,
+    "inlineCSS": true,
+    "inlineJS": true,
+    "diviCompatible": true,
+    "ttsMethod": "Web Speech API (browser native)",
+    "ga4Tracking": true,
+    "schemaMarkup": true,
+    "responsive": true,
+    "accessibility": "Keyboard navigation, semantic HTML"
+  }
+}

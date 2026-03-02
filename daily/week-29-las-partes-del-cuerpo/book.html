@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuerpo Maravilloso - Libro Interactivo en Español</title>
+    <meta name="description" content="Aprende las partes del cuerpo en español con este libro interactivo para niños de 2-5 años. ¡Con audio y ilustraciones coloridas!">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .book-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        .page {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .page-content {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .spanish-text {
+            font-size: 2em;
+            color: #333;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        
+        .pronunciation {
+            font-size: 1.2em;
+            color: #764ba2;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        .english-text {
+            font-size: 1.3em;
+            color: #666;
+            margin: 15px 0;
+        }
+        
+        .image-placeholder {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            border-radius: 15px;
+            padding: 80px 40px;
+            margin: 30px auto;
+            max-width: 500px;
+            font-size: 1.5em;
+            color: #2d3436;
+            border: 3px dashed #fdcb6e;
+        }
+        
+        .vocabulary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        .vocabulary h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .vocab-word {
+            font-size: 1.3em;
+            color: #333;
+            margin: 8px 0;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .page-indicator {
+            text-align: center;
+            color: #666;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .cta-section h3 {
+            color: #2d3436;
+            margin-bottom: 15px;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #f39c12;
+            margin: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .book-container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .spanish-text {
+                font-size: 1.5em;
+            }
+            
+            button {
+                padding: 12px 24px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Title -->
+        <div class="page active" data-page="1">
+            <h1>🌟 Mi Cuerpo Maravilloso 🌟</h1>
+            <div class="page-content">
+                <div class="image-placeholder">
+                    [Illustration: A happy child standing with arms spread wide, showing their whole body with a big smile]
+                </div>
+                <p class="spanish-text">¡Hola! Soy un niño especial.<br>¡Vamos a descubrir mi cuerpo!</p>
+                <p class="pronunciation">(OH-lah! Soy oon NEE-nyo es-peh-see-AHL. VAH-mos ah des-koo-BREER mee KWER-poh!)</p>
+                <p class="english-text">Hello! I am a special child.<br>Let's discover my body!</p>
+            </div>
+        </div>
+
+        <!-- Page 2: Los Ojos -->
+        <div class="page" data-page="2">
+            <h1>👀 Los Ojos</h1>
+            <div class="page-content">
+                <div class="image-placeholder">
+                    [Illustration: Close-up of a child's smiling face with big, sparkling eyes looking at colorful butterflies]
+                </div>
+                <p class="spanish-text">Con mis ojos, yo puedo ver.<br>¡Veo mariposas de muchos colores!</p>
+                <p class="pronunciation">(Kohn mees OH-hos, yoh PWEH-doh behr. BEH-oh mah-ree-POH-sahs deh MOO-chos koh-LOH-res!)</p>
+                <p class="english-text">With my eyes, I can see.<br>I see butterflies of many colors!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra:</h3>
+                    <p class="vocab-word"><strong>Los ojos</strong> (lohs OH-hos) = eyes</p>
+                    <p class="vocab-word"><strong>Ver</strong> (behr) = to see</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3: Las Orejas -->
+        <div class="page" data-page="3">
+            <h1>👂 Las Orejas</h1>
+            <div class="page-content">
+                <div class="image-placeholder">
+                    [Illustration: Child with hand cupped to ear, listening to birds singing in a tree with musical notes floating]
+                </div>
+                <p class="spanish-text">Con mis orejas, yo puedo oír.<br>¡Oigo los pájaros cantar!</p>
+                <p class="pronunciation">(Kohn mees oh-REH-hahs, yoh PWEH-doh oh-EER. OY-goh lohs PAH-hah-rohs kahn-TAHR!)</p>
+                <p class="english-text">With my ears, I can hear.<br>I hear the birds singing!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra:</h3>
+                    <p class="vocab-word"><strong>Las orejas</strong> (lahs oh-REH-hahs) = ears</p>
+                    <p class="vocab-word"><strong>Oír</strong> (oh-EER) = to hear</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4: La Nariz -->
+        <div class="page" data-page="4">
+            <h1>👃 La Nariz</h1>
+            <div class="page-content">
+                <div class="image-placeholder">
+                    [Illustration: Child smelling a bouquet of colorful flowers with eyes closed and happy expression]
+                </div>
+                <p class="spanish-text">Con mi nariz, yo puedo oler.<br>¡Huelo las flores bonitas!</p>
+                <p class="pronunciation">(Kohn mee nah-REES, yoh PWEH-doh oh-LEHR. WEH-loh lahs FLOH-res boh-NEE-tahs!)</p>
+                <p class="english-text">With my nose, I can smell.<br>I smell the pretty flowers!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra:</h3>
+                    <p class="vocab-word"><strong>La nariz</strong> (lah nah-REES) = nose</p>
+                    <p class="vocab-word"><strong>Oler</strong> (oh-LEHR) = to smell</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5: La Boca -->
+        <div class="page" data-page="5">
+            <h1>👄 La Boca</h1>
+            <div class="page-content">
+                <div class="image-placeholder">
+                    [Illustration: Child eating a juicy slice of watermelon with juice dripping, big smile showing enjoyment]
+                </div>
+                <p class="spanish-text">Con mi boca, yo puedo comer.<br>¡Como sandía dulce y rica!</p>
+                <p class="pronunciation">(Kohn mee BOH-kah, yoh PWEH-doh koh-MEHR. KOH-moh sahn-DEE-ah DOOL-seh ee REE-kah!)</p>
+                <p class="english-text">With my mouth, I can eat.<br>I eat sweet and delicious watermelon!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra:</h3>
+                    <p class="vocab-word"><strong>La boca</strong> (lah BOH-kah) = mouth</p>
+                    <p class="vocab-word"><strong>Comer</strong> (koh-MEHR) = to eat</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 6: Las Manos -->
+        <div class="page" data-page="6">
+            <h1>👋 Las Manos</h1>
+            <div class="page-content">
+                <div class="image-placeholder">
+                    [Illustration: Child's hands playing with colorful building blocks, creating a tower]
+                </div>
+                <p class="spanish-text">Con mis manos, yo puedo tocar.<br>¡Toco y juego con mis bloques!</p>
+                <p class="pronunciation">(Kohn mees MAH-nohs, yoh PWEH-doh toh-KAHR. TOH-koh ee HWEH-goh kohn mees BLOH-kes!)</p>
+                <p class="english-text">With my hands, I can touch.<br>I touch and play with my blocks!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra:</h3>
+                    <p class="vocab-word"><strong>Las manos</strong> (lahs MAH-nohs) = hands</p>
+                    <p class="vocab-word"><strong>Tocar</strong> (toh-KAHR) = to touch</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 7: Los Pies -->
+        <div class="page" data-page="7">
+            <h1>🦶 Los Pies</h1>
+            <div class="page-content">
+                <div class="image-placeholder">
+                    [Illustration: Child running and jumping joyfully in a park with autumn leaves flying around]
+                </div>
+                <p class="spanish-text">Con mis pies, yo puedo correr.<br>¡Corro, salto y bailo feliz!</p>
+                <p class="pronunciation">(Kohn mees pee-EHS, yoh PWEH-doh koh-REHR. KOH-rroh, SAHL-toh ee BYE-loh feh-LEES!)</p>
+                <p class="english-text">With my feet, I can run.<br>I run, jump, and dance happily!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra:</h3>
+                    <p class="vocab-word"><strong>Los pies</strong> (lohs pee-EHS) = feet</p>
+                    <p class="vocab-word"><strong>Correr</strong> (koh-REHR) = to run</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 8: El Corazón -->
+        <div class="page" data-page="8">
+            <h1>❤️ El Corazón</h1>
+            <div class="page-content">
+                <div class="image-placeholder">
+                    [Illustration: Child hugging parent with hearts floating around them, showing love and warmth]
+                </div>
+                <p class="spanish-text">Con mi corazón, yo puedo amar.<br>¡Amo a mi familia!</p>
+                <p class="pronunciation">(Kohn mee koh-rah-SOHN, yoh PWEH-doh ah-MAHR. AH-moh ah mee fah-MEE-lee-ah!)</p>
+                <p class="english-text">With my heart, I can love.<br>I love my family!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra:</h3>
+                    <p class="vocab-word"><strong>El corazón</strong> (ehl koh-rah-SOHN) = heart</p>
+                    <p class="vocab-word"><strong>Amar</strong> (ah-MAHR) = to love</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 9: Todo Mi Cuerpo -->
+        <div class="page" data-page="9">
+            <h1>✨ Todo Mi Cuerpo ✨</h1>
+            <div class="page-content">
+                <div class="image-placeholder">
+                    [Illustration: Child dancing in a circle with body parts labeled, surrounded by stars and hearts, looking confident and happy]
+                </div>
+                <p class="spanish-text">¡Mi cuerpo es maravilloso!<br>Puedo ver, oír, oler, comer,<br>tocar, correr y amar.<br>¡Soy especial tal como soy!</p>
+                <p class="pronunciation">(Mee KWER-poh es mah-rah-bee-YOH-soh! PWEH-doh behr, oh-EER, oh-LEHR, koh-MEHR, toh-KAHR, koh-REHR ee ah-MAHR. Soy es-peh-see-AHL tahl KOH-moh soy!)</p>
+                <p class="english-text">My body is wonderful!<br>I can see, hear, smell, eat,<br>touch, run, and love.<br>I am special just as I am!</p>
+                <div class="vocabulary">
+                    <h3>Repaso de Palabras:</h3>
+                    <p class="vocab-word">Los ojos • Las orejas • La nariz</p>
+                    <p class="vocab-word">La boca • Las manos • Los pies</p>
+                    <p class="vocab-word">El corazón • El cuerpo</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Page: CTA -->
+        <div class="page" data-page="10">
+            <h1>¡Gracias por Leer! 📚</h1>
+            <div class="page-content">
+                <div class="cta-section">
+                    <h3>¿Te gustó este libro?</h3>
+                    <p style="color: #2d3436; font-size: 1.2em; margin: 20px 0;">
+                        ¡En Beibei Amigos aprendemos español todos los días!
+                    </p>
+                    <button class="cta-button" onclick="window.open('https://www.beibeiamigos.com/schedule-a-tour/', '_blank')">
+                        📅 Programa una Visita
+                    </button>
+                    <button class="cta-button" onclick="window.open('https://www.beibeiamigos.com/contact/', '_blank')">
+                        ✉️ Contáctanos
+                    </button>
+                    <p style="color: #2d3436; margin-top: 20px; font-size: 1em;">
+                        Recibe un libro nuevo cada semana 👉
+                        <a href="https://www.beibeiamigos.com/newsletter/" style="color: #667eea; font-weight: bold;">Suscríbete</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="prevBtn" onclick="changePage(-1)">⬅️ Anterior</button>
+            <button id="audioBtn" onclick="playAudio()">🔊 Escuchar</button>
+            <button id="nextBtn" onclick="changePage(1)">Siguiente ➡️</button>
+        </div>
+        
+        <div class="page-indicator">
+            Página <span id="currentPage">1</span> de <span id="totalPages">10</span>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Mi Cuerpo Maravilloso",
+        "description": "Libro interactivo en español para niños de 2-5 años que enseña las partes del cuerpo",
+        "inLanguage": "es",
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Children",
+            "suggestedMinAge": 2,
+            "suggestedMaxAge": 5
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        },
+        "educationalUse": "Language Learning",
+        "learningResourceType": "Interactive Book",
+        "keywords": "español para niños, partes del cuerpo, Spanish vocabulary, preschool Spanish, body parts in Spanish"
+    }
+    </script>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 10;
+        
+        function changePage(direction) {
+            const newPage = currentPage + direction;
+            
+            if (newPage < 1 || newPage > totalPages) return;
+            
+            document.querySelector(`[data-page="${currentPage}"]`).classList.remove('active');
+            document.querySelector(`[data-page="${newPage}"]`).classList.add('active');
+            
+            currentPage = newPage;
+            document.getElementById('currentPage').textContent = currentPage;
+            
+            // Update button states
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+            
+            // Track page views in GA4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    page_title: 'Mi Cuerpo Maravilloso - Página ' + currentPage,
+                    page_location: window.location.href + '#page' + currentPage
+                });
+            }
+        }
+        
+        function playAudio() {
+            const currentPageElement = document.querySelector(`[data-page="${currentPage}"]`);
+            const textToRead = currentPageElement.querySelector('.spanish-text');
+            
+            if (!textToRead) return;
+            
+            // Web Speech API
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(textToRead.textContent);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.speak(utterance);
+                
+                // Track audio plays
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'audio_play', {
+                        page_number: currentPage,
+                        book_title: 'Mi Cuerpo Maravilloso'
+                    });
+                }
+            } else {
+                alert('Tu navegador no soporta audio. Por favor, intenta con Chrome o Safari.');
+            }
+        }
+        
+        // Initialize
+        document.getElementById('prevBtn').disabled = true;
+        document.getElementById('totalPages').textContent = totalPages;
+        
+        // Track book opens
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'book_open', {
+                book_title: 'Mi Cuerpo Maravilloso',
+                week: 29
+            });
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changePage(-1);
+            if (e.key === 'ArrowRight') changePage(1);
+            if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                playAudio();
+            }
+        });
+    </script>
+</body>
+</html>

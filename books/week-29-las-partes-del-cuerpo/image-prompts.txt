@@ -1,0 +1,70 @@
+DALL-E 3 IMAGE PROMPTS - Mi Cuerpo Maravilloso (Week 29)
+=================================================================
+
+STYLE GUIDE FOR ALL IMAGES:
+- Warm, vibrant colors with soft gradients
+- Friendly, child-like illustration style (similar to children's picture books)
+- Round, soft shapes (no harsh edges)
+- Diverse character representation
+- Cheerful, optimistic mood
+- Clean backgrounds with simple details
+- Consistent character throughout all pages
+
+=================================================================
+
+PAGE 1 - TITLE PAGE
+Prompt: "A cheerful 4-year-old child with brown hair and warm skin tone standing in a sunny park, arms spread wide open with a big smile, wearing a bright yellow t-shirt and blue shorts. The child looks happy and confident. Colorful flowers and butterflies in the background. Warm, friendly children's book illustration style with soft colors and rounded shapes. The scene radiates joy and energy."
+
+=================================================================
+
+PAGE 2 - LOS OJOS (EYES)
+Prompt: "Close-up illustration of a child's smiling face with big, sparkling brown eyes looking with wonder at three colorful butterflies (one orange, one blue, one yellow) flying near their face. The child has a gentle smile and their eyes are wide with amazement. Soft outdoor background with blurred flowers. Children's book illustration style, warm and inviting colors, focus on the expressive eyes that show curiosity and joy."
+
+=================================================================
+
+PAGE 3 - LAS OREJAS (EARS)
+Prompt: "A 4-year-old child with curly hair cupping their right hand behind their ear in a listening pose, looking up at a tree branch where three small birds are perched and singing. Musical notes float in the air between the birds and the child. The child has a delighted expression. Bright blue sky background with green leaves. Cheerful children's book illustration style with warm colors and soft shapes."
+
+=================================================================
+
+PAGE 4 - LA NARIZ (NOSE)
+Prompt: "A young child with eyes gently closed and a peaceful, happy smile, holding a colorful bouquet of flowers (roses, daisies, sunflowers) close to their nose. Their hands gently cradle the flowers. Soft pink and yellow light surrounds them. The child's expression shows pure contentment and joy. Children's book illustration style with rich, vibrant flower colors and a dreamy, warm atmosphere."
+
+=================================================================
+
+PAGE 5 - LA BOCA (MOUTH)
+Prompt: "A happy child taking a big bite of a bright red watermelon slice, with watermelon juice dripping down their chin. Their eyes are closed in enjoyment and they have a big smile. The watermelon is super juicy and vibrant. Summer picnic setting with a checkered blanket visible. Warm sunlight. Children's book illustration style with bold, cheerful colors and an emphasis on the delicious-looking watermelon."
+
+=================================================================
+
+PAGE 6 - LAS MANOS (HANDS)
+Prompt: "A child sitting on the floor playing with colorful wooden building blocks (red, blue, yellow, green), shown from a side angle. Focus on their small hands carefully stacking and arranging the blocks into a tall tower. The child's face shows concentration and happiness. Bright, clean playroom background. Children's book illustration style with emphasis on the hands and the vibrant toy blocks, warm lighting."
+
+=================================================================
+
+PAGE 7 - LOS PIES (FEET)
+Prompt: "A joyful child running and jumping through a park in autumn, with orange and yellow leaves flying all around them in the air. The child is mid-jump with both feet off the ground, arms spread wide, huge smile on their face. Motion lines suggest energy and movement. Colorful fall leaves swirling around. Bright blue sky. Children's book illustration style capturing pure childhood joy and freedom of movement."
+
+=================================================================
+
+PAGE 8 - EL CORAZÓN (HEART)
+Prompt: "A tender scene of a child hugging a parent (shown from behind/side), both with eyes closed and peaceful smiles. Multiple red and pink hearts float around them in the air, creating a warm, loving atmosphere. Soft golden light surrounds them. The embrace is gentle and full of love. Children's book illustration style with warm, glowing colors and a dreamy, emotional quality. Focus on connection and love."
+
+=================================================================
+
+PAGE 9 - TODO MI CUERPO (WHOLE BODY)
+Prompt: "A confident child dancing joyfully in the center of the image with their whole body visible, arms up in the air, one leg lifted in a dance pose. Small simple labels point to different body parts (eyes, ears, nose, mouth, hands, feet, heart). Colorful stars, hearts, and sparkles surround the child in a circular pattern. The child radiates confidence and happiness. Children's book illustration style with vibrant colors, celebratory mood, and dynamic pose showing movement and joy."
+
+=================================================================
+
+NOTES FOR DALL-E GENERATION:
+- Request consistent character throughout (same child, hair, skin tone)
+- Specify "children's picture book illustration style" in each prompt
+- Use warm, vibrant but not overly saturated colors
+- Keep backgrounds simple but cheerful
+- Focus on emotional expression and engagement
+- Each image should work standalone while maintaining visual consistency
+- Avoid photorealism - aim for friendly, approachable illustrated style
+- Include diversity in character design
+
+END OF IMAGE PROMPTS
