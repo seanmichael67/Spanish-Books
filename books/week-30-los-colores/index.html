@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Colores del Mundo - Spanish Preschool Book</title>
+    <meta name="description" content="Learn colors in Spanish! An interactive book for preschoolers teaching rojo, azul, amarillo, verde, and more through colorful illustrations.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            background: white;
+        }
+        
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-content {
+            text-align: center;
+        }
+        
+        .page-image {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin: 20px auto;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .page-text {
+            font-size: 28px;
+            line-height: 1.6;
+            color: #2d3748;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .pronunciation {
+            font-size: 18px;
+            color: #718096;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        .translation {
+            font-size: 16px;
+            color: #a0aec0;
+            margin: 10px 0;
+        }
+        
+        .color-word {
+            font-size: 36px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 10px 0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #f7fafc;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .page-number {
+            font-size: 16px;
+            color: #718096;
+            font-weight: bold;
+        }
+        
+        .audio-btn {
+            background: #48bb78;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .audio-btn:hover {
+            background: #38a169;
+            transform: scale(1.05);
+        }
+        
+        .cover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .cover h1 {
+            font-size: 48px;
+            margin: 20px 0;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+        }
+        
+        .cover p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        
+        .cta-section {
+            background: #edf2f7;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .cta-section h3 {
+            color: #2d3748;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .cta-btn {
+            background: #ed8936;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .cta-btn:hover {
+            background: #dd6b20;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(237, 137, 54, 0.4);
+        }
+        
+        @media (max-width: 600px) {
+            .page {
+                padding: 20px;
+                min-height: 400px;
+            }
+            .page-text {
+                font-size: 22px;
+            }
+            .cover h1 {
+                font-size: 36px;
+            }
+            .color-word {
+                font-size: 28px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Los Colores del Mundo",
+        "description": "An interactive Spanish preschool book teaching colors through colorful illustrations and simple vocabulary.",
+        "inLanguage": "es",
+        "educationalUse": "Language Learning",
+        "typicalAgeRange": "2-5",
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Beibei Amigos"
+        },
+        "keywords": "Spanish colors, learn colors in Spanish, preschool Spanish, bilingual education, Spanish vocabulary"
+    }
+    </script>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Cover Page -->
+        <div class="page active cover" data-page="0">
+            <h1>🌈 Los Colores del Mundo 🌈</h1>
+            <p style="font-size: 28px; margin: 20px 0;">The Colors of the World</p>
+            <p style="font-size: 20px; margin: 30px 0;">Un libro para niños pequeños</p>
+            <p style="font-size: 18px;">A book for little children</p>
+            <button class="audio-btn" onclick="playAudio(0)">🔊 Escuchar / Listen</button>
+        </div>
+
+        <!-- Page 1 -->
+        <div class="page" data-page="1">
+            <div class="page-content">
+                <h2 class="page-text">¡Vamos a descubrir los colores!</h2>
+                <p class="pronunciation">(VAH-mohs ah des-koo-BREER lohs koh-LOH-res)</p>
+                <p class="translation">Let's discover the colors!</p>
+                <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=Rainbow+Adventure" alt="Rainbow" class="page-image" id="img1">
+                <p class="page-text">¿Estás listo? ¡Vamos!</p>
+                <p class="pronunciation">(es-TAHS LEES-toh? VAH-mohs!)</p>
+                <p class="translation">Are you ready? Let's go!</p>
+                <button class="audio-btn" onclick="playAudio(1)">🔊 Escuchar / Listen</button>
+            </div>
+        </div>
+
+        <!-- Page 2 - Rojo -->
+        <div class="page" data-page="2">
+            <div class="page-content">
+                <h2 class="page-text">¿Qué es rojo?</h2>
+                <p class="pronunciation">(keh es ROH-hoh?)</p>
+                <p class="translation">What is red?</p>
+                <span class="color-word" style="background-color: #dc2626;">ROJO</span>
+                <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Red+Apple" alt="Red apple" class="page-image" id="img2">
+                <p class="page-text">¡La manzana es roja!</p>
+                <p class="pronunciation">(lah mahn-SAH-nah es ROH-hah)</p>
+                <p class="translation">The apple is red!</p>
+                <button class="audio-btn" onclick="playAudio(2)">🔊 Escuchar / Listen</button>
+            </div>
+        </div>
+
+        <!-- Page 3 - Azul -->
+        <div class="page" data-page="3">
+            <div class="page-content">
+                <h2 class="page-text">¿Qué es azul?</h2>
+                <p class="pronunciation">(keh es ah-SOOL?)</p>
+                <p class="translation">What is blue?</p>
+                <span class="color-word" style="background-color: #2563eb;">AZUL</span>
+                <img src="https://via.placeholder.com/400x300/2563eb/ffffff?text=Blue+Ocean" alt="Blue ocean" class="page-image" id="img3">
+                <p class="page-text">¡El mar es azul!</p>
+                <p class="pronunciation">(el mahr es ah-SOOL)</p>
+                <p class="translation">The ocean is blue!</p>
+                <button class="audio-btn" onclick="playAudio(3)">🔊 Escuchar / Listen</button>
+            </div>
+        </div>
+
+        <!-- Page 4 - Amarillo -->
+        <div class="page" data-page="4">
+            <div class="page-content">
+                <h2 class="page-text">¿Qué es amarillo?</h2>
+                <p class="pronunciation">(keh es ah-mah-REE-yoh?)</p>
+                <p class="translation">What is yellow?</p>
+                <span class="color-word" style="background-color: #eab308;">AMARILLO</span>
+                <img src="https://via.placeholder.com/400x300/eab308/ffffff?text=Yellow+Sun" alt="Yellow sun" class="page-image" id="img4">
+                <p class="page-text">¡El sol es amarillo!</p>
+                <p class="pronunciation">(el sohl es ah-mah-REE-yoh)</p>
+                <p class="translation">The sun is yellow!</p>
+                <button class="audio-btn" onclick="playAudio(4)">🔊 Escuchar / Listen</button>
+            </div>
+        </div>
+
+        <!-- Page 5 - Verde -->
+        <div class="page" data-page="5">
+            <div class="page-content">
+                <h2 class="page-text">¿Qué es verde?</h2>
+                <p class="pronunciation">(keh es VEHR-deh?)</p>
+                <p class="translation">What is green?</p>
+                <span class="color-word" style="background-color: #16a34a;">VERDE</span>
+                <img src="https://via.placeholder.com/400x300/16a34a/ffffff?text=Green+Grass" alt="Green grass" class="page-image" id="img5">
+                <p class="page-text">¡La hierba es verde!</p>
+                <p class="pronunciation">(lah YEHR-bah es VEHR-deh)</p>
+                <p class="translation">The grass is green!</p>
+                <button class="audio-btn" onclick="playAudio(5)">🔊 Escuchar / Listen</button>
+            </div>
+        </div>
+
+        <!-- Page 6 - Naranja -->
+        <div class="page" data-page="6">
+            <div class="page-content">
+                <h2 class="page-text">¿Qué es naranja?</h2>
+                <p class="pronunciation">(keh es nah-RAHN-hah?)</p>
+                <p class="translation">What is orange?</p>
+                <span class="color-word" style="background-color: #ea580c;">NARANJA</span>
+                <img src="https://via.placeholder.com/400x300/ea580c/ffffff?text=Orange+Fruit" alt="Orange fruit" class="page-image" id="img6">
+                <p class="page-text">¡La naranja es naranja!</p>
+                <p class="pronunciation">(lah nah-RAHN-hah es nah-RAHN-hah)</p>
+                <p class="translation">The orange is orange!</p>
+                <button class="audio-btn" onclick="playAudio(6)">🔊 Escuchar / Listen</button>
+            </div>
+        </div>
+
+        <!-- Page 7 - Morado -->
+        <div class="page" data-page="7">
+            <div class="page-content">
+                <h2 class="page-text">¿Qué es morado?</h2>
+                <p class="pronunciation">(keh es moh-RAH-doh?)</p>
+                <p class="translation">What is purple?</p>
+                <span class="color-word" style="background-color: #9333ea;">MORADO</span>
+                <img src="https://via.placeholder.com/400x300/9333ea/ffffff?text=Purple+Flowers" alt="Purple flowers" class="page-image" id="img7">
+                <p class="page-text">¡Las flores son moradas!</p>
+                <p class="pronunciation">(lahs FLOH-res sohn moh-RAH-dahs)</p>
+                <p class="translation">The flowers are purple!</p>
+                <button class="audio-btn" onclick="playAudio(7)">🔊 Escuchar / Listen</button>
+            </div>
+        </div>
+
+        <!-- Page 8 - Rosa -->
+        <div class="page" data-page="8">
+            <div class="page-content">
+                <h2 class="page-text">¿Qué es rosa?</h2>
+                <p class="pronunciation">(keh es ROH-sah?)</p>
+                <p class="translation">What is pink?</p>
+                <span class="color-word" style="background-color: #ec4899;">ROSA</span>
+                <img src="https://via.placeholder.com/400x300/ec4899/ffffff?text=Pink+Butterfly" alt="Pink butterfly" class="page-image" id="img8">
+                <p class="page-text">¡La mariposa es rosa!</p>
+                <p class="pronunciation">(lah mah-ree-POH-sah es ROH-sah)</p>
+                <p class="translation">The butterfly is pink!</p>
+                <button class="audio-btn" onclick="playAudio(8)">🔊 Escuchar / Listen</button>
+            </div>
+        </div>
+
+        <!-- Page 9 - Conclusion -->
+        <div class="page" data-page="9">
+            <div class="page-content">
+                <h2 class="page-text">¡Qué bonitos son los colores del mundo!</h2>
+                <p class="pronunciation">(keh boh-NEE-tohs sohn lohs koh-LOH-res del MOON-doh)</p>
+                <p class="translation">How beautiful are the colors of the world!</p>
+                <img src="https://via.placeholder.com/400x300/ffffff/667eea?text=Rainbow+World" alt="Colorful world" class="page-image" id="img9">
+                <p class="page-text">¿Cuál es tu color favorito?</p>
+                <p class="pronunciation">(kwahl es too koh-LOHR fah-voh-REE-toh?)</p>
+                <p class="translation">What is your favorite color?</p>
+                <button class="audio-btn" onclick="playAudio(9)">🔊 Escuchar / Listen</button>
+            </div>
+        </div>
+
+        <!-- CTA Page -->
+        <div class="page" data-page="10">
+            <div class="page-content">
+                <h2 style="color: #667eea; margin-bottom: 20px;">¡Te gustó este libro! 📚</h2>
+                <p style="font-size: 20px; margin: 20px 0;">Did you enjoy this book?</p>
+                
+                <div class="cta-section">
+                    <h3>🌟 Learn Spanish Every Day!</h3>
+                    <p style="margin: 15px 0;">Join Beibei Amigos Language Preschool where children ages 2-5 learn Spanish and Mandarin through play, music, and stories.</p>
+                    <a href="https://www.beibeiamigos.com/schedule-tour" class="cta-btn">📅 Schedule a Tour</a>
+                    <a href="https://www.beibeiamigos.com/spanish-books" class="cta-btn">📚 More Free Books</a>
+                </div>
+                
+                <div class="cta-section">
+                    <h3>💌 Get Weekly Books</h3>
+                    <p style="margin: 15px 0;">Subscribe to receive a new Spanish book every week!</p>
+                    <a href="https://www.beibeiamigos.com/subscribe" class="cta-btn">Subscribe Free</a>
+                </div>
+                
+                <div class="cta-section">
+                    <h3>⭐ Leave a Review</h3>
+                    <p style="margin: 15px 0;">Help other families discover Beibei Amigos!</p>
+                    <a href="https://www.google.com/search?q=beibei+amigos" class="cta-btn">Write a Review</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="btn" id="prevBtn" onclick="prevPage()">← Anterior</button>
+            <span class="page-number" id="pageNum">Página 1 de 11</span>
+            <button class="btn" id="nextBtn" onclick="nextPage()">Siguiente →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        const totalPages = 10;
+        
+        // GA4 Tracking
+        function trackEvent(eventName, params) {
+            if (window.gtag) {
+                gtag('event', eventName, params);
+            }
+        }
+        
+        function updatePage() {
+            document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+            document.querySelector(`[data-page="${currentPage}"]`).classList.add('active');
+            
+            document.getElementById('prevBtn').disabled = currentPage === 0;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+            document.getElementById('pageNum').textContent = `Página ${currentPage + 1} de ${totalPages + 1}`;
+            
+            trackEvent('page_view', {
+                page_title: 'Los Colores del Mundo',
+                page_number: currentPage + 1
+            });
+        }
+        
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                updatePage();
+                trackEvent('next_page', { page_number: currentPage + 1 });
+            }
+        }
+        
+        function prevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                updatePage();
+                trackEvent('prev_page', { page_number: currentPage + 1 });
+            }
+        }
+        
+        function playAudio(pageNum) {
+            trackEvent('audio_play', { page_number: pageNum + 1 });
+            
+            const texts = [
+                "Los Colores del Mundo. The Colors of the World. Un libro para niños pequeños. A book for little children.",
+                "Vamos a descubrir los colores. Let's discover the colors. ¿Estás listo? Vamos. Are you ready? Let's go!",
+                "¿Qué es rojo? What is red? Rojo. Red. La manzana es roja. The apple is red.",
+                "¿Qué es azul? What is blue? Azul. Blue. El mar es azul. The ocean is blue.",
+                "¿Qué es amarillo? What is yellow? Amarillo. Yellow. El sol es amarillo. The sun is yellow.",
+                "¿Qué es verde? What is green? Verde. Green. La hierba es verde. The grass is green.",
+                "¿Qué es naranja? What is orange? Naranja. Orange. La naranja es naranja. The orange is orange.",
+                "¿Qué es morado? What is purple? Morado. Purple. Las flores son moradas. The flowers are purple.",
+                "¿Qué es rosa? What is pink? Rosa. Pink. La mariposa es rosa. The butterfly is pink.",
+                "Qué bonitos son los colores del mundo. How beautiful are the colors of the world. ¿Cuál es tu color favorito? What is your favorite color?"
+            ];
+            
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(texts[pageNum]);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') prevPage();
+        });
+        
+        // Track book completion
+        window.addEventListener('beforeunload', () => {
+            trackEvent('book_completion', {
+                pages_read: currentPage + 1,
+                total_pages: totalPages + 1,
+                completion_rate: ((currentPage + 1) / (totalPages + 1) * 100).toFixed(1)
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{
+  "week": 30,
+  "title": "Los Colores del Mundo",
+  "englishTranslation": "The Colors of the World",
+  "topic": "Colors",
+  "ageRange": "2-5 years",
+  "language": "Spanish",
+  "pages": 11,
+  "createdDate": "2026-03-02",
+  "newVocabulary": [
+    {
+      "spanish": "rojo",
+      "english": "red",
+      "pronunciation": "ROH-hoh"
+    },
+    {
+      "spanish": "azul",
+      "english": "blue",
+      "pronunciation": "ah-SOOL"
+    },
+    {
+      "spanish": "amarillo",
+      "english": "yellow",
+      "pronunciation": "ah-mah-REE-yoh"
+    },
+    {
+      "spanish": "verde",
+      "english": "green",
+      "pronunciation": "VEHR-deh"
+    },
+    {
+      "spanish": "naranja",
+      "english": "orange",
+      "pronunciation": "nah-RAHN-hah"
+    },
+    {
+      "spanish": "morado",
+      "english": "purple",
+      "pronunciation": "moh-RAH-doh"
+    },
+    {
+      "spanish": "rosa",
+      "english": "pink",
+      "pronunciation": "ROH-sah"
+    },
+    {
+      "spanish": "color",
+      "english": "color",
+      "pronunciation": "koh-LOHR"
+    },
+    {
+      "spanish": "bonito",
+      "english": "beautiful/pretty",
+      "pronunciation": "boh-NEE-toh"
+    }
+  ],
+  "educationalGoals": [
+    "Learn primary and secondary color names in Spanish",
+    "Associate colors with familiar objects",
+    "Practice question and answer patterns",
+    "Develop color recognition skills",
+    "Build vocabulary through repetition"
+  ],
+  "seo": {
+    "metaTitle": "Los Colores del Mundo - Free Spanish Preschool Book | Learn Colors in Spanish",
+    "metaDescription": "Free interactive Spanish book teaching colors to preschoolers! Learn rojo, azul, amarillo, verde, and more through colorful illustrations. Perfect for ages 2-5.",
+    "keywords": [
+      "learn colors in Spanish",
+      "Spanish colors for kids",
+      "preschool Spanish book",
+      "colores en español",
+      "bilingual color book",
+      "Spanish vocabulary colors",
+      "free Spanish children's book",
+      "interactive Spanish book",
+      "rojo azul amarillo",
+      "teach Spanish to preschoolers"
+    ],
+    "focusKeyphrase": "learn colors in Spanish",
+    "slug": "los-colores-del-mundo"
+  },
+  "features": [
+    "Interactive read-aloud with audio",
+    "Pronunciation guides for every word",
+    "English translations included",
+    "Colorful, engaging illustrations",
+    "Repetitive learning pattern",
+    "Touch-friendly navigation",
+    "Schema.org markup for SEO",
+    "GA4 tracking integrated"
+  ],
+  "callsToAction": [
+    "Schedule a tour at Beibei Amigos",
+    "Subscribe for weekly books",
+    "Leave a Google review",
+    "Explore more free Spanish books"
+  ],
+  "marketingNotes": {
+    "targetAudience": "Parents of 2-5 year olds interested in Spanish language education",
+    "keyValue": "Essential color vocabulary taught through fun, interactive story",
+    "differentiation": "Authentic Spanish with pronunciation guides, not just vocabulary lists",
+    "longTailSEO": [
+      "how to teach colors in Spanish to toddlers",
+      "Spanish color words for preschoolers",
+      "free Spanish learning resources for kids",
+      "bilingual color activities"
+    ]
+  }
+}
