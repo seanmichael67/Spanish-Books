@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ropa de Sofía - Libro Interactivo de Español</title>
+    <meta name="description" content="Un libro interactivo en español para niños preescolares sobre la ropa. Aprende los nombres de diferentes prendas mientras Sofía se viste para el día.">
+    <meta name="keywords" content="libro español niños, ropa en español, vocabulario español preescolar, aprender español, Beibei Amigos">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #FFE5E5 0%, #FFF0E5 50%, #E5F5FF 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .book-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .page.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .page-image {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            margin: 0 auto 30px;
+            display: block;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+        }
+        .page-text {
+            font-size: 24px;
+            line-height: 1.8;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .vocabulary {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .vocabulary-word {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff6b6b;
+            margin-bottom: 5px;
+        }
+        .pronunciation {
+            font-size: 16px;
+            color: #666;
+            font-style: italic;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            gap: 10px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        .btn-prev {
+            background: #6c757d;
+            color: white;
+        }
+        .btn-next {
+            background: #28a745;
+            color: white;
+        }
+        .btn-audio {
+            background: #007bff;
+            color: white;
+            flex-grow: 1;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .page-number {
+            text-align: center;
+            padding: 10px;
+            color: #666;
+            font-size: 16px;
+        }
+        .title-page {
+            background: linear-gradient(135deg, #FFB6C1 0%, #FFD700 100%);
+            color: #fff;
+            text-align: center;
+            padding: 60px 40px !important;
+        }
+        .title-page h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .title-page .subtitle {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .page {
+                padding: 20px;
+            }
+            .page-text {
+                font-size: 20px;
+            }
+            .controls {
+                padding: 15px 20px;
+            }
+            button {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+            .title-page h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "La Ropa de Sofía",
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        },
+        "inLanguage": "es",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "preschooler"
+        },
+        "educationalUse": "Language Learning",
+        "learningResourceType": "Interactive Book",
+        "description": "Un libro interactivo en español para niños preescolares sobre la ropa y cómo vestirse para diferentes actividades."
+    }
+    </script>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Title -->
+        <div class="page active title-page">
+            <h1>🎽 La Ropa de Sofía 🎽</h1>
+            <div class="subtitle">Sofia's Clothes</div>
+            <p style="font-size: 20px; margin-top: 30px;">Un libro interactivo de Beibei Amigos</p>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page">
+            <img src="placeholder-1.jpg" alt="Sofía despertando" class="page-image" data-prompt="A cheerful young Hispanic girl named Sofia waking up in her cozy bedroom, stretching her arms with a big smile, warm morning sunlight coming through the window, children's book illustration style, bright and colorful">
+            <div class="page-text">
+                ¡Buenos días! Soy Sofía.<br>
+                Es hora de vestirse.<br>
+                ¿Qué ropa voy a usar hoy?
+            </div>
+            <div class="vocabulary">
+                <div class="vocabulary-word">la ropa</div>
+                <div class="pronunciation">(lah ROH-pah) - clothes</div>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page">
+            <img src="placeholder-2.jpg" alt="Sofía eligiendo ropa interior" class="page-image" data-prompt="Sofia standing in front of her dresser looking at clothes, holding up colorful underwear and socks, her room decorated with toys and drawings, warm and inviting atmosphere, children's book illustration style">
+            <div class="page-text">
+                Primero, me pongo la ropa interior.<br>
+                ¡Los calzoncillos y los calcetines!<br>
+                Los calcetines son rosados.
+            </div>
+            <div class="vocabulary">
+                <div class="vocabulary-word">los calcetines</div>
+                <div class="pronunciation">(lohs kahl-seh-TEE-nehs) - socks</div>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page">
+            <img src="placeholder-3.jpg" alt="Sofía poniéndose pantalones" class="page-image" data-prompt="Sofia putting on blue jeans, balancing on one foot with a playful expression, her bedroom in the background, bright and cheerful children's book illustration">
+            <div class="page-text">
+                Ahora me pongo los pantalones.<br>
+                Son azules como el cielo.<br>
+                ¡Me gustan mucho!
+            </div>
+            <div class="vocabulary">
+                <div class="vocabulary-word">los pantalones</div>
+                <div class="pronunciation">(lohs pahn-tah-LOH-nehs) - pants</div>
+            </div>
+        </div>
+
+        <!-- Page 5 -->
+        <div class="page">
+            <img src="placeholder-4.jpg" alt="Sofía eligiendo camiseta" class="page-image" data-prompt="Sofia holding up two different t-shirts trying to decide, one yellow with a sun and one with colorful flowers, happy and thoughtful expression, children's book illustration style">
+            <div class="page-text">
+                ¿Qué camiseta voy a usar?<br>
+                ¿La amarilla o la de flores?<br>
+                ¡Elijo la amarilla con un sol!
+            </div>
+            <div class="vocabulary">
+                <div class="vocabulary-word">la camiseta</div>
+                <div class="pronunciation">(lah kah-mee-SEH-tah) - t-shirt</div>
+            </div>
+        </div>
+
+        <!-- Page 6 -->
+        <div class="page">
+            <img src="placeholder-5.jpg" alt="Sofía poniéndose zapatos" class="page-image" data-prompt="Sofia sitting on the floor putting on red sneakers, concentrating on tying her laces, colorful bedroom environment, children's book illustration style, warm and encouraging">
+            <div class="page-text">
+                Ahora vienen los zapatos.<br>
+                Mis zapatos rojos favoritos.<br>
+                ¡Click, clack! Los amarro.
+            </div>
+            <div class="vocabulary">
+                <div class="vocabulary-word">los zapatos</div>
+                <div class="pronunciation">(lohs sah-PAH-tohs) - shoes</div>
+            </div>
+        </div>
+
+        <!-- Page 7 -->
+        <div class="page">
+            <img src="placeholder-6.jpg" alt="Sofía poniéndose suéter" class="page-image" data-prompt="Sofia putting on a cozy purple sweater, standing near a window showing slightly cloudy weather outside, warm indoor lighting, children's book illustration style">
+            <div class="page-text">
+                Hace un poco de frío afuera.<br>
+                Me pongo mi suéter morado.<br>
+                Ahora estoy calentita.
+            </div>
+            <div class="vocabulary">
+                <div class="vocabulary-word">el suéter</div>
+                <div class="pronunciation">(ehl SWEH-tehr) - sweater</div>
+            </div>
+        </div>
+
+        <!-- Page 8 -->
+        <div class="page">
+            <img src="placeholder-7.jpg" alt="Sofía con gorro y bufanda" class="page-image" data-prompt="Sofia putting on a colorful winter hat and matching scarf, looking excited and ready to go outside, warm indoor setting, playful children's book illustration">
+            <div class="page-text">
+                Para salir, necesito más ropa.<br>
+                ¡Mi gorro y mi bufanda!<br>
+                Ahora sí estoy lista.
+            </div>
+            <div class="vocabulary">
+                <div class="vocabulary-word">el gorro</div>
+                <div class="pronunciation">(ehl GOH-rroh) - hat, beanie</div>
+                <div class="vocabulary-word" style="margin-top: 10px;">la bufanda</div>
+                <div class="pronunciation">(lah boo-FAHN-dah) - scarf</div>
+            </div>
+        </div>
+
+        <!-- Page 9 -->
+        <div class="page">
+            <img src="placeholder-8.jpg" alt="Sofía completamente vestida" class="page-image" data-prompt="Sofia standing proudly fully dressed in her complete outfit, striking a confident pose, her bedroom in the background, bright cheerful colors, children's book illustration celebrating independence">
+            <div class="page-text">
+                ¡Mira! Ya me vestí sola.<br>
+                Llevo toda mi ropa puesta.<br>
+                ¿Puedes nombrar cada prenda?
+            </div>
+            <div class="vocabulary">
+                <div class="vocabulary-word">la prenda</div>
+                <div class="pronunciation">(lah PREHN-dah) - article of clothing</div>
+            </div>
+        </div>
+
+        <!-- Page 10: Ending -->
+        <div class="page">
+            <img src="placeholder-9.jpg" alt="Sofía saliendo a jugar" class="page-image" data-prompt="Sofia walking outside happily, fully dressed in all her clothes, waving goodbye at the door, sunny day with clouds in the background, joyful and energetic children's book illustration">
+            <div class="page-text">
+                ¡Ahora puedo salir a jugar!<br>
+                Me encanta mi ropa.<br>
+                ¿Tú ya te vestiste hoy?<br><br>
+                <strong>¡Fin! 🎽</strong>
+            </div>
+            <div class="vocabulary">
+                <div class="vocabulary-word">Repaso de vocabulario:</div>
+                <div style="font-size: 16px; margin-top: 10px; line-height: 1.6;">
+                    la ropa • los calcetines • los pantalones<br>
+                    la camiseta • los zapatos • el suéter<br>
+                    el gorro • la bufanda • la prenda
+                </div>
+            </div>
+        </div>
+
+        <div class="page-number">
+            <span id="current-page">1</span> / <span id="total-pages">10</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn-prev" onclick="prevPage()" id="prevBtn">← Anterior</button>
+            <button class="btn-audio" onclick="readPage()" id="audioBtn">🔊 Escuchar</button>
+            <button class="btn-next" onclick="nextPage()" id="nextBtn">Siguiente →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        const totalPages = pages.length;
+        let utterance = null;
+
+        // Google Analytics 4
+        if (window.gtag) {
+            gtag('event', 'book_view', {
+                'book_title': 'La Ropa de Sofía',
+                'book_week': 31
+            });
+        }
+
+        const pageTexts = [
+            "La Ropa de Sofía. Un libro interactivo de Beibei Amigos",
+            "¡Buenos días! Soy Sofía. Es hora de vestirse. ¿Qué ropa voy a usar hoy? La ropa significa clothes.",
+            "Primero, me pongo la ropa interior. ¡Los calzoncillos y los calcetines! Los calcetines son rosados. Los calcetines significa socks.",
+            "Ahora me pongo los pantalones. Son azules como el cielo. ¡Me gustan mucho! Los pantalones significa pants.",
+            "¿Qué camiseta voy a usar? ¿La amarilla o la de flores? ¡Elijo la amarilla con un sol! La camiseta significa t-shirt.",
+            "Ahora vienen los zapatos. Mis zapatos rojos favoritos. ¡Click, clack! Los amarro. Los zapatos significa shoes.",
+            "Hace un poco de frío afuera. Me pongo mi suéter morado. Ahora estoy calentita. El suéter significa sweater.",
+            "Para salir, necesito más ropa. ¡Mi gorro y mi bufanda! Ahora sí estoy lista. El gorro significa hat or beanie. La bufanda significa scarf.",
+            "¡Mira! Ya me vestí sola. Llevo toda mi ropa puesta. ¿Puedes nombrar cada prenda? La prenda significa article of clothing.",
+            "¡Ahora puedo salir a jugar! Me encanta mi ropa. ¿Tú ya te vestiste hoy? Fin."
+        ];
+
+        function showPage(n) {
+            pages.forEach(page => page.classList.remove('active'));
+            pages[n].classList.add('active');
+            currentPage = n;
+            
+            document.getElementById('current-page').textContent = n + 1;
+            document.getElementById('prevBtn').disabled = (n === 0);
+            document.getElementById('nextBtn').disabled = (n === totalPages - 1);
+
+            if (window.gtag) {
+                gtag('event', 'page_turn', {
+                    'book_title': 'La Ropa de Sofía',
+                    'page_number': n + 1
+                });
+            }
+
+            if (utterance) {
+                window.speechSynthesis.cancel();
+            }
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages - 1) {
+                showPage(currentPage + 1);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 0) {
+                showPage(currentPage - 1);
+            }
+        }
+
+        function readPage() {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                
+                utterance = new SpeechSynthesisUtterance(pageTexts[currentPage]);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                utterance.pitch = 1.1;
+                
+                const voices = window.speechSynthesis.getVoices();
+                const spanishVoice = voices.find(voice => voice.lang.startsWith('es'));
+                if (spanishVoice) {
+                    utterance.voice = spanishVoice;
+                }
+                
+                window.speechSynthesis.speak(utterance);
+
+                if (window.gtag) {
+                    gtag('event', 'audio_play', {
+                        'book_title': 'La Ropa de Sofía',
+                        'page_number': currentPage + 1
+                    });
+                }
+            } else {
+                alert('Lo siento, tu navegador no soporta la lectura en voz alta.');
+            }
+        }
+
+        // Load voices
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.onvoiceschanged = () => {
+                window.speechSynthesis.getVoices();
+            };
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') prevPage();
+            if (e.key === ' ') {
+                e.preventDefault();
+                readPage();
+            }
+        });
+
+        document.getElementById('total-pages').textContent = totalPages;
+    </script>
+</body>
+</html>

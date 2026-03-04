@@ -1,0 +1,74 @@
+DALL-E 3 Image Prompts for "La Ropa de Sofía"
+Week 31 - Clothing Vocabulary Book
+===========================================
+
+STYLE NOTES:
+- Warm, friendly children's book illustration style
+- Bright, cheerful colors
+- Consistent character design (Sofia: young Hispanic girl, brown hair, friendly smile)
+- Age-appropriate and culturally authentic
+- Clean, simple backgrounds that don't distract from the main subject
+
+---
+
+IMAGE 1 (Page 2): Sofia Waking Up
+Prompt: A cheerful young Hispanic girl named Sofia waking up in her cozy bedroom, stretching her arms with a big smile, warm morning sunlight coming through the window, children's book illustration style, bright and colorful
+
+---
+
+IMAGE 2 (Page 3): Choosing Underwear and Socks
+Prompt: Sofia standing in front of her dresser looking at clothes, holding up colorful underwear and socks, her room decorated with toys and drawings, warm and inviting atmosphere, children's book illustration style
+
+---
+
+IMAGE 3 (Page 4): Putting on Pants
+Prompt: Sofia putting on blue jeans, balancing on one foot with a playful expression, her bedroom in the background, bright and cheerful children's book illustration
+
+---
+
+IMAGE 4 (Page 5): Choosing a T-shirt
+Prompt: Sofia holding up two different t-shirts trying to decide, one yellow with a sun and one with colorful flowers, happy and thoughtful expression, children's book illustration style
+
+---
+
+IMAGE 5 (Page 6): Putting on Shoes
+Prompt: Sofia sitting on the floor putting on red sneakers, concentrating on tying her laces, colorful bedroom environment, children's book illustration style, warm and encouraging
+
+---
+
+IMAGE 6 (Page 7): Putting on Sweater
+Prompt: Sofia putting on a cozy purple sweater, standing near a window showing slightly cloudy weather outside, warm indoor lighting, children's book illustration style
+
+---
+
+IMAGE 7 (Page 8): Hat and Scarf
+Prompt: Sofia putting on a colorful winter hat and matching scarf, looking excited and ready to go outside, warm indoor setting, playful children's book illustration
+
+---
+
+IMAGE 8 (Page 9): Fully Dressed
+Prompt: Sofia standing proudly fully dressed in her complete outfit, striking a confident pose, her bedroom in the background, bright cheerful colors, children's book illustration celebrating independence
+
+---
+
+IMAGE 9 (Page 10): Going Outside to Play
+Prompt: Sofia walking outside happily, fully dressed in all her clothes, waving goodbye at the door, sunny day with clouds in the background, joyful and energetic children's book illustration
+
+---
+
+GENERATION NOTES:
+- Generate all 9 images with consistent character design
+- Sofia should look like the same girl in each image
+- Maintain consistent bedroom environment across indoor scenes
+- Use warm, inviting color palette throughout
+- Focus on expressions that show independence, joy, and confidence
+- Keep backgrounds simple but supportive of the story
+
+CLOTHING ITEMS TO FEATURE:
+- Pink socks (calcetines rosados)
+- Blue jeans (pantalones azules)
+- Yellow t-shirt with sun (camiseta amarilla)
+- Red sneakers (zapatos rojos)
+- Purple sweater (suéter morado)
+- Colorful hat (gorro)
+- Matching scarf (bufanda)

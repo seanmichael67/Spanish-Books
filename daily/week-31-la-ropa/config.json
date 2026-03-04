@@ -1,0 +1,110 @@
+{
+  "week": 31,
+  "title": "La Ropa de Sofía",
+  "englishTranslation": "Sofia's Clothes",
+  "topic": "Clothing",
+  "targetAge": "2-5 years",
+  "pages": 10,
+  "dateCreated": "2026-03-03",
+  "author": "Luna 📚 (AI Book Generator)",
+  "school": "Beibei Amigos Language Preschool",
+  "language": "Spanish",
+  "educationalFocus": "Vocabulary building, independence, daily routines",
+  "newVocabulary": [
+    {
+      "word": "la ropa",
+      "pronunciation": "lah ROH-pah",
+      "meaning": "clothes"
+    },
+    {
+      "word": "los calcetines",
+      "pronunciation": "lohs kahl-seh-TEE-nehs",
+      "meaning": "socks"
+    },
+    {
+      "word": "los pantalones",
+      "pronunciation": "lohs pahn-tah-LOH-nehs",
+      "meaning": "pants"
+    },
+    {
+      "word": "la camiseta",
+      "pronunciation": "lah kah-mee-SEH-tah",
+      "meaning": "t-shirt"
+    },
+    {
+      "word": "los zapatos",
+      "pronunciation": "lohs sah-PAH-tohs",
+      "meaning": "shoes"
+    },
+    {
+      "word": "el suéter",
+      "pronunciation": "ehl SWEH-tehr",
+      "meaning": "sweater"
+    },
+    {
+      "word": "el gorro",
+      "pronunciation": "ehl GOH-rroh",
+      "meaning": "hat, beanie"
+    },
+    {
+      "word": "la bufanda",
+      "pronunciation": "lah boo-FAHN-dah",
+      "meaning": "scarf"
+    },
+    {
+      "word": "la prenda",
+      "pronunciation": "lah PREHN-dah",
+      "meaning": "article of clothing"
+    }
+  ],
+  "themes": [
+    "Clothing vocabulary",
+    "Getting dressed",
+    "Independence",
+    "Daily routines",
+    "Weather-appropriate clothing"
+  ],
+  "learningObjectives": [
+    "Learn names of common clothing items in Spanish",
+    "Understand the sequence of getting dressed",
+    "Practice making choices about what to wear",
+    "Build independence and self-care skills",
+    "Connect clothing choices to weather"
+  ],
+  "seo": {
+    "metaTitle": "La Ropa de Sofía - Libro Interactivo de Español para Niños",
+    "metaDescription": "Libro interactivo gratis en español para niños de 2-5 años. Aprende los nombres de la ropa con Sofía mientras se viste para el día. Incluye audio y vocabulario.",
+    "keywords": [
+      "ropa en español para niños",
+      "vocabulario de ropa español",
+      "libro español preescolar",
+      "aprender español niños",
+      "clothing spanish kids",
+      "vestirse en español",
+      "spanish clothing vocabulary",
+      "libro interactivo español",
+      "free spanish books kids",
+      "Beibei Amigos"
+    ],
+    "focusKeyphrase": "ropa en español para niños",
+    "targetAudience": "Parents of preschoolers (ages 2-5) seeking Spanish language learning resources"
+  },
+  "parentTips": [
+    "Use this book during your child's morning routine to reinforce vocabulary",
+    "Ask your child to name their own clothes in Spanish as they get dressed",
+    "Practice choosing weather-appropriate clothing together",
+    "Encourage independence by letting them dress themselves like Sofia",
+    "Make it fun by singing about each piece of clothing"
+  ],
+  "ctaStrategy": {
+    "primary": "Schedule a tour at Beibei Amigos",
+    "secondary": "Subscribe for weekly Spanish books",
+    "tertiary": "Leave a Google review"
+  },
+  "funFacts": [
+    "Children typically learn to dress themselves between ages 3-5",
+    "Learning clothing vocabulary helps build independence",
+    "Spanish uses gendered articles (el/la) which helps children learn grammar patterns",
+    "Many Spanish clothing words are similar to English (suéter/sweater)"
+  ]
+}
