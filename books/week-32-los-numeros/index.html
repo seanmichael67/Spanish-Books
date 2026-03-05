@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Números - Contando en el Parque</title>
+    <meta name="description" content="A fun interactive Spanish counting book for preschoolers. Learn numbers 1-8 while exploring the park with colorful illustrations and audio.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            position: relative;
+        }
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .page-content {
+            text-align: center;
+        }
+        .page-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 2em;
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+        .number-display {
+            font-size: 5em;
+            font-weight: bold;
+            color: #ff6b6b;
+            margin: 20px 0;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+        }
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .pronunciation {
+            font-size: 1em;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .image-placeholder {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin: 20px auto;
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-top: 2px solid #e9ecef;
+        }
+        button {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .btn-prev {
+            background: #6c757d;
+            color: white;
+        }
+        .btn-next {
+            background: #28a745;
+            color: white;
+        }
+        .btn-audio {
+            background: #17a2b8;
+            color: white;
+            padding: 12px 25px;
+        }
+        .page-indicator {
+            font-size: 1em;
+            color: #666;
+        }
+        .vocabulary-box {
+            background: #fff3cd;
+            border: 2px dashed #ffc107;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        .vocabulary-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+            p { font-size: 1.2em; }
+            .number-display { font-size: 3.5em; }
+            .page { padding: 20px; }
+            .controls { padding: 15px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Title -->
+        <div class="page active" data-page="1">
+            <div class="page-number">Página 1</div>
+            <div class="page-content">
+                <h1>Los Números</h1>
+                <h2>Contando en el Parque</h2>
+                <div class="image-placeholder">🎈 Un día perfecto para contar 🎈</div>
+                <p>¡Hola! Hoy vamos a contar todas las cosas bonitas que vemos en el parque.</p>
+                <p>¿Estás listo para contar conmigo?</p>
+                <p class="pronunciation">(Pronounced: OH-lah! OY VAH-mos ah kon-TAR TOH-dahs lahs KOH-sahs boh-NEE-tahs)</p>
+            </div>
+        </div>
+
+        <!-- Page 2: Uno -->
+        <div class="page" data-page="2">
+            <div class="page-number">Página 2</div>
+            <div class="page-content">
+                <div class="number-display">1</div>
+                <h2>Uno</h2>
+                <div class="image-placeholder">☀️ ¡Un sol brillante! ☀️</div>
+                <p>Veo <strong>un</strong> sol en el cielo.</p>
+                <p>¡Es grande y brillante!</p>
+                <p class="pronunciation">(OO-no • oon sol en el see-EH-loh)</p>
+            </div>
+        </div>
+
+        <!-- Page 3: Dos -->
+        <div class="page" data-page="3">
+            <div class="page-number">Página 3</div>
+            <div class="page-content">
+                <div class="number-display">2</div>
+                <h2>Dos</h2>
+                <div class="image-placeholder">🦆🦆 ¡Dos patos nadando! 🦆🦆</div>
+                <p>Veo <strong>dos</strong> patos en el estanque.</p>
+                <p>¡Nadan juntos!</p>
+                <p class="pronunciation">(DOHS • dohs PAH-tohs en el es-TAHN-keh)</p>
+            </div>
+        </div>
+
+        <!-- Page 4: Tres -->
+        <div class="page" data-page="4">
+            <div class="page-number">Página 4</div>
+            <div class="page-content">
+                <div class="number-display">3</div>
+                <h2>Tres</h2>
+                <div class="image-placeholder">🌳🌳🌳 ¡Tres árboles altos! 🌳🌳🌳</div>
+                <p>Veo <strong>tres</strong> árboles con hojas verdes.</p>
+                <p>¡Son muy altos!</p>
+                <p class="pronunciation">(TREHS • trehs AR-boh-lehs kon OH-hahs VEHR-dehs)</p>
+            </div>
+        </div>
+
+        <!-- Page 5: Cuatro -->
+        <div class="page" data-page="5">
+            <div class="page-number">Página 5</div>
+            <div class="page-content">
+                <div class="number-display">4</div>
+                <h2>Cuatro</h2>
+                <div class="image-placeholder">🌻🌻🌻🌻 ¡Cuatro flores hermosas! 🌻🌻🌻🌻</div>
+                <p>Veo <strong>cuatro</strong> flores de colores.</p>
+                <p>¡Rojas, amarillas, rosadas y moradas!</p>
+                <p class="pronunciation">(KWAH-troh • KWAH-troh FLOH-rehs deh koh-LOH-rehs)</p>
+            </div>
+        </div>
+
+        <!-- Page 6: Cinco -->
+        <div class="page" data-page="6">
+            <div class="page-number">Página 6</div>
+            <div class="page-content">
+                <div class="number-display">5</div>
+                <h2>Cinco</h2>
+                <div class="image-placeholder">🦋🦋🦋🦋🦋 ¡Cinco mariposas volando! 🦋🦋🦋🦋🦋</div>
+                <p>Veo <strong>cinco</strong> mariposas volando.</p>
+                <p>¡Vuelan de flor en flor!</p>
+                <p class="pronunciation">(SEEN-koh • SEEN-koh mah-ree-POH-sahs voh-LAHN-doh)</p>
+            </div>
+        </div>
+
+        <!-- Page 7: Seis -->
+        <div class="page" data-page="7">
+            <div class="page-number">Página 7</div>
+            <div class="page-content">
+                <div class="number-display">6</div>
+                <h2>Seis</h2>
+                <div class="image-placeholder">🐦🐦🐦🐦🐦🐦 ¡Seis pájaros cantando! 🐦🐦🐦🐦🐦🐦</div>
+                <p>Veo <strong>seis</strong> pájaros en las ramas.</p>
+                <p>¡Cantan canciones bonitas!</p>
+                <p class="pronunciation">(SEH-ees • SEH-ees PAH-hah-rohs en lahs RAH-mahs)</p>
+            </div>
+        </div>
+
+        <!-- Page 8: Siete -->
+        <div class="page" data-page="8">
+            <div class="page-number">Página 8</div>
+            <div class="page-content">
+                <div class="number-display">7</div>
+                <h2>Siete</h2>
+                <div class="image-placeholder">🎈🎈🎈🎈🎈🎈🎈 ¡Siete globos de colores! 🎈🎈🎈🎈🎈🎈🎈</div>
+                <p>Veo <strong>siete</strong> globos flotando.</p>
+                <p>¡De todos los colores del arcoíris!</p>
+                <p class="pronunciation">(see-EH-teh • see-EH-teh GLOH-bohs floh-TAHN-doh)</p>
+            </div>
+        </div>
+
+        <!-- Page 9: Ocho -->
+        <div class="page" data-page="9">
+            <div class="page-number">Página 9</div>
+            <div class="page-content">
+                <div class="number-display">8</div>
+                <h2>Ocho</h2>
+                <div class="image-placeholder">🌟🌟🌟🌟🌟🌟🌟🌟 ¡Ocho estrellas brillantes! 🌟🌟🌟🌟🌟🌟🌟🌟</div>
+                <p>Ahora es de noche. Veo <strong>ocho</strong> estrellas.</p>
+                <p>¡Brillan en el cielo oscuro!</p>
+                <p class="pronunciation">(OH-choh • OH-choh es-TREH-yahs bree-YAHN-tehs)</p>
+            </div>
+        </div>
+
+        <!-- Page 10: Review -->
+        <div class="page" data-page="10">
+            <div class="page-number">Página 10</div>
+            <div class="page-content">
+                <h1>¡Muy bien! 🎉</h1>
+                <h2>Ya sabes contar hasta ocho</h2>
+                <div class="vocabulary-box">
+                    <h3>📚 Palabras Nuevas:</h3>
+                    <p><strong>uno</strong> (1) • <strong>dos</strong> (2) • <strong>tres</strong> (3) • <strong>cuatro</strong> (4)</p>
+                    <p><strong>cinco</strong> (5) • <strong>seis</strong> (6) • <strong>siete</strong> (7) • <strong>ocho</strong> (8)</p>
+                </div>
+                <p>¿Puedes contar las cosas que ves a tu alrededor?</p>
+                <p>¡Practica contando en español todos los días!</p>
+                <p style="margin-top: 30px; font-size: 1.2em;">🌟 ¡Eres un contador excelente! 🌟</p>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="btn-prev" onclick="prevPage()" id="prevBtn">← Anterior</button>
+            <div class="page-indicator">
+                <span id="currentPage">1</span> / <span id="totalPages">10</span>
+            </div>
+            <button class="btn-audio" onclick="readPage()" id="audioBtn">🔊 Escuchar</button>
+            <button class="btn-next" onclick="nextPage()" id="nextBtn">Siguiente →</button>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Los Números - Contando en el Parque",
+        "description": "Interactive Spanish counting book for preschoolers learning numbers 1-8",
+        "inLanguage": "es",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "preschooler",
+            "audienceType": "children ages 2-5"
+        },
+        "educationalUse": "language learning",
+        "learningResourceType": "interactive book",
+        "isAccessibleForFree": true,
+        "publisher": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        }
+    }
+    </script>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 10;
+
+        function showPage(pageNum) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.querySelector(`[data-page="${pageNum}"]`).classList.add('active');
+            document.getElementById('currentPage').textContent = pageNum;
+            
+            // Update button states
+            document.getElementById('prevBtn').disabled = pageNum === 1;
+            document.getElementById('nextBtn').disabled = pageNum === totalPages;
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+
+        function readPage() {
+            const pageElement = document.querySelector('.page.active .page-content');
+            const text = pageElement.textContent
+                .replace(/\(.*?\)/g, '')  // Remove pronunciation guides
+                .replace(/📚.*?:/g, '')    // Remove vocabulary box header
+                .trim();
+
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert('Lo siento, tu navegador no soporta audio. Sorry, your browser does not support audio.');
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') prevPage();
+            if (e.key === ' ') {
+                e.preventDefault();
+                readPage();
+            }
+        });
+
+        // Google Analytics event tracking
+        document.getElementById('audioBtn').addEventListener('click', () => {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'audio_play', {
+                    'book_title': 'Los Números',
+                    'page_number': currentPage
+                });
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (typeof gtag !== 'undefined' && currentPage === totalPages - 1) {
+                gtag('event', 'book_completed', {
+                    'book_title': 'Los Números'
+                });
+            }
+        });
+
+        // Initialize
+        document.getElementById('totalPages').textContent = totalPages;
+        showPage(currentPage);
+    </script>
+</body>
+</html>

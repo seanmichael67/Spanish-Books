@@ -1,0 +1,72 @@
+{
+  "week": 32,
+  "title": "Los Números - Contando en el Parque",
+  "englishTranslation": "The Numbers - Counting at the Park",
+  "topic": "Numbers",
+  "ageRange": "2-5 years",
+  "language": "Spanish",
+  "publicationDate": "2026-03-04",
+  "pages": 10,
+  "newVocabulary": [
+    "uno (one)",
+    "dos (two)",
+    "tres (three)",
+    "cuatro (four)",
+    "cinco (five)",
+    "seis (six)",
+    "siete (seven)",
+    "ocho (eight)",
+    "contar (to count)",
+    "parque (park)",
+    "sol (sun)",
+    "patos (ducks)",
+    "estanque (pond)",
+    "árboles (trees)",
+    "hojas (leaves)",
+    "flores (flowers)",
+    "mariposas (butterflies)",
+    "pájaros (birds)",
+    "globos (balloons)",
+    "estrellas (stars)"
+  ],
+  "educationalGoals": [
+    "Learn numbers 1-8 in Spanish",
+    "Practice counting objects",
+    "Build number recognition skills",
+    "Develop vocabulary for nature and park items",
+    "Reinforce repetitive sentence patterns"
+  ],
+  "seo": {
+    "metaTitle": "Los Números - Free Interactive Spanish Counting Book for Kids",
+    "metaDescription": "Free interactive Spanish counting book teaching numbers 1-8 for preschoolers. Learn to count in Spanish with fun illustrations and audio. Perfect for ages 2-5.",
+    "keywords": [
+      "spanish numbers for kids",
+      "counting in spanish",
+      "preschool spanish book",
+      "learn numbers spanish",
+      "interactive spanish book",
+      "spanish counting book free",
+      "los numeros",
+      "bilingual preschool",
+      "spanish immersion",
+      "early childhood spanish",
+      "phoenix preschool spanish",
+      "mandarin spanish preschool"
+    ],
+    "focusKeyword": "spanish numbers for kids",
+    "slug": "los-numeros-contando-en-el-parque"
+  },
+  "features": {
+    "audio": true,
+    "interactive": true,
+    "pronunciationGuides": true,
+    "illustrations": "DALL-E 3 prompts included",
+    "vocabularyReview": true,
+    "schemaMarkup": true,
+    "ga4Tracking": true
+  },
+  "cta": {
+    "primary": "Schedule a tour at Beibei Amigos",
+    "secondary": "Subscribe for weekly Spanish books"
+  }
+}
