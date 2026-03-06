@@ -1,0 +1,51 @@
+DALL-E 3 Image Prompts for "Las Emociones"
+Week 33 - Spanish Preschool Book
+Created: March 5, 2026
+
+Style Guide: Warm, colorful, child-friendly illustrations in a consistent watercolor style. Characters should be diverse, expressive, and relatable to preschool-aged children (2-5 years). Bright, cheerful colors throughout. Simple backgrounds that don't distract from the emotion being portrayed.
+
+---
+
+PAGE 2: FELIZ (Happy)
+Prompt: "A joyful preschool-aged child with a huge smile playing with building blocks with two friends in a bright playroom, watercolor illustration style, warm colors, expressive faces showing happiness, sunny atmosphere, child-friendly art, diverse children, cheerful and inviting"
+
+---
+
+PAGE 3: TRISTE (Sad)
+Prompt: "A sad preschool-aged child sitting alone on a bench with head down and tears on cheeks, soft watercolor illustration, gentle pastel colors, empathetic and comforting mood, simple park background, child-friendly art style, expressing sadness in a gentle way"
+
+---
+
+PAGE 4: ENOJADO (Angry)
+Prompt: "An angry preschool-aged child with crossed arms and furrowed brow standing next to another child holding a toy, watercolor illustration style, expressive face showing frustration, warm indoor colors, child-friendly art, teaching about anger in a healthy way"
+
+---
+
+PAGE 5: ASUSTADO (Scared)
+Prompt: "A scared preschool-aged child peeking out from under a blanket in a slightly dark bedroom, watercolor illustration style, gentle shadowy atmosphere but not frightening, comforting moonlight through window, child-friendly art, expressing fear in a safe, relatable way"
+
+---
+
+PAGE 6: SORPRENDIDO (Surprised)
+Prompt: "A surprised preschool-aged child with wide eyes and open mouth holding a wrapped gift with a big bow, watercolor illustration style, bright cheerful colors, confetti in the air, joyful and exciting atmosphere, child-friendly art, expression of delightful surprise"
+
+---
+
+PAGE 7: CANSADO (Tired)
+Prompt: "A tired preschool-aged child yawning with arms stretched up after playing, toys scattered around, watercolor illustration style, soft late afternoon colors, cozy and calm atmosphere, child-friendly art, gentle expression of tiredness and need for rest"
+
+---
+
+PAGE 8: EMOCIONADO (Excited)
+Prompt: "An excited preschool-aged child jumping with joy seeing a playground in the background with swings and slides, watercolor illustration style, vibrant happy colors, energetic pose, sunshine and cheerful atmosphere, child-friendly art, pure excitement and anticipation"
+
+---
+
+NOTES FOR ILLUSTRATOR:
+- Keep facial expressions clear and exaggerated (preschoolers learning to read emotions)
+- Use consistent character design across all pages (same child or similar style)
+- Backgrounds should be simple but provide context for each emotion
+- Colors should match the emotion (bright for happy/excited, softer for sad/tired, etc.)
+- Ensure all illustrations are age-appropriate and comforting
+- Diversity in representation is important
+- Each image should tell a story that reinforces the Spanish text

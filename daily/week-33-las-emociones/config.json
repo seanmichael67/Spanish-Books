@@ -1,0 +1,92 @@
+{
+  "week": 33,
+  "title": "Las Emociones",
+  "englishTranslation": "The Emotions",
+  "topic": "Emotions and Feelings",
+  "targetAge": "2-5 years",
+  "pages": 9,
+  "createdDate": "2026-03-05",
+  "author": "Luna 📚",
+  "newVocabulary": [
+    {
+      "spanish": "feliz",
+      "english": "happy",
+      "pronunciation": "feh-LEES"
+    },
+    {
+      "spanish": "triste",
+      "english": "sad",
+      "pronunciation": "TREES-teh"
+    },
+    {
+      "spanish": "enojado",
+      "english": "angry",
+      "pronunciation": "eh-noh-HAH-doh"
+    },
+    {
+      "spanish": "asustado",
+      "english": "scared",
+      "pronunciation": "ah-soos-TAH-doh"
+    },
+    {
+      "spanish": "sorprendido",
+      "english": "surprised",
+      "pronunciation": "sohr-prehn-DEE-doh"
+    },
+    {
+      "spanish": "cansado",
+      "english": "tired",
+      "pronunciation": "kahn-SAH-doh"
+    },
+    {
+      "spanish": "emocionado",
+      "english": "excited",
+      "pronunciation": "eh-moh-see-oh-NAH-doh"
+    },
+    {
+      "spanish": "sentir",
+      "english": "to feel",
+      "pronunciation": "sen-TEER"
+    }
+  ],
+  "learningObjectives": [
+    "Identify basic emotions in Spanish",
+    "Express how they feel using 'Estoy...' sentences",
+    "Recognize emotional situations",
+    "Build emotional vocabulary",
+    "Understand that all emotions are valid"
+  ],
+  "seo": {
+    "metaDescription": "Learn emotions in Spanish! Interactive preschool book teaching children to identify and express feelings - feliz, triste, enojado, asustado, sorprendido, cansado, and emocionado. Free Spanish book for kids ages 2-5.",
+    "keywords": [
+      "emotions in spanish for kids",
+      "spanish emotions preschool",
+      "feelings in spanish",
+      "feliz triste enojado",
+      "spanish emotional vocabulary",
+      "teach emotions spanish",
+      "preschool spanish feelings",
+      "spanish book emotions",
+      "kids emotions spanish",
+      "como te sientes spanish",
+      "spanish feelings vocabulary",
+      "interactive spanish book emotions"
+    ],
+    "focusKeyphrase": "emotions in spanish for kids",
+    "ogTitle": "Las Emociones - Learn Feelings in Spanish for Kids",
+    "ogDescription": "Interactive Spanish book teaching preschoolers to identify and express emotions: feliz, triste, enojado, asustado, and more. Free online book!"
+  },
+  "educationalValue": {
+    "socialEmotional": "Teaches emotional literacy and self-awareness",
+    "language": "Builds emotional vocabulary in Spanish",
+    "cognitive": "Helps children identify and name feelings",
+    "cultural": "Authentic Spanish expressions for emotions"
+  },
+  "parentTips": [
+    "Ask your child 'Como te sientes?' (How do you feel?) throughout the day",
+    "Point to the emojis and have them practice the Spanish words",
+    "Act out the emotions together",
+    "Share times when you felt each emotion",
+    "Reinforce that all emotions are okay to feel"
+  ]
+}

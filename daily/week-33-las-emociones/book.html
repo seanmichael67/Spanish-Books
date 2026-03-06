@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Emociones - Spanish Book for Kids</title>
+    <meta name="description" content="Learn emotions in Spanish! Interactive preschool book teaching children to identify and express feelings - feliz, triste, enojado, and more.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            background: linear-gradient(to bottom, #fff 0%, #f8f9fa 100%);
+        }
+        
+        .page.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-content {
+            text-align: center;
+            width: 100%;
+        }
+        
+        .title-page h1 {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .title-page .subtitle {
+            font-size: 1.5em;
+            color: #764ba2;
+            margin-bottom: 30px;
+        }
+        
+        .title-page .emoji {
+            font-size: 4em;
+            margin: 20px 0;
+        }
+        
+        .story-text {
+            font-size: 1.8em;
+            line-height: 1.6;
+            color: #333;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .pronunciation {
+            font-size: 1.2em;
+            color: #764ba2;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        .translation {
+            font-size: 1.1em;
+            color: #666;
+            margin: 10px 0;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: #666;
+            border: 3px dashed #999;
+        }
+        
+        .emotion-emoji {
+            font-size: 5em;
+            margin: 20px 0;
+            display: block;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-top: 2px solid #dee2e6;
+        }
+        
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        .nav-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .nav-btn:hover:not(:disabled) {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .nav-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+        
+        .audio-btn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 15px 25px;
+        }
+        
+        .audio-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+        }
+        
+        .page-indicator {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .page {
+                padding: 20px;
+                min-height: 400px;
+            }
+            
+            .title-page h1 {
+                font-size: 2em;
+            }
+            
+            .story-text {
+                font-size: 1.4em;
+            }
+            
+            .emotion-emoji {
+                font-size: 3.5em;
+            }
+            
+            .controls {
+                padding: 15px 20px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            button {
+                padding: 12px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Title -->
+        <div class="page active">
+            <div class="page-content title-page">
+                <h1>Las Emociones</h1>
+                <div class="subtitle">The Emotions</div>
+                <div class="emoji">😊😢😠😱</div>
+                <p class="story-text">¡Vamos a aprender sobre las emociones!</p>
+                <p class="translation">Let's learn about emotions!</p>
+            </div>
+        </div>
+
+        <!-- Page 2: Happy -->
+        <div class="page">
+            <div class="page-content">
+                <span class="emotion-emoji">😊</span>
+                <p class="story-text">Estoy feliz cuando juego con mis amigos.</p>
+                <p class="pronunciation">(ehs-TOY feh-LEES KWAN-doh HWAY-goh kohn mees ah-MEE-gohs)</p>
+                <p class="translation">I am happy when I play with my friends.</p>
+                <div class="image-placeholder">[Illustration: Happy child playing]</div>
+            </div>
+        </div>
+
+        <!-- Page 3: Sad -->
+        <div class="page">
+            <div class="page-content">
+                <span class="emotion-emoji">😢</span>
+                <p class="story-text">Estoy triste cuando me siento solo.</p>
+                <p class="pronunciation">(ehs-TOY TREES-teh KWAN-doh meh see-EN-toh SOH-loh)</p>
+                <p class="translation">I am sad when I feel lonely.</p>
+                <div class="image-placeholder">[Illustration: Sad child alone]</div>
+            </div>
+        </div>
+
+        <!-- Page 4: Angry -->
+        <div class="page">
+            <div class="page-content">
+                <span class="emotion-emoji">😠</span>
+                <p class="story-text">Estoy enojado cuando alguien toma mi juguete.</p>
+                <p class="pronunciation">(ehs-TOY eh-noh-HAH-doh KWAN-doh AHL-gee-ehn TOH-mah mee hoo-GEH-teh)</p>
+                <p class="translation">I am angry when someone takes my toy.</p>
+                <div class="image-placeholder">[Illustration: Angry child with toy]</div>
+            </div>
+        </div>
+
+        <!-- Page 5: Scared -->
+        <div class="page">
+            <div class="page-content">
+                <span class="emotion-emoji">😱</span>
+                <p class="story-text">Estoy asustado cuando está muy oscuro.</p>
+                <p class="pronunciation">(ehs-TOY ah-soos-TAH-doh KWAN-doh ehs-TAH MOO-ee ohs-KOO-roh)</p>
+                <p class="translation">I am scared when it's very dark.</p>
+                <div class="image-placeholder">[Illustration: Scared child in dark]</div>
+            </div>
+        </div>
+
+        <!-- Page 6: Surprised -->
+        <div class="page">
+            <div class="page-content">
+                <span class="emotion-emoji">😲</span>
+                <p class="story-text">Estoy sorprendido cuando recibo un regalo.</p>
+                <p class="pronunciation">(ehs-TOY sohr-prehn-DEE-doh KWAN-doh reh-SEE-boh oon reh-GAH-loh)</p>
+                <p class="translation">I am surprised when I receive a gift.</p>
+                <div class="image-placeholder">[Illustration: Surprised child with gift]</div>
+            </div>
+        </div>
+
+        <!-- Page 7: Tired -->
+        <div class="page">
+            <div class="page-content">
+                <span class="emotion-emoji">😴</span>
+                <p class="story-text">Estoy cansado después de jugar mucho.</p>
+                <p class="pronunciation">(ehs-TOY kahn-SAH-doh dehs-PWEHS deh hoo-GAR MOO-choh)</p>
+                <p class="translation">I am tired after playing a lot.</p>
+                <div class="image-placeholder">[Illustration: Tired child yawning]</div>
+            </div>
+        </div>
+
+        <!-- Page 8: Excited -->
+        <div class="page">
+            <div class="page-content">
+                <span class="emotion-emoji">🤩</span>
+                <p class="story-text">Estoy emocionado cuando vamos al parque.</p>
+                <p class="pronunciation">(ehs-TOY eh-moh-see-oh-NAH-doh KWAN-doh VAH-mohs ahl PAHR-keh)</p>
+                <p class="translation">I am excited when we go to the park.</p>
+                <div class="image-placeholder">[Illustration: Excited child at park]</div>
+            </div>
+        </div>
+
+        <!-- Page 9: Closing -->
+        <div class="page">
+            <div class="page-content title-page">
+                <div class="emoji">❤️🌈</div>
+                <p class="story-text">Todas las emociones son importantes.</p>
+                <p class="translation">All emotions are important.</p>
+                <p class="story-text" style="font-size: 1.4em; margin-top: 30px;">¿Cómo te sientes hoy?</p>
+                <p class="pronunciation">(KOH-moh teh see-EN-tehs oy)</p>
+                <p class="translation">How do you feel today?</p>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="nav-btn" id="prevBtn" onclick="changePage(-1)">← Anterior</button>
+            <button class="audio-btn" onclick="readPage()">🔊 Escuchar</button>
+            <span class="page-indicator"><span id="currentPage">1</span> / <span id="totalPages">9</span></span>
+            <button class="nav-btn" id="nextBtn" onclick="changePage(1)">Siguiente →</button>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Las Emociones",
+        "description": "Interactive Spanish book teaching preschool children about emotions - feliz, triste, enojado, asustado, sorprendido, cansado, and emocionado",
+        "inLanguage": "es",
+        "educationalLevel": "Preschool",
+        "learningResourceType": "Interactive Book",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "student",
+            "audienceType": "Children ages 2-5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Beibei Amigos",
+            "url": "https://www.beibeiamigos.com"
+        }
+    }
+    </script>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        const totalPages = pages.length;
+        
+        document.getElementById('totalPages').textContent = totalPages;
+        
+        function updateButtons() {
+            document.getElementById('prevBtn').disabled = currentPage === 0;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages - 1;
+            document.getElementById('currentPage').textContent = currentPage + 1;
+        }
+        
+        function changePage(direction) {
+            pages[currentPage].classList.remove('active');
+            currentPage += direction;
+            currentPage = Math.max(0, Math.min(currentPage, totalPages - 1));
+            pages[currentPage].classList.add('active');
+            updateButtons();
+            
+            // GA4 tracking
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_turn', {
+                    'book_title': 'Las Emociones',
+                    'page_number': currentPage + 1
+                });
+            }
+        }
+        
+        function readPage() {
+            const currentPageElement = pages[currentPage];
+            const textElement = currentPageElement.querySelector('.story-text');
+            
+            if (!textElement) return;
+            
+            const text = textElement.textContent;
+            
+            // Try Web Speech API first
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                utterance.pitch = 1.1;
+                
+                // Try to find a Spanish voice
+                const voices = window.speechSynthesis.getVoices();
+                const spanishVoice = voices.find(voice => voice.lang.startsWith('es'));
+                if (spanishVoice) {
+                    utterance.voice = spanishVoice;
+                }
+                
+                window.speechSynthesis.speak(utterance);
+                
+                // GA4 tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'audio_play', {
+                        'book_title': 'Las Emociones',
+                        'page_number': currentPage + 1
+                    });
+                }
+            } else {
+                alert('Lo siento, tu navegador no soporta audio. / Sorry, your browser doesn\'t support audio.');
+            }
+        }
+        
+        // Load voices
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.onvoiceschanged = function() {
+                window.speechSynthesis.getVoices();
+            };
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') changePage(-1);
+            if (e.key === 'ArrowRight') changePage(1);
+            if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                readPage();
+            }
+        });
+        
+        updateButtons();
+    </script>
+
+    <!-- GA4 Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+        
+        // Track book open
+        gtag('event', 'book_open', {
+            'book_title': 'Las Emociones',
+            'week': 33
+        });
+    </script>
+</body>
+</html>
