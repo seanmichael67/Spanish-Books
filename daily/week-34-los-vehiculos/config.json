@@ -1,0 +1,70 @@
+{
+  "week": 34,
+  "title": "Los Vehículos de Mi Ciudad",
+  "englishTranslation": "The Vehicles of My City",
+  "topic": "Transportation",
+  "ageRange": "2-5 years",
+  "difficulty": "Beginner",
+  "pageCount": 10,
+  "newVocabulary": [
+    "el vehículo (vehicle)",
+    "el carro (car)",
+    "el autobús (bus)",
+    "la bicicleta (bicycle)",
+    "el camión (truck)",
+    "el avión (airplane)",
+    "el tren (train)",
+    "el helicóptero (helicopter)",
+    "el barco (boat)",
+    "la ciudad (city)"
+  ],
+  "learningObjectives": [
+    "Identify common transportation vehicles in Spanish",
+    "Practice asking and answering questions about vehicles",
+    "Learn descriptive adjectives (colors, sizes)",
+    "Understand where different vehicles travel (land, air, water)"
+  ],
+  "seo": {
+    "metaTitle": "Los Vehículos de Mi Ciudad - Free Spanish Transportation Book for Kids",
+    "metaDescription": "Learn Spanish transportation vocabulary with this interactive bilingual book for preschoolers. Teaches car, bus, airplane, train, and more in Spanish and English.",
+    "keywords": [
+      "Spanish transportation book",
+      "vehicles in Spanish",
+      "learn Spanish for kids",
+      "bilingual preschool books",
+      "Spanish vocabulary",
+      "transportation vocabulary Spanish",
+      "Spanish immersion preschool",
+      "free Spanish books",
+      "el carro",
+      "el autobús",
+      "Spanish airplane",
+      "Spanish train book"
+    ],
+    "focusKeyword": "Spanish transportation book for kids"
+  },
+  "educationalValue": {
+    "languageSkills": "Transportation vocabulary, question formation, descriptive adjectives",
+    "cognitiveSkills": "Vehicle identification, categorization (land/air/water), sound recognition",
+    "culturalElements": "Common vehicles in Spanish-speaking cities"
+  },
+  "parentTips": [
+    "Point to vehicles when you're out and about: '¡Mira el autobús!'",
+    "Make vehicle sounds together: '¡Chu-chu!' for el tren",
+    "Practice colors with vehicles: 'el carro rojo' (red car)",
+    "Ask your child which vehicle they'd like to ride: '¿En qué quieres viajar?'"
+  ],
+  "funFacts": [
+    "The word 'carro' is commonly used in Latin America, while 'coche' is used in Spain",
+    "Children love to make vehicle sounds - incorporate them when reading!",
+    "Transportation vocabulary is essential for daily conversations in Spanish"
+  ],
+  "relatedTopics": [
+    "Colors (Week 30)",
+    "Community Helpers (Future)",
+    "Travel/Vacation (Week 27)"
+  ],
+  "created": "2026-03-06",
+  "author": "Luna 📚 - Beibei Amigos",
+  "status": "published"
+}

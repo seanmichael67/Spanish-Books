@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Vehículos de Mi Ciudad - Spanish Book for Kids</title>
+    <meta name="description" content="Learn Spanish transportation vocabulary with this interactive bilingual book for preschoolers. Teaches car, bus, airplane, and more in Spanish and English.">
+    <meta name="keywords" content="Spanish transportation book, vehicles in Spanish, learn Spanish for kids, bilingual preschool books, Spanish vocabulary">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Bradley Hand', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .book-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .book-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .book-header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            animation: fadeIn 0.5s;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .illustration {
+            background: #f0f0f0;
+            border-radius: 15px;
+            padding: 20px;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .text-content h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .spanish {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .pronunciation {
+            font-size: 1.1em;
+            color: #764ba2;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .english {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .vocabulary {
+            background: #fff3cd;
+            border-left: 4px solid #f5576c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .vocabulary strong {
+            color: #f5576c;
+            font-size: 1.2em;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            background: #f8f9fa;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: bold;
+        }
+        
+        button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .page-indicator {
+            font-size: 1.2em;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .audio-btn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 10px 20px;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .book-header h1 {
+                font-size: 1.8em;
+            }
+            
+            .spanish {
+                font-size: 1.5em;
+            }
+            
+            .illustration {
+                min-height: 200px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "Los Vehículos de Mi Ciudad",
+      "author": {
+        "@type": "Organization",
+        "name": "Beibei Amigos Language Preschool"
+      },
+      "inLanguage": ["es", "en"],
+      "description": "Interactive bilingual Spanish-English book teaching transportation vocabulary to preschool children",
+      "educationalLevel": "Preschool",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student",
+        "audienceType": "Children ages 2-5"
+      },
+      "learningResourceType": "Interactive Book",
+      "keywords": "Spanish, transportation, vehicles, bilingual education, preschool"
+    }
+    </script>
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-header">
+            <h1>🚗 Los Vehículos de Mi Ciudad 🚌</h1>
+            <p>The Vehicles of My City</p>
+        </div>
+
+        <!-- Page 1 -->
+        <div class="page active" data-page="1">
+            <div class="page-content">
+                <div class="illustration">🌆🚗🚌</div>
+                <div class="text-content">
+                    <h2>¡Bienvenidos!</h2>
+                    <p class="spanish">¡Hoy vamos a ver muchos vehículos en la ciudad!</p>
+                    <p class="pronunciation">(oy VAH-mos ah vehr MOO-chos veh-EE-koo-los en lah see-oo-DAHD)</p>
+                    <p class="english">Today we're going to see many vehicles in the city!</p>
+                    <button class="audio-btn" onclick="speak(1)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page" data-page="2">
+            <div class="page-content">
+                <div class="illustration">🚗</div>
+                <div class="text-content">
+                    <h2>El Carro</h2>
+                    <p class="spanish">¿Ves el carro rojo?</p>
+                    <p class="pronunciation">(ves el KAH-rro ROH-ho)</p>
+                    <p class="english">Do you see the red car?</p>
+                    <div class="vocabulary">
+                        <strong>el carro</strong> = the car
+                    </div>
+                    <button class="audio-btn" onclick="speak(2)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page" data-page="3">
+            <div class="page-content">
+                <div class="illustration">🚌</div>
+                <div class="text-content">
+                    <h2>El Autobús</h2>
+                    <p class="spanish">¡El autobús amarillo lleva a muchos niños!</p>
+                    <p class="pronunciation">(el ow-toh-BOOS ah-mah-REE-yo YEH-vah ah MOO-chos NEE-nyos)</p>
+                    <p class="english">The yellow bus carries many children!</p>
+                    <div class="vocabulary">
+                        <strong>el autobús</strong> = the bus
+                    </div>
+                    <button class="audio-btn" onclick="speak(3)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page" data-page="4">
+            <div class="page-content">
+                <div class="illustration">🚲</div>
+                <div class="text-content">
+                    <h2>La Bicicleta</h2>
+                    <p class="spanish">Me gusta montar en bicicleta.</p>
+                    <p class="pronunciation">(meh GOOS-tah mon-TAR en bee-see-KLEH-tah)</p>
+                    <p class="english">I like to ride a bicycle.</p>
+                    <div class="vocabulary">
+                        <strong>la bicicleta</strong> = the bicycle
+                    </div>
+                    <button class="audio-btn" onclick="speak(4)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5 -->
+        <div class="page" data-page="5">
+            <div class="page-content">
+                <div class="illustration">🚒</div>
+                <div class="text-content">
+                    <h2>El Camión de Bomberos</h2>
+                    <p class="spanish">¡El camión de bomberos es muy grande!</p>
+                    <p class="pronunciation">(el kah-mee-OWN deh bom-BEH-ros es moo-ee GRAHN-deh)</p>
+                    <p class="english">The fire truck is very big!</p>
+                    <div class="vocabulary">
+                        <strong>el camión</strong> = the truck
+                    </div>
+                    <button class="audio-btn" onclick="speak(5)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 6 -->
+        <div class="page" data-page="6">
+            <div class="page-content">
+                <div class="illustration">✈️</div>
+                <div class="text-content">
+                    <h2>El Avión</h2>
+                    <p class="spanish">¡Mira el avión en el cielo!</p>
+                    <p class="pronunciation">(MEE-rah el ah-vee-OWN en el see-EH-lo)</p>
+                    <p class="english">Look at the airplane in the sky!</p>
+                    <div class="vocabulary">
+                        <strong>el avión</strong> = the airplane
+                    </div>
+                    <button class="audio-btn" onclick="speak(6)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 7 -->
+        <div class="page" data-page="7">
+            <div class="page-content">
+                <div class="illustration">🚂</div>
+                <div class="text-content">
+                    <h2>El Tren</h2>
+                    <p class="spanish">El tren hace ¡chu-chu!</p>
+                    <p class="pronunciation">(el trehn AH-seh choo-choo)</p>
+                    <p class="english">The train goes choo-choo!</p>
+                    <div class="vocabulary">
+                        <strong>el tren</strong> = the train
+                    </div>
+                    <button class="audio-btn" onclick="speak(7)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 8 -->
+        <div class="page" data-page="8">
+            <div class="page-content">
+                <div class="illustration">🚁</div>
+                <div class="text-content">
+                    <h2>El Helicóptero</h2>
+                    <p class="spanish">¿Oyes el helicóptero?</p>
+                    <p class="pronunciation">(OH-yes el eh-lee-KOP-teh-ro)</p>
+                    <p class="english">Do you hear the helicopter?</p>
+                    <div class="vocabulary">
+                        <strong>el helicóptero</strong> = the helicopter
+                    </div>
+                    <button class="audio-btn" onclick="speak(8)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 9 -->
+        <div class="page" data-page="9">
+            <div class="page-content">
+                <div class="illustration">🚢</div>
+                <div class="text-content">
+                    <h2>El Barco</h2>
+                    <p class="spanish">El barco navega en el agua.</p>
+                    <p class="pronunciation">(el BAR-ko nah-VEH-gah en el AH-gwah)</p>
+                    <p class="english">The boat sails on the water.</p>
+                    <div class="vocabulary">
+                        <strong>el barco</strong> = the boat
+                    </div>
+                    <button class="audio-btn" onclick="speak(9)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 10 -->
+        <div class="page" data-page="10">
+            <div class="page-content">
+                <div class="illustration">🚗🚌✈️🚂</div>
+                <div class="text-content">
+                    <h2>¡Adiós!</h2>
+                    <p class="spanish">¡Cuántos vehículos vimos hoy!</p>
+                    <p class="pronunciation">(KWAHN-tos veh-EE-koo-los VEE-mos oy)</p>
+                    <p class="english">How many vehicles we saw today!</p>
+                    <p class="spanish">¿Cuál es tu favorito?</p>
+                    <p class="english">Which one is your favorite?</p>
+                    <button class="audio-btn" onclick="speak(10)">🔊 Listen</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn" onclick="changePage(-1)">← Previous</button>
+            <div class="page-indicator">
+                Page <span id="currentPage">1</span> of <span id="totalPages">10</span>
+            </div>
+            <button id="nextBtn" onclick="changePage(1)">Next →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 10;
+
+        function updatePage() {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            document.querySelector(`[data-page="${currentPage}"]`).classList.add('active');
+            document.getElementById('currentPage').textContent = currentPage;
+            
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+            
+            window.scrollTo(0, 0);
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            if (currentPage < 1) currentPage = 1;
+            if (currentPage > totalPages) currentPage = totalPages;
+            updatePage();
+        }
+
+        function speak(pageNum) {
+            const texts = {
+                1: "¡Hoy vamos a ver muchos vehículos en la ciudad!",
+                2: "¿Ves el carro rojo?",
+                3: "¡El autobús amarillo lleva a muchos niños!",
+                4: "Me gusta montar en bicicleta.",
+                5: "¡El camión de bomberos es muy grande!",
+                6: "¡Mira el avión en el cielo!",
+                7: "El tren hace ¡chu-chu!",
+                8: "¿Oyes el helicóptero?",
+                9: "El barco navega en el agua.",
+                10: "¡Cuántos vehículos vimos hoy! ¿Cuál es tu favorito?"
+            };
+
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(texts[pageNum]);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                speechSynthesis.speak(utterance);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changePage(-1);
+            if (e.key === 'ArrowRight') changePage(1);
+        });
+
+        // Initialize
+        document.getElementById('totalPages').textContent = totalPages;
+        updatePage();
+
+        // GA4 tracking
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'book_view', {
+                'book_title': 'Los Vehículos de Mi Ciudad',
+                'book_week': 34
+            });
+        }
+    </script>
+</body>
+</html>
