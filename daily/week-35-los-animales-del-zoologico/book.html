@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Animales del Zoológico - Spanish Book for Kids</title>
+    <meta name="description" content="Interactive Spanish book teaching zoo animal names and sounds for preschoolers ages 2-5. Learn león, elefante, mono, jirafa, and more!">
+    <meta name="keywords" content="Spanish animals, zoo animals Spanish, learn Spanish kids, Spanish vocabulary, preschool Spanish">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            text-align: center;
+            background: linear-gradient(to bottom, #fff 0%, #f8f9fa 100%);
+        }
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .page-content {
+            font-size: 1.8em;
+            color: #34495e;
+            line-height: 1.6;
+            margin: 30px 0;
+        }
+        .spanish-text {
+            font-size: 2em;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .pronunciation {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        .image-placeholder {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            margin: 30px auto;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: #2d3436;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #34495e;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .btn-prev, .btn-next {
+            background: #3498db;
+            color: white;
+        }
+        .btn-prev:hover, .btn-next:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+        .btn-prev:disabled, .btn-next:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+            transform: scale(1);
+        }
+        .btn-audio {
+            background: #e74c3c;
+            color: white;
+            margin: 20px auto;
+            display: block;
+        }
+        .btn-audio:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+        .page-number {
+            text-align: center;
+            color: white;
+            font-size: 1.1em;
+        }
+        .sound-button {
+            background: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            margin: 10px;
+            display: inline-block;
+        }
+        .sound-button:hover {
+            background: #e67e22;
+        }
+        .cta-box {
+            background: #fff3cd;
+            border: 3px solid #ffc107;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .cta-link {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .cta-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Los Animales del Zoológico",
+        "description": "Interactive Spanish book teaching zoo animal names and sounds for preschoolers",
+        "inLanguage": "es",
+        "educationalLevel": "Preschool",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "student",
+            "audienceType": "Children ages 2-5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool",
+            "url": "https://www.beibeiamigos.com"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Title -->
+        <div class="page active" data-page="1">
+            <h1>Los Animales del Zoológico</h1>
+            <div class="page-content">¡Vamos a visitar el zoológico!</div>
+            <div class="pronunciation">(VAH-mohs ah bee-see-TAR el so-oh-LOH-hee-koh)</div>
+            <div class="image-placeholder">🎨 Zoo entrance with excited children</div>
+            <button class="btn-audio" onclick="speak('¡Vamos a visitar el zoológico!')">🔊 Escuchar</button>
+        </div>
+
+        <!-- Page 2: Lion -->
+        <div class="page" data-page="2">
+            <h1>El León</h1>
+            <div class="spanish-text">El león dice: ¡ROAR!</div>
+            <div class="pronunciation">(el lay-OHN DEE-say: ROAR)</div>
+            <div class="page-content">El león es grande y fuerte.<br>¡Es el rey de los animales!</div>
+            <div class="image-placeholder">🎨 Majestic lion with golden mane</div>
+            <button class="btn-audio" onclick="speak('El león dice roar')">🔊 Escuchar</button>
+            <button class="sound-button" onclick="speak('¡ROAR!')">🦁 Sonido del León</button>
+        </div>
+
+        <!-- Page 3: Elephant -->
+        <div class="page" data-page="3">
+            <h1>El Elefante</h1>
+            <div class="spanish-text">El elefante tiene una trompa larga.</div>
+            <div class="pronunciation">(el eh-leh-FAHN-tay tee-EH-nay OO-nah TROHM-pah LAR-gah)</div>
+            <div class="page-content">¿Ves su trompa?<br>¡Puede tomar agua con ella!</div>
+            <div class="image-placeholder">🎨 Friendly elephant spraying water with trunk</div>
+            <button class="btn-audio" onclick="speak('El elefante tiene una trompa larga')">🔊 Escuchar</button>
+        </div>
+
+        <!-- Page 4: Monkey -->
+        <div class="page" data-page="4">
+            <h1>El Mono</h1>
+            <div class="spanish-text">El mono salta y juega.</div>
+            <div class="pronunciation">(el MOH-noh SAHL-tah ee HWAY-gah)</div>
+            <div class="page-content">¡Mira! El mono come un plátano.<br>¡Le gusta columpiarse en los árboles!</div>
+            <div class="image-placeholder">🎨 Playful monkey swinging with banana</div>
+            <button class="btn-audio" onclick="speak('El mono salta y juega')">🔊 Escuchar</button>
+            <button class="sound-button" onclick="speak('¡Uh uh ah ah!')">🐵 Sonido del Mono</button>
+        </div>
+
+        <!-- Page 5: Giraffe -->
+        <div class="page" data-page="5">
+            <h1>La Jirafa</h1>
+            <div class="spanish-text">La jirafa es muy alta.</div>
+            <div class="pronunciation">(lah hee-RAH-fah es moo-ee AHL-tah)</div>
+            <div class="page-content">¡Su cuello es largo!<br>Puede comer hojas de los árboles altos.</div>
+            <div class="image-placeholder">🎨 Tall giraffe eating leaves from tree</div>
+            <button class="btn-audio" onclick="speak('La jirafa es muy alta')">🔊 Escuchar</button>
+        </div>
+
+        <!-- Page 6: Zebra -->
+        <div class="page" data-page="6">
+            <h1>La Cebra</h1>
+            <div class="spanish-text">La cebra tiene rayas blancas y negras.</div>
+            <div class="pronunciation">(lah SAY-brah tee-EH-nay RAH-yahs BLAHN-kahs ee NAY-grahs)</div>
+            <div class="page-content">¿Cuántas rayas puedes contar?<br>Cada cebra es diferente.</div>
+            <div class="image-placeholder">🎨 Beautiful zebra with distinct stripes</div>
+            <button class="btn-audio" onclick="speak('La cebra tiene rayas blancas y negras')">🔊 Escuchar</button>
+        </div>
+
+        <!-- Page 7: Penguin -->
+        <div class="page" data-page="7">
+            <h1>El Pingüino</h1>
+            <div class="spanish-text">El pingüino nada en el agua fría.</div>
+            <div class="pronunciation">(el peen-GWEE-noh NAH-dah en el AH-gwah FREE-ah)</div>
+            <div class="page-content">¡Le gusta el hielo!<br>Camina con pasos graciosos.</div>
+            <div class="image-placeholder">🎨 Cute penguin swimming and waddling</div>
+            <button class="btn-audio" onclick="speak('El pingüino nada en el agua fría')">🔊 Escuchar</button>
+        </div>
+
+        <!-- Page 8: Bear -->
+        <div class="page" data-page="8">
+            <h1>El Oso</h1>
+            <div class="spanish-text">El oso es grande y peludo.</div>
+            <div class="pronunciation">(el OH-soh es GRAHN-day ee peh-LOO-doh)</div>
+            <div class="page-content">¡Le gusta comer miel y pescado!<br>¿Qué animal te gusta más?</div>
+            <div class="image-placeholder">🎨 Friendly bear eating honey</div>
+            <button class="btn-audio" onclick="speak('El oso es grande y peludo')">🔊 Escuchar</button>
+        </div>
+
+        <!-- Page 9: Recap -->
+        <div class="page" data-page="9">
+            <h1>¡Aprendimos Mucho!</h1>
+            <div class="page-content" style="font-size: 1.4em;">
+                Hoy vimos:<br><br>
+                🦁 El león<br>
+                🐘 El elefante<br>
+                🐵 El mono<br>
+                🦒 La jirafa<br>
+                🦓 La cebra<br>
+                🐧 El pingüino<br>
+                🐻 El oso<br><br>
+                ¡Qué divertido fue visitar el zoológico!
+            </div>
+            <button class="btn-audio" onclick="speak('Aprendimos mucho hoy')">🔊 Escuchar</button>
+        </div>
+
+        <!-- Page 10: CTA -->
+        <div class="page" data-page="10">
+            <h1>¡Gracias por Leer!</h1>
+            <div class="cta-box">
+                <p style="font-size: 1.3em; margin-bottom: 15px;">
+                    ¿Te gustó este libro?<br>¡Hay más libros cada semana!
+                </p>
+                <p style="margin: 15px 0;">
+                    <a href="https://www.beibeiamigos.com/spanish-books/" class="cta-link">📚 Ver Más Libros</a>
+                </p>
+                <p style="margin: 15px 0;">
+                    <a href="https://www.beibeiamigos.com/schedule-tour/" class="cta-link">🏫 Programa una Visita</a>
+                </p>
+                <p style="margin: 15px 0;">
+                    <a href="https://www.beibeiamigos.com/reviews/" class="cta-link">⭐ Déjanos un Comentario</a>
+                </p>
+            </div>
+            <div class="page-content" style="font-size: 1.2em; margin-top: 30px;">
+                Aprende español con diversión en<br>
+                <strong>Beibei Amigos Language Preschool</strong>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="controls">
+            <button class="btn-prev" onclick="prevPage()">◀ Anterior</button>
+            <div class="page-number">
+                <span id="current-page">1</span> / <span id="total-pages">10</span>
+            </div>
+            <button class="btn-next" onclick="nextPage()">Siguiente ▶</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 10;
+
+        // Web Speech API
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        function showPage(pageNum) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.querySelector(`[data-page="${pageNum}"]`).classList.add('active');
+            document.getElementById('current-page').textContent = pageNum;
+            
+            // Update button states
+            document.querySelector('.btn-prev').disabled = pageNum === 1;
+            document.querySelector('.btn-next').disabled = pageNum === totalPages;
+
+            // Track page view
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    page_title: 'Los Animales del Zoologico - Page ' + pageNum,
+                    page_location: window.location.href,
+                    page_path: window.location.pathname
+                });
+            }
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') prevPage();
+        });
+
+        // Initialize
+        document.getElementById('total-pages').textContent = totalPages;
+        showPage(1);
+
+        // GA4 tracking
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'book_started', {
+                book_title: 'Los Animales del Zoologico',
+                book_week: 35
+            });
+        }
+    </script>
+</body>
+</html>

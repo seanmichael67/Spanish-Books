@@ -1,0 +1,71 @@
+DALL-E 3 Image Prompts for "Los Animales del Zoológico"
+Week 35 - Zoo Animals Spanish Book for Kids Ages 2-5
+
+Style Guide: Warm, colorful, child-friendly illustrations with soft edges and bright colors. Consistent cartoon style throughout. Welcoming and educational tone.
+
+---
+
+PAGE 1: Zoo Entrance
+Prompt: "Warm, colorful illustration of a zoo entrance with a rainbow archway that says 'ZOOLÓGICO' in playful letters. Two excited young children (one Asian girl, one Hispanic boy) holding hands and looking at the entrance. Bright blue sky, flowers around the gate, cartoon style, preschool-friendly, welcoming atmosphere. Digital illustration, vibrant colors, soft edges."
+
+---
+
+PAGE 2: Lion
+Prompt: "Majestic cartoon lion with a golden fluffy mane sitting proudly on a rock. Friendly expression with a gentle smile. Warm orange and yellow colors. African savanna background with acacia trees. The lion looks regal but approachable for young children. Bright, warm lighting. Preschool storybook illustration style, soft edges, vibrant colors."
+
+---
+
+PAGE 3: Elephant
+Prompt: "Friendly gray elephant with big kind eyes, using its long trunk to spray water playfully. Water droplets sparkling in the air creating a small rainbow. Green grass and trees in background. The elephant looks happy and gentle. Cartoon style, bright colors, child-friendly proportions, preschool illustration, warm and inviting."
+
+---
+
+PAGE 4: Monkey
+Prompt: "Playful brown monkey swinging from a tree branch with one hand, holding a bright yellow banana in the other hand. Big cheerful smile, expressive eyes. Lush green jungle background with tropical leaves. Dynamic, energetic pose. Cartoon style, vibrant colors, fun and engaging for preschoolers, soft rounded shapes."
+
+---
+
+PAGE 5: Giraffe
+Prompt: "Tall, elegant giraffe with beautiful orange and brown spotted pattern reaching up to eat green leaves from a tall acacia tree. Long graceful neck extended upward. Gentle, peaceful expression. Blue sky background. The giraffe's height is emphasized but proportions remain friendly and approachable. Warm colors, cartoon style, preschool-friendly illustration."
+
+---
+
+PAGE 6: Zebra
+Prompt: "Beautiful zebra with distinct black and white stripes standing in green grassland. Front-facing pose showing clear stripe pattern. Friendly, curious expression with big eyes. A few stripes are numbered (1, 2, 3) to encourage counting. Bright sunny day, blue sky background. Cartoon style, high contrast stripes, child-friendly, educational illustration."
+
+---
+
+PAGE 7: Penguin
+Prompt: "Adorable penguin with classic black and white coloring, half in water and half on an ice floe. The penguin is swimming with flippers out, creating little splashes. Happy expression, rosy cheeks. Light blue icy water, white ice chunks, arctic setting. Waddling footprints visible on ice. Cartoon style, cute and endearing, preschool storybook illustration."
+
+---
+
+PAGE 8: Bear
+Prompt: "Large, friendly brown bear sitting contentedly with a honeycomb dripping golden honey. Bear has a gentle smile and is licking honey from its paw. Soft fuzzy fur texture. Forest background with pine trees and flowers. The bear looks cuddly and kind, not scary. Warm earth tones, cartoon style, child-friendly, inviting illustration."
+
+---
+
+PAGE 9: Animal Recap
+Prompt: "Cheerful group illustration showing all seven animals together in a zoo setting: lion, elephant, monkey, giraffe, zebra, penguin, and bear. They're all smiling and waving at the viewer. Arranged in a friendly group portrait style. Colorful zoo background with trees and sky. Celebratory, happy atmosphere. Cartoon style, bright vibrant colors, preschool-friendly, all animals equal size for clarity."
+
+---
+
+PAGE 10: Thank You / CTA
+Prompt: "Warm, inviting illustration of a Spanish preschool classroom with colorful alphabet posters in Spanish on the walls, children's artwork displayed, wooden blocks with letters, and books on shelves. Bright natural lighting through windows. Empty classroom showing welcoming learning environment. Cartoon style, warm colors, educational setting, friendly and professional."
+
+---
+
+TECHNICAL SPECS:
+- Aspect Ratio: 16:9 (landscape) or 1:1 (square) preferred
+- Color Mode: RGB, vibrant and saturated
+- Style: Consistent cartoon illustration throughout all images
+- Target Audience: Ages 2-5 years
+- Cultural Sensitivity: Diverse representation, accurate animal depictions
+- Educational Value: Clear, recognizable animal features
+
+CONSISTENCY NOTES:
+- Maintain similar lighting (warm, bright)
+- Keep character style consistent (rounded, soft edges)
+- Use similar color saturation across all images
+- Backgrounds should complement but not overwhelm subjects
+- All animals should look friendly and approachable

@@ -1,0 +1,55 @@
+{
+  "week": 35,
+  "title": "Los Animales del Zoológico",
+  "englishTranslation": "Zoo Animals",
+  "topic": "Animals",
+  "ageRange": "2-5 years",
+  "totalPages": 10,
+  "newVocabulary": [
+    "león (lion)",
+    "elefante (elephant)",
+    "mono (monkey)",
+    "jirafa (giraffe)",
+    "cebra (zebra)",
+    "pingüino (penguin)",
+    "oso (bear)",
+    "trompa (trunk)",
+    "rayas (stripes)",
+    "peludo (furry)"
+  ],
+  "learningObjectives": [
+    "Recognize and name common zoo animals in Spanish",
+    "Learn animal characteristics (tall, furry, striped)",
+    "Practice question-and-answer patterns",
+    "Develop vocabulary for animal features and behaviors"
+  ],
+  "seo": {
+    "metaTitle": "Los Animales del Zoológico - Free Spanish Book for Kids",
+    "metaDescription": "Interactive Spanish book teaching zoo animal names and sounds for preschoolers ages 2-5. Learn león, elefante, mono, jirafa, and more! Free online reading.",
+    "keywords": [
+      "Spanish animals",
+      "zoo animals Spanish",
+      "learn Spanish kids",
+      "Spanish vocabulary",
+      "preschool Spanish",
+      "Spanish animal names",
+      "bilingual children",
+      "Spanish immersion",
+      "free Spanish books",
+      "Phoenix preschool Spanish"
+    ],
+    "focusKeyphrase": "zoo animals Spanish"
+  },
+  "readingTime": "5-7 minutes",
+  "interactiveFeatures": [
+    "Audio pronunciation (Web Speech API)",
+    "Animal sound buttons",
+    "Question prompts for engagement",
+    "Counting activity (zebra stripes)"
+  ],
+  "culturalNotes": "Zoo animals are universally familiar to children and provide excellent vocabulary building. The book incorporates both animal names and descriptive adjectives.",
+  "parentTips": "After reading, ask your child to make the animal sounds! Visit a local zoo and practice naming animals in Spanish. Draw pictures of favorite animals together.",
+  "createdDate": "2026-03-07",
+  "publishDate": "2026-03-07",
+  "status": "ready"
+}
