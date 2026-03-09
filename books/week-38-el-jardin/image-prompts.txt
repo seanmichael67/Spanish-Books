@@ -1,0 +1,65 @@
+DALL-E 3 Image Prompts for "El Jardín Mágico"
+Art Style: Warm, colorful, child-friendly watercolor style with soft edges and bright colors
+Target Age: 2-5 years old
+Consistency: Use the same art style throughout all pages
+
+---
+
+PAGE 1 (Cover):
+A magical garden scene with a beautiful sunflower in the center, surrounded by colorful flowers (roses, tulips, daisies) and green plants. Butterflies and bees flying around. Bright blue sky with fluffy white clouds. Warm, inviting, whimsical watercolor art style. Perfect for a children's book cover.
+
+---
+
+PAGE 2 (Semilla / Seed):
+Close-up illustration of a small brown seed nestled in rich dark brown soil. The seed is just beginning to show a tiny white sprout. Soft watercolor style with warm earth tones. Simple, clear, educational illustration for preschoolers learning about plant growth.
+
+---
+
+PAGE 3 (Hojas / Leaves):
+A young green plant with several bright green leaves sprouting from the soil. Golden sunlight shining down from above, and water droplets on the leaves sparkling in the light. Gentle watercolor style with fresh green and golden yellow colors. Shows the growth stage of a plant.
+
+---
+
+PAGE 4 (Flor Rosa / Pink Flower):
+A beautiful large pink rose flower in full bloom, with delicate petals and green stem. Soft morning light, dewdrops on petals. Warm watercolor illustration style. Simple background to focus attention on the flower. Perfect for teaching "flor" (flower) to young children.
+
+---
+
+PAGE 5 (Girasol / Sunflower):
+A tall, happy sunflower with bright yellow petals and dark brown center, facing toward the sun. The flower is taller than the other plants around it. Blue sky background, warm golden sunlight. Cheerful, vibrant watercolor art style. The sunflower should look friendly and welcoming.
+
+---
+
+PAGE 6 (Mariposa / Butterfly):
+A colorful butterfly with orange, yellow, and black wings landing on a purple flower. The butterfly's wings are spread open showing beautiful patterns. Soft watercolor style with bright, happy colors. Other flowers visible in the soft-focus background. Magical, gentle atmosphere.
+
+---
+
+PAGE 7 (Abeja / Bee):
+A cute, friendly bee with yellow and black stripes collecting nectar from a bright flower. The bee should look happy and busy (not scary). Warm watercolor illustration with golden yellows, soft oranges, and gentle greens. Shows the bee's important work in the garden. Child-friendly, non-threatening representation.
+
+---
+
+PAGE 8 (Tomates y Zanahorias / Tomatoes and Carrots):
+A garden bed showing bright red tomatoes on the vine and orange carrot tops sticking out of the soil. Some carrots partially visible in the ground. Rich, earthy colors with bright vegetable colors. Warm watercolor style. Educational illustration showing where vegetables grow. Appetizing and colorful.
+
+---
+
+PAGE 9 (Jardín Mágico / Magical Garden):
+Wide view of a beautiful, magical garden with a rainbow arching over it. Various colorful flowers blooming (sunflowers, roses, tulips), butterflies and bees visiting flowers, vegetable plants growing, all bathed in warm golden light. Whimsical, joyful watercolor art. The most magical and enchanting scene of the book.
+
+---
+
+PAGE 10 (Fin / The End):
+A peaceful garden scene at golden hour (sunset) with flowers gently swaying, a few butterflies resting on flowers. Warm, peaceful, content atmosphere. Soft watercolor style with warm golden and pink sunset colors. A satisfying, beautiful ending to the garden journey.
+
+---
+
+GENERAL NOTES:
+- All images should be in landscape orientation (4:3 or 16:9)
+- Consistent watercolor art style throughout
+- Bright, warm, inviting colors
+- No text in images (text will be in HTML)
+- Safe, age-appropriate content for 2-5 year olds
+- Focus on educational clarity while maintaining beauty
+- Each image should support vocabulary learning

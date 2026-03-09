@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Héroes de Mi Barrio - Libro Interactivo en Español</title>
+    <meta name="description" content="Un libro interactivo en español para niños de 2-5 años sobre los héroes que ayudan en nuestra comunidad.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            background: linear-gradient(to bottom, #fff 0%, #f8f9fa 100%);
+        }
+        
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-content {
+            text-align: center;
+        }
+        
+        .illustration {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin: 20px auto;
+            background: #e9ecef;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .text-content {
+            font-size: 28px;
+            line-height: 1.6;
+            color: #2d3748;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .pronunciation {
+            font-size: 18px;
+            color: #718096;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        .vocabulary {
+            background: #fef3c7;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .vocabulary-word {
+            font-size: 22px;
+            color: #d97706;
+            font-weight: bold;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #f7fafc;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        button {
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        .btn-prev, .btn-next {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-prev:hover, .btn-next:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-prev:disabled, .btn-next:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn-audio {
+            background: #48bb78;
+            color: white;
+            font-size: 24px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            padding: 0;
+        }
+        
+        .btn-audio:hover {
+            background: #38a169;
+            transform: scale(1.1);
+        }
+        
+        .page-number {
+            font-size: 16px;
+            color: #718096;
+            font-weight: normal;
+        }
+        
+        .title-page {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px;
+        }
+        
+        .title-page h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .title-page .subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 600px) {
+            .page {
+                padding: 20px;
+                min-height: 400px;
+            }
+            
+            .text-content {
+                font-size: 22px;
+            }
+            
+            .title-page h1 {
+                font-size: 36px;
+            }
+            
+            .illustration {
+                height: 200px;
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Title -->
+        <div class="page active title-page">
+            <div class="page-content">
+                <h1>Los Héroes de Mi Barrio</h1>
+                <div class="subtitle">The Heroes of My Neighborhood</div>
+                <div class="illustration">🦸‍♀️🦸‍♂️</div>
+                <p style="font-size: 20px; margin-top: 20px;">Un libro interactivo en español</p>
+            </div>
+        </div>
+
+        <!-- Page 2: Firefighter -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🚒👨‍🚒</div>
+                <div class="text-content">
+                    ¿Quién apaga los fuegos?<br>
+                    ¡El bombero!
+                </div>
+                <div class="pronunciation">
+                    (BOHM-beh-roh)
+                </div>
+                <div class="vocabulary">
+                    <div class="vocabulary-word">el bombero = the firefighter</div>
+                    <div>el fuego = the fire</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3: Doctor -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🏥👨‍⚕️</div>
+                <div class="text-content">
+                    ¿Quién nos cuida cuando estamos enfermos?<br>
+                    ¡El doctor!
+                </div>
+                <div class="pronunciation">
+                    (el dok-TOR) / (la dok-TOR-ah)
+                </div>
+                <div class="vocabulary">
+                    <div class="vocabulary-word">el doctor / la doctora = the doctor</div>
+                    <div>enfermo = sick</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4: Teacher -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">📚👩‍🏫</div>
+                <div class="text-content">
+                    ¿Quién nos enseña cosas nuevas?<br>
+                    ¡La maestra!
+                </div>
+                <div class="pronunciation">
+                    (mah-EHS-trah)
+                </div>
+                <div class="vocabulary">
+                    <div class="vocabulary-word">la maestra / el maestro = the teacher</div>
+                    <div>enseñar = to teach</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5: Police Officer -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🚓👮</div>
+                <div class="text-content">
+                    ¿Quién nos protege y mantiene seguro el barrio?<br>
+                    ¡El policía!
+                </div>
+                <div class="pronunciation">
+                    (poh-lee-SEE-ah)
+                </div>
+                <div class="vocabulary">
+                    <div class="vocabulary-word">el policía / la policía = the police officer</div>
+                    <div>seguro = safe</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 6: Mail Carrier -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">📬👨‍✈️</div>
+                <div class="text-content">
+                    ¿Quién trae las cartas a mi casa?<br>
+                    ¡El cartero!
+                </div>
+                <div class="pronunciation">
+                    (kar-TEH-roh)
+                </div>
+                <div class="vocabulary">
+                    <div class="vocabulary-word">el cartero / la cartera = the mail carrier</div>
+                    <div>las cartas = the letters</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 7: Garbage Collector -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🚛👷</div>
+                <div class="text-content">
+                    ¿Quién mantiene limpio mi barrio?<br>
+                    ¡El basurero!
+                </div>
+                <div class="pronunciation">
+                    (bah-soo-REH-roh)
+                </div>
+                <div class="vocabulary">
+                    <div class="vocabulary-word">el basurero = the garbage collector</div>
+                    <div>limpio = clean</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 8: Baker -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🥖👨‍🍳</div>
+                <div class="text-content">
+                    ¿Quién hace el pan delicioso?<br>
+                    ¡El panadero!
+                </div>
+                <div class="pronunciation">
+                    (pah-nah-DEH-roh)
+                </div>
+                <div class="vocabulary">
+                    <div class="vocabulary-word">el panadero / la panadera = the baker</div>
+                    <div>el pan = the bread</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 9: All Together -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🦸‍♀️👨‍🚒👩‍⚕️👨‍🏫👮‍♀️👨‍✈️👷‍♂️👩‍🍳</div>
+                <div class="text-content">
+                    ¡Todos son héroes en mi barrio!<br>
+                    ¿Quién es tu héroe favorito?
+                </div>
+                <div class="vocabulary">
+                    <div class="vocabulary-word">los héroes = the heroes</div>
+                    <div>mi barrio = my neighborhood</div>
+                    <div>favorito = favorite</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 10: End Page -->
+        <div class="page">
+            <div class="page-content title-page" style="background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);">
+                <div class="illustration">⭐</div>
+                <h2 style="font-size: 36px; margin: 20px 0;">¡Excelente!</h2>
+                <p style="font-size: 24px; margin: 20px 0;">You finished the book!</p>
+                <p style="font-size: 20px; margin: 20px 0;">🎉 ¡Muy bien! 🎉</p>
+                <div style="margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.2); border-radius: 15px;">
+                    <p style="font-size: 18px; margin-bottom: 10px;">Want to learn more Spanish?</p>
+                    <p style="font-size: 16px;">Visit Beibei Amigos Language Preschool!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="btn-prev" onclick="prevPage()">← Anterior</button>
+            <div>
+                <button class="btn-audio" onclick="readPage()" title="Escuchar">🔊</button>
+                <div class="page-number">Página <span id="current-page">1</span> de <span id="total-pages">10</span></div>
+            </div>
+            <button class="btn-next" onclick="nextPage()">Siguiente →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        const totalPages = pages.length;
+        
+        document.getElementById('total-pages').textContent = totalPages;
+        
+        function showPage(n) {
+            pages.forEach(page => page.classList.remove('active'));
+            pages[n].classList.add('active');
+            
+            document.getElementById('current-page').textContent = n + 1;
+            
+            document.querySelector('.btn-prev').disabled = (n === 0);
+            document.querySelector('.btn-next').disabled = (n === totalPages - 1);
+        }
+        
+        function nextPage() {
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+        
+        function prevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+        
+        function readPage() {
+            const currentPageElement = pages[currentPage];
+            const textContent = currentPageElement.querySelector('.text-content');
+            
+            if (textContent) {
+                const text = textContent.textContent.trim();
+                
+                if ('speechSynthesis' in window) {
+                    window.speechSynthesis.cancel();
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = 'es-ES';
+                    utterance.rate = 0.8;
+                    window.speechSynthesis.speak(utterance);
+                } else {
+                    alert('Lo siento, tu navegador no soporta audio.');
+                }
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') prevPage();
+            if (e.key === ' ') {
+                e.preventDefault();
+                readPage();
+            }
+        });
+        
+        // Google Analytics 4 tracking
+        if (window.gtag) {
+            gtag('event', 'book_view', {
+                'book_title': 'Los Héroes de Mi Barrio',
+                'book_week': 37
+            });
+        }
+    </script>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Los Héroes de Mi Barrio",
+        "description": "Un libro interactivo en español para niños de 2-5 años sobre los héroes que ayudan en nuestra comunidad.",
+        "inLanguage": "es",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "Preschool"
+        },
+        "educationalLevel": "Preschool",
+        "learningResourceType": "Interactive Book",
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        }
+    }
+    </script>
+</body>
+</html>

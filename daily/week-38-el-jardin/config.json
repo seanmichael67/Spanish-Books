@@ -1,0 +1,104 @@
+{
+  "week": 38,
+  "title": "El Jardín Mágico",
+  "englishTranslation": "The Magical Garden",
+  "topic": "Nature - Plants and Gardens",
+  "ageRange": "2-5 years",
+  "pages": 10,
+  "created": "2026-03-08",
+  "newVocabulary": [
+    {
+      "word": "semilla",
+      "pronunciation": "seh-MEE-yah",
+      "english": "seed"
+    },
+    {
+      "word": "tierra",
+      "pronunciation": "tee-EH-rah",
+      "english": "earth/soil"
+    },
+    {
+      "word": "agua",
+      "pronunciation": "AH-gwah",
+      "english": "water"
+    },
+    {
+      "word": "hojas",
+      "pronunciation": "OH-hahs",
+      "english": "leaves"
+    },
+    {
+      "word": "flor",
+      "pronunciation": "flohr",
+      "english": "flower"
+    },
+    {
+      "word": "girasol",
+      "pronunciation": "hee-rah-SOHL",
+      "english": "sunflower"
+    },
+    {
+      "word": "mariposa",
+      "pronunciation": "mah-ree-POH-sah",
+      "english": "butterfly"
+    },
+    {
+      "word": "abeja",
+      "pronunciation": "ah-BEH-hah",
+      "english": "bee"
+    },
+    {
+      "word": "miel",
+      "pronunciation": "mee-EHL",
+      "english": "honey"
+    },
+    {
+      "word": "tomates",
+      "pronunciation": "toh-MAH-tehs",
+      "english": "tomatoes"
+    },
+    {
+      "word": "zanahorias",
+      "pronunciation": "sah-nah-OH-ree-ahs",
+      "english": "carrots"
+    }
+  ],
+  "educationalGoals": [
+    "Learn plant life cycle vocabulary",
+    "Understand how gardens grow",
+    "Identify common garden plants and vegetables",
+    "Learn about garden visitors (butterflies, bees)",
+    "Practice question-response patterns in Spanish"
+  ],
+  "seo": {
+    "metaTitle": "El Jardín Mágico - Libro Interactivo en Español para Niños",
+    "metaDescription": "Libro interactivo gratuito en español sobre plantas, flores y el jardín. Perfecto para niños de 2-5 años que aprenden español. Con audio y pronunciación.",
+    "keywords": [
+      "libro español niños",
+      "vocabulario jardín español",
+      "plantas en español para niños",
+      "flores en español",
+      "semilla tierra agua",
+      "girasol mariposa abeja",
+      "cuentos en español preescolar",
+      "aprender español niños",
+      "libro interactivo español",
+      "beibei amigos"
+    ],
+    "targetKeywords": [
+      "libro jardín español niños",
+      "vocabulario plantas español preescolar",
+      "cuentos naturaleza español",
+      "aprender sobre jardines en español"
+    ]
+  },
+  "marketingNotes": {
+    "funnel": "SEO → Free Spanish books on Google → Delight kids → CTA: Schedule tour / More books",
+    "cta": [
+      "Schedule tour at Beibei Amigos",
+      "Browse more free Spanish books"
+    ],
+    "parentAppeal": "Nature/science vocabulary, teaches where food comes from, engaging life cycle concept",
+    "kidAppeal": "Butterflies, bees, colorful flowers, interactive questions"
+  }
+}
