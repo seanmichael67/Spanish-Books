@@ -1,0 +1,66 @@
+{
+  "week": 36,
+  "title": "Las Estaciones",
+  "englishTranslation": "The Seasons",
+  "topic": "Seasons",
+  "ageRange": "2-5 years",
+  "pages": 8,
+  "newVocabulary": [
+    "las estaciones (the seasons)",
+    "la primavera (spring)",
+    "el verano (summer)",
+    "el otoño (fall/autumn)",
+    "el invierno (winter)",
+    "las flores (the flowers)",
+    "el sol (the sun)",
+    "las hojas (the leaves)",
+    "la nieve (the snow)",
+    "cuatro (four)",
+    "un año (one year)"
+  ],
+  "seo": {
+    "metaTitle": "Las Estaciones - Learn Seasons in Spanish for Kids | Beibei Amigos",
+    "metaDescription": "Free interactive Spanish book teaching preschoolers the four seasons! Learn primavera, verano, otoño, and invierno with fun illustrations and pronunciation guides. Perfect for ages 2-5.",
+    "keywords": [
+      "seasons in Spanish",
+      "las estaciones",
+      "Spanish for preschoolers",
+      "learn Spanish kids",
+      "bilingual children's book",
+      "Spanish seasons vocabulary",
+      "primavera verano otoño invierno",
+      "Spanish immersion preschool",
+      "free Spanish books for kids",
+      "interactive Spanish learning"
+    ],
+    "slug": "las-estaciones"
+  },
+  "learningObjectives": [
+    "Learn the names of the four seasons in Spanish",
+    "Identify characteristics of each season",
+    "Practice pronunciation of season vocabulary",
+    "Build confidence in Spanish comprehension"
+  ],
+  "educationalValue": {
+    "vocabularyCount": 11,
+    "repetitionPattern": "Each season is introduced with consistent structure",
+    "culturalContext": "Universal concept of seasons with engaging visuals",
+    "parentEngagement": "Question page invites conversation about favorite season"
+  },
+  "technicalDetails": {
+    "format": "Standalone HTML",
+    "interactivity": "Click-through pages with keyboard navigation",
+    "accessibility": "Pronunciation guides, bilingual text, emoji visual aids",
+    "mobileOptimized": true,
+    "seoOptimized": true,
+    "schemaMarkup": true
+  },
+  "marketingFunnel": {
+    "ctaType": "Schedule Tour",
+    "ctaUrl": "https://www.beibeiamigos.com/schedule-a-tour/",
+    "brandMention": "Beibei Amigos Language Preschool",
+    "conversionGoal": "Tour booking"
+  },
+  "generatedDate": "2026-03-08",
+  "status": "ready-to-publish"
+}

@@ -1,0 +1,55 @@
+DALL-E 3 Image Prompts for "Las Estaciones" (Week 36)
+Style: Warm, colorful, child-friendly illustrations with consistent art style
+Target Audience: Preschoolers ages 2-5
+
+====================
+PAGE 1: Title Page
+====================
+Prompt: A cheerful illustration showing Earth with four sections representing the seasons: spring flowers blooming on one quarter, bright summer sun on another, falling autumn leaves on the third, and snow on the fourth quarter. Warm, vibrant colors in a playful cartoon style suitable for preschoolers. Central focus on the globe with clear seasonal divisions.
+
+====================
+PAGE 2: Spring (La Primavera)
+====================
+Prompt: A bright spring garden scene with colorful flowers blooming everywhere - tulips, daisies, sunflowers. Green grass, butterflies flying, a happy sun in the sky, baby animals playing. Cheerful, warm illustration style. Lots of pink, yellow, green colors. Preschool-friendly, cartoon style with big, simple shapes.
+
+====================
+PAGE 3: Summer (El Verano)
+====================
+Prompt: A sunny beach scene with bright yellow sun, blue ocean waves, sandy beach. Happy children building sandcastles, beach ball, seashells. Warm golden light, clear blue sky, fluffy white clouds. Vibrant, joyful summer colors. Simple, friendly illustration style for young children. Emphasis on the bright sun and warmth.
+
+====================
+PAGE 4: Fall (El Otoño)
+====================
+Prompt: An autumn scene with trees full of red, orange, and yellow leaves falling gently to the ground. Children playing in leaf piles, pumpkins, acorns scattered on the grass. Warm autumn colors - orange, red, yellow, brown. Cozy, inviting atmosphere. Cartoon style suitable for preschoolers with big, clear shapes.
+
+====================
+PAGE 5: Winter (El Invierno)
+====================
+Prompt: A snowy winter wonderland with white snow covering the ground, snowflakes falling from the sky, a friendly snowman with a carrot nose and scarf. Snow-covered trees, icicles, children in warm winter clothes playing. Cool colors - white, light blue, silver. Magical, cozy winter feeling. Simple, cheerful illustration for young children.
+
+====================
+PAGE 6: Question Page
+====================
+Prompt: A split illustration showing all four seasons in four quadrants: spring flowers in top left, summer sun in top right, autumn leaves in bottom left, winter snow in bottom right. A friendly child in the center pointing at each season with a thoughtful expression. Bright, clear separation between seasons. Engaging, interactive style for preschoolers.
+
+====================
+PAGE 7: All Four Seasons
+====================
+Prompt: A beautiful circular illustration showing all four seasons flowing into each other - spring blossoms transitioning to summer sunshine, summer transitioning to autumn leaves, autumn to winter snow, and winter back to spring flowers. Harmonious blend of all seasonal colors. Shows the cycle of nature. Warm, educational illustration for children.
+
+====================
+PAGE 8: Closing Page
+====================
+Prompt: A group of diverse, happy preschool children celebrating together, each holding a picture representing their favorite season - one with flowers, one with a sun, one with leaves, one with a snowflake. Colorful, inclusive, joyful classroom scene. Bright, cheerful colors. Celebratory atmosphere with stars or confetti. Child-friendly illustration style.
+
+====================
+
+Art Direction Notes:
+- Consistent warm, friendly illustration style throughout all pages
+- Bright, saturated colors that appeal to young children
+- Simple, clear shapes and compositions
+- No text in images (text will be in HTML)
+- Inclusive representation of children when shown
+- Emotionally positive and inviting scenes
+- Age-appropriate detail level (not too complex)
+- Each image should work well at 500px width
