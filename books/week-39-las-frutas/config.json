@@ -1,0 +1,11 @@
+{
+    "week": 39,
+    "title": "Mis Frutas Favoritas",
+    "englishTranslation": "My Favorite Fruits",
+    "topic": "fruits",
+    "seo": {
+        "metaDescription": "Learn fruit vocabulary in Spanish with this fun, interactive book for toddlers. Perfect for preschool kids learning healthy snacks!",
+        "keywords": ["Spanish for kids", "fruit vocabulary", "Spanish preschool book", "learn Spanish", "healthy snacks"]
+    },
+    "newVocabulary": ["manzana", "plátano", "uva", "naranja", "fresa", "mango"]
+}

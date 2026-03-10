@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Frutas Favoritas</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; text-align: center; background-color: #fdf5e6; padding: 20px; }
+        .page { display: none; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
+        .page.active { display: block; }
+        img { max-width: 100%; height: auto; border-radius: 15px; margin-bottom: 20px; }
+        button { padding: 10px 20px; font-size: 18px; margin-top: 20px; background: #ff7f50; color: white; border: none; border-radius: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="book">
+        <div class="page active" id="p1">
+            <h1>¡Hola! Vamos a comer frutas.</h1>
+            <img src="https://via.placeholder.com/600x400?text=Fruit+Bowl" alt="Fruit bowl">
+            <p>¿Qué frutas te gustan?</p>
+            <button onclick="nextPage()">Siguiente</button>
+        </div>
+        <div class="page" id="p2">
+            <h2>La manzana es roja.</h2>
+            <img src="https://via.placeholder.com/600x400?text=Apple" alt="Apple">
+            <p>La manzana (mahn-sah-nah)</p>
+            <button onclick="nextPage()">Siguiente</button>
+        </div>
+        <div class="page" id="p3">
+            <h2>El plátano es amarillo.</h2>
+            <img src="https://via.placeholder.com/600x400?text=Banana" alt="Banana">
+            <p>El plátano (plah-tah-noh)</p>
+            <button onclick="nextPage()">Siguiente</button>
+        </div>
+        <div class="page" id="p4">
+            <h2>La uva es pequeña y morada.</h2>
+            <img src="https://via.placeholder.com/600x400?text=Grape" alt="Grape">
+            <p>La uva (oo-vah)</p>
+            <button onclick="nextPage()">Siguiente</button>
+        </div>
+        <div class="page" id="p5">
+            <h2>La naranja es dulce.</h2>
+            <img src="https://via.placeholder.com/600x400?text=Orange" alt="Orange">
+            <p>La naranja (nah-rahn-hah)</p>
+            <button onclick="nextPage()">Siguiente</button>
+        </div>
+        <div class="page" id="p6">
+            <h2>La fresa es roja y deliciosa.</h2>
+            <img src="https://via.placeholder.com/600x400?text=Strawberry" alt="Strawberry">
+            <p>La fresa (freh-sah)</p>
+            <button onclick="nextPage()">Siguiente</button>
+        </div>
+        <div class="page" id="p7">
+            <h2>El mango es tropical.</h2>
+            <img src="https://via.placeholder.com/600x400?text=Mango" alt="Mango">
+            <p>El mango (mahn-goh)</p>
+            <button onclick="nextPage()">Siguiente</button>
+        </div>
+        <div class="page" id="p8">
+            <h2>¿Qué fruta quieres hoy?</h2>
+            <img src="https://via.placeholder.com/600x400?text=Happy+Kid" alt="Happy kid">
+            <p>¡A comer frutas!</p>
+        </div>
+    </div>
+    <script>
+        let current = 1;
+        function nextPage() {
+            document.getElementById('p' + current).classList.remove('active');
+            current++;
+            document.getElementById('p' + current).classList.add('active');
+        }
+    </script>
+</body>
+</html>
