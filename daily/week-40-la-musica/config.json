@@ -1,0 +1,58 @@
+{
+  "week": 40,
+  "title": "La Música y los Instrumentos",
+  "englishTranslation": "Music and Instruments",
+  "topic": "music",
+  "description": "Children discover different musical instruments and form a band together",
+  "ageRange": "2-5 years",
+  "totalPages": 10,
+  "newVocabulary": [
+    "la música (music)",
+    "la guitarra (guitar)",
+    "el tambor (drum)",
+    "la flauta (flute)",
+    "el piano (piano)",
+    "las maracas (maracas)",
+    "tocar (to play an instrument)",
+    "escuchar (to listen/hear)",
+    "cantar (to sing)",
+    "la canción (song)",
+    "juntos (together)",
+    "la banda (band)",
+    "bonita (beautiful/pretty)"
+  ],
+  "learningObjectives": [
+    "Identify common musical instruments in Spanish",
+    "Use the verb 'tocar' (to play) with different instruments",
+    "Understand musical concepts: listening, singing, playing together",
+    "Practice pronunciation of instrument names"
+  ],
+  "culturalNotes": "Maracas are traditional Latin American percussion instruments, highlighting cultural authenticity in the vocabulary selection.",
+  "seo": {
+    "metaTitle": "La Música y los Instrumentos - Free Spanish Book for Kids | Beibei Amigos",
+    "metaDescription": "Interactive Spanish book teaching preschoolers about musical instruments. Learn guitarra, tambor, flauta, piano, and maracas with pronunciation guides. Free educational resource for ages 2-5.",
+    "keywords": [
+      "música para niños",
+      "instrumentos musicales español",
+      "aprender español niños",
+      "libro infantil español gratis",
+      "guitarra español niños",
+      "educación musical preescolar",
+      "spanish music vocabulary",
+      "preschool spanish books",
+      "bilingual music education",
+      "spanish instruments for kids"
+    ],
+    "focusKeyphrase": "música instrumentos español niños",
+    "canonicalUrl": "https://www.beibeiamigos.com/spanish-books/week-40-la-musica/"
+  },
+  "createdDate": "2026-03-10",
+  "author": "Luna 📚 - Beibei Amigos",
+  "version": "1.0",
+  "hasPronunciation": true,
+  "hasAudio": true,
+  "hasIllustrations": true,
+  "illustrationStyle": "Emoji placeholders for DALL-E 3 generation",
+  "ctaIncluded": true,
+  "ctaType": ["tour-booking", "review-request"]
+}

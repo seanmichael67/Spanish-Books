@@ -1,0 +1,44 @@
+DALL-E 3 Image Prompts for "La Música y los Instrumentos"
+=============================================================
+
+Art Style: Warm, vibrant, child-friendly watercolor illustration style. Soft edges, bright cheerful colors, diverse children characters, educational and inviting atmosphere.
+
+Page 1 - Title Page:
+"Colorful musical notes and instruments floating in the air - guitar, drum, piano keys, flute, and maracas arranged in a joyful circular pattern. Watercolor style, bright purple and blue gradient background, child-friendly and inviting, educational illustration for preschoolers"
+
+Page 2 - Ana toca la guitarra:
+"A young Hispanic girl named Ana, age 4, with brown hair in pigtails, sitting and happily playing an acoustic guitar. Warm watercolor style, musical notes floating around her, bright cheerful background, educational children's book illustration, diverse character representation"
+
+Page 3 - Carlos toca el tambor:
+"A young Latino boy named Carlos, age 5, with short black hair, enthusiastically playing a colorful drum with drumsticks. Vibrant watercolor illustration, rhythm lines and musical notes around the drum, joyful expression, educational preschool book art style, warm and inviting colors"
+
+Page 4 - María toca la flauta:
+"A young Asian-Hispanic girl named María, age 4, with long dark hair, gently playing a wooden flute. Soft watercolor style, musical notes flowing from the flute, peaceful and melodic atmosphere, educational children's illustration, diverse character, warm lighting"
+
+Page 5 - Luis toca el piano:
+"A young boy named Luis, age 5, with curly brown hair, sitting at a colorful piano keyboard, hands on the keys with a big smile. Watercolor illustration style, musical notes dancing above the piano, bright and cheerful classroom or music room setting, educational preschool book art"
+
+Page 6 - Sofía toca las maracas:
+"A young girl named Sofía, age 4, with braided hair, joyfully shaking bright red and yellow maracas with both hands raised. Dynamic watercolor illustration, motion lines around the maracas, musical notes and confetti-like elements, celebratory Latin music vibe, educational children's book style"
+
+Page 7 - ¡Todos tocan juntos! ¡Es una banda!:
+"All five children playing their instruments together as a happy band - Ana with guitar, Carlos with drum, María with flute, Luis at piano, and Sofía with maracas. Wide watercolor illustration showing the whole group, musical notes and sound waves filling the air, joyful collaborative scene, diverse preschool band, warm and inviting educational illustration"
+
+Page 8 - ¿Escuchas la música?:
+"A close-up of a child's ear with sound waves and musical notes flowing into it, surrounded by soft watercolor musical instrument silhouettes (guitar, drum, piano, flute, maracas). Beautiful flowing design, soothing colors, concept of listening and hearing music, educational illustration for young children"
+
+Page 9 - ¡Ahora vamos a cantar!:
+"Children standing together with open mouths singing, musical notes and lyrics flowing from their mouths like ribbons. Joyful watercolor illustration, microphone in the center, warm lighting, diverse group of preschoolers, celebratory singing scene, educational children's book art style"
+
+Page 10 - Ending/CTA:
+"Celebration scene with confetti, stars, and musical notes raining down. All the instruments arranged in a happy display - guitar, drum, flute, piano, and maracas with sparkles and achievement stars. Watercolor style, victorious and encouraging atmosphere, educational completion celebration for preschoolers"
+
+=====================================================
+Notes for illustration generation:
+- Maintain consistent character appearance if same children appear across pages
+- Use warm, inviting color palette throughout
+- Ensure diversity in character representation
+- Keep backgrounds simple to focus on the learning content
+- Musical notes should be playful and easy to recognize
+- Child-safe, age-appropriate imagery for 2-5 year olds
+=====================================================

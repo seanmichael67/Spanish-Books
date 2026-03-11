@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Música y los Instrumentos - Libro Interactivo en Español</title>
+    <meta name="description" content="Un libro interactivo en español para niños sobre música e instrumentos. Aprende los nombres de instrumentos como guitarra, tambor, flauta, piano y maracas.">
+    <meta name="keywords" content="música para niños, instrumentos musicales español, libro infantil español, aprender español, educación musical preescolar">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            position: relative;
+        }
+        
+        .page.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .illustration {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            background: #f0f0f0;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            border: 3px solid #ddd;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .spanish-text {
+            font-size: 1.8em;
+            color: #333;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        
+        .pronunciation {
+            font-size: 1.2em;
+            color: #764ba2;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        .english-text {
+            font-size: 1.3em;
+            color: #666;
+            margin: 10px 0;
+        }
+        
+        .vocabulary {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #ffc107;
+        }
+        
+        .vocabulary h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .vocab-word {
+            font-size: 1.4em;
+            color: #333;
+            margin: 5px 0;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 2px solid #ddd;
+        }
+        
+        button {
+            padding: 12px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+            font-weight: bold;
+        }
+        
+        .btn-prev, .btn-next {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-prev:hover, .btn-next:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+        }
+        
+        .btn-prev:disabled, .btn-next:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn-audio {
+            background: #28a745;
+            color: white;
+            padding: 12px 25px;
+        }
+        
+        .btn-audio:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+        
+        .page-indicator {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .cta-section h2 {
+            margin-bottom: 15px;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #f5576c;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 10px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        @media (max-width: 600px) {
+            .page {
+                padding: 20px;
+                min-height: 400px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .spanish-text {
+                font-size: 1.4em;
+            }
+            
+            .illustration {
+                height: 200px;
+            }
+            
+            button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Title -->
+        <div class="page active">
+            <div class="page-content">
+                <h1>🎵 La Música y los Instrumentos 🎸</h1>
+                <div class="illustration">🎼</div>
+                <p class="spanish-text">¡Vamos a hacer música!</p>
+                <p class="pronunciation">(VAH-mohs ah ah-SEHR MOO-see-kah)</p>
+                <p class="english-text">Let's make music!</p>
+            </div>
+        </div>
+
+        <!-- Page 2: La Guitarra -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🎸</div>
+                <p class="spanish-text">Ana toca la guitarra.</p>
+                <p class="pronunciation">(AH-nah TOH-kah lah gee-TAH-rah)</p>
+                <p class="english-text">Ana plays the guitar.</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra / New Word:</h3>
+                    <p class="vocab-word"><strong>La guitarra</strong> = The guitar</p>
+                    <p class="vocab-word"><strong>Tocar</strong> = To play (an instrument)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3: El Tambor -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🥁</div>
+                <p class="spanish-text">Carlos toca el tambor.</p>
+                <p class="pronunciation">(KAR-lohs TOH-kah el tahm-BOHR)</p>
+                <p class="english-text">Carlos plays the drum.</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra / New Word:</h3>
+                    <p class="vocab-word"><strong>El tambor</strong> = The drum</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4: La Flauta -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🪈</div>
+                <p class="spanish-text">María toca la flauta.</p>
+                <p class="pronunciation">(mah-REE-ah TOH-kah lah FLAU-tah)</p>
+                <p class="english-text">María plays the flute.</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra / New Word:</h3>
+                    <p class="vocab-word"><strong>La flauta</strong> = The flute</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5: El Piano -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🎹</div>
+                <p class="spanish-text">Luis toca el piano.</p>
+                <p class="pronunciation">(loo-EES TOH-kah el pee-AH-noh)</p>
+                <p class="english-text">Luis plays the piano.</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra / New Word:</h3>
+                    <p class="vocab-word"><strong>El piano</strong> = The piano</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 6: Las Maracas -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🪇</div>
+                <p class="spanish-text">Sofía toca las maracas.</p>
+                <p class="pronunciation">(soh-FEE-ah TOH-kah lahs mah-RAH-kahs)</p>
+                <p class="english-text">Sofía plays the maracas.</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra / New Word:</h3>
+                    <p class="vocab-word"><strong>Las maracas</strong> = The maracas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 7: La Banda -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🎶</div>
+                <p class="spanish-text">¡Todos tocan juntos! ¡Es una banda!</p>
+                <p class="pronunciation">(TOH-dohs TOH-kahn HOON-tohs! ehs OO-nah BAHN-dah)</p>
+                <p class="english-text">Everyone plays together! It's a band!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra / New Word:</h3>
+                    <p class="vocab-word"><strong>Juntos</strong> = Together</p>
+                    <p class="vocab-word"><strong>La banda</strong> = The band</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 8: Escuchar -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">👂</div>
+                <p class="spanish-text">¿Escuchas la música? ¡Qué bonita!</p>
+                <p class="pronunciation">(ehs-KOO-chahs lah MOO-see-kah? keh boh-NEE-tah)</p>
+                <p class="english-text">Do you hear the music? How beautiful!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra / New Word:</h3>
+                    <p class="vocab-word"><strong>Escuchar</strong> = To listen/hear</p>
+                    <p class="vocab-word"><strong>Bonita</strong> = Beautiful/pretty</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 9: Cantar -->
+        <div class="page">
+            <div class="page-content">
+                <div class="illustration">🎤</div>
+                <p class="spanish-text">¡Ahora vamos a cantar una canción!</p>
+                <p class="pronunciation">(ah-OH-rah VAH-mohs ah kahn-TAHR OO-nah kahn-see-OHN)</p>
+                <p class="english-text">Now let's sing a song!</p>
+                <div class="vocabulary">
+                    <h3>Nueva Palabra / New Word:</h3>
+                    <p class="vocab-word"><strong>Cantar</strong> = To sing</p>
+                    <p class="vocab-word"><strong>La canción</strong> = The song</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 10: CTA -->
+        <div class="page">
+            <div class="page-content">
+                <h1>¡Excelente trabajo! 🎉</h1>
+                <p class="spanish-text">¡Has aprendido sobre la música!</p>
+                <p class="english-text">You've learned about music!</p>
+                
+                <div class="cta-section">
+                    <h2>¿Te gustó este libro?</h2>
+                    <p>En Beibei Amigos, aprendemos español todos los días con canciones, juegos y diversión.</p>
+                    <a href="https://www.beibeiamigos.com/tour/" class="cta-button">📅 Schedule a Tour</a>
+                    <a href="https://g.page/r/CXxF8ZLLhORPEBM/review" class="cta-button">⭐ Leave a Review</a>
+                </div>
+                
+                <div class="vocabulary">
+                    <h3>Vocabulario Nuevo / New Vocabulary:</h3>
+                    <p class="vocab-word">la guitarra, el tambor, la flauta, el piano, las maracas</p>
+                    <p class="vocab-word">tocar, escuchar, cantar, juntos, la banda, la canción, bonita</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="btn-prev" onclick="prevPage()">← Anterior</button>
+            <button class="btn-audio" onclick="readPage()">🔊 Escuchar</button>
+            <span class="page-indicator">Página <span id="current-page">1</span> de <span id="total-pages">10</span></span>
+            <button class="btn-next" onclick="nextPage()">Siguiente →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        const totalPages = pages.length;
+        
+        document.getElementById('total-pages').textContent = totalPages;
+        
+        function updatePage() {
+            pages.forEach((page, index) => {
+                page.classList.remove('active');
+                if (index === currentPage) {
+                    page.classList.add('active');
+                }
+            });
+            
+            document.getElementById('current-page').textContent = currentPage + 1;
+            
+            document.querySelector('.btn-prev').disabled = currentPage === 0;
+            document.querySelector('.btn-next').disabled = currentPage === totalPages - 1;
+            
+            // Google Analytics tracking
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    'page_title': 'La Música - Page ' + (currentPage + 1),
+                    'page_location': window.location.href,
+                    'page_path': window.location.pathname + '#page-' + (currentPage + 1)
+                });
+            }
+        }
+        
+        function nextPage() {
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                updatePage();
+            }
+        }
+        
+        function prevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                updatePage();
+            }
+        }
+        
+        function readPage() {
+            const activePage = pages[currentPage];
+            const spanishText = activePage.querySelector('.spanish-text');
+            
+            if (spanishText && 'speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                
+                const utterance = new SpeechSynthesisUtterance(spanishText.textContent);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.85;
+                utterance.pitch = 1.1;
+                
+                window.speechSynthesis.speak(utterance);
+                
+                // Google Analytics tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'audio_played', {
+                        'event_category': 'engagement',
+                        'event_label': 'Page ' + (currentPage + 1)
+                    });
+                }
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') prevPage();
+            if (e.key === ' ') {
+                e.preventDefault();
+                readPage();
+            }
+        });
+        
+        // Initialize
+        updatePage();
+    </script>
+    
+    <!-- Schema.org markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "La Música y los Instrumentos",
+        "description": "Un libro interactivo en español para niños sobre música e instrumentos musicales",
+        "inLanguage": "es",
+        "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 2,
+            "suggestedMaxAge": 5
+        },
+        "educationalUse": "Aprendizaje de vocabulario en español",
+        "learningResourceType": "Interactive Book",
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Beibei Amigos",
+            "url": "https://www.beibeiamigos.com"
+        }
+    }
+    </script>
+</body>
+</html>
