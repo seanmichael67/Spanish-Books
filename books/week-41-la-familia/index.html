@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Familia de Sofía - Spanish Book for Kids</title>
+    <meta name="description" content="Learn Spanish family vocabulary with Sofía! An interactive bilingual book teaching mamá, papá, hermano, hermana, abuela, abuelo, and more.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', sans-serif;
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFE4B5 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .book-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .book-header {
+            background: linear-gradient(135deg, #FF6B9D 0%, #FFA07A 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .book-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .book-header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .page.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .page-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .page-image {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .page-text {
+            text-align: center;
+            font-size: 1.8em;
+            line-height: 1.6;
+            color: #333;
+        }
+        .page-text .spanish {
+            font-size: 1.3em;
+            color: #FF6B9D;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .page-text .pronunciation {
+            font-size: 0.7em;
+            color: #666;
+            font-style: italic;
+        }
+        .page-text .english {
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 10px;
+        }
+        .vocabulary-box {
+            background: #FFF3E0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #FF6B9D;
+            margin: 20px 0;
+            width: 100%;
+        }
+        .vocabulary-box h3 {
+            color: #FF6B9D;
+            margin-bottom: 10px;
+        }
+        .vocab-item {
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-top: 2px solid #e0e0e0;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+        .btn-prev {
+            background: linear-gradient(135deg, #90CAF9 0%, #64B5F6 100%);
+            color: white;
+        }
+        .btn-next {
+            background: linear-gradient(135deg, #81C784 0%, #66BB6A 100%);
+            color: white;
+        }
+        .btn-audio {
+            background: linear-gradient(135deg, #FFB74D 0%, #FFA726 100%);
+            color: white;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .page-number {
+            text-align: center;
+            color: #999;
+            font-size: 1.1em;
+            padding: 15px;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #FF6B9D 0%, #FFA07A 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-box h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .cta-box p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background: white;
+            color: #FF6B9D;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        @media (max-width: 768px) {
+            .book-header h1 { font-size: 1.8em; }
+            .page { padding: 20px; min-height: 400px; }
+            .page-text { font-size: 1.4em; }
+            .page-image { height: 250px; font-size: 3em; }
+            button { padding: 12px 20px; font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-header">
+            <h1>La Familia de Sofía</h1>
+            <p>Sofia's Family</p>
+        </div>
+
+        <!-- Page 1: Cover/Introduction -->
+        <div class="page active" data-page="1">
+            <div class="page-content">
+                <div class="page-image">👨‍👩‍👧‍👦</div>
+                <div class="page-text">
+                    <p>¡Hola! Me llamo Sofía.</p>
+                    <p class="pronunciation">(OH-lah! Meh YAH-moh Soh-FEE-ah)</p>
+                    <p class="english">Hello! My name is Sofia.</p>
+                    <div class="spanish">¿Quieres conocer a mi familia?</div>
+                    <p class="pronunciation">(KYEH-rehs koh-noh-SEHR ah mee fah-MEE-lyah?)</p>
+                    <p class="english">Do you want to meet my family?</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>🌟 New Words / Palabras Nuevas:</h3>
+                    <div class="vocab-item"><strong>familia</strong> (fah-MEE-lyah) = family</div>
+                    <div class="vocab-item"><strong>conocer</strong> (koh-noh-SEHR) = to meet</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2: Mamá -->
+        <div class="page" data-page="2">
+            <div class="page-content">
+                <div class="page-image">👩‍🦱</div>
+                <div class="page-text">
+                    <div class="spanish">Esta es mi mamá.</div>
+                    <p class="pronunciation">(EHS-tah ehs mee mah-MAH)</p>
+                    <p class="english">This is my mom.</p>
+                    <p style="margin-top: 20px;">Mi mamá es muy cariñosa.</p>
+                    <p class="pronunciation">(Mee mah-MAH ehs mooy kah-ree-NYOH-sah)</p>
+                    <p class="english">My mom is very caring.</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>🌟 New Word / Palabra Nueva:</h3>
+                    <div class="vocab-item"><strong>mamá</strong> (mah-MAH) = mom</div>
+                    <div class="vocab-item"><strong>cariñosa</strong> (kah-ree-NYOH-sah) = caring</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3: Papá -->
+        <div class="page" data-page="3">
+            <div class="page-content">
+                <div class="page-image">👨</div>
+                <div class="page-text">
+                    <div class="spanish">Este es mi papá.</div>
+                    <p class="pronunciation">(EHS-teh ehs mee pah-PAH)</p>
+                    <p class="english">This is my dad.</p>
+                    <p style="margin-top: 20px;">Mi papá es muy fuerte.</p>
+                    <p class="pronunciation">(Mee pah-PAH ehs mooy FWEHR-teh)</p>
+                    <p class="english">My dad is very strong.</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>🌟 New Word / Palabra Nueva:</h3>
+                    <div class="vocab-item"><strong>papá</strong> (pah-PAH) = dad</div>
+                    <div class="vocab-item"><strong>fuerte</strong> (FWEHR-teh) = strong</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4: Hermano -->
+        <div class="page" data-page="4">
+            <div class="page-content">
+                <div class="page-image">👦</div>
+                <div class="page-text">
+                    <div class="spanish">Este es mi hermano, Luis.</div>
+                    <p class="pronunciation">(EHS-teh ehs mee ehr-MAH-noh, Loo-EES)</p>
+                    <p class="english">This is my brother, Luis.</p>
+                    <p style="margin-top: 20px;">Mi hermano es muy divertido.</p>
+                    <p class="pronunciation">(Mee ehr-MAH-noh ehs mooy dee-vehr-TEE-doh)</p>
+                    <p class="english">My brother is very funny.</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>🌟 New Word / Palabra Nueva:</h3>
+                    <div class="vocab-item"><strong>hermano</strong> (ehr-MAH-noh) = brother</div>
+                    <div class="vocab-item"><strong>divertido</strong> (dee-vehr-TEE-doh) = funny</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5: Hermana -->
+        <div class="page" data-page="5">
+            <div class="page-content">
+                <div class="page-image">👧</div>
+                <div class="page-text">
+                    <div class="spanish">Esta es mi hermana, Ana.</div>
+                    <p class="pronunciation">(EHS-tah ehs mee ehr-MAH-nah, AH-nah)</p>
+                    <p class="english">This is my sister, Ana.</p>
+                    <p style="margin-top: 20px;">Mi hermana es muy inteligente.</p>
+                    <p class="pronunciation">(Mee ehr-MAH-nah ehs mooy een-teh-lee-HEHN-teh)</p>
+                    <p class="english">My sister is very smart.</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>🌟 New Word / Palabra Nueva:</h3>
+                    <div class="vocab-item"><strong>hermana</strong> (ehr-MAH-nah) = sister</div>
+                    <div class="vocab-item"><strong>inteligente</strong> (een-teh-lee-HEHN-teh) = smart</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 6: Abuela -->
+        <div class="page" data-page="6">
+            <div class="page-content">
+                <div class="page-image">👵</div>
+                <div class="page-text">
+                    <div class="spanish">Esta es mi abuela.</div>
+                    <p class="pronunciation">(EHS-tah ehs mee ah-BWEH-lah)</p>
+                    <p class="english">This is my grandmother.</p>
+                    <p style="margin-top: 20px;">Mi abuela hace galletas deliciosas.</p>
+                    <p class="pronunciation">(Mee ah-BWEH-lah AH-seh gah-YEH-tahs deh-lee-SYOH-sahs)</p>
+                    <p class="english">My grandmother makes delicious cookies.</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>🌟 New Word / Palabra Nueva:</h3>
+                    <div class="vocab-item"><strong>abuela</strong> (ah-BWEH-lah) = grandmother</div>
+                    <div class="vocab-item"><strong>galletas</strong> (gah-YEH-tahs) = cookies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 7: Abuelo -->
+        <div class="page" data-page="7">
+            <div class="page-content">
+                <div class="page-image">👴</div>
+                <div class="page-text">
+                    <div class="spanish">Este es mi abuelo.</div>
+                    <p class="pronunciation">(EHS-teh ehs mee ah-BWEH-loh)</p>
+                    <p class="english">This is my grandfather.</p>
+                    <p style="margin-top: 20px;">Mi abuelo cuenta cuentos fantásticos.</p>
+                    <p class="pronunciation">(Mee ah-BWEH-loh KWEHN-tah KWEHN-tohs fahn-TAHS-tee-kohs)</p>
+                    <p class="english">My grandfather tells fantastic stories.</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>🌟 New Word / Palabra Nueva:</h3>
+                    <div class="vocab-item"><strong>abuelo</strong> (ah-BWEH-loh) = grandfather</div>
+                    <div class="vocab-item"><strong>cuentos</strong> (KWEHN-tohs) = stories</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 8: Perro -->
+        <div class="page" data-page="8">
+            <div class="page-content">
+                <div class="page-image">🐕</div>
+                <div class="page-text">
+                    <div class="spanish">Este es mi perro, Max.</div>
+                    <p class="pronunciation">(EHS-teh ehs mee PEH-rroh, Max)</p>
+                    <p class="english">This is my dog, Max.</p>
+                    <p style="margin-top: 20px;">¡Mi perro también es parte de la familia!</p>
+                    <p class="pronunciation">(Mee PEH-rroh tahm-BYEHN ehs PAHR-teh deh lah fah-MEE-lyah!)</p>
+                    <p class="english">My dog is also part of the family!</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>🌟 New Word / Palabra Nueva:</h3>
+                    <div class="vocab-item"><strong>perro</strong> (PEH-rroh) = dog</div>
+                    <div class="vocab-item"><strong>también</strong> (tahm-BYEHN) = also</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 9: Family Together -->
+        <div class="page" data-page="9">
+            <div class="page-content">
+                <div class="page-image">❤️</div>
+                <div class="page-text">
+                    <div class="spanish">Yo amo a mi familia.</div>
+                    <p class="pronunciation">(Yoh AH-moh ah mee fah-MEE-lyah)</p>
+                    <p class="english">I love my family.</p>
+                    <p style="margin-top: 20px;">Mi familia es especial.</p>
+                    <p class="pronunciation">(Mee fah-MEE-lyah ehs ehs-peh-SYAHL)</p>
+                    <p class="english">My family is special.</p>
+                    <p style="margin-top: 30px; font-size: 1.2em;">¿Quién está en tu familia?</p>
+                    <p class="pronunciation">(KYEHN ehs-TAH ehn too fah-MEE-lyah?)</p>
+                    <p class="english">Who is in your family?</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>🌟 New Words / Palabras Nuevas:</h3>
+                    <div class="vocab-item"><strong>amo</strong> (AH-moh) = I love</div>
+                    <div class="vocab-item"><strong>especial</strong> (ehs-peh-SYAHL) = special</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 10: Review & CTA -->
+        <div class="page" data-page="10">
+            <div class="page-content">
+                <div class="page-text">
+                    <h2 style="color: #FF6B9D; margin-bottom: 20px;">¡Felicidades! 🎉</h2>
+                    <p>You learned about family members in Spanish!</p>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>📚 Review - La Familia:</h3>
+                    <div class="vocab-item">👨‍👩‍👧‍👦 <strong>familia</strong> = family</div>
+                    <div class="vocab-item">👩 <strong>mamá</strong> = mom</div>
+                    <div class="vocab-item">👨 <strong>papá</strong> = dad</div>
+                    <div class="vocab-item">👦 <strong>hermano</strong> = brother</div>
+                    <div class="vocab-item">👧 <strong>hermana</strong> = sister</div>
+                    <div class="vocab-item">👵 <strong>abuela</strong> = grandmother</div>
+                    <div class="vocab-item">👴 <strong>abuelo</strong> = grandfather</div>
+                    <div class="vocab-item">🐕 <strong>perro</strong> = dog</div>
+                </div>
+                <div class="cta-box">
+                    <h3>¿Te gustó este libro?</h3>
+                    <p>Did you enjoy this book?</p>
+                    <p>Join Beibei Amigos Language Preschool where we teach Spanish and Mandarin every day through stories, songs, and play!</p>
+                    <a href="https://www.beibeiamigos.com/tour/" class="cta-button">Schedule a Tour 📅</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-number">
+            <span id="current-page">1</span> / <span id="total-pages">10</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn-prev" id="prevBtn" onclick="previousPage()">← Previous</button>
+            <button class="btn-audio" id="audioBtn" onclick="readPage()">🔊 Listen</button>
+            <button class="btn-next" id="nextBtn" onclick="nextPage()">Next →</button>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "La Familia de Sofía",
+        "alternateName": "Sofia's Family",
+        "description": "Interactive Spanish children's book teaching family vocabulary including mamá, papá, hermano, hermana, abuela, abuelo for ages 2-5",
+        "inLanguage": "es",
+        "educationalLevel": "Preschool",
+        "learningResourceType": "Interactive Book",
+        "keywords": "Spanish for kids, family vocabulary, learn Spanish, bilingual children, preschool Spanish, familia",
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos Language Preschool",
+            "url": "https://www.beibeiamigos.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Beibei Amigos",
+            "url": "https://www.beibeiamigos.com"
+        },
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "student",
+            "audienceType": "Children ages 2-5"
+        }
+    }
+    </script>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 10;
+        
+        function updatePage() {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.querySelector(`[data-page="${currentPage}"]`).classList.add('active');
+            document.getElementById('current-page').textContent = currentPage;
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+            
+            // Track page views
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    'page_title': `La Familia - Page ${currentPage}`,
+                    'page_location': window.location.href,
+                    'page_path': `/la-familia/page-${currentPage}`
+                });
+            }
+        }
+        
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                updatePage();
+            }
+        }
+        
+        function previousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePage();
+            }
+        }
+        
+        function readPage() {
+            const pageElement = document.querySelector(`[data-page="${currentPage}"]`);
+            const textElements = pageElement.querySelectorAll('.page-text p:not(.pronunciation):not(.english), .spanish');
+            
+            let textToRead = '';
+            textElements.forEach(el => {
+                if (!el.classList.contains('pronunciation') && !el.classList.contains('english')) {
+                    textToRead += el.textContent + '. ';
+                }
+            });
+            
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(textToRead);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                window.speechSynthesis.speak(utterance);
+                
+                // Track audio usage
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'audio_play', {
+                        'event_category': 'engagement',
+                        'event_label': `La Familia - Page ${currentPage}`
+                    });
+                }
+            } else {
+                alert('Lo siento, tu navegador no soporta audio. / Sorry, your browser does not support audio.');
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') previousPage();
+            if (e.key === ' ') {
+                e.preventDefault();
+                readPage();
+            }
+        });
+        
+        // Track CTA clicks
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'cta_click', {
+                        'event_category': 'conversion',
+                        'event_label': 'Schedule Tour - La Familia',
+                        'value': 1
+                    });
+                }
+            });
+        });
+        
+        // Initialize
+        updatePage();
+    </script>
+</body>
+</html>

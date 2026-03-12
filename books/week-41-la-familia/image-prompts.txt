@@ -1,0 +1,65 @@
+DALL-E 3 Image Prompts for "La Familia de Sofía"
+=======================================================
+
+Art Style: Warm, colorful, child-friendly illustrations with a consistent soft watercolor style. Characters should have warm skin tones reflecting Hispanic heritage. Bright, cheerful colors throughout. Simple backgrounds with minimal detail to keep focus on family members.
+
+---
+
+PAGE 1: Cover - Sofia introduces herself
+Prompt: A cheerful 4-year-old Hispanic girl with dark wavy hair and brown eyes, wearing a yellow dress with flowers, standing in front of a colorful family portrait on the wall. She's waving with a big smile. Warm watercolor style, soft edges, bright happy colors, simple background. Illustration for children's book.
+
+---
+
+PAGE 2: Mamá
+Prompt: A warm Hispanic mother in her 30s with long dark curly hair, wearing a light blue blouse, sitting on a cozy couch and reading a book to her daughter. She has a gentle, caring expression. Warm watercolor style, soft lighting, family home setting with plants in background. Children's book illustration.
+
+---
+
+PAGE 3: Papá
+Prompt: A strong, friendly Hispanic father in his 30s with short dark hair and a mustache, wearing a green polo shirt, kneeling down and building colorful blocks with his children. He has a kind smile and looks engaged. Warm watercolor style, bright colors, simple indoor setting. Children's book illustration.
+
+---
+
+PAGE 4: Hermano (Brother Luis)
+Prompt: A playful 6-year-old Hispanic boy with short dark hair, wearing a red t-shirt and jeans, making a funny face while playing with toy cars on a colorful rug. He looks energetic and happy. Warm watercolor style, bright cheerful colors, simple bedroom background. Children's book illustration.
+
+---
+
+PAGE 5: Hermana (Sister Ana)
+Prompt: A smart 8-year-old Hispanic girl with long dark hair in a ponytail, wearing a purple dress, sitting at a small desk with books and a globe, looking thoughtful and happy while reading. Warm watercolor style, soft colors, simple study corner background. Children's book illustration.
+
+---
+
+PAGE 6: Abuela (Grandmother)
+Prompt: A loving Hispanic grandmother in her 60s with gray hair in a bun, wearing a floral apron over a peach-colored dress, taking a tray of golden cookies out of the oven in a warm kitchen. She has a kind, gentle smile. Warm watercolor style, cozy kitchen setting with warm lighting. Children's book illustration.
+
+---
+
+PAGE 7: Abuelo (Grandfather)
+Prompt: A wise Hispanic grandfather in his 60s with gray hair and glasses, wearing a brown cardigan, sitting in a comfortable armchair telling stories to his grandchildren gathered around him. He has an animated, joyful expression. Warm watercolor style, cozy living room with bookshelves. Children's book illustration.
+
+---
+
+PAGE 8: Perro (Dog Max)
+Prompt: A friendly golden-brown medium-sized dog with floppy ears, sitting happily in a sunny backyard with a red collar and wagging tail. The dog looks playful and loving, with a ball nearby. Warm watercolor style, bright outdoor colors, simple garden background. Children's book illustration.
+
+---
+
+PAGE 9: Family Together
+Prompt: A complete Hispanic family portrait with mom, dad, two children (boy and girl), grandparents, and a dog all standing together in their living room, everyone smiling and some with arms around each other. Warm, loving atmosphere with bright colors. Warm watercolor style, family portrait composition. Children's book illustration.
+
+---
+
+PAGE 10: Heart and celebration
+Prompt: A large colorful heart made of flowers and stars, surrounded by small illustrations of family members (simple icon-style drawings of faces). Celebratory, joyful atmosphere with confetti in warm colors (pink, orange, yellow). Warm watercolor style, festive and loving. Children's book illustration.
+
+---
+
+CONSISTENCY NOTES:
+- Keep the same facial features for Sofia throughout (dark wavy hair, brown eyes, yellow dress)
+- All family members should have warm skin tones reflecting Hispanic heritage
+- Use consistent warm color palette: yellows, oranges, pinks, light blues, greens
+- Soft watercolor edges, not sharp digital lines
+- Simple, uncluttered backgrounds
+- Expressions should be warm and inviting
+- Age-appropriate detail level for 2-5 year olds

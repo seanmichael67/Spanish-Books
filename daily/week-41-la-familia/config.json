@@ -1,0 +1,81 @@
+{
+  "week": 41,
+  "title": "La Familia de Sofía",
+  "englishTranslation": "Sofia's Family",
+  "topic": "family",
+  "ageRange": "2-5 years",
+  "pages": 10,
+  "language": "Spanish",
+  "educationalFocus": "Family vocabulary and relationships",
+  "newVocabulary": [
+    "familia (family)",
+    "mamá (mom)",
+    "papá (dad)",
+    "hermano (brother)",
+    "hermana (sister)",
+    "abuela (grandmother)",
+    "abuelo (grandfather)",
+    "perro (dog)",
+    "conocer (to meet)",
+    "cariñosa (caring)",
+    "fuerte (strong)",
+    "divertido (funny)",
+    "inteligente (smart)",
+    "galletas (cookies)",
+    "cuentos (stories)",
+    "también (also)",
+    "amo (I love)",
+    "especial (special)"
+  ],
+  "grammarPatterns": [
+    "Esta es mi... / Este es mi... (This is my...)",
+    "Mi [family member] es muy [adjective]",
+    "¿Quién está en tu familia? (Who is in your family?)"
+  ],
+  "culturalElements": [
+    "Extended family importance in Hispanic culture",
+    "Use of 'abuela' and 'abuelo' (common close relationships)",
+    "Pets as family members"
+  ],
+  "seo": {
+    "metaTitle": "La Familia de Sofía - Free Spanish Book for Kids | Learn Family Vocabulary",
+    "metaDescription": "Learn Spanish family vocabulary with Sofía! Interactive bilingual book teaching mamá, papá, hermano, hermana, abuela, abuelo, and more. Perfect for ages 2-5. Free online Spanish books from Beibei Amigos.",
+    "keywords": [
+      "Spanish for kids",
+      "family vocabulary Spanish",
+      "learn Spanish family",
+      "bilingual children books",
+      "preschool Spanish",
+      "familia Spanish",
+      "teach Spanish kids",
+      "Spanish immersion",
+      "free Spanish books",
+      "mamá papá Spanish",
+      "Spanish vocabulary",
+      "interactive Spanish book",
+      "Phoenix Spanish preschool"
+    ],
+    "focusKeywords": [
+      "Spanish family vocabulary",
+      "learn Spanish family members",
+      "Spanish books for kids"
+    ]
+  },
+  "cta": {
+    "primary": "Schedule a Tour",
+    "url": "https://www.beibeiamigos.com/tour/",
+    "message": "Join Beibei Amigos Language Preschool where we teach Spanish and Mandarin every day through stories, songs, and play!"
+  },
+  "technicalFeatures": [
+    "Web Speech API for audio",
+    "Inline CSS/JS for Divi compatibility",
+    "Schema.org markup",
+    "GA4 event tracking",
+    "Keyboard navigation",
+    "Responsive design",
+    "Pronunciation guides"
+  ],
+  "createdDate": "2026-03-11",
+  "author": "Luna 📚 - Beibei Amigos",
+  "status": "published"
+}
