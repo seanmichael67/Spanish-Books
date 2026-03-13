@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Salón de Clase - Libro Interactivo en Español</title>
+    <meta name="description" content="Explora el salón de clase con Sofía y aprende los nombres de los objetos en español. Libro interactivo bilingüe para niños de 2-5 años.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-content {
+            text-align: center;
+        }
+        
+        .page-image {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .spanish-text {
+            font-size: 28px;
+            color: #2d3436;
+            margin: 20px 0;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+        
+        .english-text {
+            font-size: 18px;
+            color: #636e72;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        .pronunciation {
+            font-size: 16px;
+            color: #0984e3;
+            margin: 10px 0;
+            padding: 10px;
+            background: #e3f2fd;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
+        .vocabulary-highlight {
+            color: #e74c3c;
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-top: 2px solid #dee2e6;
+        }
+        
+        button {
+            background: #6c5ce7;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background: #5f3dc4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+        }
+        
+        button:disabled {
+            background: #b2bec3;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .page-counter {
+            font-size: 18px;
+            color: #2d3436;
+            font-weight: bold;
+        }
+        
+        .audio-btn {
+            background: #00b894;
+            padding: 12px 25px;
+            margin: 15px auto;
+            display: block;
+        }
+        
+        .audio-btn:hover {
+            background: #00a383;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .cta-section h3 {
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .cta-section p {
+            color: #2d3436;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #6c5ce7;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .page {
+                padding: 20px;
+                min-height: 400px;
+            }
+            
+            .spanish-text {
+                font-size: 22px;
+            }
+            
+            .english-text {
+                font-size: 16px;
+            }
+            
+            .page-image {
+                height: 200px;
+                font-size: 60px;
+            }
+            
+            .controls {
+                padding: 15px 20px;
+            }
+            
+            button {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "El Salón de Clase",
+        "description": "Libro interactivo en español para niños sobre el salón de clase y sus objetos",
+        "inLanguage": "es",
+        "educationalLevel": "Preschool",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "student",
+            "audienceType": "Children ages 2-5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Beibei Amigos"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Beibei Amigos"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1 - Title -->
+        <div class="page active">
+            <div class="page-content">
+                <div class="page-image">🏫</div>
+                <h1 class="spanish-text">El Salón de Clase</h1>
+                <p class="english-text">The Classroom</p>
+                <p class="pronunciation">Pronunciación: el sah-LOHN deh CLAH-seh</p>
+                <button class="audio-btn" onclick="speak('El Salón de Clase')">🔊 Escuchar</button>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">👧</div>
+                <p class="spanish-text">Sofía entra al <span class="vocabulary-highlight">salón de clase</span>.</p>
+                <p class="english-text">Sofia enters the classroom.</p>
+                <p class="pronunciation">sah-LOHN deh CLAH-seh = classroom</p>
+                <button class="audio-btn" onclick="speak('Sofía entra al salón de clase')">🔊 Escuchar</button>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🪑</div>
+                <p class="spanish-text">¿Qué es esto? ¡Es una <span class="vocabulary-highlight">silla</span>!</p>
+                <p class="english-text">What is this? It's a chair!</p>
+                <p class="pronunciation">SEE-yah = chair</p>
+                <button class="audio-btn" onclick="speak('¿Qué es esto? ¡Es una silla!')">🔊 Escuchar</button>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🪑📋</div>
+                <p class="spanish-text">La silla está junto a la <span class="vocabulary-highlight">mesa</span>.</p>
+                <p class="english-text">The chair is next to the table.</p>
+                <p class="pronunciation">MEH-sah = table</p>
+                <button class="audio-btn" onclick="speak('La silla está junto a la mesa')">🔊 Escuchar</button>
+            </div>
+        </div>
+
+        <!-- Page 5 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">📚</div>
+                <p class="spanish-text">En la mesa hay un <span class="vocabulary-highlight">libro</span>.</p>
+                <p class="english-text">On the table there is a book.</p>
+                <p class="pronunciation">LEE-broh = book</p>
+                <button class="audio-btn" onclick="speak('En la mesa hay un libro')">🔊 Escuchar</button>
+            </div>
+        </div>
+
+        <!-- Page 6 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">✏️</div>
+                <p class="spanish-text">También hay un <span class="vocabulary-highlight">lápiz</span> amarillo.</p>
+                <p class="english-text">There is also a yellow pencil.</p>
+                <p class="pronunciation">LAH-pees = pencil</p>
+                <button class="audio-btn" onclick="speak('También hay un lápiz amarillo')">🔊 Escuchar</button>
+            </div>
+        </div>
+
+        <!-- Page 7 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">⬛</div>
+                <p class="spanish-text">La maestra escribe en la <span class="vocabulary-highlight">pizarra</span>.</p>
+                <p class="english-text">The teacher writes on the board.</p>
+                <p class="pronunciation">pee-SAH-rrah = board</p>
+                <button class="audio-btn" onclick="speak('La maestra escribe en la pizarra')">🔊 Escuchar</button>
+            </div>
+        </div>
+
+        <!-- Page 8 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🧸🎨</div>
+                <p class="spanish-text">En el estante hay muchos <span class="vocabulary-highlight">juguetes</span>.</p>
+                <p class="english-text">On the shelf there are many toys.</p>
+                <p class="pronunciation">hoo-GEH-tehs = toys</p>
+                <button class="audio-btn" onclick="speak('En el estante hay muchos juguetes')">🔊 Escuchar</button>
+            </div>
+        </div>
+
+        <!-- Page 9 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🚪</div>
+                <p class="spanish-text">Sofía abre la <span class="vocabulary-highlight">puerta</span> para salir.</p>
+                <p class="english-text">Sofia opens the door to leave.</p>
+                <p class="pronunciation">PWEHR-tah = door</p>
+                <button class="audio-btn" onclick="speak('Sofía abre la puerta para salir')">🔊 Escuchar</button>
+            </div>
+        </div>
+
+        <!-- Page 10 - End -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">❤️🏫</div>
+                <p class="spanish-text">¡A Sofía le encanta su salón de clase!</p>
+                <p class="english-text">Sofia loves her classroom!</p>
+                <button class="audio-btn" onclick="speak('¡A Sofía le encanta su salón de clase!')">🔊 Escuchar</button>
+                
+                <div class="cta-section">
+                    <h3>🎓 ¿Te gustó este libro?</h3>
+                    <p>Descubre el programa bilingüe de Beibei Amigos donde tus hijos aprenden español y mandarín cada día.</p>
+                    <a href="https://www.beibeiamigos.com/tour/" class="cta-button">📅 Agenda tu Tour</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="prevBtn" onclick="changePage(-1)">← Anterior</button>
+            <span class="page-counter"><span id="currentPage">1</span> / 10</span>
+            <button id="nextBtn" onclick="changePage(1)">Siguiente →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 10;
+
+        function showPage(n) {
+            const pages = document.querySelectorAll('.page');
+            
+            if (n > totalPages) currentPage = totalPages;
+            if (n < 1) currentPage = 1;
+            
+            pages.forEach(page => page.classList.remove('active'));
+            pages[currentPage - 1].classList.add('active');
+            
+            document.getElementById('currentPage').textContent = currentPage;
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+            
+            // Google Analytics event
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    'page_title': 'El Salón de Clase - Page ' + currentPage,
+                    'page_location': window.location.href + '#page' + currentPage
+                });
+            }
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            showPage(currentPage);
+        }
+
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                window.speechSynthesis.speak(utterance);
+                
+                // Track audio usage
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'audio_play', {
+                        'event_category': 'engagement',
+                        'event_label': text
+                    });
+                }
+            } else {
+                alert('Tu navegador no soporta audio. Intenta en Chrome o Safari.');
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changePage(-1);
+            if (e.key === 'ArrowRight') changePage(1);
+        });
+
+        // Initialize
+        showPage(1);
+
+        // Track book completion
+        window.addEventListener('beforeunload', () => {
+            if (typeof gtag !== 'undefined') {
+                const completionRate = (currentPage / totalPages) * 100;
+                gtag('event', 'book_completion', {
+                    'event_category': 'engagement',
+                    'event_label': 'El Salón de Clase',
+                    'value': Math.round(completionRate)
+                });
+            }
+        });
+    </script>
+</body>
+</html>

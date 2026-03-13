@@ -1,0 +1,83 @@
+{
+  "week": 42,
+  "title": "El Salón de Clase",
+  "englishTranslation": "The Classroom",
+  "topic": "classroom objects",
+  "ageRange": "2-5 years",
+  "totalPages": 10,
+  "newVocabulary": [
+    {
+      "spanish": "salón de clase",
+      "english": "classroom",
+      "pronunciation": "sah-LOHN deh CLAH-seh"
+    },
+    {
+      "spanish": "silla",
+      "english": "chair",
+      "pronunciation": "SEE-yah"
+    },
+    {
+      "spanish": "mesa",
+      "english": "table",
+      "pronunciation": "MEH-sah"
+    },
+    {
+      "spanish": "libro",
+      "english": "book",
+      "pronunciation": "LEE-broh"
+    },
+    {
+      "spanish": "lápiz",
+      "english": "pencil",
+      "pronunciation": "LAH-pees"
+    },
+    {
+      "spanish": "pizarra",
+      "english": "board",
+      "pronunciation": "pee-SAH-rrah"
+    },
+    {
+      "spanish": "juguetes",
+      "english": "toys",
+      "pronunciation": "hoo-GEH-tehs"
+    },
+    {
+      "spanish": "puerta",
+      "english": "door",
+      "pronunciation": "PWEHR-tah"
+    }
+  ],
+  "seo": {
+    "metaTitle": "El Salón de Clase - Libro Interactivo en Español para Niños | Beibei Amigos",
+    "metaDescription": "Explora el salón de clase con Sofía y aprende los nombres de los objetos en español. Libro interactivo bilingüe gratis para niños de 2-5 años. Perfecto para aprender vocabulario del aula.",
+    "keywords": [
+      "libro español niños",
+      "salón de clase español",
+      "vocabulario aula español",
+      "aprender español preescolar",
+      "libro bilingüe gratis",
+      "classroom Spanish",
+      "objetos del salón de clase",
+      "mesa silla español",
+      "spanish preschool book",
+      "libro interactivo español",
+      "beibei amigos",
+      "español para niños Phoenix"
+    ],
+    "ogImage": "classroom-book-cover.jpg"
+  },
+  "educationalGoals": [
+    "Learn basic classroom vocabulary in Spanish",
+    "Recognize common classroom objects",
+    "Practice pronunciation of Spanish words",
+    "Build confidence in bilingual communication",
+    "Prepare for preschool classroom environment"
+  ],
+  "parentNotes": "This book introduces essential classroom vocabulary that your child will use daily in a bilingual preschool setting. The repetitive structure helps reinforce learning, and the pronunciation guides help parents who are not native Spanish speakers.",
+  "createdDate": "2026-03-12",
+  "author": "Luna 📚",
+  "illustrationStyle": "warm, colorful, child-friendly emojis with educational focus",
+  "readingTime": "5-7 minutes",
+  "difficulty": "beginner",
+  "category": "classroom"
+}
