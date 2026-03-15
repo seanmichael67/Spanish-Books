@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Deportes - Libro Interactivo en Español</title>
+    <meta name="description" content="Aprende los deportes en español con este libro interactivo para niños de 2-5 años. ¡Diviértete corriendo, nadando y jugando!">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial Rounded MT Bold', sans-serif; background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); min-height: 100vh; padding: 20px; display: flex; justify-content: center; align-items: center; }
+        .book-container { max-width: 800px; width: 100%; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .page { display: none; padding: 40px; min-height: 500px; animation: fadeIn 0.5s ease-in; }
+        .page.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .page-content { text-align: center; }
+        .page-image { width: 100%; max-width: 400px; height: 300px; margin: 0 auto 30px; background: #dfe6e9; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 80px; }
+        .spanish-text { font-size: 28px; color: #2d3436; margin: 20px 0; font-weight: bold; }
+        .english-text { font-size: 18px; color: #636e72; margin-bottom: 10px; }
+        .pronunciation { font-size: 16px; color: #0984e3; background: #e3f2fd; padding: 10px; border-radius: 10px; display: inline-block; }
+        .vocabulary-highlight { color: #d63031; font-weight: bold; text-decoration: underline; }
+        .controls { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: #f8f9fa; }
+        button { background: #00b894; color: white; border: none; padding: 15px 30px; border-radius: 25px; font-size: 18px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Page 1: Title -->
+        <div class="page active">
+            <div class="page-content">
+                <div class="page-image">⚽</div>
+                <h1>Los Deportes</h1>
+                <p>¡Vamos a jugar!</p>
+            </div>
+        </div>
+        <!-- Page 2: Soccer -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">⚽</div>
+                <p class="spanish-text">Corremos tras la <span class="vocabulary-highlight">pelota</span>.</p>
+                <p class="english-text">We run after the ball.</p>
+                <p class="pronunciation">peh-LOH-tah = ball</p>
+            </div>
+        </div>
+        <!-- Page 3: Swimming -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🏊</div>
+                <p class="spanish-text">Nos gusta <span class="vocabulary-highlight">nadar</span> en el agua.</p>
+                <p class="english-text">We like to swim in the water.</p>
+                <p class="pronunciation">nah-DAR = to swim</p>
+            </div>
+        </div>
+        <!-- Page 4: Basketball -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🏀</div>
+                <p class="spanish-text">¡Podemos <span class="vocabulary-highlight">saltar</span> muy alto!</p>
+                <p class="english-text">We can jump very high!</p>
+                <p class="pronunciation">sahl-TAR = to jump</p>
+            </div>
+        </div>
+        <!-- Page 5: Running -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🏃</div>
+                <p class="spanish-text">A todos les gusta <span class="vocabulary-highlight">correr</span>.</p>
+                <p class="english-text">Everyone likes to run.</p>
+                <p class="pronunciation">koh-RREHR = to run</p>
+            </div>
+        </div>
+        <!-- Page 6: Biking -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🚲</div>
+                <p class="spanish-text">Vamos rápido en la <span class="vocabulary-highlight">bicicleta</span>.</p>
+                <p class="english-text">We go fast on the bicycle.</p>
+                <p class="pronunciation">bee-see-KLEH-tah = bicycle</p>
+            </div>
+        </div>
+        <!-- Page 7: Tennis -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🎾</div>
+                <p class="spanish-text">Jugamos al <span class="vocabulary-highlight">tenis</span>.</p>
+                <p class="english-text">We play tennis.</p>
+                <p class="pronunciation">TEH-nees = tennis</p>
+            </div>
+        </div>
+        <!-- Page 8: Yoga -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🧘</div>
+                <p class="spanish-text">¡Es muy <span class="vocabulary-highlight">divertido</span> jugar!</p>
+                <p class="english-text">It is very fun to play!</p>
+                <p class="pronunciation">dee-vehr-TEE-doh = fun</p>
+            </div>
+        </div>
+        <!-- Page 9: Closing -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">🏅</div>
+                <p class="spanish-text">¡Qué bien juegan todos!</p>
+                <p class="english-text">Everyone plays so well!</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="prevBtn" onclick="changePage(-1)">←</button>
+            <span><span id="currentPage">1</span> / 9</span>
+            <button id="nextBtn" onclick="changePage(1)">→</button>
+        </div>
+    </div>
+    <script>
+        let currentPage = 1;
+        function changePage(d) {
+            currentPage += d;
+            if (currentPage < 1) currentPage = 1;
+            if (currentPage > 9) currentPage = 9;
+            document.querySelectorAll('.page').forEach((p, i) => p.classList.toggle('active', i === currentPage - 1));
+            document.getElementById('currentPage').textContent = currentPage;
+        }
+    </script>
+</body>
+</html>

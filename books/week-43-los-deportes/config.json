@@ -1,0 +1,78 @@
+{
+  "week": 43,
+  "title": "Los Deportes",
+  "englishTranslation": "Sports",
+  "topic": "sports",
+  "ageRange": "2-5 years",
+  "totalPages": 9,
+  "newVocabulary": [
+    {
+      "spanish": "deportes",
+      "english": "sports",
+      "pronunciation": "deh-POR-tehs"
+    },
+    {
+      "spanish": "pelota",
+      "english": "ball",
+      "pronunciation": "peh-LOH-tah"
+    },
+    {
+      "spanish": "nadar",
+      "english": "to swim",
+      "pronunciation": "nah-DAR"
+    },
+    {
+      "spanish": "saltar",
+      "english": "to jump",
+      "pronunciation": "sahl-TAR"
+    },
+    {
+      "spanish": "correr",
+      "english": "to run",
+      "pronunciation": "koh-RREHR"
+    },
+    {
+      "spanish": "bicicleta",
+      "english": "bicycle",
+      "pronunciation": "bee-see-KLEH-tah"
+    },
+    {
+      "spanish": "tenis",
+      "english": "tennis",
+      "pronunciation": "TEH-nees"
+    },
+    {
+      "spanish": "divertido",
+      "english": "fun",
+      "pronunciation": "dee-vehr-TEE-doh"
+    }
+  ],
+  "seo": {
+    "metaTitle": "Los Deportes - Libro Interactivo en Español para Niños | Beibei Amigos",
+    "metaDescription": "Aprende los deportes en español con este libro interactivo para niños de 2-5 años. Vocabulario básico de deportes: correr, nadar, pelota. ¡Gratis y divertido!",
+    "keywords": [
+      "deportes español niños",
+      "aprender español deportes",
+      "vocabulario deportes español",
+      "libro español preescolar",
+      "beibei amigos",
+      "aprender español jugando",
+      "spanish sports vocabulary",
+      "libro bilingüe español"
+    ],
+    "ogImage": "sports-book-cover.jpg"
+  },
+  "educationalGoals": [
+    "Introduce sports vocabulary in Spanish",
+    "Encourage active movement and play",
+    "Reinforce verb conjugation through actions (correr, saltar, nadar)",
+    "Build bilingual vocabulary for physical activities"
+  ],
+  "parentNotes": "This book introduces simple sports and action words. It encourages children to move and associate physical activities with Spanish verbs, making language learning active and engaging.",
+  "createdDate": "2026-03-14",
+  "author": "Luna 📚",
+  "illustrationStyle": "bright, energetic, sports-themed, child-friendly",
+  "readingTime": "5-7 minutes",
+  "difficulty": "beginner",
+  "category": "sports"
+}
