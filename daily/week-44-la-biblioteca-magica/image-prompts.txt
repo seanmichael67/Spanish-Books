@@ -1,0 +1,47 @@
+
+# Idea: "La Biblioteca Magica" (The Magical Library)
+# Theme: Exploring a library, finding a book, learning to read/discover.
+# Target: Ages 2-5
+# Language: Spanish
+
+---
+
+Page 1: Cover
+Text: La Biblioteca Magica
+Image Prompt: A colorful, inviting children's library with soft rugs, many shelves of books, and a friendly, whimsical atmosphere. Pixar-style, warm lighting, bright colors.
+
+Page 2:
+Text: Mira, una gran biblioteca. Hay muchos libros.
+Image Prompt: A cute toddler standing in front of a giant bookshelf filled with colorful books, looking excited.
+
+Page 3:
+Text: Vamos a buscar un libro especial.
+Image Prompt: The toddler walking toward a shelf, pointing at a shiny, glowing blue book.
+
+Page 4:
+Text: ¡Lo encontré! Es de color azul.
+Image Prompt: Close up of the toddler's small hands grabbing the glowing blue book from the shelf.
+
+Page 5:
+Text: Abrimos el libro. ¿Qué hay adentro?
+Image Prompt: The toddler sitting on a cozy, oversized beanbag chair opening the book wide.
+
+Page 6:
+Text: ¡Mira! Un pequeño conejo salta.
+Image Prompt: Inside the book's illustrations, a cute, playful white rabbit is jumping out from the pages.
+
+Page 7:
+Text: El conejo busca zanahorias ricas.
+Image Prompt: The rabbit sitting in a garden patch nibbling on a carrot. Whimsical cartoon style.
+
+Page 8:
+Text: Nos gusta leer historias bonitas.
+Image Prompt: The toddler happily looking at the rabbit inside the book, smiling big.
+
+Page 9:
+Text: Leer es muy divertido. ¡Adiós libro!
+Image Prompt: The toddler closing the book, hugging it gently. The library room is quiet and happy.
+
+Page 10:
+Text: Fin.
+Image Prompt: A peaceful scene of the library at sunset, with a few books glowing softly.
