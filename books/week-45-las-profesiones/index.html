@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Las profesiones de mis amigos</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; text-align: center; background-color: #f0f8ff; padding: 20px; }
+        .page { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 20px auto; max-width: 600px; display: none; }
+        .active { display: block; }
+        button { font-size: 1.2rem; padding: 10px 20px; margin-top: 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="book">
+        <!-- Pages 1-8 -->
+        <div class="page active" id="page1"><h1>Las profesiones de mis amigos</h1><p>¡Hola! Soy un pequeño aventurero. Hoy quiero conocer las profesiones de mis amigos.</p><button onclick="nextPage(2)">Siguiente</button></div>
+        <div class="page" id="page2"><h2>Ana, la doctora</h2><p>Ella ayuda a todos a sentirse mejor.</p><button onclick="nextPage(3)">Siguiente</button></div>
+        <div class="page" id="page3"><h2>Juan, el bombero</h2><p>Él apaga los incendios y nos protege.</p><button onclick="nextPage(4)">Siguiente</button></div>
+        <div class="page" id="page4"><h2>María, la chef</h2><p>¡Cocina platos muy deliciosos!</p><button onclick="nextPage(5)">Siguiente</button></div>
+        <div class="page" id="page5"><h2>Pedro, el maestro</h2><p>Le encanta enseñarnos a leer y a escribir.</p><button onclick="nextPage(6)">Siguiente</button></div>
+        <div class="page" id="page6"><h2>Sofía, la veterinaria</h2><p>Ella cuida a todos los animalitos.</p><button onclick="nextPage(7)">Siguiente</button></div>
+        <div class="page" id="page7"><h2>Comunidad</h2><p>¡Qué trabajo tan importante hacen todos!</p><button onclick="nextPage(8)">Siguiente</button></div>
+        <div class="page" id="page8"><h2>Tú</h2><p>¿Qué quieres ser tú cuando seas grande?</p><button onclick="location.reload()">Reiniciar</button></div>
+    </div>
+    <script>
+        function nextPage(n) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById('page' + n).classList.add('active');
+        }
+    </script>
+</body>
+</html>
