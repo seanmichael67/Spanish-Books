@@ -1,0 +1,15 @@
+{
+  "title": "Los Insectos Amistosos",
+  "theme": "naturaleza",
+  "pages": [
+    {"text": "Los Insectos Amistosos", "image": "cover.png"},
+    {"text": "Mira, una pequeña hormiga.", "image": "ant.png", "question": "¿Puedes señalar la hormiga?"},
+    {"text": "Mira, una abeja trabajadora.", "image": "bee.png", "question": "¿Qué sonido hace la abeja?"},
+    {"text": "Mira, una mariposa de colores.", "image": "butterfly.png", "question": "¿De qué color es la mariposa?"},
+    {"text": "Mira, una mariquita roja.", "image": "ladybug.png", "question": "¿Puedes contar sus puntos?"},
+    {"text": "Mira, un saltamontes verde.", "image": "grasshopper.png", "question": "¿Puedes saltar como él?"},
+    {"text": "Mira, una libélula rápida.", "image": "dragonfly.png", "question": "¿Es rápida la libélula?"},
+    {"text": "Todos los insectos son amigos de la naturaleza.", "image": "all.png"},
+    {"text": "¡Adiós, pequeños insectos!", "image": "goodbye.png"}
+  ]
+}
