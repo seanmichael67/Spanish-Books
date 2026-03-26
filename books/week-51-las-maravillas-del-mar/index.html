@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Maravillas del Mar</title>
+    <style>
+        body { font-family: 'Sour Gummy', sans-serif; text-align: center; background: #e0f7fa; padding: 20px; }
+        h1 { color: #0277bd; }
+        .page { background: white; border-radius: 20px; padding: 40px; margin: 20px auto; max-width: 600px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        img { max-width: 100%; border-radius: 15px; }
+        p { font-size: 1.5rem; color: #37474f; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Las Maravillas del Mar</h1>
+    
+    <div class="page">
+        <img src="images/page-01-cover.png" alt="Cover">
+        <p>¡Hola! Hoy vamos a explorar el gran mar azul.</p>
+    </div>
+
+    <div class="page">
+        <img src="images/page-02-peces.png" alt="Peces">
+        <p>Mira, ¡muchos peces de colores nadan en el agua!</p>
+    </div>
+
+    <div class="page">
+        <img src="images/page-03-tortuga.png" alt="Tortuga">
+        <p>Una tortuga marina nada muy lento.</p>
+    </div>
+
+    <div class="page">
+        <img src="images/page-04-ballena.png" alt="Ballena">
+        <p>¡Una ballena grande salta en las olas!</p>
+    </div>
+
+    <div class="page">
+        <img src="images/page-05-pulpo.png" alt="Pulpo">
+        <p>El pulpo tiene ocho brazos. ¡Uno, dos, tres, cuatro, cinco, seis, siete, ocho!</p>
+    </div>
+
+    <div class="page">
+        <img src="images/page-06-estrellas.png" alt="Estrellas de mar">
+        <p>Las estrellas de mar descansan en la arena.</p>
+    </div>
+
+    <div class="page">
+        <img src="images/page-07-cangrejo.png" alt="Cangrejo">
+        <p>Un pequeño cangrejo camina por la playa.</p>
+    </div>
+
+    <div class="page">
+        <img src="images/page-08-todos.png" alt="Todos juntos">
+        <p>¡El mar es un lugar maravilloso y lleno de amigos!</p>
+    </div>
+
+    <div class="page">
+        <p>¿Qué animal del mar te gusta más?</p>
+    </div>
+
+    <script>
+        // Resize script for Divi embed
+        window.onload = function() {
+            window.parent.postMessage({type: 'resize', height: document.body.scrollHeight}, '*');
+        };
+    </script>
+</body>
+</html>
