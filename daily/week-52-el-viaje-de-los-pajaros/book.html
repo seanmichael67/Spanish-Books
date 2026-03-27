@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El viaje de los pájaros</title>
+    <style>
+        body { font-family: 'Sour Gummy', sans-serif; text-align: center; background: #e3f2fd; padding: 20px; }
+        h1 { color: #1565c0; }
+        .page { background: white; border-radius: 20px; padding: 40px; margin: 20px auto; max-width: 600px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        p { font-size: 1.5rem; color: #37474f; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>El viaje de los pájaros</h1>
+    
+    <div class="page">
+        <p>¡Un pájaro pequeño quiere explorar el cielo!</p>
+    </div>
+
+    <div class="page">
+        <p>Él vuela muy alto sobre los árboles verdes.</p>
+    </div>
+
+    <div class="page">
+        <p>Mira las flores coloridas abajo.</p>
+    </div>
+
+    <div class="page">
+        <p>El pájaro busca a sus amigos.</p>
+    </div>
+
+    <div class="page">
+        <p>¡Hola! Un amigo azul viene a saludar.</p>
+    </div>
+
+    <div class="page">
+        <p>¡Y un amigo amarillo también!</p>
+    </div>
+
+    <div class="page">
+        <p>Todos cantan juntos en el cielo azul.</p>
+    </div>
+
+    <div class="page">
+        <p>Es un día muy feliz para viajar.</p>
+    </div>
+
+    <div class="page">
+        <p>¿A dónde quieres volar tú hoy?</p>
+    </div>
+    
+    <script>
+        window.onload = function() {
+            window.parent.postMessage({type: 'resize', height: document.body.scrollHeight}, '*');
+        };
+    </script>
+</body>
+</html>
