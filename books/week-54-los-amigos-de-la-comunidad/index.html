@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Amigos de la Comunidad - Book Week 54</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        .book-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        .book-header h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3em;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+        
+        .book-header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        
+        .pages-container {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .page {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideIn 0.6s ease-out;
+            animation-fill-mode: both;
+        }
+        
+        .page:nth-child(1) { animation-delay: 0.1s; }
+        .page:nth-child(2) { animation-delay: 0.2s; }
+        .page:nth-child(3) { animation-delay: 0.3s; }
+        .page:nth-child(4) { animation-delay: 0.4s; }
+        .page:nth-child(5) { animation-delay: 0.5s; }
+        .page:nth-child(6) { animation-delay: 0.6s; }
+        .page:nth-child(7) { animation-delay: 0.7s; }
+        .page:nth-child(8) { animation-delay: 0.8s; }
+        
+        .page-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: #667eea;
+            font-family: 'Fredoka One', cursive;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .page-title {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2.2em;
+            color: #667eea;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .page-content {
+            font-size: 1.4em;
+            line-height: 1.8;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .vocabulary-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        .vocabulary-box h3 {
+            font-family: 'Fredoka One', cursive;
+            color: #d63031;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .vocabulary-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .vocab-item {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 1.1em;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .vocab-item:hover {
+            transform: scale(1.1);
+        }
+        
+        .page-number {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        @media (max-width: 768px) {
+            .book-header h1 {
+                font-size: 2em;
+            }
+            
+            .page-image {
+                height: 250px;
+            }
+            
+            .page-title {
+                font-size: 1.5em;
+            }
+            
+            .page-content {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-header">
+            <h1>📚 Los Amigos de la Comunidad</h1>
+            <p>Book Week 54 • Para Beibei Amigos • Edades 2-5 años</p>
+        </div>
+        
+        <div class="pages-container">
+            <!-- Page 1 -->
+            <div class="page">
+                <div class="page-image">
+                    <img src="https://image.pollinations.ai/prompt/cartoon%20diverse%20community%20helpers%20working%20together%20in%20neighborhood%20happy%20children%20watching%20warm%20colorful%20illustration%20childrens%20book%20style%20soft%20lighting%20friendly?width=1200&height=400&nologo=true" alt="Community Helpers" />
+                </div>
+                <div class="page-title">¡Hola, Amigos!</div>
+                <div class="page-content">
+                    En nuestra comunidad hay muchos amigos que nos ayudan todos los días.<br><br>
+                    ¿Quieres conocerlos? ¡Vamos a aprender juntos!
+                </div>
+                <div class="page-number">Página 1 de 8</div>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page">
+                <div class="page-image">
+                    <img src="https://image.pollinations.ai/prompt/cartoon%20friendly%20firefighter%20in%20red%20uniform%20with%20helmet%20smiling%20waving%20at%20children%20colorful%20illustration%20childrens%20book%20style%20bright%20cheerful?width=1200&height=400&nologo=true" alt="El Bombero" />
+                </div>
+                <div class="page-title">El Bombero</div>
+                <div class="page-content">
+                    El bombero es muy valiente.<br>
+                    Él apaga los incendios y nos protege.<br>
+                    Su camión rojo es muy rápido.<br>
+                    ¡Gracias, bombero!
+                </div>
+                <div class="vocabulary-box">
+                    <h3>📖 Palabra de hoy:</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocab-item">🔥 El bombero</div>
+                        <div class="vocab-item">🚒 El camión</div>
+                    </div>
+                </div>
+                <div class="page-number">Página 2 de 8</div>
+            </div>
+            
+            <!-- Page 3 -->
+            <div class="page">
+                <div class="page-image">
+                    <img src="https://image.pollinations.ai/prompt/cartoon%20kind%20female%20doctor%20in%20white%20coat%20holding%20stethoscope%20smiling%20at%20child%20colorful%20illustration%20childrens%20book%20style%20gentle%20warm?width=1200&height=400&nologo=true" alt="La Doctora" />
+                </div>
+                <div class="page-title">La Doctora</div>
+                <div class="page-content">
+                    La doctora nos cuida cuando estamos enfermos.<br>
+                    Ella revisa nuestro corazón con su estetoscopio.<br>
+                    ¡Nos da muchas sonrisas y abrazos!<br>
+                    ¡Estamos sanos gracias a ella!
+                </div>
+                <div class="vocabulary-box">
+                    <h3>📖 Palabra de hoy:</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocab-item">🩺 La doctora</div>
+                        <div class="vocab-item">💊 Sanar</div>
+                    </div>
+                </div>
+                <div class="page-number">Página 3 de 8</div>
+            </div>
+            
+            <!-- Page 4 -->
+            <div class="page">
+                <div class="page-image">
+                    <img src="https://image.pollinations.ai/prompt/cartoon%20gentle%20male%20teacher%20in%20colorful%20classroom%20holding%20books%20smiling%20surrounded%20by%20happy%20children%20colorful%20illustration%20childrens%20book%20style%20educational?width=1200&height=400&nologo=true" alt="El Maestro" />
+                </div>
+                <div class="page-title">El Maestro</div>
+                <div class="page-content">
+                    El maestro nos enseña letras y números.<br>
+                    Él nos lee cuentos muy divertidos.<br>
+                    En la escuela aprendemos cosas nuevas cada día.<br>
+                    ¡El maestro es nuestro amigo!
+                </div>
+                <div class="vocabulary-box">
+                    <h3>📖 Palabra de hoy:</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocab-item">📚 El maestro</div>
+                        <div class="vocab-item">🔤 Aprender</div>
+                    </div>
+                </div>
+                <div class="page-number">Página 4 de 8</div>
+            </div>
+            
+            <!-- Page 5 -->
+            <div class="page">
+                <div class="page-image">
+                    <img src="https://image.pollinations.ai/prompt/cartoon%20friendly%20female%20police%20officer%20in%20blue%20uniform%20helping%20children%20cross%20street%20safe%20colorful%20illustration%20childrens%20book%20style%20community?width=1200&height=400&nologo=true" alt="La Policía" />
+                </div>
+                <div class="page-title">La Policía</div>
+                <div class="page-content">
+                    La policía nos ayuda a cruzar la calle con seguridad.<br>
+                    Ella cuida de todos nosotros.<br>
+                    Si necesitamos ayuda, ella nos escucha.<br>
+                    ¡La policía nos hace sentir seguros!
+                </div>
+                <div class="vocabulary-box">
+                    <h3>📖 Palabra de hoy:</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocab-item">👮 La policía</div>
+                        <div class="vocab-item">🛡️ Seguridad</div>
+                    </div>
+                </div>
+                <div class="page-number">Página 5 de 8</div>
+            </div>
+            
+            <!-- Page 6 -->
+            <div class="page">
+                <div class="page-image">
+                    <img src="https://image.pollinations.ai/prompt/cartoon%20caring%20female%20nurse%20in%20blue%20scrubs%20holding%2�thermometer%20smiling%20at%20child%20hospital%20colorful%20illustration%20childrens%20book%20style%20caring?width=1200&height=400&nologo=true" alt="La Enfermera" />
+                </div>
+                <div class="page-title">La Enfermera</div>
+                <div class="page-content">
+                    La enfermera nos pone la vacuna con cuidado.<br>
+                    Ella nos da medicina cuando tenemos fiebre.<br>
+                    Su sonrisa nos hace sentir mejor.<br>
+                    ¡La enfermera es muy valiente!
+                </div>
+                <div class="vocabulary-box">
+                    <h3>📖 Palabra de hoy:</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocab-item">👩‍⚕️ La enfermera</div>
+                        <div class="vocab-item">🌡️ Fiebre</div>
+                    </div>
+                </div>
+                <div class="page-number">Página 6 de 8</div>
+            </div>
+            
+            <!-- Page 7 -->
+            <div class="page">
+                <div class="page-image">
+                    <img src="https://image.pollinations.ai/prompt/cartoon%20warm%20male%20bus%20driver%20in%20uniform%20smiling%20at%20children%20boarding%20school%20bus%20colorful%20illustration%20childrens%20book%20style%20community%20transportation?width=1200&height=400&nologo=true" alt="El Conductor" />
+                </div>
+                <div class="page-title">El Conductor</div>
+                <div class="page-content">
+                    El conductor nos lleva en autobús a la escuela.<br>
+                    Él maneja con cuidado para que estemos seguros.<br>
+                    ¡Nos dice buenos días cada mañana!<br>
+                    Gracias por llevarnos, conductor.
+                </div>
+                <div class="vocabulary-box">
+                    <h3>📖 Palabra de hoy:</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocab-item">🚌 El conductor</div>
+                        <div class="vocab-item">🛣️ Camino</div>
+                    </div>
+                </div>
+                <div class="page-number">Página 7 de 8</div>
+            </div>
+            
+            <!-- Page 8 -->
+            <div class="page">
+                <div class="page-image">
+                    <img src="https://image.pollinations.ai/prompt/cartoon%20diverse%20group%20community%20helpers%20together%20firefighter%20doctor%20teacher%20policeman%20hugging%20children%20celebrating%20friendship%20colorful%20illustration%20childrens%20book%20style%20happy%20ending?width=1200&height=400&nologo=true" alt="Todos Juntos" />
+                </div>
+                <div class="page-title">¡Somos una Familia!</div>
+                <div class="page-content">
+                    Todos estos amigos trabajan juntos para cuidarnos.<br>
+                    Gracias al bombero, doctora, maestro, policía, enfermera y conductor.<br>
+                    <br>
+                    <strong>¡Nuestra comunidad es especial porque tenemos amigos que nos ayudan!</strong>
+                </div>
+                <div class="vocabulary-box">
+                    <h3>📖 Todas las palabras:</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocab-item">🔥 Bombero</div>
+                        <div class="vocab-item">🩺 Doctora</div>
+                        <div class="vocab-item">📚 Maestro</div>
+                        <div class="vocab-item">👮 Policía</div>
+                        <div class="vocab-item">👩‍⚕️ Enfermera</div>
+                        <div class="vocab-item">🚌 Conductor</div>
+                    </div>
+                </div>
+                <div class="page-number">Página 8 de 8</div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; color: white;">
+            <p style="font-size: 1.2em; opacity: 0.9;">🎉 ¡Feliz Lectura! 🎉</p>
+            <p style="font-size: 1em; opacity: 0.7;">Generado por Luna 📚 | Para Beibei Amigos Language Preschool</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Superhéroes del Bien</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Sour Gummy', sans-serif; 
+            text-align: center; 
+            background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%); 
+            padding: 20px; 
+            margin: 0;
+        }
+        h1 { 
+            color: #c2185b; 
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .page { 
+            background: white; 
+            border-radius: 20px; 
+            padding: 40px; 
+            margin: 20px auto; 
+            max-width: 600px; 
+            box-shadow: 0 4px 10px rgba(194, 24, 91, 0.15);
+            border: 3px solid #f8bbd0;
+        }
+        p { 
+            font-size: 1.8rem; 
+            color: #880e4f; 
+            margin-top: 20px;
+            line-height: 1.4;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: #f8bbd0;
+            border-radius: 15px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #880e4f;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Los Superhéroes del Bien 💖</h1>
+    
+    <div class="page">
+        <div class="image-placeholder">[Imagen: Un niño pequeño mirándose en un espejo con expresión soñadora]</div>
+        <p>Pepe se mira en el espejo y tiene una idea especial...</p>
+    </div>
+
+    <div class="page">
+        <div class="image-placeholder">[Imagen: Pepe imaginando que tiene una capa roja brillante]</div>
+        <p>¡Se imagina siendo un superhéroe con capa roja!</p>
+    </div>
+
+    <div class="page">
+        <div class="image-placeholder">[Imagen: Un corazón brillante saliendo del pecho de Pepe]</div>
+        <p>¡Pero su superpoder más grande está en su corazón!</p>
+    </div>
+
+    <div class="page">
+        <div class="image-placeholder">[Imagen: Pepe ayudando a otro niño a recoger juguetes esparcidos]</div>
+        <p>Su amiga María dejó caer todos sus juguetes. ¡Pepe la ayuda a recogerlos!</p>
+    </div>
+
+    <div class="page">
+        <div class="image-placeholder">[Imagen: Pepe compartiendo su sanduche con una amiguita]</div>
+        <p>Lucía tiene hambre. Pepe le comparte su deliciososanduche.</p>
+    </div>
+
+    <div class="page">
+        <div class="image-placeholder">[Imagen: Pepe dando un gran abrazo a su mamá y papá]</div>
+        <p>¡Mamá y papá necesitan un abrazo especial! Pepe los abraza muy fuerte.</p>
+    </div>
+
+    <div class="page">
+        <div class="image-placeholder">[Imagen: Varios niños y adultos ayudando a otros con capas de colores]</div>
+        <p>¡Todos pueden ser superhéroes del bien con su corazón amable!</p>
+    </div>
+
+    <div class="page">
+        <div class="image-placeholder">[Imagen: Pepe sonriendo con las manos en las caderas, orgulloso]</div>
+        <p>¿Y tú? ¿Cuál es TU superpoder hoy para ayudar a otros?</p>
+    </div>
+    
+    <script>
+        window.onload = function() {
+            window.parent.postMessage({type: 'resize', height: document.body.scrollHeight}, '*');
+        };
+    </script>
+</body>
+</html>

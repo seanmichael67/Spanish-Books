@@ -1,0 +1,19 @@
+{
+  "title": "Los Amigos de la Comunidad",
+  "titleEnglish": "Community Friends",
+  "week": 54,
+  "date": "2026-03-27",
+  "ageRange": "2-5 años",
+  "vocabulary": [
+    {"spanish": "el bombero", "english": "firefighter", "type": "person"},
+    {"spanish": "la doctora", "english": "doctor", "type": "person"},
+    {"spanish": "el maestro", "english": "teacher", "type": "person"},
+    {"spanish": "la policía", "english": "police officer", "type": "person"},
+    {"spanish": "el médico", "english": "physician", "type": "person"},
+    {"spanish": "la enfermera", "english": "nurse", "type": "person"},
+    {"spanish": "el conductor", "english": "driver", "type": "person"},
+    {"spanish": "el cocinero", "english": "cook", "type": "person"}
+  ],
+  "themes": ["community", "helping", "jobs", "friendship"],
+  "readingTime": "5-7 minutes"
+}
