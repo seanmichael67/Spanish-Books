@@ -374,7 +374,7 @@
                                     </div>
                                 ))}
                             </div>
-                            <div className="pt-2 md:pt-4 border-t border-gray-100 flex justify-between text-[8px] md:text-[10px] uppercase font-bold text-gray-300 w-full mt-2">
+                            <div className="pt-1 md:pt-4 border-t border-gray-100 flex justify-between text-[8px] md:text-[10px] uppercase font-bold text-gray-300 w-full mt-2">
                                 <span>Lectura Temprana</span><span>Página {idx + 1}</span>
                             </div>
                         </div>
@@ -386,7 +386,7 @@
                     return (
                         <div className={`relative flex flex-col items-center justify-center bg-gradient-to-br from-yellow-50 via-white to-amber-50 ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-3 md:p-8 shadow-inner border-l-4 border-yellow-200 overflow-hidden'}`}>
                             <div className="text-center space-y-3 md:space-y-5">
-                                <div className="text-4xl md:text-6xl animate-bounce">🏆</div>
+                                <div className="text-2xl md:text-6xl animate-bounce">🏆</div>
                                 <h2 className="text-2xl md:text-4xl font-black text-gray-800">{data.title}</h2>
                                 <p className="text-sm md:text-lg text-gray-500">{data.footer}</p>
                                 <div className="relative inline-block">
@@ -410,19 +410,19 @@
                 return (
                     <div className={`relative flex flex-col items-center justify-between bg-white ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-1 md:p-10 shadow-none md:shadow-inner border-0 md:border-l-4 border-gray-100 overflow-hidden'}`}>
                         <div className="text-center w-full flex-shrink-0">
-                            <h2 className="text-4xl md:text-6xl font-bold text-gray-800 mb-1 md:mb-3 leading-tight">
+                            <h2 className="text-2xl md:text-6xl font-bold text-gray-800 mb-0 md:mb-3 leading-tight">
                                 {isPrint ? data.title : <HighlightedText text={data.title} start={0} />}
                             </h2>
                             {idx === 0 && (
-                                <div className="flex items-center justify-center gap-2 mt-1">
+                                <div className="hidden md:flex items-center justify-center gap-2 mt-1">
                                     <img src={BOOK_CONFIG.logoUrl} className="h-4 md:h-6 object-contain" />
                                     <span className="text-blue-600 text-[8px] md:text-[10px] font-bold uppercase tracking-widest">{BOOK_CONFIG.schoolName}</span>
                                 </div>
                             )}
                         </div>
-                        <div className="flex-1 flex items-center justify-center w-full my-1 md:my-4 min-h-0">
+                        <div className="flex-1 flex items-center justify-center w-full my-0 md:my-4 min-h-0">
                             {images[idx] ? (
-                                <img src={images[idx]} className="max-h-[60vh] md:max-h-[70vh] max-w-full object-contain drop-shadow-xl" />
+                                <img src={images[idx]} className="max-h-[65vh] md:max-h-[70vh] max-w-full object-contain drop-shadow-xl" />
                             ) : (
                                 <div className="flex flex-col items-center gap-2">
                                     <Icons.Loader size={32} className="text-blue-200" />
@@ -436,7 +436,7 @@
                                     {isPrint ? data.footer : <HighlightedText text={data.footer} start={titleCount} />}
                                 </p>
                             </div>
-                            <div className="pt-2 md:pt-4 border-t border-gray-100 flex justify-between text-[8px] md:text-[10px] uppercase font-bold text-gray-300">
+                            <div className="pt-1 md:pt-4 border-t border-gray-100 flex justify-between text-[8px] md:text-[10px] uppercase font-bold text-gray-300">
                                 <span>Lectura Temprana</span><span>Página {idx + 1}</span>
                             </div>
                         </div>
@@ -447,7 +447,7 @@
             return (
                 <div className="min-h-screen flex flex-col text-slate-900 overflow-hidden">
                     {showBadgePopup && <BadgePopup badges={allBadges} onClose={() => setShowBadgePopup(false)} />}
-                    <header className="bg-white p-1 md:p-4 sticky top-0 z-50 flex flex-wrap justify-center items-center px-4 md:px-8 shadow-sm border-b gap-2">
+                    <header className="hidden md:flex bg-white p-4 sticky top-0 z-50 flex-wrap justify-center items-center px-4 md:px-8 shadow-sm border-b gap-2">
                         <div className="flex items-center gap-3">
                             <img src={BOOK_CONFIG.logoUrl} className="h-8 w-8 md:h-10 md:w-10 object-contain rounded-full bg-slate-50 p-1" />
                             <div>
@@ -469,7 +469,7 @@
                     {/* Read to Me button - between header and book */}
                     {viewMode === 'preview' && (
                         <div className="flex justify-center py-1 md:py-2">
-                            <button onClick={() => readPage(true)} className={`flex items-center gap-3 px-8 md:px-10 py-3 md:py-4 rounded-2xl text-lg md:text-xl font-black transition shadow-2xl ${isAutoAdvancing ? "bg-red-500 text-white hover:bg-red-600 animate-pulse" : "bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 active:scale-95"}`}>
+                            <button onClick={() => readPage(true)} className={`flex items-center gap-2 md:gap-3 px-6 md:px-10 py-2 md:py-4 rounded-xl md:rounded-2xl text-base md:text-xl font-black transition shadow-2xl ${isAutoAdvancing ? "bg-red-500 text-white hover:bg-red-600 animate-pulse" : "bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 active:scale-95"}`}>
                                 {isAutoAdvancing ? <Icons.Stop size={24} /> : <Icons.Play size={24} />}
                                 {isAutoAdvancing ? "Stop" : "📖 Read to Me"}
                             </button>
