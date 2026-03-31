@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Formas Mágicas</title>
+    <style>
+        body { font-family: 'Sour Gummy', sans-serif; text-align: center; background: #fffaf0; }
+        .page { display: none; padding: 20px; }
+        .page.active { display: block; }
+        img { max-width: 100%; height: auto; border-radius: 15px; }
+        button { padding: 10px 20px; font-size: 1.2rem; cursor: pointer; border-radius: 10px; border: none; background: #667eea; color: white; }
+    </style>
+</head>
+<body>
+    <div id="book-container">
+        <!-- Page 1 -->
+        <div class="page active">
+            <h1>Las Formas Mágicas</h1>
+            <p>¡Vamos a descubrir las formas!</p>
+        </div>
+        <!-- Page 2 -->
+        <div class="page">
+            <p>Este es un <b>círculo</b> rojo. Es redondo como el sol.</p>
+        </div>
+        <!-- Page 3 -->
+        <div class="page">
+            <p>Este es un <b>cuadrado</b> azul. Tiene cuatro lados iguales.</p>
+        </div>
+        <!-- Page 4 -->
+        <div class="page">
+            <p>Este es un <b>triángulo</b> verde. Tiene tres lados.</p>
+        </div>
+        <!-- Page 5 -->
+        <div class="page">
+            <p>Este es un <b>rectángulo</b> amarillo. Es largo como un tren.</p>
+        </div>
+        <!-- Page 6 -->
+        <div class="page">
+            <p>¡Mira esa <b>estrella</b> brillante en el cielo!</p>
+        </div>
+        <!-- Page 7 -->
+        <div class="page">
+            <p>¡Y aquí tengo un <b>corazón</b> para ti!</p>
+        </div>
+        <!-- Page 8 -->
+        <div class="page">
+            <p>¡Qué divertido es aprender las formas!</p>
+        </div>
+    </div>
+    <br>
+    <button onclick="nextPage()">Siguiente</button>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        function nextPage() {
+            pages[currentPage].classList.remove('active');
+            currentPage = (currentPage + 1) % pages.length;
+            pages[currentPage].classList.add('active');
+            window.parent.postMessage({type: 'resize', height: document.body.scrollHeight}, '*');
+        }
+    </script>
+</body>
+</html>
