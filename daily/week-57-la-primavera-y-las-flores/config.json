@@ -1,0 +1,88 @@
+{
+  "week": 57,
+  "title": "La Primavera y las Flores",
+  "title_en": "Spring and Flowers",
+  "topic": "spring-flowers",
+  "category": "seasonal-nature",
+  "age_range": "2-5",
+  "language": "Spanish",
+  "educational_focus": [
+    "Vocabulary: flower names in Spanish",
+    "Nature appreciation and observation",
+    "Seasonal changes (spring)",
+    "Colors and counting",
+    "Life cycles (planting and growing)",
+    "Environmental awareness"
+  ],
+  "key_vocabulary": [
+    "primavera (spring)",
+    "flores (flowers)",
+    "tulipán (tulip)",
+    "girasol (sunflower)",
+    "rosa (rose)",
+    "margarita (daisy)",
+    "mariposa (butterfly)",
+    "abeja (bee)",
+    "plantar (to plant)",
+    "crecer (to grow)"
+  ],
+  "pages": 10,
+  "created_date": "2026-03-31",
+  "dall_e_prompts": [
+    {
+      "page": 1,
+      "prompt": "A beautiful spring landscape with bright sun, clear blue sky, blooming trees with pink and white flowers, colorful butterflies flying, and a green field full of colorful wildflowers. Cheerful, vibrant children's book illustration style, warm and inviting, perfect for preschoolers."
+    },
+    {
+      "page": 2,
+      "prompt": "A vibrant garden with red, yellow, and pink tulips growing in neat rows, with sparkling dew drops on their petals under the morning sun. Children's book illustration style, bright colors, simple shapes, educational and engaging for ages 2-5."
+    },
+    {
+      "page": 3,
+      "prompt": "White daisies with bright yellow centers in a green field, with a friendly smiling bee flying from flower to flower collecting pollen. Whimsical children's book art, soft edges, happy colors, preschool appropriate."
+    },
+    {
+      "page": 4,
+      "prompt": "Enormous bright sunflowers facing the sun, as tall as a small child would be, with golden yellow petals and brown seed-filled centers. Children's book illustration, cheerful and sunny, educational perspective showing scale and beauty."
+    },
+    {
+      "page": 5,
+      "prompt": "Beautiful roses of different colors - red, pink, white, and yellow - in a lovely garden, with visible thorns on stems and water droplets on petals. Gentle children's book style, teaching beauty and caution, preschool-friendly illustration."
+    },
+    {
+      "page": 6,
+      "prompt": "Colorful butterflies - orange monarch, blue morpho, and yellow swallowtail - flying among purple, pink and white wildflowers in a sunny meadow. Magical children's book illustration, movement and joy, nature appreciation theme for young children."
+    },
+    {
+      "page": 7,
+      "prompt": "Diverse happy children planting flowers in a community garden - digging with small shovels, watering with colorful watering cans, and putting seeds in the soil. Inclusive children's book illustration, educational activity scene, warm and encouraging for preschoolers."
+    },
+    {
+      "page": 8,
+      "prompt": "A magical spring garden with flowers of every color of the rainbow, butterflies, bees, singing birds, children playing and smelling flowers, all under a bright blue sky with white fluffy clouds. Celebratory children's book illustration, joyful and inspiring, perfect finale for a preschool book."
+    }
+  ],
+  "interactive_elements": [
+    "Counting tulips (page 2)",
+    "Stretching like a tall sunflower (page 4)",
+    "Flying like a butterfly (page 6)",
+    "Vocabulary practice grid (page 9)",
+    "Outdoor exploration activities (page 10)"
+  ],
+  "themes": [
+    "Spring season",
+    "Nature and flowers",
+    "Colors and beauty",
+    "Growth and planting",
+    "Insects and pollination",
+    "Outdoor activities"
+  ],
+  "learning_outcomes": [
+    "Learn Spanish names for common flowers",
+    "Understand spring as a season of growth",
+    "Recognize different flower types and colors",
+    "Appreciate nature and outdoor exploration",
+    "Practice counting and observation skills",
+    "Learn about planting and caring for plants"
+  ]
+}
