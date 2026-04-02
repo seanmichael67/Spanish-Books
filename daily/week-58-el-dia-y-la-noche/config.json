@@ -1,0 +1,99 @@
+{
+  "title": "El Día y la Noche",
+  "subtitle": "Una aventura del cielo",
+  "week": 58,
+  "topic": "el-dia-y-la-noche",
+  "category": "Science & Nature",
+  "age_range": "2-5 años",
+  "language": "Spanish",
+  "total_pages": 8,
+  "learning_objectives": [
+    "Comprender el ciclo del día y la noche",
+    "Identificar el sol, la luna y las estrellas",
+    "Aprender sobre rutinas diarias (mañana, tarde, noche)",
+    "Reconocer cambios en el cielo y el ambiente",
+    "Vocabulario: sol, luna, estrellas, día, noche, amanecer, atardecer"
+  ],
+  "interactive_elements": [
+    "sol", "luz", "mariposas", "flores", "almorzar",
+    "naranja", "morado", "luna", "estrellas", "pijama",
+    "cuento", "besito", "buenas noches"
+  ],
+  "image_prompts": [
+    {
+      "page": 1,
+      "prompt": "Children's book illustration in warm, friendly style: A bright smiling sun with cheerful face shining over a vibrant landscape. Children playing happily in a sunny park with colorful flowers blooming, birds flying in a clear blue sky. Cartoon style, soft colors, preschool appropriate, joyful and inviting atmosphere.",
+      "description": "El sol brillante y niños jugando en el día"
+    },
+    {
+      "page": 2,
+      "prompt": "Children's book illustration in playful style: Happy children running, jumping and playing in a sunny garden. Colorful butterflies flying around, flowers fully open receiving sunlight. Trees, grass, bright blue sky. Cartoon style, vibrant colors, movement and energy, preschool appropriate.",
+      "description": "Niños jugando con mariposas y flores"
+    },
+    {
+      "page": 3,
+      "prompt": "Children's book illustration in warm style: A family having lunch together outdoors under the midday sun. A clock showing 12:00 noon, short shadows under the trees. Happy faces, food on table, bright sunlight from above. Cartoon style, warm colors, family-friendly, preschool appropriate.",
+      "description": "Familia almorzando al mediodía"
+    },
+    {
+      "page": 4,
+      "prompt": "Children's book illustration in beautiful sunset colors: The sun setting on the horizon with sky painted in orange, pink and purple hues. Clouds glowing with beautiful colors, silhouettes of trees. Peaceful and magical atmosphere. Cartoon style, gradient colors, stunning sunset view, preschool appropriate.",
+      "description": "Atardecer con colores hermosos"
+    },
+    {
+      "page": 5,
+      "prompt": "Children's book illustration in night theme: A full smiling moon with gentle face in dark blue night sky filled with twinkling bright stars. Owls perched in trees, fireflies glowing. Peaceful nighttime scene. Cartoon style, deep blue and yellow lights, magical and calming, preschool appropriate.",
+      "description": "La luna y estrellas en la noche"
+    },
+    {
+      "page": 6,
+      "prompt": "Children's book illustration in bedtime routine style: Children in colorful pajamas brushing teeth, taking a bath, getting ready for bed. A window showing starry night sky and moon outside. Bathroom and bedroom setting, nighttime routine. Cartoon style, soft nighttime colors, cozy atmosphere, preschool appropriate.",
+      "description": "Niños preparándose para dormir"
+    },
+    {
+      "page": 7,
+      "prompt": "Children's book illustration in cozy bedtime style: A mother reading a storybook to her child in bed at night. Soft nightlight glowing, stuffed animals around, window showing moon and stars outside. Warm and tender moment. Cartoon style, soft warm lighting, peaceful and loving atmosphere, preschool appropriate.",
+      "description": "Mamá leyendo un cuento de buenas noches"
+    },
+    {
+      "page": 8,
+      "prompt": "Children's book illustration in dreamy style: A child sleeping peacefully in bed with a sweet smile, dreaming of clouds and stars floating above. Through the window, the first rays of sunrise beginning to appear with soft golden light. Transition from night to day. Cartoon style, soft colors, magical and peaceful, preschool appropriate.",
+      "description": "Niño durmiendo mientras comienza un nuevo día"
+    }
+  ],
+  "vocabulary_words": [
+    {"spanish": "el sol", "english": "the sun"},
+    {"spanish": "la luna", "english": "the moon"},
+    {"spanish": "las estrellas", "english": "the stars"},
+    {"spanish": "el día", "english": "the day"},
+    {"spanish": "la noche", "english": "the night"},
+    {"spanish": "el amanecer", "english": "the dawn/sunrise"},
+    {"spanish": "el atardecer", "english": "the sunset"},
+    {"spanish": "el cielo", "english": "the sky"},
+    {"spanish": "brillar", "english": "to shine"},
+    {"spanish": "dormir", "english": "to sleep"},
+    {"spanish": "la luz", "english": "the light"},
+    {"spanish": "oscuro", "english": "dark"},
+    {"spanish": "la pijama", "english": "pajamas"},
+    {"spanish": "el mediodía", "english": "noon"}
+  ],
+  "discussion_questions": [
+    "¿Qué ves en el cielo durante el día?",
+    "¿Qué ves en el cielo durante la noche?",
+    "¿Cuál es tu parte favorita del día?",
+    "¿Qué haces antes de dormir?",
+    "¿Has visto las estrellas en la noche?",
+    "¿De qué color es el cielo en el atardecer?"
+  ],
+  "extension_activities": [
+    "Dibujar el sol, la luna y las estrellas",
+    "Hacer un reloj de rutinas diarias (mañana, tarde, noche)",
+    "Observar el cielo a diferentes horas del día",
+    "Cantar canciones sobre el sol y la luna",
+    "Crear un móvil con estrellas y luna",
+    "Comparar sombras al mediodía y por la tarde"
+  ],
+  "created_date": "2026-04-01",
+  "created_by": "Luna 📚",
+  "status": "published"
+}

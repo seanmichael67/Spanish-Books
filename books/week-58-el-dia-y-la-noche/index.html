@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Día y la Noche - Beibei Amigos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FDB813 0%, #FF8C00 100%);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 500px;
+            background: linear-gradient(to bottom, #ffffff 0%, #f8f9ff 100%);
+        }
+        
+        .page.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-content {
+            text-align: center;
+        }
+        
+        .page-image {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: 20px auto;
+            border-radius: 15px;
+            background: #e0e7ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            color: #666;
+            border: 3px dashed #999;
+        }
+        
+        .page-text {
+            font-size: 1.8em;
+            line-height: 1.6;
+            color: #2d3748;
+            margin: 25px 0;
+            padding: 0 20px;
+        }
+        
+        .page-number {
+            text-align: center;
+            color: #718096;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            background: #f7fafc;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        .nav-button {
+            padding: 15px 35px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        .nav-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .nav-button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        
+        .prev-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .next-button {
+            background: linear-gradient(135deg, #FDB813 0%, #FF8C00 100%);
+            color: white;
+        }
+        
+        .interactive-element {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            color: white;
+            border-radius: 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
+        .interactive-element:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .emoji {
+            font-size: 1.3em;
+            margin: 0 5px;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .page-text {
+                font-size: 1.4em;
+            }
+            
+            .page-image {
+                height: 300px;
+            }
+            
+            .nav-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="header">
+            <h1>🌞 El Día y la Noche 🌙</h1>
+            <p>Una aventura del cielo</p>
+        </div>
+
+        <!-- Page 1 -->
+        <div class="page active" id="page1">
+            <div class="page-content">
+                <div class="page-image">[Imagen: El sol brillante sonriendo sobre un paisaje vibrante con niños jugando en un parque, flores coloridas y pájaros volando en el cielo azul]</div>
+                <div class="page-text">
+                    Cada mañana, el <span class="interactive-element">☀️ sol</span> se despierta y brilla en el cielo.
+                    <br><br>
+                    El día comienza lleno de <span class="interactive-element">✨ luz</span> y calor.
+                </div>
+                <div class="page-number">Página 1</div>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page" id="page2">
+            <div class="page-content">
+                <div class="page-image">[Imagen: Niños felices corriendo, saltando y jugando en un jardín soleado, con mariposas volando y flores abiertas recibiendo la luz del sol]</div>
+                <div class="page-text">
+                    Durante el día, jugamos y exploramos.
+                    <br><br>
+                    Las <span class="interactive-element">🦋 mariposas</span> vuelan y las <span class="interactive-element">🌸 flores</span> se abren.
+                </div>
+                <div class="page-number">Página 2</div>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page" id="page3">
+            <div class="page-content">
+                <div class="page-image">[Imagen: Una familia almorzando juntos bajo el sol del mediodía, con un reloj mostrando las 12:00 y sombras cortas bajo los árboles]</div>
+                <div class="page-text">
+                    Al mediodía, el sol está alto en el cielo.
+                    <br><br>
+                    Es hora de <span class="interactive-element">🍽️ almorzar</span> y descansar un poco.
+                </div>
+                <div class="page-number">Página 3</div>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page" id="page4">
+            <div class="page-content">
+                <div class="page-image">[Imagen: El atardecer con el cielo pintado en naranja, rosa y morado, el sol bajando hacia el horizonte mientras las nubes brillan con colores hermosos]</div>
+                <div class="page-text">
+                    Por la tarde, el sol comienza a bajar.
+                    <br><br>
+                    El cielo se pinta de <span class="interactive-element">🧡 naranja</span> y <span class="interactive-element">💜 morado</span>.
+                </div>
+                <div class="page-number">Página 4</div>
+            </div>
+        </div>
+
+        <!-- Page 5 -->
+        <div class="page" id="page5">
+            <div class="page-content">
+                <div class="page-image">[Imagen: La luna llena sonriendo en un cielo oscuro lleno de estrellas brillantes, con búhos en los árboles y luciérnagas iluminando la noche]</div>
+                <div class="page-text">
+                    Cuando llega la noche, aparece la <span class="interactive-element">🌙 luna</span>.
+                    <br><br>
+                    Las <span class="interactive-element">⭐ estrellas</span> comienzan a brillar en el cielo oscuro.
+                </div>
+                <div class="page-number">Página 5</div>
+            </div>
+        </div>
+
+        <!-- Page 6 -->
+        <div class="page" id="page6">
+            <div class="page-content">
+                <div class="page-image">[Imagen: Niños en pijamas cepillándose los dientes, bañándose y preparándose para dormir, con una ventana mostrando la noche estrellada]</div>
+                <div class="page-text">
+                    Por la noche, nos preparamos para dormir.
+                    <br><br>
+                    Nos ponemos la <span class="interactive-element">👚 pijama</span> y nos lavamos los dientes.
+                </div>
+                <div class="page-number">Página 6</div>
+            </div>
+        </div>
+
+        <!-- Page 7 -->
+        <div class="page" id="page7">
+            <div class="page-content">
+                <div class="page-image">[Imagen: Una mamá leyendo un cuento a su hijo en la cama, con una lámpara nocturna suave, peluches alrededor y la ventana mostrando la luna y estrellas]</div>
+                <div class="page-text">
+                    Mamá o papá nos leen un <span class="interactive-element">📚 cuento</span>.
+                    <br><br>
+                    Nos damos un <span class="interactive-element">😘 besito</span> de buenas noches.
+                </div>
+                <div class="page-number">Página 7</div>
+            </div>
+        </div>
+
+        <!-- Page 8 -->
+        <div class="page" id="page8">
+            <div class="page-content">
+                <div class="page-image">[Imagen: Un niño durmiendo pacíficamente en su cama con una sonrisa, soñando con nubes y estrellas, mientras por la ventana se ve el amanecer comenzando con los primeros rayos del sol]</div>
+                <div class="page-text">
+                    Mientras dormimos, la Tierra gira y gira.
+                    <br><br>
+                    Pronto el <span class="interactive-element">🌅 sol</span> volverá a salir, ¡y comenzará un nuevo día!
+                    <br><br>
+                    <span class="interactive-element">💤 ¡Buenas noches! 💤</span>
+                </div>
+                <div class="page-number">Página 8</div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button prev-button" onclick="previousPage()" id="prevBtn" disabled>
+                ← Anterior
+            </button>
+            <button class="nav-button next-button" onclick="nextPage()" id="nextBtn">
+                Siguiente →
+            </button>
+        </div>
+
+        <div class="footer">
+            <p>📚 Beibei Amigos Language Preschool - Libro Semanal #58</p>
+            <p>www.beibeiamigos.com</p>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 8;
+
+        function showPage(pageNumber) {
+            // Hide all pages
+            for (let i = 1; i <= totalPages; i++) {
+                document.getElementById('page' + i).classList.remove('active');
+            }
+            
+            // Show current page
+            document.getElementById('page' + pageNumber).classList.add('active');
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = (pageNumber === 1);
+            document.getElementById('nextBtn').disabled = (pageNumber === totalPages);
+            
+            // Update button text for last page
+            if (pageNumber === totalPages) {
+                document.getElementById('nextBtn').textContent = '¡Fin! 🎉';
+            } else {
+                document.getElementById('nextBtn').textContent = 'Siguiente →';
+            }
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function previousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight') {
+                nextPage();
+            } else if (event.key === 'ArrowLeft') {
+                previousPage();
+            }
+        });
+
+        // Interactive elements sound effect (optional)
+        document.querySelectorAll('.interactive-element').forEach(element => {
+            element.addEventListener('click', function() {
+                this.style.transform = 'scale(1.2) rotate(5deg)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1.1) rotate(2deg)';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
