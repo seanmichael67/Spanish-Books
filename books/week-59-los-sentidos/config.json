@@ -1,0 +1,115 @@
+{
+  "title": "Los Cinco Sentidos",
+  "subtitle": "Descubre cómo exploramos el mundo",
+  "week": 59,
+  "topic": "los-sentidos",
+  "category": "Science & Body Awareness",
+  "age_range": "2-5 años",
+  "language": "Spanish",
+  "total_pages": 10,
+  "learning_objectives": [
+    "Identificar los cinco sentidos: vista, oído, olfato, gusto, tacto",
+    "Comprender cómo usamos cada sentido en la vida diaria",
+    "Asociar órganos sensoriales con sus funciones (ojos-ver, oídos-escuchar, etc.)",
+    "Explorar el vocabulario sensorial (suave, áspero, dulce, salado, etc.)",
+    "Desarrollar conciencia del cuerpo y sus capacidades"
+  ],
+  "interactive_elements": [
+    "ojos", "ver", "arcoíris", "colores", "oídos", "escuchar",
+    "música", "nariz", "oler", "flores", "pan", "lengua", "probar",
+    "frutas", "dulce", "agrio", "manos", "tocar", "suave", "áspero"
+  ],
+  "image_prompts": [
+    {
+      "page": 1,
+      "prompt": "Children's book illustration in bright educational style: A diverse group of happy preschool children exploring the world with wonder, each child using different senses - one looking at a rainbow, one listening to music, one smelling flowers, one tasting food, one touching soft textures. Colorful, joyful, engaging. Cartoon style, vibrant colors, preschool appropriate.",
+      "description": "Niños descubriendo el mundo con sus sentidos"
+    },
+    {
+      "page": 2,
+      "prompt": "Children's book illustration in colorful style: Close-up of a child's smiling face with big bright eyes wide open, looking at a beautiful rainbow in the sky. Sparkling eyes full of wonder, rainbow with vivid colors, butterflies and birds flying. Cartoon style, emphasis on expressive eyes, magical discovery moment, preschool appropriate.",
+      "description": "Una niña viendo un arcoíris con sus ojos"
+    },
+    {
+      "page": 3,
+      "prompt": "Children's book illustration in musical theme: A child with hands cupped behind ears, listening with delight to birds singing in trees, musical notes floating in the air. Other children playing instruments in the background - drums, tambourines, bells. Happy expressions. Cartoon style, soft musical colors, joyful sounds visualization, preschool appropriate.",
+      "description": "Niños escuchando música y sonidos de la naturaleza"
+    },
+    {
+      "page": 4,
+      "prompt": "Children's book illustration in aromatic garden style: A child leaning down to smell colorful flowers in a garden - roses, sunflowers, daisies. Visible aroma lines wafting from flowers. Another child smelling freshly baked bread from a bakery window with visible steam swirls. Happy smiling faces. Cartoon style, warm inviting colors, preschool appropriate.",
+      "description": "Niños oliendo flores y pan fresco"
+    },
+    {
+      "page": 5,
+      "prompt": "Children's book illustration in tasty food style: Children sitting at a colorful table tasting different fruits and foods - strawberries, lemons, watermelon, apples. Facial expressions showing different tastes: sweet smiles, sour pucker faces. Variety of colorful healthy foods on plates. Cartoon style, bright appetizing colors, expressive faces, preschool appropriate.",
+      "description": "Niños probando diferentes sabores de frutas"
+    },
+    {
+      "page": 6,
+      "prompt": "Children's book illustration in texture exploration style: Close-up of children's hands touching different textures - one hand petting a soft fluffy bunny, another touching rough tree bark, another feeling smooth silk fabric, another touching bumpy pinecones. Tactile sensations emphasized. Cartoon style, variety of textures visible, warm colors, preschool appropriate.",
+      "description": "Manos tocando texturas diferentes: suave y áspero"
+    },
+    {
+      "page": 7,
+      "prompt": "Children's book illustration in fun learning style: A child looking at bright flowers (eyes), listening to bells (ears with musical notes), smelling cookies (nose with aroma swirls), tasting apple (tongue/mouth), and touching teddy bear (hands). All five senses shown simultaneously in a circular composition around the happy child. Cartoon style, educational and playful, preschool appropriate.",
+      "description": "Todos los cinco sentidos juntos"
+    },
+    {
+      "page": 8,
+      "prompt": "Children's book illustration in playful style: Children playing in a park using all their senses - watching kites fly, listening to ice cream truck music, smelling picnic food, tasting treats, feeling grass and flowers. Active outdoor scene, everyone engaged and happy. Cartoon style, vibrant park setting, joyful activities, preschool appropriate.",
+      "description": "Niños usando sus sentidos en el parque"
+    },
+    {
+      "page": 9,
+      "prompt": "Children's book illustration in bedtime calm style: A child in cozy pajamas before bed, looking at stars through window (sight), listening to lullaby (hearing), smelling lavender pillow (smell), tasting warm milk (taste), hugging soft stuffed animal (touch). Peaceful nighttime routine incorporating all senses. Cartoon style, soft calming colors, preschool appropriate.",
+      "description": "Usando los sentidos antes de dormir"
+    },
+    {
+      "page": 10,
+      "prompt": "Children's book illustration in celebration style: A group of diverse happy children in a circle, each pointing to eyes, ears, nose, mouth, and hands with big smiles, celebrating their amazing senses. Sparkles and stars around them, rainbow in background. Triumphant and joyful mood. Cartoon style, festive bright colors, inclusive representation, preschool appropriate.",
+      "description": "Celebrando nuestros maravillosos cinco sentidos"
+    }
+  ],
+  "vocabulary_words": [
+    {"spanish": "los sentidos", "english": "the senses"},
+    {"spanish": "la vista", "english": "sight"},
+    {"spanish": "el oído", "english": "hearing"},
+    {"spanish": "el olfato", "english": "smell"},
+    {"spanish": "el gusto", "english": "taste"},
+    {"spanish": "el tacto", "english": "touch"},
+    {"spanish": "los ojos", "english": "the eyes"},
+    {"spanish": "las orejas", "english": "the ears"},
+    {"spanish": "la nariz", "english": "the nose"},
+    {"spanish": "la lengua", "english": "the tongue"},
+    {"spanish": "las manos", "english": "the hands"},
+    {"spanish": "ver", "english": "to see"},
+    {"spanish": "escuchar", "english": "to listen/hear"},
+    {"spanish": "oler", "english": "to smell"},
+    {"spanish": "probar", "english": "to taste"},
+    {"spanish": "tocar", "english": "to touch"},
+    {"spanish": "suave", "english": "soft"},
+    {"spanish": "áspero", "english": "rough"},
+    {"spanish": "dulce", "english": "sweet"},
+    {"spanish": "agrio", "english": "sour"}
+  ],
+  "discussion_questions": [
+    "¿Con qué parte del cuerpo vemos?",
+    "¿Cuál es tu color favorito que ves?",
+    "¿Qué sonidos te gustan escuchar?",
+    "¿Cuál es tu comida favorita? ¿Cómo sabe?",
+    "¿Qué cosas son suaves? ¿Qué cosas son ásperas?",
+    "¿Cuál es tu sentido favorito? ¿Por qué?"
+  ],
+  "extension_activities": [
+    "Caja de misterio: tocar objetos sin verlos y adivinar qué son",
+    "Prueba de sabores: dulce, salado, agrio, amargo",
+    "Caminar con ojos cerrados guiados por sonidos",
+    "Juego de olores: identificar frutas y flores por el olfato",
+    "Collage de texturas: pegar materiales suaves y ásperos",
+    "Dibujar lo que vemos, oímos, olemos, probamos y tocamos"
+  ],
+  "created_date": "2026-04-02",
+  "created_by": "Luna 📚",
+  "status": "published"
+}

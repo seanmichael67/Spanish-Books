@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Cinco Sentidos - Libro Interactivo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .page {
+            padding: 40px;
+            min-height: 600px;
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .page-number {
+            color: #764ba2;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .page-title {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .page-subtitle {
+            color: #667eea;
+            font-size: 18px;
+            font-style: italic;
+        }
+        
+        .page-content {
+            font-size: 24px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .page-content p {
+            margin-bottom: 20px;
+        }
+        
+        .interactive-word {
+            color: #e74c3c;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .interactive-word:hover {
+            background: #ffe74c;
+            transform: scale(1.1);
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            border: 4px solid #764ba2;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image-placeholder::before {
+            content: '🎨';
+            font-size: 80px;
+            opacity: 0.3;
+        }
+        
+        .image-description {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-top: 2px solid #dee2e6;
+        }
+        
+        .nav-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .nav-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s;
+        }
+        
+        @media (max-width: 768px) {
+            .page {
+                padding: 20px;
+                min-height: auto;
+            }
+            
+            .page-title {
+                font-size: 24px;
+            }
+            
+            .page-content {
+                font-size: 20px;
+            }
+            
+            .navigation {
+                padding: 15px 20px;
+            }
+            
+            .nav-button {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+        }
+        
+        .cover-page {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+        }
+        
+        .cover-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+        }
+        
+        .cover-subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cover-icon {
+            font-size: 120px;
+            margin: 30px 0;
+        }
+        
+        .cover-info {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+        
+        <!-- Cover Page -->
+        <div class="page active cover-page" data-page="0">
+            <div class="cover-icon">👁️👂👃👅🖐️</div>
+            <h1 class="cover-title">Los Cinco Sentidos</h1>
+            <p class="cover-subtitle">Descubre cómo exploramos el mundo</p>
+            <p class="cover-info">Para niños de 2-5 años • Semana 59</p>
+        </div>
+        
+        <!-- Page 1 -->
+        <div class="page" data-page="1">
+            <div class="page-header">
+                <div class="page-number">Página 1 de 10</div>
+                <h2 class="page-title">¡Hola, Pequeño Explorador!</h2>
+            </div>
+            <div class="page-content">
+                <p>¿Sabías que tienes <span class="interactive-word">cinco sentidos</span> mágicos?</p>
+                <p>Con ellos puedes <span class="interactive-word">ver</span> el arcoíris, <span class="interactive-word">escuchar</span> la música, <span class="interactive-word">oler</span> las flores, <span class="interactive-word">probar</span> frutas deliciosas, y <span class="interactive-word">tocar</span> cosas suaves.</p>
+                <p>¡Vamos a descubrir cómo funcionan!</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Niños descubriendo el mundo con sus sentidos</div>
+        </div>
+        
+        <!-- Page 2 -->
+        <div class="page" data-page="2">
+            <div class="page-header">
+                <div class="page-number">Página 2 de 10</div>
+                <h2 class="page-title">La Vista - Con Mis Ojos</h2>
+            </div>
+            <div class="page-content">
+                <p>Mis <span class="interactive-word">ojos</span> me ayudan a <span class="interactive-word">ver</span> el mundo.</p>
+                <p>Veo el hermoso <span class="interactive-word">arcoíris</span> después de la lluvia.</p>
+                <p>Veo los <span class="interactive-word">colores</span>: rojo, azul, amarillo, verde...</p>
+                <p>¡Mis ojos ven cosas bonitas cada día!</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Una niña viendo un arcoíris con sus ojos</div>
+        </div>
+        
+        <!-- Page 3 -->
+        <div class="page" data-page="3">
+            <div class="page-header">
+                <div class="page-number">Página 3 de 10</div>
+                <h2 class="page-title">El Oído - Con Mis Orejas</h2>
+            </div>
+            <div class="page-content">
+                <p>Mis <span class="interactive-word">oídos</span> me ayudan a <span class="interactive-word">escuchar</span> los sonidos.</p>
+                <p>Escucho la <span class="interactive-word">música</span> que me hace bailar.</p>
+                <p>Escucho los pájaros que cantan: "¡pío, pío, pío!"</p>
+                <p>¡Mis oídos escuchan sonidos maravillosos!</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Niños escuchando música y sonidos de la naturaleza</div>
+        </div>
+        
+        <!-- Page 4 -->
+        <div class="page" data-page="4">
+            <div class="page-header">
+                <div class="page-number">Página 4 de 10</div>
+                <h2 class="page-title">El Olfato - Con Mi Nariz</h2>
+            </div>
+            <div class="page-content">
+                <p>Mi <span class="interactive-word">nariz</span> me ayuda a <span class="interactive-word">oler</span> los aromas.</p>
+                <p>Huelo las <span class="interactive-word">flores</span> del jardín: ¡qué ricas!</p>
+                <p>Huelo el <span class="interactive-word">pan</span> recién horneado: ¡mmm, delicioso!</p>
+                <p>¡Mi nariz huele cosas que me gustan!</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Niños oliendo flores y pan fresco</div>
+        </div>
+        
+        <!-- Page 5 -->
+        <div class="page" data-page="5">
+            <div class="page-header">
+                <div class="page-number">Página 5 de 10</div>
+                <h2 class="page-title">El Gusto - Con Mi Lengua</h2>
+            </div>
+            <div class="page-content">
+                <p>Mi <span class="interactive-word">lengua</span> me ayuda a <span class="interactive-word">probar</span> los sabores.</p>
+                <p>Pruebo <span class="interactive-word">frutas</span> ricas: fresas, manzanas, sandía...</p>
+                <p>Algunas son <span class="interactive-word">dulces</span> como la miel.</p>
+                <p>Otras son <span class="interactive-word">agrias</span> como el limón. ¡Ay!</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Niños probando diferentes sabores de frutas</div>
+        </div>
+        
+        <!-- Page 6 -->
+        <div class="page" data-page="6">
+            <div class="page-header">
+                <div class="page-number">Página 6 de 10</div>
+                <h2 class="page-title">El Tacto - Con Mis Manos</h2>
+            </div>
+            <div class="page-content">
+                <p>Mis <span class="interactive-word">manos</span> me ayudan a <span class="interactive-word">tocar</span> las cosas.</p>
+                <p>Toco un conejito: ¡qué <span class="interactive-word">suave</span>!</p>
+                <p>Toco la corteza de un árbol: ¡qué <span class="interactive-word">áspero</span>!</p>
+                <p>¡Mis manos sienten todo lo que toco!</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Manos tocando texturas diferentes: suave y áspero</div>
+        </div>
+        
+        <!-- Page 7 -->
+        <div class="page" data-page="7">
+            <div class="page-header">
+                <div class="page-number">Página 7 de 10</div>
+                <h2 class="page-title">¡Los Cinco Sentidos Juntos!</h2>
+            </div>
+            <div class="page-content">
+                <p>Uso mis <span class="interactive-word">ojos</span> para ver.</p>
+                <p>Uso mis <span class="interactive-word">oídos</span> para escuchar.</p>
+                <p>Uso mi <span class="interactive-word">nariz</span> para oler.</p>
+                <p>Uso mi <span class="interactive-word">lengua</span> para probar.</p>
+                <p>Uso mis <span class="interactive-word">manos</span> para tocar.</p>
+                <p>¡Son mis cinco sentidos mágicos!</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Todos los cinco sentidos juntos</div>
+        </div>
+        
+        <!-- Page 8 -->
+        <div class="page" data-page="8">
+            <div class="page-header">
+                <div class="page-number">Página 8 de 10</div>
+                <h2 class="page-title">Explorando en el Parque</h2>
+            </div>
+            <div class="page-content">
+                <p>En el parque uso todos mis sentidos.</p>
+                <p><span class="interactive-word">Veo</span> las cometas volando en el cielo.</p>
+                <p><span class="interactive-word">Escucho</span> la música del camión de helados.</p>
+                <p><span class="interactive-word">Huelo</span> la comida del picnic.</p>
+                <p><span class="interactive-word">Pruebo</span> un rico helado de fresa.</p>
+                <p><span class="interactive-word">Toco</span> el pasto suave con mis pies.</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Niños usando sus sentidos en el parque</div>
+        </div>
+        
+        <!-- Page 9 -->
+        <div class="page" data-page="9">
+            <div class="page-header">
+                <div class="page-number">Página 9 de 10</div>
+                <h2 class="page-title">Antes de Dormir</h2>
+            </div>
+            <div class="page-content">
+                <p>Antes de dormir también uso mis sentidos.</p>
+                <p><span class="interactive-word">Veo</span> las estrellas por mi ventana.</p>
+                <p><span class="interactive-word">Escucho</span> una canción de cuna suave.</p>
+                <p><span class="interactive-word">Huelo</span> mi almohada de lavanda.</p>
+                <p><span class="interactive-word">Pruebo</span> un vaso de leche tibia.</p>
+                <p><span class="interactive-word">Abrazo</span> mi osito de peluche suavecito.</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Usando los sentidos antes de dormir</div>
+        </div>
+        
+        <!-- Page 10 -->
+        <div class="page" data-page="10">
+            <div class="page-header">
+                <div class="page-number">Página 10 de 10</div>
+                <h2 class="page-title">¡Qué Maravillosos Son Mis Sentidos!</h2>
+            </div>
+            <div class="page-content">
+                <p>Mis cinco sentidos me ayudan cada día.</p>
+                <p>Con ellos descubro el mundo.</p>
+                <p>Con ellos aprendo cosas nuevas.</p>
+                <p>Con ellos disfruto la vida.</p>
+                <p>¡Gracias, <span class="interactive-word">ojos</span>, <span class="interactive-word">oídos</span>, <span class="interactive-word">nariz</span>, <span class="interactive-word">lengua</span> y <span class="interactive-word">manos</span>!</p>
+                <p style="text-align: center; font-size: 32px; margin-top: 30px;">👁️ 👂 👃 👅 🖐️</p>
+                <p style="text-align: center; font-size: 28px; color: #667eea;">¡Fin!</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="image-description">Celebrando nuestros maravillosos cinco sentidos</div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-button" id="prevBtn" onclick="changePage(-1)">← Anterior</button>
+            <button class="nav-button" id="nextBtn" onclick="changePage(1)">Siguiente →</button>
+        </div>
+    </div>
+    
+    <script>
+        let currentPage = 0;
+        const totalPages = 10;
+        
+        function updatePage() {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show current page
+            document.querySelector(`[data-page="${currentPage}"]`).classList.add('active');
+            
+            // Update buttons
+            document.getElementById('prevBtn').disabled = currentPage === 0;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+            
+            // Update progress bar
+            const progress = (currentPage / totalPages) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function changePage(direction) {
+            currentPage += direction;
+            if (currentPage < 0) currentPage = 0;
+            if (currentPage > totalPages) currentPage = totalPages;
+            updatePage();
+        }
+        
+        // Interactive word click handler
+        document.querySelectorAll('.interactive-word').forEach(word => {
+            word.addEventListener('click', function() {
+                const text = this.textContent;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'es-ES';
+                utterance.rate = 0.8;
+                speechSynthesis.speak(utterance);
+                
+                // Visual feedback
+                this.style.background = '#ffe74c';
+                setTimeout(() => {
+                    this.style.background = '';
+                }, 300);
+            });
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') changePage(-1);
+            if (e.key === 'ArrowRight') changePage(1);
+        });
+        
+        // Initialize
+        updatePage();
+    </script>
+</body>
+</html>
