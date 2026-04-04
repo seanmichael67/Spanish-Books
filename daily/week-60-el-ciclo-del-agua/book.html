@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ciclo del Agua - Libro Interactivo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .page {
+            padding: 40px;
+            min-height: 600px;
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .page-number {
+            color: #0077be;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .page-title {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .page-subtitle {
+            color: #4facfe;
+            font-size: 18px;
+            font-style: italic;
+        }
+        
+        .page-content {
+            font-size: 24px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .page-content p {
+            margin-bottom: 20px;
+        }
+        
+        .interactive-word {
+            color: #e74c3c;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .interactive-word:hover {
+            background: #ffe74c;
+            transform: scale(1.1);
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-top: 2px solid #dee2e6;
+        }
+        
+        .nav-button {
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        
+        .nav-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .nav-button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        
+        .prev-button {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .next-button {
+            background: #28a745;
+            color: white;
+        }
+        
+        .cover-page {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .cover-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+        }
+        
+        .cover-subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cover-info {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        
+        .progress-bar {
+            height: 5px;
+            background: #dee2e6;
+            position: relative;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+        
+        <!-- Portada -->
+        <div class="page cover-page active" data-page="0">
+            <div class="page-header">
+                <h1 class="cover-title">💧 El Ciclo del Agua 💧</h1>
+                <p class="cover-subtitle">El viaje mágico del agua</p>
+                <p class="cover-info">📚 Semana 60 • Edades 2-5 años</p>
+                <p class="cover-info">Un libro interactivo en español</p>
+            </div>
+        </div>
+        
+        <!-- Página 1 -->
+        <div class="page" data-page="1">
+            <div class="page-header">
+                <div class="page-number">Página 1 de 10</div>
+                <h2 class="page-title">Conoce a Gotita</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: Gotita, una gotita de agua feliz comenzando su aventura
+            </div>
+            <div class="page-content">
+                <p>Esta es <span class="interactive-word">Gotita</span>, una pequeña gota de <span class="interactive-word">agua</span> muy feliz.</p>
+                <p>Gotita vive en un hermoso <span class="interactive-word">río</span> azul, rodeada de montañas y flores.</p>
+                <p>Hoy, Gotita va a tener una gran aventura. ¡Acompáñala en su viaje!</p>
+            </div>
+        </div>
+        
+        <!-- Página 2 -->
+        <div class="page" data-page="2">
+            <div class="page-header">
+                <div class="page-number">Página 2 de 10</div>
+                <h2 class="page-title">En el Río</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: Gotita nadando en el río con sus amigos
+            </div>
+            <div class="page-content">
+                <p><span class="interactive-word">Gotita</span> nada feliz en el <span class="interactive-word">río</span> con sus amigas.</p>
+                <p>El <span class="interactive-word">agua</span> es fresca y cristalina. Los pececitos juegan a su alrededor.</p>
+                <p>¡Splash, splash! Qué divertido es <span class="interactive-word">nadar</span> con las amigas.</p>
+            </div>
+        </div>
+        
+        <!-- Página 3 -->
+        <div class="page" data-page="3">
+            <div class="page-header">
+                <div class="page-number">Página 3 de 10</div>
+                <h2 class="page-title">El Sol Calienta</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: El sol calienta el agua y Gotita se convierte en vapor
+            </div>
+            <div class="page-content">
+                <p>De repente, el <span class="interactive-word">sol</span> brilla muy fuerte en el <span class="interactive-word">cielo</span>.</p>
+                <p>Sus rayos <span class="interactive-word">calientes</span> tocan el <span class="interactive-word">agua</span> del río.</p>
+                <p>¡Gotita siente calor! Empieza a convertirse en <span class="interactive-word">vapor</span>, tan ligera como el aire.</p>
+            </div>
+        </div>
+        
+        <!-- Página 4 -->
+        <div class="page" data-page="4">
+            <div class="page-header">
+                <div class="page-number">Página 4 de 10</div>
+                <h2 class="page-title">Subiendo al Cielo</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: Gotita como vapor subiendo al cielo
+            </div>
+            <div class="page-content">
+                <p>Como <span class="interactive-word">vapor</span>, Gotita es invisible y muy ligera.</p>
+                <p>Comienza a <span class="interactive-word">subir</span>, subir, subir hacia el <span class="interactive-word">cielo</span> azul.</p>
+                <p>¡Qué emocionante! Pasa junto a pájaros y mariposas. ¡Va volando!</p>
+            </div>
+        </div>
+        
+        <!-- Página 5 -->
+        <div class="page" data-page="5">
+            <div class="page-header">
+                <div class="page-number">Página 5 de 10</div>
+                <h2 class="page-title">Formando Nubes</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: Gotita se encuentra con otras gotitas formando una nube
+            </div>
+            <div class="page-content">
+                <p>Arriba en el <span class="interactive-word">cielo</span>, hace <span class="interactive-word">frío</span>.</p>
+                <p>Gotita se encuentra con muchas otras <span class="interactive-word">gotitas</span> de vapor.</p>
+                <p>¡Todas juntas forman una <span class="interactive-word">nube</span> blanca y esponjosa! ¡Qué bonita!</p>
+            </div>
+        </div>
+        
+        <!-- Página 6 -->
+        <div class="page" data-page="6">
+            <div class="page-header">
+                <div class="page-number">Página 6 de 10</div>
+                <h2 class="page-title">La Nube Crece</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: La nube se llena de agua y se pone gris
+            </div>
+            <div class="page-content">
+                <p>Más y más <span class="interactive-word">gotitas</span> se unen a la <span class="interactive-word">nube</span>.</p>
+                <p>La nube se vuelve grande, pesada y de color gris.</p>
+                <p>¡Está llena de <span class="interactive-word">agua</span>! Gotita siente que algo va a pasar...</p>
+            </div>
+        </div>
+        
+        <!-- Página 7 -->
+        <div class="page" data-page="7">
+            <div class="page-header">
+                <div class="page-number">Página 7 de 10</div>
+                <h2 class="page-title">¡Lluvia!</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: ¡Lluvia! Gotita cae de regreso a la tierra
+            </div>
+            <div class="page-content">
+                <p>¡Plop! Las <span class="interactive-word">gotitas</span> empiezan a <span class="interactive-word">caer</span> de la nube.</p>
+                <p>¡Es <span class="interactive-word">lluvia</span>! Gotita baja desde el <span class="interactive-word">cielo</span> como en un tobogán.</p>
+                <p>¡Wheee! ¡Qué divertido! Aparece un arcoíris de colores hermosos.</p>
+            </div>
+        </div>
+        
+        <!-- Página 8 -->
+        <div class="page" data-page="8">
+            <div class="page-header">
+                <div class="page-number">Página 8 de 10</div>
+                <h2 class="page-title">Regando la Tierra</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: El agua ayuda a las plantas y animales a crecer
+            </div>
+            <div class="page-content">
+                <p>La <span class="interactive-word">lluvia</span> cae sobre la <span class="interactive-word">tierra</span>.</p>
+                <p>Gotita ayuda a las flores a crecer, da de beber a los animalitos.</p>
+                <p>¡El <span class="interactive-word">agua</span> es muy importante para toda la <span class="interactive-word">naturaleza</span>!</p>
+            </div>
+        </div>
+        
+        <!-- Página 9 -->
+        <div class="page" data-page="9">
+            <div class="page-header">
+                <div class="page-number">Página 9 de 10</div>
+                <h2 class="page-title">De Regreso al Río</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: Gotita vuelve al río y el ciclo comienza de nuevo
+            </div>
+            <div class="page-content">
+                <p>Gotita llega de vuelta al <span class="interactive-word">río</span> donde comenzó.</p>
+                <p>Saluda a nuevas amigas gotitas que van a empezar su propia aventura.</p>
+                <p>¡El <span class="interactive-word">ciclo</span> del agua nunca termina! Una y otra vez, ¡para siempre!</p>
+            </div>
+        </div>
+        
+        <!-- Página 10 -->
+        <div class="page" data-page="10">
+            <div class="page-header">
+                <div class="page-number">Página 10 de 10</div>
+                <h2 class="page-title">El Viaje Continúa</h2>
+            </div>
+            <div class="image-placeholder">
+                🎨 Ilustración: El ciclo del agua: ¡Un viaje que nunca termina!
+            </div>
+            <div class="page-content">
+                <p>El <span class="interactive-word">agua</span> viaja del <span class="interactive-word">río</span> al <span class="interactive-word">cielo</span>, a las <span class="interactive-word">nubes</span>, y de vuelta a la <span class="interactive-word">tierra</span>.</p>
+                <p>¡Este es el <span class="interactive-word">ciclo</span> del agua! Un viaje mágico que nunca se detiene.</p>
+                <p>¿Puedes ver la <span class="interactive-word">lluvia</span> cayendo? ¡Ahí va Gotita en su próxima aventura! 💧✨</p>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-button prev-button" id="prevBtn" onclick="changePage(-1)">← Anterior</button>
+            <button class="nav-button next-button" id="nextBtn" onclick="changePage(1)">Siguiente →</button>
+        </div>
+    </div>
+    
+    <script>
+        let currentPage = 0;
+        const totalPages = 10;
+        
+        function showPage(pageNumber) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            document.querySelector(`[data-page="${pageNumber}"]`).classList.add('active');
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = pageNumber === 0;
+            document.getElementById('nextBtn').disabled = pageNumber === totalPages;
+            
+            // Update progress bar
+            const progress = (pageNumber / totalPages) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function changePage(direction) {
+            currentPage += direction;
+            if (currentPage < 0) currentPage = 0;
+            if (currentPage > totalPages) currentPage = totalPages;
+            showPage(currentPage);
+        }
+        
+        // Add click sound effect to interactive words
+        document.addEventListener('DOMContentLoaded', function() {
+            const interactiveWords = document.querySelectorAll('.interactive-word');
+            interactiveWords.forEach(word => {
+                word.addEventListener('click', function() {
+                    // Visual feedback
+                    this.style.backgroundColor = '#ffe74c';
+                    setTimeout(() => {
+                        this.style.backgroundColor = '';
+                    }, 300);
+                    
+                    // Optional: Add speech synthesis for the word
+                    if ('speechSynthesis' in window) {
+                        const utterance = new SpeechSynthesisUtterance(this.textContent);
+                        utterance.lang = 'es-ES';
+                        utterance.rate = 0.8;
+                        window.speechSynthesis.speak(utterance);
+                    }
+                });
+            });
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') changePage(-1);
+            if (e.key === 'ArrowRight') changePage(1);
+        });
+        
+        // Initialize
+        showPage(0);
+    </script>
+</body>
+</html>

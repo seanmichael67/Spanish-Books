@@ -1,0 +1,113 @@
+{
+  "title": "El Ciclo del Agua",
+  "subtitle": "El viaje mágico del agua",
+  "week": 60,
+  "topic": "el-ciclo-del-agua",
+  "category": "Science & Nature",
+  "age_range": "2-5 años",
+  "language": "Spanish",
+  "total_pages": 10,
+  "learning_objectives": [
+    "Comprender el ciclo del agua de manera simple y visual",
+    "Identificar las formas del agua: líquido, vapor, hielo",
+    "Aprender sobre evaporación, condensación, precipitación",
+    "Conectar el ciclo del agua con la naturaleza (lluvia, ríos, nubes)",
+    "Desarrollar conciencia ambiental sobre el agua"
+  ],
+  "interactive_elements": [
+    "agua", "lluvia", "nubes", "sol", "río", "mar", "vapor",
+    "gotitas", "cielo", "tierra", "evaporación", "condensación",
+    "precipitación", "ciclo", "naturaleza"
+  ],
+  "image_prompts": [
+    {
+      "page": 1,
+      "prompt": "Children's book illustration in magical nature style: A happy smiling water droplet character with big eyes embarking on an adventure through nature - standing at a beautiful blue river with mountains, waterfalls, clouds and sunshine in the background. The droplet has a friendly face and wears a tiny backpack. Bright cheerful scene, cartoon style, vibrant blues and greens, preschool appropriate.",
+      "description": "Gotita, una gotita de agua feliz comenzando su aventura"
+    },
+    {
+      "page": 2,
+      "prompt": "Children's book illustration in sunny river style: The happy water droplet character swimming joyfully in a sparkling blue river with fish friends, rocks, lily pads, and flowers on the riverbanks. Bright sunshine overhead with warm golden rays. Other droplets playing together. Crystal clear water, cheerful atmosphere, cartoon style, vibrant colors, preschool appropriate.",
+      "description": "Gotita nadando en el río con sus amigos"
+    },
+    {
+      "page": 3,
+      "prompt": "Children's book illustration in transformation style: The water droplet character feeling warm as golden sun rays shine down, beginning to transform into vapor - shown with sparkles and gentle steam swirls rising upward. Smiling sun character in sky. Magical transformation moment with glowing effects. Cartoon style, warm yellows and light blues, wonder and magic, preschool appropriate.",
+      "description": "El sol calienta el agua y Gotita se convierte en vapor"
+    },
+    {
+      "page": 4,
+      "prompt": "Children's book illustration in floating sky style: The droplet character as light transparent vapor floating upward into the bright blue sky, passing birds and butterflies. Upward motion shown with swirl trails, happy expression of wonder. Beautiful sky gradient, fluffy white clouds beginning to form. Cartoon style, airy and light, magical journey feeling, preschool appropriate.",
+      "description": "Gotita como vapor subiendo al cielo"
+    },
+    {
+      "page": 5,
+      "prompt": "Children's book illustration in cloud formation style: Many tiny water droplet characters joining together in the sky to form a big fluffy white cloud, all holding hands/hugging. Happy reunion, teamwork feeling. Blue sky background, other clouds nearby, birds flying past. Condensation process shown magically. Cartoon style, soft whites and blues, friendly togetherness, preschool appropriate.",
+      "description": "Gotita se encuentra con otras gotitas formando una nube"
+    },
+    {
+      "page": 6,
+      "prompt": "Children's book illustration in storm gathering style: The cloud growing darker and fuller with more water droplets gathering, gentle lightning in background (not scary), the droplets getting ready for their next adventure. Excited anticipating expressions. Dramatic but friendly sky, wind shown with gentle swirls. Cartoon style, grey-blue tones, excitement building, preschool appropriate.",
+      "description": "La nube se llena de agua y se pone gris"
+    },
+    {
+      "page": 7,
+      "prompt": "Children's book illustration in rain celebration style: Happy water droplets falling as rain from clouds, each with joyful expressions sliding down like a water slide, arms up in excitement. Colorful rainbow appearing, flowers and trees below getting watered. Children playing in puddles below with umbrellas. Cartoon style, vibrant colors, joyful rain celebration, preschool appropriate.",
+      "description": "¡Lluvia! Gotita cae de regreso a la tierra"
+    },
+    {
+      "page": 8,
+      "prompt": "Children's book illustration in nature nurturing style: Water droplets splashing into soil, feeding flowers that bloom, filling streams, making grass green and lush. Animals drinking water - deer, birds, rabbits. Life flourishing with water. Abundant garden scene with fruits, vegetables growing. Cartoon style, lush greens, vital water importance, preschool appropriate.",
+      "description": "El agua ayuda a las plantas y animales a crecer"
+    },
+    {
+      "page": 9,
+      "prompt": "Children's book illustration in cycle completion style: The water droplet character back in the river where the journey started, waving hello to new droplet friends about to start their own adventure. Circular arrows showing the cycle path: river→sun→vapor→cloud→rain→river. Educational but playful. Cartoon style, complete journey visualization, warm satisfying feeling, preschool appropriate.",
+      "description": "Gotita vuelve al río y el ciclo comienza de nuevo"
+    },
+    {
+      "page": 10,
+      "prompt": "Children's book illustration in celebration finale style: A beautiful nature scene showing the complete water cycle - sun shining, clouds forming, rain falling, rivers flowing, ocean waves, plants growing, children playing. Everything connected in harmony. Water droplet characters dancing throughout the scene celebrating. Rainbow, butterflies, happy animals. Cartoon style, vibrant celebration of nature, preschool appropriate.",
+      "description": "El ciclo del agua: ¡Un viaje que nunca termina!"
+    }
+  ],
+  "vocabulary_words": [
+    {"spanish": "el agua", "english": "water"},
+    {"spanish": "el ciclo", "english": "cycle"},
+    {"spanish": "la lluvia", "english": "rain"},
+    {"spanish": "las nubes", "english": "clouds"},
+    {"spanish": "el sol", "english": "sun"},
+    {"spanish": "el río", "english": "river"},
+    {"spanish": "el mar", "english": "sea/ocean"},
+    {"spanish": "el vapor", "english": "vapor/steam"},
+    {"spanish": "las gotitas", "english": "little drops"},
+    {"spanish": "el cielo", "english": "sky"},
+    {"spanish": "la tierra", "english": "earth/ground"},
+    {"spanish": "caliente", "english": "hot"},
+    {"spanish": "frío", "english": "cold"},
+    {"spanish": "subir", "english": "to go up"},
+    {"spanish": "bajar", "english": "to go down"},
+    {"spanish": "caer", "english": "to fall"},
+    {"spanish": "flotar", "english": "to float"},
+    {"spanish": "nadar", "english": "to swim"}
+  ],
+  "discussion_questions": [
+    "¿De dónde viene la lluvia?",
+    "¿Qué hace el sol con el agua?",
+    "¿Cómo se forman las nubes?",
+    "¿Por qué es importante el agua?",
+    "¿Qué pasa con el agua después de llover?",
+    "¿Dónde vive el agua? (río, mar, nubes, etc.)"
+  ],
+  "extension_activities": [
+    "Experimento: hervir agua y ver el vapor (supervisión adulta)",
+    "Hacer lluvia en un frasco con agua caliente y hielo",
+    "Dibujar el ciclo del agua con flechas",
+    "Juego de drama: actuar como gotitas de agua en el ciclo",
+    "Coleccionar agua de lluvia en recipientes",
+    "Crear nubes de algodón y gotitas de papel azul"
+  ],
+  "created_date": "2026-04-03",
+  "created_by": "Luna 📚",
+  "status": "published"
+}
