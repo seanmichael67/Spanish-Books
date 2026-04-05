@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Emociones - Semana 61</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .cover {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 60px 40px;
+            text-align: center;
+            color: white;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cover h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+        
+        .cover .emoji {
+            font-size: 6em;
+            margin: 20px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .cover p {
+            font-size: 1.8em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .page {
+            padding: 50px;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: 3px solid #f0f0f0;
+        }
+        
+        .page:nth-child(even) {
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+        }
+        
+        .page:nth-child(odd) {
+            background: linear-gradient(to right, #a8edea 0%, #fed6e3 100%);
+        }
+        
+        .page-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .page-text {
+            font-size: 2em;
+            line-height: 1.6;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+        
+        .page-text .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .page-image {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .page-number {
+            text-align: center;
+            color: #666;
+            font-size: 1.2em;
+            margin-top: 30px;
+        }
+        
+        .final-page {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 50px;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .final-page h2 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .final-page p {
+            font-size: 1.8em;
+            line-height: 1.8;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .page-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .cover h1 {
+                font-size: 2.5em;
+            }
+            
+            .page-text {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Cover -->
+        <div class="cover">
+            <div class="emoji">😊😢😠😨🥰</div>
+            <h1>Las Emociones</h1>
+            <p>Un viaje por el mundo de los sentimientos</p>
+        </div>
+
+        <!-- Page 1 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-text">
+                    ¡Hola, amiguitos! Hoy vamos a descubrir algo muy especial: <span class="highlight">las emociones</span>. Las emociones son los sentimientos que viven en nuestro corazón. ¡Vamos a conocerlas! 💖
+                </div>
+                <div class="page-image">
+                    [Imagen: Grupo diverso de niños felices con caras expresivas, mostrando diferentes emociones, en un jardín colorido]
+                </div>
+            </div>
+            <div class="page-number">1</div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">
+                    [Imagen: Niña sonriendo ampliamente mientras juega en un columpio bajo el sol, con pájaros cantando alrededor]
+                </div>
+                <div class="page-text">
+                    Cuando estoy <span class="highlight">feliz</span>, sonrío mucho. Me siento feliz cuando juego con mis amigos, cuando como algo rico, o cuando mamá me abraza. ¡La felicidad hace brillar mi corazón! 😊✨
+                </div>
+            </div>
+            <div class="page-number">2</div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-text">
+                    A veces me siento <span class="highlight">triste</span>. Tal vez perdí mi juguete favorito o extraño a alguien. Cuando estoy triste, está bien llorar. Las lágrimas ayudan a mi corazón a sanar. 😢💙
+                </div>
+                <div class="page-image">
+                    [Imagen: Niño sentado en su cama abrazando un peluche, con una lágrima en la mejilla, su mamá acercándose para consolarlo]
+                </div>
+            </div>
+            <div class="page-number">3</div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">
+                    [Imagen: Niña con ceño fruncido y brazos cruzados, con mejillas rojas, junto a una torre de bloques que se cayó]
+                </div>
+                <div class="page-text">
+                    Cuando las cosas no salen como quiero, puedo sentir <span class="highlight">enojo</span>. Mi cara se pone roja y quiero gritar. Pero aprendo a respirar profundo y usar mis palabras para decir cómo me siento. 😤➡️😌
+                </div>
+            </div>
+            <div class="page-number">4</div>
+        </div>
+
+        <!-- Page 5 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-text">
+                    ¡A veces tengo <span class="highlight">miedo</span>! Quizás escucho un ruido fuerte o la oscuridad me asusta. Cuando tengo miedo, puedo pedir ayuda. Un abrazo de alguien que amo me hace sentir seguro. 😨🤗
+                </div>
+                <div class="page-image">
+                    [Imagen: Niño pequeño asomándose desde detrás de su papá durante una tormenta, con relámpagos afuera de la ventana, papá lo protege con un abrazo]
+                </div>
+            </div>
+            <div class="page-number">5</div>
+        </div>
+
+        <!-- Page 6 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">
+                    [Imagen: Niña sorprendida con ojos bien abiertos y boca en "O", recibiendo un regalo envuelto con un gran moño dorado]
+                </div>
+                <div class="page-text">
+                    ¡Qué <span class="highlight">sorpresa</span>! Cuando algo inesperado sucede, mis ojos se abren muy grandes. Me sorprenden las fiestas, los regalos, o ver un arcoíris después de la lluvia. 😲🌈
+                </div>
+            </div>
+            <div class="page-number">6</div>
+        </div>
+
+        <!-- Page 7 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-text">
+                    El <span class="highlight">amor</span> es la emoción más cálida de todas. Siento amor por mi familia, mis amigos, mis mascotas y todo lo que me hace feliz. El amor hace crecer mi corazón. 🥰❤️
+                </div>
+                <div class="page-image">
+                    [Imagen: Familia feliz abrazándose en grupo - mamá, papá, dos niños y un perro - todos sonriendo con corazones flotando alrededor]
+                </div>
+            </div>
+            <div class="page-number">7</div>
+        </div>
+
+        <!-- Page 8 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">
+                    [Imagen: Niño entusiasmado saltando con brazos en alto, con una mochila nueva, listo para su primer día de escuela]
+                </div>
+                <div class="page-text">
+                    Cuando algo bueno va a pasar, siento <span class="highlight">emoción</span>. Estoy emocionado antes de ir al parque, antes de mi cumpleaños, o cuando voy a aprender algo nuevo. ¡No puedo estar quieto! 🎉✨
+                </div>
+            </div>
+            <div class="page-number">8</div>
+        </div>
+
+        <!-- Page 9 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-text">
+                    Todas las emociones son <span class="highlight">importantes</span>. No hay emociones malas o buenas. Cada una me enseña algo especial. Lo importante es saber reconocerlas y compartir cómo me siento. 🌟
+                </div>
+                <div class="page-image">
+                    [Imagen: Círculo de niños diversos sentados en el piso compartiendo en círculo, cada uno mostrando una emoción diferente con caras expresivas y gestos]
+                </div>
+            </div>
+            <div class="page-number">9</div>
+        </div>
+
+        <!-- Page 10 -->
+        <div class="page">
+            <div class="page-content">
+                <div class="page-image">
+                    [Imagen: Niño mirándose en un espejo haciendo diferentes caras - sonriente, triste, enojada, sorprendida - practicando reconocer emociones]
+                </div>
+                <div class="page-text">
+                    ¿Y tú? ¿Cómo te sientes hoy? Practica frente al espejo: haz caras felices, tristes, enojadas y sorprendidas. ¡Conocer tus emociones te hace más fuerte! 💪😊
+                </div>
+            </div>
+            <div class="page-number">10</div>
+        </div>
+
+        <!-- Final Page -->
+        <div class="final-page">
+            <h2>¡Fin de la historia! 🌟</h2>
+            <p>Recuerda: Todas tus emociones son válidas.<br>
+            Habla sobre cómo te sientes.<br>
+            Escucha cómo se sienten los demás.<br>
+            ¡Tu corazón es sabio! 💖</p>
+            <p style="margin-top: 40px; font-size: 1.4em;">
+                📚 Beibei Amigos Language Preschool<br>
+                Semana 61 • Las Emociones
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "week": 61,
+  "title": "Las Emociones",
+  "subtitle": "Un viaje por el mundo de los sentimientos",
+  "topic": "Social-Emotional Learning",
+  "target_age": "2-5 years",
+  "language": "Spanish",
+  "pages": 10,
+  "created": "2026-04-04",
+  "learning_objectives": [
+    "Identificar y nombrar emociones básicas",
+    "Comprender que todas las emociones son válidas",
+    "Desarrollar vocabulario emocional en español",
+    "Practicar reconocimiento de emociones faciales",
+    "Fomentar comunicación sobre sentimientos"
+  ],
+  "vocabulary": [
+    "emociones",
+    "sentimientos",
+    "feliz",
+    "triste",
+    "enojo",
+    "miedo",
+    "sorpresa",
+    "amor",
+    "emoción",
+    "corazón"
+  ],
+  "images": [
+    {
+      "page": "cover",
+      "description": "Book cover with diverse emoji faces showing different emotions",
+      "prompt": "Colorful children's book illustration of five large emoji-style faces showing happiness, sadness, anger, fear, and love, arranged in a circle with bright gradient background, playful and warm style, vibrant colors, suitable for preschool age 2-5"
+    },
+    {
+      "page": 1,
+      "description": "Diverse group of happy children with expressive faces",
+      "prompt": "Bright children's book illustration of a diverse group of 5 preschool children (ages 2-5) with different skin tones standing together in a colorful garden, each child showing different facial expressions and emotions, happy and welcoming scene, soft cartoon style, warm natural lighting"
+    },
+    {
+      "page": 2,
+      "description": "Happy girl on swing",
+      "prompt": "Cheerful children's book illustration of a young Hispanic girl with dark hair smiling widely while swinging on a playground swing, bright sunny day, birds singing around her, sparkles of joy floating in the air, warm colors, soft cartoon style perfect for preschool books"
+    },
+    {
+      "page": 3,
+      "description": "Sad boy being comforted by mom",
+      "prompt": "Gentle children's book illustration of a young boy sitting on his bed hugging a teddy bear with a single tear on his cheek, his caring mother approaching with open arms to comfort him, soft bedroom lighting, warm and safe atmosphere, tender moment, suitable for preschool emotional learning"
+    },
+    {
+      "page": 4,
+      "description": "Angry girl with fallen blocks",
+      "prompt": "Expressive children's book illustration of a young girl with crossed arms and furrowed brow showing anger, her cheeks red, standing next to a fallen tower of colorful building blocks, indoor playroom setting, soft cartoon style that teaches emotion recognition for ages 2-5"
+    },
+    {
+      "page": 5,
+      "description": "Scared child during thunderstorm with protective father",
+      "prompt": "Comforting children's book illustration of a small child peeking out from behind their protective father during a thunderstorm, lightning visible through window, father giving reassuring hug, warm indoor lighting contrasting with storm outside, safe and secure feeling, suitable for teaching about fear to preschoolers"
+    },
+    {
+      "page": 6,
+      "description": "Surprised girl receiving gift",
+      "prompt": "Delightful children's book illustration of a young girl with wide-open eyes and mouth in 'O' shape showing surprise, receiving a beautifully wrapped present with large golden bow, sparkles and stars around her expressing amazement, warm bright colors, joyful cartoon style for preschool"
+    },
+    {
+      "page": 7,
+      "description": "Family group hug with dog",
+      "prompt": "Heartwarming children's book illustration of a diverse family in a group hug - mother, father, two young children, and a friendly dog - all smiling with floating hearts around them, warm golden lighting, expressions of love and affection, soft cartoon style perfect for teaching emotions to ages 2-5"
+    },
+    {
+      "page": 8,
+      "description": "Excited boy ready for first day of school",
+      "prompt": "Energetic children's book illustration of an enthusiastic young boy jumping with arms raised high in excitement, wearing a new backpack, ready for his first day of school, sparkles and celebration confetti around him, bright morning light, joyful and dynamic cartoon style for preschoolers"
+    },
+    {
+      "page": 9,
+      "description": "Circle of diverse children sharing emotions",
+      "prompt": "Inclusive children's book illustration of diverse preschool children sitting in a circle on the floor, each child showing a different emotion through facial expressions and gestures, sharing and communicating, warm classroom or home setting, soft natural light, teaching emotional awareness for ages 2-5"
+    },
+    {
+      "page": 10,
+      "description": "Child practicing emotion faces in mirror",
+      "prompt": "Playful children's book illustration of a young child standing in front of a mirror making different facial expressions - happy, sad, angry, surprised - practicing recognizing emotions, bedroom setting with good lighting, educational and encouraging tone, soft cartoon style suitable for preschool emotional learning"
+    }
+  ],
+  "discussion_questions": [
+    "¿Cómo te sientes ahora mismo?",
+    "¿Qué te hace sentir feliz?",
+    "¿Qué haces cuando te sientes triste?",
+    "¿Es bueno hablar sobre cómo nos sentimos?",
+    "¿Puedes hacer una cara feliz? ¿Y una cara triste?"
+  ],
+  "activities": [
+    "Emotion faces mirror practice",
+    "Draw your emotion today",
+    "Emotion charades with family",
+    "Create an emotion wheel",
+    "Read facial expressions in photos"
+  ],
+  "notes": "Social-emotional learning is critical for preschool development. This book introduces core emotions with validating language and teaches that all feelings are acceptable. Encourages emotional vocabulary and expression."
+}
