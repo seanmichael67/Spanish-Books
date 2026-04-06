@@ -1,0 +1,103 @@
+{
+  "week": 62,
+  "title": "Los Instrumentos Musicales",
+  "subtitle": "Una orquesta de sonidos y diversión",
+  "topic": "Music & Culture",
+  "target_age": "2-5 years",
+  "language": "Spanish",
+  "pages": 10,
+  "created": "2026-04-05",
+  "learning_objectives": [
+    "Identificar instrumentos musicales básicos",
+    "Reconocer diferentes sonidos y familias de instrumentos",
+    "Desarrollar vocabulario musical en español",
+    "Explorar la música como expresión cultural",
+    "Fomentar el amor por la música y el ritmo"
+  ],
+  "vocabulary": [
+    "instrumento",
+    "música",
+    "tambor",
+    "guitarra",
+    "piano",
+    "flauta",
+    "trompeta",
+    "violín",
+    "maracas",
+    "sonido",
+    "ritmo",
+    "canción"
+  ],
+  "images": [
+    {
+      "page": "cover",
+      "description": "Colorful collection of musical instruments arranged in a circle",
+      "prompt": "Vibrant children's book cover illustration showing a colorful array of musical instruments (guitar, drum, trumpet, maracas, piano keys, violin) arranged in a joyful circle with musical notes and stars floating around them, bright festive colors, warm inviting style suitable for preschool ages 2-5"
+    },
+    {
+      "page": 1,
+      "description": "Diverse children discovering instruments in music room",
+      "prompt": "Cheerful children's book illustration of diverse preschool children (ages 2-5) entering a bright music room filled with various instruments on shelves and stands, children's eyes wide with curiosity and excitement, warm natural lighting, soft cartoon style, welcoming and educational atmosphere"
+    },
+    {
+      "page": 2,
+      "description": "Child happily playing a drum",
+      "prompt": "Energetic children's book illustration of a young child with big smile sitting cross-legged playing a colorful hand drum with drumsticks, sound waves and musical notes radiating from the drum, indoor music room setting, bright warm colors, joyful expression, suitable for preschool music education"
+    },
+    {
+      "page": 3,
+      "description": "Girl strumming an acoustic guitar",
+      "prompt": "Warm children's book illustration of a young Hispanic girl sitting on a cushion gently strumming a wooden acoustic guitar, musical notes floating in the air, soft afternoon light streaming through window, peaceful and focused expression, soft cartoon style perfect for teaching instruments to ages 2-5"
+    },
+    {
+      "page": 4,
+      "description": "Child at piano with colorful keys",
+      "prompt": "Delightful children's book illustration of a small child standing at a piano pressing colorful keys with both hands, sheet music on stand, sparkles of sound emanating from the piano, bright music room with plants, encouraging and magical atmosphere, suitable for preschool music learning"
+    },
+    {
+      "page": 5,
+      "description": "Boy playing wooden flute",
+      "prompt": "Gentle children's book illustration of a young boy holding a simple wooden flute to his lips, eyes closed peacefully as he plays, musical notes shaped like birds floating from the flute, outdoor garden setting with flowers, serene and beautiful, soft cartoon style for ages 2-5"
+    },
+    {
+      "page": 6,
+      "description": "Child playing shiny brass trumpet",
+      "prompt": "Bold children's book illustration of an enthusiastic child holding and playing a golden brass trumpet, cheeks puffed with air, bright sound waves and stars bursting from the trumpet bell, indoor practice space, dynamic and energetic composition, warm colors suitable for preschool"
+    },
+    {
+      "page": 7,
+      "description": "Girl holding violin with bow",
+      "prompt": "Elegant children's book illustration of a young girl in a simple dress carefully holding a violin and bow in playing position, concentrated but happy expression, soft music room lighting, delicate musical notes floating around her, classical and inspiring tone for teaching instruments to ages 2-5"
+    },
+    {
+      "page": 8,
+      "description": "Children playing maracas and dancing",
+      "prompt": "Lively children's book illustration of two preschool children shaking colorful maracas above their heads while dancing joyfully, festive decorative banners in background, musical notes and confetti in the air, celebration atmosphere, bright warm colors, cultural and fun cartoon style for ages 2-5"
+    },
+    {
+      "page": 9,
+      "description": "Diverse group of children forming a band together",
+      "prompt": "Harmonious children's book illustration of diverse preschool children (different ethnicities and abilities) playing different instruments together as a band - drums, guitar, shakers, tambourine - all smiling and enjoying making music, classroom or community center setting, inclusive and joyful, suitable for ages 2-5"
+    },
+    {
+      "page": 10,
+      "description": "Child conducting an imaginary orchestra with magic",
+      "prompt": "Magical children's book illustration of a young child standing on a small platform holding a conductor's baton, eyes bright with imagination, swirls of colorful musical notes and instruments floating in the air around them, dreamy and inspirational atmosphere, soft cartoon style perfect for preschool music appreciation"
+    }
+  ],
+  "discussion_questions": [
+    "¿Cuál instrumento te gusta más?",
+    "¿Qué sonido hace cada instrumento?",
+    "¿Tienes un instrumento en casa?",
+    "¿Te gusta cantar y bailar?",
+    "¿Puedes hacer música con tu cuerpo? (palmadas, pisadas)"
+  ],
+  "activities": [
+    "Make homemade shakers with rice and containers",
+    "Sing and clap to the rhythm",
+    "Listen to different instrument sounds online",
+    "Draw your favorite instrument",
+    "Play freeze dance with music"
+  ],
+  "notes": "Music education supports cognitive development, language acquisition, and cultural awareness. This book introduces common instruments while celebrating the joy of making music together. Includes both Western and Latin instruments to honor cultural diversity."
+}

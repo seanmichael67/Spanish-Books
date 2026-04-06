@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Instrumentos Musicales - Semana 62</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .page {
+            padding: 60px 40px;
+            min-height: 600px;
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .cover {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cover::before {
+            content: '♪ ♫ ♪ ♫ ♪';
+            position: absolute;
+            font-size: 60px;
+            opacity: 0.2;
+            top: 20px;
+            left: 0;
+            right: 0;
+        }
+        
+        .cover h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            z-index: 1;
+        }
+        
+        .cover h2 {
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            font-weight: normal;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .cover .week {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-top: 20px;
+            z-index: 1;
+        }
+        
+        .content-page {
+            background: linear-gradient(to bottom, #fff9e6 0%, #ffe6f0 100%);
+        }
+        
+        .page-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            height: 100%;
+        }
+        
+        .page-number {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 1.2em;
+            color: #764ba2;
+            font-weight: bold;
+        }
+        
+        .text-content {
+            font-size: 1.8em;
+            line-height: 1.6;
+            color: #333;
+            flex: 1;
+        }
+        
+        .text-content p {
+            margin-bottom: 20px;
+        }
+        
+        .interactive-element {
+            background: rgba(255,255,255,0.7);
+            padding: 20px;
+            border-radius: 15px;
+            border: 3px dashed #f5576c;
+            font-size: 1.3em;
+            color: #764ba2;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-top: 3px solid #667eea;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .page-indicator {
+            font-size: 1.1em;
+            color: #764ba2;
+            font-weight: bold;
+        }
+        
+        .sound-word {
+            color: #f5576c;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #ffd89b 0%, #19547b 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            .page { padding: 40px 20px; min-height: 500px; }
+            .cover h1 { font-size: 2.5em; }
+            .cover h2 { font-size: 1.3em; }
+            .text-content { font-size: 1.4em; }
+            .navigation { padding: 15px 20px; }
+            button { padding: 12px 25px; font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- Cover Page -->
+        <div class="page active cover">
+            <h1>🎵 Los Instrumentos Musicales 🎵</h1>
+            <h2>Una orquesta de sonidos y diversión</h2>
+            <div class="week">Semana 62 • Beibei Amigos</div>
+        </div>
+
+        <!-- Page 1 -->
+        <div class="page content-page">
+            <div class="page-number">1</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>¡Hola, amiguitos! ¿Están listos para una aventura musical?</p>
+                    <p>Hoy vamos a descubrir los <span class="highlight">instrumentos musicales</span> y los sonidos mágicos que hacen.</p>
+                    <p>Cada instrumento tiene su propia voz especial. ¡Vamos a conocerlos!</p>
+                </div>
+                <div class="interactive-element">
+                    👂 ¿Puedes escuchar música ahora? ¿Qué sonidos oyes?
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page content-page">
+            <div class="page-number">2</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>¡BOOM, BOOM, BOOM! 🥁</p>
+                    <p>El <span class="highlight">tambor</span> hace un sonido fuerte y emocionante.</p>
+                    <p>Cuando tocas el tambor con las manos o con palitos, hace <span class="sound-word">¡PUM, PUM, PUM!</span></p>
+                    <p>El tambor marca el ritmo de la música. ¡Es como el corazón de la banda!</p>
+                </div>
+                <div class="interactive-element">
+                    🥁 ¡Toca tu mesa como un tambor! PUM-PUM-PUM
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page content-page">
+            <div class="page-number">3</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>La <span class="highlight">guitarra</span> tiene seis cuerdas mágicas. 🎸</p>
+                    <p>Cuando tocas las cuerdas, hacen <span class="sound-word">¡PLING, PLONG, PLING!</span></p>
+                    <p>La guitarra puede sonar alegre y rápida, o suave y tranquila.</p>
+                    <p>Muchas personas tocan la guitarra para cantar canciones bonitas.</p>
+                </div>
+                <div class="interactive-element">
+                    🎸 ¿Conoces una canción de guitarra? ¡Cántala!
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page content-page">
+            <div class="page-number">4</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>El <span class="highlight">piano</span> es grande y hermoso. 🎹</p>
+                    <p>Tiene teclas blancas y negras que hacen sonidos diferentes.</p>
+                    <p>Cuando presionas las teclas, el piano canta: <span class="sound-word">¡TIN-TIN-TIN, TON-TON-TON!</span></p>
+                    <p>Con el piano puedes tocar música rápida o lenta, fuerte o suave.</p>
+                </div>
+                <div class="interactive-element">
+                    🎹 Usa tus dedos como teclas de piano. ¡Toca en el aire!
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5 -->
+        <div class="page content-page">
+            <div class="page-number">5</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>La <span class="highlight">flauta</span> es larga y delgada. 🪈</p>
+                    <p>Soplas aire en la flauta y hace un sonido dulce como los pájaros.</p>
+                    <p><span class="sound-word">¡Fiu-fiu-fiuuu!</span> canta la flauta.</p>
+                    <p>Es perfecta para tocar música alegre y melodías bonitas.</p>
+                </div>
+                <div class="interactive-element">
+                    🪈 ¡Sopla suavemente como si tocaras una flauta! Fiu-fiu-fiu
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 6 -->
+        <div class="page content-page">
+            <div class="page-number">6</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>La <span class="highlight">trompeta</span> es brillante y dorada. 🎺</p>
+                    <p>Cuando soplas fuerte en la trompeta, hace <span class="sound-word">¡PA-RA-RA-RÁÁÁ!</span></p>
+                    <p>El sonido es fuerte y emocionante, como el anuncio de un rey.</p>
+                    <p>La trompeta es perfecta para música de celebración.</p>
+                </div>
+                <div class="interactive-element">
+                    🎺 ¡Sopla fuerte y grita PA-RA-RÁÁÁ como una trompeta!
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 7 -->
+        <div class="page content-page">
+            <div class="page-number">7</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>El <span class="highlight">violín</span> es pequeño y elegante. 🎻</p>
+                    <p>Se toca con un arco especial que se mueve sobre las cuerdas.</p>
+                    <p>El violín suena hermoso: <span class="sound-word">¡Liiin-liiin-liiin!</span></p>
+                    <p>Puede hacer música feliz o música triste, ¡es muy expresivo!</p>
+                </div>
+                <div class="interactive-element">
+                    🎻 Mueve tu brazo como si tocaras un violín. Liiiin-liiin
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 8 -->
+        <div class="page content-page">
+            <div class="page-number">8</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>Las <span class="highlight">maracas</span> son súper divertidas. 🪇</p>
+                    <p>Tienen semillas o piedrecitas adentro que suenan cuando las agitas.</p>
+                    <p><span class="sound-word">¡Chaca-chaca-chaca!</span> cantan las maracas.</p>
+                    <p>Son perfectas para bailar salsa, merengue y música latina. ¡Ole!</p>
+                </div>
+                <div class="interactive-element">
+                    🪇 ¡Mueve tus manos como si tuvieras maracas! Chaca-chaca
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 9 -->
+        <div class="page content-page">
+            <div class="page-number">9</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>¡Ahora todos juntos forman una <span class="highlight">banda musical</span>! 🎶</p>
+                    <p>El tambor hace PUM-PUM, la guitarra PLING-PLONG, el piano TIN-TON...</p>
+                    <p>La flauta FIU-FIU, la trompeta PA-RÁÁÁ, el violín LIIIN, y las maracas CHACA-CHACA.</p>
+                    <p>¡Cuando todos tocan juntos, hacen música hermosa!</p>
+                </div>
+                <div class="interactive-element">
+                    🎵 ¡Haz todos los sonidos juntos! Es una orquesta
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 10 -->
+        <div class="page content-page">
+            <div class="page-number">10</div>
+            <div class="page-content">
+                <div class="text-content">
+                    <p>La música está en todas partes, amiguitos. 🌟</p>
+                    <p>Puedes hacer música con instrumentos, con tu voz, con palmadas, ¡incluso con tus pies!</p>
+                    <p>Cada persona puede ser un músico. Solo necesitas un corazón lleno de ritmo y alegría.</p>
+                    <p><span class="highlight">¡Sigue haciendo música todos los días!</span> 🎶💕</p>
+                </div>
+                <div class="interactive-element">
+                    ✨ ¿Cuál es tu instrumento favorito? ¡Dibújalo!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button id="prevBtn" onclick="changePage(-1)">⬅️ Anterior</button>
+        <div class="page-indicator">
+            <span id="currentPage">1</span> / <span id="totalPages">11</span>
+        </div>
+        <button id="nextBtn" onclick="changePage(1)">Siguiente ➡️</button>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        const totalPages = pages.length;
+        
+        document.getElementById('totalPages').textContent = totalPages;
+        
+        function showPage(n) {
+            pages.forEach(page => page.classList.remove('active'));
+            pages[n].classList.add('active');
+            
+            document.getElementById('currentPage').textContent = n + 1;
+            document.getElementById('prevBtn').disabled = n === 0;
+            document.getElementById('nextBtn').disabled = n === totalPages - 1;
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function changePage(direction) {
+            currentPage += direction;
+            if (currentPage < 0) currentPage = 0;
+            if (currentPage >= totalPages) currentPage = totalPages - 1;
+            showPage(currentPage);
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changePage(-1);
+            if (e.key === 'ArrowRight') changePage(1);
+        });
+        
+        // Initialize
+        showPage(0);
+    </script>
+</body>
+</html>
