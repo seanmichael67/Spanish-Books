@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Granja y Sus Animales - Semana 63</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(to bottom, #87CEEB 0%, #98D8C8 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .page {
+            padding: 40px;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .cover {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF6347 100%);
+            color: white;
+            padding: 60px 40px;
+        }
+        
+        .cover h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            animation: bounce 2s infinite;
+        }
+        
+        .cover .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .cover .emoji {
+            font-size: 5em;
+            margin: 20px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .page h2 {
+            font-size: 2em;
+            color: #2E7D32;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .page p {
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            border: 4px solid #4CAF50;
+            font-size: 4em;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .animal-sound {
+            font-size: 2em;
+            color: #FF6347;
+            font-weight: bold;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background: #FFF3E0;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
+        .vocabulary {
+            background: #FFF9C4;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .vocabulary h3 {
+            color: #F57C00;
+            margin-bottom: 15px;
+        }
+        
+        .vocabulary ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        
+        .vocabulary li {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            color: #333;
+        }
+        
+        .activities {
+            background: #E1F5FE;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .activities h3 {
+            color: #0277BD;
+            margin-bottom: 15px;
+        }
+        
+        .activities ul {
+            text-align: left;
+            margin-left: 20px;
+        }
+        
+        .activities li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .back-cover {
+            background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+            color: white;
+            padding: 60px 40px;
+        }
+        
+        .back-cover h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .cover h1 { font-size: 2em; }
+            .cover .subtitle { font-size: 1.2em; }
+            .page h2 { font-size: 1.5em; }
+            .page p { font-size: 1.1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        
+        <!-- Cover Page -->
+        <div class="page cover">
+            <h1>🐄 La Granja y Sus Animales 🐔</h1>
+            <div class="subtitle">Una aventura en el campo</div>
+            <div class="emoji">🚜🌾</div>
+            <p style="font-size: 1.2em;">Semana 63 • Edades 2-5 años</p>
+        </div>
+        
+        <!-- Page 1 -->
+        <div class="page">
+            <h2>Bienvenidos a la Granja</h2>
+            <div class="image-placeholder">🏡🌻</div>
+            <p>¡Hoy vamos a visitar la granja! Aquí viven muchos animales felices. Hay campos verdes, un establo rojo, y un granero lleno de heno.</p>
+            <p><strong>¿Estás listo para conocer a los animales?</strong></p>
+        </div>
+        
+        <!-- Page 2 -->
+        <div class="page">
+            <h2>La Vaca Moo</h2>
+            <div class="image-placeholder">🐄</div>
+            <p>La vaca se llama Moo. Es grande y tiene manchas blancas y negras. Moo nos da leche fresca todas las mañanas.</p>
+            <div class="animal-sound">¡Muuuu! ¡Muuuu!</div>
+            <p><em>¿Puedes hacer el sonido de la vaca?</em></p>
+        </div>
+        
+        <!-- Page 3 -->
+        <div class="page">
+            <h2>La Gallina Cuca</h2>
+            <div class="image-placeholder">🐔</div>
+            <p>La gallina Cuca camina por el corral buscando gusanitos. Todas las mañanas pone huevos frescos en su nido.</p>
+            <div class="animal-sound">¡Clo-clo-clo! ¡Cocorocó!</div>
+            <p><em>Cuca es muy trabajadora. ¡Los huevos son deliciosos!</em></p>
+        </div>
+        
+        <!-- Page 4 -->
+        <div class="page">
+            <h2>El Caballo Trueno</h2>
+            <div class="image-placeholder">🐴</div>
+            <p>El caballo Trueno es fuerte y veloz. Le encanta correr por los campos y ayudar al granjero a llevar cosas.</p>
+            <div class="animal-sound">¡Hiiiiii! ¡Hiiiiii!</div>
+            <p><em>Trueno tiene una crin hermosa y una cola larga.</em></p>
+        </div>
+        
+        <!-- Page 5 -->
+        <div class="page">
+            <h2>El Cerdo Rosi</h2>
+            <div class="image-placeholder">🐷</div>
+            <p>El cerdo Rosi es rosado y le gusta jugar en el lodo. Rosi es muy inteligente y siempre está buscando comida.</p>
+            <div class="animal-sound">¡Oinc-oinc! ¡Oinc-oinc!</div>
+            <p><em>A Rosi le encanta revolcarse en el barro para refrescarse.</em></p>
+        </div>
+        
+        <!-- Page 6 -->
+        <div class="page">
+            <h2>La Oveja Lanita</h2>
+            <div class="image-placeholder">🐑</div>
+            <p>La oveja Lanita tiene una lana suave y esponjosa. En la primavera, el granjero corta su lana para hacer abrigos calentitos.</p>
+            <div class="animal-sound">¡Beee! ¡Beee!</div>
+            <p><em>Lanita vive con su familia en el prado verde.</em></p>
+        </div>
+        
+        <!-- Page 7 -->
+        <div class="page">
+            <h2>El Pato Chapotín</h2>
+            <div class="image-placeholder">🦆</div>
+            <p>El pato Chapotín nada en el estanque todo el día. Le encanta chapotear en el agua y buscar pececitos.</p>
+            <div class="animal-sound">¡Cuac-cuac! ¡Cuac-cuac!</div>
+            <p><em>Chapotín tiene plumas impermeables que no se mojan.</em></p>
+        </div>
+        
+        <!-- Page 8 -->
+        <div class="page">
+            <h2>El Gallo Pepe</h2>
+            <div class="image-placeholder">🐓</div>
+            <p>El gallo Pepe es el despertador de la granja. Cada mañana, cuando sale el sol, Pepe canta fuerte para despertar a todos.</p>
+            <div class="animal-sound">¡Quiquiriquí! ¡Quiquiriquí!</div>
+            <p><em>Pepe tiene plumas de muchos colores brillantes.</em></p>
+        </div>
+        
+        <!-- Page 9 -->
+        <div class="page">
+            <h2>El Burro Gris</h2>
+            <div class="image-placeholder">🫏</div>
+            <p>El burro Gris es muy trabajador. Ayuda a cargar cosas pesadas y es el mejor amigo del granjero. ¡Es fuerte y paciente!</p>
+            <div class="animal-sound">¡Hi-haw! ¡Hi-haw!</div>
+            <p><em>Gris tiene orejas largas y un corazón gigante.</em></p>
+        </div>
+        
+        <!-- Page 10 -->
+        <div class="page">
+            <h2>Todos Juntos en la Granja</h2>
+            <div class="image-placeholder">🌾🚜🐄🐔🐴</div>
+            <p>Al final del día, todos los animales descansan juntos. La granja es un lugar especial donde todos son amigos y se cuidan unos a otros.</p>
+            <p><strong>¿Cuál es tu animal favorito de la granja?</strong></p>
+            <p style="font-size: 1.1em; margin-top: 20px;">🌟 Los animales de la granja nos dan leche, huevos, lana, y mucho amor. ¡Hay que cuidarlos y respetarlos! 🌟</p>
+        </div>
+        
+        <!-- Vocabulary & Activities -->
+        <div class="page">
+            <div class="vocabulary">
+                <h3>📚 Vocabulario de la Granja</h3>
+                <ul>
+                    <li>🐄 La vaca</li>
+                    <li>🐔 La gallina</li>
+                    <li>🐴 El caballo</li>
+                    <li>🐷 El cerdo</li>
+                    <li>🐑 La oveja</li>
+                    <li>🦆 El pato</li>
+                    <li>🐓 El gallo</li>
+                    <li>🫏 El burro</li>
+                    <li>🏡 La granja</li>
+                    <li>🌾 El campo</li>
+                    <li>🥚 El huevo</li>
+                    <li>🥛 La leche</li>
+                </ul>
+            </div>
+            
+            <div class="activities">
+                <h3>🎨 Actividades Divertidas</h3>
+                <ul>
+                    <li>🎭 <strong>Juego de sonidos:</strong> Imita los sonidos de cada animal</li>
+                    <li>🖍️ <strong>Dibuja tu granja:</strong> Crea tu propia granja con tus animales favoritos</li>
+                    <li>🎵 <strong>Canta:</strong> "La vaca lechera" u otras canciones de la granja</li>
+                    <li>📖 <strong>Cuenta animales:</strong> ¿Cuántos animales viven en la granja?</li>
+                    <li>🍳 <strong>Cocina:</strong> Ayuda a preparar huevos o un vaso de leche</li>
+                    <li>🧩 <strong>Memory:</strong> Empareja cada animal con su sonido</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Back Cover -->
+        <div class="page back-cover">
+            <h2>¡Gracias por visitar la granja! 🌻</h2>
+            <p style="font-size: 1.3em; margin: 20px 0;">Ahora conoces a todos los animales de la granja y los sonidos que hacen. ¡Sigue aprendiendo español con nosotros!</p>
+            <div style="font-size: 3em; margin: 20px 0;">🐄🐔🐴🐷🐑🦆🐓</div>
+            <p style="font-size: 1.1em;">Visita nuestra biblioteca en:</p>
+            <p style="font-size: 1.2em; font-weight: bold;">spanish-books.onrender.com</p>
+            <p style="margin-top: 30px; font-size: 0.9em;">📚 Semana 63 • Beibei Amigos Language Preschool 📚</p>
+        </div>
+        
+    </div>
+</body>
+</html>

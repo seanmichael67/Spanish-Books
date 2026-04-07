@@ -1,0 +1,131 @@
+{
+  "week": 63,
+  "title": "La Granja y Sus Animales",
+  "subtitle": "Una aventura en el campo",
+  "topic": "Farm Animals & Nature",
+  "target_age": "2-5 years",
+  "language": "Spanish",
+  "pages": 10,
+  "created": "2026-04-06",
+  "learning_objectives": [
+    "Identificar animales comunes de la granja",
+    "Aprender sonidos de animales en español",
+    "Desarrollar vocabulario rural y agrícola",
+    "Comprender la importancia de los animales de granja",
+    "Fomentar respeto y cuidado por los animales"
+  ],
+  "vocabulary": [
+    "granja",
+    "vaca",
+    "gallina",
+    "caballo",
+    "cerdo",
+    "oveja",
+    "pato",
+    "gallo",
+    "burro",
+    "campo",
+    "establo",
+    "granero",
+    "huevo",
+    "leche",
+    "lana",
+    "corral",
+    "estanque",
+    "heno"
+  ],
+  "animal_sounds": {
+    "vaca": "muuu",
+    "gallina": "clo-clo-clo / cocorocó",
+    "caballo": "hiiii",
+    "cerdo": "oinc-oinc",
+    "oveja": "beee",
+    "pato": "cuac-cuac",
+    "gallo": "quiquiriquí",
+    "burro": "hi-haw"
+  },
+  "images": [
+    {
+      "page": "cover",
+      "description": "Vibrant farm scene with animals and barn",
+      "prompt": "Cheerful children's book cover illustration showing a sunny farm scene with a red barn, green fields, windmill, and happy farm animals (cow, chicken, horse, pig, sheep) playing together in the foreground, bright morning sky with fluffy clouds, warm inviting colors, suitable for ages 2-5, playful cartoon style"
+    },
+    {
+      "page": 1,
+      "description": "Welcoming farm landscape overview",
+      "prompt": "Wide panoramic children's book illustration of a beautiful farm with rolling green hills, a red barn with white trim, wooden fences, fields of golden wheat, scattered hay bales, a blue sky with sunshine, and happy farm animals in the distance, peaceful and inviting atmosphere, soft cartoon style for preschool ages 2-5"
+    },
+    {
+      "page": 2,
+      "description": "Friendly dairy cow in pasture",
+      "prompt": "Warm children's book illustration of a gentle Holstein dairy cow with black and white spots standing in a lush green pasture, friendly face with big expressive eyes, flowers scattered around, wooden fence and barn in background, soft morning light, approachable and sweet character design suitable for ages 2-5"
+    },
+    {
+      "page": 3,
+      "description": "Happy hen in chicken coop yard",
+      "prompt": "Delightful children's book illustration of a plump brown hen pecking at the ground in a farmyard, wooden chicken coop with nesting boxes visible, scattered grain and worms, warm sunlight, cheerful expression, detailed feathers, cozy farm setting, soft cartoon style perfect for preschool farm animal education"
+    },
+    {
+      "page": 4,
+      "description": "Strong horse running in field",
+      "prompt": "Dynamic children's book illustration of a majestic brown horse with flowing black mane galloping gracefully through an open green field, powerful but friendly appearance, muscles defined but not intimidating, blue sky background, sense of freedom and strength, appealing to young children ages 2-5"
+    },
+    {
+      "page": 5,
+      "description": "Pink pig playing in mud",
+      "prompt": "Adorable children's book illustration of a cheerful pink pig happily rolling in a shallow mud puddle, big smile, curly tail, rounded body, playful and messy, wooden fence and barn in background, warm afternoon light, fun and endearing character that celebrates pigs naturally, suitable for preschool"
+    },
+    {
+      "page": 6,
+      "description": "Fluffy sheep in meadow",
+      "prompt": "Gentle children's book illustration of a white fluffy sheep with thick woolly coat grazing peacefully in a green meadow filled with wildflowers, sweet face with kind eyes peeking through wool, rolling hills in background, soft clouds, calm and soothing atmosphere, perfect for teaching farm animals to ages 2-5"
+    },
+    {
+      "page": 7,
+      "description": "Duck swimming in farm pond",
+      "prompt": "Cheerful children's book illustration of a yellow and white duck paddling happily in a calm farm pond, ripples in the water, lily pads and reeds nearby, blue sky reflected in water, friendly expression, other ducks in background, peaceful rural setting, soft cartoon style for preschool"
+    },
+    {
+      "page": 8,
+      "description": "Rooster crowing at sunrise",
+      "prompt": "Vibrant children's book illustration of a proud rooster with colorful red, orange, and green feathers standing on a wooden fence post, head tilted back crowing at the rising sun, golden sunrise sky with pink and orange clouds, farm in background, dynamic and energetic pose, suitable for ages 2-5"
+    },
+    {
+      "page": 9,
+      "description": "Hardworking donkey carrying load",
+      "prompt": "Heartwarming children's book illustration of a friendly gray donkey with kind eyes and long ears standing near a small cart with hay bales, gentle and patient expression, farm path with trees and barn visible, warm afternoon light, character showing strength and kindness, soft cartoon style for preschool"
+    },
+    {
+      "page": 10,
+      "description": "All farm animals together at sunset",
+      "prompt": "Magical children's book illustration of all the farm animals (cow, chicken, horse, pig, sheep, duck, rooster, donkey) gathered together peacefully in front of the red barn at golden hour sunset, warm orange and pink sky, animals appearing as friends, harmonious and happy community scene, suitable for ages 2-5, celebrating farm life"
+    }
+  ],
+  "discussion_questions": [
+    "¿Qué animales viven en la granja?",
+    "¿Qué sonido hace cada animal?",
+    "¿Qué nos dan los animales de la granja?",
+    "¿Cuál es tu animal favorito? ¿Por qué?",
+    "¿Has visitado una granja? ¿Qué viste?",
+    "¿Cómo podemos cuidar a los animales?"
+  ],
+  "activities": [
+    "Play animal sound matching game",
+    "Draw and color your favorite farm animal",
+    "Sing 'Old MacDonald Had a Farm' in Spanish",
+    "Count farm animals in the book",
+    "Make animal masks from paper plates",
+    "Visit a local farm or petting zoo",
+    "Cook simple recipes with farm products (eggs, milk)",
+    "Create a farm scene with toy animals"
+  ],
+  "parent_notes": "Farm animal books are excellent for language development as they introduce new vocabulary while engaging children with familiar animal sounds. This book celebrates the diversity of farm life and teaches respect for animals. Consider visiting a local farm or petting zoo to reinforce learning. The repetitive sound patterns help with phonemic awareness in Spanish.",
+  "cultural_notes": "Many Spanish-speaking cultures have deep agricultural traditions. This book honors farm life and the important relationship between humans and animals. Animal sounds vary slightly across Spanish-speaking regions, so parents may teach regional variations.",
+  "extensions": [
+    "Learn about where food comes from (farm to table)",
+    "Explore different types of farms (dairy, poultry, crop)",
+    "Discuss animal care and veterinary science",
+    "Compare farm animals to wild animals",
+    "Learn about baby animal names (calf, chick, foal, etc.)"
+  ]
+}
