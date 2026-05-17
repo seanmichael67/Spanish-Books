@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Clima es Divertido</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; text-align: center; background-color: #f0f8ff; padding: 20px; }
+        .page { display: none; padding: 40px; background: white; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 600px; margin: 0 auto; }
+        .active { display: block; }
+        img { max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #4CAF50; color: white; border: none; border-radius: 5px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div id="book">
+    <div class="page active" id="p1">
+        <h1>El Clima es Divertido</h1>
+        <img src="https://via.placeholder.com/600x400" alt="Cover">
+        <p>¡Hola! Vamos a aprender sobre el clima.</p>
+        <button onclick="nextPage(2)">Siguiente</button>
+    </div>
+    <div class="page" id="p2">
+        <img src="https://via.placeholder.com/600x400" alt="Sun">
+        <p>Hoy está <b>soleado</b>. ¡El sol brilla mucho!</p>
+        <button onclick="nextPage(3)">Siguiente</button>
+    </div>
+    <div class="page" id="p3">
+        <img src="https://via.placeholder.com/600x400" alt="Clouds">
+        <p>Ahora está <b>nublado</b>. Las nubes cubren el cielo.</p>
+        <button onclick="nextPage(4)">Siguiente</button>
+    </div>
+    <div class="page" id="p4">
+        <img src="https://via.placeholder.com/600x400" alt="Rain">
+        <p>¡Oh! Está <b>lloviendo</b>. ¡Necesitamos un paraguas!</p>
+        <button onclick="nextPage(5)">Siguiente</button>
+    </div>
+    <div class="page" id="p5">
+        <img src="https://via.placeholder.com/600x400" alt="Wind">
+        <p>Hace mucho <b>viento</b>. ¡Las hojas vuelan!</p>
+        <button onclick="nextPage(6)">Siguiente</button>
+    </div>
+    <div class="page" id="p6">
+        <img src="https://via.placeholder.com/600x400" alt="Rainbow">
+        <p>Mira, un <b>arcoíris</b>. ¡Qué colores tan bonitos!</p>
+        <button onclick="nextPage(7)">Siguiente</button>
+    </div>
+    <div class="page" id="p7">
+        <img src="https://via.placeholder.com/600x400" alt="Snow">
+        <p>Hace frío y está <b>nevando</b>. ¡Vamos a hacer un muñeco!</p>
+        <button onclick="nextPage(8)">Siguiente</button>
+    </div>
+    <div class="page" id="p8">
+        <img src="https://via.placeholder.com/600x400" alt="Storm">
+        <p>¡Cuidado! Hay una <b>tormenta</b>. Escucha el trueno.</p>
+        <button onclick="nextPage(9)">Siguiente</button>
+    </div>
+    <div class="page" id="p9">
+        <img src="https://via.placeholder.com/600x400" alt="Clothes">
+        <p>Cada clima necesita ropa especial. ¿Qué te pones hoy?</p>
+        <button onclick="nextPage(10)">Siguiente</button>
+    </div>
+    <div class="page" id="p10">
+        <img src="https://via.placeholder.com/600x400" alt="Happy">
+        <p>¡El clima es genial, no importa cómo sea! Fin.</p>
+    </div>
+</div>
+
+<script>
+    function nextPage(n) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById('p' + n).classList.add('active');
+    }
+</script>
+</body>
+</html>
