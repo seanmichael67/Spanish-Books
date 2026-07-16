@@ -94,6 +94,56 @@ WORD_INSERT = """
                         } catch (e) {}"""
 
 
+BUTTON_OLD = re.compile(
+    r"\s*".join(
+        re.escape(line.strip())
+        for line in [
+            '{/* Read to Me button - between header and book */}',
+            "{viewMode === 'preview' && (",
+            '<div className="flex justify-center py-1 md:py-2">',
+            '<button onClick={() => readPage(true)} className={`flex items-center gap-2 md:gap-3 px-6 md:px-10 py-2 md:py-4 rounded-xl md:rounded-2xl text-base md:text-xl font-black transition shadow-2xl ${isAutoAdvancing ? "bg-red-500 text-white hover:bg-red-600 animate-pulse" : "bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 active:scale-95"}`}>',
+            '{isAutoAdvancing ? <Icons.Stop size={24} /> : <Icons.Play size={24} />}',
+            '{isAutoAdvancing ? "Stop" : "📖 Read to Me"}',
+            '</button>',
+            '</div>',
+            ')}',
+        ]
+    )
+)
+
+BUTTON_NEW = """{/* Reading starts automatically; button appears only as Stop while reading */}
+                    {viewMode === 'preview' && isAutoAdvancing && (
+                        <div className="flex justify-center py-1 md:py-2">
+                            <button onClick={() => readPage(true)} className="flex items-center gap-2 md:gap-3 px-6 md:px-10 py-2 md:py-4 rounded-xl md:rounded-2xl text-base md:text-xl font-black transition shadow-2xl bg-red-500 text-white hover:bg-red-600 animate-pulse">
+                                <Icons.Stop size={24} />
+                                Stop
+                            </button>
+                        </div>
+                    )}"""
+
+PLAY_OLD = "audio.play().catch(() => setIsReading(false));"
+PLAY_NEW = ("audio.play().catch(() => { setIsReading(false); setIsAutoAdvancing(false); "
+            "if (audioRef.current === audio) audioRef.current = null; });")
+
+AUTOSTART_ANCHOR = "const nav = (idx, dir, fromAuto = false) => {"
+AUTOSTART_INSERT = """// Start reading automatically; if the browser blocks autoplay,
+            // begin on the child's first tap instead.
+            useEffect(() => {
+                let kicked = false;
+                const kick = () => {
+                    if (kicked) return;
+                    kicked = true;
+                    document.removeEventListener('pointerdown', kick, true);
+                    if (!audioRef.current) readPage(true);
+                };
+                const t = setTimeout(() => readPage(true), 1000);
+                document.addEventListener('pointerdown', kick, true);
+                return () => { clearTimeout(t); document.removeEventListener('pointerdown', kick, true); };
+            }, []);
+
+            """
+
+
 def patch(path):
     raw = open(path).read()
     orig = raw
@@ -122,6 +172,19 @@ def patch(path):
         raw = raw.replace(PLACEHOLDER_OLD, PLACEHOLDER_NEW)
     elif 'role="img">📖' not in raw:
         notes.append("PLACEHOLDER-MISS")
+    if "Reading starts automatically" not in raw:
+        raw, n = BUTTON_OLD.subn(BUTTON_NEW, raw, count=1)
+        if n == 0:
+            notes.append("BUTTON-MISS")
+    if PLAY_OLD in raw:
+        raw = raw.replace(PLAY_OLD, PLAY_NEW, 1)
+    elif PLAY_NEW not in raw:
+        notes.append("PLAY-MISS")
+    if "begin on the child's first tap" not in raw:
+        if AUTOSTART_ANCHOR in raw:
+            raw = raw.replace(AUTOSTART_ANCHOR, AUTOSTART_INSERT + AUTOSTART_ANCHOR, 1)
+        else:
+            notes.append("AUTOSTART-MISS")
 
     if raw != orig:
         open(path, "w").write(raw)
