@@ -2,3 +2,5 @@
 config.js
 node_modules/
 __pycache__/
+tts-venv/
+scripts/tts-venv/
