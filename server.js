@@ -179,6 +179,13 @@ app.get('/', (req, res) => {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Free Spanish Books for Preschoolers | Beibei Amigos - Learn Spanish Reading</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WP9V5R7T9N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-WP9V5R7T9N', { content_group: 'spanish-books-library' });
+  </script>
   <meta name="description" content="Free interactive Spanish reading books for preschoolers ages 2-5. Audio pronunciation, word highlighting, and beautiful photos. New books every week! By Beibei Amigos Language Preschool.">
   <meta name="keywords" content="free Spanish books kids, learn Spanish preschool, bilingual children books, Spanish reading preschoolers, interactive Spanish books, Beibei Amigos, Spanish vocabulary kids, bilingual education Phoenix">
   <meta property="og:title" content="Free Spanish Books for Preschoolers | Beibei Amigos">
@@ -277,6 +284,14 @@ app.get('/', (req, res) => {
     });
     // Default filter on load
     filterBooks('animales');
+    // GA4: which books get opened from the library
+    document.addEventListener('click', function (e) {
+      var card = e.target.closest && e.target.closest('a.card');
+      if (card) { try { gtag('event', 'book_click', { book: (card.getAttribute('href') || '').split('/').filter(Boolean).pop() }); } catch (err) {} }
+      var theme = e.target.closest && e.target.closest('.theme-btn');
+      if (theme) { try { gtag('event', 'theme_filter', { theme: theme.dataset.filter }); } catch (err) {} }
+    }, true);
+
 
     // Tell parent iframe our height so it can auto-resize (no scrollbar)
     function reportHeight() {

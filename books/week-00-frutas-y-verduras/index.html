@@ -20,6 +20,16 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="../../config.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WP9V5R7T9N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-WP9V5R7T9N', { content_group: 'spanish-books' });
+      window.bookEvent = function (name, params) {
+        try { gtag('event', name, Object.assign({ book: location.pathname.split('/').filter(Boolean).pop() }, params || {})); } catch (e) {}
+      };
+    </script>
     <style>
         body { font-family: 'Sour Gummy', cursive; }
         .perspective-2000 { perspective: 2000px; }
@@ -146,6 +156,7 @@
             useEffect(() => {
                 const page = BOOK_CONFIG.pages[currentPage];
                 if (page && page.type === 'badge') {
+                    window.bookEvent && bookEvent('book_complete');
                     const updated = saveBadge(BOOK_CONFIG.slug, { emoji: page.badgeEmoji, name: page.badgeName, nameEn: page.badgeNameEn });
                     setAllBadges(updated);
                     setShowBadgePopup(true);
@@ -249,6 +260,7 @@
                 if (isReading && overrideIdx === null) { stopReading(); return; }
                 setIsReading(true);
                 if (auto) setIsAutoAdvancing(true);
+                window.bookEvent && bookEvent('read_page', { page_index: idx });
                 // Retry TTS up to 3 times with delay (free tier rate limit)
                 let url = null;
                 for (let attempt = 0; attempt < 3; attempt++) {
@@ -306,6 +318,7 @@
             // Start reading automatically; if the browser blocks autoplay,
             // begin on the child's first tap instead.
             useEffect(() => {
+                window.bookEvent && bookEvent('book_open');
                 let kicked = false;
                 const kick = () => {
                     if (kicked) return;
@@ -319,6 +332,7 @@
             }, []);
 
             const nav = (idx, dir, fromAuto = false) => {
+                window.bookEvent && bookEvent('page_turn', { page_index: idx, auto: fromAuto });
                 if (isAnimating && !fromAuto) return;
                 if (!fromAuto) stopReading();
                 setDirection(dir); setIsAnimating(true);
@@ -357,6 +371,7 @@
                     const [isAutoPlaying, setIsAutoPlaying] = React.useState(false);
 
                     const speakWord = async (word, retries = 2) => {
+                        window.bookEvent && bookEvent('word_tap', { word: word });
                         const wordSlug = word.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-');
                         try {
                             const head = await fetch(`audio/word-${wordSlug}.mp3`, { method: 'HEAD' });

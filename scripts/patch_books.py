@@ -144,6 +144,32 @@ AUTOSTART_INSERT = """// Start reading automatically; if the browser blocks auto
             """
 
 
+GA4_ID = "G-WP9V5R7T9N"  # site's GA4 property, extracted from GTM-56PSPXFR
+GTAG_ANCHOR = '<script src="../../config.js"></script>'
+GTAG_INSERT = f"""
+    <script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {{ dataLayer.push(arguments); }}
+      gtag('js', new Date());
+      gtag('config', '{GA4_ID}', {{ content_group: 'spanish-books' }});
+      window.bookEvent = function (name, params) {{
+        try {{ gtag('event', name, Object.assign({{ book: location.pathname.split('/').filter(Boolean).pop() }}, params || {{}})); }} catch (e) {{}}
+      }};
+    </script>"""
+
+EVT_OPEN_ANCHOR = "let kicked = false;"
+EVT_OPEN = "window.bookEvent && bookEvent('book_open');\n                "
+EVT_TURN_ANCHOR = "const nav = (idx, dir, fromAuto = false) => {"
+EVT_TURN = "\n                window.bookEvent && bookEvent('page_turn', { page_index: idx, auto: fromAuto });"
+EVT_READ_ANCHOR = "if (auto) setIsAutoAdvancing(true);"
+EVT_READ = "\n                window.bookEvent && bookEvent('read_page', { page_index: idx });"
+EVT_WORD_ANCHOR = "const speakWord = async (word, retries = 2) => {"
+EVT_WORD = "\n                        window.bookEvent && bookEvent('word_tap', { word: word });"
+EVT_DONE_ANCHOR = "if (page && page.type === 'badge') {"
+EVT_DONE = "\n                    window.bookEvent && bookEvent('book_complete');"
+
+
 def patch(path):
     raw = open(path).read()
     orig = raw
@@ -185,6 +211,27 @@ def patch(path):
             raw = raw.replace(AUTOSTART_ANCHOR, AUTOSTART_INSERT + AUTOSTART_ANCHOR, 1)
         else:
             notes.append("AUTOSTART-MISS")
+    if GA4_ID not in raw:
+        if GTAG_ANCHOR in raw:
+            raw = raw.replace(GTAG_ANCHOR, GTAG_ANCHOR + GTAG_INSERT, 1)
+        else:
+            notes.append("GTAG-MISS")
+        for anchor, ins, marker in [
+            (EVT_OPEN_ANCHOR, EVT_OPEN, "bookEvent('book_open')"),
+            (EVT_TURN_ANCHOR, EVT_TURN, "bookEvent('page_turn'"),
+            (EVT_READ_ANCHOR, EVT_READ, "bookEvent('read_page'"),
+            (EVT_WORD_ANCHOR, EVT_WORD, "bookEvent('word_tap'"),
+            (EVT_DONE_ANCHOR, EVT_DONE, "bookEvent('book_complete')"),
+        ]:
+            if marker in raw:
+                continue
+            if anchor not in raw:
+                notes.append(f"EVT-MISS:{marker[:24]}")
+                continue
+            if marker == "bookEvent('book_open')":
+                raw = raw.replace(anchor, ins + anchor, 1)
+            else:
+                raw = raw.replace(anchor, anchor + ins, 1)
 
     if raw != orig:
         open(path, "w").write(raw)
