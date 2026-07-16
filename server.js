@@ -3,17 +3,17 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3002;
 
-// Inject API keys server-side so they're not in the repo
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
+// Books use pre-generated static images/audio; the client no longer needs a
+// Gemini key. Serving the real key here exposed it to every visitor
+// (config.js is fetchable by anyone). Set ALLOW_CLIENT_GEMINI=1 only as a
+// temporary escape hatch if live API fallback is ever needed again.
+const CLIENT_GEMINI_KEY = process.env.ALLOW_CLIENT_GEMINI === '1'
+  ? (process.env.GEMINI_API_KEY || '')
+  : '';
 
-// Serve config.js dynamically from any path depth (keeps key out of repo)
-app.get('*/config.js', (req, res) => {
+app.get(['/config.js', '*/config.js'], (req, res) => {
   res.type('application/javascript');
-  res.send(`const GEMINI_API_KEY = "${GEMINI_API_KEY}";`);
-});
-app.get('/config.js', (req, res) => {
-  res.type('application/javascript');
-  res.send(`const GEMINI_API_KEY = "${GEMINI_API_KEY}";`);
+  res.send(`const GEMINI_API_KEY = "${CLIENT_GEMINI_KEY}";`);
 });
 
 // Serve static files
@@ -125,6 +125,8 @@ const BOOKS = [
   { slug: 'week-93-las-letras', emoji: '🔤', week: 93, title: 'Las Letras', subtitle: 'The Letters', theme: 'numeros', ready: true },
   { slug: 'week-94-el-abecedario', emoji: '🅰️', week: 94, title: 'El Abecedario', subtitle: 'The Alphabet', theme: 'numeros', ready: true },
   { slug: 'week-95-contar', emoji: '🔢', week: 95, title: 'Contar', subtitle: 'Counting', theme: 'numeros', ready: true },
+  { slug: 'week-96-la-guitarra', emoji: '🎸', week: 96, title: 'La Guitarra', subtitle: 'The Guitar', theme: 'musica', ready: true },
+  { slug: 'week-97-el-tambor', emoji: '🥁', week: 97, title: 'El Tambor', subtitle: 'The Drum', theme: 'musica', ready: true },
 ];
 
 const THEMES = [
