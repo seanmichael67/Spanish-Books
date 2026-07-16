@@ -10,7 +10,11 @@ BOOKS_DIR = os.path.expanduser("~/Projects/preschool-books/books")
 DIVI_DIR = os.path.expanduser("~/Projects/preschool-books/divi-embeds/books")
 REPO_DIR = os.path.expanduser("~/Projects/preschool-books")
 WP_API = "https://www.beibeiamigos.com/wp-json/wp/v2/pages"
-AUTH = ("luciano", "ZjjW wlE4 tNJa 5sQr F6ym fLtV")
+WP_USER = os.environ.get("WP_BEIBEI_USER")
+WP_PASS = os.environ.get("WP_BEIBEI_APP_PASSWORD")
+if not WP_USER or not WP_PASS:
+    raise SystemExit("Set WP_BEIBEI_USER and WP_BEIBEI_APP_PASSWORD")
+AUTH = (WP_USER, WP_PASS)
 PARENT = 1854  # spanish-books parent page
 RENDER_BASE = "https://seanmichael67.github.io/Spanish-Books/books"
 

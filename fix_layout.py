@@ -3,8 +3,13 @@
 Layout: back-link → iframe+script → h2 → desc → CTAs
 """
 import json, re, subprocess, time, sys
+import os
 
-AUTH = "luciano:ZjjW wlE4 tNJa 5sQr F6ym fLtV"
+WP_USER = os.environ.get("WP_BEIBEI_USER")
+WP_PASS = os.environ.get("WP_BEIBEI_APP_PASSWORD")
+if not WP_USER or not WP_PASS:
+    raise SystemExit("Set WP_BEIBEI_USER and WP_BEIBEI_APP_PASSWORD")
+AUTH = f"{WP_USER}:{WP_PASS}"
 BASE = "https://www.beibeiamigos.com/wp-json/wp/v2/pages"
 
 def wp_get(url):

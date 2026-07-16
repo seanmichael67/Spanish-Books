@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Update the WordPress spanish-books page with latest Divi embed code."""
 import json
+import os
 import urllib.request
 
-WP_USER = "Luciano"
-WP_PASS = "ZjjW wlE4 tNJa 5sQr F6ym fLtV"
+WP_USER = os.environ.get("WP_BEIBEI_USER")
+WP_PASS = os.environ.get("WP_BEIBEI_APP_PASSWORD")
+if not WP_USER or not WP_PASS:
+    raise SystemExit("Set WP_BEIBEI_USER and WP_BEIBEI_APP_PASSWORD")
 PAGE_ID = 1854
 
 # Read the embed HTML

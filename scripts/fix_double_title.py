@@ -2,8 +2,10 @@
 """Update all WP book pages with H1-removed embed content."""
 import json, urllib.request, base64, os, re, glob
 
-WP_USER = "Luciano"
-WP_PASS = "ZjjW wlE4 tNJa 5sQr F6ym fLtV"
+WP_USER = os.environ.get("WP_BEIBEI_USER")
+WP_PASS = os.environ.get("WP_BEIBEI_APP_PASSWORD")
+if not WP_USER or not WP_PASS:
+    raise SystemExit("Set WP_BEIBEI_USER and WP_BEIBEI_APP_PASSWORD")
 AUTH = "Basic " + base64.b64encode(f"{WP_USER}:{WP_PASS}".encode()).decode()
 
 embed_dir = os.path.expanduser("~/Projects/preschool-books/divi-embeds/books/")

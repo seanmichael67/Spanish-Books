@@ -5,7 +5,11 @@ import os, re, json, time, requests
 
 BOOKS_DIR = os.path.expanduser("~/Projects/preschool-books/divi-embeds/books/")
 WP_API = "https://www.beibeiamigos.com/wp-json/wp/v2/pages"
-AUTH = ("Luciano", "ZjjW wlE4 tNJa 5sQr F6ym fLtV")
+WP_USER = os.environ.get("WP_BEIBEI_USER")
+WP_PASS = os.environ.get("WP_BEIBEI_APP_PASSWORD")
+if not WP_USER or not WP_PASS:
+    raise SystemExit("Set WP_BEIBEI_USER and WP_BEIBEI_APP_PASSWORD")
+AUTH = (WP_USER, WP_PASS)
 PARENT = 1854
 
 DIVI_WRAP = '[et_pb_section fb_built="1" _builder_version="4.27.4"][et_pb_row _builder_version="4.27.4"][et_pb_column type="4_4" _builder_version="4.27.4"][et_pb_code _builder_version="4.27.4"]\n{}\n[/et_pb_code][/et_pb_column][/et_pb_row][/et_pb_section]'
