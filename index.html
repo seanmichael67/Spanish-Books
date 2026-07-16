@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Spanish Books for Preschoolers | Beibei Amigos - Learn Spanish Reading</title>
+  <meta name="description" content="Free interactive Spanish reading books for preschoolers ages 2-5. Audio pronunciation, word highlighting, and beautiful photos. New books every week! By Beibei Amigos Language Preschool.">
+  <meta name="keywords" content="free Spanish books kids, learn Spanish preschool, bilingual children books, Spanish reading preschoolers, interactive Spanish books, Beibei Amigos, Spanish vocabulary kids, bilingual education Phoenix">
+  <meta property="og:title" content="Free Spanish Books for Preschoolers | Beibei Amigos">
+  <meta property="og:description" content="Free interactive Spanish books with audio! Your child learns to read Spanish through play. New books every week.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spanish-books.onrender.com/">
+  <meta property="og:image" content="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.beibeiamigos.com/spanish-books/">
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Sour Gummy', cursive; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px 20px 10px; margin: 0; }
+    .container { max-width: 1400px; margin: 0 auto; }
+    .header { text-align: center; color: white; margin-bottom: 32px; }
+    .header img { width: 80px; height: 80px; border-radius: 50%; background: white; padding: 8px; margin-bottom: 16px; }
+    .header h1 { font-size: 2.5rem; margin-bottom: 8px; }
+    .header p { font-size: 1.1rem; opacity: 0.9; }
+    .header .count { font-size: 0.85rem; opacity: 0.7; margin-top: 4px; }
+
+    /* Theme filter */
+    .themes { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 32px; padding: 0 10px; }
+    .theme-btn { background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); color: white; padding: 10px 20px; border-radius: 50px; cursor: pointer; font-family: inherit; font-size: 1.1rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s; min-width: 160px; height: 48px; box-sizing: border-box; }
+    .theme-btn:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
+    .theme-btn.active { background: white; color: #5b4a9e; border-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+    .theme-emoji { font-size: 1.1rem; }
+    @media (max-width: 600px) { .theme-btn { padding: 8px 14px; font-size: 0.9rem; min-width: 130px; height: 40px; } .theme-emoji { font-size: 1.2rem; } }
+
+    /* Book grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    .card { background: white; border-radius: 20px; padding: 28px 20px; text-align: center; text-decoration: none; color: #333;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.2); }
+    .card .emoji { font-size: 3rem; margin-bottom: 10px; }
+    .card .week { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 6px; }
+    .card .title { font-size: 1.3rem; font-weight: 800; margin-bottom: 4px; }
+    .card .subtitle { font-size: 0.8rem; color: #777; }
+    .card .theme-tag { font-size: 0.65rem; color: #5b4a9e; background: #ede9fe; padding: 2px 10px; border-radius: 20px; display: inline-block; margin-top: 8px; font-weight: 600; }
+    .card.coming-soon { opacity: 0.5; pointer-events: none; }
+    .card.coming-soon .title::after { content: ' 🔒'; }
+    .card.hidden { display: none; }
+
+    .no-books { text-align: center; color: rgba(255,255,255,0.7); padding: 60px 20px; font-size: 1.2rem; display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png" alt="Beibei Amigos">
+      <h1>📚 Mis Libros en Español</h1>
+      <p>Beibei Amigos Language Preschool • Lectura Temprana</p>
+      <p class="count">106 libros disponibles • ¡Nuevos cada semana!</p>
+    </div>
+
+    <div class="themes">
+      <button class="theme-btn active" data-filter="animales"><span class="theme-emoji">🐻</span><span class="theme-label">Animals</span></button>
+        <button class="theme-btn" data-filter="mariposas"><span class="theme-emoji">🦋</span><span class="theme-label">Butterflies & Bugs</span></button>
+        <button class="theme-btn" data-filter="oceano"><span class="theme-emoji">🐙</span><span class="theme-label">Ocean Creatures</span></button>
+        <button class="theme-btn" data-filter="plantas"><span class="theme-emoji">🌸</span><span class="theme-label">Plants & Flowers</span></button>
+        <button class="theme-btn" data-filter="nutricion"><span class="theme-emoji">🥗</span><span class="theme-label">Nutrition</span></button>
+        <button class="theme-btn" data-filter="comida"><span class="theme-emoji">🍎</span><span class="theme-label">Food</span></button>
+        <button class="theme-btn" data-filter="agua"><span class="theme-emoji">💧</span><span class="theme-label">Water</span></button>
+        <button class="theme-btn" data-filter="colores"><span class="theme-emoji">🌈</span><span class="theme-label">Colors & Shapes</span></button>
+        <button class="theme-btn" data-filter="familia"><span class="theme-emoji">👨‍👩‍👧</span><span class="theme-label">Family</span></button>
+        <button class="theme-btn" data-filter="amigos"><span class="theme-emoji">🤝</span><span class="theme-label">Friends</span></button>
+        <button class="theme-btn" data-filter="naturaleza"><span class="theme-emoji">🌿</span><span class="theme-label">Nature</span></button>
+        <button class="theme-btn" data-filter="numeros"><span class="theme-emoji">🔢</span><span class="theme-label">Numbers & Letters</span></button>
+        <button class="theme-btn" data-filter="musica"><span class="theme-emoji">🎵</span><span class="theme-label">Music & Games</span></button>
+        <button class="theme-btn" data-filter="mi-mundo"><span class="theme-emoji">🏠</span><span class="theme-label">My World</span></button>
+        <button class="theme-btn" data-filter="cuerpo"><span class="theme-emoji">🫀</span><span class="theme-label">My Body</span></button>
+        <button class="theme-btn" data-filter="transporte"><span class="theme-emoji">🚗</span><span class="theme-label">Transportation</span></button>
+        <button class="theme-btn" data-filter="estaciones"><span class="theme-emoji">☀️</span><span class="theme-label">Seasons & Weather</span></button>
+        <button class="theme-btn" data-filter="todos"><span class="theme-emoji">📚</span><span class="theme-label">All</span></button>
+    </div>
+
+    <div class="grid" id="bookGrid">
+      <a href="https://www.beibeiamigos.com/spanish-books/frutas-y-verduras/" target="_top" class="card" data-theme="comida"><div class="emoji">🍎</div><div class="week">Semana 0</div><div class="title">Mis Frutas y Verduras</div><div class="subtitle">Fruits & Vegetables</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-oso/" target="_top" class="card" data-theme="animales"><div class="emoji">🐻</div><div class="week">Semana 1</div><div class="title">El Oso</div><div class="subtitle">The Bear</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-gato/" target="_top" class="card" data-theme="animales"><div class="emoji">🐱</div><div class="week">Semana 2</div><div class="title">El Gato</div><div class="subtitle">The Cat</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-perro/" target="_top" class="card" data-theme="animales"><div class="emoji">🐶</div><div class="week">Semana 3</div><div class="title">El Perro</div><div class="subtitle">The Dog</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-conejo/" target="_top" class="card" data-theme="animales"><div class="emoji">🐰</div><div class="week">Semana 4</div><div class="title">El Conejo</div><div class="subtitle">The Rabbit</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-caballo/" target="_top" class="card" data-theme="animales"><div class="emoji">🐴</div><div class="week">Semana 5</div><div class="title">El Caballo</div><div class="subtitle">The Horse</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-vaca/" target="_top" class="card" data-theme="animales"><div class="emoji">🐄</div><div class="week">Semana 6</div><div class="title">La Vaca</div><div class="subtitle">The Cow</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-pato/" target="_top" class="card" data-theme="animales"><div class="emoji">🦆</div><div class="week">Semana 7</div><div class="title">El Pato</div><div class="subtitle">The Duck</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-oveja/" target="_top" class="card" data-theme="animales"><div class="emoji">🐑</div><div class="week">Semana 8</div><div class="title">La Oveja</div><div class="subtitle">The Sheep</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-desayuno/" target="_top" class="card" data-theme="comida"><div class="emoji">🥞</div><div class="week">Semana 9</div><div class="title">El Desayuno</div><div class="subtitle">Breakfast</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-almuerzo/" target="_top" class="card" data-theme="comida"><div class="emoji">🥪</div><div class="week">Semana 10</div><div class="title">El Almuerzo</div><div class="subtitle">Lunch</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-cena/" target="_top" class="card" data-theme="comida"><div class="emoji">🍝</div><div class="week">Semana 11</div><div class="title">La Cena</div><div class="subtitle">Dinner</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/las-bebidas/" target="_top" class="card" data-theme="comida"><div class="emoji">🥤</div><div class="week">Semana 12</div><div class="title">Las Bebidas</div><div class="subtitle">Drinks</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/los-postres/" target="_top" class="card" data-theme="comida"><div class="emoji">🍰</div><div class="week">Semana 13</div><div class="title">Los Postres</div><div class="subtitle">Desserts</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/en-la-cocina/" target="_top" class="card" data-theme="comida"><div class="emoji">👨‍🍳</div><div class="week">Semana 14</div><div class="title">En la Cocina</div><div class="subtitle">In the Kitchen</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-merienda/" target="_top" class="card" data-theme="comida"><div class="emoji">🍿</div><div class="week">Semana 15</div><div class="title">La Merienda</div><div class="subtitle">Snack Time</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-mariposa/" target="_top" class="card" data-theme="mariposas"><div class="emoji">🦋</div><div class="week">Semana 16</div><div class="title">La Mariposa</div><div class="subtitle">The Butterfly</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-abeja/" target="_top" class="card" data-theme="mariposas"><div class="emoji">🐝</div><div class="week">Semana 17</div><div class="title">La Abeja</div><div class="subtitle">The Bee</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-catarina/" target="_top" class="card" data-theme="mariposas"><div class="emoji">🐞</div><div class="week">Semana 18</div><div class="title">La Catarina</div><div class="subtitle">The Ladybug</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-hormiga/" target="_top" class="card" data-theme="mariposas"><div class="emoji">🐜</div><div class="week">Semana 19</div><div class="title">La Hormiga</div><div class="subtitle">The Ant</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-grillo/" target="_top" class="card" data-theme="mariposas"><div class="emoji">🦗</div><div class="week">Semana 20</div><div class="title">El Grillo</div><div class="subtitle">The Cricket</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-libelula/" target="_top" class="card" data-theme="mariposas"><div class="emoji">🪰</div><div class="week">Semana 21</div><div class="title">La Libélula</div><div class="subtitle">The Dragonfly</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-oruga/" target="_top" class="card" data-theme="mariposas"><div class="emoji">🐛</div><div class="week">Semana 22</div><div class="title">La Oruga</div><div class="subtitle">The Caterpillar</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-escarabajo/" target="_top" class="card" data-theme="mariposas"><div class="emoji">🪲</div><div class="week">Semana 23</div><div class="title">El Escarabajo</div><div class="subtitle">The Beetle</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-pulpo/" target="_top" class="card" data-theme="oceano"><div class="emoji">🐙</div><div class="week">Semana 24</div><div class="title">El Pulpo</div><div class="subtitle">The Octopus</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-tortuga-marina/" target="_top" class="card" data-theme="oceano"><div class="emoji">🐢</div><div class="week">Semana 25</div><div class="title">La Tortuga Marina</div><div class="subtitle">The Sea Turtle</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-delfin/" target="_top" class="card" data-theme="oceano"><div class="emoji">🐬</div><div class="week">Semana 26</div><div class="title">El Delfín</div><div class="subtitle">The Dolphin</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-pez-payaso/" target="_top" class="card" data-theme="oceano"><div class="emoji">🐠</div><div class="week">Semana 27</div><div class="title">El Pez Payaso</div><div class="subtitle">The Clownfish</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-ballena/" target="_top" class="card" data-theme="oceano"><div class="emoji">🐋</div><div class="week">Semana 28</div><div class="title">La Ballena</div><div class="subtitle">The Whale</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-caballito-de-mar/" target="_top" class="card" data-theme="oceano"><div class="emoji">🦑</div><div class="week">Semana 29</div><div class="title">El Caballito de Mar</div><div class="subtitle">The Seahorse</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-estrella-de-mar/" target="_top" class="card" data-theme="oceano"><div class="emoji">⭐</div><div class="week">Semana 30</div><div class="title">La Estrella de Mar</div><div class="subtitle">The Starfish</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-medusa/" target="_top" class="card" data-theme="oceano"><div class="emoji">🪼</div><div class="week">Semana 39</div><div class="title">La Medusa</div><div class="subtitle">The Jellyfish</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-manzana/" target="_top" class="card" data-theme="nutricion"><div class="emoji">🍎</div><div class="week">Semana 40</div><div class="title">La Manzana</div><div class="subtitle">The Apple</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-platano/" target="_top" class="card" data-theme="nutricion"><div class="emoji">🍌</div><div class="week">Semana 41</div><div class="title">El Plátano</div><div class="subtitle">The Banana</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-zanahoria/" target="_top" class="card" data-theme="nutricion"><div class="emoji">🥕</div><div class="week">Semana 42</div><div class="title">La Zanahoria</div><div class="subtitle">The Carrot</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-brocoli/" target="_top" class="card" data-theme="nutricion"><div class="emoji">🥦</div><div class="week">Semana 43</div><div class="title">El Brócoli</div><div class="subtitle">The Broccoli</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-huevo/" target="_top" class="card" data-theme="nutricion"><div class="emoji">🥚</div><div class="week">Semana 44</div><div class="title">El Huevo</div><div class="subtitle">The Egg</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-leche/" target="_top" class="card" data-theme="nutricion"><div class="emoji">🥛</div><div class="week">Semana 45</div><div class="title">La Leche</div><div class="subtitle">The Milk</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-pan/" target="_top" class="card" data-theme="nutricion"><div class="emoji">🍞</div><div class="week">Semana 46</div><div class="title">El Pan</div><div class="subtitle">The Bread</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-yogur/" target="_top" class="card" data-theme="nutricion"><div class="emoji">🥣</div><div class="week">Semana 47</div><div class="title">El Yogur</div><div class="subtitle">The Yogurt</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-gota/" target="_top" class="card" data-theme="agua"><div class="emoji">💧</div><div class="week">Semana 48</div><div class="title">La Gota</div><div class="subtitle">The Drop</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-rio/" target="_top" class="card" data-theme="agua"><div class="emoji">🏞️</div><div class="week">Semana 49</div><div class="title">El Río</div><div class="subtitle">The River</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-lago/" target="_top" class="card" data-theme="agua"><div class="emoji">🏔️</div><div class="week">Semana 50</div><div class="title">El Lago</div><div class="subtitle">The Lake</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-lluvia/" target="_top" class="card" data-theme="agua"><div class="emoji">🌧️</div><div class="week">Semana 51</div><div class="title">La Lluvia</div><div class="subtitle">The Rain</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-hielo/" target="_top" class="card" data-theme="agua"><div class="emoji">🧊</div><div class="week">Semana 52</div><div class="title">El Hielo</div><div class="subtitle">The Ice</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-nieve/" target="_top" class="card" data-theme="agua"><div class="emoji">❄️</div><div class="week">Semana 53</div><div class="title">La Nieve</div><div class="subtitle">The Snow</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-vapor/" target="_top" class="card" data-theme="agua"><div class="emoji">💨</div><div class="week">Semana 54</div><div class="title">El Vapor</div><div class="subtitle">The Steam</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-oceano-agua/" target="_top" class="card" data-theme="agua"><div class="emoji">🌊</div><div class="week">Semana 55</div><div class="title">El Océano</div><div class="subtitle">The Ocean</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-rosa/" target="_top" class="card" data-theme="plantas"><div class="emoji">🌹</div><div class="week">Semana 31</div><div class="title">La Rosa</div><div class="subtitle">The Rose</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-girasol/" target="_top" class="card" data-theme="plantas"><div class="emoji">🌻</div><div class="week">Semana 32</div><div class="title">El Girasol</div><div class="subtitle">The Sunflower</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-arbol/" target="_top" class="card" data-theme="plantas"><div class="emoji">🌳</div><div class="week">Semana 33</div><div class="title">El Árbol</div><div class="subtitle">The Tree</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-cactus/" target="_top" class="card" data-theme="plantas"><div class="emoji">🌵</div><div class="week">Semana 34</div><div class="title">El Cactus</div><div class="subtitle">The Cactus</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-semilla/" target="_top" class="card" data-theme="plantas"><div class="emoji">🌱</div><div class="week">Semana 35</div><div class="title">La Semilla</div><div class="subtitle">The Seed</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-margarita/" target="_top" class="card" data-theme="plantas"><div class="emoji">🌼</div><div class="week">Semana 36</div><div class="title">La Margarita</div><div class="subtitle">The Daisy</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-tulipan/" target="_top" class="card" data-theme="plantas"><div class="emoji">🌷</div><div class="week">Semana 37</div><div class="title">El Tulipán</div><div class="subtitle">The Tulip</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-hongo/" target="_top" class="card" data-theme="plantas"><div class="emoji">🍄</div><div class="week">Semana 38</div><div class="title">El Hongo</div><div class="subtitle">The Mushroom</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-rojo/" target="_top" class="card" data-theme="colores"><div class="emoji">🔴</div><div class="week">Semana 56</div><div class="title">El Rojo</div><div class="subtitle">The Color Red</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-azul/" target="_top" class="card" data-theme="colores"><div class="emoji">🔵</div><div class="week">Semana 57</div><div class="title">El Azul</div><div class="subtitle">The Color Blue</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-amarillo/" target="_top" class="card" data-theme="colores"><div class="emoji">🟡</div><div class="week">Semana 58</div><div class="title">El Amarillo</div><div class="subtitle">The Color Yellow</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-verde/" target="_top" class="card" data-theme="colores"><div class="emoji">🟢</div><div class="week">Semana 59</div><div class="title">El Verde</div><div class="subtitle">The Color Green</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-circulo/" target="_top" class="card" data-theme="colores"><div class="emoji">⭕</div><div class="week">Semana 60</div><div class="title">El Círculo</div><div class="subtitle">The Circle</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-cuadrado/" target="_top" class="card" data-theme="colores"><div class="emoji">🟦</div><div class="week">Semana 61</div><div class="title">El Cuadrado</div><div class="subtitle">The Square</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-triangulo/" target="_top" class="card" data-theme="colores"><div class="emoji">🔺</div><div class="week">Semana 62</div><div class="title">El Triángulo</div><div class="subtitle">The Triangle</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-arcoiris/" target="_top" class="card" data-theme="colores"><div class="emoji">🌈</div><div class="week">Semana 63</div><div class="title">El Arcoíris</div><div class="subtitle">The Rainbow</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-mama/" target="_top" class="card" data-theme="familia"><div class="emoji">👩</div><div class="week">Semana 64</div><div class="title">La Mamá</div><div class="subtitle">Mom</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-papa/" target="_top" class="card" data-theme="familia"><div class="emoji">👨</div><div class="week">Semana 65</div><div class="title">El Papá</div><div class="subtitle">Dad</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-hermana/" target="_top" class="card" data-theme="familia"><div class="emoji">👧</div><div class="week">Semana 66</div><div class="title">La Hermana</div><div class="subtitle">Sister</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-hermano/" target="_top" class="card" data-theme="familia"><div class="emoji">👦</div><div class="week">Semana 67</div><div class="title">El Hermano</div><div class="subtitle">Brother</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-abuela/" target="_top" class="card" data-theme="familia"><div class="emoji">👵</div><div class="week">Semana 68</div><div class="title">La Abuela</div><div class="subtitle">Grandmother</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-abuelo/" target="_top" class="card" data-theme="familia"><div class="emoji">👴</div><div class="week">Semana 69</div><div class="title">El Abuelo</div><div class="subtitle">Grandfather</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-bebe/" target="_top" class="card" data-theme="familia"><div class="emoji">👶</div><div class="week">Semana 70</div><div class="title">El Bebé</div><div class="subtitle">The Baby</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-familia/" target="_top" class="card" data-theme="familia"><div class="emoji">👨‍👩‍👧‍👦</div><div class="week">Semana 71</div><div class="title">La Familia</div><div class="subtitle">The Family</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/mi-amigo/" target="_top" class="card" data-theme="amigos"><div class="emoji">👫</div><div class="week">Semana 72</div><div class="title">Mi Amigo</div><div class="subtitle">My Friend</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/jugamos/" target="_top" class="card" data-theme="amigos"><div class="emoji">🎮</div><div class="week">Semana 73</div><div class="title">Jugamos</div><div class="subtitle">We Play</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/compartir/" target="_top" class="card" data-theme="amigos"><div class="emoji">🤝</div><div class="week">Semana 74</div><div class="title">Compartir</div><div class="subtitle">Sharing</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/ayudar/" target="_top" class="card" data-theme="amigos"><div class="emoji">🙏</div><div class="week">Semana 75</div><div class="title">Ayudar</div><div class="subtitle">Helping</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/escuchar/" target="_top" class="card" data-theme="amigos"><div class="emoji">👂</div><div class="week">Semana 76</div><div class="title">Escuchar</div><div class="subtitle">Listening</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/reir/" target="_top" class="card" data-theme="amigos"><div class="emoji">😄</div><div class="week">Semana 77</div><div class="title">Reír</div><div class="subtitle">Laughing</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/perdonar/" target="_top" class="card" data-theme="amigos"><div class="emoji">💕</div><div class="week">Semana 78</div><div class="title">Perdonar</div><div class="subtitle">Forgiving</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/juntos/" target="_top" class="card" data-theme="amigos"><div class="emoji">🤗</div><div class="week">Semana 79</div><div class="title">Juntos</div><div class="subtitle">Together</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-sol/" target="_top" class="card" data-theme="naturaleza"><div class="emoji">☀️</div><div class="week">Semana 80</div><div class="title">El Sol</div><div class="subtitle">The Sun</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-luna/" target="_top" class="card" data-theme="naturaleza"><div class="emoji">🌙</div><div class="week">Semana 81</div><div class="title">La Luna</div><div class="subtitle">The Moon</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/las-estrellas/" target="_top" class="card" data-theme="naturaleza"><div class="emoji">⭐</div><div class="week">Semana 82</div><div class="title">Las Estrellas</div><div class="subtitle">The Stars</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-montana/" target="_top" class="card" data-theme="naturaleza"><div class="emoji">🏔️</div><div class="week">Semana 83</div><div class="title">La Montaña</div><div class="subtitle">The Mountain</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-bosque/" target="_top" class="card" data-theme="naturaleza"><div class="emoji">🌲</div><div class="week">Semana 84</div><div class="title">El Bosque</div><div class="subtitle">The Forest</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-desierto/" target="_top" class="card" data-theme="naturaleza"><div class="emoji">🏜️</div><div class="week">Semana 85</div><div class="title">El Desierto</div><div class="subtitle">The Desert</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-cascada/" target="_top" class="card" data-theme="naturaleza"><div class="emoji">💧</div><div class="week">Semana 86</div><div class="title">La Cascada</div><div class="subtitle">The Waterfall</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-volcan/" target="_top" class="card" data-theme="naturaleza"><div class="emoji">🌋</div><div class="week">Semana 87</div><div class="title">El Volcán</div><div class="subtitle">The Volcano</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/las-manos/" target="_top" class="card" data-theme="cuerpo"><div class="emoji">🖐️</div><div class="week">Semana 112</div><div class="title">Las Manos</div><div class="subtitle">The Hands</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/los-pies/" target="_top" class="card" data-theme="cuerpo"><div class="emoji">🦶</div><div class="week">Semana 113</div><div class="title">Los Pies</div><div class="subtitle">The Feet</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/los-ojos/" target="_top" class="card" data-theme="cuerpo"><div class="emoji">👀</div><div class="week">Semana 114</div><div class="title">Los Ojos</div><div class="subtitle">The Eyes</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-boca/" target="_top" class="card" data-theme="cuerpo"><div class="emoji">👄</div><div class="week">Semana 115</div><div class="title">La Boca</div><div class="subtitle">The Mouth</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-nariz/" target="_top" class="card" data-theme="cuerpo"><div class="emoji">👃</div><div class="week">Semana 116</div><div class="title">La Nariz</div><div class="subtitle">The Nose</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/las-orejas/" target="_top" class="card" data-theme="cuerpo"><div class="emoji">👂</div><div class="week">Semana 117</div><div class="title">Las Orejas</div><div class="subtitle">The Ears</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-corazon/" target="_top" class="card" data-theme="cuerpo"><div class="emoji">❤️</div><div class="week">Semana 118</div><div class="title">El Corazón</div><div class="subtitle">The Heart</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-cuerpo/" target="_top" class="card" data-theme="cuerpo"><div class="emoji">🧍</div><div class="week">Semana 119</div><div class="title">El Cuerpo</div><div class="subtitle">The Body</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-uno/" target="_top" class="card" data-theme="numeros"><div class="emoji">1️⃣</div><div class="week">Semana 88</div><div class="title">El Uno</div><div class="subtitle">The Number One</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-dos/" target="_top" class="card" data-theme="numeros"><div class="emoji">2️⃣</div><div class="week">Semana 89</div><div class="title">El Dos</div><div class="subtitle">The Number Two</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-tres/" target="_top" class="card" data-theme="numeros"><div class="emoji">3️⃣</div><div class="week">Semana 90</div><div class="title">El Tres</div><div class="subtitle">The Number Three</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-cuatro/" target="_top" class="card" data-theme="numeros"><div class="emoji">4️⃣</div><div class="week">Semana 91</div><div class="title">El Cuatro</div><div class="subtitle">The Number Four</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-cinco/" target="_top" class="card" data-theme="numeros"><div class="emoji">5️⃣</div><div class="week">Semana 92</div><div class="title">El Cinco</div><div class="subtitle">The Number Five</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/las-letras/" target="_top" class="card" data-theme="numeros"><div class="emoji">🔤</div><div class="week">Semana 93</div><div class="title">Las Letras</div><div class="subtitle">The Letters</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-abecedario/" target="_top" class="card" data-theme="numeros"><div class="emoji">🅰️</div><div class="week">Semana 94</div><div class="title">El Abecedario</div><div class="subtitle">The Alphabet</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/contar/" target="_top" class="card" data-theme="numeros"><div class="emoji">🔢</div><div class="week">Semana 95</div><div class="title">Contar</div><div class="subtitle">Counting</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/la-guitarra/" target="_top" class="card" data-theme="musica"><div class="emoji">🎸</div><div class="week">Semana 96</div><div class="title">La Guitarra</div><div class="subtitle">The Guitar</div></a>
+      <a href="https://www.beibeiamigos.com/spanish-books/el-tambor/" target="_top" class="card" data-theme="musica"><div class="emoji">🥁</div><div class="week">Semana 97</div><div class="title">El Tambor</div><div class="subtitle">The Drum</div></a>
+    </div>
+
+    <div class="no-books" id="noBooks">🔍 No hay libros en este tema todavía.<br>¡Pronto habrá más!</div>
+
+    <!-- School CTA -->
+    <div style="max-width:900px; margin:24px auto; text-align:center; padding:20px;">
+      <p style="color:rgba(255,255,255,0.8); font-size:0.85rem;">Made with ❤️ by <a href="https://www.beibeiamigos.com" target="_top" style="color:white; font-weight:700;">Beibei Amigos Language Preschool</a> — Spanish Immersion · Mandarin Preschool · Bilingual Books — Phoenix, AZ</p>
+      <p style="color:rgba(255,255,255,0.6); font-size:0.75rem; margin-top:8px;">🏫 Now Enrolling for 2026! Spanish Immersion • Mandarin • English | Ages 2-6</p>
+    </div>
+  </div>
+
+  <script>
+    function filterBooks(filter) {
+      const cards = document.querySelectorAll('#bookGrid .card');
+      let visible = 0;
+      cards.forEach(card => {
+        if (filter === 'todos' || card.dataset.theme === filter) {
+          card.classList.remove('hidden');
+          visible++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+      document.getElementById('noBooks').style.display = visible === 0 ? 'block' : 'none';
+    }
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterBooks(btn.dataset.filter);
+      });
+    });
+    // Default filter on load
+    filterBooks('animales');
+
+    // Tell parent iframe our height so it can auto-resize (no scrollbar)
+    function reportHeight() {
+      window.parent.postMessage({ type: 'resize', height: document.body.scrollHeight + 40 }, '*');
+    }
+    window.addEventListener('load', reportHeight);
+    new MutationObserver(reportHeight).observe(document.body, { childList: true, subtree: true });
+    // Also report after filter changes + scroll to books
+    document.querySelectorAll('.theme-btn').forEach(btn => btn.addEventListener('click', () => {
+      setTimeout(reportHeight, 100);
+      // Scroll to book grid - works both standalone and in iframe
+      const grid = document.getElementById('bookGrid');
+      const gridTop = grid.getBoundingClientRect().top;
+      // If in iframe, tell parent to scroll; otherwise scroll directly
+      if (window.parent !== window) {
+        window.parent.postMessage({ type: 'scrollToBooks', offset: gridTop }, '*');
+      }
+      grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }));
+  </script>
+</body>
+</html>
