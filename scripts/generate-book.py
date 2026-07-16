@@ -46,8 +46,8 @@ def generate_book(config):
     html = re.sub(r'<meta name="keywords" content=".*?">', f'<meta name="keywords" content="{config.get("keywords", "")}">', html)
     html = re.sub(r'<meta property="og:title" content=".*?">', f'<meta property="og:title" content="{title} - Learn Spanish | Beibei Amigos">', html)
     html = re.sub(r'<meta property="og:description" content=".*?">', f'<meta property="og:description" content="Free interactive Spanish book for preschoolers. {config.get("meta_desc", "")}">', html)
-    html = re.sub(r'<meta property="og:url" content=".*?">', f'<meta property="og:url" content="https://spanish-books.onrender.com/books/{slug}/">', html)
-    html = re.sub(r'<link rel="canonical" href=".*?">', f'<link rel="canonical" href="https://spanish-books.onrender.com/books/{slug}/">', html)
+    html = re.sub(r'<meta property="og:url" content=".*?">', f'<meta property="og:url" content="https://seanmichael67.github.io/Spanish-Books/books/{slug}/">', html)
+    html = re.sub(r'<link rel="canonical" href=".*?">', f'<link rel="canonical" href="https://seanmichael67.github.io/Spanish-Books/books/{slug}/">', html)
     
     # Replace BOOK_CONFIG
     config_block = f'''const BOOK_CONFIG = {{

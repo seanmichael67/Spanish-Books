@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Swap the books iframe host on the WP pages (hub 1854 + all book pages).
 
-Replaces https://spanish-books.onrender.com with the new static host in each
+Replaces https://seanmichael67.github.io/Spanish-Books with the new static host in each
 page's content. Idempotent (skips pages without the old host). Dry-run by
 default; --apply to write. --slug <page_slug> or --id <page_id> to limit.
 """
@@ -11,7 +11,7 @@ import time
 
 import requests
 
-OLD = "https://spanish-books.onrender.com"
+OLD = "https://seanmichael67.github.io/Spanish-Books"
 NEW = "https://seanmichael67.github.io/Spanish-Books"
 WP_API = "https://www.beibeiamigos.com/wp-json/wp/v2/pages"
 AUTH = ("Luciano", "ZjjW wlE4 tNJa 5sQr F6ym fLtV")

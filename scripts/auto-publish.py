@@ -12,7 +12,7 @@ REPO_DIR = os.path.expanduser("~/Projects/preschool-books")
 WP_API = "https://www.beibeiamigos.com/wp-json/wp/v2/pages"
 AUTH = ("luciano", "ZjjW wlE4 tNJa 5sQr F6ym fLtV")
 PARENT = 1854  # spanish-books parent page
-RENDER_BASE = "https://spanish-books.onrender.com/books"
+RENDER_BASE = "https://seanmichael67.github.io/Spanish-Books/books"
 
 def main():
     if len(sys.argv) < 2:
