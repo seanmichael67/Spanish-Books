@@ -24,7 +24,7 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API_KEY = os.environ.get("GEMINI_API_KEY", "")
 TTS_MODEL = "gemini-2.5-flash-preview-tts"
-IMG_MODEL = "gemini-2.0-flash-exp-image-generation"
+IMG_MODEL = "gemini-2.5-flash-image"  # 2.0-flash-exp-image-generation was retired
 MIN_INTERVAL = float(os.environ.get("TTS_INTERVAL", "6"))  # seconds between API calls
 
 _last_call = [0.0]

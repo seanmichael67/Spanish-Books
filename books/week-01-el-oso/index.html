@@ -259,6 +259,13 @@
                 if (!url) {
                     setIsReading(false);
                     setIsAutoAdvancing(false);
+                    if ('speechSynthesis' in window) {
+                        const utter = new SpeechSynthesisUtterance(`${BOOK_CONFIG.pages[idx].title}. ${BOOK_CONFIG.pages[idx].footer}`);
+                        utter.lang = 'es-US';
+                        utter.rate = 0.85;
+                        speechSynthesis.cancel();
+                        speechSynthesis.speak(utter);
+                    }
                     return;
                 }
                 const audio = new Audio(url);
@@ -444,8 +451,7 @@
                                 <img src={images[idx]} className="max-h-[65vh] md:max-h-[70vh] max-w-full object-contain drop-shadow-xl" />
                             ) : (
                                 <div className="flex flex-col items-center gap-2">
-                                    <Icons.Loader size={32} className="text-blue-200" />
-                                    <span className="text-[8px] uppercase tracking-tighter text-blue-300 animate-pulse">Generando...</span>
+                                    <span className="text-8xl" role="img">📖</span>
                                 </div>
                             )}
                         </div>

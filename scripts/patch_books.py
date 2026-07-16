@@ -56,6 +56,32 @@ AUDIO_INSERT = """
                         }
                     } catch (e) {}"""
 
+SPEECH_ANCHOR = """if (!url) {
+                    setIsReading(false);
+                    setIsAutoAdvancing(false);
+                    return;
+                }"""
+SPEECH_NEW = """if (!url) {
+                    setIsReading(false);
+                    setIsAutoAdvancing(false);
+                    if ('speechSynthesis' in window) {
+                        const utter = new SpeechSynthesisUtterance(`${BOOK_CONFIG.pages[idx].title}. ${BOOK_CONFIG.pages[idx].footer}`);
+                        utter.lang = 'es-US';
+                        utter.rate = 0.85;
+                        speechSynthesis.cancel();
+                        speechSynthesis.speak(utter);
+                    }
+                    return;
+                }"""
+
+PLACEHOLDER_OLD = """<div className="flex flex-col items-center gap-2">
+                                    <Icons.Loader size={32} className="text-blue-200" />
+                                    <span className="text-[8px] uppercase tracking-tighter text-blue-300 animate-pulse">Generando...</span>
+                                </div>"""
+PLACEHOLDER_NEW = """<div className="flex flex-col items-center gap-2">
+                                    <span className="text-8xl" role="img">📖</span>
+                                </div>"""
+
 WORD_ANCHOR = "const speakWord = async (word, retries = 2) => {"
 WORD_INSERT = """
                         const wordSlug = word.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').replace(/[^a-z0-9]+/g, '-');
@@ -87,6 +113,15 @@ def patch(path):
             raw = raw.replace(WORD_ANCHOR, WORD_ANCHOR + WORD_INSERT, 1)
         else:
             notes.append("WORD-MISS")
+    if "speechSynthesis.speak" not in raw:
+        if SPEECH_ANCHOR in raw:
+            raw = raw.replace(SPEECH_ANCHOR, SPEECH_NEW, 1)
+        else:
+            notes.append("SPEECH-MISS")
+    if PLACEHOLDER_OLD in raw:
+        raw = raw.replace(PLACEHOLDER_OLD, PLACEHOLDER_NEW)
+    elif 'role="img">📖' not in raw:
+        notes.append("PLACEHOLDER-MISS")
 
     if raw != orig:
         open(path, "w").write(raw)
