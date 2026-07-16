@@ -44,8 +44,15 @@ STYLE_BLOCK = (
     "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'>"
     "<style id='ba-global-style'>"
     f"body, body {ICON_EXCLUDE} {{ font-family: {FONT_STACK} !important; }} "
+    # fallback for browsers without :has()
     ".et_pb_row { max-width: 1200px; } "
     ".bebei-container { max-width: 1200px; } "
+    # Divi rows default to width:80% -> page width varies with viewport.
+    # Force identical gutters + 1200px cap everywhere, EXCEPT rows hosting
+    # full-bleed custom landing code (home/enroll/family-handbook), whose
+    # inner .bebei-container is already 1200px.
+    "#page-container .et_pb_row:not(:has(.bebei-landing-page)) "
+    "{ width: calc(100% - 48px) !important; max-width: 1200px !important; } "
     "</style>"
     f"{MARKER_END}"
 )
