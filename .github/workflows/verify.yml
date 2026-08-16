@@ -1,0 +1,35 @@
+name: Verify Spanish Books
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile Python tooling
+        run: python -m py_compile tools/*.py tests/*.py
+      - name: Verify book keyword metadata
+        run: python tests/verify_book_keyword_meta.py
+      - name: Verify Sophia is hidden and sharing preserved
+        run: python tests/verify_no_sophia_book_promo.py
+      - name: Verify fail-closed sweep behavior
+        run: python tests/verify_book_sweep_fail_closed.py
+      - name: Verify transformers are idempotent
+        run: |
+          python tools/add_missing_book_keywords.py --check
+          python tools/hide_sophia_book_promo.py --check
+      - name: Verify JavaScript syntax
+        run: node --check server.js
+      - name: Verify diff whitespace
+        run: git diff --check HEAD^
