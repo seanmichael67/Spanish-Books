@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add curated meta-keywords to book pages that lack them."""
+"""Complete curated keyword and description metadata on selected book pages."""
 from __future__ import annotations
 
 import argparse
@@ -39,29 +39,69 @@ KEYWORDS = {
     "week-71-el-viaje-espacial": "Spanish books for kids, learn Spanish preschool, space vocabulary Spanish, planets and rockets for children, bilingual preschool books",
     "week-73-el-clima": "Spanish books for kids, learn Spanish preschool, weather in Spanish, climate vocabulary for children, bilingual preschool books",
 }
+DESCRIPTIONS = {
+    "week-39-las-frutas": "Aprende los nombres y colores de manzanas, plátanos, uvas, naranjas, fresas y mangos en este libro interactivo en español para niños.",
+    "week-45-las-profesiones": "Conoce a una doctora, un bombero, una chef, un maestro y una veterinaria mientras aprendes las profesiones en español con este libro infantil.",
+    "week-50-los-insectos": "Descubre insectos amistosos y aprende vocabulario básico de la naturaleza en español con este breve libro infantil para pequeños exploradores.",
+    "week-51-las-maravillas-del-mar": "Explora el mar con peces, tortugas, ballenas, pulpos, estrellas de mar y cangrejos en este libro infantil interactivo en español.",
+    "week-52-el-viaje-de-los-pajaros": "Acompaña a un pequeño pájaro que vuela sobre árboles y flores para encontrar amigos y cantar con ellos en este cuento infantil en español.",
+    "week-54-los-amigos-de-la-comunidad": "Conoce al bombero, la doctora, el maestro y otros ayudantes de la comunidad mientras aprendes vocabulario en español para niños.",
+    "week-56-las-formas-geometricas": "Aprende círculo, cuadrado, triángulo, rectángulo, estrella y corazón con colores y ejemplos sencillos en este libro infantil en español.",
+    "week-57-la-primavera-y-las-flores": "Descubre la primavera, los tulipanes y otras flores de colores en este cuento ilustrado en español con preguntas sencillas para niños.",
+    "week-58-el-dia-y-la-noche": "Explora lo que ocurre durante el día y la noche, desde el sol y los juegos hasta la luna y el descanso, en este libro infantil en español.",
+    "week-59-los-sentidos": "Descubre la vista, el oído, el olfato, el gusto y el tacto con ejemplos cotidianos en este libro interactivo en español para niños.",
+    "week-60-el-ciclo-del-agua": "Acompaña a Gotita en su viaje por el río y descubre el ciclo del agua con una historia interactiva en español para niños pequeños.",
+    "week-61-las-emociones": "Aprende a reconocer la felicidad, la tristeza, el enojo, el miedo y otras emociones con ejemplos cercanos en este libro infantil en español.",
+    "week-62-los-instrumentos-musicales": "Descubre el tambor, la guitarra y otros instrumentos, sus sonidos y ritmos, con actividades sencillas en este libro infantil en español.",
+    "week-63-la-granja-y-sus-animales": "Visita una granja y conoce a la vaca, la gallina y otros animales mientras aprendes sus nombres y sonidos en este libro infantil en español.",
+    "week-64-el-parque-de-juegos": "Visita el parque de juegos y aprende palabras como tobogán, columpios, arenero y castillo de arena en este cuento infantil en español.",
+    "week-68-las-abejas-y-el-jardin": "Acompaña a Bibi la abeja por un jardín de flores y descubre el néctar, la colmena y el trabajo en equipo en este cuento infantil en español.",
+    "week-70-el-reino-submarino": "Explora un arrecife con un pez payaso, pulpo, tortuga, tiburón, cangrejo y caballito de mar en este cuento infantil en español.",
+    "week-71-el-viaje-espacial": "Viaja con Oso en un cohete hacia la luna, cuenta el despegue y descubre estrellas antes de volver a casa en este cuento infantil en español.",
+    "week-73-el-clima": "Aprende sobre días soleados, nublados, lluviosos, ventosos y nevados, además del arcoíris y la tormenta, en este libro infantil en español.",
+}
 TITLE_RE = re.compile(r'^(?P<indent>\s*)<title>.*?</title>\s*$', re.I | re.M)
 DESCRIPTION_RE = re.compile(r'^(?P<indent>\s*)<meta\s+name=["\']description["\'][^>]*>\s*$', re.I | re.M)
 
 
-class KeywordMetaParser(HTMLParser):
+class MetadataParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
-        self.values: list[str] = []
+        self.values: dict[str, list[str]] = {"keywords": [], "description": []}
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = {key.lower(): value or "" for key, value in attrs}
-        if tag.lower() == "meta" and values.get("name", "").lower() == "keywords":
-            self.values.append(values.get("content", ""))
+        name = values.get("name", "").lower()
+        if tag.lower() == "meta" and name in self.values:
+            self.values[name].append(values.get("content", ""))
 
 
-def keyword_values(text: str) -> list[str]:
-    parser = KeywordMetaParser()
+def meta_values(text: str, name: str) -> list[str]:
+    parser = MetadataParser()
     parser.feed(text)
-    return parser.values
+    return parser.values[name]
+
+
+def add_description(text: str, slug: str, path: Path) -> tuple[str, bool]:
+    matches = meta_values(text, "description")
+    if matches:
+        if len(matches) != 1 or not matches[0].strip():
+            raise RuntimeError(f"{path}: malformed or duplicate description metadata")
+        return text, False
+    if slug not in DESCRIPTIONS:
+        return text, False
+
+    anchors = list(TITLE_RE.finditer(text))
+    if len(anchors) != 1:
+        raise RuntimeError(f"{path}: expected one title insertion anchor, found {len(anchors)}")
+    anchor = anchors[0]
+    indent = anchor.group("indent")
+    tag = f'{indent}<meta name="description" content="{DESCRIPTIONS[slug]}">'
+    return text[: anchor.end()] + "\n" + tag + text[anchor.end() :], True
 
 
 def add_keywords(text: str, slug: str, path: Path) -> tuple[str, bool]:
-    matches = keyword_values(text)
+    matches = meta_values(text, "keywords")
     if matches:
         if len(matches) != 1 or not matches[0].strip():
             raise RuntimeError(f"{path}: malformed or duplicate keyword metadata")
@@ -83,15 +123,16 @@ def plan_changes(pages: list[Path]) -> list[tuple[Path, str]]:
     planned: list[tuple[Path, str]] = []
     for path in pages:
         original = path.read_text(encoding="utf-8")
-        updated, needed = add_keywords(original, path.parent.name, path)
-        if needed:
+        with_description, description_needed = add_description(original, path.parent.name, path)
+        updated, keywords_needed = add_keywords(with_description, path.parent.name, path)
+        if description_needed or keywords_needed:
             planned.append((path, updated))
     return planned
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--check", action="store_true", help="fail if any book page lacks keywords")
+    parser.add_argument("--check", action="store_true", help="fail if curated book metadata is incomplete")
     args = parser.parse_args()
 
     pages = sorted(ROOT.glob("books/week-*/index.html"))
@@ -101,7 +142,7 @@ def main() -> int:
     planned = plan_changes(pages)
 
     if args.check and planned:
-        print(f"FAIL — {len(planned)} of {len(pages)} book pages still lack keyword metadata")
+        print(f"FAIL — {len(planned)} of {len(pages)} book pages still need curated metadata")
         return 1
     if not args.check:
         for path, updated in planned:

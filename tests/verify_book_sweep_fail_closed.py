@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Adversarial checks for fail-closed book keyword tooling."""
+"""Adversarial checks for fail-closed book metadata tooling."""
 from __future__ import annotations
 
 import importlib.util
@@ -28,7 +28,7 @@ def require_raises(label: str, function) -> None:
 
 
 def main() -> int:
-    keywords = load("book_keywords", ROOT / "tools" / "add_missing_book_keywords.py")
+    keywords = load("book_metadata", ROOT / "tools" / "complete_book_metadata.py")
 
     reversed_tag = '<html><head><title>X</title><meta data-extra="yes" content="a, b, c" name="keywords"></head></html>'
     updated, changed = keywords.add_keywords(
@@ -49,6 +49,39 @@ def main() -> int:
         ),
     )
 
+    reordered_description = (
+        '<html><head><title>X</title><meta data-extra="yes" '
+        'content="Una descripción válida y existente." name="description"></head></html>'
+    )
+    updated, changed = keywords.add_description(
+        reordered_description,
+        "week-39-las-frutas",
+        Path("description.html"),
+    )
+    if changed or updated != reordered_description:
+        raise SystemExit("FAIL — reordered description attributes were not preserved")
+
+    blank_description = '<html><head><title>X</title><meta name="description" content=""></head></html>'
+    require_raises(
+        "blank description",
+        lambda: keywords.add_description(
+            blank_description,
+            "week-39-las-frutas",
+            Path("blank-description.html"),
+        ),
+    )
+    duplicate_descriptions = reordered_description.replace(
+        "</head>", '<meta name="description" content="Otra descripción"></head>'
+    )
+    require_raises(
+        "duplicate description tags",
+        lambda: keywords.add_description(
+            duplicate_descriptions,
+            "week-39-las-frutas",
+            Path("duplicate-description.html"),
+        ),
+    )
+
     with tempfile.TemporaryDirectory(prefix="book-keyword-preflight-") as temp:
         temp_root = Path(temp)
         first = temp_root / "week-25-la-cocina-de-abuela" / "index.html"
@@ -62,7 +95,7 @@ def main() -> int:
         if first.read_text(encoding="utf-8") != before:
             raise SystemExit("FAIL — keyword preflight wrote an earlier page before later validation failed")
 
-    print("PASS — adversarial keyword attribute and preflight mutations fail closed")
+    print("PASS — adversarial metadata attributes, duplicates, blanks, and preflight fail closed")
     return 0
 
 

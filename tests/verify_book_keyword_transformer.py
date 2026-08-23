@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Regression checks for the curated keyword transformer contract."""
+"""Regression checks for the curated book metadata transformer contract."""
 from __future__ import annotations
 
 import importlib.util
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TOOL_PATH = ROOT / "tools" / "add_missing_book_keywords.py"
+TOOL_PATH = ROOT / "tools" / "complete_book_metadata.py"
 
 
 def load_tool():
@@ -21,11 +21,22 @@ def load_tool():
 def main() -> int:
     tool = load_tool()
     if len(tool.KEYWORDS) != 29:
-        raise SystemExit(f"FAIL — expected 29 curated mappings, found {len(tool.KEYWORDS)}")
+        raise SystemExit(f"FAIL — expected 29 curated keyword mappings, found {len(tool.KEYWORDS)}")
+    if len(tool.DESCRIPTIONS) != 19:
+        raise SystemExit(f"FAIL — expected 19 curated descriptions, found {len(tool.DESCRIPTIONS)}")
 
-    slug = "week-25-la-cocina-de-abuela"
-    source = "<html>\n<head>\n<title>La cocina de abuela</title>\n</head>\n<body></body>\n</html>\n"
-    updated, changed = tool.add_keywords(source, slug, Path("fixture.html"))
+    slug = "week-39-las-frutas"
+    source = "<html>\n<head>\n<title>Las frutas</title>\n</head>\n<body></body>\n</html>\n"
+    with_description, description_changed = tool.add_description(source, slug, Path("fixture.html"))
+    if not description_changed or with_description.count('<meta name="description"') != 1:
+        raise SystemExit("FAIL — mapped page did not receive exactly one description tag")
+    description_rerun, description_changed_again = tool.add_description(
+        with_description, slug, Path("fixture.html")
+    )
+    if description_changed_again or description_rerun != with_description:
+        raise SystemExit("FAIL — description transformer is not idempotent")
+
+    updated, changed = tool.add_keywords(with_description, slug, Path("fixture.html"))
     if not changed or updated.count('<meta name="keywords"') != 1:
         raise SystemExit("FAIL — mapped page did not receive exactly one keyword tag")
 
@@ -40,7 +51,10 @@ def main() -> int:
     else:
         raise SystemExit("FAIL — missing curated mapping did not fail closed")
 
-    print("PASS — 29 mappings; insertion, idempotence, and fail-closed behavior verified")
+    print(
+        "PASS — 29 keyword mappings and 19 descriptions; insertion, idempotence, "
+        "and fail-closed behavior verified"
+    )
     return 0
 
 
