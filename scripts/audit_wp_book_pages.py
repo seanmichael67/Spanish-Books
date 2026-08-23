@@ -160,9 +160,12 @@ def main():
     nodesc = sum(1 for r in rows if not r.get("has_desc"))
     print("  %-15s %d  (Google indexes these; none supply their own snippet)"
           % ("no meta desc", nodesc))
-    unreachable = len(rows) - counts.get("OK", 0)
-    print("\n%d of %d live pages (%d%%) show a reader nothing usable.\n"
-          % (unreachable, len(rows), round(100 * unreachable / len(rows))))
+    # Deliberately not a verdict. LEGACY_STUB means no audio, no word
+    # highlighting and no analytics -- most of them still render clean Spanish
+    # text with working page navigation. Render a page before calling it broken.
+    notmodern = len(rows) - counts.get("OK", 0)
+    print("\n%d of %d live pages (%d%%) are not on the modern reader.\n"
+          % (notmodern, len(rows), round(100 * notmodern / len(rows))))
 
     print("--- pages that need repair, with proposed replacement ---")
     for r in sorted(broken, key=lambda r: r["slug"]):
