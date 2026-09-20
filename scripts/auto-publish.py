@@ -6,6 +6,15 @@ Usage: python3 scripts/auto-publish.py daily/week-25-la-cocina-de-abuela
 
 import os, re, json, sys, subprocess, time
 
+# This legacy publisher targets a stale checkout and performs irreversible
+# Git/WordPress writes. Keep the file for historical reference, but fail
+# closed before credentials are read or any filesystem/network mutation.
+if __name__ == "__main__":
+    raise SystemExit(
+        "DEPRECATED: use scripts/publish_next_week.py from the Spanish-Books "
+        "feature branch workflow instead."
+    )
+
 BOOKS_DIR = os.path.expanduser("~/Projects/preschool-books/books")
 DIVI_DIR = os.path.expanduser("~/Projects/preschool-books/divi-embeds/books")
 REPO_DIR = os.path.expanduser("~/Projects/preschool-books")
