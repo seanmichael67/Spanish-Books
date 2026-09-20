@@ -9,6 +9,8 @@ def generate_book(config):
     
     slug = config['slug']
     title = config['title']
+    page_slug = re.sub(r'^week-\d+-', '', slug)
+    canonical = f'https://www.beibeiamigos.com/spanish-books/{page_slug}/'
     
     # Build pages JSON
     pages = []
@@ -46,8 +48,8 @@ def generate_book(config):
     html = re.sub(r'<meta name="keywords" content=".*?">', f'<meta name="keywords" content="{config.get("keywords", "")}">', html)
     html = re.sub(r'<meta property="og:title" content=".*?">', f'<meta property="og:title" content="{title} - Learn Spanish | Beibei Amigos">', html)
     html = re.sub(r'<meta property="og:description" content=".*?">', f'<meta property="og:description" content="Free interactive Spanish book for preschoolers. {config.get("meta_desc", "")}">', html)
-    html = re.sub(r'<meta property="og:url" content=".*?">', f'<meta property="og:url" content="https://seanmichael67.github.io/Spanish-Books/books/{slug}/">', html)
-    html = re.sub(r'<link rel="canonical" href=".*?">', f'<link rel="canonical" href="https://seanmichael67.github.io/Spanish-Books/books/{slug}/">', html)
+    html = re.sub(r'<meta property="og:url" content=".*?">', f'<meta property="og:url" content="{canonical}">', html)
+    html = re.sub(r'<link rel="canonical" href=".*?">', f'<link rel="canonical" href="{canonical}">', html)
     
     # Replace BOOK_CONFIG
     config_block = f'''const BOOK_CONFIG = {{
@@ -61,8 +63,13 @@ def generate_book(config):
     
     html = re.sub(r'const BOOK_CONFIG = \{.*?\};', config_block, html, flags=re.DOTALL)
     
-    # Fix share links
+    # Fix embedded asset paths, share links, and the PDF filename inherited
+    # from the canonical El Oso template.
     html = html.replace('week-01-el-oso', slug)
+    html = html.replace(
+        'https://www.beibeiamigos.com/spanish-books/el-oso/',
+        canonical,
+    )
     html = html.replace("El_Oso_Beibei", f"{title.replace(' ', '_')}_Beibei")
     
     # Write output
