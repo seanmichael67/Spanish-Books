@@ -1,34 +1,36 @@
 #!/usr/bin/env python3
-"""Update the WordPress spanish-books page with latest Divi embed code."""
-import json
-import os
-import urllib.request
+"""Compatibility wrapper for the shared Beibei Spanish-book sync.
 
-WP_USER = os.environ.get("WP_BEIBEI_USER")
-WP_PASS = os.environ.get("WP_BEIBEI_APP_PASSWORD")
-if not WP_USER or not WP_PASS:
-    raise SystemExit("Set WP_BEIBEI_USER and WP_BEIBEI_APP_PASSWORD")
-PAGE_ID = 1854
+Dry-run is the default. Pass ``--apply`` to use the same transactional,
+fail-closed publisher used by future weekly books.
+"""
 
-# Read the embed HTML
-with open("/home/cryptonovado/Projects/preschool-books/divi-embeds/library-divi.html") as f:
-    html = f.read()
+from __future__ import annotations
 
-# Wrap in Divi shortcodes
-content = '[et_pb_section fb_built="1" _builder_version="4.27.4" _module_preset="default"][et_pb_row _builder_version="4.27.4" _module_preset="default"][et_pb_column type="4_4" _builder_version="4.27.4" _module_preset="default"][et_pb_code _builder_version="4.27.4" _module_preset="default"]' + html + '[/et_pb_code][/et_pb_column][/et_pb_row][/et_pb_section]'
+import argparse
+import subprocess
+import sys
+from pathlib import Path
 
-data = json.dumps({"content": content}).encode()
-req = urllib.request.Request(
-    f"https://www.beibeiamigos.com/wp-json/wp/v2/pages/{PAGE_ID}",
-    data=data,
-    method="POST",
-    headers={
-        "Content-Type": "application/json",
-        "Authorization": "Basic " + __import__('base64').b64encode(f"{WP_USER}:{WP_PASS}".encode()).decode(),
-        "User-Agent": "WordPress/6.0"
-    }
-)
 
-resp = urllib.request.urlopen(req)
-result = json.loads(resp.read())
-print(f"Updated page {result['id']}: {result['slug']} ✅")
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--skip-previews", action="store_true")
+    args = parser.parse_args()
+
+    root = Path(__file__).resolve().parents[1]
+    command = [
+        sys.executable,
+        str(root / "scripts" / "sync_wordpress_books.py"),
+        "--root", str(root),
+    ]
+    if args.apply:
+        command.append("--apply")
+    if args.skip_previews:
+        command.append("--skip-previews")
+    return subprocess.run(command, cwd=root, check=False).returncode
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
