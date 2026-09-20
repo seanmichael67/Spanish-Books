@@ -9,17 +9,17 @@ yet in the library, then:
   3. converts images to WebP and applies all client patches
   4. adds the book to server.js BOOKS and rebuilds index.html
   5. commits + pushes (GitHub Pages redeploys the library)
-  6. creates + publishes the WordPress page with SEO read-along
-     (WP_BEIBEI_USER / WP_BEIBEI_APP_PASSWORD env)
+  6. runs the shared fail-closed WordPress sync, which transactionally
+     creates the new page and regenerates the complete library hub
 
-Any incomplete step aborts BEFORE the publish steps (list/index/push/WP),
-so a half-ready book is never shown to visitors. Resumable: re-running
-continues where it left off. --dry-run reports the plan only.
+Asset-generation failures abort before the list/index/push steps, so an
+incomplete reader is never advertised. The shared WordPress sync is idempotent
+and exits nonzero on any gate or verification failure; rerunning it reconciles
+a reader that was pushed successfully but whose WordPress step was interrupted.
+``--dry-run`` reports the candidate only.
 """
 import argparse
 import glob
-import html as html_mod
-import json
 import os
 import re
 import subprocess
@@ -62,9 +62,6 @@ PLAN = {
     134: ("el-viento", "🌬️", "El Viento", "The Wind", "estaciones"),
     135: ("el-clima", "🌤️", "El Clima", "The Weather", "estaciones"),
 }
-
-WP_API = "https://www.beibeiamigos.com/wp-json/wp/v2/pages"
-HUB_ID = 1854
 
 
 def sh(cmd, **kw):
@@ -162,41 +159,19 @@ def main():
     sh(["git", "commit", "-m", f"📚 Weekly book: {emoji} {title} — {subtitle} (week {week})"])
     sh(["git", "push", "origin", "main"])
 
-    # 6. WP page
+    # 6. Shared transactional WordPress publisher + complete hub rebuild.
+    # Explicit --skip-wp is for asset-only recovery; the default fails loudly
+    # so scheduled runs cannot report success while WordPress is stale.
     if args.skip_wp:
-        print("Skipping WP page creation (--skip-wp).")
+        print("Skipping shared WordPress sync (--skip-wp).")
         return
-    import requests
-    user = os.environ.get("WP_BEIBEI_USER", "Luciano")
-    pw = os.environ.get("WP_BEIBEI_APP_PASSWORD")
-    if not pw:
-        print("⚠️ WP_BEIBEI_APP_PASSWORD not set — WP page NOT created. Run again with creds.")
-        return
-    s = requests.Session()
-    s.headers["User-Agent"] = "WordPress/6.0"
-    template = open(os.path.join(ROOT, "divi-embeds", "books", "week-95-contar.html")).read()
-    page_slug = slug_tail = re.sub(r"^week-\d+-", "", slug)
-    h = template
-    h = h.replace("week-95-contar", slug)
-    h = h.replace("/spanish-books/contar/", f"/spanish-books/{page_slug}/")
-    h = h.replace('"name": "Contar"', f'"name": "{title}"')
-    h = h.replace('"alternateName": "Counting"', f'"alternateName": "{subtitle}"')
-    h = h.replace('title="Contar - Free Spanish Book', f'title="{title} - Free Spanish Book')
-    desc = (f"Learn {title.lower()}! This interactive Spanish book teaches preschoolers "
-            f"{subtitle.lower()} words with native audio. Earn a badge from Beibei Amigos, ages 2-5!")
-    h = re.sub(r'<p class="desc">.*?</p>', f'<p class="desc">\n{desc}\n</p>', h, flags=re.S)
-    h = h.replace("numbers & letters", theme)
-    divi = ('[et_pb_section fb_built="1" _builder_version="4.27.4"][et_pb_row _builder_version="4.27.4"]'
-            '[et_pb_column type="4_4" _builder_version="4.27.4"][et_pb_code _builder_version="4.27.4"]\n'
-            + h + '\n[/et_pb_code][/et_pb_column][/et_pb_row][/et_pb_section]')
-    r = s.post(WP_API, auth=(user, pw), json={
-        "title": f"{emoji} {title} — {subtitle}", "slug": page_slug, "status": "publish",
-        "parent": HUB_ID, "content": divi, "excerpt": desc[:150]}, timeout=30)
-    if r.status_code == 201:
-        print(f"✅ WP page live: {r.json().get('link')}")
-        sh([sys.executable, "scripts/update_wp_seo.py", "--apply", "--slug", page_slug])
-    else:
-        print(f"⚠️ WP page creation failed HTTP {r.status_code}: {r.text[:150]} — book is live in library; create page later.")
+    sh([
+        sys.executable,
+        "scripts/sync_wordpress_books.py",
+        "--root", ROOT,
+        "--apply",
+        "--skip-previews",
+    ])
 
 
 if __name__ == "__main__":
