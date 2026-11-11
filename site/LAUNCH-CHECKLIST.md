@@ -21,17 +21,15 @@ Written after building the new site. Items are in the order I would do them.
 ## 2. Book quality (the product itself)
 
 Done since the first version: audio for every page and word of every book (including the
-corrected pages), the six missing pictures, and new photo pictures for 22 more books.
+corrected pages), the six missing pictures, and new photo pictures for all 30 unfinished books.
+All 136 theme books are on the site.
 
-- [ ] **Finish the last 8 books.** These have audio but still need pictures (56 in total):
-      `week-101-la-flauta` (pages 1, 3, 4, 5, 6), `week-102-la-musica`, `week-103-los-juegos`,
-      `week-104-mi-casa`, `week-105-mi-escuela`, `week-106-mi-parque`, `week-107-mi-jardin`,
-      `week-108-mi-tienda`, plus `week-100-el-piano` page 5. The descriptions are ready in
-      `site/data/image-prompts.json`. Save each result with `site/scripts/save-image.py`, then run
-      `npm run import-books`. They appear on the site, and the Music and My World packs unlock,
-      as soon as their pictures exist.
-- [ ] **Redo one picture.** `week-132-el-arcoiris` page 1 ("Después de la lluvia") came out as a
-      lamb in a field. It should show rain clouds clearing.
+- [ ] **Pictures for the syllable series.** Eight "Sílabas" books (vowels, M, P, S, L, T, N, D)
+      are written and have audio, but need 56 pictures. Descriptions are in
+      `site/data/image-prompts.json` under `silabas-…`. For each cover (page 0) leave out the
+      "No text, no letters" part of the style, because the cover shows letter blocks. Save with
+      `site/scripts/save-image.py`, then run `npm run import-books`. The books and their pack
+      appear automatically.
 - [ ] **Native-speaker review of every book.** I corrected the mistakes I found
       (see `site/data/text-fixes.json`), but a teacher should read each book once before it is sold.
 - [ ] **Pick one art style.** The 30 newest books and most older ones are photos. About 30 older
