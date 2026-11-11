@@ -1,0 +1,284 @@
+{
+  "_readme": "What each picture shows, one line per page (page 0 is the cover). Kept so any picture can be made again in the same style (save the result with site/scripts/save-image.py). Every prompt gets the shared 'style' text added at the end.",
+  "style": "Realistic photograph, professional children's-book photography, soft natural light, sharp focus, vibrant natural colors, simple uncluttered composition with the subject large and clearly visible. No text, no letters, no numbers, no watermark.",
+  "books": {
+    "week-98-cantar": [
+      "A 5-year-old girl with dark curly hair in a yellow dress singing joyfully with her mouth open and arms out, in a bright living room",
+      "A 5-year-old girl with dark curly hair in a yellow dress holding a toy microphone and singing a song at home",
+      "Four diverse preschool children standing in a circle singing together in a sunny classroom, happy faces",
+      "A 5-year-old girl with dark curly hair in a yellow dress smiling widely and clapping while she sings, colorful paper garlands behind her",
+      "A 5-year-old girl with dark curly hair in pajamas singing next to a window with warm morning sunshine coming in",
+      "Two small colorful songbirds perched on a blossoming branch with their beaks open, singing, blue sky behind",
+      "A group of preschool children on a small school stage singing and laughing with colorful paper confetti falling"
+    ],
+    "week-99-bailar": [
+      "A 5-year-old boy with short black hair in a red t-shirt dancing joyfully and twirling colorful ribbons in a sunny room",
+      "A 5-year-old boy with short black hair in a red t-shirt spinning and dancing in a green field of wildflowers",
+      "Five diverse preschool children dancing in a circle holding hands in a green park",
+      "Close-up of a young child's hands raised in the air waving colorful ribbons while dancing",
+      "Close-up of a young child's feet in bright colorful sneakers dancing on a wooden floor",
+      "A 5-year-old boy with short black hair in a red t-shirt dancing next to a small portable radio in a living room",
+      "A group of happy preschool children at a daytime dance party with balloons and paper confetti"
+    ],
+    "week-100-el-piano": [
+      "A beautiful black grand piano in a sunlit room with a vase of flowers beside it",
+      "Close-up of black and white piano keys in gentle window light",
+      "Top-down close-up of a piano keyboard showing the pattern of white keys and black keys clearly",
+      "A 6-year-old girl with long brown hair in a blue dress sitting at a piano with her small hands on the keys",
+      "A 6-year-old girl with long brown hair in a blue dress playing the piano with her eyes closed and a gentle smile",
+      "A 6-year-old girl with long brown hair in a blue dress practicing piano with an open music book on the stand",
+      "A 6-year-old girl with long brown hair in a blue dress taking a bow next to a piano while her family claps"
+    ],
+    "week-101-la-flauta": [
+      "A shiny silver flute resting on a dark velvet cloth with a few flowers around it",
+      "A long silver flute held horizontally in a child's two hands against a plain light background",
+      "A 6-year-old boy with brown hair in a green sweater blowing into a wooden recorder flute",
+      "A 6-year-old boy with brown hair in a green sweater playing a recorder flute softly in a quiet sunlit room",
+      "Small birds perched on a garden branch near a 6-year-old boy in a green sweater who is playing a recorder flute",
+      "A 6-year-old boy with brown hair in a green sweater playing a recorder flute in a beautiful flower garden",
+      "A 6-year-old boy in a green sweater playing a recorder flute in a garden at golden hour with butterflies flying around him"
+    ],
+    "week-102-la-musica": [
+      "A colorful arrangement of children's musical instruments on a wooden floor: a small guitar, a drum, maracas, a tambourine and a xylophone",
+      "Three smiling preschool children shaking maracas and laughing in a bright classroom",
+      "Four diverse preschool children sitting in a circle, each playing a different instrument together",
+      "A neat flat-lay of many instruments on a white background: guitar, drum, small keyboard, flute, trumpet, maracas",
+      "A child standing in a park with eyes closed, listening, with birds in the trees and a small stream nearby",
+      "A 4-year-old girl with pigtails in an orange shirt happily playing a tambourine",
+      "Happy preschool children dancing and playing instruments at a classroom music party with paper streamers"
+    ],
+    "week-103-los-juegos": [
+      "Colorful board games, balls, wooden blocks and toys arranged neatly on a playroom floor",
+      "A happy 5-year-old boy with curly hair in a striped shirt sitting on a playroom floor surrounded by toys and games",
+      "Three preschool children kicking a colorful ball on a green field",
+      "A child hiding behind a big tree in a park while another child covers their eyes and counts",
+      "A 5-year-old boy with curly hair in a striped shirt building a tall tower with colorful wooden blocks",
+      "Four diverse children sitting around a low table playing a colorful board game together, laughing",
+      "A group of happy preschool children jumping with joy on a playground"
+    ],
+    "week-104-mi-casa": [
+      "A cozy family house with a red tile roof, a green front garden with flowers and a welcoming front door, sunny morning",
+      "A charming pretty house with flower boxes in the windows and a white picket fence",
+      "Close-up of a friendly bright blue front door of a house with a doormat and potted plants",
+      "Close-up of two house windows with white curtains and colorful flower boxes on a cream wall",
+      "A cozy tidy child's bedroom with a small bed, colorful toys on shelves and a soft rug",
+      "A warm home kitchen with a parent cooking at the stove, steam rising from a pot",
+      "A happy family of four standing in front of their cozy house, smiling and waving"
+    ],
+    "week-105-mi-escuela": [
+      "A cheerful small school building with a playground in front and children arriving in the morning",
+      "A 5-year-old girl with two braids wearing a red backpack walking toward a school entrance",
+      "A kind smiling teacher reading a picture book to preschool children sitting in a circle on a rug",
+      "A 5-year-old girl with two braids at a classroom table with crayons, picture books and a globe",
+      "Preschool children playing on a school playground with slides and swings",
+      "Five diverse preschool children smiling together with arms around each other in a classroom",
+      "A 5-year-old girl with two braids and a red backpack smiling proudly in front of her school entrance"
+    ],
+    "week-106-mi-parque": [
+      "A beautiful neighborhood park with green trees, a colorful playground and children playing",
+      "A 4-year-old boy in a blue jacket skipping happily along a path toward a park with big trees",
+      "A 4-year-old boy in a blue jacket swinging high on a playground swing, laughing",
+      "A 4-year-old boy in a blue jacket sliding down a bright yellow playground slide with a big smile",
+      "A 4-year-old boy in a blue jacket running across green grass in a park",
+      "A 4-year-old boy in a blue jacket bending down to look closely at colorful flowers in a park",
+      "A group of preschool children playing together in a sunny green park"
+    ],
+    "week-107-mi-jardin": [
+      "A beautiful backyard garden with colorful flowers, vegetable beds and a small wooden fence",
+      "A 5-year-old girl in a straw hat and overalls planting seeds in dark soil with a small trowel",
+      "Close-up of small green sprouts growing out of the soil in a garden bed",
+      "A 5-year-old girl in a straw hat and overalls watering flowers with a small watering can",
+      "Colorful butterflies resting on bright flowers in a sunny garden",
+      "Ripe red tomatoes growing on a green vine in a garden, close-up",
+      "A 5-year-old girl in a straw hat and overalls standing proudly in a blooming colorful garden"
+    ],
+    "week-108-mi-tienda": [
+      "A friendly small neighborhood grocery store with a colorful striped awning and crates of fruit outside",
+      "A father and his young daughter walking hand in hand toward a small neighborhood grocery store",
+      "Colorful fresh fruits arranged beautifully on grocery store shelves",
+      "Warm golden loaves of bread on a wooden bakery shelf",
+      "A 5-year-old girl with a ponytail reaching for a red apple from a fruit display in a grocery store",
+      "A friendly smiling cashier at a store checkout counter with a father and young daughter paying",
+      "A happy 5-year-old girl with a ponytail leaving a store carrying a small paper grocery bag"
+    ],
+    "week-109-mi-biblioteca": [
+      "A cozy children's library with tall bookshelves and comfortable reading corners with cushions",
+      "Many colorful children's books arranged on library shelves, close-up",
+      "A 5-year-old boy with glasses sitting in a cozy armchair reading a picture book",
+      "A 5-year-old boy with glasses looking at an open picture book with a face full of wonder, warm light on his face",
+      "A mother and her young son reading a picture book together on a library couch",
+      "A 5-year-old boy with glasses reaching for a book on a low library shelf",
+      "A happy 5-year-old boy with glasses hugging a stack of colorful books in a library"
+    ],
+    "week-110-mi-iglesia": [
+      "A pretty small white church with a bell tower and a flower garden on a sunny day",
+      "A family walking together along a path toward a small white church on a sunny morning",
+      "A large beautiful church building with tall wooden doors seen from the front, blue sky",
+      "A group of children and adults singing together inside a bright church",
+      "Young children sitting on a rug listening to a woman telling a story in a bright room",
+      "Two preschool children sharing a snack and smiling at each other in a church garden",
+      "A 5-year-old girl in a white dress waving happily in front of a small white church with a garden"
+    ],
+    "week-111-mi-ciudad": [
+      "A friendly colorful city street with buildings, trees and people walking on a sunny day",
+      "Tall modern city buildings seen from the street with a bright blue sky above",
+      "Colorful cars and a city bus on a street with a pedestrian crosswalk",
+      "People walking along a city sidewalk with small shops and trees",
+      "A green city park with children playing and tall buildings in the background",
+      "A city street at night with warm glowing lights from windows and street lamps",
+      "A wide panoramic view of a beautiful city skyline at sunset"
+    ],
+    "week-120-el-carro": [
+      "A shiny red car parked on a sunny tree-lined road",
+      "Side view of a red car showing its round wheels clearly on a road",
+      "A red car driving fast on an open highway with slight motion blur in the background",
+      "A father driving a car, seen from the passenger side, smiling, with a young child in a car seat in the back",
+      "A family car driving through beautiful green countryside with mountains in the distance",
+      "A car with its bright headlights turned on at dusk on a quiet street",
+      "A happy young child smiling and waving from the open back window of a car"
+    ],
+    "week-121-el-autobus": [
+      "A big yellow school bus on a sunny neighborhood street",
+      "A large yellow school bus next to a small car, showing the size difference",
+      "The inside of an empty school bus with rows of seats and big windows",
+      "Happy children with backpacks climbing the steps onto a yellow school bus",
+      "A yellow school bus driving on a road toward a school building",
+      "A yellow school bus stopped at a bus stop with its door open",
+      "Happy children looking out of school bus windows and waving"
+    ],
+    "week-122-el-avion": [
+      "A white passenger airplane flying through a blue sky with fluffy white clouds",
+      "A passenger airplane flying high above a layer of clouds in bright sunlight",
+      "A passenger airplane seen from below showing both of its wide wings against the blue sky",
+      "View from high above of an airplane flying over mountains with tiny houses far below",
+      "A 5-year-old boy in an orange hoodie pointing up at an airplane leaving a white trail in the blue sky",
+      "A passenger airplane landing on an airport runway with its wheels just touching down",
+      "A happy 5-year-old boy in an orange hoodie playing with a toy airplane, holding it up as if it flies"
+    ],
+    "week-123-el-tren": [
+      "A colorful old steam train traveling on tracks through green hills",
+      "A very long train with many wagons stretching across a wide landscape, seen from the side",
+      "Close-up of colorful train wagons, red, blue, green and yellow, connected in a row",
+      "A train traveling on railroad tracks through peaceful green countryside, tracks clearly visible",
+      "A black steam locomotive puffing big white clouds of steam",
+      "A train arriving at a small pretty train station platform with people waiting",
+      "A happy young child with a parent waving at a passing train from a safe distance behind a fence"
+    ],
+    "week-124-la-bicicleta": [
+      "A colorful child's bicycle with a basket of flowers standing on a park path",
+      "Close-up of a child's sneakers on the pedals of a bicycle in a park",
+      "A 6-year-old girl with short hair fastening a bright green bicycle helmet under her chin",
+      "A 6-year-old girl in a green helmet riding her bicycle fast down a gentle slope, smiling",
+      "A 6-year-old girl in a green helmet riding her bicycle along a tree-lined park path",
+      "Close-up of a child's hand ringing a shiny bell on bicycle handlebars",
+      "A happy 6-year-old girl in a green helmet standing next to her bicycle giving a thumbs up"
+    ],
+    "week-125-el-barco": [
+      "A white sailboat on a calm blue sea under a sunny sky",
+      "A sailboat gliding over gentle blue waves with wind filling its sails",
+      "A colorful fishing boat on the wide blue ocean",
+      "Close-up of a sailboat's big white sails full of wind against a blue sky",
+      "A young child in a life jacket on a boat looking at gentle blue waves",
+      "A boat arriving at a small harbor with a lighthouse",
+      "A happy young child playing with a small toy sailboat at the edge of a pond"
+    ],
+    "week-126-el-cohete": [
+      "A tall white space rocket standing on a launch pad on a clear day",
+      "A space rocket lifting off with bright fire and big clouds of smoke below it",
+      "A rocket streaking high through the dark upper sky leaving a long bright trail",
+      "A dark night sky filled with thousands of twinkling stars and the Milky Way",
+      "The full moon large and detailed in a dark starry sky",
+      "A rocket at the moment of liftoff from the launch pad, flames just igniting, dramatic and exciting",
+      "A happy 5-year-old child in a toy astronaut costume playing inside a homemade cardboard rocket ship"
+    ],
+    "week-127-el-helicoptero": [
+      "A red helicopter flying over a green valley",
+      "A helicopter flying in a blue sky with its rotor blades spinning",
+      "Close-up of the big rotor blades on top of a helicopter parked on the ground",
+      "A helicopter hovering just above a grassy landing field, taking off",
+      "A red and white rescue helicopter with a rescue worker in an orange suit, a helpful heroic scene",
+      "A young child playfully covering their ears and smiling as a helicopter flies high overhead",
+      "A happy young child playing with a toy helicopter in a garden"
+    ],
+    "week-128-la-primavera": [
+      "A beautiful spring landscape with pink cherry blossom trees, fresh green grass and butterflies",
+      "Colorful spring flowers, tulips and daffodils, growing up from the ground in a garden",
+      "Colorful butterflies flying among spring flowers in a meadow",
+      "A small songbird singing on a blossoming tree branch in spring",
+      "A young child in a yellow raincoat holding a colorful umbrella in gentle spring rain next to flowers",
+      "A lush bright green spring landscape with trees and grass and a child running in the distance",
+      "A happy young child sitting in a spring garden surrounded by flowers"
+    ],
+    "week-129-el-verano": [
+      "A bright sunny summer day at a sandy beach with a blue ocean",
+      "A bright sun shining in a clear blue sky over a golden summer field",
+      "Children playing on a sandy beach with colorful towels, buckets and spades",
+      "Happy children swimming in a swimming pool with colorful floaties, splashing",
+      "A young child happily eating a colorful ice cream cone on a sunny summer day",
+      "A young child in a sun hat resting in the shade of a tree, fanning themselves on a very hot day",
+      "A happy young child building a sandcastle at the beach"
+    ],
+    "week-130-el-otono": [
+      "A beautiful autumn park with trees full of orange, red and yellow leaves",
+      "Colorful autumn leaves falling gently from trees",
+      "A tree branch with leaves in different colors, some green, some yellow, orange and red",
+      "A young child in a jacket playing outside as wind blows autumn leaves around",
+      "A young child standing in a pumpkin patch among big orange pumpkins",
+      "A young child pulling on a cozy knitted sweater outdoors on a cool autumn day",
+      "A happy young child jumping into a big pile of colorful autumn leaves"
+    ],
+    "week-131-el-invierno": [
+      "A beautiful winter scene with snow-covered trees and a small cozy village",
+      "Snowflakes falling gently over a snowy landscape",
+      "A young child bundled up in a warm winter coat, scarf, hat and mittens with rosy cheeks",
+      "A young child building a cheerful snowman with a carrot nose and a hat",
+      "Children playing with snow in a snowy yard, laughing",
+      "A young child sitting by a fireplace holding a mug of hot chocolate with marshmallows",
+      "A happy young child sledding down a snowy hill with a big smile"
+    ],
+    "week-132-el-arcoiris": [
+      "A bright full rainbow arching across the sky over a green landscape after rain",
+      "Dark rain clouds clearing with sunshine breaking through and wet grass glistening",
+      "A vivid rainbow with all its colors stretching across a green meadow",
+      "Close-up of a rainbow in the sky showing the red, orange and yellow bands",
+      "Close-up of a rainbow in the sky showing the green, blue and purple bands",
+      "A young child in rain boots gazing up at a beautiful rainbow, wildflowers around",
+      "A happy young child painting a rainbow with finger paints on paper, colorful hands"
+    ],
+    "week-133-el-trueno": [
+      "Dramatic dark storm clouds with a distant flash of lightning over fields, impressive but not scary",
+      "Big dark gray storm clouds gathering in the sky over a small town",
+      "A young child indoors looking out of a window at a thunderstorm with a surprised face",
+      "A bright zigzag lightning bolt in a dark sky seen from far away",
+      "Heavy rain falling outside a window, raindrops running down the glass",
+      "A young child cuddled under a blanket with a teddy bear on a sofa, safe and cozy indoors",
+      "The sun coming out after a storm with puddles on the ground and a rainbow appearing"
+    ],
+    "week-134-el-viento": [
+      "Trees bending in the wind with leaves swirling through the air",
+      "Tall grass bending in the wind with dandelion seeds floating through the air",
+      "Colorful leaves being blown by the wind across a park path",
+      "A young child flying a colorful kite high in a windy blue sky",
+      "A young child standing on a grassy hill with hair blowing in a fresh breeze, smiling",
+      "Close-up of wind chimes swinging in the breeze on a porch",
+      "A happy young child spinning with arms out in a gentle wind, scarf flying"
+    ],
+    "week-135-el-clima": [
+      "A young child looking out of a large window at the sky",
+      "A bright sunny day with a young child playing outside on green grass under a blue sky",
+      "A cloudy day with soft gray clouds covering the sky and a young child looking up",
+      "A rainy day with a young child in rain boots holding an umbrella next to puddles",
+      "A snowy day with snowflakes falling and a young child catching them with open hands",
+      "A young child looking up at the sky with a curious thinking expression, half the sky sunny and half cloudy",
+      "A happy young child outdoors with arms raised, sunshine and a rainbow in the sky behind"
+    ]
+  },
+  "repairs": {
+    "week-31-la-rosa": { "2": "A young child gently smelling a beautiful red rose in a garden" },
+    "week-32-el-girasol": { "5": "A wide field full of tall yellow sunflowers under a blue sky" },
+    "week-34-el-cactus": { "4": "A tall saguaro cactus standing in the Sonoran desert under a blue sky" },
+    "week-37-el-tulipan": { "6": "A single beautiful red tulip in full bloom, close-up, soft green background" },
+    "week-76-escuchar": { "3": "Preschool children standing patiently in a line, waiting their turn at a playground slide" },
+    "week-77-reir": { "2": "Two preschool children laughing very hard together, eyes squeezed shut with joy" }
+  }
+}

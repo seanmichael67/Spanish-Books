@@ -34,6 +34,9 @@ function webpRatio(file) {
   return Math.round((w / h) * 100) / 100;
 }
 
+// Books whose pictures were re-made as photos (their old HTML still describes watercolours).
+const PHOTO_BOOKS = Object.keys(JSON.parse(fs.readFileSync(path.join(ROOT, 'site', 'data', 'image-prompts.json'), 'utf8')).books);
+
 const seen = new Set();
 const books = LISTED.map((entry) => {
   const html = fs.readFileSync(path.join(ROOT, 'books', entry.slug, 'index.html'), 'utf8');
@@ -42,7 +45,7 @@ const books = LISTED.map((entry) => {
   const cfg = vm.runInNewContext('(' + src + ')');
 
   let slug = entry.slug.replace(/^week-\d+-/, '');
-  if (seen.has(slug)) slug = slug + '-' + entry.week;
+  if (seen.has(slug)) slug = slug + '-' + entry.theme; // e.g. a second "el-arcoiris" in another theme
   seen.add(slug);
 
   const dir = path.join(ROOT, 'books', entry.slug);
@@ -70,11 +73,22 @@ const books = LISTED.map((entry) => {
   const fix = FIXES[slug] || {};
   Object.entries(fix.pages || {}).forEach(([i, f]) => {
     const page = pages[Number(i)];
-    if (page.es !== f.es || page.en !== f.en) page.audio = null; // old recording no longer matches
+    if (page.es !== f.es || page.en !== f.en) {
+      // The old recording no longer matches the words. Use the re-recorded
+      // clip (page-NN-fix.mp3, made by make-audio.py) if it exists yet.
+      const redo = `page-${String(i).padStart(2, '0')}-fix.mp3`;
+      page.audio = fs.existsSync(path.join(dir, 'audio', redo)) ? redo : null;
+    }
     page.es = f.es;
     page.en = f.en;
   });
-  vocab = vocab.map((w) => (fix.vocab && fix.vocab[w.es] ? Object.assign({}, w, fix.vocab[w.es], { audio: null }) : w));
+  vocab = vocab.map((w) => {
+    if (!fix.vocab || !fix.vocab[w.es]) return w;
+    const fixed = Object.assign({}, w, fix.vocab[w.es]);
+    const clip = `word-${fileSlug(fixed.es)}.mp3`;
+    fixed.audio = fs.existsSync(path.join(dir, 'audio', clip)) ? clip : null;
+    return fixed;
+  });
   pages.forEach((p) => {
     delete p.prompt;
     if (p.image) p.ratio = webpRatio(path.join(dir, 'images', p.image));
@@ -92,7 +106,7 @@ const books = LISTED.map((entry) => {
     emoji: entry.emoji,
     title: cfg.title || entry.title,
     titleEn: entry.subtitle,
-    art: /watercolor|illustration/.test(prompts) ? 'illustration' : 'photo',
+    art: !PHOTO_BOOKS.includes(entry.slug) && /watercolor|illustration/.test(prompts) ? 'illustration' : 'photo',
     level,
     pages,
     vocab,
