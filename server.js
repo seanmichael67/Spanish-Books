@@ -16,9 +16,6 @@ app.get(['/config.js', '*/config.js'], (req, res) => {
   res.send(`const GEMINI_API_KEY = "${CLIENT_GEMINI_KEY}";`);
 });
 
-// Serve static files
-app.use(express.static(path.join(__dirname)));
-
 // Book data with themes
 const BOOKS = [
   { slug: 'week-00-frutas-y-verduras', emoji: '🍎', week: 0, title: 'Mis Frutas y Verduras', subtitle: 'Fruits & Vegetables', theme: 'comida', ready: true },
@@ -153,25 +150,34 @@ const THEMES = [
 // Book index page
 app.get('/', (req, res) => {
   const bookCards = BOOKS.map(b => {
-    const cls = b.ready ? 'card' : 'card coming-soon';
+    const cls = b.ready
+      ? 'card' + (b.theme === 'animales' ? '' : ' hidden')
+      : 'card coming-soon hidden';
     const bookSlug = b.slug.replace(/^week-\d+-/, '');
     const href = b.ready ? 'https://www.beibeiamigos.com/spanish-books/' + bookSlug + '/' : '#';
-    return '<a href="' + href + '" target="_top" class="' + cls + '" data-theme="' + b.theme + '">' +
-      '<div class="emoji">' + b.emoji + '</div>' +
-      '<div class="week">Semana ' + b.week + '</div>' +
-      '<div class="title">' + b.title + '</div>' +
+    const cover = 'https://seanmichael67.github.io/Spanish-Books/books/' + b.slug + '/images/page-00.webp';
+    return '<a href="' + href + '" target="_top" class="' + cls + '" data-theme="' + b.theme + '" data-search="' + b.title + ' ' + b.subtitle + '">' +
+      '<img class="card-cover" src="' + cover + '" alt="Cover of ' + b.title + ' — ' + b.subtitle + '" loading="lazy" width="480" height="360">' +
+      '<div class="card-body">' +
+      '<div class="card-meta"><span>Semana ' + b.week + '</span><span aria-hidden="true">' + b.emoji + '</span></div>' +
+      '<div class="title" lang="es">' + b.title + '</div>' +
       '<div class="subtitle">' + b.subtitle + '</div>' +
+      '<div class="read-cue">Abrir libro <span aria-hidden="true">→</span></div>' +
+      '</div>' +
       '</a>';
   }).join('\n      ');
 
-  const themeBtns = THEMES.map(t =>
-    '<button class="theme-btn' + (t.id === 'animales' ? ' active' : '') + '" data-filter="' + t.id + '">' +
+  const populatedThemeIds = new Set(BOOKS.filter(b => b.ready).map(b => b.theme));
+  const populatedThemes = THEMES.filter(t => t.id === 'todos' || populatedThemeIds.has(t.id));
+  const themeBtns = populatedThemes.map(t =>
+    '<button type="button" class="theme-btn' + (t.id === 'animales' ? ' active' : '') + '" data-filter="' + t.id + '" aria-pressed="' + (t.id === 'animales' ? 'true' : 'false') + '">' +
     '<span class="theme-emoji">' + t.emoji + '</span>' +
     '<span class="theme-label">' + t.labelEn + '</span>' +
     '</button>'
   ).join('\n        ');
 
   const bookCount = BOOKS.filter(b => b.ready).length;
+  const themeCount = populatedThemeIds.size;
 
   res.send(`<!DOCTYPE html>
 <html lang="es">
@@ -191,99 +197,201 @@ app.get('/', (req, res) => {
   <meta property="og:title" content="Free Spanish Books for Preschoolers | Beibei Amigos">
   <meta property="og:description" content="Free interactive Spanish books with audio! Your child learns to read Spanish through play. New books every week.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://spanish-books.onrender.com/">
+  <meta property="og:url" content="https://www.beibeiamigos.com/spanish-books/">
   <meta property="og:image" content="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://spanish-books.onrender.com/">
-  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://www.beibeiamigos.com/spanish-books/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Sour+Gummy:ital,wght@0,500..800;1,500..800&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Sour Gummy', cursive; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px 20px 10px; margin: 0; }
-    .container { width: 100%; max-width: 1600px; margin: 0 auto; }
-    .header { text-align: center; color: white; margin-bottom: 32px; }
-    .header img { width: 80px; height: 80px; border-radius: 50%; background: white; padding: 8px; margin-bottom: 16px; }
-    .header h1 { font-size: 2.5rem; margin-bottom: 8px; }
-    .header p { font-size: 1.1rem; opacity: 0.9; }
-    .header .count { font-size: 0.85rem; opacity: 0.7; margin-top: 4px; }
-
-    /* Theme filter */
-    .themes { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 32px; padding: 0 10px; }
-    .theme-btn { background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); color: white; padding: 10px 20px; border-radius: 50px; cursor: pointer; font-family: inherit; font-size: 1.1rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s; min-width: 160px; height: 48px; box-sizing: border-box; }
-    .theme-btn:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
-    .theme-btn.active { background: white; color: #5b4a9e; border-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-    .theme-emoji { font-size: 1.1rem; }
-    @media (max-width: 600px) { .theme-btn { padding: 8px 14px; font-size: 0.9rem; min-width: 130px; height: 40px; } .theme-emoji { font-size: 1.2rem; } }
-
-    /* Book grid */
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-    .card { background: white; border-radius: 20px; padding: 28px 20px; text-align: center; text-decoration: none; color: #333;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s; }
-    .card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.2); }
-    .card .emoji { font-size: 3rem; margin-bottom: 10px; }
-    .card .week { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 6px; }
-    .card .title { font-size: 1.3rem; font-weight: 800; margin-bottom: 4px; }
-    .card .subtitle { font-size: 0.8rem; color: #777; }
-    .card .theme-tag { font-size: 0.65rem; color: #5b4a9e; background: #ede9fe; padding: 2px 10px; border-radius: 20px; display: inline-block; margin-top: 8px; font-weight: 600; }
-    .card.coming-soon { opacity: 0.5; pointer-events: none; }
-    .card.coming-soon .title::after { content: ' 🔒'; }
-    .card.hidden { display: none; }
-
-    .no-books { text-align: center; color: rgba(255,255,255,0.7); padding: 60px 20px; font-size: 1.2rem; display: none; }
-    @media (min-width: 1024px) {
-      body { padding: 32px 32px 12px; }
-      .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    :root {
+      --ink: #28213a;
+      --orchid: #6d4cc5;
+      --orchid-dark: #52359f;
+      --sky: #41b7c7;
+      --mango: #ffbf47;
+      --paper: #fffdf7;
+      --mist: #f4f0ff;
+      --line: #ded6f2;
+      --shadow: 0 18px 40px rgba(40, 33, 58, 0.12);
     }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { background: var(--paper); scroll-behavior: smooth; }
+    body { font-family: 'Nunito', sans-serif; background: var(--paper); color: var(--ink); padding: 20px; margin: 0; }
+    button, input { font: inherit; }
+    .container { width: min(100%, 1440px); margin: 0 auto; }
+    .hero { position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr); gap: 48px; align-items: center; min-height: 430px; padding: clamp(32px, 6vw, 76px); border: 2px solid var(--ink); border-radius: 34px; background: var(--ink); color: white; box-shadow: 10px 10px 0 var(--mango); }
+    .hero::before { content: ''; position: absolute; inset: auto -10% -45% 35%; height: 360px; border-radius: 50%; background: var(--orchid); opacity: 0.46; transform: rotate(-8deg); }
+    .hero-copy, .story-stack { position: relative; z-index: 1; }
+    .brand-row { display: flex; align-items: center; gap: 12px; margin-bottom: 36px; color: #eee8ff; font-weight: 800; letter-spacing: 0.02em; }
+    .brand-row img { width: 58px; height: 58px; border-radius: 50%; background: white; padding: 6px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 12px; color: var(--mango); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+    .hero h1 { max-width: 780px; font-family: 'Sour Gummy', cursive; font-size: clamp(3rem, 7vw, 6.4rem); line-height: 0.88; letter-spacing: -0.045em; }
+    .hero h1 em { color: var(--mango); font-style: normal; }
+    .hero-intro { max-width: 640px; margin-top: 24px; color: #eee8ff; font-size: clamp(1rem, 2vw, 1.22rem); line-height: 1.6; }
+    .hero-count { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .hero-count span { padding: 9px 14px; border: 1px solid rgba(255,255,255,0.28); border-radius: 999px; background: rgba(255,255,255,0.09); font-size: 0.86rem; font-weight: 800; }
+    .story-stack { min-height: 300px; }
+    .story-stack img { position: absolute; width: min(240px, 70%); aspect-ratio: 4 / 3; object-fit: cover; border: 7px solid white; border-radius: 22px; box-shadow: 0 22px 45px rgba(0,0,0,0.28); }
+    .story-stack img:nth-child(1) { top: 5%; left: 3%; transform: rotate(-10deg); }
+    .story-stack img:nth-child(2) { top: 18%; right: 0; transform: rotate(9deg); }
+    .story-stack img:nth-child(3) { bottom: 0; left: 22%; transform: rotate(-1deg); }
+    .library-shell { margin-top: 54px; }
+    .library-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 24px; }
+    .library-heading h2 { font-family: 'Sour Gummy', cursive; font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1; letter-spacing: -0.025em; }
+    .library-heading p { max-width: 580px; margin-top: 8px; color: #655d74; line-height: 1.55; }
+    .search { position: relative; display: block; width: min(100%, 380px); flex: 0 0 min(100%, 380px); }
+    .search span { position: absolute; left: 17px; top: 50%; transform: translateY(-50%); font-size: 1.2rem; }
+    .search input { width: 100%; height: 54px; padding: 0 18px 0 50px; border: 2px solid var(--ink); border-radius: 16px; background: white; color: var(--ink); outline: none; box-shadow: 5px 5px 0 var(--sky); }
+    .search input:focus { box-shadow: 5px 5px 0 var(--mango); }
+    .themes { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 18px; }
+    .theme-btn { min-height: 44px; padding: 8px 14px; border: 2px solid var(--line); border-radius: 999px; background: white; color: var(--ink); cursor: pointer; font-weight: 800; transition: transform 0.16s ease, background 0.16s ease, border-color 0.16s ease; }
+    .theme-btn:hover { transform: translateY(-2px); border-color: var(--orchid); }
+    .theme-btn.active { border-color: var(--ink); background: var(--ink); color: white; }
+    .theme-emoji { margin-right: 5px; }
+    .results-status { min-height: 24px; margin-bottom: 18px; color: #6d6677; font-size: 0.9rem; font-weight: 700; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+    .card { overflow: hidden; display: flex; flex-direction: column; min-width: 0; border: 2px solid var(--ink); border-radius: 22px; background: white; color: var(--ink); text-decoration: none; box-shadow: 7px 7px 0 var(--mist); transition: transform 0.18s ease, box-shadow 0.18s ease; }
+    .card:hover { transform: translate(-2px, -4px); box-shadow: 10px 12px 0 var(--mango); }
+    .card-cover { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--mist); border-bottom: 2px solid var(--ink); }
+    .card-body { display: flex; flex: 1; flex-direction: column; padding: 18px; }
+    .card-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; color: var(--orchid-dark); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase; }
+    .card .title { font-family: 'Sour Gummy', cursive; font-size: 1.55rem; font-weight: 800; line-height: 1.05; }
+    .card .subtitle { margin-top: 5px; color: #726a7e; font-size: 0.88rem; }
+    .read-cue { margin-top: auto; padding-top: 18px; color: var(--orchid-dark); font-size: 0.82rem; font-weight: 800; }
+    .card.coming-soon { opacity: 0.55; pointer-events: none; }
+    .card.hidden { display: none; }
+    .no-books { display: none; padding: 58px 24px; border: 2px dashed var(--line); border-radius: 22px; background: var(--mist); text-align: center; color: #625a70; font-size: 1.05rem; }
+    .site-note { margin: 52px auto 8px; padding: 26px; border-top: 2px solid var(--line); text-align: center; color: #6d6677; line-height: 1.6; }
+    .site-note a { color: var(--orchid-dark); font-weight: 800; }
+    :focus-visible { outline: 4px solid var(--mango); outline-offset: 4px; }
+    @media (max-width: 1050px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 820px) {
+      body { padding: 12px; }
+      .hero { grid-template-columns: 1fr; gap: 28px; min-height: auto; padding: 34px 26px 44px; border-radius: 26px; box-shadow: 6px 6px 0 var(--mango); }
+      .brand-row { margin-bottom: 26px; }
+      .story-stack { min-height: 240px; }
+      .library-heading { align-items: stretch; flex-direction: column; }
+      .search { width: 100%; flex-basis: auto; }
+      .themes { flex-wrap: nowrap; overflow-x: auto; padding: 4px 4px 12px; scroll-snap-type: x proximity; }
+      .theme-btn { flex: 0 0 auto; scroll-snap-align: start; }
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    }
+    @media (max-width: 520px) {
+      .hero h1 { font-size: clamp(2.8rem, 15vw, 4.2rem); }
+      .story-stack { min-height: 205px; }
+      .story-stack img { width: 62%; border-width: 5px; border-radius: 16px; }
+      .library-shell { margin-top: 42px; }
+      .grid { grid-template-columns: 1fr; }
+      .card { display: grid; grid-template-columns: 42% 1fr; }
+      .card-cover { height: 100%; aspect-ratio: auto; border-right: 2px solid var(--ink); border-bottom: 0; }
+      .card-body { padding: 16px; }
+      .card .title { font-size: 1.35rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png" alt="Beibei Amigos">
-      <h1>📚 Mis Libros en Español</h1>
-      <p>Beibei Amigos Language Preschool • Lectura Temprana</p>
-      <p class="count">${bookCount} libros disponibles • ¡Nuevos cada semana!</p>
-    </div>
+  <main class="container">
+    <section class="hero" aria-labelledby="libraryTitle">
+      <div class="hero-copy">
+        <div class="brand-row">
+          <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png" alt="Beibei Amigos Language Preschool">
+          <span>Beibei Amigos · Lectura temprana</span>
+        </div>
+        <p class="eyebrow"><span aria-hidden="true">●</span> Free bilingual story library</p>
+        <h1 id="libraryTitle">Pick a story.<br><em>Read together.</em></h1>
+        <p class="hero-intro">Short Spanish books with English support, native audio, word highlighting and a little badge at the finish. Choose a topic your child already loves.</p>
+        <div class="hero-count" aria-label="Library highlights">
+          <span>${bookCount} free stories</span>
+          <span>${themeCount} ready-to-read themes</span>
+          <span>Audio on every page</span>
+        </div>
+      </div>
+      <div class="story-stack" aria-hidden="true">
+        <img src="https://seanmichael67.github.io/Spanish-Books/books/week-01-el-oso/images/page-00.webp" alt="">
+        <img src="https://seanmichael67.github.io/Spanish-Books/books/week-16-la-mariposa/images/page-00.webp" alt="">
+        <img src="https://seanmichael67.github.io/Spanish-Books/books/week-24-el-pulpo/images/page-00.webp" alt="">
+      </div>
+    </section>
 
-    <div class="themes">
-      ${themeBtns}
-    </div>
+    <section class="library-shell" aria-labelledby="browseTitle">
+      <div class="library-heading">
+        <div>
+          <h2 id="browseTitle">Find tonight's book</h2>
+          <p>Search in Spanish or English, or follow a topic trail. The Animals shelf is open first.</p>
+        </div>
+        <label class="search" for="bookSearch">
+          <span aria-hidden="true">⌕</span>
+          <input id="bookSearch" type="search" placeholder="Search oso, bear, familia…" autocomplete="off">
+        </label>
+      </div>
 
-    <div class="grid" id="bookGrid">
-      ${bookCards}
-    </div>
+      <div class="themes" role="group" aria-label="Filter books by theme">
+        ${themeBtns}
+      </div>
+      <p class="results-status" id="resultsStatus" aria-live="polite">8 books in Animals</p>
 
-    <div class="no-books" id="noBooks">🔍 No hay libros en este tema todavía.<br>¡Pronto habrá más!</div>
+      <div class="grid" id="bookGrid">
+        ${bookCards}
+      </div>
 
-    <!-- School CTA -->
-    <div style="max-width:900px; margin:24px auto; text-align:center; padding:20px;">
-      <p style="color:rgba(255,255,255,0.8); font-size:0.85rem;">Made with ❤️ by <a href="https://www.beibeiamigos.com" target="_top" style="color:white; font-weight:700;">Beibei Amigos Language Preschool</a> — Spanish Immersion · Mandarin Preschool · Bilingual Books — Phoenix, AZ</p>
-      <p style="color:rgba(255,255,255,0.6); font-size:0.75rem; margin-top:8px;">🏫 Now Enrolling for 2026! Spanish Immersion • Mandarin • English | Ages 2-6</p>
-    </div>
-  </div>
+      <div class="no-books" id="noBooks" role="status">
+        <strong>No encontramos ese libro todavía.</strong><br>
+        Try another word or choose a different theme.
+      </div>
+    </section>
+
+    <footer class="site-note">
+      Made with care by <a href="https://www.beibeiamigos.com" target="_top">Beibei Amigos Language Preschool</a><br>
+      Spanish immersion · Mandarin · English · Phoenix, Arizona
+    </footer>
+  </main>
 
   <script>
+    const cards = Array.from(document.querySelectorAll('#bookGrid .card'));
+    const searchInput = document.getElementById('bookSearch');
+    const status = document.getElementById('resultsStatus');
+    const noBooks = document.getElementById('noBooks');
+    let activeFilter = 'animales';
+
+    function normalise(value) {
+      return (value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+    }
+
     function filterBooks(filter) {
-      const cards = document.querySelectorAll('#bookGrid .card');
+      activeFilter = filter || activeFilter;
+      const query = normalise(searchInput.value);
       let visible = 0;
       cards.forEach(card => {
-        if (filter === 'todos' || card.dataset.theme === filter) {
-          card.classList.remove('hidden');
-          visible++;
-        } else {
-          card.classList.add('hidden');
-        }
+        const matchesTheme = activeFilter === 'todos' || card.dataset.theme === activeFilter;
+        const matchesSearch = !query || normalise(card.dataset.search).includes(query);
+        const show = matchesTheme && matchesSearch;
+        card.classList.toggle('hidden', !show);
+        card.setAttribute('aria-hidden', show ? 'false' : 'true');
+        if (show) visible++;
       });
-      document.getElementById('noBooks').style.display = visible === 0 ? 'block' : 'none';
+      const activeButton = document.querySelector('.theme-btn.active .theme-label');
+      const themeName = activeButton ? activeButton.textContent : 'books';
+      status.textContent = visible + (visible === 1 ? ' book' : ' books') + ' in ' + themeName + (query ? ' matching “' + searchInput.value.trim() + '”' : '');
+      noBooks.style.display = visible === 0 ? 'block' : 'none';
+      reportHeight();
     }
+
     document.querySelectorAll('.theme-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+        document.querySelectorAll('.theme-btn').forEach(other => {
+          const selected = other === btn;
+          other.classList.toggle('active', selected);
+          other.setAttribute('aria-pressed', selected ? 'true' : 'false');
+        });
         filterBooks(btn.dataset.filter);
       });
     });
-    // Default filter on load
+    searchInput.addEventListener('input', () => filterBooks(activeFilter));
     filterBooks('animales');
+
     // GA4: which books get opened from the library
     document.addEventListener('click', function (e) {
       var card = e.target.closest && e.target.closest('a.card');
@@ -292,28 +400,21 @@ app.get('/', (req, res) => {
       if (theme) { try { gtag('event', 'theme_filter', { theme: theme.dataset.filter }); } catch (err) {} }
     }, true);
 
-
-    // Tell parent iframe our height so it can auto-resize (no scrollbar)
+    // Tell the WordPress parent iframe our height so it never needs a nested scrollbar.
     function reportHeight() {
-      window.parent.postMessage({ type: 'resize', height: document.body.scrollHeight + 40 }, '*');
+      if (window.parent !== window) {
+        window.parent.postMessage({ type: 'resize', height: document.body.scrollHeight + 40 }, '*');
+      }
     }
     window.addEventListener('load', reportHeight);
-    new MutationObserver(reportHeight).observe(document.body, { childList: true, subtree: true });
-    // Also report after filter changes + scroll to books
-    document.querySelectorAll('.theme-btn').forEach(btn => btn.addEventListener('click', () => {
-      setTimeout(reportHeight, 100);
-      // Scroll to book grid - works both standalone and in iframe
-      const grid = document.getElementById('bookGrid');
-      const gridTop = grid.getBoundingClientRect().top;
-      // If in iframe, tell parent to scroll; otherwise scroll directly
-      if (window.parent !== window) {
-        window.parent.postMessage({ type: 'scrollToBooks', offset: gridTop }, '*');
-      }
-      grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }));
+    if ('ResizeObserver' in window) new ResizeObserver(reportHeight).observe(document.body);
   </script>
 </body>
 </html>`);
 });
+
+// Serve book assets after the explicit library route so `/` is generated
+// from the catalog above instead of returning a stale checked-in index.html.
+app.use(express.static(path.join(__dirname)));
 
 app.listen(PORT, () => console.log(`📚 Books server running on port ${PORT}`));
