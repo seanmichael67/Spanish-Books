@@ -1,12 +1,19 @@
 {
   "name": "beibei-spanish-books",
   "version": "1.0.0",
-  "description": "Interactive Spanish reading books for preschoolers",
+  "description": "Beibei Libros: Spanish read-along books for little readers",
   "main": "server.js",
   "scripts": {
+    "build": "node site/build.js",
+    "dev": "node site/build.js && node site/scripts/dev-server.js",
+    "test": "node site/build.js && node site/scripts/test-e2e.js",
+    "import-books": "node site/scripts/import-books.js",
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

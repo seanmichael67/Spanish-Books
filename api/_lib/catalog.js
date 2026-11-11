@@ -1,0 +1,44 @@
+/*
+ * The catalog: every book, theme and product the site knows about.
+ * Used by the build script (to make the pages) AND by the /api functions
+ * (to know what a customer bought). Prices come from site/site.config.json.
+ */
+const books = require('../../site/data/books.json');
+const themes = require('../../site/data/themes.json');
+const config = require('../../site/site.config.json');
+
+const LIBRARY_ID = 'biblioteca';
+
+const booksByTheme = (themeId) => books.filter((b) => b.theme === themeId);
+
+// A theme becomes a printable pack once it has a full set of 8 books.
+const packs = themes
+  .filter((t) => booksByTheme(t.id).length >= 8)
+  .map((t) => ({
+    id: 'pack-' + t.id,
+    kind: 'pack',
+    theme: t.id,
+    name: `${t.en} Printable Pack (${t.es})`,
+    description: `8 printable Spanish books about ${t.en.toLowerCase()}, with picture vocabulary, flashcards and word tracing.`,
+    priceCents: config.packPriceCents,
+    books: booksByTheme(t.id).map((b) => b.slug),
+  }));
+
+const library = {
+  id: LIBRARY_ID,
+  kind: 'library',
+  name: 'Biblioteca Completa: every printable pack',
+  description: `All ${packs.length} printable packs (${packs.length * 8} books) with vocabulary, flashcards and word tracing.`,
+  priceCents: config.libraryPriceCents,
+  books: packs.flatMap((p) => p.books),
+};
+
+const products = [...packs, library];
+const getProduct = (id) => products.find((p) => p.id === id) || null;
+const getBook = (slug) => books.find((b) => b.slug === slug) || null;
+const getTheme = (id) => themes.find((t) => t.id === id) || null;
+
+/** Does a list of purchased product ids unlock this product? */
+const owns = (purchased, productId) => purchased.includes(LIBRARY_ID) || purchased.includes(productId);
+
+module.exports = { books, themes, config, packs, library, products, getProduct, getBook, getTheme, booksByTheme, owns, LIBRARY_ID };

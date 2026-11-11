@@ -1,0 +1,13 @@
+# Files Vercel does not need to upload. Keeps deploys small and fast.
+/daily
+/divi-embeds
+/docs
+/scripts
+/templates
+/tests
+/tools
+/node_modules
+site/dist
+books/**/*.png
+*.md
+!site/**/*.md
