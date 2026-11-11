@@ -221,3 +221,24 @@ footer.site .fine { border-top: 1px solid #36415f; margin-top: 28px; padding-top
 .owned ul { columns: 2; }
 @media (max-width: 560px) { .owned ul, .pack ul { columns: 1; } }
 .row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+
+/* Theme pages, school licence, reading progress, vocabulary game */
+.bundle.school { background: #fff; color: var(--ink); border: 2px solid var(--line); margin-top: 18px; scroll-margin-top: 90px; }
+.bundle.school h2 { color: var(--ink); }
+.bundle.school p { color: var(--ink-soft); }
+.bundle.school .price small { color: var(--ink-soft); }
+.wordlist { list-style: none; padding: 0; margin: 22px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px 18px; }
+.wordlist li { border-bottom: 1.5px dotted var(--line); padding: 4px 0; }
+.wordlist b { font-size: 1.1rem; }
+.wordlist span { color: var(--ink-soft); font-size: .92rem; }
+.progress { font-family: var(--display); font-weight: 500; margin: 12px 0 0; }
+.book { position: relative; }
+.book.done::after { content: '⭐'; position: absolute; top: 8px; right: 8px; background: #fff; border-radius: 50%; width: 34px; height: 34px; display: grid; place-items: center; box-shadow: 0 2px 6px rgba(0,0,0,.2); font-size: 1.1rem; }
+.game-bar { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin: 4px 0 16px; min-height: 46px; }
+.game-bar .ask { font-family: var(--display); font-weight: 600; font-size: clamp(1.2rem, 3.4vw, 1.7rem); }
+.game-bar .stars { font-size: 1.3rem; letter-spacing: 2px; }
+.reader.gaming .vcard .w, .reader.gaming .vcard .t { visibility: hidden; }
+.reader.gaming .vcard.found { background: color-mix(in srgb, var(--teal) 16%, #fff); border-color: var(--teal); }
+.reader.gaming .vcard.found .w { visibility: visible; }
+.vcard.nope { animation: shake .35s; }
+@keyframes shake { 25% { transform: translateX(-7px); } 75% { transform: translateX(7px); } }

@@ -21,42 +21,42 @@
     "es": "La manzana es roja.",
     "en": "The apple is red.",
     "image": "page-01.webp",
-    "audio": null,
+    "audio": "page-01-fix.mp3",
     "ratio": 1
    },
    {
     "es": "El plátano es amarillo.",
     "en": "The banana is yellow.",
     "image": "page-02.webp",
-    "audio": null,
+    "audio": "page-02-fix.mp3",
     "ratio": 1
    },
    {
     "es": "La pera es verde.",
     "en": "The pear is green.",
     "image": "page-03.webp",
-    "audio": null,
+    "audio": "page-03-fix.mp3",
     "ratio": 1
    },
    {
     "es": "La zanahoria es anaranjada.",
     "en": "The carrot is orange.",
     "image": "page-04.webp",
-    "audio": null,
+    "audio": "page-04-fix.mp3",
     "ratio": 1
    },
    {
     "es": "El brócoli es verde.",
     "en": "The broccoli is green.",
     "image": "page-05.webp",
-    "audio": null,
+    "audio": "page-05-fix.mp3",
     "ratio": 1
    },
    {
     "es": "El tomate es rojo.",
     "en": "The tomato is red.",
     "image": "page-06.webp",
-    "audio": null,
+    "audio": "page-06-fix.mp3",
     "ratio": 1
    }
   ],
@@ -336,7 +336,7 @@
     "es": "El perro es mi amigo.",
     "en": "The dog is my friend.",
     "image": "page-01.webp",
-    "audio": null,
+    "audio": "page-01-fix.mp3",
     "ratio": 1.51
    },
    {
@@ -455,7 +455,7 @@
     "es": "El conejo come zanahorias.",
     "en": "The rabbit eats carrots.",
     "image": "page-03.webp",
-    "audio": null,
+    "audio": "page-03-fix.mp3",
     "ratio": 1.51
    },
    {
@@ -503,7 +503,7 @@
     "es": "zanahorias",
     "en": "carrots",
     "emoji": "🥕",
-    "audio": null
+    "audio": "word-zanahorias.mp3"
    },
    {
     "es": "blanco",
@@ -994,7 +994,7 @@
     "es": "El jugo es de naranja.",
     "en": "It is orange juice.",
     "image": "page-05.webp",
-    "audio": null,
+    "audio": "page-05-fix.mp3",
     "ratio": 1.51
    },
    {
@@ -1288,7 +1288,7 @@
     "es": "El jugo es de manzana.",
     "en": "It is apple juice.",
     "image": "page-02.webp",
-    "audio": null,
+    "audio": "page-02-fix.mp3",
     "ratio": 1.34
    },
    {
@@ -3808,7 +3808,7 @@
     "es": "El huevo es ovalado.",
     "en": "The egg is oval.",
     "image": "page-02.webp",
-    "audio": null,
+    "audio": "page-02-fix.mp3",
     "ratio": 1.51
    },
    {
@@ -3857,7 +3857,7 @@
     "es": "ovalado",
     "en": "oval",
     "emoji": "🥚",
-    "audio": null
+    "audio": "word-ovalado.mp3"
    },
    {
     "es": "proteína",
@@ -4130,7 +4130,7 @@
     "es": "El yogur es bueno para mí.",
     "en": "Yogurt is good for me.",
     "image": "page-03.webp",
-    "audio": null,
+    "audio": "page-03-fix.mp3",
     "ratio": 1.5
    },
    {
@@ -4703,7 +4703,7 @@
     "es": "congelada",
     "en": "frozen",
     "emoji": "🥶",
-    "audio": null
+    "audio": "word-congelada.mp3"
    },
    {
     "es": "derrite",
@@ -4865,7 +4865,7 @@
     "es": "El vapor es agua en forma de gas.",
     "en": "Steam is water as a gas.",
     "image": "page-03.webp",
-    "audio": null,
+    "audio": "page-03-fix.mp3",
     "ratio": 1.67
    },
    {
@@ -4913,7 +4913,7 @@
     "es": "gas",
     "en": "gas",
     "emoji": "☁️",
-    "audio": null
+    "audio": "word-gas.mp3"
    },
    {
     "es": "convierte",
@@ -6961,21 +6961,21 @@
     "es": "Mi hermana me ayuda.",
     "en": "My sister helps me.",
     "image": "page-03.webp",
-    "audio": null,
+    "audio": "page-03-fix.mp3",
     "ratio": 1.51
    },
    {
     "es": "Mi hermana es divertida.",
     "en": "My sister is fun.",
     "image": "page-04.webp",
-    "audio": null,
+    "audio": "page-04-fix.mp3",
     "ratio": 1.5
    },
    {
     "es": "Mi hermana es mi amiga.",
     "en": "My sister is my friend.",
     "image": "page-05.webp",
-    "audio": null,
+    "audio": "page-05-fix.mp3",
     "ratio": 1.51
    },
    {
@@ -7066,21 +7066,21 @@
     "es": "Mi hermano es valiente.",
     "en": "My brother is brave.",
     "image": "page-03.webp",
-    "audio": null,
+    "audio": "page-03-fix.mp3",
     "ratio": 1.51
    },
    {
     "es": "Mi hermano construye.",
     "en": "My brother builds.",
     "image": "page-04.webp",
-    "audio": null,
+    "audio": "page-04-fix.mp3",
     "ratio": 1.51
    },
    {
     "es": "Mi hermano es mi amigo.",
     "en": "My brother is my friend.",
     "image": "page-05.webp",
-    "audio": null,
+    "audio": "page-05-fix.mp3",
     "ratio": 1.51
    },
    {
@@ -7808,7 +7808,7 @@
     "es": "Compartir nos hace felices.",
     "en": "Sharing makes us happy.",
     "image": "page-04.webp",
-    "audio": null,
+    "audio": "page-04-fix.mp3",
     "ratio": 1.5
    },
    {
@@ -8024,7 +8024,7 @@
     "es": "Escuchar me ayuda a aprender.",
     "en": "Listening helps me learn.",
     "image": "page-05.webp",
-    "audio": null,
+    "audio": "page-05-fix.mp3",
     "ratio": 1.5
    },
    {
@@ -11131,53 +11131,57 @@
   "emoji": "🎤",
   "title": "Cantar",
   "titleEn": "Singing",
-  "art": "illustration",
+  "art": "photo",
   "level": 1,
   "pages": [
    {
     "es": "Cantar",
     "en": "Singing",
     "image": "page-00.webp",
-    "audio": null,
-    "ratio": 1.61
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Yo canto una canción.",
     "en": "I sing a song.",
     "image": "page-01.webp",
-    "audio": null,
-    "ratio": 2.15
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Cantamos juntos.",
     "en": "We sing together.",
     "image": "page-02.webp",
-    "audio": null,
-    "ratio": 1.5
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "La canción es alegre.",
     "en": "The song is happy.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Canto en la mañana.",
     "en": "I sing in the morning.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Los pájaros cantan.",
     "en": "The birds sing.",
-    "image": null,
-    "audio": null
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Cantar es divertido!",
     "en": "Singing is fun!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -11185,37 +11189,37 @@
     "es": "cantar",
     "en": "sing",
     "emoji": "🎤",
-    "audio": null
+    "audio": "word-cantar.mp3"
    },
    {
     "es": "canción",
     "en": "song",
     "emoji": "🎵",
-    "audio": null
+    "audio": "word-cancion.mp3"
    },
    {
     "es": "juntos",
     "en": "together",
     "emoji": "👥",
-    "audio": null
+    "audio": "word-juntos.mp3"
    },
    {
     "es": "alegre",
     "en": "happy",
     "emoji": "😊",
-    "audio": null
+    "audio": "word-alegre.mp3"
    },
    {
     "es": "mañana",
     "en": "morning",
     "emoji": "🌅",
-    "audio": null
+    "audio": "word-manana.mp3"
    },
    {
     "es": "voz",
     "en": "voice",
     "emoji": "🗣️",
-    "audio": null
+    "audio": "word-voz.mp3"
    }
   ],
   "badge": {
@@ -11232,50 +11236,57 @@
   "emoji": "💃",
   "title": "Bailar",
   "titleEn": "Dancing",
-  "art": "illustration",
+  "art": "photo",
   "level": 1,
   "pages": [
    {
     "es": "Bailar",
     "en": "Dancing",
-    "image": null,
-    "audio": null
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Yo bailo.",
     "en": "I dance.",
-    "image": null,
-    "audio": null
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Bailamos juntos.",
     "en": "We dance together.",
-    "image": null,
-    "audio": null
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Muevo mis manos.",
     "en": "I move my hands.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Muevo mis pies.",
     "en": "I move my feet.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "La música me hace bailar.",
     "en": "Music makes me dance.",
-    "image": null,
-    "audio": null
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Bailar es divertido!",
     "en": "Dancing is fun!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -11283,37 +11294,37 @@
     "es": "bailar",
     "en": "dance",
     "emoji": "💃",
-    "audio": null
+    "audio": "word-bailar.mp3"
    },
    {
     "es": "manos",
     "en": "hands",
     "emoji": "🙌",
-    "audio": null
+    "audio": "word-manos.mp3"
    },
    {
     "es": "pies",
     "en": "feet",
     "emoji": "🦶",
-    "audio": null
+    "audio": "word-pies.mp3"
    },
    {
     "es": "música",
     "en": "music",
     "emoji": "🎵",
-    "audio": null
+    "audio": "word-musica.mp3"
    },
    {
     "es": "mover",
     "en": "move",
     "emoji": "🏃",
-    "audio": null
+    "audio": "word-mover.mp3"
    },
    {
     "es": "juntos",
     "en": "together",
     "emoji": "👥",
-    "audio": null
+    "audio": "word-juntos.mp3"
    }
   ],
   "badge": {
@@ -11330,50 +11341,56 @@
   "emoji": "🎹",
   "title": "El Piano",
   "titleEn": "The Piano",
-  "art": "illustration",
+  "art": "photo",
   "level": 3,
   "pages": [
    {
     "es": "El Piano",
     "en": "The Piano",
-    "image": null,
-    "audio": null
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "El piano tiene teclas.",
     "en": "The piano has keys.",
-    "image": null,
-    "audio": null
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Las teclas son blancas y negras.",
     "en": "The keys are white and black.",
-    "image": null,
-    "audio": null
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Yo toco el piano.",
     "en": "I play the piano.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "El piano suena dulce.",
     "en": "The piano sounds sweet.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Practico todos los días.",
     "en": "I practice every day.",
     "image": null,
-    "audio": null
+    "audio": "page-05.mp3"
    },
    {
     "es": "¡Me encanta el piano!",
     "en": "I love the piano!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -11381,827 +11398,43 @@
     "es": "piano",
     "en": "piano",
     "emoji": "🎹",
-    "audio": null
+    "audio": "word-piano.mp3"
    },
    {
     "es": "teclas",
     "en": "keys",
     "emoji": "⬜",
-    "audio": null
+    "audio": "word-teclas.mp3"
    },
    {
     "es": "blancas",
     "en": "white",
     "emoji": "⬜",
-    "audio": null
+    "audio": "word-blancas.mp3"
    },
    {
     "es": "negras",
     "en": "black",
     "emoji": "⬛",
-    "audio": null
+    "audio": "word-negras.mp3"
    },
    {
     "es": "toco",
     "en": "I play",
     "emoji": "🎶",
-    "audio": null
+    "audio": "word-toco.mp3"
    },
    {
     "es": "dulce",
     "en": "sweet",
     "emoji": "🍬",
-    "audio": null
+    "audio": "word-dulce.mp3"
    }
   ],
   "badge": {
    "emoji": "🎹",
    "es": "Pianista Brillante",
    "en": "Brilliant Pianist"
-  }
- },
- {
-  "slug": "la-flauta",
-  "folder": "week-101-la-flauta",
-  "order": 101,
-  "theme": "musica",
-  "emoji": "🪈",
-  "title": "La Flauta",
-  "titleEn": "The Flute",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "La Flauta",
-    "en": "The Flute",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "La flauta es larga.",
-    "en": "The flute is long.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Yo soplo la flauta.",
-    "en": "I blow the flute.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "La flauta suena suave.",
-    "en": "The flute sounds soft.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Los pájaros escuchan.",
-    "en": "The birds listen.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Toco en el jardín.",
-    "en": "I play in the garden.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡La flauta es mágica!",
-    "en": "The flute is magical!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "flauta",
-    "en": "flute",
-    "emoji": "🪈",
-    "audio": null
-   },
-   {
-    "es": "larga",
-    "en": "long",
-    "emoji": "📏",
-    "audio": null
-   },
-   {
-    "es": "soplo",
-    "en": "I blow",
-    "emoji": "💨",
-    "audio": null
-   },
-   {
-    "es": "suave",
-    "en": "soft",
-    "emoji": "🤫",
-    "audio": null
-   },
-   {
-    "es": "escuchan",
-    "en": "listen",
-    "emoji": "👂",
-    "audio": null
-   },
-   {
-    "es": "mágica",
-    "en": "magical",
-    "emoji": "✨",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🪈",
-   "es": "Flautista Mágico",
-   "en": "Magical Flutist"
-  }
- },
- {
-  "slug": "la-musica",
-  "folder": "week-102-la-musica",
-  "order": 102,
-  "theme": "musica",
-  "emoji": "🎵",
-  "title": "La Música",
-  "titleEn": "Music",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "La Música",
-    "en": "Music",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "La música es alegre.",
-    "en": "Music is happy.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "La música nos une.",
-    "en": "Music brings us together.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hay muchos instrumentos.",
-    "en": "There are many instruments.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "La música está en todos lados.",
-    "en": "Music is everywhere.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Yo hago música.",
-    "en": "I make music.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Viva la música!",
-    "en": "Long live music!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "música",
-    "en": "music",
-    "emoji": "🎵",
-    "audio": null
-   },
-   {
-    "es": "alegre",
-    "en": "happy",
-    "emoji": "😊",
-    "audio": null
-   },
-   {
-    "es": "instrumentos",
-    "en": "instruments",
-    "emoji": "🎺",
-    "audio": null
-   },
-   {
-    "es": "escuchar",
-    "en": "listen",
-    "emoji": "👂",
-    "audio": null
-   },
-   {
-    "es": "cantar",
-    "en": "sing",
-    "emoji": "🎤",
-    "audio": null
-   },
-   {
-    "es": "bailar",
-    "en": "dance",
-    "emoji": "💃",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🎵",
-   "es": "Músico Estrella",
-   "en": "Star Musician"
-  }
- },
- {
-  "slug": "los-juegos",
-  "folder": "week-103-los-juegos",
-  "order": 103,
-  "theme": "musica",
-  "emoji": "🎲",
-  "title": "Los Juegos",
-  "titleEn": "Games",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "Los Juegos",
-    "en": "Games",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Me gusta jugar.",
-    "en": "I like to play.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Jugamos a la pelota.",
-    "en": "We play ball.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Jugamos a las escondidas.",
-    "en": "We play hide and seek.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Los bloques son divertidos.",
-    "en": "Blocks are fun.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Jugamos con amigos.",
-    "en": "We play with friends.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Jugar es lo mejor!",
-    "en": "Playing is the best!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "juegos",
-    "en": "games",
-    "emoji": "🎮",
-    "audio": null
-   },
-   {
-    "es": "jugar",
-    "en": "play",
-    "emoji": "⚽",
-    "audio": null
-   },
-   {
-    "es": "pelota",
-    "en": "ball",
-    "emoji": "🏐",
-    "audio": null
-   },
-   {
-    "es": "bloques",
-    "en": "blocks",
-    "emoji": "🧱",
-    "audio": null
-   },
-   {
-    "es": "amigos",
-    "en": "friends",
-    "emoji": "👫",
-    "audio": null
-   },
-   {
-    "es": "divertido",
-    "en": "fun",
-    "emoji": "🎉",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🎮",
-   "es": "Campeón de Juegos",
-   "en": "Game Champion"
-  }
- },
- {
-  "slug": "mi-casa",
-  "folder": "week-104-mi-casa",
-  "order": 104,
-  "theme": "mi-mundo",
-  "emoji": "🏠",
-  "title": "Mi Casa",
-  "titleEn": "My House",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "Mi Casa",
-    "en": "My House",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Mi casa es bonita.",
-    "en": "My house is pretty.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Tiene una puerta.",
-    "en": "It has a door.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Tiene ventanas.",
-    "en": "It has windows.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Mi cuarto es aquí.",
-    "en": "My room is here.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "La cocina huele rico.",
-    "en": "The kitchen smells good.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta mi casa!",
-    "en": "I like my house!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "casa",
-    "en": "house",
-    "emoji": "🏠",
-    "audio": null
-   },
-   {
-    "es": "puerta",
-    "en": "door",
-    "emoji": "🚪",
-    "audio": null
-   },
-   {
-    "es": "ventana",
-    "en": "window",
-    "emoji": "🪟",
-    "audio": null
-   },
-   {
-    "es": "cuarto",
-    "en": "room",
-    "emoji": "🛏️",
-    "audio": null
-   },
-   {
-    "es": "cocina",
-    "en": "kitchen",
-    "emoji": "🍳",
-    "audio": null
-   },
-   {
-    "es": "bonita",
-    "en": "pretty",
-    "emoji": "🌸",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🏠",
-   "es": "Constructor de Casas",
-   "en": "House Builder"
-  }
- },
- {
-  "slug": "mi-escuela",
-  "folder": "week-105-mi-escuela",
-  "order": 105,
-  "theme": "mi-mundo",
-  "emoji": "🏫",
-  "title": "Mi Escuela",
-  "titleEn": "My School",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "Mi Escuela",
-    "en": "My School",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Voy a la escuela.",
-    "en": "I go to school.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Mi maestra es amable.",
-    "en": "My teacher is kind.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Aprendo muchas cosas.",
-    "en": "I learn many things.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Juego en el recreo.",
-    "en": "I play at recess.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Tengo muchos amigos.",
-    "en": "I have many friends.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta mi escuela!",
-    "en": "I like my school!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "escuela",
-    "en": "school",
-    "emoji": "🏫",
-    "audio": null
-   },
-   {
-    "es": "maestra",
-    "en": "teacher",
-    "emoji": "👩‍🏫",
-    "audio": null
-   },
-   {
-    "es": "aprendo",
-    "en": "I learn",
-    "emoji": "📚",
-    "audio": null
-   },
-   {
-    "es": "recreo",
-    "en": "recess",
-    "emoji": "⛹️",
-    "audio": null
-   },
-   {
-    "es": "amigos",
-    "en": "friends",
-    "emoji": "👫",
-    "audio": null
-   },
-   {
-    "es": "libros",
-    "en": "books",
-    "emoji": "📖",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🏫",
-   "es": "Estudiante Estrella",
-   "en": "Star Student"
-  }
- },
- {
-  "slug": "mi-parque",
-  "folder": "week-106-mi-parque",
-  "order": 106,
-  "theme": "mi-mundo",
-  "emoji": "🛝",
-  "title": "Mi Parque",
-  "titleEn": "My Park",
-  "art": "illustration",
-  "level": 1,
-  "pages": [
-   {
-    "es": "Mi Parque",
-    "en": "My Park",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Voy al parque.",
-    "en": "I go to the park.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hay un columpio.",
-    "en": "There is a swing.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hay una resbaladilla.",
-    "en": "There is a slide.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Corro en el pasto.",
-    "en": "I run on the grass.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Veo las flores.",
-    "en": "I see the flowers.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡El parque es genial!",
-    "en": "The park is great!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "parque",
-    "en": "park",
-    "emoji": "🛝",
-    "audio": null
-   },
-   {
-    "es": "columpio",
-    "en": "swing",
-    "emoji": "🎠",
-    "audio": null
-   },
-   {
-    "es": "resbaladilla",
-    "en": "slide",
-    "emoji": "🛝",
-    "audio": null
-   },
-   {
-    "es": "pasto",
-    "en": "grass",
-    "emoji": "🌿",
-    "audio": null
-   },
-   {
-    "es": "corro",
-    "en": "I run",
-    "emoji": "🏃",
-    "audio": null
-   },
-   {
-    "es": "flores",
-    "en": "flowers",
-    "emoji": "🌺",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🛝",
-   "es": "Rey del Parque",
-   "en": "Park King"
-  }
- },
- {
-  "slug": "mi-jardin",
-  "folder": "week-107-mi-jardin",
-  "order": 107,
-  "theme": "mi-mundo",
-  "emoji": "🌷",
-  "title": "Mi Jardín",
-  "titleEn": "My Garden",
-  "art": "illustration",
-  "level": 1,
-  "pages": [
-   {
-    "es": "Mi Jardín",
-    "en": "My Garden",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Yo siembro semillas.",
-    "en": "I plant seeds.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Las plantas crecen.",
-    "en": "The plants grow.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Riego las flores.",
-    "en": "I water the flowers.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Las mariposas vienen.",
-    "en": "The butterflies come.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hay tomates rojos.",
-    "en": "There are red tomatoes.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Mi jardín es hermoso!",
-    "en": "My garden is beautiful!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "jardín",
-    "en": "garden",
-    "emoji": "🌻",
-    "audio": null
-   },
-   {
-    "es": "semillas",
-    "en": "seeds",
-    "emoji": "🌱",
-    "audio": null
-   },
-   {
-    "es": "plantas",
-    "en": "plants",
-    "emoji": "🌿",
-    "audio": null
-   },
-   {
-    "es": "riego",
-    "en": "I water",
-    "emoji": "💧",
-    "audio": null
-   },
-   {
-    "es": "mariposas",
-    "en": "butterflies",
-    "emoji": "🦋",
-    "audio": null
-   },
-   {
-    "es": "tomates",
-    "en": "tomatoes",
-    "emoji": "🍅",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🌻",
-   "es": "Jardinero Feliz",
-   "en": "Happy Gardener"
-  }
- },
- {
-  "slug": "mi-tienda",
-  "folder": "week-108-mi-tienda",
-  "order": 108,
-  "theme": "mi-mundo",
-  "emoji": "🛒",
-  "title": "Mi Tienda",
-  "titleEn": "My Store",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "Mi Tienda",
-    "en": "My Store",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Vamos a la tienda.",
-    "en": "Let's go to the store.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hay frutas frescas.",
-    "en": "There are fresh fruits.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hay pan caliente.",
-    "en": "There is warm bread.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Yo escojo una manzana.",
-    "en": "I choose an apple.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Pagamos en la caja.",
-    "en": "We pay at the register.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta la tienda!",
-    "en": "I like the store!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "tienda",
-    "en": "store",
-    "emoji": "🏪",
-    "audio": null
-   },
-   {
-    "es": "frutas",
-    "en": "fruits",
-    "emoji": "🍎",
-    "audio": null
-   },
-   {
-    "es": "pan",
-    "en": "bread",
-    "emoji": "🍞",
-    "audio": null
-   },
-   {
-    "es": "escojo",
-    "en": "I choose",
-    "emoji": "👆",
-    "audio": null
-   },
-   {
-    "es": "pagamos",
-    "en": "we pay",
-    "emoji": "💰",
-    "audio": null
-   },
-   {
-    "es": "bolsa",
-    "en": "bag",
-    "emoji": "🛍️",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🏪",
-   "es": "Comprador Estrella",
-   "en": "Star Shopper"
   }
  },
  {
@@ -12212,50 +11445,57 @@
   "emoji": "📚",
   "title": "Mi Biblioteca",
   "titleEn": "My Library",
-  "art": "illustration",
+  "art": "photo",
   "level": 2,
   "pages": [
    {
     "es": "Mi Biblioteca",
     "en": "My Library",
-    "image": null,
-    "audio": null
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Hay muchos libros.",
     "en": "There are many books.",
-    "image": null,
-    "audio": null
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Yo leo un cuento.",
     "en": "I read a story.",
-    "image": null,
-    "audio": null
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Los libros son mágicos.",
     "en": "Books are magical.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Leo con mi mamá.",
     "en": "I read with my mom.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Escojo mi libro.",
     "en": "I choose my book.",
-    "image": null,
-    "audio": null
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Me encantan los libros!",
     "en": "I love books!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -12263,37 +11503,37 @@
     "es": "biblioteca",
     "en": "library",
     "emoji": "📚",
-    "audio": null
+    "audio": "word-biblioteca.mp3"
    },
    {
     "es": "libros",
     "en": "books",
     "emoji": "📖",
-    "audio": null
+    "audio": "word-libros.mp3"
    },
    {
     "es": "leo",
     "en": "I read",
     "emoji": "👀",
-    "audio": null
+    "audio": "word-leo.mp3"
    },
    {
     "es": "cuento",
     "en": "story",
     "emoji": "📕",
-    "audio": null
+    "audio": "word-cuento.mp3"
    },
    {
     "es": "mágicos",
     "en": "magical",
     "emoji": "✨",
-    "audio": null
+    "audio": "word-magicos.mp3"
    },
    {
     "es": "escojo",
     "en": "I choose",
     "emoji": "👆",
-    "audio": null
+    "audio": "word-escojo.mp3"
    }
   ],
   "badge": {
@@ -12310,50 +11550,57 @@
   "emoji": "⛪",
   "title": "Mi Iglesia",
   "titleEn": "My Church",
-  "art": "illustration",
+  "art": "photo",
   "level": 1,
   "pages": [
    {
     "es": "Mi Iglesia",
     "en": "My Church",
-    "image": null,
-    "audio": null
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Vamos a la iglesia.",
     "en": "We go to church.",
-    "image": null,
-    "audio": null
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "La iglesia es grande.",
     "en": "The church is big.",
-    "image": null,
-    "audio": null
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Cantamos canciones.",
     "en": "We sing songs.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Escuchamos historias.",
     "en": "We listen to stories.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Somos amables.",
     "en": "We are kind.",
-    "image": null,
-    "audio": null
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Me gusta mi iglesia!",
     "en": "I like my church!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -12361,37 +11608,37 @@
     "es": "iglesia",
     "en": "church",
     "emoji": "⛪",
-    "audio": null
+    "audio": "word-iglesia.mp3"
    },
    {
     "es": "cantamos",
     "en": "we sing",
     "emoji": "🎶",
-    "audio": null
+    "audio": "word-cantamos.mp3"
    },
    {
     "es": "historias",
     "en": "stories",
     "emoji": "📖",
-    "audio": null
+    "audio": "word-historias.mp3"
    },
    {
     "es": "amables",
     "en": "kind",
     "emoji": "💕",
-    "audio": null
+    "audio": "word-amables.mp3"
    },
    {
     "es": "familia",
     "en": "family",
     "emoji": "👨‍👩‍👧",
-    "audio": null
+    "audio": "word-familia.mp3"
    },
    {
     "es": "campana",
     "en": "bell",
     "emoji": "🔔",
-    "audio": null
+    "audio": "word-campana.mp3"
    }
   ],
   "badge": {
@@ -12408,50 +11655,57 @@
   "emoji": "🏙️",
   "title": "Mi Ciudad",
   "titleEn": "My City",
-  "art": "illustration",
+  "art": "photo",
   "level": 3,
   "pages": [
    {
     "es": "Mi Ciudad",
     "en": "My City",
-    "image": null,
-    "audio": null
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "La ciudad tiene edificios.",
     "en": "The city has buildings.",
-    "image": null,
-    "audio": null
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Hay carros y autobuses.",
     "en": "There are cars and buses.",
-    "image": null,
-    "audio": null
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "La gente camina.",
     "en": "People walk.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Hay un parque en la ciudad.",
     "en": "There is a park in the city.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Las luces brillan de noche.",
     "en": "The lights shine at night.",
-    "image": null,
-    "audio": null
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Mi ciudad es hermosa!",
     "en": "My city is beautiful!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -12459,37 +11713,37 @@
     "es": "ciudad",
     "en": "city",
     "emoji": "🏙️",
-    "audio": null
+    "audio": "word-ciudad.mp3"
    },
    {
     "es": "edificios",
     "en": "buildings",
     "emoji": "🏢",
-    "audio": null
+    "audio": "word-edificios.mp3"
    },
    {
     "es": "carros",
     "en": "cars",
     "emoji": "🚗",
-    "audio": null
+    "audio": "word-carros.mp3"
    },
    {
     "es": "gente",
     "en": "people",
     "emoji": "👥",
-    "audio": null
+    "audio": "word-gente.mp3"
    },
    {
     "es": "parque",
     "en": "park",
     "emoji": "🌳",
-    "audio": null
+    "audio": "word-parque.mp3"
    },
    {
     "es": "luces",
     "en": "lights",
     "emoji": "💡",
-    "audio": null
+    "audio": "word-luces.mp3"
    }
   ],
   "badge": {
@@ -12506,50 +11760,57 @@
   "emoji": "🚗",
   "title": "El Carro",
   "titleEn": "The Car",
-  "art": "illustration",
+  "art": "photo",
   "level": 2,
   "pages": [
    {
     "es": "El Carro",
     "en": "The Car",
-    "image": null,
-    "audio": null
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "El carro tiene ruedas.",
     "en": "The car has wheels.",
-    "image": null,
-    "audio": null
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "El carro es rápido.",
     "en": "The car is fast.",
-    "image": null,
-    "audio": null
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Papá maneja el carro.",
     "en": "Dad drives the car.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Vamos de paseo.",
     "en": "We go for a ride.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "El carro tiene luces.",
     "en": "The car has lights.",
-    "image": null,
-    "audio": null
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Me gusta el carro!",
     "en": "I like the car!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -12557,631 +11818,43 @@
     "es": "carro",
     "en": "car",
     "emoji": "🚗",
-    "audio": null
+    "audio": "word-carro.mp3"
    },
    {
     "es": "ruedas",
     "en": "wheels",
     "emoji": "🛞",
-    "audio": null
+    "audio": "word-ruedas.mp3"
    },
    {
     "es": "rápido",
     "en": "fast",
     "emoji": "💨",
-    "audio": null
+    "audio": "word-rapido.mp3"
    },
    {
     "es": "manejar",
     "en": "to drive",
     "emoji": "🏎️",
-    "audio": null
+    "audio": "word-manejar.mp3"
    },
    {
     "es": "luces",
     "en": "lights",
     "emoji": "💡",
-    "audio": null
+    "audio": "word-luces.mp3"
    },
    {
     "es": "paseo",
     "en": "ride",
     "emoji": "🛣️",
-    "audio": null
+    "audio": "word-paseo.mp3"
    }
   ],
   "badge": {
    "emoji": "🚗",
    "es": "Explorador de Carros",
    "en": "Car Explorer"
-  }
- },
- {
-  "slug": "el-autobus",
-  "folder": "week-121-el-autobus",
-  "order": 121,
-  "theme": "transporte",
-  "emoji": "🚌",
-  "title": "El Autobús",
-  "titleEn": "The Bus",
-  "art": "illustration",
-  "level": 3,
-  "pages": [
-   {
-    "es": "El Autobús",
-    "en": "The Bus",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El autobús es grande.",
-    "en": "The bus is big.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El autobús tiene asientos.",
-    "en": "The bus has seats.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Los niños suben al autobús.",
-    "en": "The children get on the bus.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El autobús va a la escuela.",
-    "en": "The bus goes to school.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El autobús para.",
-    "en": "The bus stops.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el autobús!",
-    "en": "I like the bus!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "autobús",
-    "en": "bus",
-    "emoji": "🚌",
-    "audio": null
-   },
-   {
-    "es": "grande",
-    "en": "big",
-    "emoji": "📏",
-    "audio": null
-   },
-   {
-    "es": "asientos",
-    "en": "seats",
-    "emoji": "💺",
-    "audio": null
-   },
-   {
-    "es": "escuela",
-    "en": "school",
-    "emoji": "🏫",
-    "audio": null
-   },
-   {
-    "es": "parada",
-    "en": "stop",
-    "emoji": "🛑",
-    "audio": null
-   },
-   {
-    "es": "niños",
-    "en": "children",
-    "emoji": "👧",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🚌",
-   "es": "Campeón del Autobús",
-   "en": "Bus Champion"
-  }
- },
- {
-  "slug": "el-avion",
-  "folder": "week-122-el-avion",
-  "order": 122,
-  "theme": "transporte",
-  "emoji": "✈️",
-  "title": "El Avión",
-  "titleEn": "The Airplane",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "El Avión",
-    "en": "The Airplane",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El avión vuela.",
-    "en": "The airplane flies.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El avión tiene alas.",
-    "en": "The airplane has wings.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El avión va muy alto.",
-    "en": "The airplane goes very high.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Veo el avión en el cielo.",
-    "en": "I see the airplane in the sky.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El avión aterriza.",
-    "en": "The airplane lands.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el avión!",
-    "en": "I like the airplane!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "avión",
-    "en": "airplane",
-    "emoji": "✈️",
-    "audio": null
-   },
-   {
-    "es": "volar",
-    "en": "to fly",
-    "emoji": "🕊️",
-    "audio": null
-   },
-   {
-    "es": "alas",
-    "en": "wings",
-    "emoji": "🪽",
-    "audio": null
-   },
-   {
-    "es": "cielo",
-    "en": "sky",
-    "emoji": "🌤️",
-    "audio": null
-   },
-   {
-    "es": "alto",
-    "en": "high",
-    "emoji": "⬆️",
-    "audio": null
-   },
-   {
-    "es": "nubes",
-    "en": "clouds",
-    "emoji": "☁️",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "✈️",
-   "es": "Piloto Estrella",
-   "en": "Star Pilot"
-  }
- },
- {
-  "slug": "el-tren",
-  "folder": "week-123-el-tren",
-  "order": 123,
-  "theme": "transporte",
-  "emoji": "🚂",
-  "title": "El Tren",
-  "titleEn": "The Train",
-  "art": "illustration",
-  "level": 3,
-  "pages": [
-   {
-    "es": "El Tren",
-    "en": "The Train",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El tren es largo.",
-    "en": "The train is long.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El tren tiene vagones.",
-    "en": "The train has wagons.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El tren va por las vías.",
-    "en": "The train goes on the tracks.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Chú chú! dice el tren.",
-    "en": "Choo choo! says the train.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El tren llega a la estación.",
-    "en": "The train arrives at the station.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el tren!",
-    "en": "I like the train!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "tren",
-    "en": "train",
-    "emoji": "🚂",
-    "audio": null
-   },
-   {
-    "es": "vagones",
-    "en": "wagons",
-    "emoji": "🚃",
-    "audio": null
-   },
-   {
-    "es": "vías",
-    "en": "tracks",
-    "emoji": "🛤️",
-    "audio": null
-   },
-   {
-    "es": "estación",
-    "en": "station",
-    "emoji": "🏛️",
-    "audio": null
-   },
-   {
-    "es": "largo",
-    "en": "long",
-    "emoji": "📏",
-    "audio": null
-   },
-   {
-    "es": "humo",
-    "en": "smoke",
-    "emoji": "💨",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🚂",
-   "es": "Maquinista Estrella",
-   "en": "Star Engineer"
-  }
- },
- {
-  "slug": "la-bicicleta",
-  "folder": "week-124-la-bicicleta",
-  "order": 124,
-  "theme": "transporte",
-  "emoji": "🚲",
-  "title": "La Bicicleta",
-  "titleEn": "The Bicycle",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "La Bicicleta",
-    "en": "The Bicycle",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "La bicicleta tiene pedales.",
-    "en": "The bicycle has pedals.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Me pongo el casco.",
-    "en": "I put on my helmet.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Pedaleo rápido.",
-    "en": "I pedal fast.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Paseo en bicicleta.",
-    "en": "I ride my bicycle.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "La bicicleta tiene timbre.",
-    "en": "The bicycle has a bell.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta la bicicleta!",
-    "en": "I like the bicycle!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "bicicleta",
-    "en": "bicycle",
-    "emoji": "🚲",
-    "audio": null
-   },
-   {
-    "es": "pedales",
-    "en": "pedals",
-    "emoji": "🦶",
-    "audio": null
-   },
-   {
-    "es": "casco",
-    "en": "helmet",
-    "emoji": "⛑️",
-    "audio": null
-   },
-   {
-    "es": "ruedas",
-    "en": "wheels",
-    "emoji": "🛞",
-    "audio": null
-   },
-   {
-    "es": "timbre",
-    "en": "bell",
-    "emoji": "🔔",
-    "audio": null
-   },
-   {
-    "es": "pasear",
-    "en": "to ride",
-    "emoji": "🌳",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🚲",
-   "es": "Ciclista Estrella",
-   "en": "Star Cyclist"
-  }
- },
- {
-  "slug": "el-barco",
-  "folder": "week-125-el-barco",
-  "order": 125,
-  "theme": "transporte",
-  "emoji": "⛵",
-  "title": "El Barco",
-  "titleEn": "The Boat",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "El Barco",
-    "en": "The Boat",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El barco navega.",
-    "en": "The boat sails.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El barco va por el mar.",
-    "en": "The boat goes on the sea.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El barco tiene velas.",
-    "en": "The boat has sails.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Veo las olas.",
-    "en": "I see the waves.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El barco llega al puerto.",
-    "en": "The boat arrives at port.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el barco!",
-    "en": "I like the boat!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "barco",
-    "en": "boat",
-    "emoji": "🚢",
-    "audio": null
-   },
-   {
-    "es": "navegar",
-    "en": "to sail",
-    "emoji": "⛵",
-    "audio": null
-   },
-   {
-    "es": "mar",
-    "en": "sea",
-    "emoji": "🌊",
-    "audio": null
-   },
-   {
-    "es": "olas",
-    "en": "waves",
-    "emoji": "🌊",
-    "audio": null
-   },
-   {
-    "es": "velas",
-    "en": "sails",
-    "emoji": "🏳️",
-    "audio": null
-   },
-   {
-    "es": "puerto",
-    "en": "port",
-    "emoji": "⚓",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🚢",
-   "es": "Capitán Estrella",
-   "en": "Star Captain"
-  }
- },
- {
-  "slug": "el-cohete",
-  "folder": "week-126-el-cohete",
-  "order": 126,
-  "theme": "transporte",
-  "emoji": "🚀",
-  "title": "El Cohete",
-  "titleEn": "The Rocket",
-  "art": "illustration",
-  "level": 3,
-  "pages": [
-   {
-    "es": "El Cohete",
-    "en": "The Rocket",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El cohete va al espacio.",
-    "en": "The rocket goes to space.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El cohete es muy rápido.",
-    "en": "The rocket is very fast.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Veo las estrellas.",
-    "en": "I see the stars.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El cohete va a la luna.",
-    "en": "The rocket goes to the moon.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Tres, dos, uno... ¡despegue!",
-    "en": "Three, two, one... liftoff!",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el cohete!",
-    "en": "I like the rocket!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "cohete",
-    "en": "rocket",
-    "emoji": "🚀",
-    "audio": null
-   },
-   {
-    "es": "espacio",
-    "en": "space",
-    "emoji": "🌌",
-    "audio": null
-   },
-   {
-    "es": "estrellas",
-    "en": "stars",
-    "emoji": "⭐",
-    "audio": null
-   },
-   {
-    "es": "luna",
-    "en": "moon",
-    "emoji": "🌙",
-    "audio": null
-   },
-   {
-    "es": "rápido",
-    "en": "fast",
-    "emoji": "💨",
-    "audio": null
-   },
-   {
-    "es": "despegue",
-    "en": "liftoff",
-    "emoji": "🔥",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🚀",
-   "es": "Astronauta Estrella",
-   "en": "Star Astronaut"
   }
  },
  {
@@ -13192,50 +11865,57 @@
   "emoji": "🚁",
   "title": "El Helicóptero",
   "titleEn": "The Helicopter",
-  "art": "illustration",
+  "art": "photo",
   "level": 2,
   "pages": [
    {
     "es": "El Helicóptero",
     "en": "The Helicopter",
-    "image": null,
-    "audio": null
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "El helicóptero vuela.",
     "en": "The helicopter flies.",
-    "image": null,
-    "audio": null
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Tiene una hélice grande.",
     "en": "It has a big propeller.",
-    "image": null,
-    "audio": null
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "El helicóptero sube y baja.",
     "en": "The helicopter goes up and down.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "El helicóptero ayuda.",
     "en": "The helicopter helps.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Hace mucho ruido.",
     "en": "It makes a lot of noise.",
-    "image": null,
-    "audio": null
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Me gusta el helicóptero!",
     "en": "I like the helicopter!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -13243,37 +11923,37 @@
     "es": "helicóptero",
     "en": "helicopter",
     "emoji": "🚁",
-    "audio": null
+    "audio": "word-helicoptero.mp3"
    },
    {
     "es": "hélice",
     "en": "propeller",
     "emoji": "🌀",
-    "audio": null
+    "audio": "word-helice.mp3"
    },
    {
     "es": "volar",
     "en": "to fly",
     "emoji": "🕊️",
-    "audio": null
+    "audio": "word-volar.mp3"
    },
    {
     "es": "rescate",
     "en": "rescue",
     "emoji": "🆘",
-    "audio": null
+    "audio": "word-rescate.mp3"
    },
    {
     "es": "ruido",
     "en": "noise",
     "emoji": "🔊",
-    "audio": null
+    "audio": "word-ruido.mp3"
    },
    {
     "es": "arriba",
     "en": "up",
     "emoji": "⬆️",
-    "audio": null
+    "audio": "word-arriba.mp3"
    }
   ],
   "badge": {
@@ -13290,50 +11970,57 @@
   "emoji": "🌸",
   "title": "La Primavera",
   "titleEn": "Spring",
-  "art": "illustration",
+  "art": "photo",
   "level": 1,
   "pages": [
    {
     "es": "La Primavera",
     "en": "Spring",
-    "image": null,
-    "audio": null
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Las flores crecen.",
     "en": "The flowers grow.",
-    "image": null,
-    "audio": null
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Las mariposas vuelan.",
     "en": "The butterflies fly.",
-    "image": null,
-    "audio": null
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Los pájaros cantan.",
     "en": "The birds sing.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Llueve en primavera.",
     "en": "It rains in spring.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Todo es verde.",
     "en": "Everything is green.",
-    "image": null,
-    "audio": null
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Me gusta la primavera!",
     "en": "I like spring!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -13341,37 +12028,37 @@
     "es": "primavera",
     "en": "spring",
     "emoji": "🌸",
-    "audio": null
+    "audio": "word-primavera.mp3"
    },
    {
     "es": "flores",
     "en": "flowers",
     "emoji": "🌺",
-    "audio": null
+    "audio": "word-flores.mp3"
    },
    {
     "es": "mariposas",
     "en": "butterflies",
     "emoji": "🦋",
-    "audio": null
+    "audio": "word-mariposas.mp3"
    },
    {
     "es": "pájaros",
     "en": "birds",
     "emoji": "🐦",
-    "audio": null
+    "audio": "word-pajaros.mp3"
    },
    {
     "es": "lluvia",
     "en": "rain",
     "emoji": "🌧️",
-    "audio": null
+    "audio": "word-lluvia.mp3"
    },
    {
     "es": "verde",
     "en": "green",
     "emoji": "🟢",
-    "audio": null
+    "audio": "word-verde.mp3"
    }
   ],
   "badge": {
@@ -13388,50 +12075,57 @@
   "emoji": "☀️",
   "title": "El Verano",
   "titleEn": "Summer",
-  "art": "illustration",
+  "art": "photo",
   "level": 1,
   "pages": [
    {
     "es": "El Verano",
     "en": "Summer",
-    "image": null,
-    "audio": null
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Hace mucho sol.",
     "en": "It is very sunny.",
-    "image": null,
-    "audio": null
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Vamos a la playa.",
     "en": "We go to the beach.",
-    "image": null,
-    "audio": null
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Nadamos en el agua.",
     "en": "We swim in the water.",
-    "image": null,
-    "audio": null
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Comemos helado.",
     "en": "We eat ice cream.",
-    "image": null,
-    "audio": null
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
    },
    {
     "es": "Hace mucho calor.",
     "en": "It is very hot.",
-    "image": null,
-    "audio": null
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Me gusta el verano!",
     "en": "I like summer!",
-    "image": null,
-    "audio": null
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
    }
   ],
   "vocab": [
@@ -13439,631 +12133,43 @@
     "es": "verano",
     "en": "summer",
     "emoji": "☀️",
-    "audio": null
+    "audio": "word-verano.mp3"
    },
    {
     "es": "sol",
     "en": "sun",
     "emoji": "🌞",
-    "audio": null
+    "audio": "word-sol.mp3"
    },
    {
     "es": "playa",
     "en": "beach",
     "emoji": "🏖️",
-    "audio": null
+    "audio": "word-playa.mp3"
    },
    {
     "es": "nadar",
     "en": "to swim",
     "emoji": "🏊",
-    "audio": null
+    "audio": "word-nadar.mp3"
    },
    {
     "es": "helado",
     "en": "ice cream",
     "emoji": "🍦",
-    "audio": null
+    "audio": "word-helado.mp3"
    },
    {
     "es": "calor",
     "en": "heat",
     "emoji": "🌡️",
-    "audio": null
+    "audio": "word-calor.mp3"
    }
   ],
   "badge": {
    "emoji": "☀️",
    "es": "Campeón del Verano",
    "en": "Summer Champion"
-  }
- },
- {
-  "slug": "el-otono",
-  "folder": "week-130-el-otono",
-  "order": 130,
-  "theme": "estaciones",
-  "emoji": "🍂",
-  "title": "El Otoño",
-  "titleEn": "Autumn",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "El Otoño",
-    "en": "Autumn",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Las hojas caen.",
-    "en": "The leaves fall.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Las hojas cambian de color.",
-    "en": "The leaves change color.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hace viento.",
-    "en": "It is windy.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Veo las calabazas.",
-    "en": "I see the pumpkins.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Me pongo mi suéter.",
-    "en": "I put on my sweater.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el otoño!",
-    "en": "I like autumn!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "otoño",
-    "en": "autumn",
-    "emoji": "🍂",
-    "audio": null
-   },
-   {
-    "es": "hojas",
-    "en": "leaves",
-    "emoji": "🍁",
-    "audio": null
-   },
-   {
-    "es": "viento",
-    "en": "wind",
-    "emoji": "💨",
-    "audio": null
-   },
-   {
-    "es": "calabaza",
-    "en": "pumpkin",
-    "emoji": "🎃",
-    "audio": null
-   },
-   {
-    "es": "suéter",
-    "en": "sweater",
-    "emoji": "🧥",
-    "audio": null
-   },
-   {
-    "es": "fresco",
-    "en": "cool",
-    "emoji": "🌡️",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🍂",
-   "es": "Explorador del Otoño",
-   "en": "Autumn Explorer"
-  }
- },
- {
-  "slug": "el-invierno",
-  "folder": "week-131-el-invierno",
-  "order": 131,
-  "theme": "estaciones",
-  "emoji": "⛄",
-  "title": "El Invierno",
-  "titleEn": "Winter",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "El Invierno",
-    "en": "Winter",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Cae la nieve.",
-    "en": "The snow falls.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hace mucho frío.",
-    "en": "It is very cold.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hago un muñeco de nieve.",
-    "en": "I make a snowman.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Jugamos con la nieve.",
-    "en": "We play with the snow.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Tomo chocolate caliente.",
-    "en": "I drink hot chocolate.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el invierno!",
-    "en": "I like winter!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "invierno",
-    "en": "winter",
-    "emoji": "❄️",
-    "audio": null
-   },
-   {
-    "es": "nieve",
-    "en": "snow",
-    "emoji": "☃️",
-    "audio": null
-   },
-   {
-    "es": "frío",
-    "en": "cold",
-    "emoji": "🥶",
-    "audio": null
-   },
-   {
-    "es": "muñeco",
-    "en": "snowman",
-    "emoji": "⛄",
-    "audio": null
-   },
-   {
-    "es": "guantes",
-    "en": "gloves",
-    "emoji": "🧤",
-    "audio": null
-   },
-   {
-    "es": "chocolate",
-    "en": "chocolate",
-    "emoji": "☕",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "❄️",
-   "es": "Campeón del Invierno",
-   "en": "Winter Champion"
-  }
- },
- {
-  "slug": "el-arcoiris-estaciones",
-  "folder": "week-132-el-arcoiris",
-  "order": 132,
-  "theme": "estaciones",
-  "emoji": "🌈",
-  "title": "El Arcoíris",
-  "titleEn": "The Rainbow",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "El Arcoíris",
-    "en": "The Rainbow",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Después de la lluvia.",
-    "en": "After the rain.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El arcoíris tiene colores.",
-    "en": "The rainbow has colors.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Rojo, naranja, amarillo.",
-    "en": "Red, orange, yellow.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Verde, azul, morado.",
-    "en": "Green, blue, purple.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El arcoíris es hermoso.",
-    "en": "The rainbow is beautiful.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el arcoíris!",
-    "en": "I like the rainbow!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "arcoíris",
-    "en": "rainbow",
-    "emoji": "🌈",
-    "audio": null
-   },
-   {
-    "es": "colores",
-    "en": "colors",
-    "emoji": "🎨",
-    "audio": null
-   },
-   {
-    "es": "lluvia",
-    "en": "rain",
-    "emoji": "🌧️",
-    "audio": null
-   },
-   {
-    "es": "sol",
-    "en": "sun",
-    "emoji": "☀️",
-    "audio": null
-   },
-   {
-    "es": "hermoso",
-    "en": "beautiful",
-    "emoji": "😍",
-    "audio": null
-   },
-   {
-    "es": "cielo",
-    "en": "sky",
-    "emoji": "🌤️",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🌈",
-   "es": "Explorador del Arcoíris",
-   "en": "Rainbow Explorer"
-  }
- },
- {
-  "slug": "el-trueno",
-  "folder": "week-133-el-trueno",
-  "order": 133,
-  "theme": "estaciones",
-  "emoji": "⛈️",
-  "title": "El Trueno",
-  "titleEn": "Thunder",
-  "art": "illustration",
-  "level": 1,
-  "pages": [
-   {
-    "es": "El Trueno",
-    "en": "Thunder",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Las nubes son oscuras.",
-    "en": "The clouds are dark.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Boom! dice el trueno.",
-    "en": "Boom! says the thunder.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Veo el relámpago.",
-    "en": "I see the lightning.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Llueve mucho.",
-    "en": "It rains a lot.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Estoy seguro adentro.",
-    "en": "I am safe inside.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "La tormenta ya pasó.",
-    "en": "The storm has passed.",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "trueno",
-    "en": "thunder",
-    "emoji": "⛈️",
-    "audio": null
-   },
-   {
-    "es": "relámpago",
-    "en": "lightning",
-    "emoji": "⚡",
-    "audio": null
-   },
-   {
-    "es": "tormenta",
-    "en": "storm",
-    "emoji": "🌩️",
-    "audio": null
-   },
-   {
-    "es": "nubes",
-    "en": "clouds",
-    "emoji": "☁️",
-    "audio": null
-   },
-   {
-    "es": "lluvia",
-    "en": "rain",
-    "emoji": "🌧️",
-    "audio": null
-   },
-   {
-    "es": "seguro",
-    "en": "safe",
-    "emoji": "🏠",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "⛈️",
-   "es": "Valiente de Tormentas",
-   "en": "Storm Brave"
-  }
- },
- {
-  "slug": "el-viento",
-  "folder": "week-134-el-viento",
-  "order": 134,
-  "theme": "estaciones",
-  "emoji": "🌬️",
-  "title": "El Viento",
-  "titleEn": "The Wind",
-  "art": "illustration",
-  "level": 2,
-  "pages": [
-   {
-    "es": "El Viento",
-    "en": "The Wind",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El viento sopla.",
-    "en": "The wind blows.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El viento mueve las hojas.",
-    "en": "The wind moves the leaves.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Vuelo mi cometa.",
-    "en": "I fly my kite.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El viento es fresco.",
-    "en": "The wind is cool.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "El viento hace sonidos.",
-    "en": "The wind makes sounds.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el viento!",
-    "en": "I like the wind!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "viento",
-    "en": "wind",
-    "emoji": "💨",
-    "audio": null
-   },
-   {
-    "es": "soplar",
-    "en": "to blow",
-    "emoji": "🌬️",
-    "audio": null
-   },
-   {
-    "es": "cometa",
-    "en": "kite",
-    "emoji": "🪁",
-    "audio": null
-   },
-   {
-    "es": "hojas",
-    "en": "leaves",
-    "emoji": "🍃",
-    "audio": null
-   },
-   {
-    "es": "fresco",
-    "en": "cool",
-    "emoji": "🌡️",
-    "audio": null
-   },
-   {
-    "es": "sonidos",
-    "en": "sounds",
-    "emoji": "🎶",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "💨",
-   "es": "Amigo del Viento",
-   "en": "Wind Friend"
-  }
- },
- {
-  "slug": "el-clima",
-  "folder": "week-135-el-clima",
-  "order": 135,
-  "theme": "estaciones",
-  "emoji": "🌤️",
-  "title": "El Clima",
-  "titleEn": "The Weather",
-  "art": "illustration",
-  "level": 1,
-  "pages": [
-   {
-    "es": "El Clima",
-    "en": "The Weather",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hoy está soleado.",
-    "en": "Today it is sunny.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hoy está nublado.",
-    "en": "Today it is cloudy.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hoy llueve.",
-    "en": "Today it rains.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "Hoy nieva.",
-    "en": "Today it snows.",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¿Qué clima hace hoy?",
-    "en": "What is the weather today?",
-    "image": null,
-    "audio": null
-   },
-   {
-    "es": "¡Me gusta el clima!",
-    "en": "I like the weather!",
-    "image": null,
-    "audio": null
-   }
-  ],
-  "vocab": [
-   {
-    "es": "clima",
-    "en": "weather",
-    "emoji": "🌤️",
-    "audio": null
-   },
-   {
-    "es": "soleado",
-    "en": "sunny",
-    "emoji": "☀️",
-    "audio": null
-   },
-   {
-    "es": "nublado",
-    "en": "cloudy",
-    "emoji": "☁️",
-    "audio": null
-   },
-   {
-    "es": "lluvioso",
-    "en": "rainy",
-    "emoji": "🌧️",
-    "audio": null
-   },
-   {
-    "es": "nevado",
-    "en": "snowy",
-    "emoji": "❄️",
-    "audio": null
-   },
-   {
-    "es": "caluroso",
-    "en": "hot",
-    "emoji": "🌡️",
-    "audio": null
-   }
-  ],
-  "badge": {
-   "emoji": "🌤️",
-   "es": "Meteorólogo Estrella",
-   "en": "Star Meteorologist"
   }
  }
 ]

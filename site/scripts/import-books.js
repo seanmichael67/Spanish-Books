@@ -91,7 +91,10 @@ const books = LISTED.map((entry) => {
   });
   pages.forEach((p) => {
     delete p.prompt;
-    if (p.image) p.ratio = webpRatio(path.join(dir, 'images', p.image));
+    if (p.image) {
+      // A picture that is still being saved (or is damaged) counts as missing.
+      try { p.ratio = webpRatio(path.join(dir, 'images', p.image)); } catch (e) { p.image = null; }
+    }
   });
 
   // Reading level: based on how long the sentences are.
@@ -114,5 +117,10 @@ const books = LISTED.map((entry) => {
   };
 });
 
-fs.writeFileSync(OUT, JSON.stringify(books, null, 1) + '\n');
-console.log(`Wrote ${books.length} books to site/data/books.json`);
+// A book only goes on the site when its pictures are done (one gap is tolerated).
+const ready = books.filter((b) => b.pages.filter((p) => !p.image).length <= 1);
+const waiting = books.filter((b) => !ready.includes(b));
+
+fs.writeFileSync(OUT, JSON.stringify(ready, null, 1) + '\n');
+console.log(`Wrote ${ready.length} books to site/data/books.json`);
+if (waiting.length) console.log(`Not on the site yet (pictures missing): ${waiting.map((b) => b.folder).join(', ')}`);
