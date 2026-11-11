@@ -1,0 +1,31 @@
+{
+  "_readme": "Corrections applied on top of the original book text by site/scripts/import-books.js. Page numbers start at 0 (0 = cover). A corrected page loses its old recording (the audio would no longer match the words), so the reader uses the device's Spanish voice until new audio is recorded. Run `node site/scripts/import-books.js` after editing.",
+  "frutas-y-verduras": { "pages": {
+    "1": { "es": "La manzana es roja.", "en": "The apple is red." },
+    "2": { "es": "El plátano es amarillo.", "en": "The banana is yellow." },
+    "3": { "es": "La pera es verde.", "en": "The pear is green." },
+    "4": { "es": "La zanahoria es anaranjada.", "en": "The carrot is orange." },
+    "5": { "es": "El brócoli es verde.", "en": "The broccoli is green." },
+    "6": { "es": "El tomate es rojo.", "en": "The tomato is red." }
+  } },
+  "el-perro": { "pages": { "1": { "es": "El perro es mi amigo.", "en": "The dog is my friend." } } },
+  "el-conejo": { "pages": { "3": { "es": "El conejo come zanahorias.", "en": "The rabbit eats carrots." } }, "vocab": { "zanahoria": { "es": "zanahorias", "en": "carrots" } } },
+  "el-desayuno": { "pages": { "5": { "es": "El jugo es de naranja.", "en": "It is orange juice." } } },
+  "las-bebidas": { "pages": { "2": { "es": "El jugo es de manzana.", "en": "It is apple juice." } } },
+  "el-huevo": { "pages": { "2": { "es": "El huevo es ovalado.", "en": "The egg is oval." } }, "vocab": { "oval": { "es": "ovalado", "en": "oval" } } },
+  "el-yogur": { "pages": { "3": { "es": "El yogur es bueno para mí.", "en": "Yogurt is good for me." } } },
+  "el-hielo": { "vocab": { "congelado": { "es": "congelada", "en": "frozen" } } },
+  "el-vapor": { "pages": { "3": { "es": "El vapor es agua en forma de gas.", "en": "Steam is water as a gas." } }, "vocab": { "gaseosa": { "es": "gas", "en": "gas" } } },
+  "la-hermana": { "pages": {
+    "3": { "es": "Mi hermana me ayuda.", "en": "My sister helps me." },
+    "4": { "es": "Mi hermana es divertida.", "en": "My sister is fun." },
+    "5": { "es": "Mi hermana es mi amiga.", "en": "My sister is my friend." }
+  } },
+  "el-hermano": { "pages": {
+    "3": { "es": "Mi hermano es valiente.", "en": "My brother is brave." },
+    "4": { "es": "Mi hermano construye.", "en": "My brother builds." },
+    "5": { "es": "Mi hermano es mi amigo.", "en": "My brother is my friend." }
+  } },
+  "compartir": { "pages": { "4": { "es": "Compartir nos hace felices.", "en": "Sharing makes us happy." } } },
+  "escuchar": { "pages": { "5": { "es": "Escuchar me ayuda a aprender.", "en": "Listening helps me learn." } } }
+}
