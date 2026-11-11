@@ -1,4 +1,5 @@
 [
+  {"id": "silabas", "emoji": "🔤", "es": "Sílabas", "en": "Syllables", "color": "#E0527A"},
   {"id": "animales", "emoji": "🐻", "es": "Animales", "en": "Animals", "color": "#F59E42"},
   {"id": "mariposas", "emoji": "🦋", "es": "Mariposas e Insectos", "en": "Butterflies & Bugs", "color": "#B57EDC"},
   {"id": "oceano", "emoji": "🐙", "es": "Criaturas del Océano", "en": "Ocean Creatures", "color": "#3BA7E0"},

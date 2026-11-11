@@ -5,7 +5,7 @@
  * Each book prints as: cover · 6 story pages · picture vocabulary ·
  * cut-out flashcards · word tracing with talk-together questions.
  */
-const { esc, vocabImages, highlight } = require('./text');
+const { esc, vocabImages, highlight, syllableWord } = require('./text');
 const { getTheme, config } = require('./catalog');
 const CSS = require('./print-css');
 
@@ -39,7 +39,7 @@ function bookSheets(book) {
   book.pages.slice(1).forEach((p, i) => {
     out.push(`<section class="sheet story" ${style}>${band}
       ${pic(book, p.image, p, 6, 6.4)}
-      <div class="words"><div class="es">${highlight(p.es, book.vocab, (w) => `<b>${w}</b>`)}</div><div class="en">${esc(p.en)}</div></div>
+      <div class="words">${p.syllable ? `<div class="syl">${esc(p.syllable)}</div>` : ''}<div class="es">${p.syllable ? syllableWord(p) : highlight(p.es, book.vocab, (w) => `<b>${w}</b>`)}</div><div class="en">${esc(p.en)}</div></div>
       ${foot(book, `Página ${i + 1}`)}</section>`);
   });
 

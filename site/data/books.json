@@ -11388,8 +11388,9 @@
    {
     "es": "Practico todos los días.",
     "en": "I practice every day.",
-    "image": null,
-    "audio": "page-05.mp3"
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
    },
    {
     "es": "¡Me encanta el piano!",
@@ -11441,6 +11442,215 @@
    "emoji": "🎹",
    "es": "Pianista Brillante",
    "en": "Brilliant Pianist"
+  }
+ },
+ {
+  "slug": "la-flauta",
+  "folder": "week-101-la-flauta",
+  "order": 101,
+  "theme": "musica",
+  "emoji": "🪈",
+  "title": "La Flauta",
+  "titleEn": "The Flute",
+  "art": "photo",
+  "level": 2,
+  "pages": [
+   {
+    "es": "La Flauta",
+    "en": "The Flute",
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "La flauta es larga.",
+    "en": "The flute is long.",
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "Yo soplo la flauta.",
+    "en": "I blow the flute.",
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "La flauta suena suave.",
+    "en": "The flute sounds soft.",
+    "image": "page-03.webp",
+    "audio": "page-03.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "Los pájaros escuchan.",
+    "en": "The birds listen.",
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "Toco en el jardín.",
+    "en": "I play in the garden.",
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "¡La flauta es mágica!",
+    "en": "The flute is magical!",
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
+   }
+  ],
+  "vocab": [
+   {
+    "es": "flauta",
+    "en": "flute",
+    "emoji": "🪈",
+    "audio": "word-flauta.mp3"
+   },
+   {
+    "es": "larga",
+    "en": "long",
+    "emoji": "📏",
+    "audio": "word-larga.mp3"
+   },
+   {
+    "es": "soplo",
+    "en": "I blow",
+    "emoji": "💨",
+    "audio": "word-soplo.mp3"
+   },
+   {
+    "es": "suave",
+    "en": "soft",
+    "emoji": "🤫",
+    "audio": "word-suave.mp3"
+   },
+   {
+    "es": "escuchan",
+    "en": "listen",
+    "emoji": "👂",
+    "audio": "word-escuchan.mp3"
+   },
+   {
+    "es": "mágica",
+    "en": "magical",
+    "emoji": "✨",
+    "audio": "word-magica.mp3"
+   }
+  ],
+  "badge": {
+   "emoji": "🪈",
+   "es": "Flautista Mágico",
+   "en": "Magical Flutist"
+  }
+ },
+ {
+  "slug": "mi-escuela",
+  "folder": "week-105-mi-escuela",
+  "order": 105,
+  "theme": "mi-mundo",
+  "emoji": "🏫",
+  "title": "Mi Escuela",
+  "titleEn": "My School",
+  "art": "photo",
+  "level": 2,
+  "pages": [
+   {
+    "es": "Mi Escuela",
+    "en": "My School",
+    "image": "page-00.webp",
+    "audio": "page-00.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "Voy a la escuela.",
+    "en": "I go to school.",
+    "image": "page-01.webp",
+    "audio": "page-01.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "Mi maestra es amable.",
+    "en": "My teacher is kind.",
+    "image": "page-02.webp",
+    "audio": "page-02.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "Aprendo muchas cosas.",
+    "en": "I learn many things.",
+    "image": null,
+    "audio": "page-03.mp3"
+   },
+   {
+    "es": "Juego en el recreo.",
+    "en": "I play at recess.",
+    "image": "page-04.webp",
+    "audio": "page-04.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "Tengo muchos amigos.",
+    "en": "I have many friends.",
+    "image": "page-05.webp",
+    "audio": "page-05.mp3",
+    "ratio": 1.51
+   },
+   {
+    "es": "¡Me gusta mi escuela!",
+    "en": "I like my school!",
+    "image": "page-06.webp",
+    "audio": "page-06.mp3",
+    "ratio": 1.51
+   }
+  ],
+  "vocab": [
+   {
+    "es": "escuela",
+    "en": "school",
+    "emoji": "🏫",
+    "audio": "word-escuela.mp3"
+   },
+   {
+    "es": "maestra",
+    "en": "teacher",
+    "emoji": "👩‍🏫",
+    "audio": "word-maestra.mp3"
+   },
+   {
+    "es": "aprendo",
+    "en": "I learn",
+    "emoji": "📚",
+    "audio": "word-aprendo.mp3"
+   },
+   {
+    "es": "recreo",
+    "en": "recess",
+    "emoji": "⛹️",
+    "audio": "word-recreo.mp3"
+   },
+   {
+    "es": "amigos",
+    "en": "friends",
+    "emoji": "👫",
+    "audio": "word-amigos.mp3"
+   },
+   {
+    "es": "libros",
+    "en": "books",
+    "emoji": "📖",
+    "audio": "word-libros.mp3"
+   }
+  ],
+  "badge": {
+   "emoji": "🏫",
+   "es": "Estudiante Estrella",
+   "en": "Star Student"
   }
  },
  {

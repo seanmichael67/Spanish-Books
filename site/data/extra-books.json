@@ -1,0 +1,709 @@
+{
+ "_readme": "Books written directly as data (no old HTML page). Each lives in books/<folder>/ with images/page-NN.webp and audio made by make-audio.py. A page with a 'syllable' shows that syllable in colour; 'say' is what the Spanish voice reads.",
+ "books": [
+  {
+   "slug": "silabas-vocales",
+   "folder": "silabas-vocales",
+   "order": 1,
+   "theme": "silabas",
+   "emoji": "🔤",
+   "title": "Las Vocales",
+   "titleEn": "The Vowels",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Las Vocales",
+     "en": "The Vowels"
+    },
+    {
+     "es": "avión",
+     "en": "airplane",
+     "syllable": "a",
+     "say": "a. avión."
+    },
+    {
+     "es": "elefante",
+     "en": "elephant",
+     "syllable": "e",
+     "say": "e. elefante."
+    },
+    {
+     "es": "iguana",
+     "en": "iguana",
+     "syllable": "i",
+     "say": "i. iguana."
+    },
+    {
+     "es": "oso",
+     "en": "bear",
+     "syllable": "o",
+     "say": "o. oso."
+    },
+    {
+     "es": "uvas",
+     "en": "grapes",
+     "syllable": "u",
+     "say": "u. uvas."
+    },
+    {
+     "es": "¡Yo sé las vocales!",
+     "en": "I know the vowels!"
+    }
+   ],
+   "vocab": [
+    {
+     "es": "avión",
+     "en": "airplane",
+     "emoji": "✈️"
+    },
+    {
+     "es": "elefante",
+     "en": "elephant",
+     "emoji": "🐘"
+    },
+    {
+     "es": "iguana",
+     "en": "iguana",
+     "emoji": "🦎"
+    },
+    {
+     "es": "oso",
+     "en": "bear",
+     "emoji": "🐻"
+    },
+    {
+     "es": "uvas",
+     "en": "grapes",
+     "emoji": "🍇"
+    },
+    {
+     "es": "vocales",
+     "en": "vowels",
+     "emoji": "🔤"
+    }
+   ],
+   "badge": {
+    "emoji": "🔤",
+    "es": "Maestro de las Vocales",
+    "en": "Vowel Master"
+   }
+  },
+  {
+   "slug": "silabas-m",
+   "folder": "silabas-m",
+   "order": 2,
+   "theme": "silabas",
+   "emoji": "Ⓜ️",
+   "title": "Sílabas con M",
+   "titleEn": "Syllables with M",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con M",
+     "en": "Syllables with M"
+    },
+    {
+     "es": "mano",
+     "en": "hand",
+     "syllable": "ma",
+     "say": "ma. mano."
+    },
+    {
+     "es": "mesa",
+     "en": "table",
+     "syllable": "me",
+     "say": "me. mesa."
+    },
+    {
+     "es": "miel",
+     "en": "honey",
+     "syllable": "mi",
+     "say": "mi. miel."
+    },
+    {
+     "es": "mono",
+     "en": "monkey",
+     "syllable": "mo",
+     "say": "mo. mono."
+    },
+    {
+     "es": "muñeca",
+     "en": "doll",
+     "syllable": "mu",
+     "say": "mu. muñeca."
+    },
+    {
+     "es": "Mi mamá me ama.",
+     "en": "My mom loves me."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "mano",
+     "en": "hand",
+     "emoji": "✋"
+    },
+    {
+     "es": "mesa",
+     "en": "table",
+     "emoji": "🪑"
+    },
+    {
+     "es": "miel",
+     "en": "honey",
+     "emoji": "🍯"
+    },
+    {
+     "es": "mono",
+     "en": "monkey",
+     "emoji": "🐒"
+    },
+    {
+     "es": "muñeca",
+     "en": "doll",
+     "emoji": "🪆"
+    },
+    {
+     "es": "mamá",
+     "en": "mom",
+     "emoji": "👩"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la M",
+    "en": "M Reader"
+   }
+  },
+  {
+   "slug": "silabas-p",
+   "folder": "silabas-p",
+   "order": 3,
+   "theme": "silabas",
+   "emoji": "🅿️",
+   "title": "Sílabas con P",
+   "titleEn": "Syllables with P",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con P",
+     "en": "Syllables with P"
+    },
+    {
+     "es": "pato",
+     "en": "duck",
+     "syllable": "pa",
+     "say": "pa. pato."
+    },
+    {
+     "es": "pelota",
+     "en": "ball",
+     "syllable": "pe",
+     "say": "pe. pelota."
+    },
+    {
+     "es": "piña",
+     "en": "pineapple",
+     "syllable": "pi",
+     "say": "pi. piña."
+    },
+    {
+     "es": "pollo",
+     "en": "chicken",
+     "syllable": "po",
+     "say": "po. pollo."
+    },
+    {
+     "es": "puma",
+     "en": "puma",
+     "syllable": "pu",
+     "say": "pu. puma."
+    },
+    {
+     "es": "Papá pela la papa.",
+     "en": "Dad peels the potato."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "pato",
+     "en": "duck",
+     "emoji": "🦆"
+    },
+    {
+     "es": "pelota",
+     "en": "ball",
+     "emoji": "⚽"
+    },
+    {
+     "es": "piña",
+     "en": "pineapple",
+     "emoji": "🍍"
+    },
+    {
+     "es": "pollo",
+     "en": "chicken",
+     "emoji": "🐔"
+    },
+    {
+     "es": "puma",
+     "en": "puma",
+     "emoji": "🐆"
+    },
+    {
+     "es": "papá",
+     "en": "dad",
+     "emoji": "👨"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la P",
+    "en": "P Reader"
+   }
+  },
+  {
+   "slug": "silabas-s",
+   "folder": "silabas-s",
+   "order": 4,
+   "theme": "silabas",
+   "emoji": "🐸",
+   "title": "Sílabas con S",
+   "titleEn": "Syllables with S",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con S",
+     "en": "Syllables with S"
+    },
+    {
+     "es": "sapo",
+     "en": "toad",
+     "syllable": "sa",
+     "say": "sa. sapo."
+    },
+    {
+     "es": "semilla",
+     "en": "seed",
+     "syllable": "se",
+     "say": "se. semilla."
+    },
+    {
+     "es": "silla",
+     "en": "chair",
+     "syllable": "si",
+     "say": "si. silla."
+    },
+    {
+     "es": "sopa",
+     "en": "soup",
+     "syllable": "so",
+     "say": "so. sopa."
+    },
+    {
+     "es": "sube",
+     "en": "goes up",
+     "syllable": "su",
+     "say": "su. sube."
+    },
+    {
+     "es": "El sapo sale al sol.",
+     "en": "The toad comes out in the sun."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "sapo",
+     "en": "toad",
+     "emoji": "🐸"
+    },
+    {
+     "es": "semilla",
+     "en": "seed",
+     "emoji": "🌱"
+    },
+    {
+     "es": "silla",
+     "en": "chair",
+     "emoji": "🪑"
+    },
+    {
+     "es": "sopa",
+     "en": "soup",
+     "emoji": "🍲"
+    },
+    {
+     "es": "sube",
+     "en": "goes up",
+     "emoji": "⬆️"
+    },
+    {
+     "es": "sol",
+     "en": "sun",
+     "emoji": "☀️"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la S",
+    "en": "S Reader"
+   }
+  },
+  {
+   "slug": "silabas-l",
+   "folder": "silabas-l",
+   "order": 5,
+   "theme": "silabas",
+   "emoji": "🌙",
+   "title": "Sílabas con L",
+   "titleEn": "Syllables with L",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con L",
+     "en": "Syllables with L"
+    },
+    {
+     "es": "lápiz",
+     "en": "pencil",
+     "syllable": "la",
+     "say": "la. lápiz."
+    },
+    {
+     "es": "leche",
+     "en": "milk",
+     "syllable": "le",
+     "say": "le. leche."
+    },
+    {
+     "es": "libro",
+     "en": "book",
+     "syllable": "li",
+     "say": "li. libro."
+    },
+    {
+     "es": "lobo",
+     "en": "wolf",
+     "syllable": "lo",
+     "say": "lo. lobo."
+    },
+    {
+     "es": "luna",
+     "en": "moon",
+     "syllable": "lu",
+     "say": "lu. luna."
+    },
+    {
+     "es": "Lola lee un libro.",
+     "en": "Lola reads a book."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "lápiz",
+     "en": "pencil",
+     "emoji": "✏️"
+    },
+    {
+     "es": "leche",
+     "en": "milk",
+     "emoji": "🥛"
+    },
+    {
+     "es": "libro",
+     "en": "book",
+     "emoji": "📖"
+    },
+    {
+     "es": "lobo",
+     "en": "wolf",
+     "emoji": "🐺"
+    },
+    {
+     "es": "luna",
+     "en": "moon",
+     "emoji": "🌙"
+    },
+    {
+     "es": "lee",
+     "en": "reads",
+     "emoji": "👀"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la L",
+    "en": "L Reader"
+   }
+  },
+  {
+   "slug": "silabas-t",
+   "folder": "silabas-t",
+   "order": 6,
+   "theme": "silabas",
+   "emoji": "🍅",
+   "title": "Sílabas con T",
+   "titleEn": "Syllables with T",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con T",
+     "en": "Syllables with T"
+    },
+    {
+     "es": "taza",
+     "en": "cup",
+     "syllable": "ta",
+     "say": "ta. taza."
+    },
+    {
+     "es": "teléfono",
+     "en": "telephone",
+     "syllable": "te",
+     "say": "te. teléfono."
+    },
+    {
+     "es": "tijeras",
+     "en": "scissors",
+     "syllable": "ti",
+     "say": "ti. tijeras."
+    },
+    {
+     "es": "tomate",
+     "en": "tomato",
+     "syllable": "to",
+     "say": "to. tomate."
+    },
+    {
+     "es": "tucán",
+     "en": "toucan",
+     "syllable": "tu",
+     "say": "tu. tucán."
+    },
+    {
+     "es": "Tomo té en mi taza.",
+     "en": "I drink tea in my cup."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "taza",
+     "en": "cup",
+     "emoji": "☕"
+    },
+    {
+     "es": "teléfono",
+     "en": "telephone",
+     "emoji": "📞"
+    },
+    {
+     "es": "tijeras",
+     "en": "scissors",
+     "emoji": "✂️"
+    },
+    {
+     "es": "tomate",
+     "en": "tomato",
+     "emoji": "🍅"
+    },
+    {
+     "es": "tucán",
+     "en": "toucan",
+     "emoji": "🦜"
+    },
+    {
+     "es": "té",
+     "en": "tea",
+     "emoji": "🍵"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la T",
+    "en": "T Reader"
+   }
+  },
+  {
+   "slug": "silabas-n",
+   "folder": "silabas-n",
+   "order": 7,
+   "theme": "silabas",
+   "emoji": "☁️",
+   "title": "Sílabas con N",
+   "titleEn": "Syllables with N",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con N",
+     "en": "Syllables with N"
+    },
+    {
+     "es": "naranja",
+     "en": "orange",
+     "syllable": "na",
+     "say": "na. naranja."
+    },
+    {
+     "es": "nene",
+     "en": "little boy",
+     "syllable": "ne",
+     "say": "ne. nene."
+    },
+    {
+     "es": "nido",
+     "en": "nest",
+     "syllable": "ni",
+     "say": "ni. nido."
+    },
+    {
+     "es": "noche",
+     "en": "night",
+     "syllable": "no",
+     "say": "no. noche."
+    },
+    {
+     "es": "nube",
+     "en": "cloud",
+     "syllable": "nu",
+     "say": "nu. nube."
+    },
+    {
+     "es": "El nene mira la nube.",
+     "en": "The little boy looks at the cloud."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "naranja",
+     "en": "orange",
+     "emoji": "🍊"
+    },
+    {
+     "es": "nene",
+     "en": "little boy",
+     "emoji": "👦"
+    },
+    {
+     "es": "nido",
+     "en": "nest",
+     "emoji": "🪺"
+    },
+    {
+     "es": "noche",
+     "en": "night",
+     "emoji": "🌃"
+    },
+    {
+     "es": "nube",
+     "en": "cloud",
+     "emoji": "☁️"
+    },
+    {
+     "es": "mira",
+     "en": "looks at",
+     "emoji": "👀"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la N",
+    "en": "N Reader"
+   }
+  },
+  {
+   "slug": "silabas-d",
+   "folder": "silabas-d",
+   "order": 8,
+   "theme": "silabas",
+   "emoji": "🎲",
+   "title": "Sílabas con D",
+   "titleEn": "Syllables with D",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con D",
+     "en": "Syllables with D"
+    },
+    {
+     "es": "dado",
+     "en": "die",
+     "syllable": "da",
+     "say": "da. dado."
+    },
+    {
+     "es": "dedo",
+     "en": "finger",
+     "syllable": "de",
+     "say": "de. dedo."
+    },
+    {
+     "es": "dinosaurio",
+     "en": "dinosaur",
+     "syllable": "di",
+     "say": "di. dinosaurio."
+    },
+    {
+     "es": "dona",
+     "en": "doughnut",
+     "syllable": "do",
+     "say": "do. dona."
+    },
+    {
+     "es": "ducha",
+     "en": "shower",
+     "syllable": "du",
+     "say": "du. ducha."
+    },
+    {
+     "es": "El dinosaurio come una dona.",
+     "en": "The dinosaur eats a doughnut."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "dado",
+     "en": "die",
+     "emoji": "🎲"
+    },
+    {
+     "es": "dedo",
+     "en": "finger",
+     "emoji": "☝️"
+    },
+    {
+     "es": "dinosaurio",
+     "en": "dinosaur",
+     "emoji": "🦕"
+    },
+    {
+     "es": "dona",
+     "en": "doughnut",
+     "emoji": "🍩"
+    },
+    {
+     "es": "ducha",
+     "en": "shower",
+     "emoji": "🚿"
+    },
+    {
+     "es": "come",
+     "en": "eats",
+     "emoji": "😋"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la D",
+    "en": "D Reader"
+   }
+  }
+ ]
+}

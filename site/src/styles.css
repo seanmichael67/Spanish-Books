@@ -242,3 +242,7 @@ footer.site .fine { border-top: 1px solid #36415f; margin-top: 28px; padding-top
 .reader.gaming .vcard.found .w { visibility: visible; }
 .vcard.nope { animation: shake .35s; }
 @keyframes shake { 25% { transform: translateX(-7px); } 75% { transform: translateX(7px); } }
+
+/* Syllable books: the syllable is shown big, then the word with that syllable in bold */
+.txt .es .syl { display: inline-block; background: var(--c); color: #fff; border-radius: 16px; padding: 0 .35em; margin-right: .45em; font-weight: 700; }
+.txt .es .kw b { font-weight: 700; text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 6px; }

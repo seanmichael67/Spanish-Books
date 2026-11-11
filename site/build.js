@@ -11,7 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const { books, themes, config, packs, library, school, getTheme, booksByTheme } = require('../api/_lib/catalog');
-const { esc, vocabImages, highlight } = require('../api/_lib/text');
+const { esc, vocabImages, highlight, syllableWord } = require('../api/_lib/text');
 const { renderPrintable } = require('../api/_lib/print');
 
 const ROOT = path.join(__dirname, '..');
@@ -242,9 +242,12 @@ function bookPage(book) {
     const art = p.image
       ? `<img class="bg" src="${media(book, p.image)}" alt="" aria-hidden="true" ${i ? 'loading="lazy"' : ''}><img class="fg" src="${media(book, p.image)}" alt="${esc(p.en)}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'}>`
       : `<span class="ph" aria-hidden="true">${esc(book.emoji)}</span>`;
-    return `<section class="pg${i === 0 ? ' on' : ''}" data-say="${esc(p.es)}"${p.audio ? ` data-audio="${media(book, p.audio)}"` : ''}>
+    const text = p.syllable
+      ? `<span class="syl">${esc(p.syllable)}</span>${(() => { const v = book.vocab.find((w) => w.es === p.es); return v ? kw(syllableWord(p), v) : syllableWord(p); })()}`
+      : i === 0 ? esc(p.es) : highlight(p.es, book.vocab, kw);
+    return `<section class="pg${i === 0 ? ' on' : ''}" data-say="${esc(p.say || p.es)}"${p.audio ? ` data-audio="${media(book, p.audio)}"` : ''}>
       <figure class="frame">${art}</figure>
-      <div class="txt"><p class="es" lang="es">${i === 0 ? esc(p.es) : highlight(p.es, book.vocab, kw)}</p><p class="en">${esc(p.en)}</p></div></section>`;
+      <div class="txt"><p class="es" lang="es">${text}</p><p class="en">${esc(p.en)}</p></div></section>`;
   }).join('\n');
 
   const vocab = `<section class="pg vocab"><h2 lang="es">Mis palabras</h2><p data-vocab-help>My words. Tap a card to hear it, then say it together.</p>

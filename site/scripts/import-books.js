@@ -117,10 +117,31 @@ const books = LISTED.map((entry) => {
   };
 });
 
+// Books written directly as data (for example the syllable series). They have
+// no old HTML page; we only look up which pictures and recordings exist yet.
+const extra = JSON.parse(fs.readFileSync(path.join(ROOT, 'site', 'data', 'extra-books.json'), 'utf8')).books;
+for (const book of extra) {
+  const dir = path.join(ROOT, 'books', book.folder);
+  book.pages.forEach((p, i) => {
+    const n = String(i).padStart(2, '0');
+    p.image = fs.existsSync(path.join(dir, 'images', `page-${n}.webp`)) ? `page-${n}.webp` : null;
+    p.audio = fs.existsSync(path.join(dir, 'audio', `page-${n}.mp3`)) ? `page-${n}.mp3` : null;
+    if (p.image) { try { p.ratio = webpRatio(path.join(dir, 'images', p.image)); } catch (e) { p.image = null; } }
+  });
+  book.vocab.forEach((w) => {
+    const clip = `word-${fileSlug(w.es)}.mp3`;
+    w.audio = fs.existsSync(path.join(dir, 'audio', clip)) ? clip : null;
+  });
+  books.unshift(book); // syllable books go first: they are where reading starts
+}
+books.sort((a, b) => (a.theme === 'silabas' ? 0 : 1) - (b.theme === 'silabas' ? 0 : 1) || (a.theme === 'silabas' ? a.order - b.order : 0));
+
 // A book only goes on the site when its pictures are done (one gap is tolerated).
 const ready = books.filter((b) => b.pages.filter((p) => !p.image).length <= 1);
 const waiting = books.filter((b) => !ready.includes(b));
 
 fs.writeFileSync(OUT, JSON.stringify(ready, null, 1) + '\n');
+// make-audio.py also records the waiting books, so they are ready the moment their pictures arrive.
+fs.writeFileSync(path.join(ROOT, 'site', 'data', 'books-waiting.json'), JSON.stringify(waiting, null, 1) + '\n');
 console.log(`Wrote ${ready.length} books to site/data/books.json`);
 if (waiting.length) console.log(`Not on the site yet (pictures missing): ${waiting.map((b) => b.folder).join(', ')}`);

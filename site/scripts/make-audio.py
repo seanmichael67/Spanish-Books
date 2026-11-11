@@ -31,6 +31,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 ES_VOICE = "es-MX-DaliaNeural"   # same voices as the first 106 books
 EN_VOICE = "en-US-JennyNeural"
 books = json.load(open(os.path.join(ROOT, "site", "data", "books.json"), encoding="utf-8"))
+waiting = os.path.join(ROOT, "site", "data", "books-waiting.json")  # books still missing pictures
+if os.path.exists(waiting):
+    books += json.load(open(waiting, encoding="utf-8"))
 fixes = json.load(open(os.path.join(ROOT, "site", "data", "text-fixes.json"), encoding="utf-8"))
 gate = asyncio.Semaphore(4)
 
@@ -91,7 +94,7 @@ async def main():
             name = f"page-{i:02d}-fix.mp3" if str(i) in fixed_pages else f"page-{i:02d}.mp3"
             out = os.path.join(folder, name)
             if not os.path.exists(out):
-                jobs.append(clip([(page["es"], ES_VOICE), (page["en"], EN_VOICE)], out))
+                jobs.append(clip([(page.get("say") or page["es"], ES_VOICE), (page["en"], EN_VOICE)], out))
         for word in book["vocab"]:
             out = os.path.join(folder, f"word-{file_slug(word['es'])}.mp3")
             if not word.get("audio") and not os.path.exists(out):
