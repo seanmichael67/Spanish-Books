@@ -15,8 +15,8 @@ module.exports = async (req, res) => {
 
   const site = siteUrl(req);
   try {
-    const session = await stripe('POST', '/v1/checkout/sessions', {
-      mode: 'payment',
+    const params = {
+      mode: product.recurring ? 'subscription' : 'payment',
       'line_items[0][quantity]': '1',
       'line_items[0][price_data][currency]': 'usd',
       'line_items[0][price_data][unit_amount]': String(product.priceCents),
@@ -26,8 +26,12 @@ module.exports = async (req, res) => {
       allow_promotion_codes: 'true',
       success_url: `${site}/gracias/?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${site}/packs/`,
-      'custom_text[submit][message]': `Digital printable from ${config.name}. You can print it right after paying.`,
-    });
+      'custom_text[submit][message]': product.recurring
+        ? `${config.name} membership. Cancel any time from "My purchases".`
+        : `Digital printable from ${config.name}. You can print it right after paying.`,
+    };
+    if (product.recurring) params['line_items[0][price_data][recurring][interval]'] = product.recurring;
+    const session = await stripe('POST', '/v1/checkout/sessions', params);
     return send(res, 200, { url: session.url });
   } catch (err) {
     console.error('checkout failed:', err.message);

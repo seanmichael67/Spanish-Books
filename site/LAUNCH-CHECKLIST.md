@@ -16,7 +16,7 @@ Written after building the new site. Items are in the order I would do them.
       sales tax on digital goods.
 - [ ] **Resend account:** verify your sending domain and create one Audience for the book club.
 - [ ] **Have the Privacy and Terms pages reviewed.** They are honest plain-language drafts, not legal advice.
-- [ ] **Decide the prices** in `site/site.config.json` (now $7 per pack, $39 for everything, $149 for a school).
+- [ ] **Decide the prices** in `site/site.config.json` (now $7 per pack, $39 for everything, $6 a month for the club, $149 for a school).
 
 ## 2. Book quality (the product itself)
 
@@ -62,8 +62,9 @@ S, L, T, N, D, B, C, G, R, H) and 8 story books for Nivel 3. 157 books and 19 pa
       list the same packs there and link back.
 - [ ] **Sell the school licence.** It exists on the packs page ($149). Email it to preschool
       directors and Spanish-immersion schools you know.
-- [ ] **Subscription.** Everything is a one-time purchase today. A yearly "new pack every
-      month" plan needs a Stripe webhook and is the next build once packs are selling.
+- [ ] **Turn on the membership.** The Club de Lectura ($6 a month, every pack while a member) is
+      built. In Stripe, open Settings → Billing → Customer portal and save it once, so members
+      can cancel from "My purchases". Then do one test sign-up and one test cancel.
 - [ ] **Cookie notice.** Google Analytics loads on every page. Add a consent banner if you
       advertise to visitors in the EU, UK or California.
 - [ ] **Mandarin track.** The same site can host a second language once Spanish is earning.
@@ -72,6 +73,7 @@ S, L, T, N, D, B, C, G, R, H) and 8 story books for Nivel 3. 157 books and 19 pa
 
 - Purchases are remembered in the browser and by an emailed link, not by an account with a password.
 - A buyer could share their link. This is normal for low-priced printables; the buyer's email is printed on each pack.
-- Refunds are handled by hand in the Stripe dashboard. A refunded buyer keeps their link.
+- Refunds are handled by hand in the Stripe dashboard. A refunded one-time buyer keeps their link.
+- A club member's link is checked with Stripe each time a pack is opened, so it stops working when they cancel.
 - The Stripe and Resend connections were tested against stand-ins, not the real services.
   Do one real test purchase (see `site/README.md`) before announcing.

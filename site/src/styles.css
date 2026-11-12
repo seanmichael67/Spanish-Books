@@ -257,3 +257,10 @@ footer.site .fine { border-top: 1px solid #36415f; margin-top: 28px; padding-top
 .path i { font-style: normal; color: var(--ink-soft); }
 .path p { margin: 8px 0; font-size: .96rem; color: var(--ink-soft); }
 .path small { font-family: var(--display); font-weight: 600; background: var(--sky); border-radius: 999px; padding: 2px 10px; }
+
+/* The monthly club card on the packs page */
+.bundle.club { background: var(--sun); color: var(--ink); margin-top: 18px; scroll-margin-top: 90px; }
+.bundle.club h2 { color: var(--ink); }
+.bundle.club p { color: var(--ink); }
+.bundle.club .price small { color: var(--ink); }
+.bundle.club .btn { background: var(--ink); box-shadow: 0 4px 0 #0c1326; }

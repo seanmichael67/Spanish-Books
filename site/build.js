@@ -10,7 +10,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { books, themes, config, packs, library, school, getTheme, booksByTheme } = require('../api/_lib/catalog');
+const { books, themes, config, packs, library, school, club, getTheme, booksByTheme } = require('../api/_lib/catalog');
 const { esc, vocabImages, highlight, syllableWord } = require('../api/_lib/text');
 const { renderPrintable } = require('../api/_lib/print');
 
@@ -182,7 +182,7 @@ function home() {
 
 <section class="block"><div class="wrap">
   <h2>Printable packs for home and classroom</h2>
-  <p class="sub">Take the books off the screen. Each pack is a full theme (8 books or more) with vocabulary, flashcards and tracing pages. ${money(config.packPriceCents)} per pack, or every pack for ${money(config.libraryPriceCents)}.</p>
+  <p class="sub">Take the books off the screen. Each pack is a full theme (8 books or more) with vocabulary, flashcards and tracing pages. ${money(config.packPriceCents)} per pack, every pack for ${money(config.libraryPriceCents)}, or join the club for ${money(config.clubPriceCents)} a month.</p>
   <div class="packs">${packs.slice(0, 3).map(packCard).join('')}</div>
   <p style="margin-top:26px"><a class="btn" href="/packs/">See all ${packs.length} packs</a></p>
 </div></section>
@@ -396,6 +396,10 @@ function packsPage() {
     <div><h2>Biblioteca Completa</h2><p>Every pack: ${library.books.length} printable books, ${library.books.length * 6} flashcards, and every pack we add later this year. Best for teachers and homeschool families.</p></div>
     <div style="text-align:center"><s>${money(full)}</s><div class="price">${money(library.priceCents)} <small>one time</small></div><button class="btn sun" data-buy="${library.id}" style="margin-top:10px">Get every pack</button></div>
   </div>
+  <div class="bundle club" id="${club.id}">
+    <div><h2>📬 Club de Lectura</h2><p>Not ready to buy everything? Join the club and print any pack you like, including each new pack as it arrives, for as long as you are a member. Cancel any time in two clicks.</p></div>
+    <div style="text-align:center"><div class="price">${money(club.priceCents)} <small>per month</small></div><button class="btn" data-buy="${club.id}" style="margin-top:10px">Join the club</button></div>
+  </div>
   <div class="bundle school" id="${school.id}">
     <div><h2>🏫 For schools</h2><p>One licence for every classroom and teacher at your school: all ${library.books.length} printable books, flashcards and tracing pages, plus every pack we add. Made and classroom-tested at ${esc(config.school)}.</p></div>
     <div style="text-align:center"><div class="price">${money(school.priceCents)} <small>one time</small></div><button class="btn" data-buy="${school.id}" style="margin-top:10px">Get the school licence</button></div>
@@ -404,7 +408,7 @@ function packsPage() {
 <div class="wrap"><div class="packs">${packs.map(packCard).join('')}</div>
 <p class="note" style="margin-top:24px">Secure checkout by Stripe. Digital product: you print it yourself on US Letter paper. Not happy? Email ${config.contactEmail} within 14 days for a refund.</p></div>`;
   const ld = {
-    '@context': 'https://schema.org', '@graph': [...packs, library, school].map((p) => ({
+    '@context': 'https://schema.org', '@graph': [...packs, library, school, club].map((p) => ({
       '@type': 'Product', name: p.name, description: p.description, brand: { '@type': 'Brand', name: config.name },
       offers: { '@type': 'Offer', price: (p.priceCents / 100).toFixed(2), priceCurrency: 'USD', availability: 'https://schema.org/InStock', ...(SITE_URL ? { url: `${SITE_URL}/packs/#${p.id}` } : {}) },
     })),
@@ -441,6 +445,8 @@ function purchasePages() {
     title: `My purchases · ${config.name}`, description: 'Open and print the packs you bought.', urlPath: '/mis-compras/', noindex: true, active: '/mis-compras/',
     body: `<div class="narrow page-head" data-mine><h1>My purchases</h1>
       <div class="owned" data-owned></div>
+      <div class="callout" data-member hidden><b>Club de Lectura member.</b> You can print every pack while your membership is active.
+        <button class="btn small alt" type="button" data-portal style="margin-left:8px">Manage or cancel membership</button> <span class="msg" data-portal-msg></span></div>
       <div data-none><p class="sub">No packs are saved in this browser yet.</p><p><a class="btn" href="/packs/">See the printable packs</a></p></div>
       <div class="box" style="margin-top:30px"><h2>Bought on another device?</h2>
         <p>Enter the email you paid with and we will send you a link to your printables.</p>

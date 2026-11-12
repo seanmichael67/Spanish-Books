@@ -8,5 +8,6 @@
   "packPriceCents": 700,
   "libraryPriceCents": 3900,
   "freeSampleBook": "el-oso",
-  "schoolPriceCents": 14900
+  "schoolPriceCents": 14900,
+  "clubPriceCents": 600
 }

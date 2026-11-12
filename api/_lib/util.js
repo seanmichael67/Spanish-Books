@@ -33,9 +33,11 @@ const b64 = (s) => Buffer.from(s).toString('base64url');
 const secret = () => process.env.ACCESS_TOKEN_SECRET || '';
 const sign = (payload) => crypto.createHmac('sha256', secret()).update(payload).digest('base64url');
 
-function makeToken(products, email) {
+function makeToken(products, email, subscriptionId) {
   if (!secret()) throw new Error('ACCESS_TOKEN_SECRET is not set');
-  const payload = b64(JSON.stringify({ p: [...new Set(products)].sort(), e: email || '', t: Math.floor(Date.now() / 1000) }));
+  const data = { p: [...new Set(products)].sort(), e: email || '', t: Math.floor(Date.now() / 1000) };
+  if (subscriptionId) data.s = subscriptionId; // for the membership: lets us ask Stripe if it is still active
+  const payload = b64(JSON.stringify(data));
   return `${payload}.${sign(payload)}`;
 }
 
@@ -46,7 +48,7 @@ function readToken(token) {
   if (sig.length !== good.length || !crypto.timingSafeEqual(Buffer.from(sig), Buffer.from(good))) return null;
   try {
     const data = JSON.parse(Buffer.from(payload, 'base64url').toString());
-    return { products: Array.isArray(data.p) ? data.p : [], email: data.e || '' };
+    return { products: Array.isArray(data.p) ? data.p : [], email: data.e || '', subscription: data.s || '' };
   } catch (e) { return null; }
 }
 
