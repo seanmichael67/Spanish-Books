@@ -22,27 +22,98 @@
 
   pages.forEach(function () { dots.appendChild(document.createElement('i')); });
 
+  /* ---- Word-by-word highlighting ----
+     Each Spanish word is wrapped in a small box so it can light up while it is
+     spoken. The page text itself is untouched in the HTML that Google reads. */
+  var hasLetter = /[A-Za-zÀ-ÿ0-9]/;
+  function wrapWords(node) {
+    [].slice.call(node.childNodes).forEach(function (child) {
+      if (child.nodeType === 3) {
+        var frag = document.createDocumentFragment();
+        child.nodeValue.split(/(\s+)/).forEach(function (piece) {
+          if (hasLetter.test(piece)) {
+            var span = document.createElement('span');
+            span.className = 'w';
+            span.textContent = piece;
+            frag.appendChild(span);
+          } else if (piece && /\S/.test(piece)) {
+            /* Punctuation: keep it glued to the word before it, so a full stop never wraps onto its own line. */
+            var before = frag.lastChild || child.previousSibling;
+            if (before && before.nodeType === 1) {
+              var glue = document.createElement('span');
+              glue.className = 'nb';
+              before.parentNode.insertBefore(glue, before);
+              glue.appendChild(before);
+              glue.appendChild(document.createTextNode(piece));
+            } else frag.appendChild(document.createTextNode(piece));
+          } else if (piece) frag.appendChild(document.createTextNode(piece));
+        });
+        node.replaceChild(frag, child);
+      } else if (child.nodeType === 1) {
+        if (/\s/.test(child.textContent.trim())) wrapWords(child); else child.classList.add('w');
+      }
+    });
+  }
+  pages.forEach(function (pg) {
+    var es = pg.querySelector('.txt .es');
+    if (!es) return;
+    wrapWords(es);
+    pg.words = [].slice.call(es.querySelectorAll('.w'));
+    var raw = pg.getAttribute('data-t');
+    var times = raw ? raw.split(',').map(function (x) { return x.split('-').map(Number); }) : null;
+    pg.times = times && times.length === pg.words.length ? times : null;
+  });
+
+  var ticking = null;
+  function clearWords() {
+    if (ticking) cancelAnimationFrame(ticking);
+    ticking = null;
+    reader.querySelectorAll('.w.now, .en.now').forEach(function (el) { el.classList.remove('now'); });
+  }
+  function lightWord(pg, index) {
+    pg.words.forEach(function (w, n) { w.classList.toggle('now', n === index); });
+  }
+  /* Follow the recording: light the word whose time has come, then the English line. */
+  function follow(pg) {
+    if (!pg.times) return;
+    var last = pg.times[pg.times.length - 1][1];
+    var en = pg.querySelector('.txt .en');
+    (function tick() {
+      var t = player.currentTime * 1000;
+      var index = -1;
+      for (var n = 0; n < pg.times.length; n++) if (t >= pg.times[n][0] - 40) index = n;
+      if (t > last + 120) index = -1;
+      lightWord(pg, index);
+      if (en) en.classList.toggle('now', t > last + 300);
+      ticking = requestAnimationFrame(tick);
+    })();
+  }
+
   function stop() {
     player.pause();
     if (window.speechSynthesis) window.speechSynthesis.cancel();
     listen.classList.remove('playing');
     reader.querySelectorAll('.say').forEach(function (el) { el.classList.remove('say'); });
+    clearWords();
   }
 
   /* Play a recording. If there is none (or it fails), use the device's Spanish voice. */
-  function say(src, text, done) {
+  function say(src, text, done, pg) {
     stop();
     function fallback() {
       if (!window.speechSynthesis || !text) { if (done) done(); return; }
       var u = new SpeechSynthesisUtterance(text);
       u.lang = 'es-MX';
       u.rate = 0.8;
-      u.onend = u.onerror = function () { if (done) done(); };
+      u.onend = u.onerror = function () { clearWords(); if (done) done(); };
+      /* The device voice tells us which letter it has reached; count the spaces before it. */
+      if (pg && pg.words) u.onboundary = function (e) { lightWord(pg, text.slice(0, e.charIndex).split(/\s+/).filter(function (x) { return hasLetter.test(x); }).length); };
       window.speechSynthesis.speak(u);
     }
     if (!src) return fallback();
     player.src = src;
-    player.onended = function () { if (done) done(); };
+    player.onended = function () { clearWords(); if (done) done(); };
+    player.onplaying = function () { if (pg) follow(pg); };
     player.onerror = fallback;
     var p = player.play();
     if (p && p.catch) p.catch(function () { if (done) done(); });
@@ -52,7 +123,7 @@
     var pg = pages[current];
     var text = pg.getAttribute('data-say');
     if (!text) return;
-    say(pg.getAttribute('data-audio'), text, function () { listen.classList.remove('playing'); });
+    say(pg.getAttribute('data-audio'), text, function () { listen.classList.remove('playing'); }, pg);
     listen.classList.add('playing'); // after say(), because say() first stops anything already playing
   }
 
@@ -81,10 +152,33 @@
 
   english.addEventListener('change', function () { reader.classList.toggle('no-en', !english.checked); });
 
+  /* ---- Full-screen book mode ("Leer en grande") ----
+     The same page elements are simply shown large over the whole window, so
+     nothing is duplicated and the text stays on the page for search engines. */
+  var fullBtn = reader.querySelector('[data-full]');
+  var closeBtn = reader.querySelector('[data-close]');
+  function setFull(on) {
+    reader.classList.toggle('full', on);
+    document.documentElement.classList.toggle('reading', on);
+    closeBtn.hidden = !on;
+    if (on) {
+      if (reader.requestFullscreen) reader.requestFullscreen().catch(function () {});
+      track('full_screen');
+      if (auto.checked && current > 0) playPage();
+    } else if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(function () {});
+  }
+  if (fullBtn) {
+    fullBtn.addEventListener('click', function () { setFull(true); });
+    closeBtn.addEventListener('click', function () { setFull(false); });
+    document.addEventListener('fullscreenchange', function () { if (!document.fullscreenElement && reader.classList.contains('full')) setFull(false); });
+  }
+
   document.addEventListener('keydown', function (e) {
     if (e.target.matches('input, textarea')) return;
     if (e.key === 'ArrowRight') show(current + 1, 1);
     if (e.key === 'ArrowLeft') show(current - 1, -1);
+    if (e.key === 'Escape' && reader.classList.contains('full')) setFull(false);
+    if (e.key === ' ' && reader.classList.contains('full')) { e.preventDefault(); if (listen.classList.contains('playing')) stop(); else playPage(); }
   });
 
   var startX = null;

@@ -261,7 +261,8 @@ function bookPage(book) {
     const text = p.syllable
       ? `<span class="syl">${esc(p.syllable)}</span>${(() => { const v = book.vocab.find((w) => w.es === p.es); return v ? kw(syllableWord(p), v) : syllableWord(p); })()}`
       : i === 0 ? esc(p.es) : highlight(p.es, book.vocab, kw);
-    return `<section class="pg${i === 0 ? ' on' : ''}" data-say="${esc(p.say || p.es)}"${p.audio ? ` data-audio="${media(book, p.audio)}"` : ''}>
+    const timing = p.timing ? ` data-t="${p.timing.map((w) => w.join('-')).join(',')}"` : '';
+    return `<section class="pg${i === 0 ? ' on' : ''}" data-say="${esc(p.say || p.es)}"${p.audio ? ` data-audio="${media(book, p.audio)}"` : ''}${timing}>
       <figure class="frame">${art}</figure>
       <div class="txt"><p class="es" lang="es">${text}</p><p class="en">${esc(p.en)}</p></div></section>`;
   }).join('\n');
@@ -291,7 +292,9 @@ function bookPage(book) {
 <div class="wrap">
   <p class="crumbs"><a href="/libros/">Books</a> › <a href="/temas/${book.theme}/">${esc(theme.en)}</a> › ${esc(book.title)}</p>
   <article class="reader" data-book="${book.slug}" style="--c:${theme.color}">
-    <div class="reader-head"><h1><span lang="es">${esc(book.title)}</span></h1><span class="lvl">${LEVELS[book.level]}</span></div>
+    <div class="reader-head"><h1><span lang="es">${esc(book.title)}</span></h1><span class="lvl">${LEVELS[book.level]}</span>
+      <button type="button" class="btn small sun big-btn" data-full>📖 Leer en grande <span>· Full screen</span></button>
+      <button type="button" class="close-btn" data-close aria-label="Close full screen" hidden>✕</button></div>
     <div class="stage">${story}\n${vocab}\n${badge}</div>
     <div class="controls">
       <button class="round" data-prev aria-label="Previous page">←</button>
@@ -300,7 +303,7 @@ function bookPage(book) {
       <button class="round" data-next aria-label="Next page">→</button>
     </div>
     <div class="toggles">
-      <label><input type="checkbox" data-auto> Read each page aloud when I turn it</label>
+      <label><input type="checkbox" data-auto checked> Read each page aloud when I turn it</label>
       <label><input type="checkbox" data-english checked> Show English</label>
     </div>
   </article>
@@ -528,7 +531,7 @@ function textPages() {
     <h2>A ten-minute routine</h2>
     <ol>
       <li><b>Picture walk (2 minutes).</b> Turn the pages without reading. Ask <span lang="es">«¿Qué ves?»</span> and accept answers in any language.</li>
-      <li><b>Listen (3 minutes).</b> Play each page. Point under each word as it is spoken.</li>
+      <li><b>Listen (3 minutes).</b> Press <span lang="es">«Leer en grande»</span> to fill the screen, then play each page. Each word lights up as it is spoken; point to it together.</li>
       <li><b>Echo (3 minutes).</b> Read again. You say the sentence, your child repeats it. Tap the coloured words to hear them alone.</li>
       <li><b>Play (2 minutes).</b> On the <span lang="es">«Mis palabras»</span> page, say a word and let your child tap the right picture.</li>
     </ol>

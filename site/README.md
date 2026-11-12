@@ -6,6 +6,7 @@ WordPress + iframe setup with one fast site that you host on Vercel.
 **What it does**
 
 - Shows every finished book as a real web page (good for Google), with audio.
+- Lights up each word as the voice reads it, and has a full-screen "Leer en grande" mode for children.
 - Ends every book with a picture vocabulary page, a word game and a badge.
 - Has one page per theme (`/temas/…`) with its books, word list and pack.
 - Has a page for schools (`/escuelas/`) that sells the school licence, and a library search box.
@@ -87,6 +88,8 @@ to print. When that works, swap in the `sk_live_…` key.
   `python3 site/scripts/save-image.py <folder> <page> <picture-url>`, record its audio with
   `python3 site/scripts/make-audio.py`, then run `npm run import-books` and
   `python3 site/scripts/make-thumbs.py`. A book only appears once its pictures are done.
+- **After changing any book text:** also run `python3 site/scripts/make-timings.py` so the word
+  highlighting matches the new words, then `npm run import-books`.
 - **Re-record audio after fixing text:** run `python3 site/scripts/make-audio.py` (it only makes what is missing).
 - A theme becomes a printable pack automatically once it has 8 books.
 

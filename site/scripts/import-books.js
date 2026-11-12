@@ -136,6 +136,20 @@ for (const book of extra) {
 }
 books.sort((a, b) => (a.theme === 'silabas' ? 0 : 1) - (b.theme === 'silabas' ? 0 : 1) || (a.theme === 'silabas' ? a.order - b.order : 0));
 
+// Word timings (made by make-timings.py) let the reader light up each word as it is spoken.
+// They are only used when the page text is unchanged and the word counts agree.
+const timingFile = path.join(ROOT, 'site', 'data', 'timings.json');
+const TIMINGS = fs.existsSync(timingFile) ? JSON.parse(fs.readFileSync(timingFile, 'utf8')) : {};
+const spokenWords = (text) => text.split(/\s+/).filter((t) => /[\p{L}\p{N}]/u.test(t)).length;
+for (const book of books) {
+  book.pages.forEach((p, i) => {
+    const t = TIMINGS[`${book.folder}/${i}`];
+    const shown = p.syllable ? 2 : spokenWords(p.es);
+    if (p.audio && t && t.text === (p.say || p.es) && t.w.length === shown) p.timing = t.w;
+    else delete p.timing;
+  });
+}
+
 // A book only goes on the site when its pictures are done (one gap is tolerated).
 const ready = books.filter((b) => b.pages.filter((p) => !p.image).length <= 1);
 const waiting = books.filter((b) => !ready.includes(b));
