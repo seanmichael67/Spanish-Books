@@ -579,6 +579,7 @@
                                 <button onClick={() => setViewMode('preview')} className={`px-4 md:px-6 py-2.5 md:py-3 rounded-xl text-sm md:text-base font-bold transition ${viewMode === 'preview' ? 'bg-white shadow-sm text-blue-600' : 'text-slate-400'}`}>Book</button>
                                 <button onClick={() => setViewMode('print')} className={`px-4 md:px-6 py-2.5 md:py-3 rounded-xl text-sm md:text-base font-bold transition ${viewMode === 'print' ? 'bg-white shadow-sm text-blue-600' : 'text-slate-400'}`}>Print</button>
                             </div>
+                            {window.self !== window.top && (<a href={window.location.href} target="_blank" rel="noopener" onClick={() => window.bookEvent && bookEvent('full_screen')} className="hidden md:flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3 bg-indigo-600 text-white rounded-xl text-sm md:text-base font-bold hover:bg-indigo-700 transition shadow-md no-underline">⛶ Pantalla completa</a>)}
                             <button onClick={handleDownloadPdf} disabled={generatingPdf} className="flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3 bg-emerald-600 text-white rounded-xl text-sm md:text-base font-bold hover:bg-emerald-700 transition shadow-md disabled:opacity-50 hidden md:flex">
                                 {generatingPdf ? <Icons.Loader size={12} /> : <Icons.Download size={12} />}
                                 <span>{generatingPdf ? "Generating..." : "Download PDF"}</span>

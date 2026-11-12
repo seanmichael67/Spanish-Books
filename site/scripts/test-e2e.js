@@ -117,13 +117,25 @@ async function main() {
       await page.goto(SITE + '/libros/el-oso/');
       assert.strictEqual(await page.locator('.pg').count(), 9);
       assert.strictEqual(await page.locator('.pg:visible').count(), 1);
+      // Turning the page reads it aloud, and each word lights up as it is spoken.
+      const audio = page.waitForResponse((r) => r.url().endsWith('/media/el-oso/page-01.mp3'));
       await page.click('[data-next]');
       assert.match(await page.textContent('.pg.on .es'), /El oso es grande\./);
+      assert.ok((await audio).ok());
+      assert.strictEqual(await page.locator('.pg.on .es .w').count(), 4);
+      await page.waitForSelector('.pg.on .es .w.now', { timeout: 8000 });
       await page.waitForLoadState('networkidle');
       await shot(page, 'reader');
-      const audio = page.waitForResponse((r) => r.url().endsWith('/media/el-oso/page-01.mp3'));
-      await page.click('[data-listen]');
-      assert.ok((await audio).ok());
+      // Full-screen book mode keeps the same page and can be closed again.
+      await page.click('[data-full]');
+      assert.ok(await page.locator('.reader.full').isVisible());
+      await page.waitForTimeout(400);
+      await shot(page, 'reader-full');
+      await page.click('[data-next]');
+      assert.match(await page.textContent('.pg.on .es'), /El oso es café\./);
+      await page.click('[data-prev]');
+      await page.click('[data-close]');
+      assert.strictEqual(await page.locator('.reader.full').count(), 0);
       const word = page.waitForResponse((r) => r.url().endsWith('/media/el-oso/word-grande.mp3'));
       assert.ok(await page.locator('[data-listen].playing').count(), 'listen button shows it is playing');
       await page.click('.pg.on .kw[data-word="grande"]');
@@ -313,6 +325,11 @@ async function main() {
       assert.strictEqual(overflow, false);
       await m.waitForLoadState('networkidle');
       await shot(m, 'phone-reader');
+      await m.click('[data-full]');
+      await m.waitForTimeout(500);
+      assert.strictEqual(await m.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+      await shot(m, 'phone-full');
+      await m.click('[data-close]');
       await m.goto(SITE + '/');
       assert.strictEqual(await m.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
       await m.waitForLoadState('networkidle');

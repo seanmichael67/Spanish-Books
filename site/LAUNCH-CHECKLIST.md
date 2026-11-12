@@ -35,11 +35,9 @@ S, L, T, N, D, B, C, G, R, H) and 8 story books for Nivel 3. 157 books and 19 pa
       but the brand promise says "real photos". New pictures cost about half a Higgsfield credit each.
 - [ ] **Print quality of older books.** New pictures are 1600 pixels wide (good for printing).
       The first 106 books are 1024 pixels: fine at home, soft for a print shop or Amazon KDP.
-- [ ] **Word-by-word highlighting.** The audio is one clip per page. Recording with word timings
-      would let each word light up as it is read, which is the strongest read-along feature.
-
-## 3. Moving off the old site
-
+- [ ] **Listen to the word highlighting on a few old books.** Words now light up as they are
+      spoken. The timings were measured by asking the voice service to speak each page again, so on
+      the first 106 books (recorded months ago) a word may light up a fraction early or late.
 - [ ] **Redirect the old pages.** Run `node site/scripts/make-redirects.js https://your-new-address`
       and load `site/old-site-redirects.csv` into a WordPress redirect plugin, so each old book
       page forwards (301) to its new page and Google ranking carries over.

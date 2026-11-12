@@ -273,3 +273,45 @@ footer.site .fine { border-top: 1px solid #36415f; margin-top: 28px; padding-top
 .plan { width: 100%; border-collapse: collapse; margin: 1em 0; background: #fff; border-radius: 16px; overflow: hidden; }
 .plan th, .plan td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .plan th { font-family: var(--display); background: var(--sky); white-space: nowrap; }
+
+/* ---- Reading along: the word being spoken lights up ---- */
+.txt .es .w { border-radius: 10px; padding: 0 .08em; transition: background .12s, transform .12s; display: inline-block; }
+.txt .es .w.now { background: var(--sun); transform: scale(1.08); }
+.txt .es .kw.w.now { border-bottom-color: transparent; }
+.txt .es .syl.w.now { background: var(--sun); color: var(--ink); }
+.txt .en.now { color: var(--ink); }
+
+/* ---- "Leer en grande": the book fills the whole screen ---- */
+.reader-head .big-btn { margin-left: auto; }
+.reader-head .big-btn span { font-weight: 500; opacity: .75; }
+.close-btn { width: 52px; height: 52px; border-radius: 50%; border: 0; background: var(--ink); color: #fff; font-size: 1.4rem; cursor: pointer; flex: none; }
+html.reading { overflow: hidden; }
+.reader.full { position: fixed; inset: 0; z-index: 100; width: auto; margin: 0; background: var(--paper); padding: 10px clamp(10px, 2vw, 26px) 12px; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 8px; overflow: hidden; }
+.reader.full .reader-head { margin: 0; flex-wrap: nowrap; }
+.reader.full .reader-head h1 { font-size: clamp(1.1rem, 2.4vw, 1.6rem); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.reader.full .reader-head .lvl, .reader.full .big-btn, .reader.full .toggles { display: none; }
+.reader.full .close-btn { margin-left: auto; }
+.reader.full .stage { min-height: 0; height: 100%; border-radius: 22px; }
+.reader.full .pg.on { height: 100%; grid-template-rows: minmax(0, 1fr) auto; }
+.reader.full .frame { aspect-ratio: auto; max-height: none; height: 100%; min-height: 0; }
+.reader.full .txt { padding: clamp(10px, 2.2vh, 26px) clamp(14px, 3vw, 40px); }
+.reader.full .txt .es { font-size: clamp(2.2rem, 7.5vmin, 5.2rem); line-height: 1.18; }
+.reader.full .txt .en { font-size: clamp(1.05rem, 2.6vmin, 1.7rem); }
+.reader.full .pg.vocab.on, .reader.full .pg.badge.on { overflow: auto; height: 100%; }
+.reader.full .controls { padding: 0; justify-content: center; gap: 18px; }
+.reader.full .round { width: 72px; height: 72px; font-size: 1.9rem; }
+.reader.full .round.listen { width: auto; padding: 0 34px; font-size: 1.35rem; }
+.reader.full .dots { flex: 0 1 auto; min-width: 0; }
+/* Wide screens: picture on the left, big words on the right */
+@media (min-aspect-ratio: 5/4) {
+  .reader.full .pg.on:not(.vocab):not(.badge) { grid-template-rows: none; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+  .reader.full .pg.on:not(.vocab):not(.badge) .txt { display: flex; flex-direction: column; justify-content: center; }
+  .reader.full .txt .es { font-size: clamp(2.2rem, 6.4vmin, 5.2rem); }
+}
+@media (max-width: 560px) {
+  .reader-head .big-btn span { display: none; }
+  .reader.full .round { width: 60px; height: 60px; }
+  .reader.full .dots { display: none; }
+}
+
+.txt .es .nb { white-space: nowrap; }
