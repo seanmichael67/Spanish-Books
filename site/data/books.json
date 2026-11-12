@@ -644,7 +644,17 @@
     "say": "se. semilla.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      104,
+      618
+     ],
+     [
+      1582,
+      2457
+     ]
+    ]
    },
    {
     "es": "silla",
@@ -653,7 +663,17 @@
     "say": "si. silla.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      523
+     ],
+     [
+      1486,
+      2278
+     ]
+    ]
    },
    {
     "es": "sopa",
@@ -662,7 +682,17 @@
     "say": "so. sopa.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      104,
+      646
+     ],
+     [
+      1596,
+      2263
+     ]
+    ]
    },
    {
     "es": "sube",
@@ -671,14 +701,46 @@
     "say": "su. sube.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      104,
+      660
+     ],
+     [
+      1624,
+      2305
+     ]
+    ]
    },
    {
     "es": "El sapo sale al sol.",
     "en": "The toad comes out in the sun.",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      703
+     ],
+     [
+      717,
+      1106
+     ],
+     [
+      1119,
+      1258
+     ],
+     [
+      1272,
+      1633
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -741,7 +803,21 @@
     "en": "Syllables with L",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      773
+     ],
+     [
+      786,
+      980
+     ],
+     [
+      994,
+      1355
+     ]
+    ]
    },
    {
     "es": "lápiz",
@@ -750,7 +826,17 @@
     "say": "la. lápiz.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      104,
+      604
+     ],
+     [
+      1567,
+      2317
+     ]
+    ]
    },
    {
     "es": "leche",
@@ -759,7 +845,17 @@
     "say": "le. leche.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      578
+     ],
+     [
+      1542,
+      2209
+     ]
+    ]
    },
    {
     "es": "libro",
@@ -768,7 +864,17 @@
     "say": "li. libro.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      412
+     ],
+     [
+      619,
+      1119
+     ]
+    ]
    },
    {
     "es": "lobo",
@@ -777,7 +883,17 @@
     "say": "lo. lobo.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      103,
+      617
+     ],
+     [
+      1583,
+      2194
+     ]
+    ]
    },
    {
     "es": "luna",
@@ -786,14 +902,42 @@
     "say": "lu. luna.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      356
+     ],
+     [
+      369,
+      883
+     ]
+    ]
    },
    {
     "es": "Lola lee un libro.",
     "en": "Lola reads a book.",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      523
+     ],
+     [
+      536,
+      911
+     ],
+     [
+      925,
+      1106
+     ],
+     [
+      1119,
+      1508
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -856,7 +1000,21 @@
     "en": "Syllables with T",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      814
+     ],
+     [
+      828,
+      1050
+     ],
+     [
+      1064,
+      1328
+     ]
+    ]
    },
    {
     "es": "taza",
@@ -865,7 +1023,17 @@
     "say": "ta. taza.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      523
+     ],
+     [
+      1486,
+      2125
+     ]
+    ]
    },
    {
     "es": "teléfono",
@@ -874,7 +1042,17 @@
     "say": "te. teléfono.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      509
+     ],
+     [
+      1486,
+      2278
+     ]
+    ]
    },
    {
     "es": "tijeras",
@@ -883,7 +1061,17 @@
     "say": "ti. tijeras.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      481
+     ],
+     [
+      1444,
+      2388
+     ]
+    ]
    },
    {
     "es": "tomate",
@@ -892,7 +1080,17 @@
     "say": "to. tomate.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      495
+     ],
+     [
+      1458,
+      2125
+     ]
+    ]
    },
    {
     "es": "tucán",
@@ -901,14 +1099,46 @@
     "say": "tu. tucán.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      453
+     ],
+     [
+      1403,
+      2014
+     ]
+    ]
    },
    {
     "es": "Tomo té en mi taza.",
     "en": "I drink tea in my cup.",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      398
+     ],
+     [
+      411,
+      647
+     ],
+     [
+      661,
+      758
+     ],
+     [
+      772,
+      953
+     ],
+     [
+      967,
+      1439
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -971,7 +1201,21 @@
     "en": "Syllables with N",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      842
+     ],
+     [
+      856,
+      1050
+     ],
+     [
+      1064,
+      1439
+     ]
+    ]
    },
    {
     "es": "naranja",
@@ -1873,7 +2117,29 @@
     "en": "The cat sees a worm.",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      675
+     ],
+     [
+      689,
+      897
+     ],
+     [
+      911,
+      1064
+     ],
+     [
+      1078,
+      1703
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -1936,7 +2202,21 @@
     "en": "Syllables with R",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      814
+     ],
+     [
+      828,
+      1022
+     ],
+     [
+      1036,
+      1397
+     ]
+    ]
    },
    {
     "es": "rana",
@@ -1945,7 +2225,17 @@
     "say": "ra. rana.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      606
+     ],
+     [
+      1569,
+      2277
+     ]
+    ]
    },
    {
     "es": "regalo",
@@ -1954,7 +2244,17 @@
     "say": "re. regalo.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      606
+     ],
+     [
+      1582,
+      2290
+     ]
+    ]
    },
    {
     "es": "río",
@@ -1963,7 +2263,17 @@
     "say": "rí. río.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      103,
+      575
+     ],
+     [
+      1539,
+      2178
+     ]
+    ]
    },
    {
     "es": "rosa",
@@ -1972,7 +2282,17 @@
     "say": "ro. rosa.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      103,
+      534
+     ],
+     [
+      1497,
+      2164
+     ]
+    ]
    },
    {
     "es": "rubí",
@@ -1981,14 +2301,46 @@
     "say": "ru. rubí.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      842
+     ],
+     [
+      1806,
+      2362
+     ]
+    ]
    },
    {
     "es": "La rana salta al río.",
     "en": "The frog jumps into the river.",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      661
+     ],
+     [
+      675,
+      1119
+     ],
+     [
+      1133,
+      1272
+     ],
+     [
+      1286,
+      1675
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -2051,7 +2403,21 @@
     "en": "Syllables with H",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      773
+     ],
+     [
+      786,
+      967
+     ],
+     [
+      981,
+      1425
+     ]
+    ]
    },
    {
     "es": "hamaca",
@@ -2060,7 +2426,17 @@
     "say": "ha. hamaca.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      495
+     ],
+     [
+      1458,
+      2180
+     ]
+    ]
    },
    {
     "es": "helado",
@@ -2069,7 +2445,17 @@
     "say": "he. helado.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      453
+     ],
+     [
+      1417,
+      2125
+     ]
+    ]
    },
    {
     "es": "hilo",
@@ -2078,7 +2464,17 @@
     "say": "hi. hilo.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      634
+     ],
+     [
+      1597,
+      2153
+     ]
+    ]
    },
    {
     "es": "hoja",
@@ -2087,7 +2483,17 @@
     "say": "ho. hoja.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      104,
+      715
+     ],
+     [
+      1679,
+      2248
+     ]
+    ]
    },
    {
     "es": "humo",
@@ -2096,14 +2502,42 @@
     "say": "hu. humo.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      104,
+      451
+     ],
+     [
+      1414,
+      1886
+     ]
+    ]
    },
    {
     "es": "Me gusta el helado.",
     "en": "I like ice cream.",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      828
+     ],
+     [
+      842,
+      953
+     ],
+     [
+      967,
+      1467
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -2166,35 +2600,153 @@
     "en": "The Tortoise and the Rabbit",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      925
+     ],
+     [
+      939,
+      1036
+     ],
+     [
+      1050,
+      1175
+     ],
+     [
+      1189,
+      1772
+     ]
+    ]
    },
    {
     "es": "El conejo corre muy rápido.",
     "en": "The rabbit runs very fast.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      772
+     ],
+     [
+      786,
+      1119
+     ],
+     [
+      1133,
+      1466
+     ],
+     [
+      1481,
+      2037
+     ]
+    ]
    },
    {
     "es": "La tortuga camina muy despacio.",
     "en": "The tortoise walks very slowly.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      828
+     ],
+     [
+      842,
+      1300
+     ],
+     [
+      1314,
+      1578
+     ],
+     [
+      1592,
+      2286
+     ]
+    ]
    },
    {
     "es": "El conejo se duerme bajo un árbol.",
     "en": "The rabbit falls asleep under a tree.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      717
+     ],
+     [
+      731,
+      870
+     ],
+     [
+      883,
+      1258
+     ],
+     [
+      1272,
+      1564
+     ],
+     [
+      1578,
+      1786
+     ],
+     [
+      1800,
+      2244
+     ]
+    ]
    },
    {
     "es": "La tortuga no se detiene.",
     "en": "The tortoise does not stop.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      841
+     ],
+     [
+      856,
+      1092
+     ],
+     [
+      1106,
+      1273
+     ],
+     [
+      1286,
+      1869
+     ]
+    ]
    },
    {
     "es": "La tortuga llega primero.",
@@ -6852,21 +7404,67 @@
     "en": "The smoothie is pink.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.67
+    "ratio": 1.67,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      772
+     ],
+     [
+      786,
+      980
+     ],
+     [
+      994,
+      1466
+     ]
+    ]
    },
    {
     "es": "El chocolate es caliente.",
     "en": "The chocolate is hot.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      939
+     ],
+     [
+      953,
+      1120
+     ],
+     [
+      1133,
+      1772
+     ]
+    ]
    },
    {
     "es": "¡Las bebidas!",
     "en": "Drinks!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      384
+     ],
+     [
+      397,
+      1161
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -6929,49 +7527,159 @@
     "en": "Desserts",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.67
+    "ratio": 1.67,
+    "timing": [
+     [
+      106,
+      425
+     ],
+     [
+      439,
+      1272
+     ]
+    ]
    },
    {
     "es": "El pastel es dulce.",
     "en": "The cake is sweet.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      786
+     ],
+     [
+      800,
+      967
+     ],
+     [
+      981,
+      1439
+     ]
+    ]
    },
    {
     "es": "El helado es frío.",
     "en": "The ice cream is cold.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      758
+     ],
+     [
+      772,
+      980
+     ],
+     [
+      994,
+      1438
+     ]
+    ]
    },
    {
     "es": "La galleta es redonda.",
     "en": "The cookie is round.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      911
+     ],
+     [
+      925,
+      1078
+     ],
+     [
+      1092,
+      1634
+     ]
+    ]
    },
    {
     "es": "La gelatina es roja.",
     "en": "The jello is red.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      939
+     ],
+     [
+      953,
+      1106
+     ],
+     [
+      1119,
+      1563
+     ]
+    ]
    },
    {
     "es": "El chocolate es rico.",
     "en": "Chocolate is yummy.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      953
+     ],
+     [
+      967,
+      1134
+     ],
+     [
+      1147,
+      1536
+     ]
+    ]
    },
    {
     "es": "¡Los postres!",
     "en": "Desserts!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.42
+    "ratio": 1.42,
+    "timing": [
+     [
+      106,
+      384
+     ],
+     [
+      397,
+      1161
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -7034,49 +7742,167 @@
     "en": "In the Kitchen",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      425
+     ],
+     [
+      439,
+      1106
+     ]
+    ]
    },
    {
     "es": "La cuchara es grande.",
     "en": "The spoon is big.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.61
+    "ratio": 1.61,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      869
+     ],
+     [
+      883,
+      1036
+     ],
+     [
+      1050,
+      1550
+     ]
+    ]
    },
    {
     "es": "El plato es redondo.",
     "en": "The plate is round.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      717
+     ],
+     [
+      731,
+      939
+     ],
+     [
+      953,
+      1495
+     ]
+    ]
    },
    {
     "es": "La olla es caliente.",
     "en": "The pot is hot.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      398
+     ],
+     [
+      411,
+      842
+     ],
+     [
+      856,
+      1009
+     ],
+     [
+      1022,
+      1689
+     ]
+    ]
    },
    {
     "es": "El tenedor tiene puntas.",
     "en": "The fork has points.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      870
+     ],
+     [
+      883,
+      1202
+     ],
+     [
+      1217,
+      1870
+     ]
+    ]
    },
    {
     "es": "El vaso tiene agua.",
     "en": "The glass has water.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      675
+     ],
+     [
+      689,
+      1092
+     ],
+     [
+      1106,
+      1537
+     ]
+    ]
    },
    {
     "es": "¡En la cocina!",
     "en": "In the kitchen!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.56
+    "ratio": 1.56,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      383
+     ],
+     [
+      397,
+      1036
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -7139,21 +7965,67 @@
     "en": "Snack Time",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      1022
+     ]
+    ]
    },
    {
     "es": "Las palomitas son saladas.",
     "en": "The popcorn is salty.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.28
+    "ratio": 1.28,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      981
+     ],
+     [
+      994,
+      1216
+     ],
+     [
+      1231,
+      2009
+     ]
+    ]
    },
    {
     "es": "La manzana es roja.",
     "en": "The apple is red.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      897
+     ],
+     [
+      911,
+      1064
+     ],
+     [
+      1078,
+      1522
+     ]
+    ]
    },
    {
     "es": "El queso es amarillo.",
@@ -8197,42 +9069,138 @@
     "en": "The cricket sings.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.9
+    "ratio": 1.9,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      772
+     ],
+     [
+      786,
+      1355
+     ]
+    ]
    },
    {
     "es": "El grillo salta.",
     "en": "The cricket jumps.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      745
+     ],
+     [
+      758,
+      1369
+     ]
+    ]
    },
    {
     "es": "El grillo es verde.",
     "en": "The cricket is green.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      772
+     ],
+     [
+      786,
+      967
+     ],
+     [
+      981,
+      1412
+     ]
+    ]
    },
    {
     "es": "El grillo tiene antenas.",
     "en": "The cricket has antennae.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      717
+     ],
+     [
+      731,
+      1050
+     ],
+     [
+      1064,
+      1842
+     ]
+    ]
    },
    {
     "es": "El grillo canta de noche.",
     "en": "The cricket sings at night.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.74
+    "ratio": 1.74,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      731
+     ],
+     [
+      744,
+      1133
+     ],
+     [
+      1147,
+      1258
+     ],
+     [
+      1272,
+      1786
+     ]
+    ]
    },
    {
     "es": "¡El grillo!",
     "en": "The cricket!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      898
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -8295,49 +9263,171 @@
     "en": "The Dragonfly",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.79
+    "ratio": 1.79,
+    "timing": [
+     [
+      104,
+      298
+     ],
+     [
+      312,
+      1118
+     ]
+    ]
    },
    {
     "es": "La libélula vuela rápido.",
     "en": "The dragonfly flies fast.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      925
+     ],
+     [
+      939,
+      1328
+     ],
+     [
+      1342,
+      1953
+     ]
+    ]
    },
    {
     "es": "La libélula tiene cuatro alas.",
     "en": "The dragonfly has four wings.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.45
+    "ratio": 1.45,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      855
+     ],
+     [
+      869,
+      1216
+     ],
+     [
+      1231,
+      1703
+     ],
+     [
+      1717,
+      2300
+     ]
+    ]
    },
    {
     "es": "La libélula brilla.",
     "en": "The dragonfly shines.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.79
+    "ratio": 1.79,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      953
+     ],
+     [
+      967,
+      1536
+     ]
+    ]
    },
    {
     "es": "La libélula vive cerca del agua.",
     "en": "The dragonfly lives near water.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.6
+    "ratio": 1.6,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      855
+     ],
+     [
+      869,
+      1175
+     ],
+     [
+      1189,
+      1633
+     ],
+     [
+      1647,
+      1828
+     ],
+     [
+      1842,
+      2217
+     ]
+    ]
    },
    {
     "es": "La libélula tiene ojos grandes.",
     "en": "The dragonfly has big eyes.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.61
+    "ratio": 1.61,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      855
+     ],
+     [
+      869,
+      1272
+     ],
+     [
+      1286,
+      1689
+     ],
+     [
+      1703,
+      2370
+     ]
+    ]
    },
    {
     "es": "¡La libélula!",
     "en": "The dragonfly!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      1050
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -8400,49 +9490,175 @@
     "en": "The Caterpillar",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.64
+    "ratio": 1.64,
+    "timing": [
+     [
+      104,
+      354
+     ],
+     [
+      368,
+      937
+     ]
+    ]
    },
    {
     "es": "La oruga come hojas.",
     "en": "The caterpillar eats leaves.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      356
+     ],
+     [
+      369,
+      772
+     ],
+     [
+      786,
+      1119
+     ],
+     [
+      1133,
+      1744
+     ]
+    ]
    },
    {
     "es": "La oruga es larga.",
     "en": "The caterpillar is long.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 2.26
+    "ratio": 2.26,
+    "timing": [
+     [
+      106,
+      342
+     ],
+     [
+      356,
+      870
+     ],
+     [
+      883,
+      1050
+     ],
+     [
+      1064,
+      1592
+     ]
+    ]
    },
    {
     "es": "La oruga tiene muchas patas.",
     "en": "The caterpillar has many legs.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      717
+     ],
+     [
+      731,
+      1050
+     ],
+     [
+      1064,
+      1508
+     ],
+     [
+      1522,
+      2133
+     ]
+    ]
    },
    {
     "es": "La oruga hace un capullo.",
     "en": "The caterpillar makes a cocoon.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      842
+     ],
+     [
+      856,
+      1106
+     ],
+     [
+      1119,
+      1216
+     ],
+     [
+      1231,
+      1814
+     ]
+    ]
    },
    {
     "es": "La oruga se convierte en mariposa.",
     "en": "The caterpillar becomes a butterfly.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      703
+     ],
+     [
+      717,
+      870
+     ],
+     [
+      883,
+      1550
+     ],
+     [
+      1564,
+      1661
+     ],
+     [
+      1675,
+      2425
+     ]
+    ]
    },
    {
     "es": "¡La oruga!",
     "en": "The caterpillar!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.82
+    "ratio": 1.82,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      939
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -12928,7 +14144,17 @@
     "en": "The lake!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 2.15
+    "ratio": 2.15,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      758
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -12991,49 +14217,183 @@
     "en": "The Rain",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      911
+     ]
+    ]
    },
    {
     "es": "La lluvia cae del cielo.",
     "en": "Rain falls from the sky.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      745
+     ],
+     [
+      758,
+      1147
+     ],
+     [
+      1161,
+      1355
+     ],
+     [
+      1369,
+      1813
+     ]
+    ]
    },
    {
     "es": "La lluvia moja todo.",
     "en": "Rain wets everything.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.61
+    "ratio": 1.61,
+    "timing": [
+     [
+      106,
+      342
+     ],
+     [
+      356,
+      731
+     ],
+     [
+      744,
+      1161
+     ],
+     [
+      1175,
+      1592
+     ]
+    ]
    },
    {
     "es": "La lluvia viene de las nubes.",
     "en": "Rain comes from clouds.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      731
+     ],
+     [
+      744,
+      1147
+     ],
+     [
+      1161,
+      1272
+     ],
+     [
+      1286,
+      1480
+     ],
+     [
+      1494,
+      2077
+     ]
+    ]
    },
    {
     "es": "Uso paraguas en la lluvia.",
     "en": "I use an umbrella in the rain.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.79
+    "ratio": 1.79,
+    "timing": [
+     [
+      106,
+      384
+     ],
+     [
+      397,
+      980
+     ],
+     [
+      994,
+      1091
+     ],
+     [
+      1106,
+      1203
+     ],
+     [
+      1217,
+      1675
+     ]
+    ]
    },
    {
     "es": "La lluvia ayuda a las plantas.",
     "en": "Rain helps plants.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 2.56
+    "ratio": 2.56,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      745
+     ],
+     [
+      758,
+      1314
+     ],
+     [
+      1328,
+      1356
+     ],
+     [
+      1369,
+      1605
+     ],
+     [
+      1619,
+      2300
+     ]
+    ]
    },
    {
     "es": "¡La lluvia!",
     "en": "The rain!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      897
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -13096,49 +14456,171 @@
     "en": "The Ice",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      342
+     ],
+     [
+      356,
+      925
+     ]
+    ]
    },
    {
     "es": "El hielo es frío.",
     "en": "Ice is cold.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      342
+     ],
+     [
+      356,
+      731
+     ],
+     [
+      744,
+      925
+     ],
+     [
+      939,
+      1370
+     ]
+    ]
    },
    {
     "es": "El hielo es duro.",
     "en": "Ice is hard.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.52
+    "ratio": 1.52,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      773
+     ],
+     [
+      786,
+      1008
+     ],
+     [
+      1022,
+      1369
+     ]
+    ]
    },
    {
     "es": "El hielo es agua congelada.",
     "en": "Ice is frozen water.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      703
+     ],
+     [
+      717,
+      953
+     ],
+     [
+      967,
+      1231
+     ],
+     [
+      1244,
+      1980
+     ]
+    ]
    },
    {
     "es": "El hielo se derrite.",
     "en": "Ice melts.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      661
+     ],
+     [
+      675,
+      842
+     ],
+     [
+      856,
+      1453
+     ]
+    ]
    },
    {
     "es": "El hielo flota en el agua.",
     "en": "Ice floats in water.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      606
+     ],
+     [
+      619,
+      1091
+     ],
+     [
+      1106,
+      1203
+     ],
+     [
+      1217,
+      1370
+     ],
+     [
+      1383,
+      1772
+     ]
+    ]
    },
    {
     "es": "¡El hielo!",
     "en": "The ice!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.79
+    "ratio": 1.79,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      786
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -13201,35 +14683,121 @@
     "en": "The Snow",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.63
+    "ratio": 1.63,
+    "timing": [
+     [
+      103,
+      284
+     ],
+     [
+      297,
+      853
+     ]
+    ]
    },
    {
     "es": "La nieve es blanca.",
     "en": "Snow is white.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 2.02
+    "ratio": 2.02,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      828
+     ],
+     [
+      842,
+      981
+     ],
+     [
+      994,
+      1508
+     ]
+    ]
    },
    {
     "es": "La nieve es suave.",
     "en": "Snow is soft.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      856
+     ],
+     [
+      869,
+      994
+     ],
+     [
+      1008,
+      1494
+     ]
+    ]
    },
    {
     "es": "La nieve es fría.",
     "en": "Snow is cold.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      856
+     ],
+     [
+      869,
+      1022
+     ],
+     [
+      1036,
+      1453
+     ]
+    ]
    },
    {
     "es": "Los copos de nieve caen.",
     "en": "Snowflakes fall.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      370
+     ],
+     [
+      383,
+      814
+     ],
+     [
+      828,
+      939
+     ],
+     [
+      953,
+      1356
+     ],
+     [
+      1369,
+      1869
+     ]
+    ]
    },
    {
     "es": "Puedo hacer un muñeco de nieve.",
@@ -17699,21 +19267,71 @@
     "en": "Dad protects me.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      467
+     ],
+     [
+      481,
+      620
+     ],
+     [
+      633,
+      1314
+     ]
+    ]
    },
    {
     "es": "Papá me hace reír.",
     "en": "Dad makes me laugh.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      481
+     ],
+     [
+      494,
+      688
+     ],
+     [
+      703,
+      981
+     ],
+     [
+      994,
+      1508
+     ]
+    ]
    },
    {
     "es": "¡Amo a mi papá!",
     "en": "I love my dad!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      412
+     ],
+     [
+      425,
+      481
+     ],
+     [
+      494,
+      633
+     ],
+     [
+      647,
+      1091
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -17776,49 +19394,167 @@
     "en": "Sister",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      104,
+      340
+     ],
+     [
+      354,
+      1048
+     ]
+    ]
    },
    {
     "es": "Mi hermana juega conmigo.",
     "en": "My sister plays with me.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      758
+     ],
+     [
+      772,
+      1147
+     ],
+     [
+      1161,
+      1786
+     ]
+    ]
    },
    {
     "es": "Mi hermana comparte.",
     "en": "My sister shares.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      814
+     ],
+     [
+      828,
+      1536
+     ]
+    ]
    },
    {
     "es": "Mi hermana me ayuda.",
     "en": "My sister helps me.",
     "image": "page-03.webp",
     "audio": "page-03-fix.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      772
+     ],
+     [
+      786,
+      883
+     ],
+     [
+      897,
+      1383
+     ]
+    ]
    },
    {
     "es": "Mi hermana es divertida.",
     "en": "My sister is fun.",
     "image": "page-04.webp",
     "audio": "page-04-fix.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      870
+     ],
+     [
+      883,
+      1008
+     ],
+     [
+      1022,
+      1703
+     ]
+    ]
    },
    {
     "es": "Mi hermana es mi amiga.",
     "en": "My sister is my friend.",
     "image": "page-05.webp",
     "audio": "page-05-fix.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      870
+     ],
+     [
+      883,
+      1022
+     ],
+     [
+      1036,
+      1147
+     ],
+     [
+      1161,
+      1661
+     ]
+    ]
    },
    {
     "es": "¡Quiero a mi hermana!",
     "en": "I love my sister!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      398
+     ],
+     [
+      411,
+      453
+     ],
+     [
+      467,
+      606
+     ],
+     [
+      619,
+      1175
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -17881,49 +19617,167 @@
     "en": "Brother",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      939
+     ]
+    ]
    },
    {
     "es": "Mi hermano juega conmigo.",
     "en": "My brother plays with me.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      772
+     ],
+     [
+      786,
+      1161
+     ],
+     [
+      1175,
+      1814
+     ]
+    ]
    },
    {
     "es": "Mi hermano corre rápido.",
     "en": "My brother runs fast.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      800
+     ],
+     [
+      814,
+      1161
+     ],
+     [
+      1175,
+      1772
+     ]
+    ]
    },
    {
     "es": "Mi hermano es valiente.",
     "en": "My brother is brave.",
     "image": "page-03.webp",
     "audio": "page-03-fix.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      856
+     ],
+     [
+      869,
+      1036
+     ],
+     [
+      1050,
+      1689
+     ]
+    ]
    },
    {
     "es": "Mi hermano construye.",
     "en": "My brother builds.",
     "image": "page-04.webp",
     "audio": "page-04-fix.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      800
+     ],
+     [
+      814,
+      1592
+     ]
+    ]
    },
    {
     "es": "Mi hermano es mi amigo.",
     "en": "My brother is my friend.",
     "image": "page-05.webp",
     "audio": "page-05-fix.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      814
+     ],
+     [
+      828,
+      995
+     ],
+     [
+      1008,
+      1119
+     ],
+     [
+      1133,
+      1619
+     ]
+    ]
    },
    {
     "es": "¡Quiero a mi hermano!",
     "en": "I love my brother!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      384
+     ],
+     [
+      397,
+      439
+     ],
+     [
+      453,
+      592
+     ],
+     [
+      606,
+      1162
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -17986,21 +19840,63 @@
     "en": "Grandmother",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      384
+     ],
+     [
+      397,
+      980
+     ]
+    ]
    },
    {
     "es": "Mi abuela es sabia.",
     "en": "My grandmother is wise.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      786
+     ],
+     [
+      800,
+      911
+     ],
+     [
+      925,
+      1411
+     ]
+    ]
    },
    {
     "es": "Abuela cuenta historias.",
     "en": "Grandmother tells stories.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      634
+     ],
+     [
+      647,
+      1050
+     ],
+     [
+      1064,
+      1897
+     ]
+    ]
    },
    {
     "es": "Abuela cocina galletas.",
@@ -20513,14 +22409,42 @@
     "en": "The sun hides.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      620
+     ],
+     [
+      633,
+      758
+     ],
+     [
+      772,
+      1341
+     ]
+    ]
    },
    {
     "es": "¡Gracias, sol!",
     "en": "Thank you, sun!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      842
+     ],
+     [
+      1092,
+      1481
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -20583,49 +22507,171 @@
     "en": "The Moon",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.67
+    "ratio": 1.67,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      842
+     ]
+    ]
    },
    {
     "es": "La luna es redonda.",
     "en": "The moon is round.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      814
+     ],
+     [
+      828,
+      981
+     ],
+     [
+      994,
+      1536
+     ]
+    ]
    },
    {
     "es": "La luna brilla de noche.",
     "en": "The moon shines at night.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.75
+    "ratio": 1.75,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      675
+     ],
+     [
+      689,
+      1078
+     ],
+     [
+      1092,
+      1203
+     ],
+     [
+      1217,
+      1731
+     ]
+    ]
    },
    {
     "es": "La luna es blanca.",
     "en": "The moon is white.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      759
+     ],
+     [
+      772,
+      911
+     ],
+     [
+      925,
+      1453
+     ]
+    ]
    },
    {
     "es": "Los animales ven la luna.",
     "en": "The animals see the moon.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      953
+     ],
+     [
+      967,
+      1203
+     ],
+     [
+      1217,
+      1314
+     ],
+     [
+      1328,
+      1731
+     ]
+    ]
    },
    {
     "es": "La luna nos cuida.",
     "en": "The moon watches over us.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.49
+    "ratio": 1.49,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      703
+     ],
+     [
+      717,
+      967
+     ],
+     [
+      981,
+      1425
+     ]
+    ]
    },
    {
     "es": "¡Buenas noches, luna!",
     "en": "Good night, moon!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      509
+     ],
+     [
+      522,
+      1091
+     ],
+     [
+      1314,
+      1689
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -20688,49 +22734,155 @@
     "en": "The Stars",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.34
+    "ratio": 1.34,
+    "timing": [
+     [
+      104,
+      354
+     ],
+     [
+      368,
+      1368
+     ]
+    ]
    },
    {
     "es": "Las estrellas brillan.",
     "en": "The stars shine.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 2.4
+    "ratio": 2.4,
+    "timing": [
+     [
+      106,
+      356
+     ],
+     [
+      369,
+      1008
+     ],
+     [
+      1022,
+      1536
+     ]
+    ]
    },
    {
     "es": "Las estrellas son muchas.",
     "en": "There are many stars.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      925
+     ],
+     [
+      939,
+      1147
+     ],
+     [
+      1161,
+      1814
+     ]
+    ]
    },
    {
     "es": "Una estrella fugaz.",
     "en": "A shooting star.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 2
+    "ratio": 2,
+    "timing": [
+     [
+      106,
+      342
+     ],
+     [
+      356,
+      870
+     ],
+     [
+      883,
+      1536
+     ]
+    ]
    },
    {
     "es": "Las estrellas hacen formas.",
     "en": "Stars make shapes.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.61
+    "ratio": 1.61,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      1009
+     ],
+     [
+      1022,
+      1341
+     ],
+     [
+      1356,
+      2037
+     ]
+    ]
    },
    {
     "es": "Yo cuento estrellas.",
     "en": "I count stars.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 3.2
+    "ratio": 3.2,
+    "timing": [
+     [
+      106,
+      384
+     ],
+     [
+      397,
+      744
+     ],
+     [
+      758,
+      1591
+     ]
+    ]
    },
    {
     "es": "¡Me gustan las estrellas!",
     "en": "I like the stars!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.53
+    "ratio": 1.53,
+    "timing": [
+     [
+      106,
+      245
+     ],
+     [
+      258,
+      661
+     ],
+     [
+      675,
+      842
+     ],
+     [
+      856,
+      1620
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -20793,28 +22945,96 @@
     "en": "The Mountain",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.67
+    "ratio": 1.67,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      1078
+     ]
+    ]
    },
    {
     "es": "La montaña es alta.",
     "en": "The mountain is tall.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 2.01
+    "ratio": 2.01,
+    "timing": [
+     [
+      106,
+      245
+     ],
+     [
+      258,
+      952
+     ],
+     [
+      967,
+      1161
+     ],
+     [
+      1175,
+      1619
+     ]
+    ]
    },
    {
     "es": "La montaña tiene nieve.",
     "en": "The mountain has snow.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.47
+    "ratio": 1.47,
+    "timing": [
+     [
+      106,
+      245
+     ],
+     [
+      258,
+      883
+     ],
+     [
+      897,
+      1286
+     ],
+     [
+      1300,
+      1744
+     ]
+    ]
    },
    {
     "es": "Hay árboles en la montaña.",
     "en": "There are trees on the mountain.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      356
+     ],
+     [
+      369,
+      911
+     ],
+     [
+      925,
+      1008
+     ],
+     [
+      1022,
+      1105
+     ],
+     [
+      1119,
+      1744
+     ]
+    ]
    },
    {
     "es": "Los animales viven aquí.",
@@ -25064,28 +27284,84 @@
     "en": "I count my toys.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 2.01
+    "ratio": 2.01,
+    "timing": [
+     [
+      106,
+      467
+     ],
+     [
+      481,
+      689
+     ],
+     [
+      703,
+      1495
+     ]
+    ]
    },
    {
     "es": "Cuento las estrellas.",
     "en": "I count the stars.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.67
+    "ratio": 1.67,
+    "timing": [
+     [
+      106,
+      495
+     ],
+     [
+      508,
+      716
+     ],
+     [
+      731,
+      1620
+     ]
+    ]
    },
    {
     "es": "Cuento los dedos.",
     "en": "I count my fingers.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      523
+     ],
+     [
+      536,
+      758
+     ],
+     [
+      772,
+      1369
+     ]
+    ]
    },
    {
     "es": "¡Yo sé contar!",
     "en": "I know how to count!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      467
+     ],
+     [
+      481,
+      1037
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -25148,49 +27424,171 @@
     "en": "The Guitar",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      104,
+      243
+     ],
+     [
+      257,
+      979
+     ]
+    ]
    },
    {
     "es": "La guitarra tiene cuerdas.",
     "en": "The guitar has strings.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 2.02
+    "ratio": 2.02,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      855
+     ],
+     [
+      869,
+      1244
+     ],
+     [
+      1258,
+      1966
+     ]
+    ]
    },
    {
     "es": "Yo toco la guitarra.",
     "en": "I play the guitar.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.52
+    "ratio": 1.52,
+    "timing": [
+     [
+      106,
+      398
+     ],
+     [
+      411,
+      758
+     ],
+     [
+      772,
+      883
+     ],
+     [
+      897,
+      1550
+     ]
+    ]
    },
    {
     "es": "La guitarra suena bonito.",
     "en": "The guitar sounds pretty.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.67
+    "ratio": 1.67,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      814
+     ],
+     [
+      828,
+      1217
+     ],
+     [
+      1231,
+      1745
+     ]
+    ]
    },
    {
     "es": "Canto con la guitarra.",
     "en": "I sing with the guitar.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      481
+     ],
+     [
+      494,
+      675
+     ],
+     [
+      689,
+      758
+     ],
+     [
+      772,
+      1425
+     ]
+    ]
    },
    {
     "es": "La guitarra es de madera.",
     "en": "The guitar is made of wood.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      953
+     ],
+     [
+      967,
+      1134
+     ],
+     [
+      1147,
+      1230
+     ],
+     [
+      1244,
+      1758
+     ]
+    ]
    },
    {
     "es": "¡Me encanta la guitarra!",
     "en": "I love the guitar!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      245
+     ],
+     [
+      258,
+      744
+     ],
+     [
+      758,
+      855
+     ],
+     [
+      869,
+      1480
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -25253,49 +27651,163 @@
     "en": "The Drum",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.75
+    "ratio": 1.75,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      953
+     ]
+    ]
    },
    {
     "es": "El tambor hace ruido.",
     "en": "The drum makes noise.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      342
+     ],
+     [
+      356,
+      773
+     ],
+     [
+      786,
+      1036
+     ],
+     [
+      1050,
+      1508
+     ]
+    ]
    },
    {
     "es": "Yo golpeo el tambor.",
     "en": "I hit the drum.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.68
+    "ratio": 1.68,
+    "timing": [
+     [
+      106,
+      370
+     ],
+     [
+      383,
+      925
+     ],
+     [
+      939,
+      1064
+     ],
+     [
+      1078,
+      1606
+     ]
+    ]
    },
    {
     "es": "Pum, pum, pum.",
     "en": "Boom, boom, boom.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.78
+    "ratio": 1.78,
+    "timing": [
+     [
+      106,
+      523
+     ],
+     [
+      786,
+      1161
+     ],
+     [
+      1425,
+      1800
+     ]
+    ]
    },
    {
     "es": "El tambor tiene ritmo.",
     "en": "The drum has rhythm.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 2
+    "ratio": 2,
+    "timing": [
+     [
+      106,
+      342
+     ],
+     [
+      356,
+      828
+     ],
+     [
+      842,
+      1134
+     ],
+     [
+      1147,
+      1591
+     ]
+    ]
    },
    {
     "es": "El tambor es redondo.",
     "en": "The drum is round.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.5
+    "ratio": 1.5,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      786
+     ],
+     [
+      800,
+      953
+     ],
+     [
+      967,
+      1467
+     ]
+    ]
    },
    {
     "es": "¡Me gusta el tambor!",
     "en": "I like the drum!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.17
+    "ratio": 1.17,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      619
+     ],
+     [
+      633,
+      744
+     ],
+     [
+      758,
+      1272
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -25358,14 +27870,38 @@
     "en": "Singing",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      828
+     ]
+    ]
    },
    {
     "es": "Yo canto una canción.",
     "en": "I sing a song.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      384
+     ],
+     [
+      397,
+      828
+     ],
+     [
+      842,
+      1120
+     ],
+     [
+      1133,
+      1730
+     ]
+    ]
    },
    {
     "es": "Cantamos juntos.",
@@ -27949,28 +30485,76 @@
     "en": "We sing songs.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      717
+     ],
+     [
+      731,
+      1606
+     ]
+    ]
    },
    {
     "es": "Escuchamos historias.",
     "en": "We listen to stories.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      898
+     ],
+     [
+      911,
+      1744
+     ]
+    ]
    },
    {
     "es": "Somos amables.",
     "en": "We are kind.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      606
+     ],
+     [
+      619,
+      1327
+     ]
+    ]
    },
    {
     "es": "¡Me gusta mi iglesia!",
     "en": "I like my church!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      647
+     ],
+     [
+      661,
+      828
+     ],
+     [
+      842,
+      1411
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -28033,49 +30617,175 @@
     "en": "My City",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      883
+     ]
+    ]
    },
    {
     "es": "La ciudad tiene edificios.",
     "en": "The city has buildings.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      758
+     ],
+     [
+      772,
+      1105
+     ],
+     [
+      1119,
+      1966
+     ]
+    ]
    },
    {
     "es": "Hay carros y autobuses.",
     "en": "There are cars and buses.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      800
+     ],
+     [
+      814,
+      856
+     ],
+     [
+      869,
+      1744
+     ]
+    ]
    },
    {
     "es": "La gente camina.",
     "en": "People walk.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      745
+     ],
+     [
+      758,
+      1327
+     ]
+    ]
    },
    {
     "es": "Hay un parque en la ciudad.",
     "en": "There is a park in the city.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      370
+     ],
+     [
+      383,
+      536
+     ],
+     [
+      550,
+      925
+     ],
+     [
+      939,
+      1022
+     ],
+     [
+      1036,
+      1119
+     ],
+     [
+      1133,
+      1661
+     ]
+    ]
    },
    {
     "es": "Las luces brillan de noche.",
     "en": "The lights shine at night.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      342
+     ],
+     [
+      356,
+      787
+     ],
+     [
+      800,
+      1231
+     ],
+     [
+      1244,
+      1327
+     ],
+     [
+      1342,
+      1814
+     ]
+    ]
    },
    {
     "es": "¡Mi ciudad es hermosa!",
     "en": "My city is beautiful!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      703
+     ],
+     [
+      717,
+      828
+     ],
+     [
+      842,
+      1467
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -28138,49 +30848,163 @@
     "en": "The Car",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      856
+     ]
+    ]
    },
    {
     "es": "El carro tiene ruedas.",
     "en": "The car has wheels.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      675
+     ],
+     [
+      689,
+      1050
+     ],
+     [
+      1064,
+      1717
+     ]
+    ]
    },
    {
     "es": "El carro es rápido.",
     "en": "The car is fast.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      328
+     ],
+     [
+      342,
+      759
+     ],
+     [
+      772,
+      994
+     ],
+     [
+      1008,
+      1550
+     ]
+    ]
    },
    {
     "es": "Papá maneja el carro.",
     "en": "Dad drives the car.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      467
+     ],
+     [
+      481,
+      1009
+     ],
+     [
+      1022,
+      1147
+     ],
+     [
+      1161,
+      1592
+     ]
+    ]
    },
    {
     "es": "Vamos de paseo.",
     "en": "We go for a ride.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      550
+     ],
+     [
+      564,
+      661
+     ],
+     [
+      675,
+      1258
+     ]
+    ]
    },
    {
     "es": "El carro tiene luces.",
     "en": "The car has lights.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      675
+     ],
+     [
+      689,
+      1050
+     ],
+     [
+      1064,
+      1703
+     ]
+    ]
    },
    {
     "es": "¡Me gusta el carro!",
     "en": "I like the car!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      245
+     ],
+     [
+      258,
+      619
+     ],
+     [
+      633,
+      744
+     ],
+     [
+      758,
+      1230
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -28243,21 +31067,67 @@
     "en": "The Bus",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      1133
+     ]
+    ]
    },
    {
     "es": "El autobús es grande.",
     "en": "The bus is big.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      897
+     ],
+     [
+      911,
+      1064
+     ],
+     [
+      1078,
+      1550
+     ]
+    ]
    },
    {
     "es": "El autobús tiene asientos.",
     "en": "The bus has seats.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      911
+     ],
+     [
+      925,
+      1217
+     ],
+     [
+      1231,
+      1995
+     ]
+    ]
    },
    {
     "es": "Los niños suben al autobús.",
@@ -28755,21 +31625,87 @@
     "en": "Choo choo! says the train.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      564
+     ],
+     [
+      578,
+      1050
+     ],
+     [
+      1300,
+      1731
+     ],
+     [
+      1744,
+      1883
+     ],
+     [
+      1897,
+      2258
+     ]
+    ]
    },
    {
     "es": "El tren llega a la estación.",
     "en": "The train arrives at the station.",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      342
+     ],
+     [
+      356,
+      703
+     ],
+     [
+      717,
+      1161
+     ],
+     [
+      1175,
+      1203
+     ],
+     [
+      1217,
+      1300
+     ],
+     [
+      1314,
+      1925
+     ]
+    ]
    },
    {
     "es": "¡Me gusta el tren!",
     "en": "I like the train!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      633
+     ],
+     [
+      647,
+      758
+     ],
+     [
+      772,
+      1161
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -28832,14 +31768,42 @@
     "en": "The Bicycle",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      245
+     ],
+     [
+      258,
+      1133
+     ]
+    ]
    },
    {
     "es": "La bicicleta tiene pedales.",
     "en": "The bicycle has pedals.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      245
+     ],
+     [
+      258,
+      966
+     ],
+     [
+      981,
+      1356
+     ],
+     [
+      1369,
+      2133
+     ]
+    ]
    },
    {
     "es": "Me pongo el casco.",
@@ -29371,14 +32335,50 @@
     "en": "Three, two, one... liftoff!",
     "image": "page-05.webp",
     "audio": "page-05.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      620
+     ],
+     [
+      842,
+      1259
+     ],
+     [
+      1522,
+      1814
+     ],
+     [
+      2036,
+      2717
+     ]
+    ]
    },
    {
     "es": "¡Me gusta el cohete!",
     "en": "I like the rocket!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      633
+     ],
+     [
+      647,
+      744
+     ],
+     [
+      758,
+      1327
+     ]
+    ]
    }
   ],
   "vocab": [
@@ -29441,14 +32441,38 @@
     "en": "The Helicopter",
     "image": "page-00.webp",
     "audio": "page-00.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      1161
+     ]
+    ]
    },
    {
     "es": "El helicóptero vuela.",
     "en": "The helicopter flies.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      1008
+     ],
+     [
+      1022,
+      1494
+     ]
+    ]
    },
    {
     "es": "Tiene una hélice grande.",
@@ -30270,28 +33294,96 @@
     "en": "The snow falls.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      439
+     ],
+     [
+      453,
+      606
+     ],
+     [
+      619,
+      1091
+     ]
+    ]
    },
    {
     "es": "Hace mucho frío.",
     "en": "It is very cold.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      412
+     ],
+     [
+      425,
+      814
+     ],
+     [
+      828,
+      1272
+     ]
+    ]
    },
    {
     "es": "Hago un muñeco de nieve.",
     "en": "I make a snowman.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      425
+     ],
+     [
+      439,
+      606
+     ],
+     [
+      619,
+      1175
+     ],
+     [
+      1189,
+      1300
+     ],
+     [
+      1314,
+      1745
+     ]
+    ]
    },
    {
     "es": "Jugamos con la nieve.",
     "en": "We play with the snow.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      675
+     ],
+     [
+      689,
+      870
+     ],
+     [
+      883,
+      966
+     ],
+     [
+      981,
+      1439
+     ]
+    ]
    },
    {
     "es": "Tomo chocolate caliente.",
@@ -30839,28 +33931,96 @@
     "en": "The wind blows.",
     "image": "page-01.webp",
     "audio": "page-01.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      759
+     ],
+     [
+      772,
+      1355
+     ]
+    ]
    },
    {
     "es": "El viento mueve las hojas.",
     "en": "The wind moves the leaves.",
     "image": "page-02.webp",
     "audio": "page-02.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      703
+     ],
+     [
+      717,
+      1092
+     ],
+     [
+      1106,
+      1370
+     ],
+     [
+      1383,
+      1952
+     ]
+    ]
    },
    {
     "es": "Vuelo mi cometa.",
     "en": "I fly my kite.",
     "image": "page-03.webp",
     "audio": "page-03.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      509
+     ],
+     [
+      522,
+      661
+     ],
+     [
+      675,
+      1272
+     ]
+    ]
    },
    {
     "es": "El viento es fresco.",
     "en": "The wind is cool.",
     "image": "page-04.webp",
     "audio": "page-04.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      759
+     ],
+     [
+      772,
+      953
+     ],
+     [
+      967,
+      1509
+     ]
+    ]
    },
    {
     "es": "El viento hace sonidos.",
@@ -30892,7 +34052,25 @@
     "en": "I like the wind!",
     "image": "page-06.webp",
     "audio": "page-06.mp3",
-    "ratio": 1.51
+    "ratio": 1.51,
+    "timing": [
+     [
+      106,
+      259
+     ],
+     [
+      272,
+      633
+     ],
+     [
+      647,
+      730
+     ],
+     [
+      744,
+      1216
+     ]
+    ]
    }
   ],
   "vocab": [

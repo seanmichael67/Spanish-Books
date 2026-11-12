@@ -84,7 +84,7 @@
       for (var n = 0; n < pg.times.length; n++) if (t >= pg.times[n][0] - 40) index = n;
       if (t > last + 120) index = -1;
       lightWord(pg, index);
-      if (en) en.classList.toggle('now', t > last + 300);
+      if (en) en.classList.toggle('now', t > last + 1400); /* the English voice starts about 1.5 seconds after the Spanish ends */
       ticking = requestAnimationFrame(tick);
     })();
   }

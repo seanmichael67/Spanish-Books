@@ -325,6 +325,11 @@ async function main() {
       assert.strictEqual(overflow, false);
       await m.waitForLoadState('networkidle');
       await shot(m, 'phone-reader');
+      await m.click('[data-full]');
+      await m.waitForTimeout(500);
+      assert.strictEqual(await m.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+      await shot(m, 'phone-full');
+      await m.click('[data-close]');
       await m.goto(SITE + '/');
       assert.strictEqual(await m.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
       await m.waitForLoadState('networkidle');
