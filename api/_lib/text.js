@@ -45,4 +45,10 @@ function highlight(sentence, vocab, wrap) {
   return out + esc(sentence.slice(last));
 }
 
-module.exports = { esc, norm, vocabImages, highlight };
+/** For a syllable page ("ma" + "mano"): the word with its first syllable in bold, e.g. <b>ma</b>no. */
+function syllableWord(page) {
+  const n = page.syllable.length;
+  return `<b>${esc(page.es.slice(0, n))}</b>${esc(page.es.slice(n))}`;
+}
+
+module.exports = { esc, norm, vocabImages, highlight, syllableWord };

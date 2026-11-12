@@ -34,6 +34,9 @@ function webpRatio(file) {
   return Math.round((w / h) * 100) / 100;
 }
 
+// Books whose pictures were re-made as photos (their old HTML still describes watercolours).
+const PHOTO_BOOKS = Object.keys(JSON.parse(fs.readFileSync(path.join(ROOT, 'site', 'data', 'image-prompts.json'), 'utf8')).books);
+
 const seen = new Set();
 const books = LISTED.map((entry) => {
   const html = fs.readFileSync(path.join(ROOT, 'books', entry.slug, 'index.html'), 'utf8');
@@ -42,7 +45,7 @@ const books = LISTED.map((entry) => {
   const cfg = vm.runInNewContext('(' + src + ')');
 
   let slug = entry.slug.replace(/^week-\d+-/, '');
-  if (seen.has(slug)) slug = slug + '-' + entry.week;
+  if (seen.has(slug)) slug = slug + '-' + entry.theme; // e.g. a second "el-arcoiris" in another theme
   seen.add(slug);
 
   const dir = path.join(ROOT, 'books', entry.slug);
@@ -70,14 +73,28 @@ const books = LISTED.map((entry) => {
   const fix = FIXES[slug] || {};
   Object.entries(fix.pages || {}).forEach(([i, f]) => {
     const page = pages[Number(i)];
-    if (page.es !== f.es || page.en !== f.en) page.audio = null; // old recording no longer matches
+    if (page.es !== f.es || page.en !== f.en) {
+      // The old recording no longer matches the words. Use the re-recorded
+      // clip (page-NN-fix.mp3, made by make-audio.py) if it exists yet.
+      const redo = `page-${String(i).padStart(2, '0')}-fix.mp3`;
+      page.audio = fs.existsSync(path.join(dir, 'audio', redo)) ? redo : null;
+    }
     page.es = f.es;
     page.en = f.en;
   });
-  vocab = vocab.map((w) => (fix.vocab && fix.vocab[w.es] ? Object.assign({}, w, fix.vocab[w.es], { audio: null }) : w));
+  vocab = vocab.map((w) => {
+    if (!fix.vocab || !fix.vocab[w.es]) return w;
+    const fixed = Object.assign({}, w, fix.vocab[w.es]);
+    const clip = `word-${fileSlug(fixed.es)}.mp3`;
+    fixed.audio = fs.existsSync(path.join(dir, 'audio', clip)) ? clip : null;
+    return fixed;
+  });
   pages.forEach((p) => {
     delete p.prompt;
-    if (p.image) p.ratio = webpRatio(path.join(dir, 'images', p.image));
+    if (p.image) {
+      // A picture that is still being saved (or is damaged) counts as missing.
+      try { p.ratio = webpRatio(path.join(dir, 'images', p.image)); } catch (e) { p.image = null; }
+    }
   });
 
   // Reading level: based on how long the sentences are.
@@ -92,7 +109,7 @@ const books = LISTED.map((entry) => {
     emoji: entry.emoji,
     title: cfg.title || entry.title,
     titleEn: entry.subtitle,
-    art: /watercolor|illustration/.test(prompts) ? 'illustration' : 'photo',
+    art: !PHOTO_BOOKS.includes(entry.slug) && /watercolor|illustration/.test(prompts) ? 'illustration' : 'photo',
     level,
     pages,
     vocab,
@@ -100,5 +117,31 @@ const books = LISTED.map((entry) => {
   };
 });
 
-fs.writeFileSync(OUT, JSON.stringify(books, null, 1) + '\n');
-console.log(`Wrote ${books.length} books to site/data/books.json`);
+// Books written directly as data (for example the syllable series). They have
+// no old HTML page; we only look up which pictures and recordings exist yet.
+const extra = JSON.parse(fs.readFileSync(path.join(ROOT, 'site', 'data', 'extra-books.json'), 'utf8')).books;
+for (const book of extra) {
+  const dir = path.join(ROOT, 'books', book.folder);
+  book.pages.forEach((p, i) => {
+    const n = String(i).padStart(2, '0');
+    p.image = fs.existsSync(path.join(dir, 'images', `page-${n}.webp`)) ? `page-${n}.webp` : null;
+    p.audio = fs.existsSync(path.join(dir, 'audio', `page-${n}.mp3`)) ? `page-${n}.mp3` : null;
+    if (p.image) { try { p.ratio = webpRatio(path.join(dir, 'images', p.image)); } catch (e) { p.image = null; } }
+  });
+  book.vocab.forEach((w) => {
+    const clip = `word-${fileSlug(w.es)}.mp3`;
+    w.audio = fs.existsSync(path.join(dir, 'audio', clip)) ? clip : null;
+  });
+  books.unshift(book); // syllable books go first: they are where reading starts
+}
+books.sort((a, b) => (a.theme === 'silabas' ? 0 : 1) - (b.theme === 'silabas' ? 0 : 1) || (a.theme === 'silabas' ? a.order - b.order : 0));
+
+// A book only goes on the site when its pictures are done (one gap is tolerated).
+const ready = books.filter((b) => b.pages.filter((p) => !p.image).length <= 1);
+const waiting = books.filter((b) => !ready.includes(b));
+
+fs.writeFileSync(OUT, JSON.stringify(ready, null, 1) + '\n');
+// make-audio.py also records the waiting books, so they are ready the moment their pictures arrive.
+fs.writeFileSync(path.join(ROOT, 'site', 'data', 'books-waiting.json'), JSON.stringify(waiting, null, 1) + '\n');
+console.log(`Wrote ${ready.length} books to site/data/books.json`);
+if (waiting.length) console.log(`Not on the site yet (pictures missing): ${waiting.map((b) => b.folder).join(', ')}`);

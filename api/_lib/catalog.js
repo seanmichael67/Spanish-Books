@@ -33,12 +33,23 @@ const library = {
   books: packs.flatMap((p) => p.books),
 };
 
-const products = [...packs, library];
+// For preschools and language schools: every pack, for every classroom in one school.
+const SCHOOL_ID = 'escuela';
+const school = {
+  id: SCHOOL_ID,
+  kind: 'school',
+  name: 'School Licence: every printable pack for one school',
+  description: `All ${packs.length} printable packs for every classroom and teacher at one school.`,
+  priceCents: config.schoolPriceCents,
+  books: library.books,
+};
+
+const products = [...packs, library, school];
 const getProduct = (id) => products.find((p) => p.id === id) || null;
 const getBook = (slug) => books.find((b) => b.slug === slug) || null;
 const getTheme = (id) => themes.find((t) => t.id === id) || null;
 
 /** Does a list of purchased product ids unlock this product? */
-const owns = (purchased, productId) => purchased.includes(LIBRARY_ID) || purchased.includes(productId);
+const owns = (purchased, productId) => purchased.includes(LIBRARY_ID) || purchased.includes(SCHOOL_ID) || purchased.includes(productId);
 
-module.exports = { books, themes, config, packs, library, products, getProduct, getBook, getTheme, booksByTheme, owns, LIBRARY_ID };
+module.exports = { books, themes, config, packs, library, school, products, SCHOOL_ID, getProduct, getBook, getTheme, booksByTheme, owns, LIBRARY_ID };

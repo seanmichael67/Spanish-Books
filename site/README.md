@@ -5,10 +5,11 @@ WordPress + iframe setup with one fast site that you host on Vercel.
 
 **What it does**
 
-- Shows all 106 finished books as real web pages (good for Google), with audio.
-- Ends every book with a picture vocabulary page and a badge.
+- Shows every finished book as a real web page (good for Google), with audio.
+- Ends every book with a picture vocabulary page, a word game and a badge.
+- Has one page per theme (`/temas/…`) with its books, word list and pack.
 - Collects parent emails (book club) and gives a free printable book.
-- Sells printable packs through Stripe and unlocks them after payment.
+- Sells printable packs and a school licence through Stripe and unlocks them after payment.
 
 ## How it is organised
 
@@ -74,8 +75,11 @@ to print. When that works, swap in the `sk_live_…` key.
 
 - **Fix a typo in a book:** add it to `site/data/text-fixes.json`, then run `npm run import-books`.
 - **Change a price or the site name:** edit `site/site.config.json`.
-- **Add a new finished book:** add it to the `BOOKS` list in `server.js` (as before), then run
-  `npm run import-books` and `python3 site/scripts/make-thumbs.py`.
+- **Add a new book:** add it to the `BOOKS` list in `server.js` (as before). Save its pictures with
+  `python3 site/scripts/save-image.py <folder> <page> <picture-url>`, record its audio with
+  `python3 site/scripts/make-audio.py`, then run `npm run import-books` and
+  `python3 site/scripts/make-thumbs.py`. A book only appears once its pictures are done.
+- **Re-record audio after fixing text:** run `python3 site/scripts/make-audio.py` (it only makes what is missing).
 - A theme becomes a printable pack automatically once it has 8 books.
 
 See `site/LAUNCH-CHECKLIST.md` for what is still missing before launch.

@@ -58,10 +58,21 @@
     });
   });
 
+  /* ---- Stars on books this child has finished (saved in this browser) ---- */
+  var read = [];
+  try { read = JSON.parse(localStorage.getItem('beibei-libros-read') || '[]'); } catch (e) {}
+  $$('.book').forEach(function (b) {
+    var m = b.getAttribute('href').match(/\/libros\/([^/]+)\//);
+    if (m && read.indexOf(m[1]) >= 0) b.classList.add('done');
+  });
+  var prog = $('[data-progress]');
+  if (prog && read.length) { prog.hidden = false; prog.textContent = '⭐ You have read ' + read.length + (read.length === 1 ? ' book' : ' books') + '. ¡Sigue leyendo!'; }
+
   /* ---- Library filters ---- */
   var lib = $('[data-library]');
   if (lib) {
-    var state = { theme: new URLSearchParams(location.search).get('tema') || 'all', level: 'all' };
+    var query = new URLSearchParams(location.search);
+    var state = { theme: query.get('tema') || 'all', level: query.get('nivel') || 'all' };
     var apply = function () {
       var shown = 0;
       $$('.book', lib).forEach(function (b) {
@@ -106,8 +117,9 @@
   function renderOwned(el) {
     var catalog = JSON.parse($('#catalog').textContent);
     var map = accessMap();
-    var html = catalog.filter(function (p) { return map[p.id] || map.biblioteca; }).map(function (p) {
-      var t = encodeURIComponent(map[p.id] || map.biblioteca);
+    var all = map.biblioteca || map.escuela; /* these two unlock every pack */
+    var html = catalog.filter(function (p) { return map[p.id] || all; }).map(function (p) {
+      var t = encodeURIComponent(map[p.id] || all);
       var base = '/api/pack?product=' + p.id + '&t=' + t;
       return '<div class="box"><h3>' + p.emoji + ' ' + p.name + '</h3>' +
         '<div class="row"><a class="btn small" href="' + base + '" target="_blank" rel="noopener">🖨 Print the whole pack</a></div>' +

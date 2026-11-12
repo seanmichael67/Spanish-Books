@@ -10,8 +10,8 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { books, themes, config, packs, library, getTheme, booksByTheme } = require('../api/_lib/catalog');
-const { esc, vocabImages, highlight } = require('../api/_lib/text');
+const { books, themes, config, packs, library, school, getTheme, booksByTheme } = require('../api/_lib/catalog');
+const { esc, vocabImages, highlight, syllableWord } = require('../api/_lib/text');
 const { renderPrintable } = require('../api/_lib/print');
 
 const ROOT = path.join(__dirname, '..');
@@ -161,24 +161,37 @@ function home() {
 </div></section>
 
 <section class="block"><div class="wrap">
+  <h2>A path from first sounds to first sentences</h2>
+  <p class="sub">Start where your child is. Each step has free books with audio, and children can move up when a step feels easy.</p>
+  <div class="path">
+    ${[
+      booksByTheme('silabas').length ? ['/temas/silabas/', '🔤', 'Sílabas', 'Syllables', 'Vowels, then ma-me-mi-mo-mu. How reading starts in Spanish.', booksByTheme('silabas').length] : null,
+      ['/libros/?nivel=1', '🌱', 'Nivel 1', 'First words', 'Two and three word sentences. Ages 2–3.', books.filter((b) => b.level === 1 && b.theme !== 'silabas').length],
+      ['/libros/?nivel=2', '🌿', 'Nivel 2', 'Short sentences', 'Four words, with colours, sizes and actions. Ages 3–5.', books.filter((b) => b.level === 2).length],
+      ['/libros/?nivel=3', '🌳', 'Nivel 3', 'Longer sentences', 'Five words and more, with places and people. Ages 4–6.', books.filter((b) => b.level === 3).length],
+    ].filter(Boolean).map(([href, em, es, en, text, n], i) => `<a href="${href}"><span class="n">${i + 1}</span><span class="em">${em}</span><b lang="es">${es}</b><i>${en}</i><p>${text}</p><small>${n} books</small></a>`).join('')}
+  </div>
+</div></section>
+
+<section class="block tint"><div class="wrap">
   <h2>Start with one of these</h2>
   <p class="sub">A first book from each theme. Free to read, with audio.</p>
   <div class="books">${featured.map(bookCard).join('')}</div>
   <p style="margin-top:26px"><a class="btn alt" href="/libros/">See all ${books.length} books</a></p>
 </div></section>
 
-<section class="block tint"><div class="wrap">
+<section class="block"><div class="wrap">
   <h2>Printable packs for home and classroom</h2>
   <p class="sub">Take the books off the screen. Each pack is 8 books on one theme with vocabulary, flashcards and tracing pages. ${money(config.packPriceCents)} per pack, or every pack for ${money(config.libraryPriceCents)}.</p>
   <div class="packs">${packs.slice(0, 3).map(packCard).join('')}</div>
   <p style="margin-top:26px"><a class="btn" href="/packs/">See all ${packs.length} packs</a></p>
 </div></section>
 
-<section class="block"><div class="wrap">
+<section class="block tint"><div class="wrap">
   ${signup('Get a free printable book', `Join the Beibei book club and we will send you <b>${esc(pick(config.freeSampleBook).title)}</b> to print today, plus a new book and a simple Spanish tip each week.`)}
 </div></section>
 
-<section class="block tint"><div class="narrow">
+<section class="block"><div class="narrow">
   <h2 class="center">Questions parents ask</h2>
   <div style="margin-top:22px">${faq.map(([q, a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join('')}</div>
 </div></section>`;
@@ -205,6 +218,7 @@ function libraryPage() {
 <div class="wrap page-head">
   <h1>Spanish books for little readers</h1>
   <p class="sub">All free to read, with audio. Pick a theme or a reading level. Showing <b data-count>${books.length}</b> books.</p>
+  <p class="progress" data-progress hidden></p>
   <div class="filters" role="group" aria-label="Filter books">
     <button data-filter="theme" value="all" aria-pressed="true">📚 All themes</button>
     ${themes.filter((t) => booksByTheme(t.id).length).map((t) => `<button data-filter="theme" value="${t.id}" aria-pressed="false">${t.emoji} ${esc(t.en)}</button>`).join('')}
@@ -241,12 +255,16 @@ function bookPage(book) {
     const art = p.image
       ? `<img class="bg" src="${media(book, p.image)}" alt="" aria-hidden="true" ${i ? 'loading="lazy"' : ''}><img class="fg" src="${media(book, p.image)}" alt="${esc(p.en)}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'}>`
       : `<span class="ph" aria-hidden="true">${esc(book.emoji)}</span>`;
-    return `<section class="pg${i === 0 ? ' on' : ''}" data-say="${esc(p.es)}"${p.audio ? ` data-audio="${media(book, p.audio)}"` : ''}>
+    const text = p.syllable
+      ? `<span class="syl">${esc(p.syllable)}</span>${(() => { const v = book.vocab.find((w) => w.es === p.es); return v ? kw(syllableWord(p), v) : syllableWord(p); })()}`
+      : i === 0 ? esc(p.es) : highlight(p.es, book.vocab, kw);
+    return `<section class="pg${i === 0 ? ' on' : ''}" data-say="${esc(p.say || p.es)}"${p.audio ? ` data-audio="${media(book, p.audio)}"` : ''}>
       <figure class="frame">${art}</figure>
-      <div class="txt"><p class="es" lang="es">${i === 0 ? esc(p.es) : highlight(p.es, book.vocab, kw)}</p><p class="en">${esc(p.en)}</p></div></section>`;
+      <div class="txt"><p class="es" lang="es">${text}</p><p class="en">${esc(p.en)}</p></div></section>`;
   }).join('\n');
 
-  const vocab = `<section class="pg vocab"><h2 lang="es">Mis palabras</h2><p>My words. Tap a card to hear it, then say it together.</p>
+  const vocab = `<section class="pg vocab"><h2 lang="es">Mis palabras</h2><p data-vocab-help>My words. Tap a card to hear it, then say it together.</p>
+    <div class="game-bar"><button type="button" class="btn small sun" data-game>🎮 Jugar: ¿Dónde está…?</button><span class="ask" data-ask lang="es" aria-live="polite"></span><span class="stars" data-stars aria-hidden="true"></span></div>
     <div class="vgrid">${book.vocab.map((w) => {
       const img = vocabImages(book)[w.es];
       return `<button type="button" class="vcard" data-word="${esc(w.es)}"${w.audio ? ` data-word-audio="${media(book, w.audio)}"` : ''}>
@@ -259,15 +277,16 @@ function bookPage(book) {
     : pack ? `<a href="/packs/#${pack.id}"><b>🖨 Print this book</b><span>In the ${esc(theme.en)} pack: 8 books, flashcards and tracing.</span></a>` : '';
   const badge = `<section class="pg badge"><div class="medal">${esc(book.badge.emoji)}</div>
     <h2 lang="es">¡Lo lograste!</h2><p>You did it! You earned the <b lang="es">${esc(book.badge.es)}</b> badge (${esc(book.badge.en)}).</p>
+    <p class="progress" data-read-count></p>
     <div class="next">
       <a href="/libros/${nextBook.slug}/"><b>📖 Next: ${esc(nextBook.title)}</b><span>${esc(nextBook.titleEn)} · ${esc(theme.en)}</span></a>
       ${printLink}
-      <a href="/libros/?tema=${book.theme}"><b>${theme.emoji} More ${esc(theme.en)}</b><span>All ${siblings.length} books in this theme.</span></a>
+      <a href="/temas/${book.theme}/"><b>${theme.emoji} More ${esc(theme.en)}</b><span>All ${siblings.length} books in this theme.</span></a>
     </div></section>`;
 
   const body = `
 <div class="wrap">
-  <p class="crumbs"><a href="/libros/">Books</a> › <a href="/libros/?tema=${book.theme}">${esc(theme.en)}</a> › ${esc(book.title)}</p>
+  <p class="crumbs"><a href="/libros/">Books</a> › <a href="/temas/${book.theme}/">${esc(theme.en)}</a> › ${esc(book.title)}</p>
   <article class="reader" data-book="${book.slug}" style="--c:${theme.color}">
     <div class="reader-head"><h1><span lang="es">${esc(book.title)}</span></h1><span class="lvl">${LEVELS[book.level]}</span></div>
     <div class="stage">${story}\n${vocab}\n${badge}</div>
@@ -317,6 +336,39 @@ function bookPage(book) {
   }));
 }
 
+/* ---------- One page per theme (good for Google, and it sells the matching pack) ---------- */
+function themePages() {
+  themes.filter((t) => booksByTheme(t.id).length).forEach((t) => {
+    const list = booksByTheme(t.id);
+    const pack = packs.find((p) => p.theme === t.id);
+    const words = [];
+    list.forEach((b) => b.vocab.forEach((w) => { if (!words.some((x) => x.es === w.es)) words.push(w); }));
+    const body = `
+<div class="wrap page-head" style="--c:${t.color}">
+  <p class="crumbs" style="padding-top:0"><a href="/libros/">Books</a> › ${esc(t.en)}</p>
+  <h1>${t.emoji} Spanish books about ${esc(t.en.toLowerCase())}</h1>
+  <p class="sub"><span lang="es">${esc(t.es)}</span>: ${list.length} free read-along books for ages 2–6, with audio on every page and ${words.length} Spanish words to learn.</p>
+  <div class="books">${list.map(bookCard).join('')}</div>
+</div>
+<section class="block"><div class="wrap">
+  ${pack ? `<div class="bundle"><div><h2>Print the ${esc(t.en)} pack</h2><p>All ${list.length} books on paper, with picture vocabulary, ${list.length * 6} cut-out flashcards, tracing pages, a parent guide and a reading certificate.</p></div>
+    <div style="text-align:center"><div class="price">${money(pack.priceCents)} <small>one time</small></div><button class="btn sun" data-buy="${pack.id}" style="margin-top:10px">Buy this pack</button><p style="margin-top:10px"><a href="/muestra/" style="color:#fff">See a free sample</a></p></div></div>` : ''}
+</div></section>
+<section class="block tint"><div class="wrap">
+  <h2>${words.length} Spanish words in this theme</h2>
+  <p class="sub">Every word below is taught in one of the books above, with its picture and sound.</p>
+  <ul class="wordlist">${words.map((w) => `<li><b lang="es">${esc(w.es)}</b> <span>${esc(w.en)}</span></li>`).join('')}</ul>
+</div></section>`;
+    write(`temas/${t.id}/index.html`, layout({
+      title: `Spanish books about ${t.en.toLowerCase()} for kids (${t.es}) · ${config.name}`,
+      description: `${list.length} free Spanish read-along books about ${t.en.toLowerCase()} for ages 2–6, with audio. Learn ${words.slice(0, 6).map((w) => w.es).join(', ')} and more. Printable pack available.`,
+      urlPath: `/temas/${t.id}/`,
+      body,
+      active: '/libros/',
+    }));
+  });
+}
+
 /* ---------- Shop ---------- */
 function packCard(p) {
   const theme = getTheme(p.theme);
@@ -344,11 +396,15 @@ function packsPage() {
     <div><h2>Biblioteca Completa</h2><p>Every pack: ${library.books.length} printable books, ${library.books.length * 6} flashcards, and every pack we add later this year. Best for teachers and homeschool families.</p></div>
     <div style="text-align:center"><s>${money(full)}</s><div class="price">${money(library.priceCents)} <small>one time</small></div><button class="btn sun" data-buy="${library.id}" style="margin-top:10px">Get every pack</button></div>
   </div>
+  <div class="bundle school" id="${school.id}">
+    <div><h2>🏫 For schools</h2><p>One licence for every classroom and teacher at your school: all ${library.books.length} printable books, flashcards and tracing pages, plus every pack we add. Made and classroom-tested at ${esc(config.school)}.</p></div>
+    <div style="text-align:center"><div class="price">${money(school.priceCents)} <small>one time</small></div><button class="btn" data-buy="${school.id}" style="margin-top:10px">Get the school licence</button></div>
+  </div>
 </div>
 <div class="wrap"><div class="packs">${packs.map(packCard).join('')}</div>
 <p class="note" style="margin-top:24px">Secure checkout by Stripe. Digital product: you print it yourself on US Letter paper. Not happy? Email ${config.contactEmail} within 14 days for a refund.</p></div>`;
   const ld = {
-    '@context': 'https://schema.org', '@graph': [...packs, library].map((p) => ({
+    '@context': 'https://schema.org', '@graph': [...packs, library, school].map((p) => ({
       '@type': 'Product', name: p.name, description: p.description, brand: { '@type': 'Brand', name: config.name },
       offers: { '@type': 'Offer', price: (p.priceCents / 100).toFixed(2), priceCurrency: 'USD', availability: 'https://schema.org/InStock', ...(SITE_URL ? { url: `${SITE_URL}/packs/#${p.id}` } : {}) },
     })),
@@ -458,6 +514,7 @@ for (const f of ['styles.css', 'site.js', 'reader.js']) fs.copyFileSync(path.joi
 const files = copyMedia();
 home();
 libraryPage();
+themePages();
 books.forEach(bookPage);
 packsPage();
 purchasePages();

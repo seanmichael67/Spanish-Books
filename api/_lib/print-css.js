@@ -28,6 +28,7 @@ h1, h2, h3 { font-family: 'Fredoka', 'Trebuchet MS', sans-serif; margin: 0; }
 .story .pic { flex: 0 0 auto; }
 .story .words { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: .3in; padding-bottom: .3in; }
 .story .es { font-size: 40pt; line-height: 1.25; font-weight: 700; letter-spacing: .01em; }
+.story .syl { font-size: 84pt; line-height: 1; font-weight: 700; color: var(--c, #ff6b4a); }
 .story .es b { color: var(--c, #ff6b4a); font-weight: 700; }
 .story .en { font-size: 15pt; color: #6b728c; border-top: 2px dotted #d5d0c4; padding-top: .16in; }
 

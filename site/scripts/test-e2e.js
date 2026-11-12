@@ -13,6 +13,9 @@ const path = require('path');
 const { spawn } = require('child_process');
 const assert = require('assert');
 const { chromium } = require('playwright');
+const catalog = require('../../api/_lib/catalog');
+const BOOKS = catalog.books.length;
+const PACKS = catalog.packs.length;
 
 const SITE = 'http://localhost:3100';
 const MOCK = 'http://localhost:3101';
@@ -78,7 +81,7 @@ async function main() {
 
     await step('library filters by theme and level', async () => {
       await page.goto(SITE + '/libros/');
-      assert.strictEqual(await page.locator('.book:visible').count(), 106);
+      assert.strictEqual(await page.locator('.book:visible').count(), BOOKS);
       await page.click('button[value="oceano"]');
       assert.strictEqual(await page.locator('.book:visible').count(), 8);
       await page.click('button[data-filter="level"][value="1"]');
@@ -107,10 +110,43 @@ async function main() {
       for (let i = 0; i < 6; i++) await page.click('[data-next]');
       assert.strictEqual(await page.locator('.pg.vocab.on .vcard').count(), 6);
       await shot(page, 'vocab');
+      // Word game: tap the right picture for each word, six times.
+      await page.click('[data-game]');
+      for (let i = 0; i < 6; i++) {
+        const word = (await page.textContent('[data-ask]')).match(/«(.+)»/)[1];
+        const wrong = page.locator(`.vcard:not(.found):not([data-word="${word}"])`).first();
+        if (await wrong.count()) await wrong.click();
+        await page.click(`.vcard[data-word="${word}"]`);
+        await page.waitForTimeout(800);
+      }
+      assert.match(await page.textContent('[data-ask]'), /Muy bien/);
+      assert.strictEqual((await page.textContent('[data-stars]')).length, 6);
       await page.click('[data-next]');
+      assert.match(await page.textContent('[data-read-count]'), /1 book read/);
       assert.ok(await page.locator('.pg.badge.on').isVisible());
       assert.ok(await page.locator('[data-next]').isDisabled());
       await shot(page, 'badge');
+    });
+
+    await step('finished books get a star in the library', async () => {
+      await page.goto(SITE + '/libros/');
+      assert.strictEqual(await page.locator('.book.done').count(), 1);
+      assert.ok(await page.locator('[data-progress]').isVisible());
+    });
+
+    await step('syllable book shows the syllable, then the word, with audio', async () => {
+      await page.goto(SITE + '/temas/silabas/');
+      assert.strictEqual(await page.locator('.book').count(), 8);
+      await page.goto(SITE + '/libros/silabas-m/');
+      await page.click('[data-next]');
+      assert.strictEqual(await page.textContent('.pg.on .syl'), 'ma');
+      assert.strictEqual(await page.textContent('.pg.on .kw'), 'mano');
+      assert.strictEqual(await page.textContent('.pg.on .kw b'), 'ma');
+      const clip = page.waitForResponse((r) => r.url().endsWith('/media/silabas-m/page-01.mp3'));
+      await page.click('[data-listen]');
+      assert.ok((await clip).ok());
+      await page.waitForLoadState('networkidle');
+      await shot(page, 'syllable');
     });
 
     await step('email sign-up adds the parent to the list', async () => {
@@ -123,6 +159,12 @@ async function main() {
       await page.click('form[data-signup] button');
       await page.waitForSelector('.msg.ok');
       assert.deepStrictEqual(contacts, [{ email: 'ana@example.com', first_name: 'Ana', unsubscribed: false }]);
+      assert.strictEqual(emails.length, 3, 'welcome email plus two scheduled follow-ups');
+      assert.match(emails[0].html, /\/muestra\//);
+      assert.strictEqual(emails[0].scheduled_at, undefined);
+      assert.ok(Date.parse(emails[1].scheduled_at) > Date.now() + 23 * 3600e3);
+      assert.ok(Date.parse(emails[2].scheduled_at) > Date.now() + 69 * 3600e3);
+      emails.length = 0;
     });
 
     await step('free sample printable has all 10 sheets', async () => {
@@ -183,7 +225,27 @@ async function main() {
       await page.goto(SITE + '/packs/');
       await page.click('.bundle [data-buy]');
       await page.waitForSelector('[data-status].ok');
-      assert.strictEqual(await page.locator('[data-owned] .box').count(), 13);
+      assert.strictEqual(await page.locator('[data-owned] .box').count(), PACKS);
+    });
+
+    await step('a school licence unlocks every pack too', async () => {
+      const school = await (await browser.newContext()).newPage();
+      await school.goto(SITE + '/packs/');
+      await school.click('#escuela [data-buy]');
+      await school.waitForSelector('[data-status].ok');
+      assert.strictEqual(await school.locator('[data-owned] .box').count(), PACKS);
+      const r = await school.goto(SITE + (await school.getAttribute('[data-owned] a.btn', 'href')));
+      assert.match(await school.textContent('.toolbar'), /School licence/);
+      assert.strictEqual(r.status(), 200);
+    });
+
+    await step('theme page lists its books, words and pack', async () => {
+      await page.goto(SITE + '/temas/animales/');
+      assert.strictEqual(await page.locator('.book').count(), 8);
+      assert.ok((await page.locator('.wordlist li').count()) > 20);
+      assert.strictEqual(await page.locator('[data-buy="pack-animales"]').count(), 1);
+      await page.waitForLoadState('networkidle');
+      await shot(page, 'theme', true);
     });
 
     await step('phone layout works', async () => {

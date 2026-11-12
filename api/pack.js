@@ -3,7 +3,7 @@
  * Returns the printable pack as a page the parent can print or save as PDF.
  * Only works with a valid access token for that product.
  */
-const { getProduct, getBook, owns } = require('./_lib/catalog');
+const { getProduct, getBook, owns, SCHOOL_ID } = require('./_lib/catalog');
 const { renderPrintable } = require('./_lib/print');
 const { readToken } = require('./_lib/util');
 
@@ -37,7 +37,9 @@ module.exports = async (req, res) => {
   res.end(renderPrintable({
     title: books.length === 1 ? `${books[0].title} · printable book` : product.name,
     books,
-    note: access.email ? `For personal and classroom use by ${access.email}. Paper: US Letter, landscape.` : '',
+    note: access.products.includes(SCHOOL_ID)
+      ? `School licence for ${access.email || 'one school'}: all classrooms at one school. Paper: US Letter, landscape.`
+      : access.email ? `For personal and classroom use by ${access.email}. Paper: US Letter, landscape.` : '',
     backUrl: '/mis-compras/',
   }));
 };
