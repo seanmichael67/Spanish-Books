@@ -20,13 +20,14 @@ Written after building the new site. Items are in the order I would do them.
 
 ## 2. Book quality (the product itself)
 
-Done since the first version: audio for every page and word of every book (including the
-corrected pages), the six missing pictures, new photo pictures for all 30 unfinished books,
-and a new 8-book syllable series (vowels, M, P, S, L, T, N, D). 144 books and 18 packs are live.
+Done since the first version: audio for every page and word of every book, the six missing
+pictures, photo pictures for all 30 unfinished books, a 13-book syllable series (vowels, M, P,
+S, L, T, N, D, B, C, G, R, H) and 8 story books for Nivel 3. 157 books and 19 packs are live.
 
-- [ ] **More syllable books.** The series covers eight letters. The usual order continues with
-      B, C, F, G, R, J, V, Ñ and the harder pairs (ca/que/qui, ga/gue/gui, ll, ch). Add them to
-      `site/data/extra-books.json` in the same shape as the first eight.
+- [ ] **More syllable books.** Still to write: F, J, V, Ñ, Z and the harder pairs (que/qui,
+      gue/gui, ce/ci, ge/gi, ll, ch). Add them to `site/data/extra-books.json` in the same shape.
+- [ ] **More stories.** The eight "Cuentos" are the only books with a beginning, a problem and an
+      ending. A second set would give Nivel 3 readers more to grow into.
 - [ ] **Native-speaker review of every book.** I corrected the mistakes I found
       (see `site/data/text-fixes.json`), but a teacher should read each book once before it is sold.
 - [ ] **Pick one art style.** The 30 newest books and most older ones are photos. About 30 older
@@ -34,8 +35,6 @@ and a new 8-book syllable series (vowels, M, P, S, L, T, N, D). 144 books and 18
       but the brand promise says "real photos". New pictures cost about half a Higgsfield credit each.
 - [ ] **Print quality of older books.** New pictures are 1600 pixels wide (good for printing).
       The first 106 books are 1024 pixels: fine at home, soft for a print shop or Amazon KDP.
-- [ ] **Reading progression.** Most books are Nivel 2. Write more Nivel 3 books with questions
-      (¿Dónde está…?), and a few simple stories with a beginning, middle and end.
 - [ ] **Word-by-word highlighting.** The audio is one clip per page. Recording with word timings
       would let each word light up as it is read, which is the strongest read-along feature.
 

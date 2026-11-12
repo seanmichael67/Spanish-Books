@@ -136,7 +136,7 @@ async function main() {
 
     await step('syllable book shows the syllable, then the word, with audio', async () => {
       await page.goto(SITE + '/temas/silabas/');
-      assert.strictEqual(await page.locator('.book').count(), 8);
+      assert.strictEqual(await page.locator('.book').count(), catalog.booksByTheme('silabas').length);
       await page.goto(SITE + '/libros/silabas-m/');
       await page.click('[data-next]');
       assert.strictEqual(await page.textContent('.pg.on .syl'), 'ma');
@@ -147,6 +147,15 @@ async function main() {
       assert.ok((await clip).ok());
       await page.waitForLoadState('networkidle');
       await shot(page, 'syllable');
+    });
+
+    await step('story book reads as a full story', async () => {
+      await page.goto(SITE + '/temas/cuentos/');
+      assert.strictEqual(await page.locator('.book').count(), catalog.booksByTheme('cuentos').length);
+      await page.goto(SITE + '/libros/cuento-el-gatito-tiene-hambre/');
+      assert.match(await page.textContent('.reader-head'), /Nivel 3/);
+      for (let i = 0; i < 6; i++) await page.click('[data-next]');
+      assert.match(await page.textContent('.pg.on .es'), /el gatito está feliz/);
     });
 
     await step('email sign-up adds the parent to the list', async () => {

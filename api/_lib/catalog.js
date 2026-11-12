@@ -19,7 +19,7 @@ const packs = themes
     kind: 'pack',
     theme: t.id,
     name: `${t.en} Printable Pack (${t.es})`,
-    description: `8 printable Spanish books about ${t.en.toLowerCase()}, with picture vocabulary, flashcards and word tracing.`,
+    description: `${booksByTheme(t.id).length} printable Spanish books (${t.en}), with picture vocabulary, flashcards and word tracing.`,
     priceCents: config.packPriceCents,
     books: booksByTheme(t.id).map((b) => b.slug),
   }));
@@ -28,7 +28,7 @@ const library = {
   id: LIBRARY_ID,
   kind: 'library',
   name: 'Biblioteca Completa: every printable pack',
-  description: `All ${packs.length} printable packs (${packs.length * 8} books) with vocabulary, flashcards and word tracing.`,
+  description: `All ${packs.length} printable packs (${packs.reduce((n, p) => n + p.books.length, 0)} books) with vocabulary, flashcards and word tracing.`,
   priceCents: config.libraryPriceCents,
   books: packs.flatMap((p) => p.books),
 };
