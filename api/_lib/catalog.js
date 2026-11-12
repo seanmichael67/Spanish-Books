@@ -44,7 +44,19 @@ const school = {
   books: library.books,
 };
 
-const products = [...packs, library, school];
+// The monthly membership: every pack for as long as the family stays a member.
+const CLUB_ID = 'club';
+const club = {
+  id: CLUB_ID,
+  kind: 'club',
+  recurring: 'month',
+  name: 'Club de Lectura: every printable pack, monthly membership',
+  description: `Every printable pack (${library.books.length} books today) plus each new pack as it is added. Cancel any time.`,
+  priceCents: config.clubPriceCents,
+  books: library.books,
+};
+
+const products = [...packs, library, school, club];
 const getProduct = (id) => products.find((p) => p.id === id) || null;
 const getBook = (slug) => books.find((b) => b.slug === slug) || null;
 const getTheme = (id) => themes.find((t) => t.id === id) || null;
@@ -52,4 +64,4 @@ const getTheme = (id) => themes.find((t) => t.id === id) || null;
 /** Does a list of purchased product ids unlock this product? */
 const owns = (purchased, productId) => purchased.includes(LIBRARY_ID) || purchased.includes(SCHOOL_ID) || purchased.includes(productId);
 
-module.exports = { books, themes, config, packs, library, school, products, SCHOOL_ID, getProduct, getBook, getTheme, booksByTheme, owns, LIBRARY_ID };
+module.exports = { books, themes, config, packs, library, school, club, products, SCHOOL_ID, CLUB_ID, getProduct, getBook, getTheme, booksByTheme, owns, LIBRARY_ID };

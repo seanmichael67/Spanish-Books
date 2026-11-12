@@ -117,7 +117,7 @@
   function renderOwned(el) {
     var catalog = JSON.parse($('#catalog').textContent);
     var map = accessMap();
-    var all = map.biblioteca || map.escuela; /* these two unlock every pack */
+    var all = map.biblioteca || map.escuela || map.club; /* these unlock every pack */
     var html = catalog.filter(function (p) { return map[p.id] || all; }).map(function (p) {
       var t = encodeURIComponent(map[p.id] || all);
       var base = '/api/pack?product=' + p.id + '&t=' + t;
@@ -154,6 +154,19 @@
     var t = new URLSearchParams(location.search).get('t');
     if (t) { saveToken(t); history.replaceState(null, '', location.pathname); }
     var any = renderOwned($('[data-owned]', mine));
+    var clubToken = accessMap().club;
+    if (clubToken) {
+      $('[data-member]', mine).hidden = false;
+      $('[data-portal]', mine).addEventListener('click', function () {
+        var note = $('[data-portal-msg]', mine);
+        note.textContent = 'Un momento…';
+        post('/api/portal', { t: clubToken }).then(function (r) {
+          if (r.ok && r.data.url) { window.location.href = r.data.url; return; }
+          note.className = 'msg bad';
+          note.textContent = r.data.error || 'Please try again.';
+        });
+      });
+    }
     $('[data-none]', mine).hidden = any;
     var form = $('form[data-restore]');
     form.addEventListener('submit', function (e) {

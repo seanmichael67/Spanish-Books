@@ -65,6 +65,13 @@ npm test
 
 Never put these keys in a file in this repository. They only go in Vercel.
 
+### The monthly membership
+
+The Club de Lectura is a Stripe subscription. One extra step: in Stripe go to
+**Settings → Billing → Customer portal** and press Save once. That switches on the
+page where members update their card or cancel (the "Manage or cancel membership"
+button in My purchases opens it).
+
 ### Test a purchase before going live
 
 Use a `sk_test_…` Stripe key, buy a pack with card number `4242 4242 4242 4242`,

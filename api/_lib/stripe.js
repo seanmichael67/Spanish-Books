@@ -26,4 +26,13 @@ async function stripe(method, path, params) {
   return data;
 }
 
-module.exports = { stripe, configured };
+/** Is this membership still running? (Stripe statuses "active" and "trialing" count.) */
+async function membershipActive(subscriptionId) {
+  if (!/^sub_[A-Za-z0-9_]+$/.test(subscriptionId || '')) return false;
+  try {
+    const s = await stripe('GET', `/v1/subscriptions/${subscriptionId}`);
+    return s.status === 'active' || s.status === 'trialing';
+  } catch (err) { return false; }
+}
+
+module.exports = { stripe, configured, membershipActive };

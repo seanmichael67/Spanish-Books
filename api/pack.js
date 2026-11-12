@@ -3,7 +3,8 @@
  * Returns the printable pack as a page the parent can print or save as PDF.
  * Only works with a valid access token for that product.
  */
-const { getProduct, getBook, owns, SCHOOL_ID } = require('./_lib/catalog');
+const { getProduct, getBook, owns, SCHOOL_ID, CLUB_ID } = require('./_lib/catalog');
+const { membershipActive } = require('./_lib/stripe');
 const { renderPrintable } = require('./_lib/print');
 const { readToken } = require('./_lib/util');
 
@@ -22,7 +23,12 @@ module.exports = async (req, res) => {
   if (!product || product.kind !== 'pack') return deny(res, 404, 'We could not find that pack.');
 
   const access = readToken(String(q.t || ''));
-  if (!access || !owns(access.products, product.id)) return deny(res, 403, 'This pack needs a purchase to open.');
+  if (!access) return deny(res, 403, 'This pack needs a purchase to open.');
+  if (!owns(access.products, product.id)) {
+    // Not bought outright. A club member may still open it, while the membership is active.
+    if (!access.products.includes(CLUB_ID)) return deny(res, 403, 'This pack needs a purchase to open.');
+    if (!(await membershipActive(access.subscription))) return deny(res, 402, 'Your membership has ended. Join again to open this pack.');
+  }
 
   let books = product.books.map(getBook);
   if (q.book) {

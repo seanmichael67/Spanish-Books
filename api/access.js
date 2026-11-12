@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
     if (session.payment_status !== 'paid' || !product) return send(res, 402, { error: 'This payment is not complete yet.' });
 
     const email = (session.customer_details && session.customer_details.email) || '';
-    const token = makeToken([product.id], email);
+    const token = makeToken([product.id], email, product.recurring ? String(session.subscription || '') : '');
 
     let emailed = false;
     if (email && canSend()) {
@@ -33,7 +33,7 @@ module.exports = async (req, res) => {
           subject: `Your printable is ready: ${product.name}`,
           html: `<p>¡Gracias! Thank you for your purchase from ${esc(config.name)}.</p>
                  <p><a href="${link}"><strong>Open and print ${esc(product.name)}</strong></a></p>
-                 <p>Keep this email. The link works on any computer, as many times as you like.</p>
+                 <p>Keep this email. The link works on any computer, as many times as you like${product.recurring ? ', for as long as you are a member' : ''}.</p>
                  <p>Happy reading,<br>${esc(config.school)}</p>`,
         });
         emailed = true;

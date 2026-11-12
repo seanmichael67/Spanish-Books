@@ -21,6 +21,7 @@ const SITE = 'http://localhost:3100';
 const MOCK = 'http://localhost:3101';
 const SHOTS = process.env.SHOTS_DIR;
 const sessions = {};
+const subscriptions = {};
 const emails = [];
 const contacts = [];
 
@@ -35,6 +36,11 @@ const mock = http.createServer((req, res) => {
       const p = new URLSearchParams(raw);
       const id = 'cs_test_' + Object.keys(sessions).length;
       sessions[id] = { id, payment_status: 'paid', status: 'complete', metadata: { product: p.get('metadata[product]') }, customer_details: { email: 'parent@example.com' }, amount: p.get('line_items[0][price_data][unit_amount]') };
+      if (p.get('mode') === 'subscription') {
+        assert.strictEqual(p.get('line_items[0][price_data][recurring][interval]'), 'month');
+        sessions[id].subscription = 'sub_test_1';
+        subscriptions.sub_test_1 = { id: 'sub_test_1', status: 'active', customer: 'cus_test_1' };
+      }
       return json(200, { id, url: p.get('success_url').replace('{CHECKOUT_SESSION_ID}', id) });
     }
     if (req.method === 'GET' && url.pathname === '/v1/checkout/sessions') {
@@ -44,6 +50,14 @@ const mock = http.createServer((req, res) => {
     if (req.method === 'GET' && url.pathname.startsWith('/v1/checkout/sessions/')) {
       const s = sessions[url.pathname.split('/').pop()];
       return s ? json(200, s) : json(404, { error: { message: 'No such session' } });
+    }
+    if (req.method === 'GET' && url.pathname.startsWith('/v1/subscriptions/')) {
+      const s = subscriptions[url.pathname.split('/').pop()];
+      return s ? json(200, s) : json(404, { error: { message: 'No such subscription' } });
+    }
+    if (req.method === 'POST' && url.pathname === '/v1/billing_portal/sessions') {
+      assert.strictEqual(new URLSearchParams(raw).get('customer'), 'cus_test_1');
+      return json(200, { url: SITE + '/packs/?portal=1' });
     }
     if (url.pathname === '/emails') { emails.push({ ...JSON.parse(raw), key: req.headers['idempotency-key'] }); return json(200, { id: 'em_1' }); }
     if (url.pathname === '/audiences/aud_1/contacts') { contacts.push(JSON.parse(raw)); return json(200, { id: 'c_1' }); }
@@ -246,6 +260,24 @@ async function main() {
       const r = await school.goto(SITE + (await school.getAttribute('[data-owned] a.btn', 'href')));
       assert.match(await school.textContent('.toolbar'), /School licence/);
       assert.strictEqual(r.status(), 200);
+    });
+
+    await step('club membership unlocks packs only while it is active', async () => {
+      const member = await (await browser.newContext()).newPage();
+      await member.goto(SITE + '/packs/');
+      await member.click('#club [data-buy]');
+      await member.waitForSelector('[data-status].ok');
+      assert.strictEqual(await member.locator('[data-owned] .box').count(), PACKS);
+      const href = await member.getAttribute('[data-owned] a.btn', 'href');
+      assert.strictEqual((await member.goto(SITE + href)).status(), 200);
+      // The member can reach Stripe's manage/cancel page.
+      await member.goto(SITE + '/mis-compras/');
+      await member.click('[data-portal]');
+      await member.waitForURL(/portal=1/);
+      // After cancelling, the same link stops working.
+      subscriptions.sub_test_1.status = 'canceled';
+      assert.strictEqual((await member.goto(SITE + href)).status(), 402);
+      subscriptions.sub_test_1.status = 'active';
     });
 
     await step('theme page lists its books, words and pack', async () => {

@@ -20,12 +20,12 @@ module.exports = async (req, res) => {
   const done = () => send(res, 200, { ok: true });
   try {
     const found = await stripe('GET', '/v1/checkout/sessions', { 'customer_details[email]': email, status: 'complete', limit: '100' });
-    const bought = (found.data || [])
-      .filter((s) => s.payment_status === 'paid' && getProduct(s.metadata && s.metadata.product))
-      .map((s) => s.metadata.product);
+    const paid = (found.data || []).filter((s) => s.payment_status === 'paid' && getProduct(s.metadata && s.metadata.product));
+    const bought = paid.map((s) => s.metadata.product);
     if (!bought.length) return done();
+    const membership = paid.find((s) => s.subscription); // Stripe lists the newest first
 
-    const link = `${siteUrl(req)}/mis-compras/?t=${encodeURIComponent(makeToken(bought, email))}`;
+    const link = `${siteUrl(req)}/mis-compras/?t=${encodeURIComponent(makeToken(bought, email, membership ? String(membership.subscription) : ''))}`;
     await sendEmail({
       to: email,
       subject: `Your ${config.name} printables`,
