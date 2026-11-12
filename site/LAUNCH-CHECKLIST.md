@@ -21,15 +21,12 @@ Written after building the new site. Items are in the order I would do them.
 ## 2. Book quality (the product itself)
 
 Done since the first version: audio for every page and word of every book (including the
-corrected pages), the six missing pictures, and new photo pictures for all 30 unfinished books.
-All 136 theme books are on the site.
+corrected pages), the six missing pictures, new photo pictures for all 30 unfinished books,
+and a new 8-book syllable series (vowels, M, P, S, L, T, N, D). 144 books and 18 packs are live.
 
-- [ ] **Pictures for the syllable series.** Eight "Sílabas" books (vowels, M, P, S, L, T, N, D)
-      are written and have audio, but need 56 pictures. Descriptions are in
-      `site/data/image-prompts.json` under `silabas-…`. For each cover (page 0) leave out the
-      "No text, no letters" part of the style, because the cover shows letter blocks. Save with
-      `site/scripts/save-image.py`, then run `npm run import-books`. The books and their pack
-      appear automatically.
+- [ ] **More syllable books.** The series covers eight letters. The usual order continues with
+      B, C, F, G, R, J, V, Ñ and the harder pairs (ca/que/qui, ga/gue/gui, ll, ch). Add them to
+      `site/data/extra-books.json` in the same shape as the first eight.
 - [ ] **Native-speaker review of every book.** I corrected the mistakes I found
       (see `site/data/text-fixes.json`), but a teacher should read each book once before it is sold.
 - [ ] **Pick one art style.** The 30 newest books and most older ones are photos. About 30 older
@@ -41,8 +38,6 @@ All 136 theme books are on the site.
       (¿Dónde está…?), and a few simple stories with a beginning, middle and end.
 - [ ] **Word-by-word highlighting.** The audio is one clip per page. Recording with word timings
       would let each word light up as it is read, which is the strongest read-along feature.
-- [ ] **Syllable pages** (ma-me-mi-mo-mu). Spanish reading is taught by syllables; a short
-      "Sílabas" series would make this a real reading programme, not only vocabulary.
 
 ## 3. Moving off the old site
 
@@ -57,8 +52,9 @@ All 136 theme books are on the site.
 
 ## 4. Making it profitable
 
-- [ ] **Follow-up emails.** Sign-up now sends one welcome email with the free book. Add two
-      more in Resend a few days apart (how to read together → first pack offer).
+- [ ] **Check the follow-up emails.** Sign-up sends a welcome email, then schedules two more
+      (reading routine after 1 day, pack offer after 3 days) through Resend's scheduled sending.
+      This was tested against a stand-in, so sign up once yourself and confirm all three arrive.
 - [ ] **Weekly email.** One new or featured book each week, sent as a Resend Broadcast.
 - [ ] **Launch to school families first.** Give current Beibei Amigos families a discount code
       (checkout already accepts Stripe promotion codes) and ask for honest reviews.

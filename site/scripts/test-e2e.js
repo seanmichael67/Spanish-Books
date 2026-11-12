@@ -134,6 +134,21 @@ async function main() {
       assert.ok(await page.locator('[data-progress]').isVisible());
     });
 
+    await step('syllable book shows the syllable, then the word, with audio', async () => {
+      await page.goto(SITE + '/temas/silabas/');
+      assert.strictEqual(await page.locator('.book').count(), 8);
+      await page.goto(SITE + '/libros/silabas-m/');
+      await page.click('[data-next]');
+      assert.strictEqual(await page.textContent('.pg.on .syl'), 'ma');
+      assert.strictEqual(await page.textContent('.pg.on .kw'), 'mano');
+      assert.strictEqual(await page.textContent('.pg.on .kw b'), 'ma');
+      const clip = page.waitForResponse((r) => r.url().endsWith('/media/silabas-m/page-01.mp3'));
+      await page.click('[data-listen]');
+      assert.ok((await clip).ok());
+      await page.waitForLoadState('networkidle');
+      await shot(page, 'syllable');
+    });
+
     await step('email sign-up adds the parent to the list', async () => {
       await page.goto(SITE + '/#club');
       await page.fill('#su-email', 'not-an-email');
