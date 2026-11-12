@@ -52,7 +52,7 @@
         @media print { .no-print { display: none !important; } .pdf-page { page-break-after: always !important; break-after: page !important; } }
     </style>
 </head>
-<body class="bg-slate-100 antialiased overflow-x-hidden">
+<body class="bg-indigo-950 antialiased overflow-x-hidden">
     <div id="root"></div>
     <script type="text/babel">
         const { useState, useEffect, useRef, useMemo } = React;
@@ -478,7 +478,7 @@
                     React.useEffect(() => { autoPlayAll(); }, []);
 
                     return (
-                        <div className={`relative flex flex-col items-center justify-between bg-white ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-3 md:p-8 shadow-inner border-l-4 border-gray-100 overflow-auto'}`}>
+                        <div className={`relative flex flex-col items-center justify-between ${isPrint ? 'bg-white' : 'bg-amber-50'} ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-3 md:p-8 shadow-inner border-l-4 border-gray-100 overflow-auto'}`}>
                             <div className="text-center w-full flex-shrink-0 mb-2 md:mb-4">
                                 <h2 className="text-3xl md:text-5xl font-bold text-gray-800">📝 {data.title}</h2>
                                 <p className="text-base md:text-xl text-gray-500 mt-1">{data.footer}</p>
@@ -528,7 +528,7 @@
                 }
 
                 return (
-                    <div className={`relative flex flex-col items-center justify-between bg-white ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-1 md:p-5 xl:p-8 shadow-none md:shadow-inner border-0 md:border-l-4 border-gray-100 overflow-hidden'}`}>
+                    <div className={`relative flex flex-col items-center justify-between ${isPrint ? 'bg-white' : 'bg-amber-50'} ${isPrint ? 'w-[5.5in] h-[8.5in] p-10' : 'w-full h-full p-1 md:p-5 xl:p-8 shadow-none md:shadow-inner border-0 md:border-l-4 border-gray-100 overflow-hidden'}`}>
                         <div className="text-center w-full flex-shrink-0">
                             <h2 className="text-2xl md:text-4xl xl:text-6xl font-bold text-gray-800 mb-0 md:mb-3 leading-tight">
                                 {isPrint ? data.title : <HighlightedText text={data.title} start={0} />}
@@ -600,7 +600,7 @@
                             <div className="w-full w-full max-w-full md:max-w-7xl flex flex-col items-center gap-0 md:gap-4 h-full flex-1 max-h-[calc(100vh-56px)] md:flex-none md:max-h-none md:h-[calc(100vh-244px)] md:min-h-[360px]">
                                 <div className="flex items-start md:items-center gap-0 md:gap-8 w-full justify-center flex-1 min-h-0 relative overflow-hidden">
                                     <button onClick={() => nav(currentPage - 1, 'prev')} disabled={currentPage === 0 || isAnimating} className="p-2 md:p-4 bg-white/80 md:bg-white rounded-full shadow-lg disabled:opacity-20 transition hover:scale-110 active:scale-90 flex-shrink-0 absolute left-1 md:relative md:left-auto z-10"><Icons.ChevronLeft size={24} /></button>
-                                    <div className="perspective-2000 w-full h-full max-w-full md:max-w-7xl bg-white shadow-none md:shadow-2xl rounded-none md:rounded-2xl overflow-hidden relative border-0 md:border md:border-slate-200 flex flex-col">
+                                    <div className="perspective-2000 w-full h-full max-w-full md:max-w-7xl bg-amber-50 shadow-none md:shadow-2xl rounded-none md:rounded-2xl overflow-hidden relative border-0 md:border md:border-slate-200 flex flex-col">
                                         <div className={`w-full h-full transform-style-3d ${isAnimating ? (direction === 'next' ? 'page-flip-next' : 'page-flip-prev') : ''}`}>
                                             <PageUI idx={currentPage} />
                                         </div>
@@ -608,7 +608,7 @@
                                     <button onClick={() => nav(currentPage + 1, 'next')} disabled={currentPage === BOOK_CONFIG.pages.length - 1 || isAnimating} className="p-2 md:p-4 bg-white/80 md:bg-white rounded-full shadow-lg disabled:opacity-20 transition hover:scale-110 active:scale-90 flex-shrink-0 absolute right-1 md:relative md:right-auto z-10"><Icons.ChevronRight size={24} /></button>
                                 </div>
                                 <div className="flex gap-2 flex-shrink-0 hidden md:flex">
-                                    {BOOK_CONFIG.pages.map((_, i) => (<div key={i} className={`h-1.5 md:h-2.5 rounded-full transition-all duration-300 ${i === currentPage ? "bg-indigo-500 w-6 md:w-8" : "bg-slate-200 w-1.5 md:w-2.5"}`} />))}
+                                    {BOOK_CONFIG.pages.map((_, i) => (<div key={i} className={`h-1.5 md:h-2.5 rounded-full transition-all duration-300 ${i === currentPage ? "bg-amber-300 w-6 md:w-8" : "bg-white/30 w-1.5 md:w-2.5"}`} />))}
                                 </div>
                             </div>
                         ) : (

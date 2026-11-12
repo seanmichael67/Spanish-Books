@@ -126,6 +126,21 @@ async function main() {
       await page.waitForSelector('.pg.on .es .w.now', { timeout: 8000 });
       await page.waitForLoadState('networkidle');
       await shot(page, 'reader');
+      // Tap an ordinary word ("es"): it plays that slice of the page recording and lights up.
+      await page.click('[data-listen]'); // stop the page reading first
+      await page.click('.pg.on .es .w:text-is("es")');
+      await page.waitForSelector('.pg.on .es .w.now:text-is("es")', { timeout: 4000 });
+      // Helpers: slower voice and "my turn" are remembered and the pause prompt appears.
+      await page.click('[data-slow]');
+      await page.click('[data-turn]');
+      assert.strictEqual(await page.getAttribute('[data-slow]', 'aria-pressed'), 'true');
+      await page.click('[data-listen]');
+      await page.waitForSelector('[data-turn-note]:not([hidden])', { timeout: 9000 });
+      assert.strictEqual(await page.evaluate(() => localStorage.getItem('beibei-libros-turn')), '1');
+      await shot(page, 'reader-turn');
+      await page.click('[data-listen]');
+      await page.click('[data-slow]');
+      await page.click('[data-turn]');
       // Full-screen book mode keeps the same page and can be closed again.
       await page.click('[data-full]');
       assert.ok(await page.locator('.reader.full').isVisible());
