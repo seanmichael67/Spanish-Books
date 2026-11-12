@@ -144,8 +144,11 @@ async function main() {
       await page.click('form[data-signup] button');
       await page.waitForSelector('.msg.ok');
       assert.deepStrictEqual(contacts, [{ email: 'ana@example.com', first_name: 'Ana', unsubscribed: false }]);
-      assert.strictEqual(emails.length, 1, 'welcome email sent');
+      assert.strictEqual(emails.length, 3, 'welcome email plus two scheduled follow-ups');
       assert.match(emails[0].html, /\/muestra\//);
+      assert.strictEqual(emails[0].scheduled_at, undefined);
+      assert.ok(Date.parse(emails[1].scheduled_at) > Date.now() + 23 * 3600e3);
+      assert.ok(Date.parse(emails[2].scheduled_at) > Date.now() + 69 * 3600e3);
       emails.length = 0;
     });
 

@@ -71,7 +71,8 @@
   /* ---- Library filters ---- */
   var lib = $('[data-library]');
   if (lib) {
-    var state = { theme: new URLSearchParams(location.search).get('tema') || 'all', level: 'all' };
+    var query = new URLSearchParams(location.search);
+    var state = { theme: query.get('tema') || 'all', level: query.get('nivel') || 'all' };
     var apply = function () {
       var shown = 0;
       $$('.book', lib).forEach(function (b) {

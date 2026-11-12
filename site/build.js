@@ -161,24 +161,37 @@ function home() {
 </div></section>
 
 <section class="block"><div class="wrap">
+  <h2>A path from first sounds to first sentences</h2>
+  <p class="sub">Start where your child is. Each step has free books with audio, and children can move up when a step feels easy.</p>
+  <div class="path">
+    ${[
+      booksByTheme('silabas').length ? ['/temas/silabas/', '🔤', 'Sílabas', 'Syllables', 'Vowels, then ma-me-mi-mo-mu. How reading starts in Spanish.', booksByTheme('silabas').length] : null,
+      ['/libros/?nivel=1', '🌱', 'Nivel 1', 'First words', 'Two and three word sentences. Ages 2–3.', books.filter((b) => b.level === 1 && b.theme !== 'silabas').length],
+      ['/libros/?nivel=2', '🌿', 'Nivel 2', 'Short sentences', 'Four words, with colours, sizes and actions. Ages 3–5.', books.filter((b) => b.level === 2).length],
+      ['/libros/?nivel=3', '🌳', 'Nivel 3', 'Longer sentences', 'Five words and more, with places and people. Ages 4–6.', books.filter((b) => b.level === 3).length],
+    ].filter(Boolean).map(([href, em, es, en, text, n], i) => `<a href="${href}"><span class="n">${i + 1}</span><span class="em">${em}</span><b lang="es">${es}</b><i>${en}</i><p>${text}</p><small>${n} books</small></a>`).join('')}
+  </div>
+</div></section>
+
+<section class="block tint"><div class="wrap">
   <h2>Start with one of these</h2>
   <p class="sub">A first book from each theme. Free to read, with audio.</p>
   <div class="books">${featured.map(bookCard).join('')}</div>
   <p style="margin-top:26px"><a class="btn alt" href="/libros/">See all ${books.length} books</a></p>
 </div></section>
 
-<section class="block tint"><div class="wrap">
+<section class="block"><div class="wrap">
   <h2>Printable packs for home and classroom</h2>
   <p class="sub">Take the books off the screen. Each pack is 8 books on one theme with vocabulary, flashcards and tracing pages. ${money(config.packPriceCents)} per pack, or every pack for ${money(config.libraryPriceCents)}.</p>
   <div class="packs">${packs.slice(0, 3).map(packCard).join('')}</div>
   <p style="margin-top:26px"><a class="btn" href="/packs/">See all ${packs.length} packs</a></p>
 </div></section>
 
-<section class="block"><div class="wrap">
+<section class="block tint"><div class="wrap">
   ${signup('Get a free printable book', `Join the Beibei book club and we will send you <b>${esc(pick(config.freeSampleBook).title)}</b> to print today, plus a new book and a simple Spanish tip each week.`)}
 </div></section>
 
-<section class="block tint"><div class="narrow">
+<section class="block"><div class="narrow">
   <h2 class="center">Questions parents ask</h2>
   <div style="margin-top:22px">${faq.map(([q, a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join('')}</div>
 </div></section>`;

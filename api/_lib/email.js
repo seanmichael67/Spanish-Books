@@ -27,9 +27,14 @@ function addContact(email, firstName) {
   return resend(`/audiences/${process.env.RESEND_AUDIENCE_ID}/contacts`, { email, first_name: firstName || undefined, unsubscribed: false });
 }
 
-/** Send one email. `key` stops the same email being sent twice. */
-function sendEmail({ to, subject, html, key }) {
-  return resend('/emails', { from: process.env.RESEND_FROM, to: [to], subject, html }, key ? { 'Idempotency-Key': key } : {});
+/**
+ * Send one email. `key` stops the same email being sent twice.
+ * `inHours` (optional) asks Resend to deliver it later instead of now.
+ */
+function sendEmail({ to, subject, html, key, inHours }) {
+  const payload = { from: process.env.RESEND_FROM, to: [to], subject, html };
+  if (inHours) payload.scheduled_at = new Date(Date.now() + inHours * 3600 * 1000).toISOString();
+  return resend('/emails', payload, key ? { 'Idempotency-Key': key } : {});
 }
 
 const canSend = () => configured() && Boolean(process.env.RESEND_FROM);
