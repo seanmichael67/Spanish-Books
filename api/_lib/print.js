@@ -80,6 +80,23 @@ function guideSheet(title, books, color) {
     <div class="foot"><span>Guía para familias · Parent guide</span><span>${esc(config.name)} · ${esc(config.school)}</span></div></section>`;
 }
 
+/** A one-week plan a teacher (or parent) can follow with any book in the pack. */
+function planSheet(books, color) {
+  const days = [
+    ['Lunes · Monday', 'Meet the book', 'Picture walk: look at every page without reading. Ask «¿Qué ves?». Then read the book once, slowly, pointing under each word.'],
+    ['Martes · Tuesday', 'Echo reading', 'Read each page and let the children repeat it. Tap or clap the coloured words. Finish with the "Mis palabras" page.'],
+    ['Miércoles · Wednesday', 'Word play', 'Cut out the flashcards. Play memory, or hide the cards around the room and go on a word hunt.'],
+    ['Jueves · Thursday', 'Write and draw', 'Trace the six words. Each child picks a favourite word, draws it, and says a sentence with it.'],
+    ['Viernes · Friday', 'I can read it', 'Children "read" the book to a friend or a stuffed animal. Colour a star on the certificate and send the book home.'],
+  ];
+  return `<section class="sheet guide" style="--c:${color}"><div class="band"></div>
+    <h1>Plan de cinco días · Five-day plan</h1>
+    <p>One book a week is a good pace for ages 2 to 6. Fifteen minutes a day is enough. This pack has ${books.length} books, so it covers about ${books.length} weeks.</p>
+    <table class="plan">${days.map(([d, t, x]) => `<tr><th>${d}</th><td><b>${t}.</b> ${x}</td></tr>`).join('')}</table>
+    <p><b>Useful classroom phrases:</b> «Vamos a leer» (Let's read) · «¿Qué ves?» (What do you see?) · «Repite conmigo» (Repeat with me) · «¡Muy bien!» (Very good!) · «Otra vez» (Again)</p>
+    <div class="foot"><span>Plan semanal · Weekly plan</span><span>${esc(config.name)} · ${esc(config.school)}</span></div></section>`;
+}
+
 function certificateSheet(books, color) {
   return `<section class="sheet cert" style="--c:${color}">
     <div class="medal">🏅</div><h1>¡Yo puedo leer en español!</h1><p>I can read in Spanish!</p>
@@ -108,7 +125,7 @@ function renderPrintable({ title, books, note = '', backUrl = '/' }) {
 <body>
 <div class="toolbar"><strong>${esc(title)}</strong><span>${esc(note || 'Paper: US Letter, landscape. For a PDF, choose "Save as PDF" as the printer.')}</span>
 <a href="${esc(backUrl)}">← Back</a><button type="button" onclick="window.print()">🖨 Print / Save as PDF</button></div>
-${many ? guideSheet(title, books, color) : ''}
+${many ? guideSheet(title, books, color) + planSheet(books, color) : ''}
 ${books.map(bookSheets).join('\n')}
 ${many ? certificateSheet(books, color) : ''}
 </body></html>`;

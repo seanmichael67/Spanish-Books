@@ -264,3 +264,12 @@ footer.site .fine { border-top: 1px solid #36415f; margin-top: 28px; padding-top
 .bundle.club p { color: var(--ink); }
 .bundle.club .price small { color: var(--ink); }
 .bundle.club .btn { background: var(--ink); box-shadow: 0 4px 0 #0c1326; }
+
+/* Library search box */
+.search { max-width: 460px; margin-top: 18px; padding: 13px 18px; border-radius: 999px; border: 2px solid var(--line); font: inherit; background: #fff; color: var(--ink); width: 100%; display: block; }
+.search:focus { border-color: var(--teal); outline: none; }
+/* Schools page */
+.quote { background: #fff; border-left: 6px solid var(--sun); border-radius: 0 18px 18px 0; padding: 18px 22px; margin: 1.2em 0; }
+.plan { width: 100%; border-collapse: collapse; margin: 1em 0; background: #fff; border-radius: 16px; overflow: hidden; }
+.plan th, .plan td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.plan th { font-family: var(--display); background: var(--sky); white-space: nowrap; }

@@ -11,7 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const { books, themes, config, packs, library, school, club, getTheme, booksByTheme } = require('../api/_lib/catalog');
-const { esc, vocabImages, highlight, syllableWord } = require('../api/_lib/text');
+const { esc, norm, vocabImages, highlight, syllableWord } = require('../api/_lib/text');
 const { renderPrintable } = require('../api/_lib/print');
 
 const ROOT = path.join(__dirname, '..');
@@ -54,7 +54,8 @@ function bookCard(book) {
   const cover = hasThumb(book)
     ? `<img src="${media(book, 'thumb.webp')}" alt="" width="480" height="360" loading="lazy" decoding="async">`
     : esc(book.emoji);
-  return `<a class="book" href="/libros/${book.slug}/" data-theme="${book.theme}" data-level="${book.level}" style="--c:${theme.color}">
+  const words = norm([book.title, book.titleEn, ...book.vocab.map((w) => `${w.es} ${w.en}`)].join(' '));
+  return `<a class="book" href="/libros/${book.slug}/" data-theme="${book.theme}" data-level="${book.level}" data-words="${esc(words)}" style="--c:${theme.color}">
     <div class="cov">${cover}</div>
     <div class="meta"><b>${esc(book.title)}</b><small>${esc(book.titleEn)}</small><span class="lvl">Nivel ${book.level}</span></div></a>`;
 }
@@ -77,7 +78,7 @@ function signup(heading, text) {
 function layout({ title, description, urlPath, body, head = '', scripts = '', active = '', noindex = false }) {
   const canonical = SITE_URL ? `<link rel="canonical" href="${SITE_URL}${urlPath}">` : '';
   if (!noindex) sitemap.push(urlPath);
-  const nav = [['/libros/', 'Books'], ['/packs/', 'Printable packs'], ['/padres/', 'For parents'], ['/mis-compras/', 'My purchases']]
+  const nav = [['/libros/', 'Books'], ['/packs/', 'Printable packs'], ['/padres/', 'For parents'], ['/escuelas/', 'For schools'], ['/mis-compras/', 'My purchases']]
     .map(([href, label]) => `<a href="${href}"${active === href ? ' aria-current="page"' : ''}>${label}</a>`).join('');
   const ga = config.analyticsId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${config.analyticsId}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${config.analyticsId}');</script>` : '';
@@ -113,7 +114,7 @@ ${body}
 </main>
 <footer class="site"><div class="wrap">
   <div class="cols">
-    <div><h3>📖 ${esc(config.name)}</h3><p>${esc(config.tagline)}. Written and read in the classroom by the teachers of <a href="${config.schoolUrl}">${esc(config.school)}</a>, a trilingual Montessori-inspired preschool in Phoenix, Arizona.</p></div>
+    <div><h3>📖 ${esc(config.name)}</h3><p>${esc(config.tagline)}. Made by <a href="${config.schoolUrl}">${esc(config.school)}</a>, a trilingual Montessori-inspired preschool in Phoenix, Arizona.</p></div>
     <div><h3>Read</h3><ul><li><a href="/libros/">All books</a></li><li><a href="/packs/">Printable packs</a></li><li><a href="/muestra/">Free printable book</a></li><li><a href="/padres/">How to read together</a></li></ul></div>
     <div><h3>Help</h3><ul><li><a href="/mis-compras/">My purchases</a></li><li><a href="mailto:${config.contactEmail}">${config.contactEmail}</a></li><li><a href="/privacidad/">Privacy</a></li><li><a href="/terminos/">Terms</a></li></ul></div>
   </div>
@@ -219,6 +220,8 @@ function libraryPage() {
   <h1>Spanish books for little readers</h1>
   <p class="sub">All free to read, with audio. Pick a theme or a reading level. Showing <b data-count>${books.length}</b> books.</p>
   <p class="progress" data-progress hidden></p>
+  <label class="sr" for="book-search">Search books</label>
+  <input class="field search" id="book-search" type="search" data-search placeholder="Search a book or a Spanish word, like oso or rojo" autocomplete="off">
   <div class="filters" role="group" aria-label="Filter books">
     <button data-filter="theme" value="all" aria-pressed="true">📚 All themes</button>
     ${themes.filter((t) => booksByTheme(t.id).length).map((t) => `<button data-filter="theme" value="${t.id}" aria-pressed="false">${t.emoji} ${esc(t.en)}</button>`).join('')}
@@ -247,7 +250,7 @@ function bookPage(book) {
   const siblings = booksByTheme(book.theme);
   const nextBook = siblings[(siblings.indexOf(book) + 1) % siblings.length];
   const pack = packs.find((p) => p.theme === book.theme);
-  const isSample = book.slug === config.freeSampleBook;
+  const isSample = book.slug === config.freeSampleBook || book.slug === config.freeSyllableSample;
 
   const kw = (word, v) => `<button type="button" class="kw" data-word="${esc(v.es)}"${v.audio ? ` data-word-audio="${media(book, v.audio)}"` : ''}>${word}</button>`;
 
@@ -401,7 +404,7 @@ function packsPage() {
     <div style="text-align:center"><div class="price">${money(club.priceCents)} <small>per month</small></div><button class="btn" data-buy="${club.id}" style="margin-top:10px">Join the club</button></div>
   </div>
   <div class="bundle school" id="${school.id}">
-    <div><h2>🏫 For schools</h2><p>One licence for every classroom and teacher at your school: all ${library.books.length} printable books, flashcards and tracing pages, plus every pack we add. Made and classroom-tested at ${esc(config.school)}.</p></div>
+    <div><h2>🏫 For schools</h2><p><a href="/escuelas/">See what schools get.</a> One licence for every classroom and teacher at your school: all ${library.books.length} printable books, flashcards and tracing pages, plus every pack we add. Made by ${esc(config.school)}.</p></div>
     <div style="text-align:center"><div class="price">${money(school.priceCents)} <small>one time</small></div><button class="btn" data-buy="${school.id}" style="margin-top:10px">Get the school licence</button></div>
   </div>
 </div>
@@ -420,6 +423,57 @@ function packsPage() {
     body,
     active: '/packs/',
     head: `<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
+  }));
+}
+
+/* ---------- For schools ---------- */
+function schoolsPage() {
+  const total = library.books.length;
+  const body = `
+<div class="narrow page-head prose">
+  <span class="kicker">🏫 For preschools, immersion schools and teachers</span>
+  <h1>A ready-made Spanish reading shelf for your classrooms</h1>
+  <p class="sub">${total} leveled Spanish readers with audio, picture vocabulary, flashcards and a five-day plan for each book. Made by ${esc(config.school)}, a trilingual Montessori-inspired preschool in Phoenix.</p>
+  <p><button class="btn" data-buy="${school.id}">Get the school licence · ${money(school.priceCents)}</button> <a class="btn alt" href="/muestra/">See two free sample books</a></p>
+
+  <h2>What your teachers get</h2>
+  <ul>
+    <li><b>${total} printable books in ${packs.length} themes</b>, from syllables (ma-me-mi-mo-mu) to short stories. Print as many copies as you need.</li>
+    <li><b>A projector-ready version of every book</b> with audio on each page, free on this site. No accounts for children.</li>
+    <li><b>Picture vocabulary, cut-out flashcards and tracing pages</b> for every book: ${total * 6} word cards in all.</li>
+    <li><b>A five-day plan</b> that works with any book, so a teacher who is still learning Spanish can run the lesson.</li>
+    <li><b>Every new pack we publish</b>, at no extra cost.</li>
+  </ul>
+
+  <h2>One week with one book</h2>
+  <table class="plan">
+    <tr><th>Monday</th><td><b>Meet the book.</b> Picture walk, then one slow read with the audio.</td></tr>
+    <tr><th>Tuesday</th><td><b>Echo reading.</b> Children repeat each page and tap the coloured words.</td></tr>
+    <tr><th>Wednesday</th><td><b>Word play.</b> Memory and word hunts with the flashcards.</td></tr>
+    <tr><th>Thursday</th><td><b>Write and draw.</b> Trace the six words and draw a favourite.</td></tr>
+    <tr><th>Friday</th><td><b>I can read it.</b> Children read to a friend and take the book home.</td></tr>
+  </table>
+
+  <h2>How the books are built</h2>
+  <ul>
+    <li><b>A clear path.</b> Sílabas, then Nivel 1 (two or three words), Nivel 2 (four words) and Nivel 3 (longer sentences and stories).</li>
+    <li><b>Real photographs</b> in most books, so a word is tied to the real thing.</li>
+    <li><b>Six key words per book</b>, shown in colour in the story and reviewed with pictures at the end.</li>
+    <li><b>English on every page</b>, small, so families and new teachers can follow along.</li>
+  </ul>
+
+  <h2>The licence</h2>
+  <p>One payment of ${money(school.priceCents)} covers every classroom and teacher at one school site, for classroom use and for sending copies home with enrolled families. It does not expire. For a district or several sites, write to <a href="mailto:${config.contactEmail}">${config.contactEmail}</a>.</p>
+  <p>A single teacher? The <a href="/packs/#${library.id}">Biblioteca Completa</a> (${money(library.priceCents)}) covers one classroom.</p>
+  <p><button class="btn" data-buy="${school.id}">Get the school licence · ${money(school.priceCents)}</button></p>
+  <p class="note">Secure checkout by Stripe. Need an invoice or a purchase order? Email us and we will send one.</p>
+</div>`;
+  write('escuelas/index.html', layout({
+    title: `Spanish readers for preschool classrooms: school licence · ${config.name}`,
+    description: `${total} leveled Spanish readers for preschool and kindergarten classrooms with audio, flashcards and a five-day plan. One school licence covers every classroom.`,
+    urlPath: '/escuelas/',
+    body,
+    active: '/escuelas/',
   }));
 }
 
@@ -523,12 +577,14 @@ libraryPage();
 themePages();
 books.forEach(bookPage);
 packsPage();
+schoolsPage();
 purchasePages();
 textPages();
 
 // The free sample printable (static, no purchase needed).
 const sample = books.find((b) => b.slug === config.freeSampleBook) || books[0];
-write('muestra/index.html', renderPrintable({ title: `${sample.title} · free printable book`, books: [sample], backUrl: '/packs/' }));
+const samples = [sample, books.find((b) => b.slug === config.freeSyllableSample)].filter(Boolean);
+write('muestra/index.html', renderPrintable({ title: samples.length > 1 ? 'Free sample: two printable books' : `${sample.title} · free printable book`, books: samples, backUrl: '/packs/' }));
 
 write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /gracias/\nDisallow: /mis-compras/\n${SITE_URL ? `Sitemap: ${SITE_URL}/sitemap.xml\n` : ''}`);
 if (SITE_URL) {

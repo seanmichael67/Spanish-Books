@@ -100,6 +100,13 @@ async function main() {
       assert.strictEqual(await page.locator('.book:visible').count(), 8);
       await page.click('button[data-filter="level"][value="1"]');
       assert.ok((await page.locator('.book:visible').count()) < 8);
+      // Search by a Spanish word (accents optional) finds the books that teach it.
+      await page.goto(SITE + '/libros/');
+      await page.fill('[data-search]', 'arbol');
+      assert.ok((await page.locator('.book:visible').count()) >= 2);
+      assert.ok((await page.locator('.book:visible').count()) < 20);
+      await page.fill('[data-search]', 'zzzz');
+      assert.ok(await page.locator('.empty-note').isVisible());
       await page.goto(SITE + '/libros/?tema=animales');
       assert.strictEqual(await page.locator('.book:visible').count(), 8);
       await page.waitForLoadState('networkidle');
@@ -190,9 +197,10 @@ async function main() {
       emails.length = 0;
     });
 
-    await step('free sample printable has all 10 sheets', async () => {
+    await step('free sample printable has two books, a guide, a plan and a certificate', async () => {
       await page.goto(SITE + '/muestra/');
-      assert.strictEqual(await page.locator('.sheet').count(), 10);
+      assert.strictEqual(await page.locator('.sheet').count(), 2 * 10 + 3);
+      assert.strictEqual(await page.locator('.sheet .plan tr').count(), 5);
       await page.waitForLoadState('networkidle');
       await shot(page, 'print-sample', true);
     });
@@ -218,7 +226,7 @@ async function main() {
       const href = await page.getAttribute('[data-owned] a.btn', 'href');
       const r = await page.goto(SITE + href);
       assert.strictEqual(r.status(), 200);
-      assert.strictEqual(await page.locator('.sheet').count(), 8 * 10 + 2);
+      assert.strictEqual(await page.locator('.sheet').count(), 8 * 10 + 3);
       // That token must not open a different pack.
       assert.strictEqual((await page.goto(SITE + href.replace('pack-animales', 'pack-oceano'))).status(), 403);
       const one = await page.goto(SITE + href + '&book=el-gato');
@@ -278,6 +286,13 @@ async function main() {
       subscriptions.sub_test_1.status = 'canceled';
       assert.strictEqual((await member.goto(SITE + href)).status(), 402);
       subscriptions.sub_test_1.status = 'active';
+    });
+
+    await step('schools page sells the school licence', async () => {
+      await page.goto(SITE + '/escuelas/');
+      assert.strictEqual(await page.locator('[data-buy="escuela"]').count(), 2);
+      await page.waitForLoadState('networkidle');
+      await shot(page, 'schools', true);
     });
 
     await step('theme page lists its books, words and pack', async () => {

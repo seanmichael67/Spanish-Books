@@ -55,6 +55,9 @@ h1, h2, h3 { font-family: 'Fredoka', 'Trebuchet MS', sans-serif; margin: 0; }
 .guide .cols { display: grid; grid-template-columns: 1fr 1fr; gap: .2in .45in; flex: 1; align-content: start; }
 .guide h3 { font-size: 14pt; margin-bottom: 2px; color: var(--c, #ff6b4a); }
 .guide p { margin: 0; }
+.plan { width: 100%; border-collapse: collapse; margin: .12in 0 .16in; font-size: 12pt; }
+.plan th, .plan td { text-align: left; vertical-align: top; padding: .09in .12in; border-bottom: 1.5px solid #e6e1d6; }
+.plan th { white-space: nowrap; color: var(--c, #ff6b4a); font-family: 'Fredoka', sans-serif; width: 2.1in; }
 .toc { columns: 2; margin: .1in 0 0; padding-left: 1.2em; font-size: 13pt; line-height: 1.7; }
 
 .cert { align-items: center; justify-content: center; text-align: center; gap: .14in; border: .14in solid color-mix(in srgb, var(--c, #ff6b4a) 60%, #fff); }

@@ -60,6 +60,9 @@ S, L, T, N, D, B, C, G, R, H) and 8 story books for Nivel 3. 157 books and 19 pa
 - [ ] **Reviews on the packs page.** There are none yet, so the page has no social proof.
 - [ ] **Pinterest and Teachers Pay Teachers.** Printable Spanish packs sell well on both;
       list the same packs there and link back.
+- [ ] **Check the school licence wording.** The `/escuelas/` page says the licence covers one school
+      site, allows copies to go home with enrolled families, does not expire, and that you can send
+      an invoice or accept a purchase order. I wrote those terms; change anything you do not want to promise.
 - [ ] **Sell the school licence.** It exists on the packs page ($149). Email it to preschool
       directors and Spanish-immersion schools you know.
 - [ ] **Turn on the membership.** The Club de Lectura ($6 a month, every pack while a member) is

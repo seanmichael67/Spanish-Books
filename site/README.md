@@ -8,6 +8,7 @@ WordPress + iframe setup with one fast site that you host on Vercel.
 - Shows every finished book as a real web page (good for Google), with audio.
 - Ends every book with a picture vocabulary page, a word game and a badge.
 - Has one page per theme (`/temas/…`) with its books, word list and pack.
+- Has a page for schools (`/escuelas/`) that sells the school licence, and a library search box.
 - Collects parent emails (book club) and gives a free printable book.
 - Sells printable packs and a school licence through Stripe and unlocks them after payment.
 
