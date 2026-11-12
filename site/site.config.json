@@ -9,5 +9,6 @@
   "libraryPriceCents": 3900,
   "freeSampleBook": "el-oso",
   "schoolPriceCents": 14900,
-  "clubPriceCents": 600
+  "clubPriceCents": 600,
+  "freeSyllableSample": "silabas-m"
 }

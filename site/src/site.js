@@ -72,11 +72,13 @@
   var lib = $('[data-library]');
   if (lib) {
     var query = new URLSearchParams(location.search);
-    var state = { theme: query.get('tema') || 'all', level: query.get('nivel') || 'all' };
+    var state = { theme: query.get('tema') || 'all', level: query.get('nivel') || 'all', text: '' };
+    var plain = function (s) { return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim(); };
     var apply = function () {
       var shown = 0;
       $$('.book', lib).forEach(function (b) {
-        var ok = (state.theme === 'all' || b.getAttribute('data-theme') === state.theme) && (state.level === 'all' || b.getAttribute('data-level') === state.level);
+        var ok = (state.theme === 'all' || b.getAttribute('data-theme') === state.theme) && (state.level === 'all' || b.getAttribute('data-level') === state.level) &&
+          (!state.text || b.getAttribute('data-words').indexOf(state.text) >= 0);
         b.hidden = !ok;
         if (ok) shown++;
       });
@@ -89,6 +91,8 @@
     $$('[data-filter]').forEach(function (btn) {
       btn.addEventListener('click', function () { state[btn.getAttribute('data-filter')] = btn.value; apply(); });
     });
+    var search = $('[data-search]');
+    if (search) search.addEventListener('input', function () { state.text = plain(search.value); apply(); });
     apply();
   }
 
