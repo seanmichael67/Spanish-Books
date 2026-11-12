@@ -134,7 +134,7 @@ function home() {
     ['Do I need to speak Spanish?', 'No. Every page has a recording by a native-sounding Spanish voice and a small English translation. You and your child can learn the words together.'],
     ['What ages are the books for?', 'Ages 2 to 6. Nivel 1 books use two or three word sentences for toddlers. Nivel 3 books use longer sentences for children who are starting to read.'],
     ['Are the books really free?', `Yes. All ${books.length} books are free to read on this site, with audio. The printable packs are the only thing we sell, and they pay for new books.`],
-    ['What is in a printable pack?', 'Eight books on one theme, ready to print at home: one big sentence per page, a picture vocabulary page, cut-out flashcards, and a trace-and-write page for each book, plus a parent guide and a reading certificate.'],
+    ['What is in a printable pack?', 'A whole theme of books (eight or more), ready to print at home: one big sentence per page, a picture vocabulary page, cut-out flashcards, and a trace-and-write page for each book, plus a parent guide and a reading certificate.'],
     ['Can teachers use them in class?', 'Yes. One purchase covers one classroom or one family. Schools that want a licence for several classrooms can email us.'],
   ];
   const body = `
@@ -182,7 +182,7 @@ function home() {
 
 <section class="block"><div class="wrap">
   <h2>Printable packs for home and classroom</h2>
-  <p class="sub">Take the books off the screen. Each pack is 8 books on one theme with vocabulary, flashcards and tracing pages. ${money(config.packPriceCents)} per pack, or every pack for ${money(config.libraryPriceCents)}.</p>
+  <p class="sub">Take the books off the screen. Each pack is a full theme (8 books or more) with vocabulary, flashcards and tracing pages. ${money(config.packPriceCents)} per pack, or every pack for ${money(config.libraryPriceCents)}.</p>
   <div class="packs">${packs.slice(0, 3).map(packCard).join('')}</div>
   <p style="margin-top:26px"><a class="btn" href="/packs/">See all ${packs.length} packs</a></p>
 </div></section>
@@ -274,7 +274,7 @@ function bookPage(book) {
 
   const printLink = isSample
     ? `<a href="/muestra/"><b>🖨 Print this book free</b><span>With flashcards and tracing page.</span></a>`
-    : pack ? `<a href="/packs/#${pack.id}"><b>🖨 Print this book</b><span>In the ${esc(theme.en)} pack: 8 books, flashcards and tracing.</span></a>` : '';
+    : pack ? `<a href="/packs/#${pack.id}"><b>🖨 Print this book</b><span>In the ${esc(theme.en)} pack: ${siblings.length} books, flashcards and tracing.</span></a>` : '';
   const badge = `<section class="pg badge"><div class="medal">${esc(book.badge.emoji)}</div>
     <h2 lang="es">¡Lo lograste!</h2><p>You did it! You earned the <b lang="es">${esc(book.badge.es)}</b> badge (${esc(book.badge.en)}).</p>
     <p class="progress" data-read-count></p>
@@ -383,11 +383,11 @@ function packsPage() {
   const body = `
 <div class="wrap page-head">
   <h1>Printable Spanish book packs</h1>
-  <p class="sub">Eight books on one theme, ready to print at home or school. Pay once, print as many times as you need for your family or your classroom.</p>
+  <p class="sub">A whole theme of books (8 or more), ready to print at home or school. Pay once, print as many times as you need for your family or your classroom.</p>
   <div class="inside">
-    <div><span>📖</span><b>8 books per pack</b><p>One big sentence and one picture per page, sized for small hands and group reading.</p></div>
+    <div><span>📖</span><b>8 or more books per pack</b><p>One big sentence and one picture per page, sized for small hands and group reading.</p></div>
     <div><span>🖼️</span><b>Picture vocabulary</b><p>Six key words per book with their pictures, at the end of every book.</p></div>
-    <div><span>✂️</span><b>Cut-out flashcards</b><p>48 cards per pack for memory games and word hunts.</p></div>
+    <div><span>✂️</span><b>Cut-out flashcards</b><p>Six cards per book for memory games and word hunts.</p></div>
     <div><span>✏️</span><b>Trace and write</b><p>A writing page for each book, plus questions to talk about together.</p></div>
     <div><span>🏅</span><b>Guide and certificate</b><p>A one-page parent guide and a reading certificate to colour in.</p></div>
   </div>
@@ -411,7 +411,7 @@ function packsPage() {
   };
   write('packs/index.html', layout({
     title: `Printable Spanish books for kids with flashcards · ${config.name}`,
-    description: `Printable Spanish book packs for ages 2–6: 8 books per theme with picture vocabulary, cut-out flashcards and tracing pages. ${money(config.packPriceCents)} per pack.`,
+    description: `Printable Spanish book packs for ages 2–6: a whole theme per pack with picture vocabulary, cut-out flashcards and tracing pages. ${money(config.packPriceCents)} per pack.`,
     urlPath: '/packs/',
     body,
     active: '/packs/',

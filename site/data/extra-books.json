@@ -704,6 +704,1070 @@
     "es": "Lector de la D",
     "en": "D Reader"
    }
+  },
+  {
+   "slug": "silabas-b",
+   "folder": "silabas-b",
+   "order": 9,
+   "theme": "silabas",
+   "emoji": "🐋",
+   "title": "Sílabas con B",
+   "titleEn": "Syllables with B",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con B",
+     "en": "Syllables with B"
+    },
+    {
+     "es": "ballena",
+     "en": "whale",
+     "syllable": "ba",
+     "say": "ba. ballena."
+    },
+    {
+     "es": "bebé",
+     "en": "baby",
+     "syllable": "be",
+     "say": "be. bebé."
+    },
+    {
+     "es": "bicicleta",
+     "en": "bicycle",
+     "syllable": "bi",
+     "say": "bi. bicicleta."
+    },
+    {
+     "es": "bota",
+     "en": "boot",
+     "syllable": "bo",
+     "say": "bo. bota."
+    },
+    {
+     "es": "búho",
+     "en": "owl",
+     "syllable": "bu",
+     "say": "bu. búho."
+    },
+    {
+     "es": "El búho es bonito.",
+     "en": "The owl is pretty."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "ballena",
+     "en": "whale",
+     "emoji": "🐋"
+    },
+    {
+     "es": "bebé",
+     "en": "baby",
+     "emoji": "👶"
+    },
+    {
+     "es": "bicicleta",
+     "en": "bicycle",
+     "emoji": "🚲"
+    },
+    {
+     "es": "bota",
+     "en": "boot",
+     "emoji": "🥾"
+    },
+    {
+     "es": "búho",
+     "en": "owl",
+     "emoji": "🦉"
+    },
+    {
+     "es": "bonito",
+     "en": "pretty",
+     "emoji": "✨"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la B",
+    "en": "B Reader"
+   }
+  },
+  {
+   "slug": "silabas-c",
+   "folder": "silabas-c",
+   "order": 10,
+   "theme": "silabas",
+   "emoji": "🏠",
+   "title": "Sílabas con C",
+   "titleEn": "Syllables with C",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con C",
+     "en": "Syllables with C"
+    },
+    {
+     "es": "casa",
+     "en": "house",
+     "syllable": "ca",
+     "say": "ca. casa."
+    },
+    {
+     "es": "cama",
+     "en": "bed",
+     "syllable": "ca",
+     "say": "ca. cama."
+    },
+    {
+     "es": "conejo",
+     "en": "rabbit",
+     "syllable": "co",
+     "say": "co. conejo."
+    },
+    {
+     "es": "cocina",
+     "en": "kitchen",
+     "syllable": "co",
+     "say": "co. cocina."
+    },
+    {
+     "es": "cuna",
+     "en": "crib",
+     "syllable": "cu",
+     "say": "cu. cuna."
+    },
+    {
+     "es": "El conejo come en casa.",
+     "en": "The rabbit eats at home."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "casa",
+     "en": "house",
+     "emoji": "🏠"
+    },
+    {
+     "es": "cama",
+     "en": "bed",
+     "emoji": "🛏️"
+    },
+    {
+     "es": "conejo",
+     "en": "rabbit",
+     "emoji": "🐰"
+    },
+    {
+     "es": "cocina",
+     "en": "kitchen",
+     "emoji": "🍳"
+    },
+    {
+     "es": "cuna",
+     "en": "crib",
+     "emoji": "🛏️"
+    },
+    {
+     "es": "come",
+     "en": "eats",
+     "emoji": "😋"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la C",
+    "en": "C Reader"
+   }
+  },
+  {
+   "slug": "silabas-g",
+   "folder": "silabas-g",
+   "order": 11,
+   "theme": "silabas",
+   "emoji": "🐱",
+   "title": "Sílabas con G",
+   "titleEn": "Syllables with G",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con G",
+     "en": "Syllables with G"
+    },
+    {
+     "es": "gato",
+     "en": "cat",
+     "syllable": "ga",
+     "say": "ga. gato."
+    },
+    {
+     "es": "gallina",
+     "en": "hen",
+     "syllable": "ga",
+     "say": "ga. gallina."
+    },
+    {
+     "es": "gota",
+     "en": "drop",
+     "syllable": "go",
+     "say": "go. gota."
+    },
+    {
+     "es": "gorila",
+     "en": "gorilla",
+     "syllable": "go",
+     "say": "go. gorila."
+    },
+    {
+     "es": "gusano",
+     "en": "worm",
+     "syllable": "gu",
+     "say": "gu. gusano."
+    },
+    {
+     "es": "El gato ve un gusano.",
+     "en": "The cat sees a worm."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "gato",
+     "en": "cat",
+     "emoji": "🐱"
+    },
+    {
+     "es": "gallina",
+     "en": "hen",
+     "emoji": "🐔"
+    },
+    {
+     "es": "gota",
+     "en": "drop",
+     "emoji": "💧"
+    },
+    {
+     "es": "gorila",
+     "en": "gorilla",
+     "emoji": "🦍"
+    },
+    {
+     "es": "gusano",
+     "en": "worm",
+     "emoji": "🪱"
+    },
+    {
+     "es": "ve",
+     "en": "sees",
+     "emoji": "👀"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la G",
+    "en": "G Reader"
+   }
+  },
+  {
+   "slug": "silabas-r",
+   "folder": "silabas-r",
+   "order": 12,
+   "theme": "silabas",
+   "emoji": "🐸",
+   "title": "Sílabas con R",
+   "titleEn": "Syllables with R",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con R",
+     "en": "Syllables with R"
+    },
+    {
+     "es": "rana",
+     "en": "frog",
+     "syllable": "ra",
+     "say": "ra. rana."
+    },
+    {
+     "es": "regalo",
+     "en": "gift",
+     "syllable": "re",
+     "say": "re. regalo."
+    },
+    {
+     "es": "río",
+     "en": "river",
+     "syllable": "rí",
+     "say": "rí. río."
+    },
+    {
+     "es": "rosa",
+     "en": "rose",
+     "syllable": "ro",
+     "say": "ro. rosa."
+    },
+    {
+     "es": "rubí",
+     "en": "ruby",
+     "syllable": "ru",
+     "say": "ru. rubí."
+    },
+    {
+     "es": "La rana salta al río.",
+     "en": "The frog jumps into the river."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "rana",
+     "en": "frog",
+     "emoji": "🐸"
+    },
+    {
+     "es": "regalo",
+     "en": "gift",
+     "emoji": "🎁"
+    },
+    {
+     "es": "río",
+     "en": "river",
+     "emoji": "🏞️"
+    },
+    {
+     "es": "rosa",
+     "en": "rose",
+     "emoji": "🌹"
+    },
+    {
+     "es": "rubí",
+     "en": "ruby",
+     "emoji": "💎"
+    },
+    {
+     "es": "salta",
+     "en": "jumps",
+     "emoji": "🤸"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la R",
+    "en": "R Reader"
+   }
+  },
+  {
+   "slug": "silabas-h",
+   "folder": "silabas-h",
+   "order": 13,
+   "theme": "silabas",
+   "emoji": "🍦",
+   "title": "Sílabas con H",
+   "titleEn": "Syllables with H",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con H",
+     "en": "Syllables with H"
+    },
+    {
+     "es": "hamaca",
+     "en": "hammock",
+     "syllable": "ha",
+     "say": "ha. hamaca."
+    },
+    {
+     "es": "helado",
+     "en": "ice cream",
+     "syllable": "he",
+     "say": "he. helado."
+    },
+    {
+     "es": "hilo",
+     "en": "thread",
+     "syllable": "hi",
+     "say": "hi. hilo."
+    },
+    {
+     "es": "hoja",
+     "en": "leaf",
+     "syllable": "ho",
+     "say": "ho. hoja."
+    },
+    {
+     "es": "humo",
+     "en": "smoke",
+     "syllable": "hu",
+     "say": "hu. humo."
+    },
+    {
+     "es": "Me gusta el helado.",
+     "en": "I like ice cream."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "hamaca",
+     "en": "hammock",
+     "emoji": "🏝️"
+    },
+    {
+     "es": "helado",
+     "en": "ice cream",
+     "emoji": "🍦"
+    },
+    {
+     "es": "hilo",
+     "en": "thread",
+     "emoji": "🧵"
+    },
+    {
+     "es": "hoja",
+     "en": "leaf",
+     "emoji": "🍃"
+    },
+    {
+     "es": "humo",
+     "en": "smoke",
+     "emoji": "💨"
+    },
+    {
+     "es": "me gusta",
+     "en": "I like",
+     "emoji": "❤️"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la H",
+    "en": "H Reader"
+   }
+  },
+  {
+   "slug": "cuento-el-gatito-tiene-hambre",
+   "folder": "cuento-el-gatito-tiene-hambre",
+   "order": 1,
+   "theme": "cuentos",
+   "emoji": "🐱",
+   "title": "El gatito tiene hambre",
+   "titleEn": "The Kitten Is Hungry",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "El gatito tiene hambre",
+     "en": "The Kitten Is Hungry"
+    },
+    {
+     "es": "El gatito se despierta temprano.",
+     "en": "The kitten wakes up early."
+    },
+    {
+     "es": "Tiene mucha hambre.",
+     "en": "He is very hungry."
+    },
+    {
+     "es": "Busca comida en la cocina.",
+     "en": "He looks for food in the kitchen."
+    },
+    {
+     "es": "No hay nada en su plato.",
+     "en": "There is nothing in his bowl."
+    },
+    {
+     "es": "La niña le da leche.",
+     "en": "The girl gives him milk."
+    },
+    {
+     "es": "¡Ahora el gatito está feliz!",
+     "en": "Now the kitten is happy!"
+    }
+   ],
+   "vocab": [
+    {
+     "es": "gatito",
+     "en": "kitten",
+     "emoji": "🐱"
+    },
+    {
+     "es": "hambre",
+     "en": "hunger",
+     "emoji": "🍽️"
+    },
+    {
+     "es": "comida",
+     "en": "food",
+     "emoji": "🍲"
+    },
+    {
+     "es": "plato",
+     "en": "bowl",
+     "emoji": "🥣"
+    },
+    {
+     "es": "leche",
+     "en": "milk",
+     "emoji": "🥛"
+    },
+    {
+     "es": "feliz",
+     "en": "happy",
+     "emoji": "😊"
+    }
+   ],
+   "badge": {
+    "emoji": "🐱",
+    "es": "Amigo del Gatito",
+    "en": "Kitten's Friend"
+   }
+  },
+  {
+   "slug": "cuento-la-semilla-de-ana",
+   "folder": "cuento-la-semilla-de-ana",
+   "order": 2,
+   "theme": "cuentos",
+   "emoji": "🌱",
+   "title": "La semilla de Ana",
+   "titleEn": "Ana's Seed",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "La semilla de Ana",
+     "en": "Ana's Seed"
+    },
+    {
+     "es": "Ana tiene una semilla pequeña.",
+     "en": "Ana has a small seed."
+    },
+    {
+     "es": "La pone en la tierra.",
+     "en": "She puts it in the soil."
+    },
+    {
+     "es": "Le da agua todos los días.",
+     "en": "She gives it water every day."
+    },
+    {
+     "es": "Ana espera y espera.",
+     "en": "Ana waits and waits."
+    },
+    {
+     "es": "Un día sale una hoja verde.",
+     "en": "One day a green leaf comes out."
+    },
+    {
+     "es": "¡La semilla ya es una flor!",
+     "en": "The seed is now a flower!"
+    }
+   ],
+   "vocab": [
+    {
+     "es": "semilla",
+     "en": "seed",
+     "emoji": "🌱"
+    },
+    {
+     "es": "tierra",
+     "en": "soil",
+     "emoji": "🟤"
+    },
+    {
+     "es": "agua",
+     "en": "water",
+     "emoji": "💧"
+    },
+    {
+     "es": "espera",
+     "en": "waits",
+     "emoji": "⏳"
+    },
+    {
+     "es": "hoja",
+     "en": "leaf",
+     "emoji": "🍃"
+    },
+    {
+     "es": "flor",
+     "en": "flower",
+     "emoji": "🌸"
+    }
+   ],
+   "badge": {
+    "emoji": "🌸",
+    "es": "Jardinera Paciente",
+    "en": "Patient Gardener"
+   }
+  },
+  {
+   "slug": "cuento-el-perro-y-su-pelota",
+   "folder": "cuento-el-perro-y-su-pelota",
+   "order": 3,
+   "theme": "cuentos",
+   "emoji": "🐶",
+   "title": "El perro y su pelota",
+   "titleEn": "The Dog and His Ball",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "El perro y su pelota",
+     "en": "The Dog and His Ball"
+    },
+    {
+     "es": "El perro juega con su pelota roja.",
+     "en": "The dog plays with his red ball."
+    },
+    {
+     "es": "La pelota rueda muy lejos.",
+     "en": "The ball rolls very far."
+    },
+    {
+     "es": "¿Dónde está la pelota?",
+     "en": "Where is the ball?"
+    },
+    {
+     "es": "El perro busca debajo del árbol.",
+     "en": "The dog looks under the tree."
+    },
+    {
+     "es": "¡La pelota está en el agua!",
+     "en": "The ball is in the water!"
+    },
+    {
+     "es": "El perro salta y la encuentra.",
+     "en": "The dog jumps in and finds it."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "perro",
+     "en": "dog",
+     "emoji": "🐶"
+    },
+    {
+     "es": "pelota",
+     "en": "ball",
+     "emoji": "🔴"
+    },
+    {
+     "es": "lejos",
+     "en": "far",
+     "emoji": "➡️"
+    },
+    {
+     "es": "busca",
+     "en": "looks for",
+     "emoji": "🔎"
+    },
+    {
+     "es": "debajo",
+     "en": "under",
+     "emoji": "⬇️"
+    },
+    {
+     "es": "encuentra",
+     "en": "finds",
+     "emoji": "🎉"
+    }
+   ],
+   "badge": {
+    "emoji": "🐶",
+    "es": "Buscador Estrella",
+    "en": "Star Finder"
+   }
+  },
+  {
+   "slug": "cuento-un-dia-de-lluvia",
+   "folder": "cuento-un-dia-de-lluvia",
+   "order": 4,
+   "theme": "cuentos",
+   "emoji": "🌧️",
+   "title": "Un día de lluvia",
+   "titleEn": "A Rainy Day",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "Un día de lluvia",
+     "en": "A Rainy Day"
+    },
+    {
+     "es": "Hoy llueve mucho.",
+     "en": "Today it is raining a lot."
+    },
+    {
+     "es": "No puedo salir al parque.",
+     "en": "I cannot go out to the park."
+    },
+    {
+     "es": "Me pongo mis botas amarillas.",
+     "en": "I put on my yellow boots."
+    },
+    {
+     "es": "Salto en los charcos con mamá.",
+     "en": "I jump in the puddles with mom."
+    },
+    {
+     "es": "Después sale el sol.",
+     "en": "Then the sun comes out."
+    },
+    {
+     "es": "¡Veo un arcoíris en el cielo!",
+     "en": "I see a rainbow in the sky!"
+    }
+   ],
+   "vocab": [
+    {
+     "es": "llueve",
+     "en": "it rains",
+     "emoji": "🌧️"
+    },
+    {
+     "es": "botas",
+     "en": "boots",
+     "emoji": "🥾"
+    },
+    {
+     "es": "charcos",
+     "en": "puddles",
+     "emoji": "💦"
+    },
+    {
+     "es": "salto",
+     "en": "I jump",
+     "emoji": "🤸"
+    },
+    {
+     "es": "sol",
+     "en": "sun",
+     "emoji": "☀️"
+    },
+    {
+     "es": "arcoíris",
+     "en": "rainbow",
+     "emoji": "🌈"
+    }
+   ],
+   "badge": {
+    "emoji": "🌈",
+    "es": "Explorador de Charcos",
+    "en": "Puddle Explorer"
+   }
+  },
+  {
+   "slug": "cuento-el-pajarito-aprende-a-volar",
+   "folder": "cuento-el-pajarito-aprende-a-volar",
+   "order": 5,
+   "theme": "cuentos",
+   "emoji": "🐦",
+   "title": "El pajarito aprende a volar",
+   "titleEn": "The Little Bird Learns to Fly",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "El pajarito aprende a volar",
+     "en": "The Little Bird Learns to Fly"
+    },
+    {
+     "es": "El pajarito vive en un nido.",
+     "en": "The little bird lives in a nest."
+    },
+    {
+     "es": "Quiere volar como su mamá.",
+     "en": "He wants to fly like his mom."
+    },
+    {
+     "es": "Abre sus alas pequeñas.",
+     "en": "He opens his small wings."
+    },
+    {
+     "es": "Tiene un poco de miedo.",
+     "en": "He is a little afraid."
+    },
+    {
+     "es": "Salta del nido y mueve las alas.",
+     "en": "He jumps from the nest and moves his wings."
+    },
+    {
+     "es": "¡El pajarito ya puede volar!",
+     "en": "The little bird can fly now!"
+    }
+   ],
+   "vocab": [
+    {
+     "es": "pajarito",
+     "en": "little bird",
+     "emoji": "🐦"
+    },
+    {
+     "es": "nido",
+     "en": "nest",
+     "emoji": "🪺"
+    },
+    {
+     "es": "volar",
+     "en": "to fly",
+     "emoji": "🕊️"
+    },
+    {
+     "es": "alas",
+     "en": "wings",
+     "emoji": "🪽"
+    },
+    {
+     "es": "miedo",
+     "en": "fear",
+     "emoji": "😟"
+    },
+    {
+     "es": "salta",
+     "en": "jumps",
+     "emoji": "🤸"
+    }
+   ],
+   "badge": {
+    "emoji": "🐦",
+    "es": "Pajarito Valiente",
+    "en": "Brave Little Bird"
+   }
+  },
+  {
+   "slug": "cuento-la-sopa-de-la-abuela",
+   "folder": "cuento-la-sopa-de-la-abuela",
+   "order": 6,
+   "theme": "cuentos",
+   "emoji": "🍲",
+   "title": "La sopa de la abuela",
+   "titleEn": "Grandma's Soup",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "La sopa de la abuela",
+     "en": "Grandma's Soup"
+    },
+    {
+     "es": "La abuela hace sopa hoy.",
+     "en": "Grandma is making soup today."
+    },
+    {
+     "es": "Yo lavo las zanahorias.",
+     "en": "I wash the carrots."
+    },
+    {
+     "es": "Mi hermano corta el pan.",
+     "en": "My brother cuts the bread."
+    },
+    {
+     "es": "La sopa huele muy rico.",
+     "en": "The soup smells very good."
+    },
+    {
+     "es": "Toda la familia se sienta a la mesa.",
+     "en": "The whole family sits at the table."
+    },
+    {
+     "es": "¡Qué rica está la sopa!",
+     "en": "The soup is so delicious!"
+    }
+   ],
+   "vocab": [
+    {
+     "es": "abuela",
+     "en": "grandma",
+     "emoji": "👵"
+    },
+    {
+     "es": "sopa",
+     "en": "soup",
+     "emoji": "🍲"
+    },
+    {
+     "es": "zanahorias",
+     "en": "carrots",
+     "emoji": "🥕"
+    },
+    {
+     "es": "pan",
+     "en": "bread",
+     "emoji": "🍞"
+    },
+    {
+     "es": "familia",
+     "en": "family",
+     "emoji": "👨‍👩‍👧"
+    },
+    {
+     "es": "mesa",
+     "en": "table",
+     "emoji": "🪑"
+    }
+   ],
+   "badge": {
+    "emoji": "🍲",
+    "es": "Pequeño Cocinero",
+    "en": "Little Cook"
+   }
+  },
+  {
+   "slug": "cuento-buenas-noches-osito",
+   "folder": "cuento-buenas-noches-osito",
+   "order": 7,
+   "theme": "cuentos",
+   "emoji": "🧸",
+   "title": "Buenas noches, osito",
+   "titleEn": "Good Night, Teddy",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "Buenas noches, osito",
+     "en": "Good Night, Teddy"
+    },
+    {
+     "es": "Ya es de noche.",
+     "en": "It is night now."
+    },
+    {
+     "es": "Me baño con agua tibia.",
+     "en": "I take a bath with warm water."
+    },
+    {
+     "es": "Me pongo mi pijama azul.",
+     "en": "I put on my blue pajamas."
+    },
+    {
+     "es": "Me lavo los dientes.",
+     "en": "I brush my teeth."
+    },
+    {
+     "es": "Papá me lee un cuento.",
+     "en": "Dad reads me a story."
+    },
+    {
+     "es": "Buenas noches, osito.",
+     "en": "Good night, teddy."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "noche",
+     "en": "night",
+     "emoji": "🌙"
+    },
+    {
+     "es": "pijama",
+     "en": "pajamas",
+     "emoji": "👕"
+    },
+    {
+     "es": "dientes",
+     "en": "teeth",
+     "emoji": "🦷"
+    },
+    {
+     "es": "cuento",
+     "en": "story",
+     "emoji": "📖"
+    },
+    {
+     "es": "osito",
+     "en": "teddy bear",
+     "emoji": "🧸"
+    },
+    {
+     "es": "papá",
+     "en": "dad",
+     "emoji": "👨"
+    }
+   ],
+   "badge": {
+    "emoji": "🌙",
+    "es": "Dulces Sueños",
+    "en": "Sweet Dreams"
+   }
+  },
+  {
+   "slug": "cuento-la-tortuga-y-el-conejo",
+   "folder": "cuento-la-tortuga-y-el-conejo",
+   "order": 8,
+   "theme": "cuentos",
+   "emoji": "🐢",
+   "title": "La tortuga y el conejo",
+   "titleEn": "The Tortoise and the Rabbit",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "La tortuga y el conejo",
+     "en": "The Tortoise and the Rabbit"
+    },
+    {
+     "es": "El conejo corre muy rápido.",
+     "en": "The rabbit runs very fast."
+    },
+    {
+     "es": "La tortuga camina muy despacio.",
+     "en": "The tortoise walks very slowly."
+    },
+    {
+     "es": "El conejo se duerme bajo un árbol.",
+     "en": "The rabbit falls asleep under a tree."
+    },
+    {
+     "es": "La tortuga no se detiene.",
+     "en": "The tortoise does not stop."
+    },
+    {
+     "es": "La tortuga llega primero.",
+     "en": "The tortoise arrives first."
+    },
+    {
+     "es": "¡Despacio también se llega lejos!",
+     "en": "Slowly you can go far too!"
+    }
+   ],
+   "vocab": [
+    {
+     "es": "conejo",
+     "en": "rabbit",
+     "emoji": "🐰"
+    },
+    {
+     "es": "tortuga",
+     "en": "tortoise",
+     "emoji": "🐢"
+    },
+    {
+     "es": "rápido",
+     "en": "fast",
+     "emoji": "💨"
+    },
+    {
+     "es": "despacio",
+     "en": "slowly",
+     "emoji": "🐌"
+    },
+    {
+     "es": "árbol",
+     "en": "tree",
+     "emoji": "🌳"
+    },
+    {
+     "es": "primero",
+     "en": "first",
+     "emoji": "🥇"
+    }
+   ],
+   "badge": {
+    "emoji": "🐢",
+    "es": "Paso a Paso",
+    "en": "Step by Step"
+   }
   }
  ]
 }
