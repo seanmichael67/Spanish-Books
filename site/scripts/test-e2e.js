@@ -149,6 +149,15 @@ async function main() {
       await shot(page, 'syllable');
     });
 
+    await step('story book reads as a full story', async () => {
+      await page.goto(SITE + '/temas/cuentos/');
+      assert.strictEqual(await page.locator('.book').count(), catalog.booksByTheme('cuentos').length);
+      await page.goto(SITE + '/libros/cuento-el-gatito-tiene-hambre/');
+      assert.match(await page.textContent('.reader-head'), /Nivel 3/);
+      for (let i = 0; i < 6; i++) await page.click('[data-next]');
+      assert.match(await page.textContent('.pg.on .es'), /el gatito está feliz/);
+    });
+
     await step('email sign-up adds the parent to the list', async () => {
       await page.goto(SITE + '/#club');
       await page.fill('#su-email', 'not-an-email');
