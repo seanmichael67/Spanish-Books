@@ -295,10 +295,12 @@ function bookPage(book) {
     <div class="reader-head"><h1><span lang="es">${esc(book.title)}</span></h1><span class="lvl">${LEVELS[book.level]}</span>
       <button type="button" class="btn small sun big-btn" data-full>📖 Leer en grande <span>· Full screen</span></button>
       <button type="button" class="close-btn" data-close aria-label="Close full screen" hidden>✕</button></div>
-    <div class="stage">${story}\n${vocab}\n${badge}</div>
+    <div class="stage">${story}\n${vocab}\n${badge}<div class="turn-note" data-turn-note hidden>🎤 ¡Tu turno! <span>Your turn</span></div></div>
     <div class="controls">
       <button class="round" data-prev aria-label="Previous page">←</button>
       <button class="round listen" data-listen>🔊 Escuchar</button>
+      <button class="round helper" data-slow aria-pressed="false" aria-label="Slower voice" title="Despacio · Slower voice">🐢</button>
+      <button class="round helper" data-turn aria-pressed="false" aria-label="My turn: pause so I can repeat" title="Mi turno · Pause so I can repeat">🎤</button>
       <div class="dots" aria-hidden="true"></div>
       <button class="round" data-next aria-label="Next page">→</button>
     </div>
@@ -313,6 +315,7 @@ function bookPage(book) {
       <ol>
         <li><b>Look first.</b> Before reading, ask <span lang="es">«¿Qué ves?»</span> <i>(What do you see?)</i></li>
         <li><b>Listen and point.</b> Tap Escuchar and point to each word as it is read.</li>
+        <li><b>Use the helpers.</b> 🐢 slows the voice down. 🎤 pauses after each sentence so your child can repeat it. Tap any word to hear it alone.</li>
         <li><b>Find the coloured words.</b> Can your child say <span lang="es">«${esc(book.vocab[0].es)}»</span> and <span lang="es">«${esc(book.vocab[1].es)}»</span>?</li>
         <li><b>Read it again tomorrow.</b> Repetition is how young children learn to read.</li>
       </ol>

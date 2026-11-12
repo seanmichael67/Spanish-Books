@@ -126,6 +126,21 @@ async function main() {
       await page.waitForSelector('.pg.on .es .w.now', { timeout: 8000 });
       await page.waitForLoadState('networkidle');
       await shot(page, 'reader');
+      // Tap an ordinary word ("es"): it plays that slice of the page recording and lights up.
+      await page.click('[data-listen]'); // stop the page reading first
+      await page.click('.pg.on .es .w:text-is("es")');
+      await page.waitForSelector('.pg.on .es .w.now:text-is("es")', { timeout: 4000 });
+      // Helpers: slower voice and "my turn" are remembered and the pause prompt appears.
+      await page.click('[data-slow]');
+      await page.click('[data-turn]');
+      assert.strictEqual(await page.getAttribute('[data-slow]', 'aria-pressed'), 'true');
+      await page.click('[data-listen]');
+      await page.waitForSelector('[data-turn-note]:not([hidden])', { timeout: 9000 });
+      assert.strictEqual(await page.evaluate(() => localStorage.getItem('beibei-libros-turn')), '1');
+      await shot(page, 'reader-turn');
+      await page.click('[data-listen]');
+      await page.click('[data-slow]');
+      await page.click('[data-turn]');
       // Full-screen book mode keeps the same page and can be closed again.
       await page.click('[data-full]');
       assert.ok(await page.locator('.reader.full').isVisible());
@@ -171,12 +186,12 @@ async function main() {
       await page.goto(SITE + '/temas/silabas/');
       assert.strictEqual(await page.locator('.book').count(), catalog.booksByTheme('silabas').length);
       await page.goto(SITE + '/libros/silabas-m/');
+      // Turning the page starts the recording, so listen for it before the click.
+      const clip = page.waitForResponse((r) => r.url().endsWith('/media/silabas-m/page-01.mp3'));
       await page.click('[data-next]');
       assert.strictEqual(await page.textContent('.pg.on .syl'), 'ma');
       assert.strictEqual(await page.textContent('.pg.on .kw'), 'mano');
       assert.strictEqual(await page.textContent('.pg.on .kw b'), 'ma');
-      const clip = page.waitForResponse((r) => r.url().endsWith('/media/silabas-m/page-01.mp3'));
-      await page.click('[data-listen]');
       assert.ok((await clip).ok());
       await page.waitForLoadState('networkidle');
       await shot(page, 'syllable');

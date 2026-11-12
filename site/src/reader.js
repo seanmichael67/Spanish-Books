@@ -22,6 +22,29 @@
 
   pages.forEach(function () { dots.appendChild(document.createElement('i')); });
 
+  /* ---- Reading helpers: slower voice and "my turn" (remembered in this browser) ---- */
+  var slowBtn = reader.querySelector('[data-slow]');
+  var turnBtn = reader.querySelector('[data-turn]');
+  var turnNote = reader.querySelector('[data-turn-note]');
+  var turnTimer = null;
+  var clipTimer = null;
+  function remembered(key) { try { return localStorage.getItem('beibei-libros-' + key) === '1'; } catch (e) { return false; } }
+  function remember(key, on) { try { localStorage.setItem('beibei-libros-' + key, on ? '1' : '0'); } catch (e) {} }
+  function pressed(btn) { return btn.getAttribute('aria-pressed') === 'true'; }
+  function turnOn() { return pressed(turnBtn); }
+  function speed() { return pressed(slowBtn) ? 0.75 : 1; }
+  [[slowBtn, 'slow'], [turnBtn, 'turn']].forEach(function (pair) {
+    var btn = pair[0];
+    btn.setAttribute('aria-pressed', remembered(pair[1]));
+    btn.addEventListener('click', function () {
+      var on = !pressed(btn);
+      btn.setAttribute('aria-pressed', on);
+      remember(pair[1], on);
+      player.playbackRate = speed();
+      track('helper_' + pair[1], { on: on });
+    });
+  });
+
   /* ---- Word-by-word highlighting ----
      Each Spanish word is wrapped in a small box so it can light up while it is
      spoken. The page text itself is untouched in the HTML that Google reads. */
@@ -83,6 +106,20 @@
       var index = -1;
       for (var n = 0; n < pg.times.length; n++) if (t >= pg.times[n][0] - 40) index = n;
       if (t > last + 120) index = -1;
+      /* "Mi turno": stop after the Spanish sentence so the child can say it, then carry on. */
+      if (turnOn() && !pg.turnDone && t > last + 250 && !player.paused) {
+        pg.turnDone = true;
+        player.pause();
+        var es = pg.querySelector('.txt .es');
+        es.classList.add('your-turn');
+        turnNote.hidden = false;
+        turnTimer = setTimeout(function () {
+          es.classList.remove('your-turn');
+          turnNote.hidden = true;
+          var p = player.play();
+          if (p && p.catch) p.catch(function () {});
+        }, 1400 + 700 * pg.words.length);
+      }
       lightWord(pg, index);
       if (en) en.classList.toggle('now', t > last + 1400); /* the English voice starts about 1.5 seconds after the Spanish ends */
       ticking = requestAnimationFrame(tick);
@@ -95,6 +132,10 @@
     listen.classList.remove('playing');
     reader.querySelectorAll('.say').forEach(function (el) { el.classList.remove('say'); });
     clearWords();
+    clearTimeout(turnTimer);
+    clearTimeout(clipTimer);
+    turnNote.hidden = true;
+    reader.querySelectorAll('.your-turn').forEach(function (el) { el.classList.remove('your-turn'); });
   }
 
   /* Play a recording. If there is none (or it fails), use the device's Spanish voice. */
@@ -104,7 +145,7 @@
       if (!window.speechSynthesis || !text) { if (done) done(); return; }
       var u = new SpeechSynthesisUtterance(text);
       u.lang = 'es-MX';
-      u.rate = 0.8;
+      u.rate = 0.8 * speed();
       u.onend = u.onerror = function () { clearWords(); if (done) done(); };
       /* The device voice tells us which letter it has reached; count the spaces before it. */
       if (pg && pg.words) u.onboundary = function (e) { lightWord(pg, text.slice(0, e.charIndex).split(/\s+/).filter(function (x) { return hasLetter.test(x); }).length); };
@@ -112,8 +153,11 @@
     }
     if (!src) return fallback();
     player.src = src;
+    player.preservesPitch = true;
+    player.playbackRate = speed();
+    if (pg) pg.turnDone = false;
     player.onended = function () { clearWords(); if (done) done(); };
-    player.onplaying = function () { if (pg) follow(pg); };
+    player.onplaying = function () { clearWords(); if (pg) follow(pg); };
     player.onerror = fallback;
     var p = player.play();
     if (p && p.catch) p.catch(function () { if (done) done(); });
@@ -235,6 +279,36 @@
   });
 
   /* Tap a coloured word or a vocabulary card to hear just that word. */
+  /* Tap any other word in the sentence: play only that word's slice of the page recording. */
+  reader.addEventListener('click', function (e) {
+    var w = e.target.closest('.txt .es .w');
+    if (!w || w.hasAttribute('data-word') || w.closest('[data-word]')) return;
+    var pg = pages[current];
+    var n = pg.words ? pg.words.indexOf(w) : -1;
+    var src = pg.getAttribute('data-audio');
+    if (n < 0) return;
+    stop();
+    if (!pg.times || !src) {
+      if (window.speechSynthesis) { var u = new SpeechSynthesisUtterance(w.textContent); u.lang = 'es-MX'; u.rate = 0.8 * speed(); window.speechSynthesis.speak(u); }
+      return;
+    }
+    var from = Math.max(0, pg.times[n][0] - 60) / 1000;
+    var to = (n + 1 < pg.times.length ? Math.min(pg.times[n][1] + 80, pg.times[n + 1][0]) : pg.times[n][1] + 120) / 1000;
+    var go = function () {
+      player.onplaying = null;
+      player.onended = null;
+      player.playbackRate = speed();
+      player.currentTime = from;
+      w.classList.add('now');
+      var p = player.play();
+      if (p && p.catch) p.catch(function () {});
+      clipTimer = setTimeout(function () { player.pause(); w.classList.remove('now'); }, ((to - from) / speed()) * 1000 + 60);
+    };
+    if (player.src && player.src.indexOf(src) >= 0 && player.readyState >= 1) go();
+    else { player.src = src; player.onloadedmetadata = function () { player.onloadedmetadata = null; go(); }; }
+    track('word_tap', { word: w.textContent });
+  });
+
   reader.addEventListener('click', function (e) {
     var el = e.target.closest('[data-word]');
     if (!el) return;
