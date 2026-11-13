@@ -26,6 +26,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 OUT = os.path.join(ROOT, "site", "data", "timings.json")
 ES_VOICE = "es-MX-DaliaNeural"
 books = json.load(open(os.path.join(ROOT, "site", "data", "books.json"), encoding="utf-8"))
+waiting = os.path.join(ROOT, "site", "data", "books-waiting.json")  # books still missing pictures
+if os.path.exists(waiting):
+    books += json.load(open(waiting, encoding="utf-8"))
 timings = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
 gate = asyncio.Semaphore(4)
 

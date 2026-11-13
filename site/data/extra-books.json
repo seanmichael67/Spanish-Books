@@ -1768,6 +1768,582 @@
     "es": "Paso a Paso",
     "en": "Step by Step"
    }
+  },
+  {
+   "slug": "silabas-f",
+   "folder": "silabas-f",
+   "order": 14,
+   "theme": "silabas",
+   "emoji": "🦭",
+   "title": "Sílabas con F",
+   "titleEn": "Syllables with F",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con F",
+     "en": "Syllables with F"
+    },
+    {
+     "es": "falda",
+     "en": "skirt",
+     "syllable": "fa",
+     "say": "fa. falda."
+    },
+    {
+     "es": "feria",
+     "en": "fair",
+     "syllable": "fe",
+     "say": "fe. feria."
+    },
+    {
+     "es": "fideos",
+     "en": "noodles",
+     "syllable": "fi",
+     "say": "fi. fideos."
+    },
+    {
+     "es": "foca",
+     "en": "seal",
+     "syllable": "fo",
+     "say": "fo. foca."
+    },
+    {
+     "es": "fútbol",
+     "en": "soccer",
+     "syllable": "fu",
+     "say": "fu. fútbol."
+    },
+    {
+     "es": "La foca juega fútbol.",
+     "en": "The seal plays soccer."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "falda",
+     "en": "skirt",
+     "emoji": "👗"
+    },
+    {
+     "es": "feria",
+     "en": "fair",
+     "emoji": "🎡"
+    },
+    {
+     "es": "fideos",
+     "en": "noodles",
+     "emoji": "🍜"
+    },
+    {
+     "es": "foca",
+     "en": "seal",
+     "emoji": "🦭"
+    },
+    {
+     "es": "fútbol",
+     "en": "soccer",
+     "emoji": "⚽"
+    },
+    {
+     "es": "juega",
+     "en": "plays",
+     "emoji": "🤸"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la F",
+    "en": "F Reader"
+   }
+  },
+  {
+   "slug": "silabas-j",
+   "folder": "silabas-j",
+   "order": 15,
+   "theme": "silabas",
+   "emoji": "🦒",
+   "title": "Sílabas con J",
+   "titleEn": "Syllables with J",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con J",
+     "en": "Syllables with J"
+    },
+    {
+     "es": "jabón",
+     "en": "soap",
+     "syllable": "ja",
+     "say": "ja. jabón."
+    },
+    {
+     "es": "jengibre",
+     "en": "ginger",
+     "syllable": "je",
+     "say": "je. jengibre."
+    },
+    {
+     "es": "jirafa",
+     "en": "giraffe",
+     "syllable": "ji",
+     "say": "ji. jirafa."
+    },
+    {
+     "es": "joya",
+     "en": "jewel",
+     "syllable": "jo",
+     "say": "jo. joya."
+    },
+    {
+     "es": "jugo",
+     "en": "juice",
+     "syllable": "ju",
+     "say": "ju. jugo."
+    },
+    {
+     "es": "La jirafa toma jugo.",
+     "en": "The giraffe drinks juice."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "jabón",
+     "en": "soap",
+     "emoji": "🧼"
+    },
+    {
+     "es": "jengibre",
+     "en": "ginger",
+     "emoji": "🫚"
+    },
+    {
+     "es": "jirafa",
+     "en": "giraffe",
+     "emoji": "🦒"
+    },
+    {
+     "es": "joya",
+     "en": "jewel",
+     "emoji": "💎"
+    },
+    {
+     "es": "jugo",
+     "en": "juice",
+     "emoji": "🧃"
+    },
+    {
+     "es": "toma",
+     "en": "drinks",
+     "emoji": "🥤"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la J",
+    "en": "J Reader"
+   }
+  },
+  {
+   "slug": "silabas-v",
+   "folder": "silabas-v",
+   "order": 16,
+   "theme": "silabas",
+   "emoji": "🎻",
+   "title": "Sílabas con V",
+   "titleEn": "Syllables with V",
+   "art": "photo",
+   "level": 1,
+   "pages": [
+    {
+     "es": "Sílabas con V",
+     "en": "Syllables with V"
+    },
+    {
+     "es": "vaca",
+     "en": "cow",
+     "syllable": "va",
+     "say": "va. vaca."
+    },
+    {
+     "es": "vela",
+     "en": "candle",
+     "syllable": "ve",
+     "say": "ve. vela."
+    },
+    {
+     "es": "violín",
+     "en": "violin",
+     "syllable": "vi",
+     "say": "vi. violín."
+    },
+    {
+     "es": "volcán",
+     "en": "volcano",
+     "syllable": "vo",
+     "say": "vo. volcán."
+    },
+    {
+     "es": "vuelo",
+     "en": "flight",
+     "syllable": "vu",
+     "say": "vu. vuelo."
+    },
+    {
+     "es": "La vaca toca el violín.",
+     "en": "The cow plays the violin."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "vaca",
+     "en": "cow",
+     "emoji": "🐄"
+    },
+    {
+     "es": "vela",
+     "en": "candle",
+     "emoji": "🕯️"
+    },
+    {
+     "es": "violín",
+     "en": "violin",
+     "emoji": "🎻"
+    },
+    {
+     "es": "volcán",
+     "en": "volcano",
+     "emoji": "🌋"
+    },
+    {
+     "es": "vuelo",
+     "en": "flight",
+     "emoji": "✈️"
+    },
+    {
+     "es": "toca",
+     "en": "plays (music)",
+     "emoji": "🎶"
+    }
+   ],
+   "badge": {
+    "emoji": "⭐",
+    "es": "Lector de la V",
+    "en": "V Reader"
+   }
+  },
+  {
+   "slug": "cuento-el-globo-rojo",
+   "folder": "cuento-el-globo-rojo",
+   "order": 9,
+   "theme": "cuentos",
+   "emoji": "🎈",
+   "title": "El globo rojo",
+   "titleEn": "The Red Balloon",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "El globo rojo",
+     "en": "The Red Balloon"
+    },
+    {
+     "es": "Lucía tiene un globo rojo.",
+     "en": "Lucía has a red balloon."
+    },
+    {
+     "es": "El viento sopla muy fuerte.",
+     "en": "The wind blows very hard."
+    },
+    {
+     "es": "¡El globo se va volando!",
+     "en": "The balloon flies away!"
+    },
+    {
+     "es": "Lucía está triste.",
+     "en": "Lucía is sad."
+    },
+    {
+     "es": "Su papá le compra otro globo.",
+     "en": "Her dad buys her another balloon."
+    },
+    {
+     "es": "Ahora Lucía lo agarra bien.",
+     "en": "Now Lucía holds it tight."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "globo",
+     "en": "balloon",
+     "emoji": "🎈"
+    },
+    {
+     "es": "rojo",
+     "en": "red",
+     "emoji": "🔴"
+    },
+    {
+     "es": "viento",
+     "en": "wind",
+     "emoji": "💨"
+    },
+    {
+     "es": "volando",
+     "en": "flying",
+     "emoji": "🕊️"
+    },
+    {
+     "es": "triste",
+     "en": "sad",
+     "emoji": "😢"
+    },
+    {
+     "es": "papá",
+     "en": "dad",
+     "emoji": "👨"
+    }
+   ],
+   "badge": {
+    "emoji": "🎈",
+    "es": "Amiga del Globo",
+    "en": "Balloon Friend"
+   }
+  },
+  {
+   "slug": "cuento-el-cumpleanos-de-tomas",
+   "folder": "cuento-el-cumpleanos-de-tomas",
+   "order": 10,
+   "theme": "cuentos",
+   "emoji": "🎂",
+   "title": "El cumpleaños de Tomás",
+   "titleEn": "Tomás's Birthday",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "El cumpleaños de Tomás",
+     "en": "Tomás's Birthday"
+    },
+    {
+     "es": "Hoy es el cumpleaños de Tomás.",
+     "en": "Today is Tomás's birthday."
+    },
+    {
+     "es": "Tomás cumple cinco años.",
+     "en": "Tomás turns five."
+    },
+    {
+     "es": "Sus amigos llegan a la fiesta.",
+     "en": "His friends come to the party."
+    },
+    {
+     "es": "Hay un pastel con velas.",
+     "en": "There is a cake with candles."
+    },
+    {
+     "es": "Todos cantan para Tomás.",
+     "en": "Everyone sings for Tomás."
+    },
+    {
+     "es": "Tomás sopla las cinco velas.",
+     "en": "Tomás blows out the five candles."
+    }
+   ],
+   "vocab": [
+    {
+     "es": "cumpleaños",
+     "en": "birthday",
+     "emoji": "🎂"
+    },
+    {
+     "es": "cinco",
+     "en": "five",
+     "emoji": "5️⃣"
+    },
+    {
+     "es": "amigos",
+     "en": "friends",
+     "emoji": "👫"
+    },
+    {
+     "es": "fiesta",
+     "en": "party",
+     "emoji": "🎉"
+    },
+    {
+     "es": "pastel",
+     "en": "cake",
+     "emoji": "🍰"
+    },
+    {
+     "es": "velas",
+     "en": "candles",
+     "emoji": "🕯️"
+    }
+   ],
+   "badge": {
+    "emoji": "🎂",
+    "es": "Rey de la Fiesta",
+    "en": "Party King"
+   }
+  },
+  {
+   "slug": "cuento-donde-esta-mi-zapato",
+   "folder": "cuento-donde-esta-mi-zapato",
+   "order": 11,
+   "theme": "cuentos",
+   "emoji": "👟",
+   "title": "¿Dónde está mi zapato?",
+   "titleEn": "Where Is My Shoe?",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "¿Dónde está mi zapato?",
+     "en": "Where Is My Shoe?"
+    },
+    {
+     "es": "Pablo no encuentra su zapato.",
+     "en": "Pablo can't find his shoe."
+    },
+    {
+     "es": "¿Está debajo de la cama? No.",
+     "en": "Is it under the bed? No."
+    },
+    {
+     "es": "¿Está en la caja de juguetes? No.",
+     "en": "Is it in the toy box? No."
+    },
+    {
+     "es": "¿Está detrás de la puerta? No.",
+     "en": "Is it behind the door? No."
+    },
+    {
+     "es": "¡El perrito tiene el zapato!",
+     "en": "The puppy has the shoe!"
+    },
+    {
+     "es": "¡Ya lo encontré!",
+     "en": "I found it!"
+    }
+   ],
+   "vocab": [
+    {
+     "es": "zapato",
+     "en": "shoe",
+     "emoji": "👟"
+    },
+    {
+     "es": "debajo",
+     "en": "under",
+     "emoji": "⬇️"
+    },
+    {
+     "es": "cama",
+     "en": "bed",
+     "emoji": "🛏️"
+    },
+    {
+     "es": "caja",
+     "en": "box",
+     "emoji": "📦"
+    },
+    {
+     "es": "detrás",
+     "en": "behind",
+     "emoji": "↩️"
+    },
+    {
+     "es": "puerta",
+     "en": "door",
+     "emoji": "🚪"
+    }
+   ],
+   "badge": {
+    "emoji": "🔎",
+    "es": "Gran Detective",
+    "en": "Great Detective"
+   }
+  },
+  {
+   "slug": "cuento-vamos-a-la-playa",
+   "folder": "cuento-vamos-a-la-playa",
+   "order": 12,
+   "theme": "cuentos",
+   "emoji": "🏖️",
+   "title": "Vamos a la playa",
+   "titleEn": "Let's Go to the Beach",
+   "art": "photo",
+   "level": 3,
+   "pages": [
+    {
+     "es": "Vamos a la playa",
+     "en": "Let's Go to the Beach"
+    },
+    {
+     "es": "Hoy vamos a la playa.",
+     "en": "Today we go to the beach."
+    },
+    {
+     "es": "Llevo mi cubeta y mi pala.",
+     "en": "I bring my bucket and my shovel."
+    },
+    {
+     "es": "El agua está fría.",
+     "en": "The water is cold."
+    },
+    {
+     "es": "Hago un castillo de arena.",
+     "en": "I make a sand castle."
+    },
+    {
+     "es": "Llega una ola grande.",
+     "en": "A big wave comes."
+    },
+    {
+     "es": "¡Adiós, castillo!",
+     "en": "Goodbye, castle!"
+    }
+   ],
+   "vocab": [
+    {
+     "es": "playa",
+     "en": "beach",
+     "emoji": "🏖️"
+    },
+    {
+     "es": "cubeta",
+     "en": "bucket",
+     "emoji": "🪣"
+    },
+    {
+     "es": "pala",
+     "en": "shovel",
+     "emoji": "🥄"
+    },
+    {
+     "es": "arena",
+     "en": "sand",
+     "emoji": "⏳"
+    },
+    {
+     "es": "castillo",
+     "en": "castle",
+     "emoji": "🏰"
+    },
+    {
+     "es": "ola",
+     "en": "wave",
+     "emoji": "🌊"
+    }
+   ],
+   "badge": {
+    "emoji": "🏖️",
+    "es": "Constructor de Castillos",
+    "en": "Castle Builder"
+   }
   }
  ]
 }

@@ -1,1 +1,1552 @@
-[]
+[
+ {
+  "slug": "silabas-f",
+  "folder": "silabas-f",
+  "order": 14,
+  "theme": "silabas",
+  "emoji": "🦭",
+  "title": "Sílabas con F",
+  "titleEn": "Syllables with F",
+  "art": "photo",
+  "level": 1,
+  "pages": [
+   {
+    "es": "Sílabas con F",
+    "en": "Syllables with F",
+    "image": null,
+    "audio": "page-00.mp3",
+    "timing": [
+     [
+      106,
+      814
+     ],
+     [
+      828,
+      1009
+     ],
+     [
+      1022,
+      1411
+     ]
+    ]
+   },
+   {
+    "es": "falda",
+    "en": "skirt",
+    "syllable": "fa",
+    "say": "fa. falda.",
+    "image": null,
+    "audio": "page-01.mp3",
+    "timing": [
+     [
+      104,
+      590
+     ],
+     [
+      1556,
+      2278
+     ]
+    ]
+   },
+   {
+    "es": "feria",
+    "en": "fair",
+    "syllable": "fe",
+    "say": "fe. feria.",
+    "image": null,
+    "audio": "page-02.mp3",
+    "timing": [
+     [
+      104,
+      590
+     ],
+     [
+      1554,
+      2332
+     ]
+    ]
+   },
+   {
+    "es": "fideos",
+    "en": "noodles",
+    "syllable": "fi",
+    "say": "fi. fideos.",
+    "image": null,
+    "audio": "page-03.mp3",
+    "timing": [
+     [
+      104,
+      535
+     ],
+     [
+      1499,
+      2388
+     ]
+    ]
+   },
+   {
+    "es": "foca",
+    "en": "seal",
+    "syllable": "fo",
+    "say": "fo. foca.",
+    "image": null,
+    "audio": "page-04.mp3",
+    "timing": [
+     [
+      104,
+      604
+     ],
+     [
+      1568,
+      2207
+     ]
+    ]
+   },
+   {
+    "es": "fútbol",
+    "en": "soccer",
+    "syllable": "fu",
+    "say": "fu. fútbol.",
+    "image": null,
+    "audio": "page-05.mp3",
+    "timing": [
+     [
+      106,
+      564
+     ],
+     [
+      1528,
+      2222
+     ]
+    ]
+   },
+   {
+    "es": "La foca juega fútbol.",
+    "en": "The seal plays soccer.",
+    "image": null,
+    "audio": "page-06.mp3",
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      661
+     ],
+     [
+      675,
+      1078
+     ],
+     [
+      1092,
+      1620
+     ]
+    ]
+   }
+  ],
+  "vocab": [
+   {
+    "es": "falda",
+    "en": "skirt",
+    "emoji": "👗",
+    "audio": "word-falda.mp3"
+   },
+   {
+    "es": "feria",
+    "en": "fair",
+    "emoji": "🎡",
+    "audio": "word-feria.mp3"
+   },
+   {
+    "es": "fideos",
+    "en": "noodles",
+    "emoji": "🍜",
+    "audio": "word-fideos.mp3"
+   },
+   {
+    "es": "foca",
+    "en": "seal",
+    "emoji": "🦭",
+    "audio": "word-foca.mp3"
+   },
+   {
+    "es": "fútbol",
+    "en": "soccer",
+    "emoji": "⚽",
+    "audio": "word-futbol.mp3"
+   },
+   {
+    "es": "juega",
+    "en": "plays",
+    "emoji": "🤸",
+    "audio": "word-juega.mp3"
+   }
+  ],
+  "badge": {
+   "emoji": "⭐",
+   "es": "Lector de la F",
+   "en": "F Reader"
+  }
+ },
+ {
+  "slug": "silabas-j",
+  "folder": "silabas-j",
+  "order": 15,
+  "theme": "silabas",
+  "emoji": "🦒",
+  "title": "Sílabas con J",
+  "titleEn": "Syllables with J",
+  "art": "photo",
+  "level": 1,
+  "pages": [
+   {
+    "es": "Sílabas con J",
+    "en": "Syllables with J",
+    "image": null,
+    "audio": "page-00.mp3",
+    "timing": [
+     [
+      106,
+      773
+     ],
+     [
+      786,
+      994
+     ],
+     [
+      1008,
+      1522
+     ]
+    ]
+   },
+   {
+    "es": "jabón",
+    "en": "soap",
+    "syllable": "ja",
+    "say": "ja. jabón.",
+    "image": null,
+    "audio": "page-01.mp3",
+    "timing": [
+     [
+      104,
+      576
+     ],
+     [
+      1526,
+      2123
+     ]
+    ]
+   },
+   {
+    "es": "jengibre",
+    "en": "ginger",
+    "syllable": "je",
+    "say": "je. jengibre.",
+    "image": null,
+    "audio": "page-02.mp3",
+    "timing": [
+     [
+      104,
+      951
+     ],
+     [
+      1917,
+      2764
+     ]
+    ]
+   },
+   {
+    "es": "jirafa",
+    "en": "giraffe",
+    "syllable": "ji",
+    "say": "ji. jirafa.",
+    "image": null,
+    "audio": "page-03.mp3",
+    "timing": [
+     [
+      106,
+      523
+     ],
+     [
+      1472,
+      2208
+     ]
+    ]
+   },
+   {
+    "es": "joya",
+    "en": "jewel",
+    "syllable": "jo",
+    "say": "jo. joya.",
+    "image": null,
+    "audio": "page-04.mp3",
+    "timing": [
+     [
+      104,
+      548
+     ],
+     [
+      1499,
+      2221
+     ]
+    ]
+   },
+   {
+    "es": "jugo",
+    "en": "juice",
+    "syllable": "ju",
+    "say": "ju. jugo.",
+    "image": null,
+    "audio": "page-05.mp3",
+    "timing": [
+     [
+      104,
+      437
+     ],
+     [
+      451,
+      1034
+     ]
+    ]
+   },
+   {
+    "es": "La jirafa toma jugo.",
+    "en": "The giraffe drinks juice.",
+    "image": null,
+    "audio": "page-06.mp3",
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      814
+     ],
+     [
+      828,
+      1161
+     ],
+     [
+      1175,
+      1689
+     ]
+    ]
+   }
+  ],
+  "vocab": [
+   {
+    "es": "jabón",
+    "en": "soap",
+    "emoji": "🧼",
+    "audio": "word-jabon.mp3"
+   },
+   {
+    "es": "jengibre",
+    "en": "ginger",
+    "emoji": "🫚",
+    "audio": "word-jengibre.mp3"
+   },
+   {
+    "es": "jirafa",
+    "en": "giraffe",
+    "emoji": "🦒",
+    "audio": "word-jirafa.mp3"
+   },
+   {
+    "es": "joya",
+    "en": "jewel",
+    "emoji": "💎",
+    "audio": "word-joya.mp3"
+   },
+   {
+    "es": "jugo",
+    "en": "juice",
+    "emoji": "🧃",
+    "audio": "word-jugo.mp3"
+   },
+   {
+    "es": "toma",
+    "en": "drinks",
+    "emoji": "🥤",
+    "audio": "word-toma.mp3"
+   }
+  ],
+  "badge": {
+   "emoji": "⭐",
+   "es": "Lector de la J",
+   "en": "J Reader"
+  }
+ },
+ {
+  "slug": "silabas-v",
+  "folder": "silabas-v",
+  "order": 16,
+  "theme": "silabas",
+  "emoji": "🎻",
+  "title": "Sílabas con V",
+  "titleEn": "Syllables with V",
+  "art": "photo",
+  "level": 1,
+  "pages": [
+   {
+    "es": "Sílabas con V",
+    "en": "Syllables with V",
+    "image": null,
+    "audio": "page-00.mp3",
+    "timing": [
+     [
+      106,
+      814
+     ],
+     [
+      828,
+      1022
+     ],
+     [
+      1036,
+      1383
+     ]
+    ]
+   },
+   {
+    "es": "vaca",
+    "en": "cow",
+    "syllable": "va",
+    "say": "va. vaca.",
+    "image": null,
+    "audio": "page-01.mp3",
+    "timing": [
+     [
+      106,
+      537
+     ],
+     [
+      1499,
+      2110
+     ]
+    ]
+   },
+   {
+    "es": "vela",
+    "en": "candle",
+    "syllable": "ve",
+    "say": "ve. vela.",
+    "image": null,
+    "audio": "page-02.mp3",
+    "timing": [
+     [
+      104,
+      521
+     ],
+     [
+      1485,
+      2096
+     ]
+    ]
+   },
+   {
+    "es": "violín",
+    "en": "violin",
+    "syllable": "vi",
+    "say": "vi. violín.",
+    "image": null,
+    "audio": "page-03.mp3",
+    "timing": [
+     [
+      104,
+      410
+     ],
+     [
+      535,
+      1132
+     ]
+    ]
+   },
+   {
+    "es": "volcán",
+    "en": "volcano",
+    "syllable": "vo",
+    "say": "vo. volcán.",
+    "image": null,
+    "audio": "page-04.mp3",
+    "timing": [
+     [
+      106,
+      773
+     ],
+     [
+      1735,
+      2443
+     ]
+    ]
+   },
+   {
+    "es": "vuelo",
+    "en": "flight",
+    "syllable": "vu",
+    "say": "vu. vuelo.",
+    "image": null,
+    "audio": "page-05.mp3",
+    "timing": [
+     [
+      106,
+      842
+     ],
+     [
+      1804,
+      2429
+     ]
+    ]
+   },
+   {
+    "es": "La vaca toca el violín.",
+    "en": "The cow plays the violin.",
+    "image": null,
+    "audio": "page-06.mp3",
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      675
+     ],
+     [
+      689,
+      1036
+     ],
+     [
+      1050,
+      1133
+     ],
+     [
+      1147,
+      1633
+     ]
+    ]
+   }
+  ],
+  "vocab": [
+   {
+    "es": "vaca",
+    "en": "cow",
+    "emoji": "🐄",
+    "audio": "word-vaca.mp3"
+   },
+   {
+    "es": "vela",
+    "en": "candle",
+    "emoji": "🕯️",
+    "audio": "word-vela.mp3"
+   },
+   {
+    "es": "violín",
+    "en": "violin",
+    "emoji": "🎻",
+    "audio": "word-violin.mp3"
+   },
+   {
+    "es": "volcán",
+    "en": "volcano",
+    "emoji": "🌋",
+    "audio": "word-volcan.mp3"
+   },
+   {
+    "es": "vuelo",
+    "en": "flight",
+    "emoji": "✈️",
+    "audio": "word-vuelo.mp3"
+   },
+   {
+    "es": "toca",
+    "en": "plays (music)",
+    "emoji": "🎶",
+    "audio": "word-toca.mp3"
+   }
+  ],
+  "badge": {
+   "emoji": "⭐",
+   "es": "Lector de la V",
+   "en": "V Reader"
+  }
+ },
+ {
+  "slug": "cuento-vamos-a-la-playa",
+  "folder": "cuento-vamos-a-la-playa",
+  "order": 12,
+  "theme": "cuentos",
+  "emoji": "🏖️",
+  "title": "Vamos a la playa",
+  "titleEn": "Let's Go to the Beach",
+  "art": "photo",
+  "level": 3,
+  "pages": [
+   {
+    "es": "Vamos a la playa",
+    "en": "Let's Go to the Beach",
+    "image": null,
+    "audio": "page-00.mp3",
+    "timing": [
+     [
+      106,
+      592
+     ],
+     [
+      606,
+      662
+     ],
+     [
+      675,
+      800
+     ],
+     [
+      814,
+      1300
+     ]
+    ]
+   },
+   {
+    "es": "Hoy vamos a la playa.",
+    "en": "Today we go to the beach.",
+    "image": null,
+    "audio": "page-01.mp3",
+    "timing": [
+     [
+      106,
+      384
+     ],
+     [
+      397,
+      758
+     ],
+     [
+      772,
+      814
+     ],
+     [
+      828,
+      953
+     ],
+     [
+      967,
+      1439
+     ]
+    ]
+   },
+   {
+    "es": "Llevo mi cubeta y mi pala.",
+    "en": "I bring my bucket and my shovel.",
+    "image": null,
+    "audio": "page-02.mp3",
+    "timing": [
+     [
+      106,
+      495
+     ],
+     [
+      508,
+      647
+     ],
+     [
+      661,
+      1175
+     ],
+     [
+      1189,
+      1258
+     ],
+     [
+      1272,
+      1425
+     ],
+     [
+      1439,
+      1856
+     ]
+    ]
+   },
+   {
+    "es": "El agua está fría.",
+    "en": "The water is cold.",
+    "image": null,
+    "audio": "page-03.mp3",
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      578
+     ],
+     [
+      592,
+      884
+     ],
+     [
+      897,
+      1355
+     ]
+    ]
+   },
+   {
+    "es": "Hago un castillo de arena.",
+    "en": "I make a sand castle.",
+    "image": null,
+    "audio": "page-04.mp3",
+    "timing": [
+     [
+      106,
+      425
+     ],
+     [
+      439,
+      578
+     ],
+     [
+      592,
+      1189
+     ],
+     [
+      1203,
+      1314
+     ],
+     [
+      1328,
+      1786
+     ]
+    ]
+   },
+   {
+    "es": "Llega una ola grande.",
+    "en": "A big wave comes.",
+    "image": null,
+    "audio": "page-05.mp3",
+    "timing": [
+     [
+      106,
+      578
+     ],
+     [
+      592,
+      981
+     ],
+     [
+      994,
+      1244
+     ],
+     [
+      1258,
+      1758
+     ]
+    ]
+   },
+   {
+    "es": "¡Adiós, castillo!",
+    "en": "Goodbye, castle!",
+    "image": null,
+    "audio": "page-06.mp3",
+    "timing": [
+     [
+      106,
+      731
+     ],
+     [
+      939,
+      1717
+     ]
+    ]
+   }
+  ],
+  "vocab": [
+   {
+    "es": "playa",
+    "en": "beach",
+    "emoji": "🏖️",
+    "audio": "word-playa.mp3"
+   },
+   {
+    "es": "cubeta",
+    "en": "bucket",
+    "emoji": "🪣",
+    "audio": "word-cubeta.mp3"
+   },
+   {
+    "es": "pala",
+    "en": "shovel",
+    "emoji": "🥄",
+    "audio": "word-pala.mp3"
+   },
+   {
+    "es": "arena",
+    "en": "sand",
+    "emoji": "⏳",
+    "audio": "word-arena.mp3"
+   },
+   {
+    "es": "castillo",
+    "en": "castle",
+    "emoji": "🏰",
+    "audio": "word-castillo.mp3"
+   },
+   {
+    "es": "ola",
+    "en": "wave",
+    "emoji": "🌊",
+    "audio": "word-ola.mp3"
+   }
+  ],
+  "badge": {
+   "emoji": "🏖️",
+   "es": "Constructor de Castillos",
+   "en": "Castle Builder"
+  }
+ },
+ {
+  "slug": "cuento-donde-esta-mi-zapato",
+  "folder": "cuento-donde-esta-mi-zapato",
+  "order": 11,
+  "theme": "cuentos",
+  "emoji": "👟",
+  "title": "¿Dónde está mi zapato?",
+  "titleEn": "Where Is My Shoe?",
+  "art": "photo",
+  "level": 3,
+  "pages": [
+   {
+    "es": "¿Dónde está mi zapato?",
+    "en": "Where Is My Shoe?",
+    "image": null,
+    "audio": "page-00.mp3",
+    "timing": [
+     [
+      106,
+      453
+     ],
+     [
+      467,
+      745
+     ],
+     [
+      758,
+      883
+     ],
+     [
+      897,
+      1508
+     ]
+    ]
+   },
+   {
+    "es": "Pablo no encuentra su zapato.",
+    "en": "Pablo can't find his shoe.",
+    "image": null,
+    "audio": "page-01.mp3",
+    "timing": [
+     [
+      106,
+      439
+     ],
+     [
+      453,
+      661
+     ],
+     [
+      675,
+      1175
+     ],
+     [
+      1189,
+      1328
+     ],
+     [
+      1342,
+      1898
+     ]
+    ]
+   },
+   {
+    "es": "¿Está debajo de la cama? No.",
+    "en": "Is it under the bed? No.",
+    "image": null,
+    "audio": "page-02.mp3",
+    "timing": [
+     [
+      106,
+      453
+     ],
+     [
+      467,
+      911
+     ],
+     [
+      925,
+      1036
+     ],
+     [
+      1050,
+      1175
+     ],
+     [
+      1189,
+      1606
+     ],
+     [
+      2567,
+      2998
+     ]
+    ]
+   },
+   {
+    "es": "¿Está en la caja de juguetes? No.",
+    "en": "Is it in the toy box? No.",
+    "image": null,
+    "audio": "page-03.mp3",
+    "timing": [
+     [
+      106,
+      453
+     ],
+     [
+      467,
+      536
+     ],
+     [
+      550,
+      647
+     ],
+     [
+      661,
+      967
+     ],
+     [
+      981,
+      1092
+     ],
+     [
+      1106,
+      1856
+     ],
+     [
+      2817,
+      3248
+     ]
+    ]
+   },
+   {
+    "es": "¿Está detrás de la puerta? No.",
+    "en": "Is it behind the door? No.",
+    "image": null,
+    "audio": "page-04.mp3",
+    "timing": [
+     [
+      106,
+      467
+     ],
+     [
+      481,
+      912
+     ],
+     [
+      925,
+      1008
+     ],
+     [
+      1022,
+      1133
+     ],
+     [
+      1147,
+      1703
+     ],
+     [
+      2664,
+      3095
+     ]
+    ]
+   },
+   {
+    "es": "¡El perrito tiene el zapato!",
+    "en": "The puppy has the shoe!",
+    "image": null,
+    "audio": "page-05.mp3",
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      772
+     ],
+     [
+      786,
+      1092
+     ],
+     [
+      1106,
+      1203
+     ],
+     [
+      1217,
+      1759
+     ]
+    ]
+   },
+   {
+    "es": "¡Ya lo encontré!",
+    "en": "I found it!",
+    "image": null,
+    "audio": "page-06.mp3",
+    "timing": [
+     [
+      106,
+      314
+     ],
+     [
+      328,
+      411
+     ],
+     [
+      425,
+      1022
+     ]
+    ]
+   }
+  ],
+  "vocab": [
+   {
+    "es": "zapato",
+    "en": "shoe",
+    "emoji": "👟",
+    "audio": "word-zapato.mp3"
+   },
+   {
+    "es": "debajo",
+    "en": "under",
+    "emoji": "⬇️",
+    "audio": "word-debajo.mp3"
+   },
+   {
+    "es": "cama",
+    "en": "bed",
+    "emoji": "🛏️",
+    "audio": "word-cama.mp3"
+   },
+   {
+    "es": "caja",
+    "en": "box",
+    "emoji": "📦",
+    "audio": "word-caja.mp3"
+   },
+   {
+    "es": "detrás",
+    "en": "behind",
+    "emoji": "↩️",
+    "audio": "word-detras.mp3"
+   },
+   {
+    "es": "puerta",
+    "en": "door",
+    "emoji": "🚪",
+    "audio": "word-puerta.mp3"
+   }
+  ],
+  "badge": {
+   "emoji": "🔎",
+   "es": "Gran Detective",
+   "en": "Great Detective"
+  }
+ },
+ {
+  "slug": "cuento-el-cumpleanos-de-tomas",
+  "folder": "cuento-el-cumpleanos-de-tomas",
+  "order": 10,
+  "theme": "cuentos",
+  "emoji": "🎂",
+  "title": "El cumpleaños de Tomás",
+  "titleEn": "Tomás's Birthday",
+  "art": "photo",
+  "level": 3,
+  "pages": [
+   {
+    "es": "El cumpleaños de Tomás",
+    "en": "Tomás's Birthday",
+    "image": null,
+    "audio": "page-00.mp3",
+    "timing": [
+     [
+      106,
+      273
+     ],
+     [
+      286,
+      980
+     ],
+     [
+      994,
+      1105
+     ],
+     [
+      1119,
+      1716
+     ]
+    ]
+   },
+   {
+    "es": "Hoy es el cumpleaños de Tomás.",
+    "en": "Today is Tomás's birthday.",
+    "image": null,
+    "audio": "page-01.mp3",
+    "timing": [
+     [
+      106,
+      370
+     ],
+     [
+      383,
+      522
+     ],
+     [
+      536,
+      647
+     ],
+     [
+      661,
+      1342
+     ],
+     [
+      1356,
+      1467
+     ],
+     [
+      1481,
+      2064
+     ]
+    ]
+   },
+   {
+    "es": "Tomás cumple cinco años.",
+    "en": "Tomás turns five.",
+    "image": null,
+    "audio": "page-02.mp3",
+    "timing": [
+     [
+      106,
+      509
+     ],
+     [
+      522,
+      897
+     ],
+     [
+      911,
+      1383
+     ],
+     [
+      1397,
+      1994
+     ]
+    ]
+   },
+   {
+    "es": "Sus amigos llegan a la fiesta.",
+    "en": "His friends come to the party.",
+    "image": null,
+    "audio": "page-03.mp3",
+    "timing": [
+     [
+      106,
+      356
+     ],
+     [
+      369,
+      883
+     ],
+     [
+      897,
+      1230
+     ],
+     [
+      1244,
+      1300
+     ],
+     [
+      1314,
+      1439
+     ],
+     [
+      1453,
+      2009
+     ]
+    ]
+   },
+   {
+    "es": "Hay un pastel con velas.",
+    "en": "There is a cake with candles.",
+    "image": null,
+    "audio": "page-04.mp3",
+    "timing": [
+     [
+      106,
+      356
+     ],
+     [
+      369,
+      480
+     ],
+     [
+      494,
+      980
+     ],
+     [
+      994,
+      1202
+     ],
+     [
+      1217,
+      1814
+     ]
+    ]
+   },
+   {
+    "es": "Todos cantan para Tomás.",
+    "en": "Everyone sings for Tomás.",
+    "image": null,
+    "audio": "page-05.mp3",
+    "timing": [
+     [
+      106,
+      495
+     ],
+     [
+      508,
+      952
+     ],
+     [
+      967,
+      1189
+     ],
+     [
+      1203,
+      1828
+     ]
+    ]
+   },
+   {
+    "es": "Tomás sopla las cinco velas.",
+    "en": "Tomás blows out the five candles.",
+    "image": null,
+    "audio": "page-06.mp3",
+    "timing": [
+     [
+      106,
+      495
+     ],
+     [
+      508,
+      897
+     ],
+     [
+      911,
+      1119
+     ],
+     [
+      1133,
+      1508
+     ],
+     [
+      1522,
+      2133
+     ]
+    ]
+   }
+  ],
+  "vocab": [
+   {
+    "es": "cumpleaños",
+    "en": "birthday",
+    "emoji": "🎂",
+    "audio": "word-cumpleanos.mp3"
+   },
+   {
+    "es": "cinco",
+    "en": "five",
+    "emoji": "5️⃣",
+    "audio": "word-cinco.mp3"
+   },
+   {
+    "es": "amigos",
+    "en": "friends",
+    "emoji": "👫",
+    "audio": "word-amigos.mp3"
+   },
+   {
+    "es": "fiesta",
+    "en": "party",
+    "emoji": "🎉",
+    "audio": "word-fiesta.mp3"
+   },
+   {
+    "es": "pastel",
+    "en": "cake",
+    "emoji": "🍰",
+    "audio": "word-pastel.mp3"
+   },
+   {
+    "es": "velas",
+    "en": "candles",
+    "emoji": "🕯️",
+    "audio": "word-velas.mp3"
+   }
+  ],
+  "badge": {
+   "emoji": "🎂",
+   "es": "Rey de la Fiesta",
+   "en": "Party King"
+  }
+ },
+ {
+  "slug": "cuento-el-globo-rojo",
+  "folder": "cuento-el-globo-rojo",
+  "order": 9,
+  "theme": "cuentos",
+  "emoji": "🎈",
+  "title": "El globo rojo",
+  "titleEn": "The Red Balloon",
+  "art": "photo",
+  "level": 3,
+  "pages": [
+   {
+    "es": "El globo rojo",
+    "en": "The Red Balloon",
+    "image": null,
+    "audio": "page-00.mp3",
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      675
+     ],
+     [
+      689,
+      1231
+     ]
+    ]
+   },
+   {
+    "es": "Lucía tiene un globo rojo.",
+    "en": "Lucía has a red balloon.",
+    "image": null,
+    "audio": "page-01.mp3",
+    "timing": [
+     [
+      106,
+      675
+     ],
+     [
+      689,
+      1092
+     ],
+     [
+      1106,
+      1259
+     ],
+     [
+      1272,
+      1591
+     ],
+     [
+      1606,
+      2092
+     ]
+    ]
+   },
+   {
+    "es": "El viento sopla muy fuerte.",
+    "en": "The wind blows very hard.",
+    "image": null,
+    "audio": "page-02.mp3",
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      675
+     ],
+     [
+      689,
+      1120
+     ],
+     [
+      1133,
+      1397
+     ],
+     [
+      1411,
+      1967
+     ]
+    ]
+   },
+   {
+    "es": "¡El globo se va volando!",
+    "en": "The balloon flies away!",
+    "image": null,
+    "audio": "page-03.mp3",
+    "timing": [
+     [
+      106,
+      287
+     ],
+     [
+      300,
+      689
+     ],
+     [
+      703,
+      870
+     ],
+     [
+      883,
+      1008
+     ],
+     [
+      1022,
+      1619
+     ]
+    ]
+   },
+   {
+    "es": "Lucía está triste.",
+    "en": "Lucía is sad.",
+    "image": null,
+    "audio": "page-04.mp3",
+    "timing": [
+     [
+      106,
+      703
+     ],
+     [
+      717,
+      1023
+     ],
+     [
+      1036,
+      1605
+     ]
+    ]
+   },
+   {
+    "es": "Su papá le compra otro globo.",
+    "en": "Her dad buys her another balloon.",
+    "image": null,
+    "audio": "page-05.mp3",
+    "timing": [
+     [
+      106,
+      300
+     ],
+     [
+      314,
+      703
+     ],
+     [
+      717,
+      856
+     ],
+     [
+      869,
+      1355
+     ],
+     [
+      1369,
+      1675
+     ],
+     [
+      1689,
+      2147
+     ]
+    ]
+   },
+   {
+    "es": "Ahora Lucía lo agarra bien.",
+    "en": "Now Lucía holds it tight.",
+    "image": null,
+    "audio": "page-06.mp3",
+    "timing": [
+     [
+      106,
+      523
+     ],
+     [
+      536,
+      1022
+     ],
+     [
+      1036,
+      1147
+     ],
+     [
+      1161,
+      1536
+     ],
+     [
+      1550,
+      1911
+     ]
+    ]
+   }
+  ],
+  "vocab": [
+   {
+    "es": "globo",
+    "en": "balloon",
+    "emoji": "🎈",
+    "audio": "word-globo.mp3"
+   },
+   {
+    "es": "rojo",
+    "en": "red",
+    "emoji": "🔴",
+    "audio": "word-rojo.mp3"
+   },
+   {
+    "es": "viento",
+    "en": "wind",
+    "emoji": "💨",
+    "audio": "word-viento.mp3"
+   },
+   {
+    "es": "volando",
+    "en": "flying",
+    "emoji": "🕊️",
+    "audio": "word-volando.mp3"
+   },
+   {
+    "es": "triste",
+    "en": "sad",
+    "emoji": "😢",
+    "audio": "word-triste.mp3"
+   },
+   {
+    "es": "papá",
+    "en": "dad",
+    "emoji": "👨",
+    "audio": "word-papa.mp3"
+   }
+  ],
+  "badge": {
+   "emoji": "🎈",
+   "es": "Amiga del Globo",
+   "en": "Balloon Friend"
+  }
+ }
+]

@@ -87,6 +87,11 @@ async function main() {
     await step('home page shows books, packs and sign-up', async () => {
       await page.goto(SITE + '/');
       assert.match(await page.textContent('h1'), /first books in Spanish/);
+      // Cookie notice: shown once, remembered after "No thanks".
+      assert.ok(await page.locator('[data-consent]').isVisible());
+      await page.click('[data-consent-no]');
+      await page.reload();
+      assert.ok(await page.locator('[data-consent]').isHidden());
       assert.ok((await page.locator('.book').count()) >= 8);
       assert.strictEqual(await page.locator('.pack').count(), 3);
       await page.waitForLoadState('networkidle');

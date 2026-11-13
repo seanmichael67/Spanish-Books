@@ -45,6 +45,9 @@ function copyMedia() {
   return files;
 }
 
+// Places where visitors must agree before analytics cookies are set: the EU/EEA, the UK and Switzerland.
+const CONSENT_REGIONS = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH'];
+
 const LEVELS = { 1: 'Nivel 1 · First words', 2: 'Nivel 2 · Short sentences', 3: 'Nivel 3 · Longer sentences' };
 const media = (book, file) => `/media/${book.slug}/${file}`;
 const hasThumb = (book) => fs.existsSync(path.join(ROOT, 'books', book.folder, 'images', 'thumb.webp'));
@@ -81,7 +84,11 @@ function layout({ title, description, urlPath, body, head = '', scripts = '', ac
   const nav = [['/libros/', 'Books'], ['/packs/', 'Printable packs'], ['/padres/', 'For parents'], ['/escuelas/', 'For schools'], ['/mis-compras/', 'My purchases']]
     .map(([href, label]) => `<a href="${href}"${active === href ? ' aria-current="page"' : ''}>${label}</a>`).join('');
   const ga = config.analyticsId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${config.analyticsId}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${config.analyticsId}');</script>` : '';
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
+gtag('consent','default',{analytics_storage:'denied',region:${JSON.stringify(CONSENT_REGIONS)}});
+try{var c=localStorage.getItem('beibei-libros-consent');if(c)gtag('consent','update',{analytics_storage:c==='yes'?'granted':'denied'});}catch(e){}
+gtag('js',new Date());gtag('config','${config.analyticsId}');</script>` : '';
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -120,6 +127,10 @@ ${body}
   </div>
   <div class="fine">© ${YEAR} ${esc(config.school)}. Made with cariño for bilingual families.</div>
 </div></footer>
+${config.analyticsId ? `<div class="consent" data-consent hidden role="region" aria-label="Cookies">
+  <p>We use one analytics cookie to see which books families read, so we can make more of them. No ads. <a href="/privacidad/">Privacy</a></p>
+  <div><button class="btn small" type="button" data-consent-yes>OK</button><button class="btn small alt" type="button" data-consent-no>No thanks</button></div>
+</div>` : ''}
 <script src="/assets/site.js" defer></script>
 ${scripts}
 </body>
@@ -209,7 +220,7 @@ function home() {
     description: `${books.length} free Spanish books for toddlers and preschoolers with real photos, audio on every page and vocabulary at the end. Printable packs with flashcards for parents and teachers.`,
     urlPath: '/',
     body,
-    head: `<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
+    head: `<script type="application/ld+json">${JSON.stringify(ld)}</script>${pinMeta('library')}`,
   }));
 }
 
@@ -374,6 +385,7 @@ function themePages() {
       urlPath: `/temas/${t.id}/`,
       body,
       active: '/libros/',
+      head: pinMeta(`pack-${t.id}`),
     }));
   });
 }
@@ -428,7 +440,7 @@ function packsPage() {
     urlPath: '/packs/',
     body,
     active: '/packs/',
-    head: `<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
+    head: `<script type="application/ld+json">${JSON.stringify(ld)}</script>${pinMeta('library')}`,
   }));
 }
 
@@ -555,7 +567,7 @@ function textPages() {
     <ul>
       <li><b>Email sign-up:</b> if a parent or teacher joins the book club we store their email address and optional first name with our email provider (Resend) to send book emails. Every email has an unsubscribe link.</li>
       <li><b>Purchases:</b> payments are handled by Stripe. We never see or store card numbers. Stripe shares the buyer's email and what was bought so we can deliver the printable.</li>
-      <li><b>Visits:</b> we use Google Analytics to count page views and which books are read. We do not use this to identify anyone.</li>
+      <li><b>Visits:</b> we use Google Analytics to count page views and which books are read. We do not use this to identify anyone, and we do not run ads. You can say "No thanks" in the cookie notice; visitors in the EU, UK and Switzerland are not counted unless they say "OK".</li>
     </ul>
     <h2>Children</h2>
     <p>This site is for parents and teachers to use with children. Children do not need an account, and we do not knowingly collect personal information from children under 13. Reading a book does not require entering any information.</p>
@@ -576,6 +588,10 @@ function textPages() {
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(path.join(DIST, 'assets'), { recursive: true });
 for (const f of ['styles.css', 'site.js', 'reader.js']) fs.copyFileSync(path.join(__dirname, 'src', f), path.join(DIST, 'assets', f));
+// Pinterest pins (made by make-pins.py) are served at /pins/ and used as share images.
+const PINS = path.join(__dirname, 'marketing', 'pins');
+if (fs.existsSync(PINS)) fs.cpSync(PINS, path.join(DIST, 'pins'), { recursive: true });
+const pinMeta = (name) => (SITE_URL && fs.existsSync(path.join(PINS, `${name}.jpg`)) ? `<meta property="og:image" content="${SITE_URL}/pins/${name}.jpg">` : '');
 
 const files = copyMedia();
 home();

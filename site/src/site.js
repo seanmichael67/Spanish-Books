@@ -5,6 +5,21 @@
   var $$ = function (s, el) { return [].slice.call((el || document).querySelectorAll(s)); };
   var track = function (name, data) { if (window.gtag) window.gtag('event', name, data || {}); };
 
+  /* ---- Cookie notice ---- */
+  var notice = $('[data-consent]');
+  if (notice) {
+    var chosen = null;
+    try { chosen = localStorage.getItem('beibei-libros-consent'); } catch (e) {}
+    if (!chosen) notice.hidden = false;
+    var decide = function (yes) {
+      try { localStorage.setItem('beibei-libros-consent', yes ? 'yes' : 'no'); } catch (e) {}
+      if (window.gtag) window.gtag('consent', 'update', { analytics_storage: yes ? 'granted' : 'denied' });
+      notice.hidden = true;
+    };
+    $('[data-consent-yes]', notice).addEventListener('click', function () { decide(true); });
+    $('[data-consent-no]', notice).addEventListener('click', function () { decide(false); });
+  }
+
   /* ---- Mobile menu ---- */
   var menu = $('.menu-btn');
   if (menu) menu.addEventListener('click', function () {
