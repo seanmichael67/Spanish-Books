@@ -24,10 +24,11 @@ Done since the first version: audio for every page and word of every book, the s
 pictures, photo pictures for all 30 unfinished books, a 13-book syllable series (vowels, M, P,
 S, L, T, N, D, B, C, G, R, H) and 8 story books for Nivel 3. 157 books and 19 packs are live.
 
-- [ ] **More syllable books.** Still to write: F, J, V, Ñ, Z and the harder pairs (que/qui,
-      gue/gui, ce/ci, ge/gi, ll, ch). Add them to `site/data/extra-books.json` in the same shape.
-- [ ] **More stories.** The eight "Cuentos" are the only books with a beginning, a problem and an
-      ending. A second set would give Nivel 3 readers more to grow into.
+- [ ] **Pictures for 7 written books.** Syllables F, J and V, and four stories (El globo rojo,
+      El cumpleaños de Tomás, ¿Dónde está mi zapato?, Vamos a la playa) have text, audio and word
+      timings, and appear as soon as their 49 pictures exist (about 25 Higgsfield credits; the
+      descriptions are in `site/data/image-prompts.json`).
+- [ ] **Still to write:** syllables Ñ and Z and the harder pairs (que/qui, gue/gui, ce/ci, ge/gi, ll, ch).
 - [ ] **Native-speaker review of every book.** I corrected the mistakes I found
       (see `site/data/text-fixes.json`), but a teacher should read each book once before it is sold.
 - [ ] **Pick one art style.** The 30 newest books and most older ones are photos. About 30 older
@@ -49,15 +50,20 @@ S, L, T, N, D, B, C, G, R, H) and 8 story books for Nivel 3. 157 books and 19 pa
 
 ## 4. Making it profitable
 
+The marketing kit is ready in `site/marketing/` (see its README): Pinterest pins and a bulk-upload
+sheet, Teachers Pay Teachers covers and listings, PDFs of every pack, and four weekly emails.
+
+- [ ] **Pinterest:** create the board and bulk-upload `site/marketing/pinterest-pins.csv` once the site is live.
+- [ ] **Teachers Pay Teachers:** open a seller account, run `node site/scripts/make-pdfs.js`, and list
+      each pack using `site/marketing/tpt-listings.md`.
+- [ ] **Weekly emails:** send `site/marketing/emails/week-1.html` to week-4 as Resend Broadcasts, one a week.
+
 - [ ] **Check the follow-up emails.** Sign-up sends a welcome email, then schedules two more
       (reading routine after 1 day, pack offer after 3 days) through Resend's scheduled sending.
       This was tested against a stand-in, so sign up once yourself and confirm all three arrive.
-- [ ] **Weekly email.** One new or featured book each week, sent as a Resend Broadcast.
 - [ ] **Launch to school families first.** Give current Beibei Amigos families a discount code
       (checkout already accepts Stripe promotion codes) and ask for honest reviews.
 - [ ] **Reviews on the packs page.** There are none yet, so the page has no social proof.
-- [ ] **Pinterest and Teachers Pay Teachers.** Printable Spanish packs sell well on both;
-      list the same packs there and link back.
 - [ ] **Check the school licence wording.** The `/escuelas/` page says the licence covers one school
       site, allows copies to go home with enrolled families, does not expire, and that you can send
       an invoice or accept a purchase order. I wrote those terms; change anything you do not want to promise.
@@ -66,8 +72,6 @@ S, L, T, N, D, B, C, G, R, H) and 8 story books for Nivel 3. 157 books and 19 pa
 - [ ] **Turn on the membership.** The Club de Lectura ($6 a month, every pack while a member) is
       built. In Stripe, open Settings → Billing → Customer portal and save it once, so members
       can cancel from "My purchases". Then do one test sign-up and one test cancel.
-- [ ] **Cookie notice.** Google Analytics loads on every page. Add a consent banner if you
-      advertise to visitors in the EU, UK or California.
 - [ ] **Mandarin track.** The same site can host a second language once Spanish is earning.
 
 ## 5. Known limits of this first version
