@@ -5,3 +5,4 @@ __pycache__/
 tts-venv/
 scripts/tts-venv/
 site/dist/
+site/marketing/pdfs/
